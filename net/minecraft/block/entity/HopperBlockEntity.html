@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":9,"i3":10,"i4":10,"i5":9,"i6":10,"i7":10,"i8":9,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":9,"i20":9,"i21":9,"i22":10,"i23":10,"i24":9,"i25":9,"i26":9,"i27":9,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10};
+var data = {"i0":9,"i1":9,"i2":9,"i3":10,"i4":10,"i5":9,"i6":10,"i7":10,"i8":9,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":9,"i20":9,"i21":9,"i22":10,"i23":10,"i24":9,"i25":9,"i26":9,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -142,7 +142,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../class_1725.html" title="interface in net.minecraft">class_1725</a></code>, <code><a href="../../class_361.html" title="interface in net.minecraft">class_361</a></code>, <code><a href="../../inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code>, <code><a href="../../text/Nameable.html" title="interface in net.minecraft.text">Nameable</a></code>, <code><a href="../../util/Tickable.html" title="interface in net.minecraft.util">Tickable</a></code>, <code><a href="../../world/biome/layer/type/ParentedLayer.html" title="interface in net.minecraft.world.biome.layer.type">ParentedLayer</a></code></dd>
+<dd><code><a href="../../class_1725.html" title="interface in net.minecraft">class_1725</a></code>, <code><a href="../../class_361.html" title="interface in net.minecraft">class_361</a></code>, <code><a href="../../inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code>, <code><a href="../../text/Nameable.html" title="interface in net.minecraft.text">Nameable</a></code>, <code><a href="../../util/Tickable.html" title="interface in net.minecraft.util">Tickable</a></code>, <code><a href="../../world/biome/layer/type/NameableContainerProvider.html" title="interface in net.minecraft.world.biome.layer.type">NameableContainerProvider</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">HopperBlockEntity</span>
@@ -189,7 +189,7 @@ implements <a href="../../class_361.html" title="interface in net.minecraft">cla
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.block.entity.<a href="BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></h3>
-<code><a href="BlockEntity.html#field_1389">field_1389</a>, <a href="BlockEntity.html#field_1390">field_1390</a>, <a href="BlockEntity.html#field_1392">field_1392</a>, <a href="BlockEntity.html#removed">removed</a></code></li>
+<code><a href="BlockEntity.html#field_1392">field_1392</a>, <a href="BlockEntity.html#pos">pos</a>, <a href="BlockEntity.html#removed">removed</a>, <a href="BlockEntity.html#world">world</a></code></li>
 </ul>
 </li>
 </ul>
@@ -258,8 +258,8 @@ implements <a href="../../class_361.html" title="interface in net.minecraft">cla
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../container/Container.html" title="class in net.minecraft.container">Container</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createContainer(net.minecraft.entity.player.PlayerInventory,net.minecraft.entity.player.PlayerEntity)">createContainer</a></span>&#8203;(<a href="../../entity/player/PlayerInventory.html" title="class in net.minecraft.entity.player">PlayerInventory</a>&nbsp;playerInventory,
-               <a href="../../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createContainer(net.minecraft.entity.player.PlayerInventory,net.minecraft.entity.player.PlayerEntity)">createContainer</a></span>&#8203;(<a href="../../entity/player/PlayerInventory.html" title="class in net.minecraft.entity.player">PlayerInventory</a>&nbsp;inventory,
+               <a href="../../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -303,18 +303,18 @@ implements <a href="../../class_361.html" title="interface in net.minecraft">cla
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasCustomName()">hasCustomName</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isValidInvStack(int,net.minecraft.item.ItemStack)">isValidInvStack</a></span>&#8203;(int&nbsp;int2,
                <a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#markDirty()">markDirty</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1100(net.minecraft.nbt.CompoundTag)">method_1100</a></span>&#8203;(<a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#markDirty()">markDirty</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i15" class="rowColor">
@@ -370,24 +370,17 @@ implements <a href="../../class_361.html" title="interface in net.minecraft">cla
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i24" class="altColor">
-<td class="colFirst"><code>static <a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1160(net.minecraft.inventory.Inventory,net.minecraft.item.ItemStack,net.minecraft.util.math.Direction)">method_1160</a></span>&#8203;(<a href="../../inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
-           <a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
-           <a href="../../util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i25" class="rowColor">
 <td class="colFirst"><code>static <a href="../../inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1163(net.minecraft.class_361)">method_1163</a></span>&#8203;(<a href="../../class_361.html" title="interface in net.minecraft">class_361</a>&nbsp;class_361)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>private static boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1164(net.minecraft.inventory.Inventory,net.minecraft.util.math.Direction)">method_1164</a></span>&#8203;(<a href="../../inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
            <a href="../../util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>private static <a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1166(net.minecraft.inventory.Inventory,net.minecraft.item.ItemStack,int,net.minecraft.util.math.Direction)">method_1166</a></span>&#8203;(<a href="../../inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
            <a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
@@ -395,102 +388,109 @@ implements <a href="../../class_361.html" title="interface in net.minecraft">cla
            <a href="../../util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1168()">method_1168</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1169()">method_1169</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1170()">method_1170</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>private boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1171()">method_1171</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>private boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1172()">method_1172</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>private boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1173()">method_1173</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6261()">method_6261</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6740(int)">method_6740</a></span>&#8203;(int&nbsp;int2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6742(int,int)">method_6742</a></span>&#8203;(int&nbsp;int2,
            int&nbsp;int3)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6746()">method_6746</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6747()">method_6747</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i39" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6770()">method_6770</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i40" class="altColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onInvClose(net.minecraft.entity.player.PlayerEntity)">onInvClose</a></span>&#8203;(<a href="../../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onInvOpen(net.minecraft.entity.player.PlayerEntity)">onInvOpen</a></span>&#8203;(<a href="../../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code><a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeInvStack(int)">removeInvStack</a></span>&#8203;(int&nbsp;int2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCooldown(int)">setCooldown</a></span>&#8203;(int&nbsp;cooldown)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setInvStack(int,net.minecraft.item.ItemStack)">setInvStack</a></span>&#8203;(int&nbsp;int2,
            <a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code><a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#takeInvStack(int,int)">takeInvStack</a></span>&#8203;(int&nbsp;int2,
             int&nbsp;int3)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tick()">tick</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i45" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toTag(net.minecraft.nbt.CompoundTag)">toTag</a></span>&#8203;(<a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i46" class="altColor">
+<td class="colFirst"><code>static <a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transfer(net.minecraft.inventory.Inventory,net.minecraft.item.ItemStack,net.minecraft.util.math.Direction)">transfer</a></span>&#8203;(<a href="../../inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
+        <a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
+        <a href="../../util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -499,7 +499,7 @@ implements <a href="../../class_361.html" title="interface in net.minecraft">cla
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.block.entity.<a href="LockableContainerBlockEntity.html" title="class in net.minecraft.block.entity">LockableContainerBlockEntity</a></h3>
-<code><a href="LockableContainerBlockEntity.html#method_133()">method_133</a>, <a href="LockableContainerBlockEntity.html#method_6767(net.minecraft.inventory.ContainerLock)">method_6767</a>, <a href="LockableContainerBlockEntity.html#method_6768()">method_6768</a>, <a href="LockableContainerBlockEntity.html#method_6769()">method_6769</a></code></li>
+<code><a href="LockableContainerBlockEntity.html#getDisplayName()">getDisplayName</a>, <a href="LockableContainerBlockEntity.html#method_6767(net.minecraft.inventory.ContainerLock)">method_6767</a>, <a href="LockableContainerBlockEntity.html#method_6768()">method_6768</a>, <a href="LockableContainerBlockEntity.html#method_6769()">method_6769</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.net.minecraft.block.entity.BlockEntity">
@@ -527,7 +527,7 @@ implements <a href="../../class_361.html" title="interface in net.minecraft">cla
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;net.minecraft.text.<a href="../../text/Nameable.html" title="interface in net.minecraft.text">Nameable</a></h3>
-<code><a href="../../text/Nameable.html#method_133()">method_133</a></code></li>
+<code><a href="../../text/Nameable.html#getDisplayName()">getDisplayName</a></code></li>
 </ul>
 </li>
 </ul>
@@ -614,16 +614,16 @@ implements <a href="../../class_361.html" title="interface in net.minecraft">cla
 </dl>
 </li>
 </ul>
-<a id="method_1100(net.minecraft.nbt.CompoundTag)">
+<a id="toTag(net.minecraft.nbt.CompoundTag)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1100</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1100&#8203;(<a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</pre>
+<h4>toTag</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;toTag&#8203;(<a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="LockableContainerBlockEntity.html#method_1100(net.minecraft.nbt.CompoundTag)">method_1100</a></code>&nbsp;in class&nbsp;<code><a href="LockableContainerBlockEntity.html" title="class in net.minecraft.block.entity">LockableContainerBlockEntity</a></code></dd>
+<dd><code><a href="LockableContainerBlockEntity.html#toTag(net.minecraft.nbt.CompoundTag)">toTag</a></code>&nbsp;in class&nbsp;<code><a href="LockableContainerBlockEntity.html" title="class in net.minecraft.block.entity">LockableContainerBlockEntity</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -722,16 +722,16 @@ implements <a href="../../class_361.html" title="interface in net.minecraft">cla
 </dl>
 </li>
 </ul>
-<a id="method_6770()">
+<a id="hasCustomName()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_6770</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;method_6770()</pre>
+<h4>hasCustomName</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;hasCustomName()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../text/Nameable.html#method_6770()">method_6770</a></code>&nbsp;in interface&nbsp;<code><a href="../../text/Nameable.html" title="interface in net.minecraft.text">Nameable</a></code></dd>
+<dd><code><a href="../../text/Nameable.html#hasCustomName()">hasCustomName</a></code>&nbsp;in interface&nbsp;<code><a href="../../text/Nameable.html" title="interface in net.minecraft.text">Nameable</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -910,15 +910,15 @@ implements <a href="../../class_361.html" title="interface in net.minecraft">cla
                               <a href="../../entity/ItemEntity.html" title="class in net.minecraft.entity">ItemEntity</a>&nbsp;itemEntity)</pre>
 </li>
 </ul>
-<a id="method_1160(net.minecraft.inventory.Inventory,net.minecraft.item.ItemStack,net.minecraft.util.math.Direction)">
+<a id="transfer(net.minecraft.inventory.Inventory,net.minecraft.item.ItemStack,net.minecraft.util.math.Direction)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1160</h4>
-<pre class="methodSignature">public static&nbsp;<a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;method_1160&#8203;(<a href="../../inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
-                                    <a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
-                                    <a href="../../util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction)</pre>
+<h4>transfer</h4>
+<pre class="methodSignature">public static&nbsp;<a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;transfer&#8203;(<a href="../../inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
+                                 <a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
+                                 <a href="../../util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction)</pre>
 </li>
 </ul>
 <a id="canInsert(net.minecraft.inventory.Inventory,net.minecraft.item.ItemStack,int,net.minecraft.util.math.Direction)">
@@ -1084,7 +1084,7 @@ implements <a href="../../class_361.html" title="interface in net.minecraft">cla
 <pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getId()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../world/biome/layer/type/ParentedLayer.html#getId()">getId</a></code>&nbsp;in interface&nbsp;<code><a href="../../world/biome/layer/type/ParentedLayer.html" title="interface in net.minecraft.world.biome.layer.type">ParentedLayer</a></code></dd>
+<dd><code><a href="../../world/biome/layer/type/NameableContainerProvider.html#getId()">getId</a></code>&nbsp;in interface&nbsp;<code><a href="../../world/biome/layer/type/NameableContainerProvider.html" title="interface in net.minecraft.world.biome.layer.type">NameableContainerProvider</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1094,11 +1094,11 @@ implements <a href="../../class_361.html" title="interface in net.minecraft">cla
 <ul class="blockList">
 <li class="blockList">
 <h4>createContainer</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../container/Container.html" title="class in net.minecraft.container">Container</a>&nbsp;createContainer&#8203;(<a href="../../entity/player/PlayerInventory.html" title="class in net.minecraft.entity.player">PlayerInventory</a>&nbsp;playerInventory,
-                                 <a href="../../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</pre>
+<pre class="methodSignature">public&nbsp;<a href="../../container/Container.html" title="class in net.minecraft.container">Container</a>&nbsp;createContainer&#8203;(<a href="../../entity/player/PlayerInventory.html" title="class in net.minecraft.entity.player">PlayerInventory</a>&nbsp;inventory,
+                                 <a href="../../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../world/biome/layer/type/ParentedLayer.html#createContainer(net.minecraft.entity.player.PlayerInventory,net.minecraft.entity.player.PlayerEntity)">createContainer</a></code>&nbsp;in interface&nbsp;<code><a href="../../world/biome/layer/type/ParentedLayer.html" title="interface in net.minecraft.world.biome.layer.type">ParentedLayer</a></code></dd>
+<dd><code><a href="../../world/biome/layer/type/NameableContainerProvider.html#createContainer(net.minecraft.entity.player.PlayerInventory,net.minecraft.entity.player.PlayerEntity)">createContainer</a></code>&nbsp;in interface&nbsp;<code><a href="../../world/biome/layer/type/NameableContainerProvider.html" title="interface in net.minecraft.world.biome.layer.type">NameableContainerProvider</a></code></dd>
 </dl>
 </li>
 </ul>

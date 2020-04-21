@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":9,"i8":10,"i9":10,"i10":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -179,7 +179,7 @@ extends <a href="BlockEntity.html" title="class in net.minecraft.block.entity">B
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.block.entity.<a href="BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></h3>
-<code><a href="BlockEntity.html#field_1389">field_1389</a>, <a href="BlockEntity.html#field_1390">field_1390</a>, <a href="BlockEntity.html#field_1392">field_1392</a>, <a href="BlockEntity.html#removed">removed</a></code></li>
+<code><a href="BlockEntity.html#field_1392">field_1392</a>, <a href="BlockEntity.html#pos">pos</a>, <a href="BlockEntity.html#removed">removed</a>, <a href="BlockEntity.html#world">world</a></code></li>
 </ul>
 </li>
 </ul>
@@ -235,43 +235,43 @@ extends <a href="BlockEntity.html" title="class in net.minecraft.block.entity">B
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1100(net.minecraft.nbt.CompoundTag)">method_1100</a></span>&#8203;(<a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../network/Packet.html" title="interface in net.minecraft.network">Packet</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1111()">method_1111</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1184(int)">method_1184</a></span>&#8203;(int&nbsp;int2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1187(int)">method_1187</a></span>&#8203;(int&nbsp;int2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static com.mojang.authlib.GameProfile</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1188(com.mojang.authlib.GameProfile)">method_1188</a></span>&#8203;(com.mojang.authlib.GameProfile&nbsp;gameProfile)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1189()">method_1189</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1190()">method_1190</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setOwnerAndType(com.mojang.authlib.GameProfile)">setOwnerAndType</a></span>&#8203;(com.mojang.authlib.GameProfile&nbsp;gameProfile)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toTag(net.minecraft.nbt.CompoundTag)">toTag</a></span>&#8203;(<a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -361,16 +361,16 @@ extends <a href="BlockEntity.html" title="class in net.minecraft.block.entity">B
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="method_1100(net.minecraft.nbt.CompoundTag)">
+<a id="toTag(net.minecraft.nbt.CompoundTag)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1100</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1100&#8203;(<a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</pre>
+<h4>toTag</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;toTag&#8203;(<a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="BlockEntity.html#method_1100(net.minecraft.nbt.CompoundTag)">method_1100</a></code>&nbsp;in class&nbsp;<code><a href="BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></code></dd>
+<dd><code><a href="BlockEntity.html#toTag(net.minecraft.nbt.CompoundTag)">toTag</a></code>&nbsp;in class&nbsp;<code><a href="BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></code></dd>
 </dl>
 </li>
 </ul>

@@ -124,7 +124,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><code><a href="../class_375.html" title="class in net.minecraft">class_375</a></code>, <code><a href="../class_378.class_379.html" title="class in net.minecraft">class_378.class_379</a></code></dd>
+<dd><code><a href="AbstractBlockState.html" title="class in net.minecraft.block">AbstractBlockState</a></code>, <code><a href="../state/StateManager.class_379.html" title="class in net.minecraft.state">StateManager.class_379</a></code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">BlockState</span></pre>
@@ -149,24 +149,23 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>&lt;T extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;T&gt;&gt;<br>T</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#get(net.minecraft.state.property.Property)">get</a></span>&#8203;(<a href="../state/property/Property.html" title="interface in net.minecraft.state.property">Property</a>&lt;T&gt;&nbsp;property)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="Block.html" title="class in net.minecraft.block">Block</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBlock()">getBlock</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="../state/property/Property.html" title="interface in net.minecraft.state.property">Property</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1222()">method_1222</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>&lt;T extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;T&gt;&gt;<br><a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1223(net.minecraft.state.property.Property)">method_1223</a></span>&#8203;(<a href="../state/property/Property.html" title="interface in net.minecraft.state.property">Property</a>&lt;T&gt;&nbsp;property)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>&lt;T extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;T&gt;,&#8203;V extends T&gt;<br><a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1224(net.minecraft.state.property.Property,V)">method_1224</a></span>&#8203;(<a href="../state/property/Property.html" title="interface in net.minecraft.state.property">Property</a>&lt;T&gt;&nbsp;property,
-           V&nbsp;v)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
@@ -175,8 +174,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>&lt;T extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;T&gt;&gt;<br>T</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1226(net.minecraft.state.property.Property)">method_1226</a></span>&#8203;(<a href="../state/property/Property.html" title="interface in net.minecraft.state.property">Property</a>&lt;T&gt;&nbsp;property)</code></th>
+<td class="colFirst"><code>&lt;T extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;T&gt;,&#8203;V extends T&gt;<br><a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#with(net.minecraft.state.property.Property,V)">with</a></span>&#8203;(<a href="../state/property/Property.html" title="interface in net.minecraft.state.property">Property</a>&lt;T&gt;&nbsp;property,
+    V&nbsp;v)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -205,25 +205,25 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre class="methodSignature"><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="../state/property/Property.html" title="interface in net.minecraft.state.property">Property</a>&gt;&nbsp;method_1222()</pre>
 </li>
 </ul>
-<a id="method_1226(net.minecraft.state.property.Property)">
+<a id="get(net.minecraft.state.property.Property)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1226</h4>
-<pre class="methodSignature">&lt;T extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;T&gt;&gt;&nbsp;T&nbsp;method_1226&#8203;(<a href="../state/property/Property.html" title="interface in net.minecraft.state.property">Property</a>&lt;T&gt;&nbsp;property)</pre>
+<h4>get</h4>
+<pre class="methodSignature">&lt;T extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;T&gt;&gt;&nbsp;T&nbsp;get&#8203;(<a href="../state/property/Property.html" title="interface in net.minecraft.state.property">Property</a>&lt;T&gt;&nbsp;property)</pre>
 </li>
 </ul>
-<a id="method_1224(net.minecraft.state.property.Property,java.lang.Comparable)">
+<a id="with(net.minecraft.state.property.Property,java.lang.Comparable)">
 <!--   -->
-</a><a id="method_1224(net.minecraft.state.property.Property,V)">
+</a><a id="with(net.minecraft.state.property.Property,V)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1224</h4>
-<pre class="methodSignature">&lt;T extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;T&gt;,&#8203;V extends T&gt;&nbsp;<a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;method_1224&#8203;(<a href="../state/property/Property.html" title="interface in net.minecraft.state.property">Property</a>&lt;T&gt;&nbsp;property,
-                                                                   V&nbsp;v)</pre>
+<h4>with</h4>
+<pre class="methodSignature">&lt;T extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Comparable</a>&lt;T&gt;,&#8203;V extends T&gt;&nbsp;<a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;with&#8203;(<a href="../state/property/Property.html" title="interface in net.minecraft.state.property">Property</a>&lt;T&gt;&nbsp;property,
+                                                            V&nbsp;v)</pre>
 </li>
 </ul>
 <a id="method_1223(net.minecraft.state.property.Property)">

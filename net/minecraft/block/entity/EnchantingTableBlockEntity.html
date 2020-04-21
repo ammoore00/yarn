@@ -137,12 +137,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../text/Nameable.html" title="interface in net.minecraft.text">Nameable</a></code>, <code><a href="../../util/Tickable.html" title="interface in net.minecraft.util">Tickable</a></code>, <code><a href="../../world/biome/layer/type/ParentedLayer.html" title="interface in net.minecraft.world.biome.layer.type">ParentedLayer</a></code></dd>
+<dd><code><a href="../../text/Nameable.html" title="interface in net.minecraft.text">Nameable</a></code>, <code><a href="../../util/Tickable.html" title="interface in net.minecraft.util">Tickable</a></code>, <code><a href="../../world/biome/layer/type/NameableContainerProvider.html" title="interface in net.minecraft.world.biome.layer.type">NameableContainerProvider</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">EnchantingTableBlockEntity</span>
 extends <a href="BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a>
-implements <a href="../../util/Tickable.html" title="interface in net.minecraft.util">Tickable</a>, <a href="../../world/biome/layer/type/ParentedLayer.html" title="interface in net.minecraft.world.biome.layer.type">ParentedLayer</a></pre>
+implements <a href="../../util/Tickable.html" title="interface in net.minecraft.util">Tickable</a>, <a href="../../world/biome/layer/type/NameableContainerProvider.html" title="interface in net.minecraft.world.biome.layer.type">NameableContainerProvider</a></pre>
 </li>
 </ul>
 </div>
@@ -164,33 +164,33 @@ implements <a href="../../util/Tickable.html" title="interface in net.minecraft.
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#customName">customName</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>float</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1428">field_1428</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>float</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1429">field_1429</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>float</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1432">field_1432</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>float</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1433">field_1433</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>float</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1434">field_1434</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1436">field_1436</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -229,7 +229,7 @@ implements <a href="../../util/Tickable.html" title="interface in net.minecraft.
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.block.entity.<a href="BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></h3>
-<code><a href="BlockEntity.html#field_1389">field_1389</a>, <a href="BlockEntity.html#field_1390">field_1390</a>, <a href="BlockEntity.html#field_1392">field_1392</a>, <a href="BlockEntity.html#removed">removed</a></code></li>
+<code><a href="BlockEntity.html#field_1392">field_1392</a>, <a href="BlockEntity.html#pos">pos</a>, <a href="BlockEntity.html#removed">removed</a>, <a href="BlockEntity.html#world">world</a></code></li>
 </ul>
 </li>
 </ul>
@@ -271,8 +271,8 @@ implements <a href="../../util/Tickable.html" title="interface in net.minecraft.
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../container/Container.html" title="class in net.minecraft.container">Container</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createContainer(net.minecraft.entity.player.PlayerInventory,net.minecraft.entity.player.PlayerEntity)">createContainer</a></span>&#8203;(<a href="../../entity/player/PlayerInventory.html" title="class in net.minecraft.entity.player">PlayerInventory</a>&nbsp;playerInventory,
-               <a href="../../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createContainer(net.minecraft.entity.player.PlayerInventory,net.minecraft.entity.player.PlayerEntity)">createContainer</a></span>&#8203;(<a href="../../entity/player/PlayerInventory.html" title="class in net.minecraft.entity.player">PlayerInventory</a>&nbsp;inventory,
+               <a href="../../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -281,38 +281,38 @@ implements <a href="../../util/Tickable.html" title="interface in net.minecraft.
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../text/Text.html" title="interface in net.minecraft.text">Text</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDisplayName()">getDisplayName</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getId()">getId</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1100(net.minecraft.nbt.CompoundTag)">method_1100</a></span>&#8203;(<a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1134(java.lang.String)">method_1134</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</code></th>
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasCustomName()">hasCustomName</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../text/Text.html" title="interface in net.minecraft.text">Text</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_133()">method_133</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6261()">method_6261</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCustomName(java.lang.String)">setCustomName</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;customName)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6770()">method_6770</a></span>()</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tick()">tick</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tick()">tick</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toTag(net.minecraft.nbt.CompoundTag)">toTag</a></span>&#8203;(<a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -445,13 +445,13 @@ implements <a href="../../util/Tickable.html" title="interface in net.minecraft.
 <pre>public&nbsp;float field_1434</pre>
 </li>
 </ul>
-<a id="field_1436">
+<a id="customName">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_1436</h4>
-<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> field_1436</pre>
+<h4>customName</h4>
+<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> customName</pre>
 </li>
 </ul>
 </li>
@@ -483,16 +483,16 @@ implements <a href="../../util/Tickable.html" title="interface in net.minecraft.
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="method_1100(net.minecraft.nbt.CompoundTag)">
+<a id="toTag(net.minecraft.nbt.CompoundTag)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1100</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1100&#8203;(<a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</pre>
+<h4>toTag</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;toTag&#8203;(<a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="BlockEntity.html#method_1100(net.minecraft.nbt.CompoundTag)">method_1100</a></code>&nbsp;in class&nbsp;<code><a href="BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></code></dd>
+<dd><code><a href="BlockEntity.html#toTag(net.minecraft.nbt.CompoundTag)">toTag</a></code>&nbsp;in class&nbsp;<code><a href="BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -535,38 +535,38 @@ implements <a href="../../util/Tickable.html" title="interface in net.minecraft.
 </dl>
 </li>
 </ul>
-<a id="method_6770()">
+<a id="hasCustomName()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_6770</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;method_6770()</pre>
+<h4>hasCustomName</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;hasCustomName()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../text/Nameable.html#method_6770()">method_6770</a></code>&nbsp;in interface&nbsp;<code><a href="../../text/Nameable.html" title="interface in net.minecraft.text">Nameable</a></code></dd>
+<dd><code><a href="../../text/Nameable.html#hasCustomName()">hasCustomName</a></code>&nbsp;in interface&nbsp;<code><a href="../../text/Nameable.html" title="interface in net.minecraft.text">Nameable</a></code></dd>
 </dl>
 </li>
 </ul>
-<a id="method_1134(java.lang.String)">
+<a id="setCustomName(java.lang.String)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1134</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1134&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</pre>
+<h4>setCustomName</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setCustomName&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;customName)</pre>
 </li>
 </ul>
-<a id="method_133()">
+<a id="getDisplayName()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_133</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;method_133()</pre>
+<h4>getDisplayName</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;getDisplayName()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../text/Nameable.html#method_133()">method_133</a></code>&nbsp;in interface&nbsp;<code><a href="../../text/Nameable.html" title="interface in net.minecraft.text">Nameable</a></code></dd>
+<dd><code><a href="../../text/Nameable.html#getDisplayName()">getDisplayName</a></code>&nbsp;in interface&nbsp;<code><a href="../../text/Nameable.html" title="interface in net.minecraft.text">Nameable</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -576,11 +576,11 @@ implements <a href="../../util/Tickable.html" title="interface in net.minecraft.
 <ul class="blockList">
 <li class="blockList">
 <h4>createContainer</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../container/Container.html" title="class in net.minecraft.container">Container</a>&nbsp;createContainer&#8203;(<a href="../../entity/player/PlayerInventory.html" title="class in net.minecraft.entity.player">PlayerInventory</a>&nbsp;playerInventory,
-                                 <a href="../../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</pre>
+<pre class="methodSignature">public&nbsp;<a href="../../container/Container.html" title="class in net.minecraft.container">Container</a>&nbsp;createContainer&#8203;(<a href="../../entity/player/PlayerInventory.html" title="class in net.minecraft.entity.player">PlayerInventory</a>&nbsp;inventory,
+                                 <a href="../../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../world/biome/layer/type/ParentedLayer.html#createContainer(net.minecraft.entity.player.PlayerInventory,net.minecraft.entity.player.PlayerEntity)">createContainer</a></code>&nbsp;in interface&nbsp;<code><a href="../../world/biome/layer/type/ParentedLayer.html" title="interface in net.minecraft.world.biome.layer.type">ParentedLayer</a></code></dd>
+<dd><code><a href="../../world/biome/layer/type/NameableContainerProvider.html#createContainer(net.minecraft.entity.player.PlayerInventory,net.minecraft.entity.player.PlayerEntity)">createContainer</a></code>&nbsp;in interface&nbsp;<code><a href="../../world/biome/layer/type/NameableContainerProvider.html" title="interface in net.minecraft.world.biome.layer.type">NameableContainerProvider</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -593,7 +593,7 @@ implements <a href="../../util/Tickable.html" title="interface in net.minecraft.
 <pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getId()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../world/biome/layer/type/ParentedLayer.html#getId()">getId</a></code>&nbsp;in interface&nbsp;<code><a href="../../world/biome/layer/type/ParentedLayer.html" title="interface in net.minecraft.world.biome.layer.type">ParentedLayer</a></code></dd>
+<dd><code><a href="../../world/biome/layer/type/NameableContainerProvider.html#getId()">getId</a></code>&nbsp;in interface&nbsp;<code><a href="../../world/biome/layer/type/NameableContainerProvider.html" title="interface in net.minecraft.world.biome.layer.type">NameableContainerProvider</a></code></dd>
 </dl>
 </li>
 </ul>

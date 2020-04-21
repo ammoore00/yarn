@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":9,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":9,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -160,27 +160,27 @@ implements <a href="../../inventory/Inventory.html" title="interface in net.mine
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>[]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_8314">field_8314</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#armor">armor</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#cursorStack">cursorStack</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dirty">dirty</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>[]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_8315">field_8315</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#main">main</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_8317">field_8317</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_8318">field_8318</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_8319">field_8319</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#player">player</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -206,7 +206,7 @@ implements <a href="../../inventory/Inventory.html" title="interface in net.mine
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.entity.player.PlayerEntity)">PlayerInventory</a></span>&#8203;(<a href="PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.entity.player.PlayerEntity)">PlayerInventory</a></span>&#8203;(<a href="PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -248,89 +248,94 @@ implements <a href="../../inventory/Inventory.html" title="interface in net.mine
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../text/Text.html" title="interface in net.minecraft.text">Text</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDisplayName()">getDisplayName</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getHotbarSize()">getHotbarSize</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getInvMaxStackAmount()">getInvMaxStackAmount</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getInvSize()">getInvSize</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getInvStack(int)">getInvStack</a></span>&#8203;(int&nbsp;slot)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMainHandStack()">getMainHandStack</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasCustomName()">hasCustomName</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isValidInvStack(int,net.minecraft.item.ItemStack)">isValidInvStack</a></span>&#8203;(int&nbsp;slot,
                <a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#markDirty()">markDirty</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="../../text/Text.html" title="interface in net.minecraft.text">Text</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_133()">method_133</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6261()">method_6261</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6740(int)">method_6740</a></span>&#8203;(int&nbsp;int2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6742(int,int)">method_6742</a></span>&#8203;(int&nbsp;int2,
            int&nbsp;int3)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6746()">method_6746</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6747()">method_6747</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6770()">method_6770</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>float</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7946(net.minecraft.block.Block)">method_7946</a></span>&#8203;(<a href="../../block/Block.html" title="class in net.minecraft.block">Block</a>&nbsp;block)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7948(net.minecraft.item.Item)">method_7948</a></span>&#8203;(<a href="../../item/Item.html" title="class in net.minecraft.item">Item</a>&nbsp;item)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>private int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7949(net.minecraft.item.Item,int)">method_7949</a></span>&#8203;(<a href="../../item/Item.html" title="class in net.minecraft.item">Item</a>&nbsp;item,
            int&nbsp;int2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7950(net.minecraft.item.Item,int,int,net.minecraft.nbt.CompoundTag)">method_7950</a></span>&#8203;(<a href="../../item/Item.html" title="class in net.minecraft.item">Item</a>&nbsp;item,
            int&nbsp;int2,
@@ -338,7 +343,7 @@ implements <a href="../../inventory/Inventory.html" title="interface in net.mine
            <a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7951(net.minecraft.item.Item,int,boolean,boolean)">method_7951</a></span>&#8203;(<a href="../../item/Item.html" title="class in net.minecraft.item">Item</a>&nbsp;item,
            int&nbsp;int2,
@@ -346,59 +351,54 @@ implements <a href="../../inventory/Inventory.html" title="interface in net.mine
            boolean&nbsp;bool2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7952(net.minecraft.item.ItemStack)">method_7952</a></span>&#8203;(<a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7953(net.minecraft.block.Block)">method_7953</a></span>&#8203;(<a href="../../block/Block.html" title="class in net.minecraft.block">Block</a>&nbsp;block)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7954(net.minecraft.nbt.ListTag)">method_7954</a></span>&#8203;(<a href="../../nbt/ListTag.html" title="class in net.minecraft.nbt">ListTag</a>&nbsp;listTag)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7955(net.minecraft.entity.player.PlayerInventory)">method_7955</a></span>&#8203;(<a href="PlayerInventory.html" title="class in net.minecraft.entity.player">PlayerInventory</a>&nbsp;playerInventory)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7956(net.minecraft.item.Item)">method_7956</a></span>&#8203;(<a href="../../item/Item.html" title="class in net.minecraft.item">Item</a>&nbsp;item)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>private int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7958(net.minecraft.item.Item)">method_7958</a></span>&#8203;(<a href="../../item/Item.html" title="class in net.minecraft.item">Item</a>&nbsp;item)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7960(int)">method_7960</a></span>&#8203;(int&nbsp;int2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>private int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7961(net.minecraft.item.ItemStack)">method_7961</a></span>&#8203;(<a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code><a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7962(int)">method_7962</a></span>&#8203;(int&nbsp;int2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>private int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7963(net.minecraft.item.ItemStack)">method_7963</a></span>&#8203;(<a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i32" class="altColor">
-<td class="colFirst"><code><a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7964()">method_7964</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i33" class="rowColor">
@@ -482,22 +482,22 @@ implements <a href="../../inventory/Inventory.html" title="interface in net.mine
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="field_8314">
+<a id="main">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_8314</h4>
-<pre>public&nbsp;<a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>[] field_8314</pre>
+<h4>main</h4>
+<pre>public&nbsp;<a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>[] main</pre>
 </li>
 </ul>
-<a id="field_8315">
+<a id="armor">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_8315</h4>
-<pre>public&nbsp;<a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>[] field_8315</pre>
+<h4>armor</h4>
+<pre>public&nbsp;<a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>[] armor</pre>
 </li>
 </ul>
 <a id="selectedSlot">
@@ -509,31 +509,31 @@ implements <a href="../../inventory/Inventory.html" title="interface in net.mine
 <pre>public&nbsp;int selectedSlot</pre>
 </li>
 </ul>
-<a id="field_8317">
+<a id="player">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_8317</h4>
-<pre>public&nbsp;<a href="PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a> field_8317</pre>
+<h4>player</h4>
+<pre>public&nbsp;<a href="PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a> player</pre>
 </li>
 </ul>
-<a id="field_8319">
+<a id="cursorStack">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_8319</h4>
-<pre>private&nbsp;<a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a> field_8319</pre>
+<h4>cursorStack</h4>
+<pre>private&nbsp;<a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a> cursorStack</pre>
 </li>
 </ul>
-<a id="field_8318">
+<a id="dirty">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_8318</h4>
-<pre>public&nbsp;boolean field_8318</pre>
+<h4>dirty</h4>
+<pre>public&nbsp;boolean dirty</pre>
 </li>
 </ul>
 </li>
@@ -552,7 +552,7 @@ implements <a href="../../inventory/Inventory.html" title="interface in net.mine
 <ul class="blockListLast">
 <li class="blockList">
 <h4>PlayerInventory</h4>
-<pre>public&nbsp;PlayerInventory&#8203;(<a href="PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</pre>
+<pre>public&nbsp;PlayerInventory&#8203;(<a href="PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</pre>
 </li>
 </ul>
 </li>
@@ -565,13 +565,13 @@ implements <a href="../../inventory/Inventory.html" title="interface in net.mine
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="method_7964()">
+<a id="getMainHandStack()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_7964</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;method_7964()</pre>
+<h4>getMainHandStack</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;getMainHandStack()</pre>
 </li>
 </ul>
 <a id="getHotbarSize()">
@@ -808,29 +808,29 @@ public&nbsp;void&nbsp;method_7960&#8203;(int&nbsp;int2)</pre>
 </dl>
 </li>
 </ul>
-<a id="method_6770()">
+<a id="hasCustomName()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_6770</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;method_6770()</pre>
+<h4>hasCustomName</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;hasCustomName()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../text/Nameable.html#method_6770()">method_6770</a></code>&nbsp;in interface&nbsp;<code><a href="../../text/Nameable.html" title="interface in net.minecraft.text">Nameable</a></code></dd>
+<dd><code><a href="../../text/Nameable.html#hasCustomName()">hasCustomName</a></code>&nbsp;in interface&nbsp;<code><a href="../../text/Nameable.html" title="interface in net.minecraft.text">Nameable</a></code></dd>
 </dl>
 </li>
 </ul>
-<a id="method_133()">
+<a id="getDisplayName()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_133</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;method_133()</pre>
+<h4>getDisplayName</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;getDisplayName()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../text/Nameable.html#method_133()">method_133</a></code>&nbsp;in interface&nbsp;<code><a href="../../text/Nameable.html" title="interface in net.minecraft.text">Nameable</a></code></dd>
+<dd><code><a href="../../text/Nameable.html#getDisplayName()">getDisplayName</a></code>&nbsp;in interface&nbsp;<code><a href="../../text/Nameable.html" title="interface in net.minecraft.text">Nameable</a></code></dd>
 </dl>
 </li>
 </ul>
