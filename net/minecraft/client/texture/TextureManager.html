@@ -161,7 +161,7 @@ implements <a href="../ClientTickable.html" title="interface in net.minecraft.cl
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_5152">field_5152</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dynamicIdCounter">dynamicIdCounter</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -230,18 +230,17 @@ implements <a href="../ClientTickable.html" title="interface in net.minecraft.cl
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#close(net.minecraft.util.Identifier)">close</a></span>&#8203;(<a href="../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#close(net.minecraft.util.Identifier)">close</a></span>&#8203;(<a href="../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;id)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4269(java.lang.String,net.minecraft.client.texture.NativeImageBackedTexture)">method_4269</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
-           <a href="NativeImageBackedTexture.html" title="class in net.minecraft.client.texture">NativeImageBackedTexture</a>&nbsp;texture)</code></th>
+<td class="colFirst"><code><a href="Texture.html" title="interface in net.minecraft.client.texture">Texture</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTexture(net.minecraft.util.Identifier)">getTexture</a></span>&#8203;(<a href="../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;id)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4271(net.minecraft.util.Identifier,net.minecraft.client.texture.Texture)">method_4271</a></span>&#8203;(<a href="../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#loadTexture(net.minecraft.util.Identifier,net.minecraft.client.texture.Texture)">loadTexture</a></span>&#8203;(<a href="../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier,
            <a href="Texture.html" title="interface in net.minecraft.client.texture">Texture</a>&nbsp;texture)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -252,13 +251,14 @@ implements <a href="../ClientTickable.html" title="interface in net.minecraft.cl
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="Texture.html" title="interface in net.minecraft.client.texture">Texture</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4273(net.minecraft.util.Identifier)">method_4273</a></span>&#8203;(<a href="../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier)</code></th>
+<td class="colFirst"><code><a href="../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registerDynamicTexture(java.lang.String,net.minecraft.client.texture.NativeImageBackedTexture)">registerDynamicTexture</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;prefix,
+                      <a href="NativeImageBackedTexture.html" title="class in net.minecraft.client.texture">NativeImageBackedTexture</a>&nbsp;texture)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4366(net.minecraft.resource.ResourceManager)">method_4366</a></span>&#8203;(<a href="../../resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#reload(net.minecraft.resource.ResourceManager)">reload</a></span>&#8203;(<a href="../../resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
@@ -317,13 +317,13 @@ implements <a href="../ClientTickable.html" title="interface in net.minecraft.cl
 <pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../ClientTickable.html" title="interface in net.minecraft.client">ClientTickable</a>&gt; tickables</pre>
 </li>
 </ul>
-<a id="field_5152">
+<a id="dynamicIdCounter">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_5152</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&gt; field_5152</pre>
+<h4>dynamicIdCounter</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&gt; dynamicIdCounter</pre>
 </li>
 </ul>
 <a id="resourceManager">
@@ -383,33 +383,33 @@ implements <a href="../ClientTickable.html" title="interface in net.minecraft.cl
                            <a href="TickableTexture.html" title="interface in net.minecraft.client.texture">TickableTexture</a>&nbsp;tickableTexture)</pre>
 </li>
 </ul>
-<a id="method_4271(net.minecraft.util.Identifier,net.minecraft.client.texture.Texture)">
+<a id="loadTexture(net.minecraft.util.Identifier,net.minecraft.client.texture.Texture)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_4271</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;method_4271&#8203;(<a href="../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier,
+<h4>loadTexture</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;loadTexture&#8203;(<a href="../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier,
                            <a href="Texture.html" title="interface in net.minecraft.client.texture">Texture</a>&nbsp;texture)</pre>
 </li>
 </ul>
-<a id="method_4273(net.minecraft.util.Identifier)">
+<a id="getTexture(net.minecraft.util.Identifier)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_4273</h4>
-<pre class="methodSignature">public&nbsp;<a href="Texture.html" title="interface in net.minecraft.client.texture">Texture</a>&nbsp;method_4273&#8203;(<a href="../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier)</pre>
+<h4>getTexture</h4>
+<pre class="methodSignature">public&nbsp;<a href="Texture.html" title="interface in net.minecraft.client.texture">Texture</a>&nbsp;getTexture&#8203;(<a href="../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;id)</pre>
 </li>
 </ul>
-<a id="method_4269(java.lang.String,net.minecraft.client.texture.NativeImageBackedTexture)">
+<a id="registerDynamicTexture(java.lang.String,net.minecraft.client.texture.NativeImageBackedTexture)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_4269</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;method_4269&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
-                              <a href="NativeImageBackedTexture.html" title="class in net.minecraft.client.texture">NativeImageBackedTexture</a>&nbsp;texture)</pre>
+<h4>registerDynamicTexture</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;registerDynamicTexture&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;prefix,
+                                         <a href="NativeImageBackedTexture.html" title="class in net.minecraft.client.texture">NativeImageBackedTexture</a>&nbsp;texture)</pre>
 </li>
 </ul>
 <a id="tick()">
@@ -431,19 +431,19 @@ implements <a href="../ClientTickable.html" title="interface in net.minecraft.cl
 <ul class="blockList">
 <li class="blockList">
 <h4>close</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;close&#8203;(<a href="../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;close&#8203;(<a href="../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;id)</pre>
 </li>
 </ul>
-<a id="method_4366(net.minecraft.resource.ResourceManager)">
+<a id="reload(net.minecraft.resource.ResourceManager)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_4366</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_4366&#8203;(<a href="../../resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager)</pre>
+<h4>reload</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;reload&#8203;(<a href="../../resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../resource/ResourceReloadListener.html#method_4366(net.minecraft.resource.ResourceManager)">method_4366</a></code>&nbsp;in interface&nbsp;<code><a href="../../resource/ResourceReloadListener.html" title="interface in net.minecraft.resource">ResourceReloadListener</a></code></dd>
+<dd><code><a href="../../resource/ResourceReloadListener.html#reload(net.minecraft.resource.ResourceManager)">reload</a></code>&nbsp;in interface&nbsp;<code><a href="../../resource/ResourceReloadListener.html" title="interface in net.minecraft.resource">ResourceReloadListener</a></code></dd>
 </dl>
 </li>
 </ul>

@@ -155,28 +155,28 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static <a href="NativeImageBackedTexture.html" title="class in net.minecraft.client.texture">NativeImageBackedTexture</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_5156">field_5156</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>static int[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_5157">field_5157</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private static <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/IntBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">IntBuffer</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_5159">field_5159</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private static int[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_5160">field_5160</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j" class="externalLink">Logger</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#LOGGER">LOGGER</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="NativeImageBackedTexture.html" title="class in net.minecraft.client.texture">NativeImageBackedTexture</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#MISSINGNO">MISSINGNO</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -219,13 +219,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4280()">method_4280</a></span>()</code></th>
+<td class="colFirst"><code>(package private) static void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#bindTexture(int)">bindTexture</a></span>&#8203;(int&nbsp;int2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4281(int)">method_4281</a></span>&#8203;(int&nbsp;int2)</code></th>
+<td class="colFirst"><code>static int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTexLevelParameter()">getTexLevelParameter</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
@@ -374,25 +374,25 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i21" class="rowColor">
-<td class="colFirst"><code>(package private) static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4301(int)">method_4301</a></span>&#8203;(int&nbsp;int2)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i22" class="altColor">
 <td class="colFirst"><code>private static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4302(boolean)">method_4302</a></span>&#8203;(boolean&nbsp;bool)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>private static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4303(int%5B%5D,int,int)">method_4303</a></span>&#8203;(int[]&nbsp;int2,
            int&nbsp;int3,
            int&nbsp;int4)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>static int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4304(int)">method_4304</a></span>&#8203;(int&nbsp;int2)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i24" class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#releaseTextureId(int)">releaseTextureId</a></span>&#8203;(int&nbsp;id)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -437,13 +437,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>private static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/IntBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">IntBuffer</a> field_5159</pre>
 </li>
 </ul>
-<a id="field_5156">
+<a id="MISSINGNO">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_5156</h4>
-<pre>public static final&nbsp;<a href="NativeImageBackedTexture.html" title="class in net.minecraft.client.texture">NativeImageBackedTexture</a> field_5156</pre>
+<h4>MISSINGNO</h4>
+<pre>public static final&nbsp;<a href="NativeImageBackedTexture.html" title="class in net.minecraft.client.texture">NativeImageBackedTexture</a> MISSINGNO</pre>
 </li>
 </ul>
 <a id="field_5157">
@@ -493,22 +493,22 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="method_4280()">
+<a id="getTexLevelParameter()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_4280</h4>
-<pre class="methodSignature">public static&nbsp;int&nbsp;method_4280()</pre>
+<h4>getTexLevelParameter</h4>
+<pre class="methodSignature">public static&nbsp;int&nbsp;getTexLevelParameter()</pre>
 </li>
 </ul>
-<a id="method_4281(int)">
+<a id="releaseTextureId(int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_4281</h4>
-<pre class="methodSignature">public static&nbsp;void&nbsp;method_4281&#8203;(int&nbsp;int2)</pre>
+<h4>releaseTextureId</h4>
+<pre class="methodSignature">public static&nbsp;void&nbsp;releaseTextureId&#8203;(int&nbsp;id)</pre>
 </li>
 </ul>
 <a id="method_4287(int,java.awt.image.BufferedImage)">
@@ -713,13 +713,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
                                 int&nbsp;int4)</pre>
 </li>
 </ul>
-<a id="method_4301(int)">
+<a id="bindTexture(int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_4301</h4>
-<pre class="methodSignature">static&nbsp;void&nbsp;method_4301&#8203;(int&nbsp;int2)</pre>
+<h4>bindTexture</h4>
+<pre class="methodSignature">static&nbsp;void&nbsp;bindTexture&#8203;(int&nbsp;int2)</pre>
 </li>
 </ul>
 <a id="method_4292(net.minecraft.resource.ResourceManager,net.minecraft.util.Identifier)">

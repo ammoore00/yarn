@@ -156,7 +156,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private <a href="../MinecraftClient.html" title="class in net.minecraft.client">MinecraftClient</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_4043">field_4043</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#client">client</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -187,7 +187,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.client.MinecraftClient)">ServerList</a></span>&#8203;(<a href="../MinecraftClient.html" title="class in net.minecraft.client">MinecraftClient</a>&nbsp;minecraftClient)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.client.MinecraftClient)">ServerList</a></span>&#8203;(<a href="../MinecraftClient.html" title="class in net.minecraft.client">MinecraftClient</a>&nbsp;client)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -210,12 +210,12 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#add(net.minecraft.client.network.ServerInfo)">add</a></span>&#8203;(<a href="../network/ServerInfo.html" title="class in net.minecraft.client.network">ServerInfo</a>&nbsp;serverInfo)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#add(net.minecraft.client.network.ServerInfo)">add</a></span>&#8203;(<a href="../network/ServerInfo.html" title="class in net.minecraft.client.network">ServerInfo</a>&nbsp;info)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../network/ServerInfo.html" title="class in net.minecraft.client.network">ServerInfo</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#get(int)">get</a></span>&#8203;(int&nbsp;int2)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#get(int)">get</a></span>&#8203;(int&nbsp;index)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
@@ -225,7 +225,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_3218(int)">method_3218</a></span>&#8203;(int&nbsp;int2)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#remove(int)">remove</a></span>&#8203;(int&nbsp;index)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
@@ -236,7 +236,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#set(int,net.minecraft.client.network.ServerInfo)">set</a></span>&#8203;(int&nbsp;index,
-   <a href="../network/ServerInfo.html" title="class in net.minecraft.client.network">ServerInfo</a>&nbsp;serverInfo)</code></th>
+   <a href="../network/ServerInfo.html" title="class in net.minecraft.client.network">ServerInfo</a>&nbsp;info)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
@@ -247,7 +247,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#swapEntries(int,int)">swapEntries</a></span>&#8203;(int&nbsp;index1,
-           int&nbsp;int2)</code></th>
+           int&nbsp;index2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
@@ -288,13 +288,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j" class="externalLink">Logger</a> LOGGER</pre>
 </li>
 </ul>
-<a id="field_4043">
+<a id="client">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_4043</h4>
-<pre>private final&nbsp;<a href="../MinecraftClient.html" title="class in net.minecraft.client">MinecraftClient</a> field_4043</pre>
+<h4>client</h4>
+<pre>private final&nbsp;<a href="../MinecraftClient.html" title="class in net.minecraft.client">MinecraftClient</a> client</pre>
 </li>
 </ul>
 <a id="servers">
@@ -322,7 +322,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ServerList</h4>
-<pre>public&nbsp;ServerList&#8203;(<a href="../MinecraftClient.html" title="class in net.minecraft.client">MinecraftClient</a>&nbsp;minecraftClient)</pre>
+<pre>public&nbsp;ServerList&#8203;(<a href="../MinecraftClient.html" title="class in net.minecraft.client">MinecraftClient</a>&nbsp;client)</pre>
 </li>
 </ul>
 </li>
@@ -359,16 +359,16 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>get</h4>
-<pre class="methodSignature">public&nbsp;<a href="../network/ServerInfo.html" title="class in net.minecraft.client.network">ServerInfo</a>&nbsp;get&#8203;(int&nbsp;int2)</pre>
+<pre class="methodSignature">public&nbsp;<a href="../network/ServerInfo.html" title="class in net.minecraft.client.network">ServerInfo</a>&nbsp;get&#8203;(int&nbsp;index)</pre>
 </li>
 </ul>
-<a id="method_3218(int)">
+<a id="remove(int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_3218</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_3218&#8203;(int&nbsp;int2)</pre>
+<h4>remove</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;remove&#8203;(int&nbsp;index)</pre>
 </li>
 </ul>
 <a id="add(net.minecraft.client.network.ServerInfo)">
@@ -377,7 +377,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>add</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;add&#8203;(<a href="../network/ServerInfo.html" title="class in net.minecraft.client.network">ServerInfo</a>&nbsp;serverInfo)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;add&#8203;(<a href="../network/ServerInfo.html" title="class in net.minecraft.client.network">ServerInfo</a>&nbsp;info)</pre>
 </li>
 </ul>
 <a id="size()">
@@ -396,7 +396,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>swapEntries</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;swapEntries&#8203;(int&nbsp;index1,
-                        int&nbsp;int2)</pre>
+                        int&nbsp;index2)</pre>
 </li>
 </ul>
 <a id="set(int,net.minecraft.client.network.ServerInfo)">
@@ -406,7 +406,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>set</h4>
 <pre class="methodSignature">public&nbsp;void&nbsp;set&#8203;(int&nbsp;index,
-                <a href="../network/ServerInfo.html" title="class in net.minecraft.client.network">ServerInfo</a>&nbsp;serverInfo)</pre>
+                <a href="../network/ServerInfo.html" title="class in net.minecraft.client.network">ServerInfo</a>&nbsp;info)</pre>
 </li>
 </ul>
 <a id="updateServerListEntry(net.minecraft.client.network.ServerInfo)">

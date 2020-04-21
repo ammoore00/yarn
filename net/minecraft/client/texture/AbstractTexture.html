@@ -169,18 +169,18 @@ implements <a href="Texture.html" title="interface in net.minecraft.client.textu
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_5070">field_5070</a></span></code></th>
+<td class="colFirst"><code>protected int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#glId">glId</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_5071">field_5071</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#lastBilinear">lastBilinear</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#glId">glId</a></span></code></th>
+<td class="colFirst"><code>protected boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#lastMipnmap">lastMipnmap</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -239,19 +239,19 @@ implements <a href="Texture.html" title="interface in net.minecraft.client.textu
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4193(boolean,boolean)">method_4193</a></span>&#8203;(boolean&nbsp;bool,
-           boolean&nbsp;bool2)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#pop()">pop</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4276()">method_4276</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#pushFilter(boolean,boolean)">pushFilter</a></span>&#8203;(boolean&nbsp;bilinear,
+          boolean&nbsp;mipmap)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setFilter(boolean,boolean)">setFilter</a></span>&#8203;(boolean&nbsp;bilinear,
-         boolean&nbsp;mipmap)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setFilter(boolean,boolean)">setFilter</a></span>&#8203;(boolean&nbsp;bool,
+         boolean&nbsp;bool2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -312,22 +312,22 @@ implements <a href="Texture.html" title="interface in net.minecraft.client.textu
 <pre>protected&nbsp;boolean mipmap</pre>
 </li>
 </ul>
-<a id="field_5070">
+<a id="lastBilinear">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_5070</h4>
-<pre>protected&nbsp;boolean field_5070</pre>
+<h4>lastBilinear</h4>
+<pre>protected&nbsp;boolean lastBilinear</pre>
 </li>
 </ul>
-<a id="field_5071">
+<a id="lastMipnmap">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_5071</h4>
-<pre>protected&nbsp;boolean field_5071</pre>
+<h4>lastMipnmap</h4>
+<pre>protected&nbsp;boolean lastMipnmap</pre>
 </li>
 </ul>
 </li>
@@ -359,40 +359,40 @@ implements <a href="Texture.html" title="interface in net.minecraft.client.textu
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="method_4193(boolean,boolean)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_4193</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_4193&#8203;(boolean&nbsp;bool,
-                        boolean&nbsp;bool2)</pre>
-</li>
-</ul>
 <a id="setFilter(boolean,boolean)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setFilter</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setFilter&#8203;(boolean&nbsp;bilinear,
-                      boolean&nbsp;mipmap)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Texture.html#setFilter(boolean,boolean)">setFilter</a></code>&nbsp;in interface&nbsp;<code><a href="Texture.html" title="interface in net.minecraft.client.texture">Texture</a></code></dd>
-</dl>
+<pre class="methodSignature">public&nbsp;void&nbsp;setFilter&#8203;(boolean&nbsp;bool,
+                      boolean&nbsp;bool2)</pre>
 </li>
 </ul>
-<a id="method_4276()">
+<a id="pushFilter(boolean,boolean)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_4276</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_4276()</pre>
+<h4>pushFilter</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;pushFilter&#8203;(boolean&nbsp;bilinear,
+                       boolean&nbsp;mipmap)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Texture.html#method_4276()">method_4276</a></code>&nbsp;in interface&nbsp;<code><a href="Texture.html" title="interface in net.minecraft.client.texture">Texture</a></code></dd>
+<dd><code><a href="Texture.html#pushFilter(boolean,boolean)">pushFilter</a></code>&nbsp;in interface&nbsp;<code><a href="Texture.html" title="interface in net.minecraft.client.texture">Texture</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="pop()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>pop</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;pop()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="Texture.html#pop()">pop</a></code>&nbsp;in interface&nbsp;<code><a href="Texture.html" title="interface in net.minecraft.client.texture">Texture</a></code></dd>
 </dl>
 </li>
 </ul>

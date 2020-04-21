@@ -136,7 +136,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="../../class_1330.html" title="class in net.minecraft">class_1330</a></code>, <code><a href="../../class_1382.html" title="class in net.minecraft">class_1382</a></code>, <code><a href="SimpleRegistry.html" title="class in net.minecraft.util.registry">SimpleRegistry</a></code></dd>
+<dd><code><a href="../../class_1382.html" title="class in net.minecraft">class_1382</a></code>, <code><a href="SimpleRegistry.html" title="class in net.minecraft.util.registry">SimpleRegistry</a></code>, <code><a href="../../client/sound/SoundRegistry.html" title="class in net.minecraft.client.sound">SoundRegistry</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">MutableRegistry&lt;K,&#8203;V&gt;</span>
@@ -164,12 +164,12 @@ implements <a href="Registry.html" title="interface in net.minecraft.util.regist
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j" class="externalLink">Logger</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_5893">field_5893</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#LOGGER">LOGGER</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="MutableRegistry.html" title="type parameter in MutableRegistry">K</a>,&#8203;<a href="MutableRegistry.html" title="type parameter in MutableRegistry">V</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_5894">field_5894</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#map">map</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -212,34 +212,34 @@ implements <a href="Registry.html" title="interface in net.minecraft.util.regist
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#containsKey(K)">containsKey</a></span>&#8203;(<a href="MutableRegistry.html" title="type parameter in MutableRegistry">K</a>&nbsp;key)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="MutableRegistry.html" title="type parameter in MutableRegistry">K</a>,&#8203;<a href="MutableRegistry.html" title="type parameter in MutableRegistry">V</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createMap()">createMap</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="MutableRegistry.html" title="type parameter in MutableRegistry">V</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#get(K)">get</a></span>&#8203;(<a href="MutableRegistry.html" title="type parameter in MutableRegistry">K</a>&nbsp;key)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getObject(K)">getObject</a></span>&#8203;(<a href="MutableRegistry.html" title="type parameter in MutableRegistry">K</a>&nbsp;object)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util" class="externalLink">Iterator</a>&lt;<a href="MutableRegistry.html" title="type parameter in MutableRegistry">V</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#iterator()">iterator</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4965(K,V)">method_4965</a></span>&#8203;(<a href="MutableRegistry.html" title="type parameter in MutableRegistry">K</a>&nbsp;k,
-           <a href="MutableRegistry.html" title="type parameter in MutableRegistry">V</a>&nbsp;v)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="MutableRegistry.html" title="type parameter in MutableRegistry">K</a>,&#8203;<a href="MutableRegistry.html" title="type parameter in MutableRegistry">V</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4970()">method_4970</a></span>()</code></th>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="MutableRegistry.html" title="type parameter in MutableRegistry">K</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#keySet()">keySet</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="MutableRegistry.html" title="type parameter in MutableRegistry">K</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4971()">method_4971</a></span>()</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#put(K,V)">put</a></span>&#8203;(<a href="MutableRegistry.html" title="type parameter in MutableRegistry">K</a>&nbsp;key,
+   <a href="MutableRegistry.html" title="type parameter in MutableRegistry">V</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -273,22 +273,22 @@ implements <a href="Registry.html" title="interface in net.minecraft.util.regist
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="field_5893">
+<a id="LOGGER">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_5893</h4>
-<pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j" class="externalLink">Logger</a> field_5893</pre>
+<h4>LOGGER</h4>
+<pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j" class="externalLink">Logger</a> LOGGER</pre>
 </li>
 </ul>
-<a id="field_5894">
+<a id="map">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_5894</h4>
-<pre>protected final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="MutableRegistry.html" title="type parameter in MutableRegistry">K</a>,&#8203;<a href="MutableRegistry.html" title="type parameter in MutableRegistry">V</a>&gt; field_5894</pre>
+<h4>map</h4>
+<pre>protected final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="MutableRegistry.html" title="type parameter in MutableRegistry">K</a>,&#8203;<a href="MutableRegistry.html" title="type parameter in MutableRegistry">V</a>&gt; map</pre>
 </li>
 </ul>
 </li>
@@ -320,13 +320,13 @@ implements <a href="Registry.html" title="interface in net.minecraft.util.regist
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="method_4970()">
+<a id="createMap()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_4970</h4>
-<pre class="methodSignature">protected&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="MutableRegistry.html" title="type parameter in MutableRegistry">K</a>,&#8203;<a href="MutableRegistry.html" title="type parameter in MutableRegistry">V</a>&gt;&nbsp;method_4970()</pre>
+<h4>createMap</h4>
+<pre class="methodSignature">protected&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="MutableRegistry.html" title="type parameter in MutableRegistry">K</a>,&#8203;<a href="MutableRegistry.html" title="type parameter in MutableRegistry">V</a>&gt;&nbsp;createMap()</pre>
 </li>
 </ul>
 <a id="get(java.lang.Object)">
@@ -344,40 +344,40 @@ implements <a href="Registry.html" title="interface in net.minecraft.util.regist
 </dl>
 </li>
 </ul>
-<a id="method_4965(java.lang.Object,java.lang.Object)">
+<a id="put(java.lang.Object,java.lang.Object)">
 <!--   -->
-</a><a id="method_4965(K,V)">
+</a><a id="put(K,V)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_4965</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_4965&#8203;(<a href="MutableRegistry.html" title="type parameter in MutableRegistry">K</a>&nbsp;k,
-                        <a href="MutableRegistry.html" title="type parameter in MutableRegistry">V</a>&nbsp;v)</pre>
+<h4>put</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;put&#8203;(<a href="MutableRegistry.html" title="type parameter in MutableRegistry">K</a>&nbsp;key,
+                <a href="MutableRegistry.html" title="type parameter in MutableRegistry">V</a>&nbsp;value)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Registry.html#method_4965(K,V)">method_4965</a></code>&nbsp;in interface&nbsp;<code><a href="Registry.html" title="interface in net.minecraft.util.registry">Registry</a>&lt;<a href="MutableRegistry.html" title="type parameter in MutableRegistry">K</a>,&#8203;<a href="MutableRegistry.html" title="type parameter in MutableRegistry">V</a>&gt;</code></dd>
+<dd><code><a href="Registry.html#put(K,V)">put</a></code>&nbsp;in interface&nbsp;<code><a href="Registry.html" title="interface in net.minecraft.util.registry">Registry</a>&lt;<a href="MutableRegistry.html" title="type parameter in MutableRegistry">K</a>,&#8203;<a href="MutableRegistry.html" title="type parameter in MutableRegistry">V</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
-<a id="method_4971()">
+<a id="keySet()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_4971</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="MutableRegistry.html" title="type parameter in MutableRegistry">K</a>&gt;&nbsp;method_4971()</pre>
+<h4>keySet</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="MutableRegistry.html" title="type parameter in MutableRegistry">K</a>&gt;&nbsp;keySet()</pre>
 </li>
 </ul>
-<a id="getObject(java.lang.Object)">
+<a id="containsKey(java.lang.Object)">
 <!--   -->
-</a><a id="getObject(K)">
+</a><a id="containsKey(K)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getObject</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;getObject&#8203;(<a href="MutableRegistry.html" title="type parameter in MutableRegistry">K</a>&nbsp;object)</pre>
+<h4>containsKey</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;containsKey&#8203;(<a href="MutableRegistry.html" title="type parameter in MutableRegistry">K</a>&nbsp;key)</pre>
 </li>
 </ul>
 <a id="iterator()">
