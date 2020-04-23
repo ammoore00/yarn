@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":6,"i1":10,"i2":10,"i3":6,"i4":10};
+var data = {"i0":6,"i1":10,"i2":10,"i3":10,"i4":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -132,7 +132,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="../class_1844.html" title="class in net.minecraft">class_1844</a></code>, <code><a href="../class_559.html" title="class in net.minecraft">class_559</a></code>, <code><a href="../item/map/MapState.html" title="class in net.minecraft.item.map">MapState</a></code>, <code><a href="../scoreboard/ScoreboardState.html" title="class in net.minecraft.scoreboard">ScoreboardState</a></code></dd>
+<dd><code><a href="../class_559.html" title="class in net.minecraft">class_559</a></code>, <code><a href="../item/map/MapState.html" title="class in net.minecraft.item.map">MapState</a></code>, <code><a href="../scoreboard/ScoreboardState.html" title="class in net.minecraft.scoreboard">ScoreboardState</a></code>, <code><a href="../village/VillageState.html" title="class in net.minecraft.village">VillageState</a></code></dd>
 </dl>
 <hr>
 <pre>public abstract class <span class="typeNameLabel">PersistentState</span>
@@ -185,7 +185,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String)">PersistentState</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String)">PersistentState</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;id)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -222,13 +222,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>abstract void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1891(net.minecraft.nbt.CompoundTag)">method_1891</a></span>&#8203;(<a href="../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDirty(boolean)">setDirty</a></span>&#8203;(boolean&nbsp;dirty)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDirty(boolean)">setDirty</a></span>&#8203;(boolean&nbsp;dirty)</code></th>
+<td class="colFirst"><code>abstract void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toTag(net.minecraft.nbt.CompoundTag)">toTag</a></span>&#8203;(<a href="../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -289,7 +289,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockListLast">
 <li class="blockList">
 <h4>PersistentState</h4>
-<pre>public&nbsp;PersistentState&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</pre>
+<pre>public&nbsp;PersistentState&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;id)</pre>
 </li>
 </ul>
 </li>
@@ -311,13 +311,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre class="methodSignature">public abstract&nbsp;void&nbsp;fromTag&#8203;(<a href="../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</pre>
 </li>
 </ul>
-<a id="method_1891(net.minecraft.nbt.CompoundTag)">
+<a id="toTag(net.minecraft.nbt.CompoundTag)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1891</h4>
-<pre class="methodSignature">public abstract&nbsp;void&nbsp;method_1891&#8203;(<a href="../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</pre>
+<h4>toTag</h4>
+<pre class="methodSignature">public abstract&nbsp;void&nbsp;toTag&#8203;(<a href="../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</pre>
 </li>
 </ul>
 <a id="markDirty()">

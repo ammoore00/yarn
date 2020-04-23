@@ -206,8 +206,8 @@ implements <a href="world/WorldView.html" title="interface in net.minecraft.worl
 </tr>
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.util.math.BlockPos,int)">class_110</a></span>&#8203;(<a href="world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-         <a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
-         <a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos2,
+         <a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;startPos,
+         <a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;endPos,
          int&nbsp;int2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -231,17 +231,17 @@ implements <a href="world/WorldView.html" title="interface in net.minecraft.worl
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="world/biome/Biome.html" title="class in net.minecraft.world.biome">Biome</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBiomeAt(net.minecraft.util.math.BlockPos)">getBiomeAt</a></span>&#8203;(<a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBiomeAt(net.minecraft.util.math.BlockPos)">getBiomeAt</a></span>&#8203;(<a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBlockEntity(net.minecraft.util.math.BlockPos)">getBlockEntity</a></span>&#8203;(<a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBlockEntity(net.minecraft.util.math.BlockPos)">getBlockEntity</a></span>&#8203;(<a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="block/BlockState.html" title="interface in net.minecraft.block">BlockState</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBlockState(net.minecraft.util.math.BlockPos)">getBlockState</a></span>&#8203;(<a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBlockState(net.minecraft.util.math.BlockPos)">getBlockState</a></span>&#8203;(<a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -250,25 +250,25 @@ implements <a href="world/WorldView.html" title="interface in net.minecraft.worl
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isAir(net.minecraft.util.math.BlockPos)">isAir</a></span>&#8203;(<a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</code></th>
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLight(net.minecraft.util.math.BlockPos,int)">getLight</a></span>&#8203;(<a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+        int&nbsp;minBlockLight)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_478()">method_478</a></span>()</code></th>
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getStrongRedstonePower(net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction)">getStrongRedstonePower</a></span>&#8203;(<a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+                      <a href="util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_479(net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction)">method_479</a></span>&#8203;(<a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
-          <a href="util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction)</code></th>
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isAir(net.minecraft.util.math.BlockPos)">isAir</a></span>&#8203;(<a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_481(net.minecraft.util.math.BlockPos,int)">method_481</a></span>&#8203;(<a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
-          int&nbsp;int2)</code></th>
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_478()">method_478</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
@@ -369,8 +369,8 @@ implements <a href="world/WorldView.html" title="interface in net.minecraft.worl
 <li class="blockList">
 <h4>class_110</h4>
 <pre>public&nbsp;class_110&#8203;(<a href="world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-                 <a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
-                 <a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos2,
+                 <a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;startPos,
+                 <a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;endPos,
                  int&nbsp;int2)</pre>
 </li>
 </ul>
@@ -404,25 +404,25 @@ public&nbsp;boolean&nbsp;method_478()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getBlockEntity</h4>
-<pre class="methodSignature">public&nbsp;<a href="block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a>&nbsp;getBlockEntity&#8203;(<a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</pre>
+<pre class="methodSignature">public&nbsp;<a href="block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a>&nbsp;getBlockEntity&#8203;(<a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="world/WorldView.html#getBlockEntity(net.minecraft.util.math.BlockPos)">getBlockEntity</a></code>&nbsp;in interface&nbsp;<code><a href="world/WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
 </dl>
 </li>
 </ul>
-<a id="method_481(net.minecraft.util.math.BlockPos,int)">
+<a id="getLight(net.minecraft.util.math.BlockPos,int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_481</h4>
+<h4>getLight</h4>
 <pre class="methodSignature">@Environment(CLIENT)
-public&nbsp;int&nbsp;method_481&#8203;(<a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
-                      int&nbsp;int2)</pre>
+public&nbsp;int&nbsp;getLight&#8203;(<a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+                    int&nbsp;minBlockLight)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="world/WorldView.html#method_481(net.minecraft.util.math.BlockPos,int)">method_481</a></code>&nbsp;in interface&nbsp;<code><a href="world/WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
+<dd><code><a href="world/WorldView.html#getLight(net.minecraft.util.math.BlockPos,int)">getLight</a></code>&nbsp;in interface&nbsp;<code><a href="world/WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -432,7 +432,7 @@ public&nbsp;int&nbsp;method_481&#8203;(<a href="util/math/BlockPos.html" title="
 <ul class="blockList">
 <li class="blockList">
 <h4>getBlockState</h4>
-<pre class="methodSignature">public&nbsp;<a href="block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;getBlockState&#8203;(<a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</pre>
+<pre class="methodSignature">public&nbsp;<a href="block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;getBlockState&#8203;(<a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="world/WorldView.html#getBlockState(net.minecraft.util.math.BlockPos)">getBlockState</a></code>&nbsp;in interface&nbsp;<code><a href="world/WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
@@ -446,7 +446,7 @@ public&nbsp;int&nbsp;method_481&#8203;(<a href="util/math/BlockPos.html" title="
 <li class="blockList">
 <h4>getBiomeAt</h4>
 <pre class="methodSignature">@Environment(CLIENT)
-public&nbsp;<a href="world/biome/Biome.html" title="class in net.minecraft.world.biome">Biome</a>&nbsp;getBiomeAt&#8203;(<a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</pre>
+public&nbsp;<a href="world/biome/Biome.html" title="class in net.minecraft.world.biome">Biome</a>&nbsp;getBiomeAt&#8203;(<a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="world/WorldView.html#getBiomeAt(net.minecraft.util.math.BlockPos)">getBiomeAt</a></code>&nbsp;in interface&nbsp;<code><a href="world/WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
@@ -470,7 +470,7 @@ private&nbsp;int&nbsp;method_506&#8203;(<a href="world/LightType.html" title="en
 <ul class="blockList">
 <li class="blockList">
 <h4>isAir</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;isAir&#8203;(<a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isAir&#8203;(<a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="world/WorldView.html#isAir(net.minecraft.util.math.BlockPos)">isAir</a></code>&nbsp;in interface&nbsp;<code><a href="world/WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
@@ -488,17 +488,17 @@ public&nbsp;int&nbsp;method_507&#8203;(<a href="world/LightType.html" title="enu
                       <a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</pre>
 </li>
 </ul>
-<a id="method_479(net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction)">
+<a id="getStrongRedstonePower(net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_479</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;method_479&#8203;(<a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
-                      <a href="util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction)</pre>
+<h4>getStrongRedstonePower</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;getStrongRedstonePower&#8203;(<a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+                                  <a href="util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="world/WorldView.html#method_479(net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction)">method_479</a></code>&nbsp;in interface&nbsp;<code><a href="world/WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
+<dd><code><a href="world/WorldView.html#getStrongRedstonePower(net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction)">getStrongRedstonePower</a></code>&nbsp;in interface&nbsp;<code><a href="world/WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
 </dl>
 </li>
 </ul>

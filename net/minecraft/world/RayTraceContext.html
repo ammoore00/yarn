@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":9,"i2":10,"i3":10};
+var data = {"i0":9,"i1":10,"i2":10,"i3":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -154,33 +154,33 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="World.html" title="class in net.minecraft.world">World</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1510">field_1510</a></span></code></th>
+<td class="colFirst"><code>private <a href="../block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#blockEntity">blockEntity</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1511">field_1511</a></span></code></th>
+<td class="colFirst"><code>private boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gotBlockEntity">gotBlockEntity</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1512">field_1512</a></span></code></th>
+<td class="colFirst"><code>private <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#pos">pos</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private <a href="../block/BlockState.html" title="interface in net.minecraft.block">BlockState</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1513">field_1513</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#state">state</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1514">field_1514</a></span></code></th>
+<td class="colFirst"><code>private boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stateRequired">stateRequired</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1515">field_1515</a></span></code></th>
+<td class="colFirst"><code>private <a href="World.html" title="class in net.minecraft.world">World</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#world">world</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -202,8 +202,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.world.World,net.minecraft.util.math.BlockPos,boolean)">RayTraceContext</a></span>&#8203;(<a href="World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-               <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
-               boolean&nbsp;bool)</code></th>
+               <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+               boolean&nbsp;stateRequired)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -225,23 +225,23 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../block/BlockState.html" title="interface in net.minecraft.block">BlockState</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1237()">method_1237</a></span>()</code></th>
+<td class="colFirst"><code>static <a href="https://guava.dev/releases/21.0/api/docs/com/google/common/base/Predicate.html?is-external=true" title="class or interface in com.google.common.base" class="externalLink">Predicate</a>&lt;<a href="RayTraceContext.html" title="class in net.minecraft.world">RayTraceContext</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#filterByState(com.google.common.base.Predicate)">filterByState</a></span>&#8203;(<a href="https://guava.dev/releases/21.0/api/docs/com/google/common/base/Predicate.html?is-external=true" title="class or interface in com.google.common.base" class="externalLink">Predicate</a>&lt;<a href="../block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&gt;&nbsp;stateFilter)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>static <a href="https://guava.dev/releases/21.0/api/docs/com/google/common/base/Predicate.html?is-external=true" title="class or interface in com.google.common.base" class="externalLink">Predicate</a>&lt;<a href="RayTraceContext.html" title="class in net.minecraft.world">RayTraceContext</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1238(com.google.common.base.Predicate)">method_1238</a></span>&#8203;(<a href="https://guava.dev/releases/21.0/api/docs/com/google/common/base/Predicate.html?is-external=true" title="class or interface in com.google.common.base" class="externalLink">Predicate</a>&lt;<a href="../block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&gt;&nbsp;predicate)</code></th>
+<td class="colFirst"><code><a href="../block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBlockEntity()">getBlockEntity</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1239()">method_1239</a></span>()</code></th>
+<td class="colFirst"><code><a href="../block/BlockState.html" title="interface in net.minecraft.block">BlockState</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBlockState()">getBlockState</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1240()">method_1240</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPos()">getPos</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -268,58 +268,58 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="field_1510">
+<a id="world">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_1510</h4>
-<pre>private final&nbsp;<a href="World.html" title="class in net.minecraft.world">World</a> field_1510</pre>
+<h4>world</h4>
+<pre>private final&nbsp;<a href="World.html" title="class in net.minecraft.world">World</a> world</pre>
 </li>
 </ul>
-<a id="field_1511">
+<a id="pos">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_1511</h4>
-<pre>private final&nbsp;<a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a> field_1511</pre>
+<h4>pos</h4>
+<pre>private final&nbsp;<a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a> pos</pre>
 </li>
 </ul>
-<a id="field_1512">
+<a id="stateRequired">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_1512</h4>
-<pre>private final&nbsp;boolean field_1512</pre>
+<h4>stateRequired</h4>
+<pre>private final&nbsp;boolean stateRequired</pre>
 </li>
 </ul>
-<a id="field_1513">
+<a id="state">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_1513</h4>
-<pre>private&nbsp;<a href="../block/BlockState.html" title="interface in net.minecraft.block">BlockState</a> field_1513</pre>
+<h4>state</h4>
+<pre>private&nbsp;<a href="../block/BlockState.html" title="interface in net.minecraft.block">BlockState</a> state</pre>
 </li>
 </ul>
-<a id="field_1514">
+<a id="blockEntity">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_1514</h4>
-<pre>private&nbsp;<a href="../block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a> field_1514</pre>
+<h4>blockEntity</h4>
+<pre>private&nbsp;<a href="../block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a> blockEntity</pre>
 </li>
 </ul>
-<a id="field_1515">
+<a id="gotBlockEntity">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_1515</h4>
-<pre>private&nbsp;boolean field_1515</pre>
+<h4>gotBlockEntity</h4>
+<pre>private&nbsp;boolean gotBlockEntity</pre>
 </li>
 </ul>
 </li>
@@ -339,8 +339,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>RayTraceContext</h4>
 <pre>public&nbsp;RayTraceContext&#8203;(<a href="World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-                       <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
-                       boolean&nbsp;bool)</pre>
+                       <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+                       boolean&nbsp;stateRequired)</pre>
 </li>
 </ul>
 </li>
@@ -353,40 +353,40 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="method_1237()">
+<a id="getBlockState()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1237</h4>
-<pre class="methodSignature">public&nbsp;<a href="../block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;method_1237()</pre>
+<h4>getBlockState</h4>
+<pre class="methodSignature">public&nbsp;<a href="../block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;getBlockState()</pre>
 </li>
 </ul>
-<a id="method_1239()">
+<a id="getBlockEntity()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1239</h4>
-<pre class="methodSignature">public&nbsp;<a href="../block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a>&nbsp;method_1239()</pre>
+<h4>getBlockEntity</h4>
+<pre class="methodSignature">public&nbsp;<a href="../block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a>&nbsp;getBlockEntity()</pre>
 </li>
 </ul>
-<a id="method_1240()">
+<a id="getPos()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1240</h4>
-<pre class="methodSignature">public&nbsp;<a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;method_1240()</pre>
+<h4>getPos</h4>
+<pre class="methodSignature">public&nbsp;<a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;getPos()</pre>
 </li>
 </ul>
-<a id="method_1238(com.google.common.base.Predicate)">
+<a id="filterByState(com.google.common.base.Predicate)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_1238</h4>
-<pre class="methodSignature">public static&nbsp;<a href="https://guava.dev/releases/21.0/api/docs/com/google/common/base/Predicate.html?is-external=true" title="class or interface in com.google.common.base" class="externalLink">Predicate</a>&lt;<a href="RayTraceContext.html" title="class in net.minecraft.world">RayTraceContext</a>&gt;&nbsp;method_1238&#8203;(<a href="https://guava.dev/releases/21.0/api/docs/com/google/common/base/Predicate.html?is-external=true" title="class or interface in com.google.common.base" class="externalLink">Predicate</a>&lt;<a href="../block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&gt;&nbsp;predicate)</pre>
+<h4>filterByState</h4>
+<pre class="methodSignature">public static&nbsp;<a href="https://guava.dev/releases/21.0/api/docs/com/google/common/base/Predicate.html?is-external=true" title="class or interface in com.google.common.base" class="externalLink">Predicate</a>&lt;<a href="RayTraceContext.html" title="class in net.minecraft.world">RayTraceContext</a>&gt;&nbsp;filterByState&#8203;(<a href="https://guava.dev/releases/21.0/api/docs/com/google/common/base/Predicate.html?is-external=true" title="class or interface in com.google.common.base" class="externalLink">Predicate</a>&lt;<a href="../block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&gt;&nbsp;stateFilter)</pre>
 </li>
 </ul>
 </li>

@@ -174,7 +174,7 @@ extends <a href="SimpleRegistry.html" title="class in net.minecraft.util.registr
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private <a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_5795">field_5795</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#objectType">objectType</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -209,7 +209,7 @@ extends <a href="SimpleRegistry.html" title="class in net.minecraft.util.registr
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(K)">DefaultedRegistry</a></span>&#8203;(<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>&nbsp;k)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(K)">DefaultedRegistry</a></span>&#8203;(<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>&nbsp;objectType)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -231,25 +231,25 @@ extends <a href="SimpleRegistry.html" title="class in net.minecraft.util.registr
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#byIndex(int)">byIndex</a></span>&#8203;(int&nbsp;index)</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#add(int,K,V)">add</a></span>&#8203;(int&nbsp;id,
+   <a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>&nbsp;identifier,
+   <a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&nbsp;object)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#get(K)">get</a></span>&#8203;(<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>&nbsp;key)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#byIndex(int)">byIndex</a></span>&#8203;(int&nbsp;index)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4910()">method_4910</a></span>()</code></th>
+<td class="colFirst"><code><a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#get(K)">get</a></span>&#8203;(<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>&nbsp;key)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4951(int,K,V)">method_4951</a></span>&#8203;(int&nbsp;int2,
-           <a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>&nbsp;k,
-           <a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&nbsp;v)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#validateObjectType()">validateObjectType</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -297,13 +297,13 @@ extends <a href="SimpleRegistry.html" title="class in net.minecraft.util.registr
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="field_5795">
+<a id="objectType">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_5795</h4>
-<pre>private final&nbsp;<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a> field_5795</pre>
+<h4>objectType</h4>
+<pre>private final&nbsp;<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a> objectType</pre>
 </li>
 </ul>
 <a id="defaultValue">
@@ -333,7 +333,7 @@ extends <a href="SimpleRegistry.html" title="class in net.minecraft.util.registr
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DefaultedRegistry</h4>
-<pre>public&nbsp;DefaultedRegistry&#8203;(<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>&nbsp;k)</pre>
+<pre>public&nbsp;DefaultedRegistry&#8203;(<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>&nbsp;objectType)</pre>
 </li>
 </ul>
 </li>
@@ -346,30 +346,30 @@ extends <a href="SimpleRegistry.html" title="class in net.minecraft.util.registr
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="method_4951(int,java.lang.Object,java.lang.Object)">
+<a id="add(int,java.lang.Object,java.lang.Object)">
 <!--   -->
-</a><a id="method_4951(int,K,V)">
+</a><a id="add(int,K,V)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_4951</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_4951&#8203;(int&nbsp;int2,
-                        <a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>&nbsp;k,
-                        <a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&nbsp;v)</pre>
+<h4>add</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;add&#8203;(int&nbsp;id,
+                <a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>&nbsp;identifier,
+                <a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&nbsp;object)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="SimpleRegistry.html#method_4951(int,K,V)">method_4951</a></code>&nbsp;in class&nbsp;<code><a href="SimpleRegistry.html" title="class in net.minecraft.util.registry">SimpleRegistry</a>&lt;<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>,&#8203;<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&gt;</code></dd>
+<dd><code><a href="SimpleRegistry.html#add(int,K,V)">add</a></code>&nbsp;in class&nbsp;<code><a href="SimpleRegistry.html" title="class in net.minecraft.util.registry">SimpleRegistry</a>&lt;<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>,&#8203;<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
-<a id="method_4910()">
+<a id="validateObjectType()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_4910</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_4910()</pre>
+<h4>validateObjectType</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;validateObjectType()</pre>
 </li>
 </ul>
 <a id="get(java.lang.Object)">

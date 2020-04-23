@@ -202,7 +202,7 @@ extends <a href="../world/PersistentState.html" title="class in net.minecraft.wo
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String)">ScoreboardState</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String)">ScoreboardState</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;id)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -245,43 +245,43 @@ extends <a href="../world/PersistentState.html" title="class in net.minecraft.wo
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1891(net.minecraft.nbt.CompoundTag)">method_1891</a></span>&#8203;(<a href="../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_2163(net.minecraft.nbt.ListTag)">method_2163</a></span>&#8203;(<a href="../nbt/ListTag.html" title="class in net.minecraft.nbt">ListTag</a>&nbsp;listTag)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_2165(net.minecraft.nbt.ListTag)">method_2165</a></span>&#8203;(<a href="../nbt/ListTag.html" title="class in net.minecraft.nbt">ListTag</a>&nbsp;listTag)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>protected <a href="../nbt/ListTag.html" title="class in net.minecraft.nbt">ListTag</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_2167()">method_2167</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>protected <a href="../nbt/ListTag.html" title="class in net.minecraft.nbt">ListTag</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#serializeObjectives()">serializeObjectives</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#serializeSlots(net.minecraft.nbt.CompoundTag)">serializeSlots</a></span>&#8203;(<a href="../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>protected <a href="../nbt/ListTag.html" title="class in net.minecraft.nbt">ListTag</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#serializeTeams()">serializeTeams</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setScoreboard(net.minecraft.scoreboard.Scoreboard)">setScoreboard</a></span>&#8203;(<a href="Scoreboard.html" title="class in net.minecraft.scoreboard">Scoreboard</a>&nbsp;scoreboard)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toTag(net.minecraft.nbt.CompoundTag)">toTag</a></span>&#8203;(<a href="../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -367,7 +367,7 @@ extends <a href="../world/PersistentState.html" title="class in net.minecraft.wo
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ScoreboardState</h4>
-<pre>public&nbsp;ScoreboardState&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</pre>
+<pre>public&nbsp;ScoreboardState&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;id)</pre>
 </li>
 </ul>
 </li>
@@ -448,16 +448,16 @@ extends <a href="../world/PersistentState.html" title="class in net.minecraft.wo
 <pre class="methodSignature">protected&nbsp;void&nbsp;method_2165&#8203;(<a href="../nbt/ListTag.html" title="class in net.minecraft.nbt">ListTag</a>&nbsp;listTag)</pre>
 </li>
 </ul>
-<a id="method_1891(net.minecraft.nbt.CompoundTag)">
+<a id="toTag(net.minecraft.nbt.CompoundTag)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1891</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1891&#8203;(<a href="../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</pre>
+<h4>toTag</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;toTag&#8203;(<a href="../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../world/PersistentState.html#method_1891(net.minecraft.nbt.CompoundTag)">method_1891</a></code>&nbsp;in class&nbsp;<code><a href="../world/PersistentState.html" title="class in net.minecraft.world">PersistentState</a></code></dd>
+<dd><code><a href="../world/PersistentState.html#toTag(net.minecraft.nbt.CompoundTag)">toTag</a></code>&nbsp;in class&nbsp;<code><a href="../world/PersistentState.html" title="class in net.minecraft.world">PersistentState</a></code></dd>
 </dl>
 </li>
 </ul>
