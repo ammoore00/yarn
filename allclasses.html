@@ -115,11 +115,13 @@
 <li><a href="net/minecraft/block/BedBlock.class_159.html" title="enum in net.minecraft.block">BedBlock.class_159</a></li>
 <li><a href="net/minecraft/item/BedItem.html" title="class in net.minecraft.item">BedItem</a></li>
 <li><a href="net/minecraft/world/biome/Biome.html" title="class in net.minecraft.world.biome">Biome</a></li>
+<li><a href="net/minecraft/world/biome/Biome.BiomeTemperature.html" title="enum in net.minecraft.world.biome">Biome.BiomeTemperature</a></li>
 <li><a href="net/minecraft/world/biome/Biome.class_114.html" title="class in net.minecraft.world.biome">Biome.class_114</a></li>
-<li><a href="net/minecraft/world/biome/Biome.class_115.html" title="enum in net.minecraft.world.biome">Biome.class_115</a></li>
 <li><a href="net/minecraft/world/biome/Biome.SpawnEntry.html" title="class in net.minecraft.world.biome">Biome.SpawnEntry</a></li>
 <li><a href="net/minecraft/client/color/world/BiomeColors.html" title="class in net.minecraft.client.color.world">BiomeColors</a></li>
 <li><a href="net/minecraft/client/color/world/BiomeColors.class_121.html" title="interface in net.minecraft.client.color.world"><span class="interfaceName">BiomeColors.class_121</span></a></li>
+<li><a href="net/minecraft/world/biome/BiomePopulator.html" title="class in net.minecraft.world.biome">BiomePopulator</a></li>
+<li><a href="net/minecraft/world/biome/source/BiomeSource.html" title="class in net.minecraft.world.biome.source">BiomeSource</a></li>
 <li><a href="net/minecraft/client/render/entity/BipedEntityRenderer.html" title="class in net.minecraft.client.render.entity">BipedEntityRenderer</a></li>
 <li><a href="net/minecraft/entity/mob/BlazeEntity.html" title="class in net.minecraft.entity.mob">BlazeEntity</a></li>
 <li><a href="net/minecraft/entity/mob/BlazeEntity.ShootFireballGoal.html" title="class in net.minecraft.entity.mob">BlazeEntity.ShootFireballGoal</a></li>
@@ -284,7 +286,6 @@
 <li><a href="net/minecraft/class_1205.html" title="class in net.minecraft">class_1205</a></li>
 <li><a href="net/minecraft/class_1206.html" title="class in net.minecraft">class_1206</a></li>
 <li><a href="net/minecraft/class_1210.html" title="class in net.minecraft">class_1210</a></li>
-<li><a href="net/minecraft/class_122.html" title="class in net.minecraft">class_122</a></li>
 <li><a href="net/minecraft/class_1221.html" title="class in net.minecraft">class_1221</a></li>
 <li><a href="net/minecraft/class_1222.html" title="interface in net.minecraft"><span class="interfaceName">class_1222</span></a></li>
 <li><a href="net/minecraft/class_1223.html" title="class in net.minecraft">class_1223</a></li>
@@ -292,7 +293,6 @@
 <li><a href="net/minecraft/class_1226.class_1227.html" title="class in net.minecraft">class_1226.class_1227</a></li>
 <li><a href="net/minecraft/class_1226.class_1228.html" title="class in net.minecraft">class_1226.class_1228</a></li>
 <li><a href="net/minecraft/class_1229.html" title="class in net.minecraft">class_1229</a></li>
-<li><a href="net/minecraft/class_123.html" title="class in net.minecraft">class_123</a></li>
 <li><a href="net/minecraft/class_1237.html" title="class in net.minecraft">class_1237</a></li>
 <li><a href="net/minecraft/class_1238.html" title="class in net.minecraft">class_1238</a></li>
 <li><a href="net/minecraft/class_1240.html" title="class in net.minecraft">class_1240</a></li>
@@ -314,6 +314,7 @@
 <li><a href="net/minecraft/class_1280.html" title="class in net.minecraft">class_1280</a></li>
 <li><a href="net/minecraft/class_1281.html" title="class in net.minecraft">class_1281</a></li>
 <li><a href="net/minecraft/class_1283.html" title="class in net.minecraft">class_1283</a></li>
+<li><a href="net/minecraft/class_1284.html" title="class in net.minecraft">class_1284</a></li>
 <li><a href="net/minecraft/class_1285.html" title="class in net.minecraft">class_1285</a></li>
 <li><a href="net/minecraft/class_1287.html" title="class in net.minecraft">class_1287</a></li>
 <li><a href="net/minecraft/class_129.html" title="class in net.minecraft">class_129</a></li>
@@ -725,7 +726,6 @@
 <li><a href="net/minecraft/class_637.html" title="interface in net.minecraft"><span class="interfaceName">class_637</span></a></li>
 <li><a href="net/minecraft/class_638.html" title="class in net.minecraft">class_638</a></li>
 <li><a href="net/minecraft/class_639.html" title="class in net.minecraft">class_639</a></li>
-<li><a href="net/minecraft/class_640.html" title="interface in net.minecraft"><span class="interfaceName">class_640</span></a></li>
 <li><a href="net/minecraft/class_641.html" title="class in net.minecraft">class_641</a></li>
 <li><a href="net/minecraft/class_643.html" title="class in net.minecraft">class_643</a></li>
 <li><a href="net/minecraft/class_644.html" title="class in net.minecraft">class_644</a></li>
@@ -1140,8 +1140,8 @@
 <li><a href="net/minecraft/item/FlintAndSteelItem.html" title="class in net.minecraft.item">FlintAndSteelItem</a></li>
 <li><a href="net/minecraft/nbt/FloatTag.html" title="class in net.minecraft.nbt">FloatTag</a></li>
 <li><a href="net/minecraft/block/FlowerBlock.html" title="class in net.minecraft.block">FlowerBlock</a></li>
-<li><a href="net/minecraft/block/FlowerBlock.class_212.html" title="enum in net.minecraft.block">FlowerBlock.class_212</a></li>
-<li><a href="net/minecraft/block/FlowerBlock.class_213.html" title="enum in net.minecraft.block">FlowerBlock.class_213</a></li>
+<li><a href="net/minecraft/block/FlowerBlock.Color.html" title="enum in net.minecraft.block">FlowerBlock.Color</a></li>
+<li><a href="net/minecraft/block/FlowerBlock.FlowerType.html" title="enum in net.minecraft.block">FlowerBlock.FlowerType</a></li>
 <li><a href="net/minecraft/block/FlowerPotBlock.html" title="class in net.minecraft.block">FlowerPotBlock</a></li>
 <li><a href="net/minecraft/block/FlowerPotBlock.class_215.html" title="enum in net.minecraft.block">FlowerPotBlock.class_215</a></li>
 <li><a href="net/minecraft/block/FlowingFluidBlock.html" title="class in net.minecraft.block">FlowingFluidBlock</a></li>
@@ -1749,7 +1749,6 @@
 <li><a href="net/minecraft/server/world/ServerWorld.class_1636.html" title="class in net.minecraft.server.world">ServerWorld.class_1636</a></li>
 <li><a href="net/minecraft/client/util/Session.html" title="class in net.minecraft.client.util">Session</a></li>
 <li><a href="net/minecraft/client/util/Session.AccountType.html" title="enum in net.minecraft.client.util">Session.AccountType</a></li>
-<li><a href="net/minecraft/world/biome/layer/SetBaseBiomesLayer.html" title="class in net.minecraft.world.biome.layer">SetBaseBiomesLayer</a></li>
 <li><a href="net/minecraft/server/command/SetBlockCommand.html" title="class in net.minecraft.server.command">SetBlockCommand</a></li>
 <li><a href="net/minecraft/network/packet/s2c/play/SetCameraEntityS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">SetCameraEntityS2CPacket</a></li>
 <li><a href="net/minecraft/client/gui/screen/SettingsScreen.html" title="class in net.minecraft.client.gui.screen">SettingsScreen</a></li>
@@ -2042,6 +2041,7 @@
 <li><a href="net/minecraft/util/math/WorldPosition.html" title="interface in net.minecraft.util.math"><span class="interfaceName">WorldPosition</span></a></li>
 <li><a href="net/minecraft/util/math/WorldPositionPointer.html" title="interface in net.minecraft.util.math"><span class="interfaceName">WorldPositionPointer</span></a></li>
 <li><a href="net/minecraft/client/render/WorldRenderer.html" title="class in net.minecraft.client.render">WorldRenderer</a></li>
+<li><a href="net/minecraft/world/WorldSaveHandler.html" title="interface in net.minecraft.world"><span class="interfaceName">WorldSaveHandler</span></a></li>
 <li><a href="net/minecraft/network/packet/s2c/play/WorldTimeUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">WorldTimeUpdateS2CPacket</a></li>
 <li><a href="net/minecraft/world/WorldView.html" title="interface in net.minecraft.world"><span class="interfaceName">WorldView</span></a></li>
 <li><a href="net/minecraft/item/WritableBookItem.html" title="class in net.minecraft.item">WritableBookItem</a></li>
