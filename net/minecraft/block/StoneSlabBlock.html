@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -95,7 +95,7 @@ loadScripts(document, 'script');</script>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -129,12 +129,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="SlabBlock.html" title="class in net.minecraft.block">net.minecraft.block.SlabBlock</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../class_321.html" title="class in net.minecraft">net.minecraft.class_321</a></li>
-<li>
-<ul class="inheritance">
 <li>net.minecraft.block.StoneSlabBlock</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -145,9 +140,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><code><a href="DoubleStoneSlabBlock.html" title="class in net.minecraft.block">DoubleStoneSlabBlock</a></code>, <code><a href="SingleStoneSlabBlock.html" title="class in net.minecraft.block">SingleStoneSlabBlock</a></code></dd>
+</dl>
 <hr>
-<pre>public class <span class="typeNameLabel">StoneSlabBlock</span>
-extends <a href="../class_321.html" title="class in net.minecraft">class_321</a></pre>
+<pre>public abstract class <span class="typeNameLabel">StoneSlabBlock</span>
+extends <a href="SlabBlock.html" title="class in net.minecraft.block">SlabBlock</a></pre>
 </li>
 </ul>
 </div>
@@ -161,13 +160,19 @@ extends <a href="../class_321.html" title="class in net.minecraft">class_321</a>
 <!--   -->
 </a>
 <h3>Nested Class Summary</h3>
-<ul class="blockList">
-<li class="blockList"><a id="nested.classes.inherited.from.class.net.minecraft.class_321">
-<!--   -->
-</a>
-<h3>Nested classes/interfaces inherited from class&nbsp;net.minecraft.<a href="../class_321.html" title="class in net.minecraft">class_321</a></h3>
-<code><a href="../class_321.SlabType.html" title="enum in net.minecraft">class_321.SlabType</a></code></li>
-</ul>
+<table class="memberSummary">
+<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static class&nbsp;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="StoneSlabBlock.SlabType.html" title="enum in net.minecraft.block">StoneSlabBlock.SlabType</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</table>
 <ul class="blockList">
 <li class="blockList"><a id="nested.classes.inherited.from.class.net.minecraft.block.SlabBlock">
 <!--   -->
@@ -192,13 +197,24 @@ extends <a href="../class_321.html" title="class in net.minecraft">class_321</a>
 <!--   -->
 </a>
 <h3>Field Summary</h3>
-<ul class="blockList">
-<li class="blockList"><a id="fields.inherited.from.class.net.minecraft.class_321">
-<!--   -->
-</a>
-<h3>Fields inherited from class&nbsp;net.minecraft.<a href="../class_321.html" title="class in net.minecraft">class_321</a></h3>
-<code><a href="../class_321.html#field_1246">field_1246</a>, <a href="../class_321.html#field_1247">field_1247</a></code></li>
-</ul>
+<table class="memberSummary">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Field</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../state/property/BooleanProperty.html" title="class in net.minecraft.state.property">BooleanProperty</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SEAMLESS">SEAMLESS</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../state/property/EnumProperty.html" title="class in net.minecraft.state.property">EnumProperty</a>&lt;<a href="StoneSlabBlock.SlabType.html" title="enum in net.minecraft.block">StoneSlabBlock.SlabType</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#VARIANT">VARIANT</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</table>
 <ul class="blockList">
 <li class="blockList"><a id="fields.inherited.from.class.net.minecraft.block.SlabBlock">
 <!--   -->
@@ -252,24 +268,72 @@ extends <a href="../class_321.html" title="class in net.minecraft">class_321</a>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_877()">method_877</a></span>()</code></th>
+<td class="colFirst"><code>protected <a href="../state/StateManager.html" title="class in net.minecraft.state">StateManager</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#appendProperties()">appendProperties</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#appendStacks(net.minecraft.item.Item,net.minecraft.item.ItemGroup,java.util.List)">appendStacks</a></span>&#8203;(<a href="../item/Item.html" title="class in net.minecraft.item">Item</a>&nbsp;item,
+            <a href="../item/ItemGroup.html" title="class in net.minecraft.item">ItemGroup</a>&nbsp;group,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&gt;&nbsp;stacks)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getData(net.minecraft.block.BlockState)">getData</a></span>&#8203;(<a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../item/Item.html" title="class in net.minecraft.item">Item</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDropItem(net.minecraft.block.BlockState,java.util.Random,int)">getDropItem</a></span>&#8203;(<a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
+           <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;random,
+           int&nbsp;int2)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="MaterialColor.html" title="class in net.minecraft.block">MaterialColor</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMaterialColor(net.minecraft.block.BlockState)">getMaterialColor</a></span>&#8203;(<a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMeta(net.minecraft.block.BlockState)">getMeta</a></span>&#8203;(<a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../item/Item.html" title="class in net.minecraft.item">Item</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPickItem(net.minecraft.world.World,net.minecraft.util.math.BlockPos)">getPickItem</a></span>&#8203;(<a href="../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+           <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_874(net.minecraft.item.ItemStack)">method_874</a></span>&#8203;(<a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_875(int)">method_875</a></span>&#8203;(int&nbsp;int2)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="../state/property/Property.html" title="interface in net.minecraft.state.property">Property</a>&lt;?&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_878()">method_878</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code><a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stateFromData(int)">stateFromData</a></span>&#8203;(int&nbsp;data)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.net.minecraft.class_321">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;net.minecraft.<a href="../class_321.html" title="class in net.minecraft">class_321</a></h3>
-<code><a href="../class_321.html#appendProperties()">appendProperties</a>, <a href="../class_321.html#appendStacks(net.minecraft.item.Item,net.minecraft.item.ItemGroup,java.util.List)">appendStacks</a>, <a href="../class_321.html#getData(net.minecraft.block.BlockState)">getData</a>, <a href="../class_321.html#getDropItem(net.minecraft.block.BlockState,java.util.Random,int)">getDropItem</a>, <a href="../class_321.html#getMaterialColor(net.minecraft.block.BlockState)">getMaterialColor</a>, <a href="../class_321.html#getMeta(net.minecraft.block.BlockState)">getMeta</a>, <a href="../class_321.html#getPickItem(net.minecraft.world.World,net.minecraft.util.math.BlockPos)">getPickItem</a>, <a href="../class_321.html#method_874(net.minecraft.item.ItemStack)">method_874</a>, <a href="../class_321.html#method_875(int)">method_875</a>, <a href="../class_321.html#method_878()">method_878</a>, <a href="../class_321.html#stateFromData(int)">stateFromData</a></code></li>
-</ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.net.minecraft.block.SlabBlock">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.block.<a href="SlabBlock.html" title="class in net.minecraft.block">SlabBlock</a></h3>
-<code><a href="SlabBlock.html#getMeta(net.minecraft.world.World,net.minecraft.util.math.BlockPos)">getMeta</a>, <a href="SlabBlock.html#getOutlineShape(net.minecraft.world.WorldView,net.minecraft.util.math.BlockPos)">getOutlineShape</a>, <a href="SlabBlock.html#isSideInvisible(net.minecraft.world.WorldView,net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction)">isSideInvisible</a>, <a href="SlabBlock.html#method_623()">method_623</a>, <a href="SlabBlock.html#method_649(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,net.minecraft.util.math.Box,java.util.List,net.minecraft.entity.Entity)">method_649</a>, <a href="SlabBlock.html#method_656(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction,float,float,float,int,net.minecraft.entity.LivingEntity)">method_656</a>, <a href="SlabBlock.html#method_677(java.util.Random)">method_677</a>, <a href="SlabBlock.html#method_699()">method_699</a>, <a href="SlabBlock.html#method_709()">method_709</a>, <a href="SlabBlock.html#method_725()">method_725</a>, <a href="SlabBlock.html#method_876(net.minecraft.block.Block)">method_876</a></code></li>
+<code><a href="SlabBlock.html#getDropCount(java.util.Random)">getDropCount</a>, <a href="SlabBlock.html#getMeta(net.minecraft.world.World,net.minecraft.util.math.BlockPos)">getMeta</a>, <a href="SlabBlock.html#getOutlineShape(net.minecraft.world.WorldView,net.minecraft.util.math.BlockPos)">getOutlineShape</a>, <a href="SlabBlock.html#isDoubleSlab()">isDoubleSlab</a>, <a href="SlabBlock.html#isOpaque()">isOpaque</a>, <a href="SlabBlock.html#isSideInvisible(net.minecraft.world.WorldView,net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction)">isSideInvisible</a>, <a href="SlabBlock.html#method_623()">method_623</a>, <a href="SlabBlock.html#method_649(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,net.minecraft.util.math.Box,java.util.List,net.minecraft.entity.Entity)">method_649</a>, <a href="SlabBlock.html#method_656(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction,float,float,float,int,net.minecraft.entity.LivingEntity)">method_656</a>, <a href="SlabBlock.html#method_709()">method_709</a>, <a href="SlabBlock.html#method_725()">method_725</a>, <a href="SlabBlock.html#method_876(net.minecraft.block.Block)">method_876</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.net.minecraft.block.Block">
@@ -294,6 +358,34 @@ extends <a href="../class_321.html" title="class in net.minecraft">class_321</a>
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<section role="region">
+<ul class="blockList">
+<li class="blockList"><a id="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a id="SEAMLESS">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SEAMLESS</h4>
+<pre>public static final&nbsp;<a href="../state/property/BooleanProperty.html" title="class in net.minecraft.state.property">BooleanProperty</a> SEAMLESS</pre>
+</li>
+</ul>
+<a id="VARIANT">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>VARIANT</h4>
+<pre>public static final&nbsp;<a href="../state/property/EnumProperty.html" title="class in net.minecraft.state.property">EnumProperty</a>&lt;<a href="StoneSlabBlock.SlabType.html" title="enum in net.minecraft.block">StoneSlabBlock.SlabType</a>&gt; VARIANT</pre>
+</li>
+</ul>
+</li>
+</ul>
+</section>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <section role="region">
 <ul class="blockList">
@@ -320,16 +412,153 @@ extends <a href="../class_321.html" title="class in net.minecraft">class_321</a>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="method_877()">
+<a id="getDropItem(net.minecraft.block.BlockState,java.util.Random,int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDropItem</h4>
+<pre class="methodSignature">public&nbsp;<a href="../item/Item.html" title="class in net.minecraft.item">Item</a>&nbsp;getDropItem&#8203;(<a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
+                        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;random,
+                        int&nbsp;int2)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="Block.html#getDropItem(net.minecraft.block.BlockState,java.util.Random,int)">getDropItem</a></code>&nbsp;in class&nbsp;<code><a href="Block.html" title="class in net.minecraft.block">Block</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="getPickItem(net.minecraft.world.World,net.minecraft.util.math.BlockPos)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPickItem</h4>
+<pre class="methodSignature">@Environment(CLIENT)
+public&nbsp;<a href="../item/Item.html" title="class in net.minecraft.item">Item</a>&nbsp;getPickItem&#8203;(<a href="../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+                        <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="Block.html#getPickItem(net.minecraft.world.World,net.minecraft.util.math.BlockPos)">getPickItem</a></code>&nbsp;in class&nbsp;<code><a href="Block.html" title="class in net.minecraft.block">Block</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="method_875(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_875</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;method_875&#8203;(int&nbsp;int2)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="SlabBlock.html#method_875(int)">method_875</a></code>&nbsp;in class&nbsp;<code><a href="SlabBlock.html" title="class in net.minecraft.block">SlabBlock</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="method_878()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_878</h4>
+<pre class="methodSignature">public&nbsp;<a href="../state/property/Property.html" title="interface in net.minecraft.state.property">Property</a>&lt;?&gt;&nbsp;method_878()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="SlabBlock.html#method_878()">method_878</a></code>&nbsp;in class&nbsp;<code><a href="SlabBlock.html" title="class in net.minecraft.block">SlabBlock</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="method_874(net.minecraft.item.ItemStack)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_874</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;method_874&#8203;(<a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="SlabBlock.html#method_874(net.minecraft.item.ItemStack)">method_874</a></code>&nbsp;in class&nbsp;<code><a href="SlabBlock.html" title="class in net.minecraft.block">SlabBlock</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="appendStacks(net.minecraft.item.Item,net.minecraft.item.ItemGroup,java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>appendStacks</h4>
+<pre class="methodSignature">@Environment(CLIENT)
+public&nbsp;void&nbsp;appendStacks&#8203;(<a href="../item/Item.html" title="class in net.minecraft.item">Item</a>&nbsp;item,
+                         <a href="../item/ItemGroup.html" title="class in net.minecraft.item">ItemGroup</a>&nbsp;group,
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&gt;&nbsp;stacks)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="Block.html#appendStacks(net.minecraft.item.Item,net.minecraft.item.ItemGroup,java.util.List)">appendStacks</a></code>&nbsp;in class&nbsp;<code><a href="Block.html" title="class in net.minecraft.block">Block</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="stateFromData(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>stateFromData</h4>
+<pre class="methodSignature">public&nbsp;<a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;stateFromData&#8203;(int&nbsp;data)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="Block.html#stateFromData(int)">stateFromData</a></code>&nbsp;in class&nbsp;<code><a href="Block.html" title="class in net.minecraft.block">Block</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="getData(net.minecraft.block.BlockState)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getData</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;getData&#8203;(<a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="Block.html#getData(net.minecraft.block.BlockState)">getData</a></code>&nbsp;in class&nbsp;<code><a href="Block.html" title="class in net.minecraft.block">Block</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="appendProperties()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>appendProperties</h4>
+<pre class="methodSignature">protected&nbsp;<a href="../state/StateManager.html" title="class in net.minecraft.state">StateManager</a>&nbsp;appendProperties()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="Block.html#appendProperties()">appendProperties</a></code>&nbsp;in class&nbsp;<code><a href="Block.html" title="class in net.minecraft.block">Block</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="getMeta(net.minecraft.block.BlockState)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMeta</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;getMeta&#8203;(<a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="Block.html#getMeta(net.minecraft.block.BlockState)">getMeta</a></code>&nbsp;in class&nbsp;<code><a href="Block.html" title="class in net.minecraft.block">Block</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="getMaterialColor(net.minecraft.block.BlockState)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_877</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;method_877()</pre>
+<h4>getMaterialColor</h4>
+<pre class="methodSignature">public&nbsp;<a href="MaterialColor.html" title="class in net.minecraft.block">MaterialColor</a>&nbsp;getMaterialColor&#8203;(<a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state)</pre>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="SlabBlock.html#method_877()">method_877</a></code>&nbsp;in class&nbsp;<code><a href="SlabBlock.html" title="class in net.minecraft.block">SlabBlock</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="Block.html#getMaterialColor(net.minecraft.block.BlockState)">getMaterialColor</a></code>&nbsp;in class&nbsp;<code><a href="Block.html" title="class in net.minecraft.block">Block</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -391,7 +620,7 @@ extends <a href="../class_321.html" title="class in net.minecraft">class_321</a>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>

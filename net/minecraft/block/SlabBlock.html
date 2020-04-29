@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":6,"i11":6,"i12":9,"i13":6,"i14":6};
+var data = {"i0":10,"i1":10,"i2":10,"i3":6,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":6,"i12":6,"i13":9,"i14":6};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -137,7 +137,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="../class_321.html" title="class in net.minecraft">class_321</a></code>, <code><a href="../class_341.html" title="class in net.minecraft">class_341</a></code>, <code><a href="RedSandstoneSlabBlock.html" title="class in net.minecraft.block">RedSandstoneSlabBlock</a></code></dd>
+<dd><code><a href="RedSandstoneSlabBlock.html" title="class in net.minecraft.block">RedSandstoneSlabBlock</a></code>, <code><a href="StoneSlabBlock.html" title="class in net.minecraft.block">StoneSlabBlock</a></code>, <code><a href="WoodSlabBlock.html" title="class in net.minecraft.block">WoodSlabBlock</a></code></dd>
 </dl>
 <hr>
 <pre>public abstract class <span class="typeNameLabel">SlabBlock</span>
@@ -245,29 +245,44 @@ extends <a href="Block.html" title="class in net.minecraft.block">Block</a></pre
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDropCount(java.util.Random)">getDropCount</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;random)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMeta(net.minecraft.world.World,net.minecraft.util.math.BlockPos)">getMeta</a></span>&#8203;(<a href="../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
        <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getOutlineShape(net.minecraft.world.WorldView,net.minecraft.util.math.BlockPos)">getOutlineShape</a></span>&#8203;(<a href="../world/WorldView.html" title="interface in net.minecraft.world">WorldView</a>&nbsp;view,
                <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>abstract boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isDoubleSlab()">isDoubleSlab</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isOpaque()">isOpaque</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isSideInvisible(net.minecraft.world.WorldView,net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction)">isSideInvisible</a></span>&#8203;(<a href="../world/WorldView.html" title="interface in net.minecraft.world">WorldView</a>&nbsp;view,
                <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
                <a href="../util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;facing)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_623()">method_623</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_649(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,net.minecraft.util.math.Box,java.util.List,net.minecraft.entity.Entity)">method_649</a></span>&#8203;(<a href="../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
           <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
@@ -277,7 +292,7 @@ extends <a href="Block.html" title="class in net.minecraft.block">Block</a></pre
           <a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_656(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction,float,float,float,int,net.minecraft.entity.LivingEntity)">method_656</a></span>&#8203;(<a href="../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
           <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
@@ -289,44 +304,29 @@ extends <a href="Block.html" title="class in net.minecraft.block">Block</a></pre
           <a href="../entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;livingEntity)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_677(java.util.Random)">method_677</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;random)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_699()">method_699</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_709()">method_709</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_725()">method_725</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_874(net.minecraft.item.ItemStack)">method_874</a></span>&#8203;(<a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_875(int)">method_875</a></span>&#8203;(int&nbsp;int2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>protected static boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_876(net.minecraft.block.Block)">method_876</a></span>&#8203;(<a href="Block.html" title="class in net.minecraft.block">Block</a>&nbsp;block)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i13" class="rowColor">
-<td class="colFirst"><code>abstract boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_877()">method_877</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
@@ -461,16 +461,16 @@ extends <a href="Block.html" title="class in net.minecraft.block">Block</a></pre
 </dl>
 </li>
 </ul>
-<a id="method_699()">
+<a id="isOpaque()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_699</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;method_699()</pre>
+<h4>isOpaque</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isOpaque()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="Block.html#method_699()">method_699</a></code>&nbsp;in class&nbsp;<code><a href="Block.html" title="class in net.minecraft.block">Block</a></code></dd>
+<dd><code><a href="Block.html#isOpaque()">isOpaque</a></code>&nbsp;in class&nbsp;<code><a href="Block.html" title="class in net.minecraft.block">Block</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -494,16 +494,16 @@ extends <a href="Block.html" title="class in net.minecraft.block">Block</a></pre
 </dl>
 </li>
 </ul>
-<a id="method_677(java.util.Random)">
+<a id="getDropCount(java.util.Random)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_677</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;method_677&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;random)</pre>
+<h4>getDropCount</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;getDropCount&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;random)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="Block.html#method_677(java.util.Random)">method_677</a></code>&nbsp;in class&nbsp;<code><a href="Block.html" title="class in net.minecraft.block">Block</a></code></dd>
+<dd><code><a href="Block.html#getDropCount(java.util.Random)">getDropCount</a></code>&nbsp;in class&nbsp;<code><a href="Block.html" title="class in net.minecraft.block">Block</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -569,13 +569,13 @@ protected static&nbsp;boolean&nbsp;method_876&#8203;(<a href="Block.html" title=
 </dl>
 </li>
 </ul>
-<a id="method_877()">
+<a id="isDoubleSlab()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_877</h4>
-<pre class="methodSignature">public abstract&nbsp;boolean&nbsp;method_877()</pre>
+<h4>isDoubleSlab</h4>
+<pre class="methodSignature">public abstract&nbsp;boolean&nbsp;isDoubleSlab()</pre>
 </li>
 </ul>
 <a id="method_878()">

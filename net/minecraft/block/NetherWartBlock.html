@@ -249,30 +249,30 @@ extends <a href="PlantBlock.html" title="class in net.minecraft.block">PlantBloc
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDropCount(java.util.Random)">getDropCount</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;random)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../item/Item.html" title="class in net.minecraft.item">Item</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDropItem(net.minecraft.block.BlockState,java.util.Random,int)">getDropItem</a></span>&#8203;(<a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;random,
            int&nbsp;int2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../item/Item.html" title="class in net.minecraft.item">Item</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPickItem(net.minecraft.world.World,net.minecraft.util.math.BlockPos)">getPickItem</a></span>&#8203;(<a href="../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
            <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_646(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,float,int)">method_646</a></span>&#8203;(<a href="../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
           <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
           <a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState,
           float&nbsp;float2,
           int&nbsp;int2)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_677(java.util.Random)">method_677</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;random)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
@@ -301,7 +301,7 @@ extends <a href="PlantBlock.html" title="class in net.minecraft.block">PlantBloc
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.block.<a href="PlantBlock.html" title="class in net.minecraft.block">PlantBlock</a></h3>
-<code><a href="PlantBlock.html#getCollisionBox(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState)">getCollisionBox</a>, <a href="PlantBlock.html#getRenderLayer()">getRenderLayer</a>, <a href="PlantBlock.html#method_699()">method_699</a>, <a href="PlantBlock.html#method_709()">method_709</a>, <a href="PlantBlock.html#method_711(net.minecraft.world.World,net.minecraft.util.math.BlockPos)">method_711</a>, <a href="PlantBlock.html#method_754(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState)">method_754</a>, <a href="PlantBlock.html#neighborUpdate(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,net.minecraft.block.Block)">neighborUpdate</a></code></li>
+<code><a href="PlantBlock.html#getCollisionBox(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState)">getCollisionBox</a>, <a href="PlantBlock.html#getRenderLayer()">getRenderLayer</a>, <a href="PlantBlock.html#isOpaque()">isOpaque</a>, <a href="PlantBlock.html#method_709()">method_709</a>, <a href="PlantBlock.html#method_711(net.minecraft.world.World,net.minecraft.util.math.BlockPos)">method_711</a>, <a href="PlantBlock.html#method_754(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState)">method_754</a>, <a href="PlantBlock.html#neighborUpdate(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,net.minecraft.block.Block)">neighborUpdate</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.net.minecraft.block.Block">
@@ -447,16 +447,16 @@ extends <a href="PlantBlock.html" title="class in net.minecraft.block">PlantBloc
 </dl>
 </li>
 </ul>
-<a id="method_677(java.util.Random)">
+<a id="getDropCount(java.util.Random)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_677</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;method_677&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;random)</pre>
+<h4>getDropCount</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;getDropCount&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;random)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="Block.html#method_677(java.util.Random)">method_677</a></code>&nbsp;in class&nbsp;<code><a href="Block.html" title="class in net.minecraft.block">Block</a></code></dd>
+<dd><code><a href="Block.html#getDropCount(java.util.Random)">getDropCount</a></code>&nbsp;in class&nbsp;<code><a href="Block.html" title="class in net.minecraft.block">Block</a></code></dd>
 </dl>
 </li>
 </ul>
