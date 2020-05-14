@@ -159,38 +159,38 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="CrashReportSection.html" title="class in net.minecraft.util.crash">CrashReportSection</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3598">field_3598</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink">File</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#file">file</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasStackTrace">hasStackTrace</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j" class="externalLink">Logger</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#LOGGER">LOGGER</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#message">message</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="CrashReportSection.html" title="class in net.minecraft.util.crash">CrashReportSection</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#otherSections">otherSections</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StackTraceElement.html?is-external=true" title="class or interface in java.lang" class="externalLink">StackTraceElement</a>[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stackTrace">stackTrace</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="CrashReportSection.html" title="class in net.minecraft.util.crash">CrashReportSection</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#systemDetailsSection">systemDetailsSection</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -211,8 +211,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,java.lang.Throwable)">CrashReport</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;throwable)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,java.lang.Throwable)">CrashReport</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message,
+           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;cause)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -351,13 +351,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a> cause</pre>
 </li>
 </ul>
-<a id="field_3598">
+<a id="systemDetailsSection">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_3598</h4>
-<pre>private final&nbsp;<a href="CrashReportSection.html" title="class in net.minecraft.util.crash">CrashReportSection</a> field_3598</pre>
+<h4>systemDetailsSection</h4>
+<pre>private final&nbsp;<a href="CrashReportSection.html" title="class in net.minecraft.util.crash">CrashReportSection</a> systemDetailsSection</pre>
 </li>
 </ul>
 <a id="otherSections">
@@ -412,8 +412,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockListLast">
 <li class="blockList">
 <h4>CrashReport</h4>
-<pre>public&nbsp;CrashReport&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
-                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;throwable)</pre>
+<pre>public&nbsp;CrashReport&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;message,
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Throwable</a>&nbsp;cause)</pre>
 </li>
 </ul>
 </li>

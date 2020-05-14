@@ -164,18 +164,18 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../NetworkState.html" title="enum in net.minecraft.network">NetworkState</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6478">field_6478</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code>private int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#port">port</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#protocolVersion">protocolVersion</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="../../../NetworkState.html" title="enum in net.minecraft.network">NetworkState</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#state">state</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -200,10 +200,10 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(int,java.lang.String,int,net.minecraft.network.NetworkState)">HandshakeC2SPacket</a></span>&#8203;(int&nbsp;int2,
-                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
-                  int&nbsp;int3,
-                  <a href="../../../NetworkState.html" title="enum in net.minecraft.network">NetworkState</a>&nbsp;networkState)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(int,java.lang.String,int,net.minecraft.network.NetworkState)">HandshakeC2SPacket</a></span>&#8203;(int&nbsp;version,
+                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;address,
+                  int&nbsp;port,
+                  <a href="../../../NetworkState.html" title="enum in net.minecraft.network">NetworkState</a>&nbsp;state)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -300,13 +300,13 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <pre>private&nbsp;int port</pre>
 </li>
 </ul>
-<a id="field_6478">
+<a id="state">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_6478</h4>
-<pre>private&nbsp;<a href="../../../NetworkState.html" title="enum in net.minecraft.network">NetworkState</a> field_6478</pre>
+<h4>state</h4>
+<pre>private&nbsp;<a href="../../../NetworkState.html" title="enum in net.minecraft.network">NetworkState</a> state</pre>
 </li>
 </ul>
 </li>
@@ -335,10 +335,10 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <li class="blockList">
 <h4>HandshakeC2SPacket</h4>
 <pre>@Environment(CLIENT)
-public&nbsp;HandshakeC2SPacket&#8203;(int&nbsp;int2,
-                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
-                          int&nbsp;int3,
-                          <a href="../../../NetworkState.html" title="enum in net.minecraft.network">NetworkState</a>&nbsp;networkState)</pre>
+public&nbsp;HandshakeC2SPacket&#8203;(int&nbsp;version,
+                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;address,
+                          int&nbsp;port,
+                          <a href="../../../NetworkState.html" title="enum in net.minecraft.network">NetworkState</a>&nbsp;state)</pre>
 </li>
 </ul>
 </li>

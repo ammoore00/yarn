@@ -159,13 +159,13 @@ extends <a href="container/Container.html" title="class in net.minecraft.contain
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_8468">field_8468</a></span></code></th>
+<td class="colFirst"><code>private int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hieght">hieght</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_8469">field_8469</a></span></code></th>
+<td class="colFirst"><code>private <a href="inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#inventory">inventory</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -218,23 +218,23 @@ extends <a href="container/Container.html" title="class in net.minecraft.contain
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#canUse(net.minecraft.entity.player.PlayerEntity)">canUse</a></span>&#8203;(<a href="entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#canUse(net.minecraft.entity.player.PlayerEntity)">canUse</a></span>&#8203;(<a href="entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#close(net.minecraft.entity.player.PlayerEntity)">close</a></span>&#8203;(<a href="entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#close(net.minecraft.entity.player.PlayerEntity)">close</a></span>&#8203;(<a href="entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_8135()">method_8135</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getInventory()">getInventory</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transferSlot(net.minecraft.entity.player.PlayerEntity,int)">transferSlot</a></span>&#8203;(<a href="entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity,
-            int&nbsp;int2)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transferSlot(net.minecraft.entity.player.PlayerEntity,int)">transferSlot</a></span>&#8203;(<a href="entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player,
+            int&nbsp;invSlot)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -268,22 +268,22 @@ extends <a href="container/Container.html" title="class in net.minecraft.contain
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="field_8468">
+<a id="inventory">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_8468</h4>
-<pre>private&nbsp;<a href="inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a> field_8468</pre>
+<h4>inventory</h4>
+<pre>private&nbsp;<a href="inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a> inventory</pre>
 </li>
 </ul>
-<a id="field_8469">
+<a id="hieght">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_8469</h4>
-<pre>private&nbsp;int field_8469</pre>
+<h4>hieght</h4>
+<pre>private&nbsp;int hieght</pre>
 </li>
 </ul>
 </li>
@@ -323,7 +323,7 @@ extends <a href="container/Container.html" title="class in net.minecraft.contain
 <ul class="blockList">
 <li class="blockList">
 <h4>canUse</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;canUse&#8203;(<a href="entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;canUse&#8203;(<a href="entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="container/Container.html#canUse(net.minecraft.entity.player.PlayerEntity)">canUse</a></code>&nbsp;in class&nbsp;<code><a href="container/Container.html" title="class in net.minecraft.container">Container</a></code></dd>
@@ -336,8 +336,8 @@ extends <a href="container/Container.html" title="class in net.minecraft.contain
 <ul class="blockList">
 <li class="blockList">
 <h4>transferSlot</h4>
-<pre class="methodSignature">public&nbsp;<a href="item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;transferSlot&#8203;(<a href="entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity,
-                              int&nbsp;int2)</pre>
+<pre class="methodSignature">public&nbsp;<a href="item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;transferSlot&#8203;(<a href="entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player,
+                              int&nbsp;invSlot)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="container/Container.html#transferSlot(net.minecraft.entity.player.PlayerEntity,int)">transferSlot</a></code>&nbsp;in class&nbsp;<code><a href="container/Container.html" title="class in net.minecraft.container">Container</a></code></dd>
@@ -350,20 +350,20 @@ extends <a href="container/Container.html" title="class in net.minecraft.contain
 <ul class="blockList">
 <li class="blockList">
 <h4>close</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;close&#8203;(<a href="entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;close&#8203;(<a href="entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="container/Container.html#close(net.minecraft.entity.player.PlayerEntity)">close</a></code>&nbsp;in class&nbsp;<code><a href="container/Container.html" title="class in net.minecraft.container">Container</a></code></dd>
 </dl>
 </li>
 </ul>
-<a id="method_8135()">
+<a id="getInventory()">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_8135</h4>
-<pre class="methodSignature">public&nbsp;<a href="inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;method_8135()</pre>
+<h4>getInventory</h4>
+<pre class="methodSignature">public&nbsp;<a href="inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;getInventory()</pre>
 </li>
 </ul>
 </li>

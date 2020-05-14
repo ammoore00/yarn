@@ -155,18 +155,18 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html?is-external=true" title="class or interface in java.util" class="externalLink">Properties</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6532">field_6532</a></span></code></th>
+<td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j" class="externalLink">Logger</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#LOGGER">LOGGER</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink">File</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6533">field_6533</a></span></code></th>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html?is-external=true" title="class or interface in java.util" class="externalLink">Properties</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#properties">properties</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j" class="externalLink">Logger</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#LOGGER">LOGGER</a></span></code></th>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink">File</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#propertyFile">propertyFile</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -187,7 +187,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.io.File)">AbstractPropertiesHandler</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink">File</a>&nbsp;file)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.io.File)">AbstractPropertiesHandler</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink">File</a>&nbsp;propertyFile)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -210,47 +210,47 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5937()">method_5937</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#generate()">generate</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5938(java.lang.String,int)">method_5938</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
-           int&nbsp;int2)</code></th>
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBooleanOrDefault(java.lang.String,boolean)">getBooleanOrDefault</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;key,
+                   boolean&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>long</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5939(java.lang.String,long)">method_5939</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
-           long&nbsp;long2)</code></th>
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getIntOrDefault(java.lang.String,int)">getIntOrDefault</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;key,
+               int&nbsp;int2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5940(java.lang.String,java.lang.Object)">method_5940</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;object)</code></th>
+<td class="colFirst"><code>long</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLongOrDefault(java.lang.String,long)">getLongOrDefault</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;key,
+                long&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5941(java.lang.String,java.lang.String)">method_5941</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string2)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getOrDefault(java.lang.String,java.lang.String)">getOrDefault</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;key,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5942(java.lang.String,boolean)">method_5942</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
-           boolean&nbsp;bool)</code></th>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink">File</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPropertiesFile()">getPropertiesFile</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5943()">method_5943</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#save()">save</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink">File</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5944()">method_5944</a></span>()</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#set(java.lang.String,java.lang.Object)">set</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;key,
+   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -286,22 +286,22 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j" class="externalLink">Logger</a> LOGGER</pre>
 </li>
 </ul>
-<a id="field_6532">
+<a id="properties">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6532</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html?is-external=true" title="class or interface in java.util" class="externalLink">Properties</a> field_6532</pre>
+<h4>properties</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html?is-external=true" title="class or interface in java.util" class="externalLink">Properties</a> properties</pre>
 </li>
 </ul>
-<a id="field_6533">
+<a id="propertyFile">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_6533</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink">File</a> field_6533</pre>
+<h4>propertyFile</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink">File</a> propertyFile</pre>
 </li>
 </ul>
 </li>
@@ -320,7 +320,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AbstractPropertiesHandler</h4>
-<pre>public&nbsp;AbstractPropertiesHandler&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink">File</a>&nbsp;file)</pre>
+<pre>public&nbsp;AbstractPropertiesHandler&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink">File</a>&nbsp;propertyFile)</pre>
 </li>
 </ul>
 </li>
@@ -333,81 +333,81 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="method_5937()">
+<a id="generate()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_5937</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_5937()</pre>
+<h4>generate</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;generate()</pre>
 </li>
 </ul>
-<a id="method_5943()">
+<a id="save()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_5943</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_5943()</pre>
+<h4>save</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;save()</pre>
 </li>
 </ul>
-<a id="method_5944()">
+<a id="getPropertiesFile()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_5944</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink">File</a>&nbsp;method_5944()</pre>
+<h4>getPropertiesFile</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink">File</a>&nbsp;getPropertiesFile()</pre>
 </li>
 </ul>
-<a id="method_5941(java.lang.String,java.lang.String)">
+<a id="getOrDefault(java.lang.String,java.lang.String)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_5941</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;method_5941&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
-                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string2)</pre>
+<h4>getOrDefault</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getOrDefault&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;key,
+                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;value)</pre>
 </li>
 </ul>
-<a id="method_5938(java.lang.String,int)">
+<a id="getIntOrDefault(java.lang.String,int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_5938</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;method_5938&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
-                       int&nbsp;int2)</pre>
+<h4>getIntOrDefault</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;getIntOrDefault&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;key,
+                           int&nbsp;int2)</pre>
 </li>
 </ul>
-<a id="method_5939(java.lang.String,long)">
+<a id="getLongOrDefault(java.lang.String,long)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_5939</h4>
-<pre class="methodSignature">public&nbsp;long&nbsp;method_5939&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
-                        long&nbsp;long2)</pre>
+<h4>getLongOrDefault</h4>
+<pre class="methodSignature">public&nbsp;long&nbsp;getLongOrDefault&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;key,
+                             long&nbsp;value)</pre>
 </li>
 </ul>
-<a id="method_5942(java.lang.String,boolean)">
+<a id="getBooleanOrDefault(java.lang.String,boolean)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_5942</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;method_5942&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
-                           boolean&nbsp;bool)</pre>
+<h4>getBooleanOrDefault</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;getBooleanOrDefault&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;key,
+                                   boolean&nbsp;value)</pre>
 </li>
 </ul>
-<a id="method_5940(java.lang.String,java.lang.Object)">
+<a id="set(java.lang.String,java.lang.Object)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_5940</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_5940&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
-                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;object)</pre>
+<h4>set</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;set&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;key,
+                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;value)</pre>
 </li>
 </ul>
 </li>
