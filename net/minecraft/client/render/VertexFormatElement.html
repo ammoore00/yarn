@@ -189,22 +189,22 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private <a href="VertexFormatElement.Format.html" title="enum in net.minecraft.client.render">VertexFormatElement.Format</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_5196">field_5196</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#format">format</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="VertexFormatElement.Type.html" title="enum in net.minecraft.client.render">VertexFormatElement.Type</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_5197">field_5197</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>private int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#index">index</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j" class="externalLink">Logger</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#LOGGER">LOGGER</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="VertexFormatElement.Type.html" title="enum in net.minecraft.client.render">VertexFormatElement.Type</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#type">type</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -225,10 +225,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(int,net.minecraft.client.render.VertexFormatElement.Format,net.minecraft.client.render.VertexFormatElement.Type,int)">VertexFormatElement</a></span>&#8203;(int&nbsp;int2,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(int,net.minecraft.client.render.VertexFormatElement.Format,net.minecraft.client.render.VertexFormatElement.Type,int)">VertexFormatElement</a></span>&#8203;(int&nbsp;index,
                    <a href="VertexFormatElement.Format.html" title="enum in net.minecraft.client.render">VertexFormatElement.Format</a>&nbsp;format,
                    <a href="VertexFormatElement.Type.html" title="enum in net.minecraft.client.render">VertexFormatElement.Type</a>&nbsp;type,
-                   int&nbsp;int3)</code></th>
+                   int&nbsp;count)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -251,7 +251,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#equals(java.lang.Object)">equals</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;object)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#equals(java.lang.Object)">equals</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;o)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -333,22 +333,22 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j" class="externalLink">Logger</a> LOGGER</pre>
 </li>
 </ul>
-<a id="field_5196">
+<a id="format">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_5196</h4>
-<pre>private final&nbsp;<a href="VertexFormatElement.Format.html" title="enum in net.minecraft.client.render">VertexFormatElement.Format</a> field_5196</pre>
+<h4>format</h4>
+<pre>private final&nbsp;<a href="VertexFormatElement.Format.html" title="enum in net.minecraft.client.render">VertexFormatElement.Format</a> format</pre>
 </li>
 </ul>
-<a id="field_5197">
+<a id="type">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_5197</h4>
-<pre>private final&nbsp;<a href="VertexFormatElement.Type.html" title="enum in net.minecraft.client.render">VertexFormatElement.Type</a> field_5197</pre>
+<h4>type</h4>
+<pre>private final&nbsp;<a href="VertexFormatElement.Type.html" title="enum in net.minecraft.client.render">VertexFormatElement.Type</a> type</pre>
 </li>
 </ul>
 <a id="index">
@@ -385,10 +385,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockListLast">
 <li class="blockList">
 <h4>VertexFormatElement</h4>
-<pre>public&nbsp;VertexFormatElement&#8203;(int&nbsp;int2,
+<pre>public&nbsp;VertexFormatElement&#8203;(int&nbsp;index,
                            <a href="VertexFormatElement.Format.html" title="enum in net.minecraft.client.render">VertexFormatElement.Format</a>&nbsp;format,
                            <a href="VertexFormatElement.Type.html" title="enum in net.minecraft.client.render">VertexFormatElement.Type</a>&nbsp;type,
-                           int&nbsp;int3)</pre>
+                           int&nbsp;count)</pre>
 </li>
 </ul>
 </li>
@@ -484,7 +484,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>equals</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;equals&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;object)</pre>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;equals&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&nbsp;o)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang" class="externalLink">equals</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a></code></dd>

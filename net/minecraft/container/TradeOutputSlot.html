@@ -164,18 +164,18 @@ extends <a href="Slot.html" title="class in net.minecraft.container">Slot</a></p
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../class_2004.html" title="class in net.minecraft">class_2004</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_8516">field_8516</a></span></code></th>
+<td class="colFirst"><code>private <a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#player">player</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_8517">field_8517</a></span></code></th>
+<td class="colFirst"><code>private <a href="../Trader.html" title="interface in net.minecraft">Trader</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#trader">trader</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../class_83.html" title="interface in net.minecraft">class_83</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_8519">field_8519</a></span></code></th>
+<td class="colFirst"><code>private <a href="../village/TraderInventory.html" title="class in net.minecraft.village">TraderInventory</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#traderInventory">traderInventory</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -184,7 +184,7 @@ extends <a href="Slot.html" title="class in net.minecraft.container">Slot</a></p
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.container.<a href="Slot.html" title="class in net.minecraft.container">Slot</a></h3>
-<code><a href="Slot.html#field_8526">field_8526</a>, <a href="Slot.html#id">id</a>, <a href="Slot.html#xPosition">xPosition</a>, <a href="Slot.html#yPosition">yPosition</a></code></li>
+<code><a href="Slot.html#id">id</a>, <a href="Slot.html#inventory">inventory</a>, <a href="Slot.html#xPosition">xPosition</a>, <a href="Slot.html#yPosition">yPosition</a></code></li>
 </ul>
 </li>
 </ul>
@@ -203,12 +203,12 @@ extends <a href="Slot.html" title="class in net.minecraft.container">Slot</a></p
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.entity.player.PlayerEntity,net.minecraft.class_83,net.minecraft.class_2004,int,int,int)">TradeOutputSlot</a></span>&#8203;(<a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity,
-               <a href="../class_83.html" title="interface in net.minecraft">class_83</a>&nbsp;class_83,
-               <a href="../class_2004.html" title="class in net.minecraft">class_2004</a>&nbsp;class_2004,
-               int&nbsp;int2,
-               int&nbsp;int3,
-               int&nbsp;int4)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.entity.player.PlayerEntity,net.minecraft.Trader,net.minecraft.village.TraderInventory,int,int,int)">TradeOutputSlot</a></span>&#8203;(<a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player,
+               <a href="../Trader.html" title="interface in net.minecraft">Trader</a>&nbsp;trader,
+               <a href="../village/TraderInventory.html" title="class in net.minecraft.village">TraderInventory</a>&nbsp;traderInventory,
+               int&nbsp;index,
+               int&nbsp;x,
+               int&nbsp;y)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -236,26 +236,26 @@ extends <a href="Slot.html" title="class in net.minecraft.container">Slot</a></p
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>private boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_8149(net.minecraft.village.TradeOffer,net.minecraft.item.ItemStack,net.minecraft.item.ItemStack)">method_8149</a></span>&#8203;(<a href="../village/TradeOffer.html" title="class in net.minecraft.village">TradeOffer</a>&nbsp;tradeOffer,
-           <a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
-           <a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack2)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#depleteBuyItems(net.minecraft.village.TradeOffer,net.minecraft.item.ItemStack,net.minecraft.item.ItemStack)">depleteBuyItems</a></span>&#8203;(<a href="../village/TradeOffer.html" title="class in net.minecraft.village">TradeOffer</a>&nbsp;tradeOffer,
+               <a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
+               <a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_8157(net.minecraft.entity.player.PlayerEntity,net.minecraft.item.ItemStack)">method_8157</a></span>&#8203;(<a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity,
-           <a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i3" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onCrafted(net.minecraft.item.ItemStack)">onCrafted</a></span>&#8203;(<a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onCrafted(net.minecraft.item.ItemStack,int)">onCrafted</a></span>&#8203;(<a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
          int&nbsp;amount)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onTakeItem(net.minecraft.entity.player.PlayerEntity,net.minecraft.item.ItemStack)">onTakeItem</a></span>&#8203;(<a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player,
+          <a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -294,22 +294,22 @@ extends <a href="Slot.html" title="class in net.minecraft.container">Slot</a></p
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="field_8516">
+<a id="traderInventory">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_8516</h4>
-<pre>private final&nbsp;<a href="../class_2004.html" title="class in net.minecraft">class_2004</a> field_8516</pre>
+<h4>traderInventory</h4>
+<pre>private final&nbsp;<a href="../village/TraderInventory.html" title="class in net.minecraft.village">TraderInventory</a> traderInventory</pre>
 </li>
 </ul>
-<a id="field_8517">
+<a id="player">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_8517</h4>
-<pre>private&nbsp;<a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a> field_8517</pre>
+<h4>player</h4>
+<pre>private&nbsp;<a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a> player</pre>
 </li>
 </ul>
 <a id="amount">
@@ -321,13 +321,13 @@ extends <a href="Slot.html" title="class in net.minecraft.container">Slot</a></p
 <pre>private&nbsp;int amount</pre>
 </li>
 </ul>
-<a id="field_8519">
+<a id="trader">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_8519</h4>
-<pre>private final&nbsp;<a href="../class_83.html" title="interface in net.minecraft">class_83</a> field_8519</pre>
+<h4>trader</h4>
+<pre>private final&nbsp;<a href="../Trader.html" title="interface in net.minecraft">Trader</a> trader</pre>
 </li>
 </ul>
 </li>
@@ -340,18 +340,18 @@ extends <a href="Slot.html" title="class in net.minecraft.container">Slot</a></p
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(net.minecraft.entity.player.PlayerEntity,net.minecraft.class_83,net.minecraft.class_2004,int,int,int)">
+<a id="&lt;init&gt;(net.minecraft.entity.player.PlayerEntity,net.minecraft.Trader,net.minecraft.village.TraderInventory,int,int,int)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>TradeOutputSlot</h4>
-<pre>public&nbsp;TradeOutputSlot&#8203;(<a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity,
-                       <a href="../class_83.html" title="interface in net.minecraft">class_83</a>&nbsp;class_83,
-                       <a href="../class_2004.html" title="class in net.minecraft">class_2004</a>&nbsp;class_2004,
-                       int&nbsp;int2,
-                       int&nbsp;int3,
-                       int&nbsp;int4)</pre>
+<pre>public&nbsp;TradeOutputSlot&#8203;(<a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player,
+                       <a href="../Trader.html" title="interface in net.minecraft">Trader</a>&nbsp;trader,
+                       <a href="../village/TraderInventory.html" title="class in net.minecraft.village">TraderInventory</a>&nbsp;traderInventory,
+                       int&nbsp;index,
+                       int&nbsp;x,
+                       int&nbsp;y)</pre>
 </li>
 </ul>
 </li>
@@ -417,29 +417,29 @@ extends <a href="Slot.html" title="class in net.minecraft.container">Slot</a></p
 </dl>
 </li>
 </ul>
-<a id="method_8157(net.minecraft.entity.player.PlayerEntity,net.minecraft.item.ItemStack)">
+<a id="onTakeItem(net.minecraft.entity.player.PlayerEntity,net.minecraft.item.ItemStack)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_8157</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_8157&#8203;(<a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity,
-                        <a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</pre>
+<h4>onTakeItem</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;onTakeItem&#8203;(<a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player,
+                       <a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="Slot.html#method_8157(net.minecraft.entity.player.PlayerEntity,net.minecraft.item.ItemStack)">method_8157</a></code>&nbsp;in class&nbsp;<code><a href="Slot.html" title="class in net.minecraft.container">Slot</a></code></dd>
+<dd><code><a href="Slot.html#onTakeItem(net.minecraft.entity.player.PlayerEntity,net.minecraft.item.ItemStack)">onTakeItem</a></code>&nbsp;in class&nbsp;<code><a href="Slot.html" title="class in net.minecraft.container">Slot</a></code></dd>
 </dl>
 </li>
 </ul>
-<a id="method_8149(net.minecraft.village.TradeOffer,net.minecraft.item.ItemStack,net.minecraft.item.ItemStack)">
+<a id="depleteBuyItems(net.minecraft.village.TradeOffer,net.minecraft.item.ItemStack,net.minecraft.item.ItemStack)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_8149</h4>
-<pre class="methodSignature">private&nbsp;boolean&nbsp;method_8149&#8203;(<a href="../village/TradeOffer.html" title="class in net.minecraft.village">TradeOffer</a>&nbsp;tradeOffer,
-                            <a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
-                            <a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack2)</pre>
+<h4>depleteBuyItems</h4>
+<pre class="methodSignature">private&nbsp;boolean&nbsp;depleteBuyItems&#8203;(<a href="../village/TradeOffer.html" title="class in net.minecraft.village">TradeOffer</a>&nbsp;tradeOffer,
+                                <a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
+                                <a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack2)</pre>
 </li>
 </ul>
 </li>

@@ -160,22 +160,22 @@ extends <a href="Container.html" title="class in net.minecraft.container">Contai
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../inventory/CraftingInventory.html" title="class in net.minecraft.inventory">CraftingInventory</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_8502">field_8502</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#craftingInventory">craftingInventory</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_8503">field_8503</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#craftingResultInventory">craftingResultInventory</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_8505">field_8505</a></span></code></th>
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onServer">onServer</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onServer">onServer</a></span></code></th>
+<td class="colFirst"><code>private <a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#owner">owner</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -184,7 +184,7 @@ extends <a href="Container.html" title="class in net.minecraft.container">Contai
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.container.<a href="Container.html" title="class in net.minecraft.container">Container</a></h3>
-<code><a href="Container.html#field_8439">field_8439</a>, <a href="Container.html#listeners">listeners</a>, <a href="Container.html#slots">slots</a>, <a href="Container.html#syncId">syncId</a></code></li>
+<code><a href="Container.html#listeners">listeners</a>, <a href="Container.html#slots">slots</a>, <a href="Container.html#syncId">syncId</a>, <a href="Container.html#trackedStacks">trackedStacks</a></code></li>
 </ul>
 </li>
 </ul>
@@ -203,9 +203,9 @@ extends <a href="Container.html" title="class in net.minecraft.container">Contai
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.entity.player.PlayerInventory,boolean,net.minecraft.entity.player.PlayerEntity)">PlayerContainer</a></span>&#8203;(<a href="../entity/player/PlayerInventory.html" title="class in net.minecraft.entity.player">PlayerInventory</a>&nbsp;playerInventory,
-               boolean&nbsp;bool,
-               <a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.entity.player.PlayerInventory,boolean,net.minecraft.entity.player.PlayerEntity)">PlayerContainer</a></span>&#8203;(<a href="../entity/player/PlayerInventory.html" title="class in net.minecraft.entity.player">PlayerInventory</a>&nbsp;inventory,
+               boolean&nbsp;onServer,
+               <a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;owner)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -259,7 +259,7 @@ extends <a href="Container.html" title="class in net.minecraft.container">Contai
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.container.<a href="Container.html" title="class in net.minecraft.container">Container</a></h3>
-<code><a href="Container.html#addSlot(net.minecraft.container.Slot)">addSlot</a>, <a href="Container.html#calculateStackSize(java.util.Set,int,net.minecraft.item.ItemStack,int)">calculateStackSize</a>, <a href="Container.html#canInsertIntoSlot(net.minecraft.container.Slot)">canInsertIntoSlot</a>, <a href="Container.html#canInsertItemIntoSlot(net.minecraft.container.Slot,net.minecraft.item.ItemStack,boolean)">canInsertItemIntoSlot</a>, <a href="Container.html#endQuickCraft()">endQuickCraft</a>, <a href="Container.html#getNextActionId(net.minecraft.entity.player.PlayerInventory)">getNextActionId</a>, <a href="Container.html#getSlot(int)">getSlot</a>, <a href="Container.html#insertItem(net.minecraft.item.ItemStack,int,int,boolean)">insertItem</a>, <a href="Container.html#isNotRestricted(net.minecraft.entity.player.PlayerEntity)">isNotRestricted</a>, <a href="Container.html#method_8093()">method_8093</a>, <a href="Container.html#method_8095(int,int,int,net.minecraft.entity.player.PlayerEntity)">method_8095</a>, <a href="Container.html#method_8096(int,int,boolean,net.minecraft.entity.player.PlayerEntity)">method_8096</a>, <a href="Container.html#method_8099(net.minecraft.block.entity.BlockEntity)">method_8099</a>, <a href="Container.html#method_8102(net.minecraft.inventory.Inventory,int)">method_8102</a>, <a href="Container.html#method_8107(net.minecraft.container.ContainerListener)">method_8107</a>, <a href="Container.html#method_8112(net.minecraft.item.ItemStack%5B%5D)">method_8112</a>, <a href="Container.html#method_8116(net.minecraft.inventory.Inventory)">method_8116</a>, <a href="Container.html#onButtonClick(net.minecraft.entity.player.PlayerEntity,int)">onButtonClick</a>, <a href="Container.html#packClickData(int,int)">packClickData</a>, <a href="Container.html#removeListener(net.minecraft.container.ContainerListener)">removeListener</a>, <a href="Container.html#sendContentUpdates()">sendContentUpdates</a>, <a href="Container.html#setPlayerRestriction(net.minecraft.entity.player.PlayerEntity,boolean)">setPlayerRestriction</a>, <a href="Container.html#setProperty(int,int)">setProperty</a>, <a href="Container.html#setStackInSlot(int,net.minecraft.item.ItemStack)">setStackInSlot</a>, <a href="Container.html#shouldQuickCraftContinue(int,net.minecraft.entity.player.PlayerEntity)">shouldQuickCraftContinue</a>, <a href="Container.html#unpackButtonId(int)">unpackButtonId</a>, <a href="Container.html#unpackQuickCraftStage(int)">unpackQuickCraftStage</a></code></li>
+<code><a href="Container.html#addListener(net.minecraft.container.ContainerListener)">addListener</a>, <a href="Container.html#addSlot(net.minecraft.container.Slot)">addSlot</a>, <a href="Container.html#calculateComparatorOutput(net.minecraft.block.entity.BlockEntity)">calculateComparatorOutput</a>, <a href="Container.html#calculateComparatorOutput(net.minecraft.inventory.Inventory)">calculateComparatorOutput</a>, <a href="Container.html#calculateStackSize(java.util.Set,int,net.minecraft.item.ItemStack,int)">calculateStackSize</a>, <a href="Container.html#canInsertIntoSlot(net.minecraft.container.Slot)">canInsertIntoSlot</a>, <a href="Container.html#canInsertItemIntoSlot(net.minecraft.container.Slot,net.minecraft.item.ItemStack,boolean)">canInsertItemIntoSlot</a>, <a href="Container.html#endQuickCraft()">endQuickCraft</a>, <a href="Container.html#getNextActionId(net.minecraft.entity.player.PlayerInventory)">getNextActionId</a>, <a href="Container.html#getSlot(int)">getSlot</a>, <a href="Container.html#getStacks()">getStacks</a>, <a href="Container.html#insertItem(net.minecraft.item.ItemStack,int,int,boolean)">insertItem</a>, <a href="Container.html#isNotRestricted(net.minecraft.entity.player.PlayerEntity)">isNotRestricted</a>, <a href="Container.html#method_8096(int,int,boolean,net.minecraft.entity.player.PlayerEntity)">method_8096</a>, <a href="Container.html#method_8102(net.minecraft.inventory.Inventory,int)">method_8102</a>, <a href="Container.html#onButtonClick(net.minecraft.entity.player.PlayerEntity,int)">onButtonClick</a>, <a href="Container.html#onSlotClick(int,int,int,net.minecraft.entity.player.PlayerEntity)">onSlotClick</a>, <a href="Container.html#packClickData(int,int)">packClickData</a>, <a href="Container.html#removeListener(net.minecraft.container.ContainerListener)">removeListener</a>, <a href="Container.html#sendContentUpdates()">sendContentUpdates</a>, <a href="Container.html#setPlayerRestriction(net.minecraft.entity.player.PlayerEntity,boolean)">setPlayerRestriction</a>, <a href="Container.html#setProperty(int,int)">setProperty</a>, <a href="Container.html#setStackInSlot(int,net.minecraft.item.ItemStack)">setStackInSlot</a>, <a href="Container.html#shouldQuickCraftContinue(int,net.minecraft.entity.player.PlayerEntity)">shouldQuickCraftContinue</a>, <a href="Container.html#unpackButtonId(int)">unpackButtonId</a>, <a href="Container.html#unpackQuickCraftStage(int)">unpackQuickCraftStage</a>, <a href="Container.html#updateSlotStacks(net.minecraft.item.ItemStack%5B%5D)">updateSlotStacks</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -284,22 +284,22 @@ extends <a href="Container.html" title="class in net.minecraft.container">Contai
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="field_8502">
+<a id="craftingInventory">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_8502</h4>
-<pre>public&nbsp;<a href="../inventory/CraftingInventory.html" title="class in net.minecraft.inventory">CraftingInventory</a> field_8502</pre>
+<h4>craftingInventory</h4>
+<pre>public&nbsp;<a href="../inventory/CraftingInventory.html" title="class in net.minecraft.inventory">CraftingInventory</a> craftingInventory</pre>
 </li>
 </ul>
-<a id="field_8503">
+<a id="craftingResultInventory">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_8503</h4>
-<pre>public&nbsp;<a href="../inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a> field_8503</pre>
+<h4>craftingResultInventory</h4>
+<pre>public&nbsp;<a href="../inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a> craftingResultInventory</pre>
 </li>
 </ul>
 <a id="onServer">
@@ -311,13 +311,13 @@ extends <a href="Container.html" title="class in net.minecraft.container">Contai
 <pre>public&nbsp;boolean onServer</pre>
 </li>
 </ul>
-<a id="field_8505">
+<a id="owner">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_8505</h4>
-<pre>private final&nbsp;<a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a> field_8505</pre>
+<h4>owner</h4>
+<pre>private final&nbsp;<a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a> owner</pre>
 </li>
 </ul>
 </li>
@@ -336,9 +336,9 @@ extends <a href="Container.html" title="class in net.minecraft.container">Contai
 <ul class="blockListLast">
 <li class="blockList">
 <h4>PlayerContainer</h4>
-<pre>public&nbsp;PlayerContainer&#8203;(<a href="../entity/player/PlayerInventory.html" title="class in net.minecraft.entity.player">PlayerInventory</a>&nbsp;playerInventory,
-                       boolean&nbsp;bool,
-                       <a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</pre>
+<pre>public&nbsp;PlayerContainer&#8203;(<a href="../entity/player/PlayerInventory.html" title="class in net.minecraft.entity.player">PlayerInventory</a>&nbsp;inventory,
+                       boolean&nbsp;onServer,
+                       <a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;owner)</pre>
 </li>
 </ul>
 </li>

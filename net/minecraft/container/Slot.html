@@ -132,7 +132,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="BeaconContainer.SlotPayment.html" title="class in net.minecraft.container">BeaconContainer.SlotPayment</a></code>, <code><a href="BrewingStandContainer.class_1989.html" title="class in net.minecraft.container">BrewingStandContainer.class_1989</a></code>, <code><a href="BrewingStandContainer.class_1990.html" title="class in net.minecraft.container">BrewingStandContainer.class_1990</a></code>, <code><a href="CraftingResultSlot.html" title="class in net.minecraft.container">CraftingResultSlot</a></code>, <code><a href="../client/gui/screen/ingame/CreativeInventoryScreen.CreativeSlot.html" title="class in net.minecraft.client.gui.screen.ingame">CreativeInventoryScreen.CreativeSlot</a></code>, <code><a href="FurnaceFuelSlot.html" title="class in net.minecraft.container">FurnaceFuelSlot</a></code>, <code><a href="FurnaceOutputSlot.html" title="class in net.minecraft.container">FurnaceOutputSlot</a></code>, <code><a href="TradeOutputSlot.html" title="class in net.minecraft.container">TradeOutputSlot</a></code></dd>
+<dd><code><a href="BeaconContainer.SlotPayment.html" title="class in net.minecraft.container">BeaconContainer.SlotPayment</a></code>, <code><a href="BrewingStandContainer.SlotFuel.html" title="class in net.minecraft.container">BrewingStandContainer.SlotFuel</a></code>, <code><a href="BrewingStandContainer.SlotPotion.html" title="class in net.minecraft.container">BrewingStandContainer.SlotPotion</a></code>, <code><a href="CraftingResultSlot.html" title="class in net.minecraft.container">CraftingResultSlot</a></code>, <code><a href="../client/gui/screen/ingame/CreativeInventoryScreen.CreativeSlot.html" title="class in net.minecraft.client.gui.screen.ingame">CreativeInventoryScreen.CreativeSlot</a></code>, <code><a href="FurnaceFuelSlot.html" title="class in net.minecraft.container">FurnaceFuelSlot</a></code>, <code><a href="FurnaceOutputSlot.html" title="class in net.minecraft.container">FurnaceOutputSlot</a></code>, <code><a href="TradeOutputSlot.html" title="class in net.minecraft.container">TradeOutputSlot</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">Slot</span>
@@ -158,13 +158,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_8526">field_8526</a></span></code></th>
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#id">id</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#id">id</a></span></code></th>
+<td class="colFirst"><code><a href="../inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#inventory">inventory</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -201,9 +201,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.inventory.Inventory,int,int,int)">Slot</a></span>&#8203;(<a href="../inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
-    int&nbsp;int2,
-    int&nbsp;int3,
-    int&nbsp;int4)</code></th>
+    int&nbsp;invSlot,
+    int&nbsp;xPosition,
+    int&nbsp;yPosition)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -271,31 +271,31 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_8157(net.minecraft.entity.player.PlayerEntity,net.minecraft.item.ItemStack)">method_8157</a></span>&#8203;(<a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity,
-           <a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_8163()">method_8163</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onCrafted(net.minecraft.item.ItemStack)">onCrafted</a></span>&#8203;(<a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onCrafted(net.minecraft.item.ItemStack,int)">onCrafted</a></span>&#8203;(<a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
          int&nbsp;amount)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onStackChanged(net.minecraft.item.ItemStack,net.minecraft.item.ItemStack)">onStackChanged</a></span>&#8203;(<a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;originalItem,
               <a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onTakeItem(net.minecraft.entity.player.PlayerEntity,net.minecraft.item.ItemStack)">onTakeItem</a></span>&#8203;(<a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player,
+          <a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
@@ -341,13 +341,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>private final&nbsp;int invSlot</pre>
 </li>
 </ul>
-<a id="field_8526">
+<a id="inventory">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_8526</h4>
-<pre>public final&nbsp;<a href="../inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a> field_8526</pre>
+<h4>inventory</h4>
+<pre>public final&nbsp;<a href="../inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a> inventory</pre>
 </li>
 </ul>
 <a id="id">
@@ -394,9 +394,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>Slot</h4>
 <pre>public&nbsp;Slot&#8203;(<a href="../inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
-            int&nbsp;int2,
-            int&nbsp;int3,
-            int&nbsp;int4)</pre>
+            int&nbsp;invSlot,
+            int&nbsp;xPosition,
+            int&nbsp;yPosition)</pre>
 </li>
 </ul>
 </li>
@@ -438,14 +438,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre class="methodSignature">protected&nbsp;void&nbsp;onCrafted&#8203;(<a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</pre>
 </li>
 </ul>
-<a id="method_8157(net.minecraft.entity.player.PlayerEntity,net.minecraft.item.ItemStack)">
+<a id="onTakeItem(net.minecraft.entity.player.PlayerEntity,net.minecraft.item.ItemStack)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_8157</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_8157&#8203;(<a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity,
-                        <a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</pre>
+<h4>onTakeItem</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;onTakeItem&#8203;(<a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player,
+                       <a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</pre>
 </li>
 </ul>
 <a id="canInsert(net.minecraft.item.ItemStack)">

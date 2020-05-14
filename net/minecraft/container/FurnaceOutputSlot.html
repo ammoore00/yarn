@@ -165,7 +165,7 @@ extends <a href="Slot.html" title="class in net.minecraft.container">Slot</a></p
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private <a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_8494">field_8494</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#player">player</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -174,7 +174,7 @@ extends <a href="Slot.html" title="class in net.minecraft.container">Slot</a></p
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.container.<a href="Slot.html" title="class in net.minecraft.container">Slot</a></h3>
-<code><a href="Slot.html#field_8526">field_8526</a>, <a href="Slot.html#id">id</a>, <a href="Slot.html#xPosition">xPosition</a>, <a href="Slot.html#yPosition">yPosition</a></code></li>
+<code><a href="Slot.html#id">id</a>, <a href="Slot.html#inventory">inventory</a>, <a href="Slot.html#xPosition">xPosition</a>, <a href="Slot.html#yPosition">yPosition</a></code></li>
 </ul>
 </li>
 </ul>
@@ -193,11 +193,11 @@ extends <a href="Slot.html" title="class in net.minecraft.container">Slot</a></p
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.entity.player.PlayerEntity,net.minecraft.inventory.Inventory,int,int,int)">FurnaceOutputSlot</a></span>&#8203;(<a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.entity.player.PlayerEntity,net.minecraft.inventory.Inventory,int,int,int)">FurnaceOutputSlot</a></span>&#8203;(<a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player,
                  <a href="../inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
-                 int&nbsp;int2,
-                 int&nbsp;int3,
-                 int&nbsp;int4)</code></th>
+                 int&nbsp;invSlot,
+                 int&nbsp;xPosition,
+                 int&nbsp;yPosition)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -224,20 +224,20 @@ extends <a href="Slot.html" title="class in net.minecraft.container">Slot</a></p
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_8157(net.minecraft.entity.player.PlayerEntity,net.minecraft.item.ItemStack)">method_8157</a></span>&#8203;(<a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity,
-           <a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onCrafted(net.minecraft.item.ItemStack)">onCrafted</a></span>&#8203;(<a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onCrafted(net.minecraft.item.ItemStack,int)">onCrafted</a></span>&#8203;(<a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
          int&nbsp;amount)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onTakeItem(net.minecraft.entity.player.PlayerEntity,net.minecraft.item.ItemStack)">onTakeItem</a></span>&#8203;(<a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player,
+          <a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
@@ -276,13 +276,13 @@ extends <a href="Slot.html" title="class in net.minecraft.container">Slot</a></p
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="field_8494">
+<a id="player">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_8494</h4>
-<pre>private&nbsp;<a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a> field_8494</pre>
+<h4>player</h4>
+<pre>private&nbsp;<a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a> player</pre>
 </li>
 </ul>
 <a id="amount">
@@ -310,11 +310,11 @@ extends <a href="Slot.html" title="class in net.minecraft.container">Slot</a></p
 <ul class="blockListLast">
 <li class="blockList">
 <h4>FurnaceOutputSlot</h4>
-<pre>public&nbsp;FurnaceOutputSlot&#8203;(<a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity,
+<pre>public&nbsp;FurnaceOutputSlot&#8203;(<a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player,
                          <a href="../inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
-                         int&nbsp;int2,
-                         int&nbsp;int3,
-                         int&nbsp;int4)</pre>
+                         int&nbsp;invSlot,
+                         int&nbsp;xPosition,
+                         int&nbsp;yPosition)</pre>
 </li>
 </ul>
 </li>
@@ -353,17 +353,17 @@ extends <a href="Slot.html" title="class in net.minecraft.container">Slot</a></p
 </dl>
 </li>
 </ul>
-<a id="method_8157(net.minecraft.entity.player.PlayerEntity,net.minecraft.item.ItemStack)">
+<a id="onTakeItem(net.minecraft.entity.player.PlayerEntity,net.minecraft.item.ItemStack)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_8157</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_8157&#8203;(<a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity,
-                        <a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</pre>
+<h4>onTakeItem</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;onTakeItem&#8203;(<a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player,
+                       <a href="../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="Slot.html#method_8157(net.minecraft.entity.player.PlayerEntity,net.minecraft.item.ItemStack)">method_8157</a></code>&nbsp;in class&nbsp;<code><a href="Slot.html" title="class in net.minecraft.container">Slot</a></code></dd>
+<dd><code><a href="Slot.html#onTakeItem(net.minecraft.entity.player.PlayerEntity,net.minecraft.item.ItemStack)">onTakeItem</a></code>&nbsp;in class&nbsp;<code><a href="Slot.html" title="class in net.minecraft.container">Slot</a></code></dd>
 </dl>
 </li>
 </ul>

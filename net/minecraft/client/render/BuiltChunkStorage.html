@@ -155,18 +155,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="WorldRenderer.html" title="class in net.minecraft.client.render">WorldRenderer</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_4490">field_4490</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../world/World.html" title="class in net.minecraft.world">World</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_4491">field_4491</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code><a href="../../class_1111.html" title="class in net.minecraft">class_1111</a>[]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_4495">field_4495</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#chunks">chunks</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -182,6 +172,16 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <tr class="rowColor">
 <td class="colFirst"><code>protected int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sizeZ">sizeZ</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../world/World.html" title="class in net.minecraft.world">World</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#world">world</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="WorldRenderer.html" title="class in net.minecraft.client.render">WorldRenderer</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#worldRenderer">worldRenderer</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -203,7 +203,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.world.World,int,net.minecraft.client.render.WorldRenderer,net.minecraft.class_1112)">BuiltChunkStorage</a></span>&#8203;(<a href="../../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-                 int&nbsp;int2,
+                 int&nbsp;viewDistance,
                  <a href="WorldRenderer.html" title="class in net.minecraft.client.render">WorldRenderer</a>&nbsp;worldRenderer,
                  <a href="../../class_1112.html" title="interface in net.minecraft">class_1112</a>&nbsp;class_1112)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -232,13 +232,23 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createChunks(net.minecraft.class_1112)">createChunks</a></span>&#8203;(<a href="../../class_1112.html" title="interface in net.minecraft">class_1112</a>&nbsp;class_1112)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>protected <a href="../../class_1111.html" title="class in net.minecraft">class_1111</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getRenderedChunk(net.minecraft.util.math.BlockPos)">getRenderedChunk</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>private int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_3575(int,int,int)">method_3575</a></span>&#8203;(int&nbsp;int2,
            int&nbsp;int3,
            int&nbsp;int4)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_3576(int,int,int,int,int,int)">method_3576</a></span>&#8203;(int&nbsp;int2,
            int&nbsp;int3,
@@ -246,16 +256,6 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
            int&nbsp;int5,
            int&nbsp;int6,
            int&nbsp;int7)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>protected void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_3577(net.minecraft.class_1112)">method_3577</a></span>&#8203;(<a href="../../class_1112.html" title="interface in net.minecraft">class_1112</a>&nbsp;class_1112)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>protected <a href="../../class_1111.html" title="class in net.minecraft">class_1111</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_3578(net.minecraft.util.math.BlockPos)">method_3578</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -293,22 +293,22 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="field_4490">
+<a id="worldRenderer">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_4490</h4>
-<pre>protected final&nbsp;<a href="WorldRenderer.html" title="class in net.minecraft.client.render">WorldRenderer</a> field_4490</pre>
+<h4>worldRenderer</h4>
+<pre>protected final&nbsp;<a href="WorldRenderer.html" title="class in net.minecraft.client.render">WorldRenderer</a> worldRenderer</pre>
 </li>
 </ul>
-<a id="field_4491">
+<a id="world">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_4491</h4>
-<pre>protected final&nbsp;<a href="../../world/World.html" title="class in net.minecraft.world">World</a> field_4491</pre>
+<h4>world</h4>
+<pre>protected final&nbsp;<a href="../../world/World.html" title="class in net.minecraft.world">World</a> world</pre>
 </li>
 </ul>
 <a id="sizeY">
@@ -338,13 +338,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>protected&nbsp;int sizeZ</pre>
 </li>
 </ul>
-<a id="field_4495">
+<a id="chunks">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_4495</h4>
-<pre>public&nbsp;<a href="../../class_1111.html" title="class in net.minecraft">class_1111</a>[] field_4495</pre>
+<h4>chunks</h4>
+<pre>public&nbsp;<a href="../../class_1111.html" title="class in net.minecraft">class_1111</a>[] chunks</pre>
 </li>
 </ul>
 </li>
@@ -364,7 +364,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>BuiltChunkStorage</h4>
 <pre>public&nbsp;BuiltChunkStorage&#8203;(<a href="../../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-                         int&nbsp;int2,
+                         int&nbsp;viewDistance,
                          <a href="WorldRenderer.html" title="class in net.minecraft.client.render">WorldRenderer</a>&nbsp;worldRenderer,
                          <a href="../../class_1112.html" title="interface in net.minecraft">class_1112</a>&nbsp;class_1112)</pre>
 </li>
@@ -379,13 +379,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="method_3577(net.minecraft.class_1112)">
+<a id="createChunks(net.minecraft.class_1112)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_3577</h4>
-<pre class="methodSignature">protected&nbsp;void&nbsp;method_3577&#8203;(<a href="../../class_1112.html" title="interface in net.minecraft">class_1112</a>&nbsp;class_1112)</pre>
+<h4>createChunks</h4>
+<pre class="methodSignature">protected&nbsp;void&nbsp;createChunks&#8203;(<a href="../../class_1112.html" title="interface in net.minecraft">class_1112</a>&nbsp;class_1112)</pre>
 </li>
 </ul>
 <a id="clear()">
@@ -441,13 +441,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
                         int&nbsp;int7)</pre>
 </li>
 </ul>
-<a id="method_3578(net.minecraft.util.math.BlockPos)">
+<a id="getRenderedChunk(net.minecraft.util.math.BlockPos)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_3578</h4>
-<pre class="methodSignature">protected&nbsp;<a href="../../class_1111.html" title="class in net.minecraft">class_1111</a>&nbsp;method_3578&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</pre>
+<h4>getRenderedChunk</h4>
+<pre class="methodSignature">protected&nbsp;<a href="../../class_1111.html" title="class in net.minecraft">class_1111</a>&nbsp;getRenderedChunk&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</pre>
 </li>
 </ul>
 </li>
