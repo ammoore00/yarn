@@ -159,43 +159,33 @@ implements <a href="../../network/listener/ServerPlayPacketListener.html" title=
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../../network/ClientConnection.html" title="class in net.minecraft.network">ClientConnection</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#connection">connection</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>private int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#creativeItemDropThreshold">creativeItemDropThreshold</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../network/ClientConnection.html" title="class in net.minecraft.network">ClientConnection</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6718">field_6718</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../entity/player/ServerPlayerEntity.html" title="class in net.minecraft.entity.player">ServerPlayerEntity</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6719">field_6719</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>private int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6723">field_6723</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6724">field_6724</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6725">field_6725</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6726">field_6726</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../util/IntObjectStorage.html" title="class in net.minecraft.util">IntObjectStorage</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html?is-external=true" title="class or interface in java.lang" class="externalLink">Short</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6731">field_6731</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -244,8 +234,18 @@ implements <a href="../../network/listener/ServerPlayPacketListener.html" title=
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="../../entity/player/ServerPlayerEntity.html" title="class in net.minecraft.entity.player">ServerPlayerEntity</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#player">player</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>private <a href="../MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#server">server</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="../../util/IntObjectStorage.html" title="class in net.minecraft.util">IntObjectStorage</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html?is-external=true" title="class or interface in java.lang" class="externalLink">Short</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transactions">transactions</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -266,9 +266,9 @@ implements <a href="../../network/listener/ServerPlayPacketListener.html" title=
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.server.MinecraftServer,net.minecraft.network.ClientConnection,net.minecraft.entity.player.ServerPlayerEntity)">ServerPlayNetworkHandler</a></span>&#8203;(<a href="../MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a>&nbsp;minecraftServer,
-                        <a href="../../network/ClientConnection.html" title="class in net.minecraft.network">ClientConnection</a>&nbsp;clientConnection,
-                        <a href="../../entity/player/ServerPlayerEntity.html" title="class in net.minecraft.entity.player">ServerPlayerEntity</a>&nbsp;serverPlayerEntity)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.server.MinecraftServer,net.minecraft.network.ClientConnection,net.minecraft.entity.player.ServerPlayerEntity)">ServerPlayNetworkHandler</a></span>&#8203;(<a href="../MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a>&nbsp;server,
+                        <a href="../../network/ClientConnection.html" title="class in net.minecraft.network">ClientConnection</a>&nbsp;connection,
+                        <a href="../../entity/player/ServerPlayerEntity.html" title="class in net.minecraft.entity.player">ServerPlayerEntity</a>&nbsp;player)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -291,7 +291,7 @@ implements <a href="../../network/listener/ServerPlayPacketListener.html" title=
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#disconnect(java.lang.String)">disconnect</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#disconnect(java.lang.String)">disconnect</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;reason)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -300,13 +300,13 @@ implements <a href="../../network/listener/ServerPlayPacketListener.html" title=
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5734(net.minecraft.class_1582)">method_5734</a></span>&#8203;(<a href="../../class_1582.html" title="class in net.minecraft">class_1582</a>&nbsp;class_1582)</code></th>
+<td class="colFirst"><code><a href="../../network/ClientConnection.html" title="class in net.minecraft.network">ClientConnection</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getConnection()">getConnection</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../network/ClientConnection.html" title="class in net.minecraft.network">ClientConnection</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6124()">method_6124</a></span>()</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5734(net.minecraft.class_1582)">method_5734</a></span>&#8203;(<a href="../../class_1582.html" title="class in net.minecraft">class_1582</a>&nbsp;class_1582)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
@@ -496,13 +496,13 @@ implements <a href="../../network/listener/ServerPlayPacketListener.html" title=
 <pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j" class="externalLink">Logger</a> LOGGER</pre>
 </li>
 </ul>
-<a id="field_6718">
+<a id="connection">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6718</h4>
-<pre>public final&nbsp;<a href="../../network/ClientConnection.html" title="class in net.minecraft.network">ClientConnection</a> field_6718</pre>
+<h4>connection</h4>
+<pre>public final&nbsp;<a href="../../network/ClientConnection.html" title="class in net.minecraft.network">ClientConnection</a> connection</pre>
 </li>
 </ul>
 <a id="server">
@@ -514,13 +514,13 @@ implements <a href="../../network/listener/ServerPlayPacketListener.html" title=
 <pre>private final&nbsp;<a href="../MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a> server</pre>
 </li>
 </ul>
-<a id="field_6719">
+<a id="player">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6719</h4>
-<pre>public&nbsp;<a href="../../entity/player/ServerPlayerEntity.html" title="class in net.minecraft.entity.player">ServerPlayerEntity</a> field_6719</pre>
+<h4>player</h4>
+<pre>public&nbsp;<a href="../../entity/player/ServerPlayerEntity.html" title="class in net.minecraft.entity.player">ServerPlayerEntity</a> player</pre>
 </li>
 </ul>
 <a id="lastTickMovePacketsCount">
@@ -604,13 +604,13 @@ implements <a href="../../network/listener/ServerPlayPacketListener.html" title=
 <pre>private&nbsp;int creativeItemDropThreshold</pre>
 </li>
 </ul>
-<a id="field_6731">
+<a id="transactions">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6731</h4>
-<pre>private&nbsp;<a href="../../util/IntObjectStorage.html" title="class in net.minecraft.util">IntObjectStorage</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html?is-external=true" title="class or interface in java.lang" class="externalLink">Short</a>&gt; field_6731</pre>
+<h4>transactions</h4>
+<pre>private&nbsp;<a href="../../util/IntObjectStorage.html" title="class in net.minecraft.util">IntObjectStorage</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html?is-external=true" title="class or interface in java.lang" class="externalLink">Short</a>&gt; transactions</pre>
 </li>
 </ul>
 <a id="field_6732">
@@ -665,9 +665,9 @@ implements <a href="../../network/listener/ServerPlayPacketListener.html" title=
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ServerPlayNetworkHandler</h4>
-<pre>public&nbsp;ServerPlayNetworkHandler&#8203;(<a href="../MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a>&nbsp;minecraftServer,
-                                <a href="../../network/ClientConnection.html" title="class in net.minecraft.network">ClientConnection</a>&nbsp;clientConnection,
-                                <a href="../../entity/player/ServerPlayerEntity.html" title="class in net.minecraft.entity.player">ServerPlayerEntity</a>&nbsp;serverPlayerEntity)</pre>
+<pre>public&nbsp;ServerPlayNetworkHandler&#8203;(<a href="../MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a>&nbsp;server,
+                                <a href="../../network/ClientConnection.html" title="class in net.minecraft.network">ClientConnection</a>&nbsp;connection,
+                                <a href="../../entity/player/ServerPlayerEntity.html" title="class in net.minecraft.entity.player">ServerPlayerEntity</a>&nbsp;player)</pre>
 </li>
 </ul>
 </li>
@@ -693,13 +693,13 @@ implements <a href="../../network/listener/ServerPlayPacketListener.html" title=
 </dl>
 </li>
 </ul>
-<a id="method_6124()">
+<a id="getConnection()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_6124</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../network/ClientConnection.html" title="class in net.minecraft.network">ClientConnection</a>&nbsp;method_6124()</pre>
+<h4>getConnection</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../network/ClientConnection.html" title="class in net.minecraft.network">ClientConnection</a>&nbsp;getConnection()</pre>
 </li>
 </ul>
 <a id="disconnect(java.lang.String)">
@@ -708,7 +708,7 @@ implements <a href="../../network/listener/ServerPlayPacketListener.html" title=
 <ul class="blockList">
 <li class="blockList">
 <h4>disconnect</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;disconnect&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;disconnect&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;reason)</pre>
 </li>
 </ul>
 <a id="onPlayerInput(net.minecraft.network.packet.c2s.play.PlayerInputC2SPacket)">

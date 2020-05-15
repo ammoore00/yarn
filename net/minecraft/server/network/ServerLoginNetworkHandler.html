@@ -187,13 +187,13 @@ implements <a href="../../network/listener/ServerLoginPacketListener.html" title
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../network/ClientConnection.html" title="class in net.minecraft.network">ClientConnection</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6747">field_6747</a></span></code></th>
+<td class="colFirst"><code>private <a href="../../entity/player/ServerPlayerEntity.html" title="class in net.minecraft.entity.player">ServerPlayerEntity</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clientEntity">clientEntity</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="ServerLoginNetworkHandler.State.html" title="enum in net.minecraft.server.network">ServerLoginNetworkHandler.State</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6753">field_6753</a></span></code></th>
+<td class="colFirst"><code><a href="../../network/ClientConnection.html" title="class in net.minecraft.network">ClientConnection</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#connection">connection</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -202,43 +202,43 @@ implements <a href="../../network/listener/ServerLoginPacketListener.html" title
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../entity/player/ServerPlayerEntity.html" title="class in net.minecraft.entity.player">ServerPlayerEntity</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6758">field_6758</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j" class="externalLink">Logger</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#LOGGER">LOGGER</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#loginTicks">loginTicks</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#nonce">nonce</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private com.mojang.authlib.GameProfile</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#profile">profile</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#RANDOM">RANDOM</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto" class="externalLink">SecretKey</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#secretKey">secretKey</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private <a href="../MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#server">server</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="ServerLoginNetworkHandler.State.html" title="enum in net.minecraft.server.network">ServerLoginNetworkHandler.State</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#state">state</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -287,38 +287,38 @@ implements <a href="../../network/listener/ServerLoginPacketListener.html" title
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#disconnect(java.lang.String)">disconnect</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getConnectionInfo()">getConnectionInfo</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>protected com.mojang.authlib.GameProfile</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6133(com.mojang.authlib.GameProfile)">method_6133</a></span>&#8203;(com.mojang.authlib.GameProfile&nbsp;gameProfile)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6134(java.lang.String)">method_6134</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onDisconnected(net.minecraft.text.Text)">onDisconnected</a></span>&#8203;(<a href="../../text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;reason)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onHello(net.minecraft.network.packet.c2s.login.LoginHelloC2SPacket)">onHello</a></span>&#8203;(<a href="../../network/packet/c2s/login/LoginHelloC2SPacket.html" title="class in net.minecraft.network.packet.c2s.login">LoginHelloC2SPacket</a>&nbsp;packet)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onKey(net.minecraft.network.packet.c2s.login.LoginKeyC2SPacket)">onKey</a></span>&#8203;(<a href="../../network/packet/c2s/login/LoginKeyC2SPacket.html" title="class in net.minecraft.network.packet.c2s.login">LoginKeyC2SPacket</a>&nbsp;packet)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tick()">tick</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>protected com.mojang.authlib.GameProfile</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toOfflineProfile(com.mojang.authlib.GameProfile)">toOfflineProfile</a></span>&#8203;(com.mojang.authlib.GameProfile&nbsp;profile)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -390,22 +390,22 @@ implements <a href="../../network/listener/ServerLoginPacketListener.html" title
 <pre>private final&nbsp;<a href="../MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a> server</pre>
 </li>
 </ul>
-<a id="field_6747">
+<a id="connection">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6747</h4>
-<pre>public final&nbsp;<a href="../../network/ClientConnection.html" title="class in net.minecraft.network">ClientConnection</a> field_6747</pre>
+<h4>connection</h4>
+<pre>public final&nbsp;<a href="../../network/ClientConnection.html" title="class in net.minecraft.network">ClientConnection</a> connection</pre>
 </li>
 </ul>
-<a id="field_6753">
+<a id="state">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6753</h4>
-<pre>private&nbsp;<a href="ServerLoginNetworkHandler.State.html" title="enum in net.minecraft.server.network">ServerLoginNetworkHandler.State</a> field_6753</pre>
+<h4>state</h4>
+<pre>private&nbsp;<a href="ServerLoginNetworkHandler.State.html" title="enum in net.minecraft.server.network">ServerLoginNetworkHandler.State</a> state</pre>
 </li>
 </ul>
 <a id="loginTicks">
@@ -444,13 +444,13 @@ implements <a href="../../network/listener/ServerLoginPacketListener.html" title
 <pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto" class="externalLink">SecretKey</a> secretKey</pre>
 </li>
 </ul>
-<a id="field_6758">
+<a id="clientEntity">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_6758</h4>
-<pre>private&nbsp;<a href="../../entity/player/ServerPlayerEntity.html" title="class in net.minecraft.entity.player">ServerPlayerEntity</a> field_6758</pre>
+<h4>clientEntity</h4>
+<pre>private&nbsp;<a href="../../entity/player/ServerPlayerEntity.html" title="class in net.minecraft.entity.player">ServerPlayerEntity</a> clientEntity</pre>
 </li>
 </ul>
 </li>
@@ -496,13 +496,13 @@ implements <a href="../../network/listener/ServerLoginPacketListener.html" title
 </dl>
 </li>
 </ul>
-<a id="method_6134(java.lang.String)">
+<a id="disconnect(java.lang.String)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_6134</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_6134&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</pre>
+<h4>disconnect</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;disconnect&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</pre>
 </li>
 </ul>
 <a id="acceptPlayer()">
@@ -562,13 +562,13 @@ implements <a href="../../network/listener/ServerLoginPacketListener.html" title
 </dl>
 </li>
 </ul>
-<a id="method_6133(com.mojang.authlib.GameProfile)">
+<a id="toOfflineProfile(com.mojang.authlib.GameProfile)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_6133</h4>
-<pre class="methodSignature">protected&nbsp;com.mojang.authlib.GameProfile&nbsp;method_6133&#8203;(com.mojang.authlib.GameProfile&nbsp;gameProfile)</pre>
+<h4>toOfflineProfile</h4>
+<pre class="methodSignature">protected&nbsp;com.mojang.authlib.GameProfile&nbsp;toOfflineProfile&#8203;(com.mojang.authlib.GameProfile&nbsp;profile)</pre>
 </li>
 </ul>
 </li>

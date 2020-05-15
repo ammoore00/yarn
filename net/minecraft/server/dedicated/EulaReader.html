@@ -161,7 +161,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink">File</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6523">field_6523</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#eulaFile">eulaFile</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -187,7 +187,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.io.File)">EulaReader</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink">File</a>&nbsp;file)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.io.File)">EulaReader</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink">File</a>&nbsp;eulaFile)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -209,18 +209,18 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>private boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#checkEulaAgreement(java.io.File)">checkEulaAgreement</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink">File</a>&nbsp;eulaFile)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createEulaFile()">createEulaFile</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isEulaAgreedTo()">isEulaAgreedTo</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>private boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5907(java.io.File)">method_5907</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink">File</a>&nbsp;file)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -256,13 +256,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j" class="externalLink">Logger</a> LOGGER</pre>
 </li>
 </ul>
-<a id="field_6523">
+<a id="eulaFile">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6523</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink">File</a> field_6523</pre>
+<h4>eulaFile</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink">File</a> eulaFile</pre>
 </li>
 </ul>
 <a id="eulaAgreedTo">
@@ -290,7 +290,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockListLast">
 <li class="blockList">
 <h4>EulaReader</h4>
-<pre>public&nbsp;EulaReader&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink">File</a>&nbsp;file)</pre>
+<pre>public&nbsp;EulaReader&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink">File</a>&nbsp;eulaFile)</pre>
 </li>
 </ul>
 </li>
@@ -303,13 +303,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="method_5907(java.io.File)">
+<a id="checkEulaAgreement(java.io.File)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_5907</h4>
-<pre class="methodSignature">private&nbsp;boolean&nbsp;method_5907&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink">File</a>&nbsp;file)</pre>
+<h4>checkEulaAgreement</h4>
+<pre class="methodSignature">private&nbsp;boolean&nbsp;checkEulaAgreement&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink">File</a>&nbsp;eulaFile)</pre>
 </li>
 </ul>
 <a id="isEulaAgreedTo()">
