@@ -160,7 +160,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="BakedQuad.html" title="class in net.minecraft.client.render.model">BakedQuad</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_5388">field_5388</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#bakedQuads">bakedQuads</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -174,18 +174,18 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../texture/Sprite.html" title="class in net.minecraft.client.texture">Sprite</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_5391">field_5391</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code>private boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_5392">field_5392</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="../../texture/Sprite.html" title="class in net.minecraft.client.texture">Sprite</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sprite">sprite</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private <a href="json/ModelTransformation.html" title="class in net.minecraft.client.render.model.json">ModelTransformation</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_5393">field_5393</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#transformation">transformation</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -220,7 +220,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>&nbsp;</code></td>
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.client.render.model.BakedModel,net.minecraft.client.texture.Sprite)">class_1295</a></span>&#8203;(<a href="BakedModel.html" title="interface in net.minecraft.client.render.model">BakedModel</a>&nbsp;bakedModel,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.client.render.model.BakedModel,net.minecraft.client.texture.Sprite)">class_1295</a></span>&#8203;(<a href="BakedModel.html" title="interface in net.minecraft.client.render.model">BakedModel</a>&nbsp;model,
           <a href="../../texture/Sprite.html" title="class in net.minecraft.client.texture">Sprite</a>&nbsp;sprite)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -300,13 +300,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="field_5388">
+<a id="bakedQuads">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_5388</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="BakedQuad.html" title="class in net.minecraft.client.render.model">BakedQuad</a>&gt; field_5388</pre>
+<h4>bakedQuads</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="BakedQuad.html" title="class in net.minecraft.client.render.model">BakedQuad</a>&gt; bakedQuads</pre>
 </li>
 </ul>
 <a id="field_5389">
@@ -327,13 +327,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>private final&nbsp;boolean field_5390</pre>
 </li>
 </ul>
-<a id="field_5391">
+<a id="sprite">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_5391</h4>
-<pre>private&nbsp;<a href="../../texture/Sprite.html" title="class in net.minecraft.client.texture">Sprite</a> field_5391</pre>
+<h4>sprite</h4>
+<pre>private&nbsp;<a href="../../texture/Sprite.html" title="class in net.minecraft.client.texture">Sprite</a> sprite</pre>
 </li>
 </ul>
 <a id="field_5392">
@@ -345,13 +345,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>private&nbsp;boolean field_5392</pre>
 </li>
 </ul>
-<a id="field_5393">
+<a id="transformation">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_5393</h4>
-<pre>private&nbsp;<a href="json/ModelTransformation.html" title="class in net.minecraft.client.render.model.json">ModelTransformation</a> field_5393</pre>
+<h4>transformation</h4>
+<pre>private&nbsp;<a href="json/ModelTransformation.html" title="class in net.minecraft.client.render.model.json">ModelTransformation</a> transformation</pre>
 </li>
 </ul>
 </li>
@@ -379,7 +379,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>class_1295</h4>
-<pre>public&nbsp;class_1295&#8203;(<a href="BakedModel.html" title="interface in net.minecraft.client.render.model">BakedModel</a>&nbsp;bakedModel,
+<pre>public&nbsp;class_1295&#8203;(<a href="BakedModel.html" title="interface in net.minecraft.client.render.model">BakedModel</a>&nbsp;model,
                   <a href="../../texture/Sprite.html" title="class in net.minecraft.client.texture">Sprite</a>&nbsp;sprite)</pre>
 </li>
 </ul>
