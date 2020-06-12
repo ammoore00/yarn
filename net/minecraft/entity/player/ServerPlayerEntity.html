@@ -191,33 +191,13 @@ implements <a href="../../container/ContainerListener.html" title="interface in 
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j" class="externalLink">Logger</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6640">field_6640</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6641">field_6641</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6642">field_6642</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../stat/ServerStatHandler.html" title="class in net.minecraft.stat">ServerStatHandler</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6643">field_6643</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code>private float</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6644">field_6644</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6645">field_6645</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -301,6 +281,16 @@ implements <a href="../../container/ContainerListener.html" title="interface in 
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#lang">lang</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j" class="externalLink">Logger</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#LOGGER">LOGGER</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../server/network/ServerPlayNetworkHandler.html" title="class in net.minecraft.server.network">ServerPlayNetworkHandler</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#networkHandler">networkHandler</a></span></code></th>
 <td class="colLast">&nbsp;</td>
@@ -308,6 +298,16 @@ implements <a href="../../container/ContainerListener.html" title="interface in 
 <tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#notInAnyWorld">notInAnyWorld</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#server">server</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="../../stat/ServerStatHandler.html" title="class in net.minecraft.stat">ServerStatHandler</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#statHandler">statHandler</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -349,10 +349,10 @@ implements <a href="../../container/ContainerListener.html" title="interface in 
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.server.MinecraftServer,net.minecraft.server.world.ServerWorld,com.mojang.authlib.GameProfile,net.minecraft.server.network.ServerPlayerInteractionManager)">ServerPlayerEntity</a></span>&#8203;(<a href="../../server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a>&nbsp;minecraftServer,
-                  <a href="../../server/world/ServerWorld.html" title="class in net.minecraft.server.world">ServerWorld</a>&nbsp;serverWorld,
-                  com.mojang.authlib.GameProfile&nbsp;gameProfile,
-                  <a href="../../server/network/ServerPlayerInteractionManager.html" title="class in net.minecraft.server.network">ServerPlayerInteractionManager</a>&nbsp;serverPlayerInteractionManager)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.server.MinecraftServer,net.minecraft.server.world.ServerWorld,com.mojang.authlib.GameProfile,net.minecraft.server.network.ServerPlayerInteractionManager)">ServerPlayerEntity</a></span>&#8203;(<a href="../../server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a>&nbsp;server,
+                  <a href="../../server/world/ServerWorld.html" title="class in net.minecraft.server.world">ServerWorld</a>&nbsp;world,
+                  com.mojang.authlib.GameProfile&nbsp;profile,
+                  <a href="../../server/network/ServerPlayerInteractionManager.html" title="class in net.minecraft.server.network">ServerPlayerInteractionManager</a>&nbsp;interactionManager)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -507,36 +507,31 @@ implements <a href="../../container/ContainerListener.html" title="interface in 
 </tr>
 <tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6076()">method_6076</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6077()">method_6077</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6077()">method_6077</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6078()">method_6078</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6078()">method_6078</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i28" class="altColor">
-<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6079()">method_6079</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code><a href="PlayerEntity.class_1965.html" title="enum in net.minecraft.entity.player">PlayerEntity.class_1965</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6083()">method_6083</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6255(int,java.lang.String)">method_6255</a></span>&#8203;(int&nbsp;int2,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6922(double,boolean,net.minecraft.block.Block,net.minecraft.util.math.BlockPos)">method_6922</a></span>&#8203;(double&nbsp;double2,
            boolean&nbsp;bool,
@@ -544,214 +539,219 @@ implements <a href="../../container/ContainerListener.html" title="interface in 
            <a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6936(net.minecraft.entity.player.ServerPlayerEntity)">method_6936</a></span>&#8203;(<a href="ServerPlayerEntity.html" title="class in net.minecraft.entity.player">ServerPlayerEntity</a>&nbsp;serverPlayerEntity)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6938(net.minecraft.entity.Entity)">method_6938</a></span>&#8203;(<a href="../Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7010(int)">method_7010</a></span>&#8203;(int&nbsp;int2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7087()">method_7087</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7089(net.minecraft.entity.damage.DamageSource)">method_7089</a></span>&#8203;(<a href="../damage/DamageSource.html" title="class in net.minecraft.entity.damage">DamageSource</a>&nbsp;damageSource)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7091(net.minecraft.entity.effect.StatusEffectInstance)">method_7091</a></span>&#8203;(<a href="../effect/StatusEffectInstance.html" title="class in net.minecraft.entity.effect">StatusEffectInstance</a>&nbsp;statusEffectInstance)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7092(net.minecraft.entity.effect.StatusEffectInstance,boolean)">method_7092</a></span>&#8203;(<a href="../effect/StatusEffectInstance.html" title="class in net.minecraft.entity.effect">StatusEffectInstance</a>&nbsp;statusEffectInstance,
            boolean&nbsp;bool)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7094(net.minecraft.entity.Entity,int)">method_7094</a></span>&#8203;(<a href="../Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
            int&nbsp;int2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7102(net.minecraft.entity.effect.StatusEffectInstance)">method_7102</a></span>&#8203;(<a href="../effect/StatusEffectInstance.html" title="class in net.minecraft.entity.effect">StatusEffectInstance</a>&nbsp;statusEffectInstance)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7157()">method_7157</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7160()">method_7160</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7973(int)">method_7973</a></span>&#8203;(int&nbsp;int2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7974(net.minecraft.Trader)">method_7974</a></span>&#8203;(<a href="../../Trader.html" title="interface in net.minecraft">Trader</a>&nbsp;trader)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code><a href="PlayerEntity.SleepFailureReason.html" title="enum in net.minecraft.entity.player">PlayerEntity.SleepFailureReason</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7980(net.minecraft.util.math.BlockPos)">method_7980</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7985(net.minecraft.stat.Stat)">method_7985</a></span>&#8203;(<a href="../../stat/Stat.html" title="class in net.minecraft.stat">Stat</a>&nbsp;stat)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7986(net.minecraft.stat.Stat,int)">method_7986</a></span>&#8203;(<a href="../../stat/Stat.html" title="class in net.minecraft.stat">Stat</a>&nbsp;stat,
            int&nbsp;int2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7987(net.minecraft.inventory.Inventory)">method_7987</a></span>&#8203;(<a href="../../inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7995(net.minecraft.item.ItemStack)">method_7995</a></span>&#8203;(<a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i50" class="altColor">
+<tr id="i49" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7996(net.minecraft.item.ItemStack,int)">method_7996</a></span>&#8203;(<a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
            int&nbsp;int2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i51" class="rowColor">
+<tr id="i50" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_8000(boolean,boolean,boolean)">method_8000</a></span>&#8203;(boolean&nbsp;bool,
            boolean&nbsp;bool2,
            boolean&nbsp;bool3)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i52" class="altColor">
+<tr id="i51" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_8001(int)">method_8001</a></span>&#8203;(int&nbsp;int2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i53" class="rowColor">
+<tr id="i52" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_8003(net.minecraft.text.Text)">method_8003</a></span>&#8203;(<a href="../../text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;text)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i54" class="altColor">
+<tr id="i53" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_8038(net.minecraft.entity.Entity)">method_8038</a></span>&#8203;(<a href="../Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i55" class="rowColor">
+<tr id="i54" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_8046()">method_8046</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i56" class="altColor">
+<tr id="i55" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_8134(net.minecraft.container.Container,net.minecraft.inventory.Inventory)">method_8134</a></span>&#8203;(<a href="../../container/Container.html" title="class in net.minecraft.container">Container</a>&nbsp;container,
            <a href="../../inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i57" class="rowColor">
+<tr id="i56" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onContainerPropertyUpdate(net.minecraft.container.Container,int,int)">onContainerPropertyUpdate</a></span>&#8203;(<a href="../../container/Container.html" title="class in net.minecraft.container">Container</a>&nbsp;container,
                          int&nbsp;propertyId,
                          int&nbsp;int2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i58" class="altColor">
+<tr id="i57" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onContainerRegistered(net.minecraft.container.Container,java.util.List)">onContainerRegistered</a></span>&#8203;(<a href="../../container/Container.html" title="class in net.minecraft.container">Container</a>&nbsp;container,
                      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&gt;&nbsp;list)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i59" class="rowColor">
+<tr id="i58" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onContainerSlotUpdate(net.minecraft.container.Container,int,net.minecraft.item.ItemStack)">onContainerSlotUpdate</a></span>&#8203;(<a href="../../container/Container.html" title="class in net.minecraft.container">Container</a>&nbsp;container,
                      int&nbsp;slotId,
                      <a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i60" class="altColor">
+<tr id="i59" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openContainer(net.minecraft.container.Container)">openContainer</a></span>&#8203;(<a href="../../container/Container.html" title="class in net.minecraft.container">Container</a>&nbsp;container)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i61" class="rowColor">
+<tr id="i60" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openContainer(net.minecraft.world.biome.layer.type.NameableContainerProvider)">openContainer</a></span>&#8203;(<a href="../../world/biome/layer/type/NameableContainerProvider.html" title="interface in net.minecraft.world.biome.layer.type">NameableContainerProvider</a>&nbsp;nameableContainerProvider)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i62" class="altColor">
+<tr id="i61" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openEditSignScreen(net.minecraft.block.entity.SignBlockEntity)">openEditSignScreen</a></span>&#8203;(<a href="../../block/entity/SignBlockEntity.html" title="class in net.minecraft.block.entity">SignBlockEntity</a>&nbsp;signBlockEntity)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i63" class="rowColor">
+<tr id="i62" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#openHorseInventory(net.minecraft.entity.passive.HorseBaseEntity,net.minecraft.inventory.Inventory)">openHorseInventory</a></span>&#8203;(<a href="../passive/HorseBaseEntity.html" title="class in net.minecraft.entity.passive">HorseBaseEntity</a>&nbsp;horseBaseEntity,
                   <a href="../../inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i64" class="altColor">
+<tr id="i63" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#positAfterTeleport(double,double,double)">positAfterTeleport</a></span>&#8203;(double&nbsp;x,
                   double&nbsp;y,
                   double&nbsp;z)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i65" class="rowColor">
+<tr id="i64" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#readCustomDataFromTag(net.minecraft.nbt.CompoundTag)">readCustomDataFromTag</a></span>&#8203;(<a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i66" class="altColor">
+<tr id="i65" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendAbilitiesUpdate()">sendAbilitiesUpdate</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i67" class="rowColor">
+<tr id="i66" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendMessage(net.minecraft.text.Text)">sendMessage</a></span>&#8203;(<a href="../../text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;text)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i68" class="altColor">
+<tr id="i67" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setGameMode(net.minecraft.world.level.LevelInfo.GameMode)">setGameMode</a></span>&#8203;(<a href="../../world/level/LevelInfo.GameMode.html" title="enum in net.minecraft.world.level">LevelInfo.GameMode</a>&nbsp;gameMode)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i69" class="rowColor">
+<tr id="i68" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#shouldDamagePlayer(net.minecraft.entity.player.PlayerEntity)">shouldDamagePlayer</a></span>&#8203;(<a href="PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i70" class="altColor">
+<tr id="i69" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tick()">tick</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i70" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tickPlayer()">tickPlayer</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i71" class="rowColor">
@@ -770,14 +770,14 @@ implements <a href="../../container/ContainerListener.html" title="interface in 
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.entity.player.<a href="PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a></h3>
-<code><a href="PlayerEntity.html#addExhaustion(float)">addExhaustion</a>, <a href="PlayerEntity.html#addScore(int)">addScore</a>, <a href="PlayerEntity.html#afterSpawn()">afterSpawn</a>, <a href="PlayerEntity.html#canClimb()">canClimb</a>, <a href="PlayerEntity.html#canConsume(boolean)">canConsume</a>, <a href="PlayerEntity.html#canFly()">canFly</a>, <a href="PlayerEntity.html#canFoodHeal()">canFoodHeal</a>, <a href="PlayerEntity.html#canModifyWorld()">canModifyWorld</a>, <a href="PlayerEntity.html#dropItem(net.minecraft.item.ItemStack,boolean)">dropItem</a>, <a href="PlayerEntity.html#dropSelectedItem(boolean)">dropSelectedItem</a>, <a href="PlayerEntity.html#equip(int,net.minecraft.item.ItemStack)">equip</a>, <a href="PlayerEntity.html#findRespawnPosition(net.minecraft.world.World,net.minecraft.util.math.BlockPos,boolean)">findRespawnPosition</a>, <a href="PlayerEntity.html#getDefaultNetherPortalCooldown()">getDefaultNetherPortalCooldown</a>, <a href="PlayerEntity.html#getEnchantmentTableSeed()">getEnchantmentTableSeed</a>, <a href="PlayerEntity.html#getEnderChestInventory()">getEnderChestInventory</a>, <a href="PlayerEntity.html#getGameProfile()">getGameProfile</a>, <a href="PlayerEntity.html#getHeightOffset()">getHeightOffset</a>, <a href="PlayerEntity.html#getHungerManager()">getHungerManager</a>, <a href="PlayerEntity.html#getMaxNetherPortalTime()">getMaxNetherPortalTime</a>, <a href="PlayerEntity.html#getNextLevelExperience()">getNextLevelExperience</a>, <a href="PlayerEntity.html#getOfflinePlayerUuid(java.lang.String)">getOfflinePlayerUuid</a>, <a href="PlayerEntity.html#getReducedDebugInfo()">getReducedDebugInfo</a>, <a href="PlayerEntity.html#getScore()">getScore</a>, <a href="PlayerEntity.html#getScoreboard()">getScoreboard</a>, <a href="PlayerEntity.html#getScoreboardTeam()">getScoreboardTeam</a>, <a href="PlayerEntity.html#getSleepTimer()">getSleepTimer</a>, <a href="PlayerEntity.html#getSpawnPosition()">getSpawnPosition</a>, <a href="PlayerEntity.html#getSwimSound()">getSwimSound</a>, <a href="PlayerEntity.html#getUuidFromProfile(com.mojang.authlib.GameProfile)">getUuidFromProfile</a>, <a href="PlayerEntity.html#handleFallDamage(float,float)">handleFallDamage</a>, <a href="PlayerEntity.html#handleStatus(byte)">handleStatus</a>, <a href="PlayerEntity.html#incrementStat(net.minecraft.stat.Stat)">incrementStat</a>, <a href="PlayerEntity.html#initDataTracker()">initDataTracker</a>, <a href="PlayerEntity.html#isInsideWall()">isInsideWall</a>, <a href="PlayerEntity.html#isInvisibleTo(net.minecraft.entity.player.PlayerEntity)">isInvisibleTo</a>, <a href="PlayerEntity.html#isMainPlayer()">isMainPlayer</a>, <a href="PlayerEntity.html#isPartVisible(net.minecraft.client.render.entity.PlayerModelPart)">isPartVisible</a>, <a href="PlayerEntity.html#isSleepingLongEnough()">isSleepingLongEnough</a>, <a href="PlayerEntity.html#isSpawnForced()">isSpawnForced</a>, <a href="PlayerEntity.html#method_133()">method_133</a>, <a href="PlayerEntity.html#method_6261()">method_6261</a>, <a href="PlayerEntity.html#method_6939(net.minecraft.entity.LivingEntity)">method_6939</a>, <a href="PlayerEntity.html#method_6948()">method_6948</a>, <a href="PlayerEntity.html#method_6965()">method_6965</a>, <a href="PlayerEntity.html#method_6970()">method_6970</a>, <a href="PlayerEntity.html#method_6988()">method_6988</a>, <a href="PlayerEntity.html#method_7005(net.minecraft.entity.Entity,int)">method_7005</a>, <a href="PlayerEntity.html#method_7011(int,net.minecraft.item.ItemStack)">method_7011</a>, <a href="PlayerEntity.html#method_7097()">method_7097</a>, <a href="PlayerEntity.html#method_7104(net.minecraft.entity.player.PlayerEntity)">method_7104</a>, <a href="PlayerEntity.html#method_7107()">method_7107</a>, <a href="PlayerEntity.html#method_7110()">method_7110</a>, <a href="PlayerEntity.html#method_7112()">method_7112</a>, <a href="PlayerEntity.html#method_7115()">method_7115</a>, <a href="PlayerEntity.html#method_7116()">method_7116</a>, <a href="PlayerEntity.html#method_7117()">method_7117</a>, <a href="PlayerEntity.html#method_7120()">method_7120</a>, <a href="PlayerEntity.html#method_7124()">method_7124</a>, <a href="PlayerEntity.html#method_7137()">method_7137</a>, <a href="PlayerEntity.html#method_7138()">method_7138</a>, <a href="PlayerEntity.html#method_7140()">method_7140</a>, <a href="PlayerEntity.html#method_7152(net.minecraft.entity.damage.DamageSource,float)">method_7152</a>, <a href="PlayerEntity.html#method_7154(float,float)">method_7154</a>, <a href="PlayerEntity.html#method_7161(float)">method_7161</a>, <a href="PlayerEntity.html#method_7169()">method_7169</a>, <a href="PlayerEntity.html#method_7170(float)">method_7170</a>, <a href="PlayerEntity.html#method_7173(int)">method_7173</a>, <a href="PlayerEntity.html#method_7175(int)">method_7175</a>, <a href="PlayerEntity.html#method_7177(int)">method_7177</a>, <a href="PlayerEntity.html#method_7975(net.minecraft.world.CommandBlockExecutor)">method_7975</a>, <a href="PlayerEntity.html#method_7978(net.minecraft.block.Block)">method_7978</a>, <a href="PlayerEntity.html#method_7981(net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction,net.minecraft.item.ItemStack)">method_7981</a>, <a href="PlayerEntity.html#method_7989(net.minecraft.inventory.ContainerLock)">method_7989</a>, <a href="PlayerEntity.html#method_7991(net.minecraft.entity.ItemEntity)">method_7991</a>, <a href="PlayerEntity.html#method_7998(net.minecraft.item.ItemStack,boolean,boolean)">method_7998</a>, <a href="PlayerEntity.html#method_8002(net.minecraft.block.Block)">method_8002</a>, <a href="PlayerEntity.html#method_8007(net.minecraft.item.ItemStack,int)">method_8007</a>, <a href="PlayerEntity.html#method_8008()">method_8008</a>, <a href="PlayerEntity.html#method_8009()">method_8009</a>, <a href="PlayerEntity.html#method_8010()">method_8010</a>, <a href="PlayerEntity.html#method_8011()">method_8011</a>, <a href="PlayerEntity.html#method_8013()">method_8013</a>, <a href="PlayerEntity.html#method_8014()">method_8014</a>, <a href="PlayerEntity.html#method_8016()">method_8016</a>, <a href="PlayerEntity.html#method_8017()">method_8017</a>, <a href="PlayerEntity.html#method_8019()">method_8019</a>, <a href="PlayerEntity.html#method_8023()">method_8023</a>, <a href="PlayerEntity.html#method_8040(double,double,double)">method_8040</a>, <a href="PlayerEntity.html#method_8049(int)">method_8049</a>, <a href="PlayerEntity.html#method_8050(net.minecraft.entity.Entity)">method_8050</a>, <a href="PlayerEntity.html#onSwimmingStart()">onSwimmingStart</a>, <a href="PlayerEntity.html#playSound(java.lang.String,float,float)">playSound</a>, <a href="PlayerEntity.html#remove()">remove</a>, <a href="PlayerEntity.html#requestRespawn()">requestRespawn</a>, <a href="PlayerEntity.html#sendCommandFeedback()">sendCommandFeedback</a>, <a href="PlayerEntity.html#setPlayerSpawn(net.minecraft.util.math.BlockPos,boolean)">setPlayerSpawn</a>, <a href="PlayerEntity.html#setReducedDebugInfo(boolean)">setReducedDebugInfo</a>, <a href="PlayerEntity.html#setScore(int)">setScore</a>, <a href="PlayerEntity.html#shouldRenderName()">shouldRenderName</a>, <a href="PlayerEntity.html#stopUsingItem()">stopUsingItem</a>, <a href="PlayerEntity.html#tickRiding()">tickRiding</a></code></li>
+<code><a href="PlayerEntity.html#addExhaustion(float)">addExhaustion</a>, <a href="PlayerEntity.html#addScore(int)">addScore</a>, <a href="PlayerEntity.html#afterSpawn()">afterSpawn</a>, <a href="PlayerEntity.html#canClimb()">canClimb</a>, <a href="PlayerEntity.html#canConsume(boolean)">canConsume</a>, <a href="PlayerEntity.html#canFly()">canFly</a>, <a href="PlayerEntity.html#canFoodHeal()">canFoodHeal</a>, <a href="PlayerEntity.html#canModifyWorld()">canModifyWorld</a>, <a href="PlayerEntity.html#dropItem(net.minecraft.item.ItemStack,boolean)">dropItem</a>, <a href="PlayerEntity.html#dropSelectedItem(boolean)">dropSelectedItem</a>, <a href="PlayerEntity.html#equip(int,net.minecraft.item.ItemStack)">equip</a>, <a href="PlayerEntity.html#findRespawnPosition(net.minecraft.world.World,net.minecraft.util.math.BlockPos,boolean)">findRespawnPosition</a>, <a href="PlayerEntity.html#getChatText()">getChatText</a>, <a href="PlayerEntity.html#getDefaultNetherPortalCooldown()">getDefaultNetherPortalCooldown</a>, <a href="PlayerEntity.html#getEnchantmentTableSeed()">getEnchantmentTableSeed</a>, <a href="PlayerEntity.html#getEnderChestInventory()">getEnderChestInventory</a>, <a href="PlayerEntity.html#getGameProfile()">getGameProfile</a>, <a href="PlayerEntity.html#getHeightOffset()">getHeightOffset</a>, <a href="PlayerEntity.html#getHungerManager()">getHungerManager</a>, <a href="PlayerEntity.html#getMaxNetherPortalTime()">getMaxNetherPortalTime</a>, <a href="PlayerEntity.html#getName()">getName</a>, <a href="PlayerEntity.html#getNextLevelExperience()">getNextLevelExperience</a>, <a href="PlayerEntity.html#getOfflinePlayerUuid(java.lang.String)">getOfflinePlayerUuid</a>, <a href="PlayerEntity.html#getReducedDebugInfo()">getReducedDebugInfo</a>, <a href="PlayerEntity.html#getScore()">getScore</a>, <a href="PlayerEntity.html#getScoreboard()">getScoreboard</a>, <a href="PlayerEntity.html#getScoreboardTeam()">getScoreboardTeam</a>, <a href="PlayerEntity.html#getSleepTimer()">getSleepTimer</a>, <a href="PlayerEntity.html#getSpawnPosition()">getSpawnPosition</a>, <a href="PlayerEntity.html#getSwimSound()">getSwimSound</a>, <a href="PlayerEntity.html#getUuidFromProfile(com.mojang.authlib.GameProfile)">getUuidFromProfile</a>, <a href="PlayerEntity.html#handleFallDamage(float,float)">handleFallDamage</a>, <a href="PlayerEntity.html#handleStatus(byte)">handleStatus</a>, <a href="PlayerEntity.html#incrementStat(net.minecraft.stat.Stat)">incrementStat</a>, <a href="PlayerEntity.html#initDataTracker()">initDataTracker</a>, <a href="PlayerEntity.html#isInsideWall()">isInsideWall</a>, <a href="PlayerEntity.html#isInvisibleTo(net.minecraft.entity.player.PlayerEntity)">isInvisibleTo</a>, <a href="PlayerEntity.html#isMainPlayer()">isMainPlayer</a>, <a href="PlayerEntity.html#isPartVisible(net.minecraft.client.render.entity.PlayerModelPart)">isPartVisible</a>, <a href="PlayerEntity.html#isSleepingLongEnough()">isSleepingLongEnough</a>, <a href="PlayerEntity.html#isSpawnForced()">isSpawnForced</a>, <a href="PlayerEntity.html#method_6939(net.minecraft.entity.LivingEntity)">method_6939</a>, <a href="PlayerEntity.html#method_6948()">method_6948</a>, <a href="PlayerEntity.html#method_6965()">method_6965</a>, <a href="PlayerEntity.html#method_6970()">method_6970</a>, <a href="PlayerEntity.html#method_6988()">method_6988</a>, <a href="PlayerEntity.html#method_7005(net.minecraft.entity.Entity,int)">method_7005</a>, <a href="PlayerEntity.html#method_7011(int,net.minecraft.item.ItemStack)">method_7011</a>, <a href="PlayerEntity.html#method_7097()">method_7097</a>, <a href="PlayerEntity.html#method_7104(net.minecraft.entity.player.PlayerEntity)">method_7104</a>, <a href="PlayerEntity.html#method_7107()">method_7107</a>, <a href="PlayerEntity.html#method_7110()">method_7110</a>, <a href="PlayerEntity.html#method_7112()">method_7112</a>, <a href="PlayerEntity.html#method_7115()">method_7115</a>, <a href="PlayerEntity.html#method_7116()">method_7116</a>, <a href="PlayerEntity.html#method_7117()">method_7117</a>, <a href="PlayerEntity.html#method_7120()">method_7120</a>, <a href="PlayerEntity.html#method_7124()">method_7124</a>, <a href="PlayerEntity.html#method_7137()">method_7137</a>, <a href="PlayerEntity.html#method_7138()">method_7138</a>, <a href="PlayerEntity.html#method_7140()">method_7140</a>, <a href="PlayerEntity.html#method_7152(net.minecraft.entity.damage.DamageSource,float)">method_7152</a>, <a href="PlayerEntity.html#method_7154(float,float)">method_7154</a>, <a href="PlayerEntity.html#method_7161(float)">method_7161</a>, <a href="PlayerEntity.html#method_7169()">method_7169</a>, <a href="PlayerEntity.html#method_7170(float)">method_7170</a>, <a href="PlayerEntity.html#method_7173(int)">method_7173</a>, <a href="PlayerEntity.html#method_7175(int)">method_7175</a>, <a href="PlayerEntity.html#method_7177(int)">method_7177</a>, <a href="PlayerEntity.html#method_7975(net.minecraft.world.CommandBlockExecutor)">method_7975</a>, <a href="PlayerEntity.html#method_7978(net.minecraft.block.Block)">method_7978</a>, <a href="PlayerEntity.html#method_7981(net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction,net.minecraft.item.ItemStack)">method_7981</a>, <a href="PlayerEntity.html#method_7989(net.minecraft.inventory.ContainerLock)">method_7989</a>, <a href="PlayerEntity.html#method_7991(net.minecraft.entity.ItemEntity)">method_7991</a>, <a href="PlayerEntity.html#method_7998(net.minecraft.item.ItemStack,boolean,boolean)">method_7998</a>, <a href="PlayerEntity.html#method_8002(net.minecraft.block.Block)">method_8002</a>, <a href="PlayerEntity.html#method_8007(net.minecraft.item.ItemStack,int)">method_8007</a>, <a href="PlayerEntity.html#method_8008()">method_8008</a>, <a href="PlayerEntity.html#method_8009()">method_8009</a>, <a href="PlayerEntity.html#method_8010()">method_8010</a>, <a href="PlayerEntity.html#method_8011()">method_8011</a>, <a href="PlayerEntity.html#method_8013()">method_8013</a>, <a href="PlayerEntity.html#method_8014()">method_8014</a>, <a href="PlayerEntity.html#method_8016()">method_8016</a>, <a href="PlayerEntity.html#method_8017()">method_8017</a>, <a href="PlayerEntity.html#method_8019()">method_8019</a>, <a href="PlayerEntity.html#method_8023()">method_8023</a>, <a href="PlayerEntity.html#method_8040(double,double,double)">method_8040</a>, <a href="PlayerEntity.html#method_8049(int)">method_8049</a>, <a href="PlayerEntity.html#method_8050(net.minecraft.entity.Entity)">method_8050</a>, <a href="PlayerEntity.html#onSwimmingStart()">onSwimmingStart</a>, <a href="PlayerEntity.html#playSound(java.lang.String,float,float)">playSound</a>, <a href="PlayerEntity.html#remove()">remove</a>, <a href="PlayerEntity.html#requestRespawn()">requestRespawn</a>, <a href="PlayerEntity.html#sendCommandFeedback()">sendCommandFeedback</a>, <a href="PlayerEntity.html#setPlayerSpawn(net.minecraft.util.math.BlockPos,boolean)">setPlayerSpawn</a>, <a href="PlayerEntity.html#setReducedDebugInfo(boolean)">setReducedDebugInfo</a>, <a href="PlayerEntity.html#setScore(int)">setScore</a>, <a href="PlayerEntity.html#shouldRenderName()">shouldRenderName</a>, <a href="PlayerEntity.html#stopUsingItem()">stopUsingItem</a>, <a href="PlayerEntity.html#tickRiding()">tickRiding</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.net.minecraft.entity.LivingEntity">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.entity.<a href="../LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a></h3>
-<code><a href="../LivingEntity.html#animateDamage()">animateDamage</a>, <a href="../LivingEntity.html#baseTick()">baseTick</a>, <a href="../LivingEntity.html#collides()">collides</a>, <a href="../LivingEntity.html#destroy()">destroy</a>, <a href="../LivingEntity.html#getHealth()">getHealth</a>, <a href="../LivingEntity.html#isAlive()">isAlive</a>, <a href="../LivingEntity.html#isPushable()">isPushable</a>, <a href="../LivingEntity.html#kill()">kill</a>, <a href="../LivingEntity.html#method_6920(double,double,double,float,float,int,boolean)">method_6920</a>, <a href="../LivingEntity.html#method_6950()">method_6950</a>, <a href="../LivingEntity.html#method_6985()">method_6985</a>, <a href="../LivingEntity.html#method_7016(float)">method_7016</a>, <a href="../LivingEntity.html#method_7088(net.minecraft.scoreboard.AbstractTeam)">method_7088</a>, <a href="../LivingEntity.html#method_7090(net.minecraft.entity.effect.StatusEffect)">method_7090</a>, <a href="../LivingEntity.html#method_7093(net.minecraft.entity.Entity,float,double,double)">method_7093</a>, <a href="../LivingEntity.html#method_7095(net.minecraft.entity.attribute.EntityAttribute)">method_7095</a>, <a href="../LivingEntity.html#method_7096(boolean,int)">method_7096</a>, <a href="../LivingEntity.html#method_7098()">method_7098</a>, <a href="../LivingEntity.html#method_7099()">method_7099</a>, <a href="../LivingEntity.html#method_7100(net.minecraft.entity.damage.DamageSource,float)">method_7100</a>, <a href="../LivingEntity.html#method_7101(net.minecraft.entity.effect.StatusEffect)">method_7101</a>, <a href="../LivingEntity.html#method_7103(net.minecraft.entity.LivingEntity)">method_7103</a>, <a href="../LivingEntity.html#method_7105(net.minecraft.item.ItemStack)">method_7105</a>, <a href="../LivingEntity.html#method_7106(boolean,int)">method_7106</a>, <a href="../LivingEntity.html#method_7108()">method_7108</a>, <a href="../LivingEntity.html#method_7109()">method_7109</a>, <a href="../LivingEntity.html#method_7111()">method_7111</a>, <a href="../LivingEntity.html#method_7113()">method_7113</a>, <a href="../LivingEntity.html#method_7114()">method_7114</a>, <a href="../LivingEntity.html#method_7118()">method_7118</a>, <a href="../LivingEntity.html#method_7119()">method_7119</a>, <a href="../LivingEntity.html#method_7122()">method_7122</a>, <a href="../LivingEntity.html#method_7123()">method_7123</a>, <a href="../LivingEntity.html#method_7125()">method_7125</a>, <a href="../LivingEntity.html#method_7126()">method_7126</a>, <a href="../LivingEntity.html#method_7127()">method_7127</a>, <a href="../LivingEntity.html#method_7128()">method_7128</a>, <a href="../LivingEntity.html#method_7129()">method_7129</a>, <a href="../LivingEntity.html#method_7130()">method_7130</a>, <a href="../LivingEntity.html#method_7131()">method_7131</a>, <a href="../LivingEntity.html#method_7132()">method_7132</a>, <a href="../LivingEntity.html#method_7133()">method_7133</a>, <a href="../LivingEntity.html#method_7134()">method_7134</a>, <a href="../LivingEntity.html#method_7135()">method_7135</a>, <a href="../LivingEntity.html#method_7139()">method_7139</a>, <a href="../LivingEntity.html#method_7141()">method_7141</a>, <a href="../LivingEntity.html#method_7142()">method_7142</a>, <a href="../LivingEntity.html#method_7143()">method_7143</a>, <a href="../LivingEntity.html#method_7144()">method_7144</a>, <a href="../LivingEntity.html#method_7145()">method_7145</a>, <a href="../LivingEntity.html#method_7146()">method_7146</a>, <a href="../LivingEntity.html#method_7147()">method_7147</a>, <a href="../LivingEntity.html#method_7148()">method_7148</a>, <a href="../LivingEntity.html#method_7149(net.minecraft.entity.damage.DamageSource,float)">method_7149</a>, <a href="../LivingEntity.html#method_7150(net.minecraft.entity.effect.StatusEffectInstance)">method_7150</a>, <a href="../LivingEntity.html#method_7151(net.minecraft.entity.LivingEntity)">method_7151</a>, <a href="../LivingEntity.html#method_7153(net.minecraft.entity.effect.StatusEffectInstance)">method_7153</a>, <a href="../LivingEntity.html#method_7155(float)">method_7155</a>, <a href="../LivingEntity.html#method_7156(float,float)">method_7156</a>, <a href="../LivingEntity.html#method_7159(boolean)">method_7159</a>, <a href="../LivingEntity.html#method_7162(int)">method_7162</a>, <a href="../LivingEntity.html#method_7163()">method_7163</a>, <a href="../LivingEntity.html#method_7164(float)">method_7164</a>, <a href="../LivingEntity.html#method_7165(int)">method_7165</a>, <a href="../LivingEntity.html#method_7166()">method_7166</a>, <a href="../LivingEntity.html#method_7167(float)">method_7167</a>, <a href="../LivingEntity.html#method_7168(int)">method_7168</a>, <a href="../LivingEntity.html#method_7171(int)">method_7171</a>, <a href="../LivingEntity.html#method_7174(int)">method_7174</a>, <a href="../LivingEntity.html#method_7176(net.minecraft.entity.Entity)">method_7176</a>, <a href="../LivingEntity.html#method_7178(net.minecraft.entity.Entity)">method_7178</a>, <a href="../LivingEntity.html#method_7179(net.minecraft.entity.Entity)">method_7179</a>, <a href="../LivingEntity.html#method_7180(net.minecraft.entity.Entity)">method_7180</a>, <a href="../LivingEntity.html#method_7181(net.minecraft.entity.Entity)">method_7181</a>, <a href="../LivingEntity.html#scheduleVelocityUpdate()">scheduleVelocityUpdate</a>, <a href="../LivingEntity.html#setHeadYaw(float)">setHeadYaw</a>, <a href="../LivingEntity.html#setHealth(float)">setHealth</a>, <a href="../LivingEntity.html#setSprinting(boolean)">setSprinting</a>, <a href="../LivingEntity.html#setYaw(float)">setYaw</a></code></li>
+<code><a href="../LivingEntity.html#animateDamage()">animateDamage</a>, <a href="../LivingEntity.html#baseTick()">baseTick</a>, <a href="../LivingEntity.html#collides()">collides</a>, <a href="../LivingEntity.html#destroy()">destroy</a>, <a href="../LivingEntity.html#getDamageTracker()">getDamageTracker</a>, <a href="../LivingEntity.html#getHealth()">getHealth</a>, <a href="../LivingEntity.html#isAlive()">isAlive</a>, <a href="../LivingEntity.html#isPushable()">isPushable</a>, <a href="../LivingEntity.html#kill()">kill</a>, <a href="../LivingEntity.html#method_6920(double,double,double,float,float,int,boolean)">method_6920</a>, <a href="../LivingEntity.html#method_6950()">method_6950</a>, <a href="../LivingEntity.html#method_6985()">method_6985</a>, <a href="../LivingEntity.html#method_7016(float)">method_7016</a>, <a href="../LivingEntity.html#method_7088(net.minecraft.scoreboard.AbstractTeam)">method_7088</a>, <a href="../LivingEntity.html#method_7090(net.minecraft.entity.effect.StatusEffect)">method_7090</a>, <a href="../LivingEntity.html#method_7093(net.minecraft.entity.Entity,float,double,double)">method_7093</a>, <a href="../LivingEntity.html#method_7095(net.minecraft.entity.attribute.EntityAttribute)">method_7095</a>, <a href="../LivingEntity.html#method_7096(boolean,int)">method_7096</a>, <a href="../LivingEntity.html#method_7098()">method_7098</a>, <a href="../LivingEntity.html#method_7099()">method_7099</a>, <a href="../LivingEntity.html#method_7100(net.minecraft.entity.damage.DamageSource,float)">method_7100</a>, <a href="../LivingEntity.html#method_7101(net.minecraft.entity.effect.StatusEffect)">method_7101</a>, <a href="../LivingEntity.html#method_7103(net.minecraft.entity.LivingEntity)">method_7103</a>, <a href="../LivingEntity.html#method_7105(net.minecraft.item.ItemStack)">method_7105</a>, <a href="../LivingEntity.html#method_7106(boolean,int)">method_7106</a>, <a href="../LivingEntity.html#method_7108()">method_7108</a>, <a href="../LivingEntity.html#method_7109()">method_7109</a>, <a href="../LivingEntity.html#method_7111()">method_7111</a>, <a href="../LivingEntity.html#method_7113()">method_7113</a>, <a href="../LivingEntity.html#method_7114()">method_7114</a>, <a href="../LivingEntity.html#method_7118()">method_7118</a>, <a href="../LivingEntity.html#method_7119()">method_7119</a>, <a href="../LivingEntity.html#method_7122()">method_7122</a>, <a href="../LivingEntity.html#method_7123()">method_7123</a>, <a href="../LivingEntity.html#method_7125()">method_7125</a>, <a href="../LivingEntity.html#method_7126()">method_7126</a>, <a href="../LivingEntity.html#method_7127()">method_7127</a>, <a href="../LivingEntity.html#method_7128()">method_7128</a>, <a href="../LivingEntity.html#method_7129()">method_7129</a>, <a href="../LivingEntity.html#method_7130()">method_7130</a>, <a href="../LivingEntity.html#method_7131()">method_7131</a>, <a href="../LivingEntity.html#method_7132()">method_7132</a>, <a href="../LivingEntity.html#method_7133()">method_7133</a>, <a href="../LivingEntity.html#method_7134()">method_7134</a>, <a href="../LivingEntity.html#method_7135()">method_7135</a>, <a href="../LivingEntity.html#method_7139()">method_7139</a>, <a href="../LivingEntity.html#method_7142()">method_7142</a>, <a href="../LivingEntity.html#method_7143()">method_7143</a>, <a href="../LivingEntity.html#method_7144()">method_7144</a>, <a href="../LivingEntity.html#method_7145()">method_7145</a>, <a href="../LivingEntity.html#method_7146()">method_7146</a>, <a href="../LivingEntity.html#method_7147()">method_7147</a>, <a href="../LivingEntity.html#method_7148()">method_7148</a>, <a href="../LivingEntity.html#method_7149(net.minecraft.entity.damage.DamageSource,float)">method_7149</a>, <a href="../LivingEntity.html#method_7150(net.minecraft.entity.effect.StatusEffectInstance)">method_7150</a>, <a href="../LivingEntity.html#method_7151(net.minecraft.entity.LivingEntity)">method_7151</a>, <a href="../LivingEntity.html#method_7153(net.minecraft.entity.effect.StatusEffectInstance)">method_7153</a>, <a href="../LivingEntity.html#method_7155(float)">method_7155</a>, <a href="../LivingEntity.html#method_7156(float,float)">method_7156</a>, <a href="../LivingEntity.html#method_7159(boolean)">method_7159</a>, <a href="../LivingEntity.html#method_7162(int)">method_7162</a>, <a href="../LivingEntity.html#method_7163()">method_7163</a>, <a href="../LivingEntity.html#method_7164(float)">method_7164</a>, <a href="../LivingEntity.html#method_7165(int)">method_7165</a>, <a href="../LivingEntity.html#method_7166()">method_7166</a>, <a href="../LivingEntity.html#method_7167(float)">method_7167</a>, <a href="../LivingEntity.html#method_7168(int)">method_7168</a>, <a href="../LivingEntity.html#method_7171(int)">method_7171</a>, <a href="../LivingEntity.html#method_7174(int)">method_7174</a>, <a href="../LivingEntity.html#method_7176(net.minecraft.entity.Entity)">method_7176</a>, <a href="../LivingEntity.html#method_7178(net.minecraft.entity.Entity)">method_7178</a>, <a href="../LivingEntity.html#method_7179(net.minecraft.entity.Entity)">method_7179</a>, <a href="../LivingEntity.html#method_7180(net.minecraft.entity.Entity)">method_7180</a>, <a href="../LivingEntity.html#method_7181(net.minecraft.entity.Entity)">method_7181</a>, <a href="../LivingEntity.html#scheduleVelocityUpdate()">scheduleVelocityUpdate</a>, <a href="../LivingEntity.html#setHeadYaw(float)">setHeadYaw</a>, <a href="../LivingEntity.html#setHealth(float)">setHealth</a>, <a href="../LivingEntity.html#setSprinting(boolean)">setSprinting</a>, <a href="../LivingEntity.html#setYaw(float)">setYaw</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.net.minecraft.entity.Entity">
@@ -809,22 +809,22 @@ implements <a href="../../container/ContainerListener.html" title="interface in 
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="field_6640">
+<a id="LOGGER">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6640</h4>
-<pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j" class="externalLink">Logger</a> field_6640</pre>
+<h4>LOGGER</h4>
+<pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j" class="externalLink">Logger</a> LOGGER</pre>
 </li>
 </ul>
-<a id="field_6641">
+<a id="lang">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6641</h4>
-<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> field_6641</pre>
+<h4>lang</h4>
+<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> lang</pre>
 </li>
 </ul>
 <a id="networkHandler">
@@ -836,13 +836,13 @@ implements <a href="../../container/ContainerListener.html" title="interface in 
 <pre>public&nbsp;<a href="../../server/network/ServerPlayNetworkHandler.html" title="class in net.minecraft.server.network">ServerPlayNetworkHandler</a> networkHandler</pre>
 </li>
 </ul>
-<a id="field_6645">
+<a id="server">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6645</h4>
-<pre>public final&nbsp;<a href="../../server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a> field_6645</pre>
+<h4>server</h4>
+<pre>public final&nbsp;<a href="../../server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a> server</pre>
 </li>
 </ul>
 <a id="interactionManager">
@@ -890,13 +890,13 @@ implements <a href="../../container/ContainerListener.html" title="interface in 
 <pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang" class="externalLink">Integer</a>&gt; field_6642</pre>
 </li>
 </ul>
-<a id="field_6643">
+<a id="statHandler">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6643</h4>
-<pre>private final&nbsp;<a href="../../stat/ServerStatHandler.html" title="class in net.minecraft.stat">ServerStatHandler</a> field_6643</pre>
+<h4>statHandler</h4>
+<pre>private final&nbsp;<a href="../../stat/ServerStatHandler.html" title="class in net.minecraft.stat">ServerStatHandler</a> statHandler</pre>
 </li>
 </ul>
 <a id="field_6644">
@@ -1041,10 +1041,10 @@ implements <a href="../../container/ContainerListener.html" title="interface in 
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ServerPlayerEntity</h4>
-<pre>public&nbsp;ServerPlayerEntity&#8203;(<a href="../../server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a>&nbsp;minecraftServer,
-                          <a href="../../server/world/ServerWorld.html" title="class in net.minecraft.server.world">ServerWorld</a>&nbsp;serverWorld,
-                          com.mojang.authlib.GameProfile&nbsp;gameProfile,
-                          <a href="../../server/network/ServerPlayerInteractionManager.html" title="class in net.minecraft.server.network">ServerPlayerInteractionManager</a>&nbsp;serverPlayerInteractionManager)</pre>
+<pre>public&nbsp;ServerPlayerEntity&#8203;(<a href="../../server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a>&nbsp;server,
+                          <a href="../../server/world/ServerWorld.html" title="class in net.minecraft.server.world">ServerWorld</a>&nbsp;world,
+                          com.mojang.authlib.GameProfile&nbsp;profile,
+                          <a href="../../server/network/ServerPlayerInteractionManager.html" title="class in net.minecraft.server.network">ServerPlayerInteractionManager</a>&nbsp;interactionManager)</pre>
 </li>
 </ul>
 </li>
@@ -1157,13 +1157,13 @@ implements <a href="../../container/ContainerListener.html" title="interface in 
 </dl>
 </li>
 </ul>
-<a id="method_6076()">
+<a id="tickPlayer()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_6076</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_6076()</pre>
+<h4>tickPlayer</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;tickPlayer()</pre>
 </li>
 </ul>
 <a id="method_6075()">
