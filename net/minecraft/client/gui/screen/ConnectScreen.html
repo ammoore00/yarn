@@ -174,23 +174,23 @@ extends <a href="Screen.html" title="class in net.minecraft.client.gui.screen">S
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>private <a href="../../../network/ClientConnection.html" title="class in net.minecraft.network">ClientConnection</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#connection">connection</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>private static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicInteger.html?is-external=true" title="class or interface in java.util.concurrent.atomic" class="externalLink">AtomicInteger</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CONNECTOR_THREADS_COUNT">CONNECTOR_THREADS_COUNT</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../network/ClientConnection.html" title="class in net.minecraft.network">ClientConnection</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3060">field_3060</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="Screen.html" title="class in net.minecraft.client.gui.screen">Screen</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3062">field_3062</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j" class="externalLink">Logger</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#LOGGER">LOGGER</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="Screen.html" title="class in net.minecraft.client.gui.screen">Screen</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#parent">parent</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -225,15 +225,15 @@ extends <a href="Screen.html" title="class in net.minecraft.client.gui.screen">S
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.client.gui.screen.Screen,net.minecraft.client.MinecraftClient,java.lang.String,int)">ConnectScreen</a></span>&#8203;(<a href="Screen.html" title="class in net.minecraft.client.gui.screen">Screen</a>&nbsp;screen,
-             <a href="../../MinecraftClient.html" title="class in net.minecraft.client">MinecraftClient</a>&nbsp;minecraftClient,
-             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
-             int&nbsp;int2)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.client.gui.screen.Screen,net.minecraft.client.MinecraftClient,java.lang.String,int)">ConnectScreen</a></span>&#8203;(<a href="Screen.html" title="class in net.minecraft.client.gui.screen">Screen</a>&nbsp;parent,
+             <a href="../../MinecraftClient.html" title="class in net.minecraft.client">MinecraftClient</a>&nbsp;client,
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;address,
+             int&nbsp;port)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.client.gui.screen.Screen,net.minecraft.client.MinecraftClient,net.minecraft.client.network.ServerInfo)">ConnectScreen</a></span>&#8203;(<a href="Screen.html" title="class in net.minecraft.client.gui.screen">Screen</a>&nbsp;screen,
-             <a href="../../MinecraftClient.html" title="class in net.minecraft.client">MinecraftClient</a>&nbsp;minecraftClient,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.client.gui.screen.Screen,net.minecraft.client.MinecraftClient,net.minecraft.client.network.ServerInfo)">ConnectScreen</a></span>&#8203;(<a href="Screen.html" title="class in net.minecraft.client.gui.screen">Screen</a>&nbsp;parent,
+             <a href="../../MinecraftClient.html" title="class in net.minecraft.client">MinecraftClient</a>&nbsp;client,
              <a href="../../network/ServerInfo.html" title="class in net.minecraft.client.network">ServerInfo</a>&nbsp;serverInfo)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -345,13 +345,13 @@ extends <a href="Screen.html" title="class in net.minecraft.client.gui.screen">S
 <pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j" class="externalLink">Logger</a> LOGGER</pre>
 </li>
 </ul>
-<a id="field_3060">
+<a id="connection">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_3060</h4>
-<pre>private&nbsp;<a href="../../../network/ClientConnection.html" title="class in net.minecraft.network">ClientConnection</a> field_3060</pre>
+<h4>connection</h4>
+<pre>private&nbsp;<a href="../../../network/ClientConnection.html" title="class in net.minecraft.network">ClientConnection</a> connection</pre>
 </li>
 </ul>
 <a id="connectingCancelled">
@@ -363,13 +363,13 @@ extends <a href="Screen.html" title="class in net.minecraft.client.gui.screen">S
 <pre>private&nbsp;boolean connectingCancelled</pre>
 </li>
 </ul>
-<a id="field_3062">
+<a id="parent">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_3062</h4>
-<pre>private final&nbsp;<a href="Screen.html" title="class in net.minecraft.client.gui.screen">Screen</a> field_3062</pre>
+<h4>parent</h4>
+<pre>private final&nbsp;<a href="Screen.html" title="class in net.minecraft.client.gui.screen">Screen</a> parent</pre>
 </li>
 </ul>
 </li>
@@ -388,8 +388,8 @@ extends <a href="Screen.html" title="class in net.minecraft.client.gui.screen">S
 <ul class="blockList">
 <li class="blockList">
 <h4>ConnectScreen</h4>
-<pre>public&nbsp;ConnectScreen&#8203;(<a href="Screen.html" title="class in net.minecraft.client.gui.screen">Screen</a>&nbsp;screen,
-                     <a href="../../MinecraftClient.html" title="class in net.minecraft.client">MinecraftClient</a>&nbsp;minecraftClient,
+<pre>public&nbsp;ConnectScreen&#8203;(<a href="Screen.html" title="class in net.minecraft.client.gui.screen">Screen</a>&nbsp;parent,
+                     <a href="../../MinecraftClient.html" title="class in net.minecraft.client">MinecraftClient</a>&nbsp;client,
                      <a href="../../network/ServerInfo.html" title="class in net.minecraft.client.network">ServerInfo</a>&nbsp;serverInfo)</pre>
 </li>
 </ul>
@@ -399,10 +399,10 @@ extends <a href="Screen.html" title="class in net.minecraft.client.gui.screen">S
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ConnectScreen</h4>
-<pre>public&nbsp;ConnectScreen&#8203;(<a href="Screen.html" title="class in net.minecraft.client.gui.screen">Screen</a>&nbsp;screen,
-                     <a href="../../MinecraftClient.html" title="class in net.minecraft.client">MinecraftClient</a>&nbsp;minecraftClient,
-                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
-                     int&nbsp;int2)</pre>
+<pre>public&nbsp;ConnectScreen&#8203;(<a href="Screen.html" title="class in net.minecraft.client.gui.screen">Screen</a>&nbsp;parent,
+                     <a href="../../MinecraftClient.html" title="class in net.minecraft.client">MinecraftClient</a>&nbsp;client,
+                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;address,
+                     int&nbsp;port)</pre>
 </li>
 </ul>
 </li>

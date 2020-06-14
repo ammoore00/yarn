@@ -180,28 +180,28 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#id">id</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>private static <a href="../../util/IntObjectStorage.html" title="class in net.minecraft.util">IntObjectStorage</a>&lt;<a href="KeyBinding.html" title="class in net.minecraft.client.options">KeyBinding</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#KEY_MAP">KEY_MAP</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="KeyBinding.html" title="class in net.minecraft.client.options">KeyBinding</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#KEYS">KEYS</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#pressed">pressed</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#timesPressed">timesPressed</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#translationKey">translationKey</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -222,7 +222,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,int,java.lang.String)">KeyBinding</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;id,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,int,java.lang.String)">KeyBinding</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;translationKey,
           int&nbsp;code,
           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;category)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -272,7 +272,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getId()">getId</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTranslationKey()">getTranslationKey</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
@@ -367,13 +367,13 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <pre>private static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt; categories</pre>
 </li>
 </ul>
-<a id="id">
+<a id="translationKey">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>id</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> id</pre>
+<h4>translationKey</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> translationKey</pre>
 </li>
 </ul>
 <a id="defaultCode">
@@ -437,7 +437,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <ul class="blockListLast">
 <li class="blockList">
 <h4>KeyBinding</h4>
-<pre>public&nbsp;KeyBinding&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;id,
+<pre>public&nbsp;KeyBinding&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;translationKey,
                   int&nbsp;code,
                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;category)</pre>
 </li>
@@ -534,13 +534,13 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparab
 <pre class="methodSignature">private&nbsp;void&nbsp;reset()</pre>
 </li>
 </ul>
-<a id="getId()">
+<a id="getTranslationKey()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getId</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getId()</pre>
+<h4>getTranslationKey</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getTranslationKey()</pre>
 </li>
 </ul>
 <a id="getDefaultCode()">

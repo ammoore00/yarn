@@ -194,7 +194,7 @@ extends <a href="AbstractInventoryScreen.html" title="class in net.minecraft.cli
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.client.gui.screen.ingame.<a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></h3>
-<code><a href="ContainerScreen.html#containerHeight">containerHeight</a>, <a href="ContainerScreen.html#containerWidth">containerWidth</a>, <a href="ContainerScreen.html#cursorDragSlots">cursorDragSlots</a>, <a href="ContainerScreen.html#field_3390">field_3390</a>, <a href="ContainerScreen.html#field_3393">field_3393</a>, <a href="ContainerScreen.html#isCursorDragging">isCursorDragging</a>, <a href="ContainerScreen.html#x">x</a>, <a href="ContainerScreen.html#y">y</a></code></li>
+<code><a href="ContainerScreen.html#container">container</a>, <a href="ContainerScreen.html#containerHeight">containerHeight</a>, <a href="ContainerScreen.html#containerWidth">containerWidth</a>, <a href="ContainerScreen.html#cursorDragSlots">cursorDragSlots</a>, <a href="ContainerScreen.html#INVENTORY_TEXTURE">INVENTORY_TEXTURE</a>, <a href="ContainerScreen.html#isCursorDragging">isCursorDragging</a>, <a href="ContainerScreen.html#x">x</a>, <a href="ContainerScreen.html#y">y</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="fields.inherited.from.class.net.minecraft.client.gui.screen.Screen">
@@ -227,7 +227,7 @@ extends <a href="AbstractInventoryScreen.html" title="class in net.minecraft.cli
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.entity.player.PlayerEntity)">InventoryScreen</a></span>&#8203;(<a href="../../../../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.entity.player.PlayerEntity)">InventoryScreen</a></span>&#8203;(<a href="../../../../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -280,12 +280,12 @@ extends <a href="AbstractInventoryScreen.html" title="class in net.minecraft.cli
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#renderEntity(int,int,int,float,float,net.minecraft.entity.LivingEntity)">renderEntity</a></span>&#8203;(int&nbsp;int2,
-            int&nbsp;int3,
-            int&nbsp;int4,
-            float&nbsp;float2,
-            float&nbsp;float3,
-            <a href="../../../../entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;livingEntity)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#renderEntity(int,int,int,float,float,net.minecraft.entity.LivingEntity)">renderEntity</a></span>&#8203;(int&nbsp;x,
+            int&nbsp;y,
+            int&nbsp;size,
+            float&nbsp;mouseX,
+            float&nbsp;mouseY,
+            <a href="../../../../entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;entity)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
@@ -379,7 +379,7 @@ extends <a href="AbstractInventoryScreen.html" title="class in net.minecraft.cli
 <ul class="blockListLast">
 <li class="blockList">
 <h4>InventoryScreen</h4>
-<pre>public&nbsp;InventoryScreen&#8203;(<a href="../../../../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</pre>
+<pre>public&nbsp;InventoryScreen&#8203;(<a href="../../../../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</pre>
 </li>
 </ul>
 </li>
@@ -468,12 +468,12 @@ extends <a href="AbstractInventoryScreen.html" title="class in net.minecraft.cli
 <ul class="blockList">
 <li class="blockList">
 <h4>renderEntity</h4>
-<pre class="methodSignature">public static&nbsp;void&nbsp;renderEntity&#8203;(int&nbsp;int2,
-                                int&nbsp;int3,
-                                int&nbsp;int4,
-                                float&nbsp;float2,
-                                float&nbsp;float3,
-                                <a href="../../../../entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;livingEntity)</pre>
+<pre class="methodSignature">public static&nbsp;void&nbsp;renderEntity&#8203;(int&nbsp;x,
+                                int&nbsp;y,
+                                int&nbsp;size,
+                                float&nbsp;mouseX,
+                                float&nbsp;mouseY,
+                                <a href="../../../../entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;entity)</pre>
 </li>
 </ul>
 <a id="buttonPressed(net.minecraft.client.gui.widget.ButtonWidget)">
