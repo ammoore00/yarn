@@ -169,7 +169,7 @@ extends <a href="Item.html" title="class in net.minecraft.item">Item</a></pre>
 <!--   -->
 </a>
 <h3>Nested classes/interfaces inherited from class&nbsp;net.minecraft.item.<a href="Item.html" title="class in net.minecraft.item">Item</a></h3>
-<code><a href="Item.MaterialType.html" title="enum in net.minecraft.item">Item.MaterialType</a></code></li>
+<code><a href="Item.ToolMaterialType.html" title="enum in net.minecraft.item">Item.ToolMaterialType</a></code></li>
 </ul>
 </li>
 </ul>
@@ -199,28 +199,28 @@ extends <a href="Item.html" title="class in net.minecraft.item">Item</a></pre>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_8531">field_8531</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_8533">field_8533</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code>private static <a href="../block/dispenser/DispenserBehavior.html" title="interface in net.minecraft.block.dispenser">DispenserBehavior</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_8535">field_8535</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private <a href="ArmorItem.ArmorMaterial.html" title="enum in net.minecraft.item">ArmorItem.ArmorMaterial</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_8536">field_8536</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#material">material</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#materialId">materialId</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#protection">protection</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#slot">slot</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -248,9 +248,9 @@ extends <a href="Item.html" title="class in net.minecraft.item">Item</a></pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.item.ArmorItem.ArmorMaterial,int,int)">ArmorItem</a></span>&#8203;(<a href="ArmorItem.ArmorMaterial.html" title="enum in net.minecraft.item">ArmorItem.ArmorMaterial</a>&nbsp;armorMaterial,
-         int&nbsp;int2,
-         int&nbsp;int3)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.item.ArmorItem.ArmorMaterial,int,int)">ArmorItem</a></span>&#8203;(<a href="ArmorItem.ArmorMaterial.html" title="enum in net.minecraft.item">ArmorItem.ArmorMaterial</a>&nbsp;material,
+         int&nbsp;materialId,
+         int&nbsp;slot)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -316,7 +316,7 @@ extends <a href="Item.html" title="class in net.minecraft.item">Item</a></pre>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_8260(net.minecraft.item.ItemStack,net.minecraft.world.World,net.minecraft.entity.player.PlayerEntity)">method_8260</a></span>&#8203;(<a href="ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_8260(net.minecraft.item.ItemStack,net.minecraft.world.World,net.minecraft.entity.player.PlayerEntity)">method_8260</a></span>&#8203;(<a href="ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
            <a href="../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
            <a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -379,13 +379,13 @@ extends <a href="Item.html" title="class in net.minecraft.item">Item</a></pre>
 <pre>private static final&nbsp;<a href="../block/dispenser/DispenserBehavior.html" title="interface in net.minecraft.block.dispenser">DispenserBehavior</a> field_8535</pre>
 </li>
 </ul>
-<a id="field_8531">
+<a id="slot">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_8531</h4>
-<pre>public final&nbsp;int field_8531</pre>
+<h4>slot</h4>
+<pre>public final&nbsp;int slot</pre>
 </li>
 </ul>
 <a id="protection">
@@ -397,22 +397,22 @@ extends <a href="Item.html" title="class in net.minecraft.item">Item</a></pre>
 <pre>public final&nbsp;int protection</pre>
 </li>
 </ul>
-<a id="field_8533">
+<a id="materialId">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_8533</h4>
-<pre>public final&nbsp;int field_8533</pre>
+<h4>materialId</h4>
+<pre>public final&nbsp;int materialId</pre>
 </li>
 </ul>
-<a id="field_8536">
+<a id="material">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_8536</h4>
-<pre>private final&nbsp;<a href="ArmorItem.ArmorMaterial.html" title="enum in net.minecraft.item">ArmorItem.ArmorMaterial</a> field_8536</pre>
+<h4>material</h4>
+<pre>private final&nbsp;<a href="ArmorItem.ArmorMaterial.html" title="enum in net.minecraft.item">ArmorItem.ArmorMaterial</a> material</pre>
 </li>
 </ul>
 </li>
@@ -431,9 +431,9 @@ extends <a href="Item.html" title="class in net.minecraft.item">Item</a></pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ArmorItem</h4>
-<pre>public&nbsp;ArmorItem&#8203;(<a href="ArmorItem.ArmorMaterial.html" title="enum in net.minecraft.item">ArmorItem.ArmorMaterial</a>&nbsp;armorMaterial,
-                 int&nbsp;int2,
-                 int&nbsp;int3)</pre>
+<pre>public&nbsp;ArmorItem&#8203;(<a href="ArmorItem.ArmorMaterial.html" title="enum in net.minecraft.item">ArmorItem.ArmorMaterial</a>&nbsp;material,
+                 int&nbsp;materialId,
+                 int&nbsp;slot)</pre>
 </li>
 </ul>
 </li>
@@ -540,7 +540,7 @@ public&nbsp;int&nbsp;method_8257&#8203;(<a href="ItemStack.html" title="class in
 <ul class="blockListLast">
 <li class="blockList">
 <h4>method_8260</h4>
-<pre class="methodSignature">public&nbsp;<a href="ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;method_8260&#8203;(<a href="ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
+<pre class="methodSignature">public&nbsp;<a href="ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;method_8260&#8203;(<a href="ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
                              <a href="../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
                              <a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</pre>
 <dl>

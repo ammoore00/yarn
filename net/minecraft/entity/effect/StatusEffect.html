@@ -132,7 +132,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="../../class_1737.html" title="class in net.minecraft">class_1737</a></code>, <code><a href="class_1738.html" title="class in net.minecraft.entity.effect">class_1738</a></code>, <code><a href="../../class_1739.html" title="class in net.minecraft">class_1739</a></code>, <code><a href="InstantStatusEffect.html" title="class in net.minecraft.entity.effect">InstantStatusEffect</a></code></dd>
+<dd><code><a href="../../effect/AbsorptionStatusEffect.html" title="class in net.minecraft.effect">AbsorptionStatusEffect</a></code>, <code><a href="CombatStatusEffect.html" title="class in net.minecraft.entity.effect">CombatStatusEffect</a></code>, <code><a href="../../effect/HealthBoostStatusEffect.html" title="class in net.minecraft.effect">HealthBoostStatusEffect</a></code>, <code><a href="InstantStatusEffect.html" title="class in net.minecraft.entity.effect">InstantStatusEffect</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">StatusEffect</span>
@@ -158,8 +158,18 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ABSORPTION">ABSORPTION</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../attribute/EntityAttribute.html" title="interface in net.minecraft.entity.attribute">EntityAttribute</a>,&#8203;<a href="../attribute/AttributeModifier.html" title="class in net.minecraft.entity.attribute">AttributeModifier</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#attributeModifiers">attributeModifiers</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#BLINDNESS">BLINDNESS</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -208,153 +218,23 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a>,&#8203;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7285">field_7285</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>private boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7287">field_7287</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7290">field_7290</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7291">field_7291</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7292">field_7292</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a>[]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7293">field_7293</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7294">field_7294</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7295">field_7295</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7296">field_7296</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7297">field_7297</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7298">field_7298</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7299">field_7299</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7300">field_7300</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7301">field_7301</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7302">field_7302</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7303">field_7303</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7304">field_7304</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7305">field_7305</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7306">field_7306</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7307">field_7307</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7308">field_7308</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7309">field_7309</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7310">field_7310</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7311">field_7311</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7312">field_7312</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7313">field_7313</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7314">field_7314</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7315">field_7315</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7316">field_7316</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7317">field_7317</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -363,8 +243,128 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#FIRE_RESISTANCE">FIRE_RESISTANCE</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#HASTE">HASTE</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#HEALTH_BOOST">HEALTH_BOOST</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#HUNGER">HUNGER</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#INSTANT_DAMAGE">INSTANT_DAMAGE</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#INSTANT_HEALTH">INSTANT_HEALTH</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#INVISIBILITY">INVISIBILITY</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#JUMP_BOOST">JUMP_BOOST</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#MINING_FATIGUE">MINING_FATIGUE</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#NAUSEA">NAUSEA</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#NIGHTVISION">NIGHTVISION</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#POISON">POISON</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#REGENERATION">REGENERATION</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#RESISTANCE">RESISTANCE</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SATURATION">SATURATION</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SLOWNESS">SLOWNESS</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SPEED">SPEED</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a>[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#STATUS_EFFECTS">STATUS_EFFECTS</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a>,&#8203;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#STATUS_EFFECTS_BY_ID">STATUS_EFFECTS_BY_ID</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#STRENGTH">STRENGTH</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#translationKey">translationKey</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#UNKNOWN">UNKNOWN</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#WATER_BREATHING">WATER_BREATHING</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#WEAKNESS">WEAKNESS</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#WITHER">WITHER</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -565,238 +565,238 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="field_7293">
+<a id="STATUS_EFFECTS">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7293</h4>
-<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a>[] field_7293</pre>
+<h4>STATUS_EFFECTS</h4>
+<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a>[] STATUS_EFFECTS</pre>
 </li>
 </ul>
-<a id="field_7285">
+<a id="STATUS_EFFECTS_BY_ID">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7285</h4>
-<pre>private static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a>,&#8203;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a>&gt; field_7285</pre>
+<h4>STATUS_EFFECTS_BY_ID</h4>
+<pre>private static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a>,&#8203;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a>&gt; STATUS_EFFECTS_BY_ID</pre>
 </li>
 </ul>
-<a id="field_7294">
+<a id="UNKNOWN">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7294</h4>
-<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> field_7294</pre>
+<h4>UNKNOWN</h4>
+<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> UNKNOWN</pre>
 </li>
 </ul>
-<a id="field_7295">
+<a id="SPEED">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7295</h4>
-<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> field_7295</pre>
+<h4>SPEED</h4>
+<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> SPEED</pre>
 </li>
 </ul>
-<a id="field_7296">
+<a id="SLOWNESS">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7296</h4>
-<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> field_7296</pre>
+<h4>SLOWNESS</h4>
+<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> SLOWNESS</pre>
 </li>
 </ul>
-<a id="field_7297">
+<a id="HASTE">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7297</h4>
-<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> field_7297</pre>
+<h4>HASTE</h4>
+<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> HASTE</pre>
 </li>
 </ul>
-<a id="field_7298">
+<a id="MINING_FATIGUE">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7298</h4>
-<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> field_7298</pre>
+<h4>MINING_FATIGUE</h4>
+<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> MINING_FATIGUE</pre>
 </li>
 </ul>
-<a id="field_7299">
+<a id="STRENGTH">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7299</h4>
-<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> field_7299</pre>
+<h4>STRENGTH</h4>
+<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> STRENGTH</pre>
 </li>
 </ul>
-<a id="field_7300">
+<a id="INSTANT_HEALTH">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7300</h4>
-<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> field_7300</pre>
+<h4>INSTANT_HEALTH</h4>
+<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> INSTANT_HEALTH</pre>
 </li>
 </ul>
-<a id="field_7301">
+<a id="INSTANT_DAMAGE">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7301</h4>
-<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> field_7301</pre>
+<h4>INSTANT_DAMAGE</h4>
+<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> INSTANT_DAMAGE</pre>
 </li>
 </ul>
-<a id="field_7302">
+<a id="JUMP_BOOST">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7302</h4>
-<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> field_7302</pre>
+<h4>JUMP_BOOST</h4>
+<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> JUMP_BOOST</pre>
 </li>
 </ul>
-<a id="field_7303">
+<a id="NAUSEA">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7303</h4>
-<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> field_7303</pre>
+<h4>NAUSEA</h4>
+<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> NAUSEA</pre>
 </li>
 </ul>
-<a id="field_7304">
+<a id="REGENERATION">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7304</h4>
-<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> field_7304</pre>
+<h4>REGENERATION</h4>
+<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> REGENERATION</pre>
 </li>
 </ul>
-<a id="field_7305">
+<a id="RESISTANCE">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7305</h4>
-<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> field_7305</pre>
+<h4>RESISTANCE</h4>
+<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> RESISTANCE</pre>
 </li>
 </ul>
-<a id="field_7306">
+<a id="FIRE_RESISTANCE">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7306</h4>
-<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> field_7306</pre>
+<h4>FIRE_RESISTANCE</h4>
+<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> FIRE_RESISTANCE</pre>
 </li>
 </ul>
-<a id="field_7307">
+<a id="WATER_BREATHING">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7307</h4>
-<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> field_7307</pre>
+<h4>WATER_BREATHING</h4>
+<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> WATER_BREATHING</pre>
 </li>
 </ul>
-<a id="field_7308">
+<a id="INVISIBILITY">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7308</h4>
-<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> field_7308</pre>
+<h4>INVISIBILITY</h4>
+<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> INVISIBILITY</pre>
 </li>
 </ul>
-<a id="field_7309">
+<a id="BLINDNESS">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7309</h4>
-<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> field_7309</pre>
+<h4>BLINDNESS</h4>
+<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> BLINDNESS</pre>
 </li>
 </ul>
-<a id="field_7310">
+<a id="NIGHTVISION">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7310</h4>
-<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> field_7310</pre>
+<h4>NIGHTVISION</h4>
+<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> NIGHTVISION</pre>
 </li>
 </ul>
-<a id="field_7311">
+<a id="HUNGER">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7311</h4>
-<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> field_7311</pre>
+<h4>HUNGER</h4>
+<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> HUNGER</pre>
 </li>
 </ul>
-<a id="field_7312">
+<a id="WEAKNESS">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7312</h4>
-<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> field_7312</pre>
+<h4>WEAKNESS</h4>
+<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> WEAKNESS</pre>
 </li>
 </ul>
-<a id="field_7313">
+<a id="POISON">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7313</h4>
-<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> field_7313</pre>
+<h4>POISON</h4>
+<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> POISON</pre>
 </li>
 </ul>
-<a id="field_7314">
+<a id="WITHER">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7314</h4>
-<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> field_7314</pre>
+<h4>WITHER</h4>
+<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> WITHER</pre>
 </li>
 </ul>
-<a id="field_7315">
+<a id="HEALTH_BOOST">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7315</h4>
-<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> field_7315</pre>
+<h4>HEALTH_BOOST</h4>
+<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> HEALTH_BOOST</pre>
 </li>
 </ul>
-<a id="field_7316">
+<a id="ABSORPTION">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7316</h4>
-<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> field_7316</pre>
+<h4>ABSORPTION</h4>
+<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> ABSORPTION</pre>
 </li>
 </ul>
-<a id="field_7317">
+<a id="SATURATION">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7317</h4>
-<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> field_7317</pre>
+<h4>SATURATION</h4>
+<pre>public static final&nbsp;<a href="StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> SATURATION</pre>
 </li>
 </ul>
 <a id="field_7318">

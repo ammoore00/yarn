@@ -239,7 +239,7 @@ implements <a href="../StringIdentifiable.html" title="interface in net.minecraf
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private <a href="Direction.AxisDirection.html" title="enum in net.minecraft.util.math">Direction.AxisDirection</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#direction">direction</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#axisDirection">axisDirection</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -307,10 +307,10 @@ implements <a href="../StringIdentifiable.html" title="interface in net.minecraf
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private </code></td>
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(int,int,int,java.lang.String,net.minecraft.util.math.Direction.AxisDirection,net.minecraft.util.math.Direction.Axis,net.minecraft.util.math.Vec3i)">Direction</a></span>&#8203;(int&nbsp;int2,
-         int&nbsp;int3,
-         int&nbsp;int4,
-         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(int,int,int,java.lang.String,net.minecraft.util.math.Direction.AxisDirection,net.minecraft.util.math.Direction.Axis,net.minecraft.util.math.Vec3i)">Direction</a></span>&#8203;(int&nbsp;id,
+         int&nbsp;idHorizontal,
+         int&nbsp;isOpposite,
+         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
          <a href="Direction.AxisDirection.html" title="enum in net.minecraft.util.math">Direction.AxisDirection</a>&nbsp;axisDirection,
          <a href="Direction.Axis.html" title="enum in net.minecraft.util.math">Direction.Axis</a>&nbsp;axis,
          <a href="Vec3i.html" title="class in net.minecraft.util.math">Vec3i</a>&nbsp;vec3i)</code></th>
@@ -372,7 +372,7 @@ implements <a href="../StringIdentifiable.html" title="interface in net.minecraf
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="Direction.AxisDirection.html" title="enum in net.minecraft.util.math">Direction.AxisDirection</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDirection()">getDirection</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getAxisDirection()">getAxisDirection</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
@@ -639,13 +639,13 @@ the order they are declared.</div>
 <pre>private final&nbsp;<a href="Direction.Axis.html" title="enum in net.minecraft.util.math">Direction.Axis</a> field_5808</pre>
 </li>
 </ul>
-<a id="direction">
+<a id="axisDirection">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>direction</h4>
-<pre>private final&nbsp;<a href="Direction.AxisDirection.html" title="enum in net.minecraft.util.math">Direction.AxisDirection</a> direction</pre>
+<h4>axisDirection</h4>
+<pre>private final&nbsp;<a href="Direction.AxisDirection.html" title="enum in net.minecraft.util.math">Direction.AxisDirection</a> axisDirection</pre>
 </li>
 </ul>
 <a id="field_5810">
@@ -673,10 +673,10 @@ the order they are declared.</div>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>Direction</h4>
-<pre>private&nbsp;Direction&#8203;(int&nbsp;int2,
-                  int&nbsp;int3,
-                  int&nbsp;int4,
-                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
+<pre>private&nbsp;Direction&#8203;(int&nbsp;id,
+                  int&nbsp;idHorizontal,
+                  int&nbsp;isOpposite,
+                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
                   <a href="Direction.AxisDirection.html" title="enum in net.minecraft.util.math">Direction.AxisDirection</a>&nbsp;axisDirection,
                   <a href="Direction.Axis.html" title="enum in net.minecraft.util.math">Direction.Axis</a>&nbsp;axis,
                   <a href="Vec3i.html" title="class in net.minecraft.util.math">Vec3i</a>&nbsp;vec3i)</pre>
@@ -752,13 +752,13 @@ not permitted.)</div>
 <pre class="methodSignature">public&nbsp;int&nbsp;getHorizontal()</pre>
 </li>
 </ul>
-<a id="getDirection()">
+<a id="getAxisDirection()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getDirection</h4>
-<pre class="methodSignature">public&nbsp;<a href="Direction.AxisDirection.html" title="enum in net.minecraft.util.math">Direction.AxisDirection</a>&nbsp;getDirection()</pre>
+<h4>getAxisDirection</h4>
+<pre class="methodSignature">public&nbsp;<a href="Direction.AxisDirection.html" title="enum in net.minecraft.util.math">Direction.AxisDirection</a>&nbsp;getAxisDirection()</pre>
 </li>
 </ul>
 <a id="getOpposite()">
