@@ -199,7 +199,7 @@ extends <a href="../stat/Stat.html" title="class in net.minecraft.stat">Stat</a>
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.stat.<a href="../stat/Stat.html" title="class in net.minecraft.stat">Stat</a></h3>
-<code><a href="../stat/Stat.html#field_6945">field_6945</a>, <a href="../stat/Stat.html#field_6946">field_6946</a>, <a href="../stat/Stat.html#field_6947">field_6947</a>, <a href="../stat/Stat.html#field_6948">field_6948</a>, <a href="../stat/Stat.html#field_6949">field_6949</a>, <a href="../stat/Stat.html#name">name</a></code></li>
+<code><a href="../stat/Stat.html#DAMAGE_PROVIDER">DAMAGE_PROVIDER</a>, <a href="../stat/Stat.html#DISTANCE_PROVIDER">DISTANCE_PROVIDER</a>, <a href="../stat/Stat.html#field_6945">field_6945</a>, <a href="../stat/Stat.html#field_6946">field_6946</a>, <a href="../stat/Stat.html#name">name</a>, <a href="../stat/Stat.html#TIME_PROVIDER">TIME_PROVIDER</a></code></li>
 </ul>
 </li>
 </ul>
@@ -263,23 +263,23 @@ extends <a href="../stat/Stat.html" title="class in net.minecraft.stat">Stat</a>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="Achievement.html" title="class in net.minecraft.achievement">Achievement</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addStat()">addStat</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../text/Text.html" title="interface in net.minecraft.text">Text</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getText()">getText</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isAdvancement()">isAdvancement</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="Achievement.html" title="class in net.minecraft.achievement">Achievement</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6340(net.minecraft.class_1677)">method_6340</a></span>&#8203;(<a href="../class_1677.html" title="interface in net.minecraft">class_1677</a>&nbsp;class_1677)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="Achievement.html" title="class in net.minecraft.achievement">Achievement</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6341()">method_6341</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6340(net.minecraft.class_1677)">method_6340</a></span>&#8203;(<a href="../class_1677.html" title="interface in net.minecraft">class_1677</a>&nbsp;class_1677)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
@@ -299,12 +299,12 @@ extends <a href="../stat/Stat.html" title="class in net.minecraft.stat">Stat</a>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="Achievement.html" title="class in net.minecraft.achievement">Achievement</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6361()">method_6361</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setAsChallenge()">setAsChallenge</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="Achievement.html" title="class in net.minecraft.achievement">Achievement</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6362()">method_6362</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setLocalOnly()">setLocalOnly</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -464,38 +464,38 @@ private&nbsp;<a href="../class_1677.html" title="interface in net.minecraft">cla
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="method_6362()">
+<a id="setLocalOnly()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_6362</h4>
-<pre class="methodSignature">public&nbsp;<a href="Achievement.html" title="class in net.minecraft.achievement">Achievement</a>&nbsp;method_6362()</pre>
+<h4>setLocalOnly</h4>
+<pre class="methodSignature">public&nbsp;<a href="Achievement.html" title="class in net.minecraft.achievement">Achievement</a>&nbsp;setLocalOnly()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../stat/Stat.html#method_6362()">method_6362</a></code>&nbsp;in class&nbsp;<code><a href="../stat/Stat.html" title="class in net.minecraft.stat">Stat</a></code></dd>
+<dd><code><a href="../stat/Stat.html#setLocalOnly()">setLocalOnly</a></code>&nbsp;in class&nbsp;<code><a href="../stat/Stat.html" title="class in net.minecraft.stat">Stat</a></code></dd>
 </dl>
 </li>
 </ul>
-<a id="method_6341()">
+<a id="setAsChallenge()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_6341</h4>
-<pre class="methodSignature">public&nbsp;<a href="Achievement.html" title="class in net.minecraft.achievement">Achievement</a>&nbsp;method_6341()</pre>
+<h4>setAsChallenge</h4>
+<pre class="methodSignature">public&nbsp;<a href="Achievement.html" title="class in net.minecraft.achievement">Achievement</a>&nbsp;setAsChallenge()</pre>
 </li>
 </ul>
-<a id="method_6361()">
+<a id="addStat()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_6361</h4>
-<pre class="methodSignature">public&nbsp;<a href="Achievement.html" title="class in net.minecraft.achievement">Achievement</a>&nbsp;method_6361()</pre>
+<h4>addStat</h4>
+<pre class="methodSignature">public&nbsp;<a href="Achievement.html" title="class in net.minecraft.achievement">Achievement</a>&nbsp;addStat()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../stat/Stat.html#method_6361()">method_6361</a></code>&nbsp;in class&nbsp;<code><a href="../stat/Stat.html" title="class in net.minecraft.stat">Stat</a></code></dd>
+<dd><code><a href="../stat/Stat.html#addStat()">addStat</a></code>&nbsp;in class&nbsp;<code><a href="../stat/Stat.html" title="class in net.minecraft.stat">Stat</a></code></dd>
 </dl>
 </li>
 </ul>
