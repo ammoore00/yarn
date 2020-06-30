@@ -186,7 +186,7 @@ extends <a href="../../item/Item.html" title="class in net.minecraft.item">Item<
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.item.<a href="../../item/Item.html" title="class in net.minecraft.item">Item</a></h3>
-<code><a href="../../item/Item.html#ATTACK_DAMAGE_MODIFIER_UUID">ATTACK_DAMAGE_MODIFIER_UUID</a>, <a href="../../item/Item.html#damageable">damageable</a>, <a href="../../item/Item.html#field_8637">field_8637</a>, <a href="../../item/Item.html#maxCount">maxCount</a>, <a href="../../item/Item.html#RANDOM">RANDOM</a>, <a href="../../item/Item.html#REGISTRY">REGISTRY</a></code></li>
+<code><a href="../../item/Item.html#ATTACK_DAMAGE_MODIFIER_UUID">ATTACK_DAMAGE_MODIFIER_UUID</a>, <a href="../../item/Item.html#damageable">damageable</a>, <a href="../../item/Item.html#handheld">handheld</a>, <a href="../../item/Item.html#maxCount">maxCount</a>, <a href="../../item/Item.html#RANDOM">RANDOM</a>, <a href="../../item/Item.html#REGISTRY">REGISTRY</a></code></li>
 </ul>
 </li>
 </ul>
@@ -205,7 +205,7 @@ extends <a href="../../item/Item.html" title="class in net.minecraft.item">Item<
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.item.Item.ToolMaterialType)">PillarItem</a></span>&#8203;(<a href="../../item/Item.ToolMaterialType.html" title="enum in net.minecraft.item">Item.ToolMaterialType</a>&nbsp;toolMaterialType)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.item.Item.ToolMaterialType)">PillarItem</a></span>&#8203;(<a href="../../item/Item.ToolMaterialType.html" title="enum in net.minecraft.item">Item.ToolMaterialType</a>&nbsp;type)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -227,6 +227,11 @@ extends <a href="../../item/Item.html" title="class in net.minecraft.item">Item<
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isHandheld()">isHandheld</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_8244(net.minecraft.item.ItemStack,net.minecraft.entity.player.PlayerEntity,net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState)">method_8244</a></span>&#8203;(<a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
            <a href="../../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity,
@@ -235,14 +240,9 @@ extends <a href="../../item/Item.html" title="class in net.minecraft.item">Item<
            <a href="../BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_8245()">method_8245</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_8305()">method_8305</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -263,7 +263,7 @@ extends <a href="../../item/Item.html" title="class in net.minecraft.item">Item<
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.item.<a href="../../item/Item.html" title="class in net.minecraft.item">Item</a></h3>
-<code><a href="../../item/Item.html#addToItemGroup(net.minecraft.item.Item,net.minecraft.item.ItemGroup,java.util.List)">addToItemGroup</a>, <a href="../../item/Item.html#byRawId(int)">byRawId</a>, <a href="../../item/Item.html#canRepair(net.minecraft.item.ItemStack,net.minecraft.item.ItemStack)">canRepair</a>, <a href="../../item/Item.html#fromBlock(net.minecraft.block.Block)">fromBlock</a>, <a href="../../item/Item.html#getEnchantability()">getEnchantability</a>, <a href="../../item/Item.html#getFromId(java.lang.String)">getFromId</a>, <a href="../../item/Item.html#getItemGroup()">getItemGroup</a>, <a href="../../item/Item.html#getItemstackTranslationKey(net.minecraft.item.ItemStack)">getItemstackTranslationKey</a>, <a href="../../item/Item.html#getMaxCount()">getMaxCount</a>, <a href="../../item/Item.html#getMaxDamage()">getMaxDamage</a>, <a href="../../item/Item.html#getMaxUseTime(net.minecraft.item.ItemStack)">getMaxUseTime</a>, <a href="../../item/Item.html#getRarity(net.minecraft.item.ItemStack)">getRarity</a>, <a href="../../item/Item.html#getRawId(net.minecraft.item.Item)">getRawId</a>, <a href="../../item/Item.html#getRecipeRemainder()">getRecipeRemainder</a>, <a href="../../item/Item.html#getTranslationKey()">getTranslationKey</a>, <a href="../../item/Item.html#getTranslationKey(net.minecraft.item.ItemStack)">getTranslationKey</a>, <a href="../../item/Item.html#getUseAction(net.minecraft.item.ItemStack)">getUseAction</a>, <a href="../../item/Item.html#hasEnchantmentGlint(net.minecraft.item.ItemStack)">hasEnchantmentGlint</a>, <a href="../../item/Item.html#inventoryTick(net.minecraft.item.ItemStack,net.minecraft.world.World,net.minecraft.entity.Entity,int,boolean)">inventoryTick</a>, <a href="../../item/Item.html#isDamageable()">isDamageable</a>, <a href="../../item/Item.html#isEffectiveOn(net.minecraft.block.Block)">isEffectiveOn</a>, <a href="../../item/Item.html#isEnchantable(net.minecraft.item.ItemStack)">isEnchantable</a>, <a href="../../item/Item.html#isFood()">isFood</a>, <a href="../../item/Item.html#isNetworkSynced()">isNetworkSynced</a>, <a href="../../item/Item.html#isUnbreakable()">isUnbreakable</a>, <a href="../../item/Item.html#matches(net.minecraft.item.ItemStack)">matches</a>, <a href="../../item/Item.html#method_8247(int)">method_8247</a>, <a href="../../item/Item.html#method_8256(net.minecraft.item.ItemStack)">method_8256</a>, <a href="../../item/Item.html#method_8257(net.minecraft.item.ItemStack,int)">method_8257</a>, <a href="../../item/Item.html#method_8258(net.minecraft.item.ItemStack,net.minecraft.world.World,net.minecraft.block.Block,net.minecraft.util.math.BlockPos,net.minecraft.entity.LivingEntity)">method_8258</a>, <a href="../../item/Item.html#method_8260(net.minecraft.item.ItemStack,net.minecraft.world.World,net.minecraft.entity.player.PlayerEntity)">method_8260</a>, <a href="../../item/Item.html#method_8261(net.minecraft.item.ItemStack,net.minecraft.world.World,net.minecraft.entity.player.PlayerEntity,int)">method_8261</a>, <a href="../../item/Item.html#method_8262(net.minecraft.item.ItemStack,net.minecraft.block.Block)">method_8262</a>, <a href="../../item/Item.html#method_8263(net.minecraft.item.ItemStack,net.minecraft.entity.LivingEntity,net.minecraft.entity.LivingEntity)">method_8263</a>, <a href="../../item/Item.html#method_8265(net.minecraft.item.ItemStack,net.minecraft.entity.player.PlayerEntity,java.util.List,boolean)">method_8265</a>, <a href="../../item/Item.html#method_8266(net.minecraft.item.ItemStack,net.minecraft.entity.player.PlayerEntity,net.minecraft.entity.LivingEntity)">method_8266</a>, <a href="../../item/Item.html#method_8273(net.minecraft.item.ItemStack,net.minecraft.world.World,net.minecraft.entity.player.PlayerEntity)">method_8273</a>, <a href="../../item/Item.html#method_8283()">method_8283</a>, <a href="../../item/Item.html#method_8284(java.lang.String)">method_8284</a>, <a href="../../item/Item.html#method_8291()">method_8291</a>, <a href="../../item/Item.html#method_8293(net.minecraft.item.ItemStack)">method_8293</a>, <a href="../../item/Item.html#method_8299()">method_8299</a>, <a href="../../item/Item.html#method_8303()">method_8303</a>, <a href="../../item/Item.html#onCraft(net.minecraft.item.ItemStack,net.minecraft.world.World,net.minecraft.entity.player.PlayerEntity)">onCraft</a>, <a href="../../item/Item.html#onHit(net.minecraft.world.World,net.minecraft.entity.player.PlayerEntity,boolean)">onHit</a>, <a href="../../item/Item.html#postProcessTag(net.minecraft.nbt.CompoundTag)">postProcessTag</a>, <a href="../../item/Item.html#registerBlockItem(net.minecraft.block.Block,net.minecraft.item.Item)">registerBlockItem</a>, <a href="../../item/Item.html#setItem(net.minecraft.item.Item)">setItem</a>, <a href="../../item/Item.html#setItemGroup(net.minecraft.item.ItemGroup)">setItemGroup</a>, <a href="../../item/Item.html#setMaxCount(int)">setMaxCount</a>, <a href="../../item/Item.html#setMaxDamage(int)">setMaxDamage</a>, <a href="../../item/Item.html#setTranslationKey(java.lang.String)">setTranslationKey</a>, <a href="../../item/Item.html#setUnbreakable(boolean)">setUnbreakable</a>, <a href="../../item/Item.html#setup()">setup</a>, <a href="../../item/Item.html#shouldSyncTagToClient()">shouldSyncTagToClient</a></code></li>
+<code><a href="../../item/Item.html#addToItemGroup(net.minecraft.item.Item,net.minecraft.item.ItemGroup,java.util.List)">addToItemGroup</a>, <a href="../../item/Item.html#byRawId(int)">byRawId</a>, <a href="../../item/Item.html#canRepair(net.minecraft.item.ItemStack,net.minecraft.item.ItemStack)">canRepair</a>, <a href="../../item/Item.html#fromBlock(net.minecraft.block.Block)">fromBlock</a>, <a href="../../item/Item.html#getEnchantability()">getEnchantability</a>, <a href="../../item/Item.html#getFromId(java.lang.String)">getFromId</a>, <a href="../../item/Item.html#getItemGroup()">getItemGroup</a>, <a href="../../item/Item.html#getItemstackTranslationKey(net.minecraft.item.ItemStack)">getItemstackTranslationKey</a>, <a href="../../item/Item.html#getMaxCount()">getMaxCount</a>, <a href="../../item/Item.html#getMaxDamage()">getMaxDamage</a>, <a href="../../item/Item.html#getMaxUseTime(net.minecraft.item.ItemStack)">getMaxUseTime</a>, <a href="../../item/Item.html#getRarity(net.minecraft.item.ItemStack)">getRarity</a>, <a href="../../item/Item.html#getRawId(net.minecraft.item.Item)">getRawId</a>, <a href="../../item/Item.html#getRecipeRemainder()">getRecipeRemainder</a>, <a href="../../item/Item.html#getTranslationKey()">getTranslationKey</a>, <a href="../../item/Item.html#getTranslationKey(net.minecraft.item.ItemStack)">getTranslationKey</a>, <a href="../../item/Item.html#getUseAction(net.minecraft.item.ItemStack)">getUseAction</a>, <a href="../../item/Item.html#hasEnchantmentGlint(net.minecraft.item.ItemStack)">hasEnchantmentGlint</a>, <a href="../../item/Item.html#inventoryTick(net.minecraft.item.ItemStack,net.minecraft.world.World,net.minecraft.entity.Entity,int,boolean)">inventoryTick</a>, <a href="../../item/Item.html#isDamageable()">isDamageable</a>, <a href="../../item/Item.html#isEffectiveOn(net.minecraft.block.Block)">isEffectiveOn</a>, <a href="../../item/Item.html#isEnchantable(net.minecraft.item.ItemStack)">isEnchantable</a>, <a href="../../item/Item.html#isFood()">isFood</a>, <a href="../../item/Item.html#isNetworkSynced()">isNetworkSynced</a>, <a href="../../item/Item.html#isUnbreakable()">isUnbreakable</a>, <a href="../../item/Item.html#matches(net.minecraft.item.ItemStack)">matches</a>, <a href="../../item/Item.html#method_8247(int)">method_8247</a>, <a href="../../item/Item.html#method_8256(net.minecraft.item.ItemStack)">method_8256</a>, <a href="../../item/Item.html#method_8257(net.minecraft.item.ItemStack,int)">method_8257</a>, <a href="../../item/Item.html#method_8258(net.minecraft.item.ItemStack,net.minecraft.world.World,net.minecraft.block.Block,net.minecraft.util.math.BlockPos,net.minecraft.entity.LivingEntity)">method_8258</a>, <a href="../../item/Item.html#method_8260(net.minecraft.item.ItemStack,net.minecraft.world.World,net.minecraft.entity.player.PlayerEntity)">method_8260</a>, <a href="../../item/Item.html#method_8261(net.minecraft.item.ItemStack,net.minecraft.world.World,net.minecraft.entity.player.PlayerEntity,int)">method_8261</a>, <a href="../../item/Item.html#method_8262(net.minecraft.item.ItemStack,net.minecraft.block.Block)">method_8262</a>, <a href="../../item/Item.html#method_8263(net.minecraft.item.ItemStack,net.minecraft.entity.LivingEntity,net.minecraft.entity.LivingEntity)">method_8263</a>, <a href="../../item/Item.html#method_8265(net.minecraft.item.ItemStack,net.minecraft.entity.player.PlayerEntity,java.util.List,boolean)">method_8265</a>, <a href="../../item/Item.html#method_8266(net.minecraft.item.ItemStack,net.minecraft.entity.player.PlayerEntity,net.minecraft.entity.LivingEntity)">method_8266</a>, <a href="../../item/Item.html#method_8273(net.minecraft.item.ItemStack,net.minecraft.world.World,net.minecraft.entity.player.PlayerEntity)">method_8273</a>, <a href="../../item/Item.html#method_8283()">method_8283</a>, <a href="../../item/Item.html#method_8291()">method_8291</a>, <a href="../../item/Item.html#method_8293(net.minecraft.item.ItemStack)">method_8293</a>, <a href="../../item/Item.html#method_8303()">method_8303</a>, <a href="../../item/Item.html#onCraft(net.minecraft.item.ItemStack,net.minecraft.world.World,net.minecraft.entity.player.PlayerEntity)">onCraft</a>, <a href="../../item/Item.html#onHit(net.minecraft.world.World,net.minecraft.entity.player.PlayerEntity,boolean)">onHit</a>, <a href="../../item/Item.html#postProcessTag(net.minecraft.nbt.CompoundTag)">postProcessTag</a>, <a href="../../item/Item.html#registerBlockItem(net.minecraft.block.Block,net.minecraft.item.Item)">registerBlockItem</a>, <a href="../../item/Item.html#setHandheld()">setHandheld</a>, <a href="../../item/Item.html#setItem(net.minecraft.item.Item)">setItem</a>, <a href="../../item/Item.html#setItemGroup(net.minecraft.item.ItemGroup)">setItemGroup</a>, <a href="../../item/Item.html#setMaxCount(int)">setMaxCount</a>, <a href="../../item/Item.html#setMaxDamage(int)">setMaxDamage</a>, <a href="../../item/Item.html#setStatusEffectString(java.lang.String)">setStatusEffectString</a>, <a href="../../item/Item.html#setTranslationKey(java.lang.String)">setTranslationKey</a>, <a href="../../item/Item.html#setUnbreakable(boolean)">setUnbreakable</a>, <a href="../../item/Item.html#setup()">setup</a>, <a href="../../item/Item.html#shouldSyncTagToClient()">shouldSyncTagToClient</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -313,7 +313,7 @@ extends <a href="../../item/Item.html" title="class in net.minecraft.item">Item<
 <ul class="blockListLast">
 <li class="blockList">
 <h4>PillarItem</h4>
-<pre>public&nbsp;PillarItem&#8203;(<a href="../../item/Item.ToolMaterialType.html" title="enum in net.minecraft.item">Item.ToolMaterialType</a>&nbsp;toolMaterialType)</pre>
+<pre>public&nbsp;PillarItem&#8203;(<a href="../../item/Item.ToolMaterialType.html" title="enum in net.minecraft.item">Item.ToolMaterialType</a>&nbsp;type)</pre>
 </li>
 </ul>
 </li>
@@ -359,17 +359,17 @@ extends <a href="../../item/Item.html" title="class in net.minecraft.item">Item<
                               <a href="../BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState)</pre>
 </li>
 </ul>
-<a id="method_8305()">
+<a id="isHandheld()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_8305</h4>
+<h4>isHandheld</h4>
 <pre class="methodSignature">@Environment(CLIENT)
-public&nbsp;boolean&nbsp;method_8305()</pre>
+public&nbsp;boolean&nbsp;isHandheld()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../item/Item.html#method_8305()">method_8305</a></code>&nbsp;in class&nbsp;<code><a href="../../item/Item.html" title="class in net.minecraft.item">Item</a></code></dd>
+<dd><code><a href="../../item/Item.html#isHandheld()">isHandheld</a></code>&nbsp;in class&nbsp;<code><a href="../../item/Item.html" title="class in net.minecraft.item">Item</a></code></dd>
 </dl>
 </li>
 </ul>

@@ -166,7 +166,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?i
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#CREATURE">CREATURE</a></span></code></th>
+<th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#AQUATIC">AQUATIC</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -174,7 +174,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?i
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#WATER_CREATURE">WATER_CREATURE</a></span></code></th>
+<th class="colFirst" scope="row"><code><span class="memberNameLink"><a href="#PASSIVE">PASSIVE</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -196,23 +196,23 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?i
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../class_1744.html" title="interface in net.minecraft">class_1744</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7518">field_7518</a></span></code></th>
+<td class="colFirst"><code>private boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#breedable">breedable</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../block/Material.html" title="class in net.minecraft.block">Material</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7520">field_7520</a></span></code></th>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="EntityCategoryProvider.html" title="interface in net.minecraft.entity">EntityCategoryProvider</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clazz">clazz</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7521">field_7521</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hostile">hostile</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7522">field_7522</a></span></code></th>
+<td class="colFirst"><code>private <a href="../block/Material.html" title="class in net.minecraft.block">Material</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#material">material</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -240,11 +240,11 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?i
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private </code></td>
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.Class,int,net.minecraft.block.Material,boolean,boolean)">EntityCategory</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../class_1744.html" title="interface in net.minecraft">class_1744</a>&gt;&nbsp;class2,
-              int&nbsp;int2,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.Class,int,net.minecraft.block.Material,boolean,boolean)">EntityCategory</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="EntityCategoryProvider.html" title="interface in net.minecraft.entity">EntityCategoryProvider</a>&gt;&nbsp;clazz,
+              int&nbsp;cap,
               <a href="../block/Material.html" title="class in net.minecraft.block">Material</a>&nbsp;material,
-              boolean&nbsp;bool,
-              boolean&nbsp;bool2)</code></th>
+              boolean&nbsp;hostile,
+              boolean&nbsp;breedable)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -266,23 +266,23 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?i
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="EntityCategoryProvider.html" title="interface in net.minecraft.entity">EntityCategoryProvider</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCategoryClass()">getCategoryClass</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSpawnCap()">getSpawnCap</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../class_1744.html" title="interface in net.minecraft">class_1744</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7232()">method_7232</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7234()">method_7234</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isBreedable()">isBreedable</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7235()">method_7235</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isHostile()">isHostile</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
@@ -340,13 +340,13 @@ the order they are declared.</div>
 <pre>public static final&nbsp;<a href="EntityCategory.html" title="enum in net.minecraft.entity">EntityCategory</a> MONSTER</pre>
 </li>
 </ul>
-<a id="CREATURE">
+<a id="PASSIVE">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>CREATURE</h4>
-<pre>public static final&nbsp;<a href="EntityCategory.html" title="enum in net.minecraft.entity">EntityCategory</a> CREATURE</pre>
+<h4>PASSIVE</h4>
+<pre>public static final&nbsp;<a href="EntityCategory.html" title="enum in net.minecraft.entity">EntityCategory</a> PASSIVE</pre>
 </li>
 </ul>
 <a id="AMBIENT">
@@ -358,13 +358,13 @@ the order they are declared.</div>
 <pre>public static final&nbsp;<a href="EntityCategory.html" title="enum in net.minecraft.entity">EntityCategory</a> AMBIENT</pre>
 </li>
 </ul>
-<a id="WATER_CREATURE">
+<a id="AQUATIC">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>WATER_CREATURE</h4>
-<pre>public static final&nbsp;<a href="EntityCategory.html" title="enum in net.minecraft.entity">EntityCategory</a> WATER_CREATURE</pre>
+<h4>AQUATIC</h4>
+<pre>public static final&nbsp;<a href="EntityCategory.html" title="enum in net.minecraft.entity">EntityCategory</a> AQUATIC</pre>
 </li>
 </ul>
 </li>
@@ -377,13 +377,13 @@ the order they are declared.</div>
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="field_7518">
+<a id="clazz">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7518</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../class_1744.html" title="interface in net.minecraft">class_1744</a>&gt; field_7518</pre>
+<h4>clazz</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="EntityCategoryProvider.html" title="interface in net.minecraft.entity">EntityCategoryProvider</a>&gt; clazz</pre>
 </li>
 </ul>
 <a id="spawnCap">
@@ -395,31 +395,31 @@ the order they are declared.</div>
 <pre>private final&nbsp;int spawnCap</pre>
 </li>
 </ul>
-<a id="field_7520">
+<a id="material">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7520</h4>
-<pre>private final&nbsp;<a href="../block/Material.html" title="class in net.minecraft.block">Material</a> field_7520</pre>
+<h4>material</h4>
+<pre>private final&nbsp;<a href="../block/Material.html" title="class in net.minecraft.block">Material</a> material</pre>
 </li>
 </ul>
-<a id="field_7521">
+<a id="hostile">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7521</h4>
-<pre>private final&nbsp;boolean field_7521</pre>
+<h4>hostile</h4>
+<pre>private final&nbsp;boolean hostile</pre>
 </li>
 </ul>
-<a id="field_7522">
+<a id="breedable">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_7522</h4>
-<pre>private final&nbsp;boolean field_7522</pre>
+<h4>breedable</h4>
+<pre>private final&nbsp;boolean breedable</pre>
 </li>
 </ul>
 </li>
@@ -438,11 +438,11 @@ the order they are declared.</div>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>EntityCategory</h4>
-<pre>private&nbsp;EntityCategory&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../class_1744.html" title="interface in net.minecraft">class_1744</a>&gt;&nbsp;class2,
-                       int&nbsp;int2,
+<pre>private&nbsp;EntityCategory&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="EntityCategoryProvider.html" title="interface in net.minecraft.entity">EntityCategoryProvider</a>&gt;&nbsp;clazz,
+                       int&nbsp;cap,
                        <a href="../block/Material.html" title="class in net.minecraft.block">Material</a>&nbsp;material,
-                       boolean&nbsp;bool,
-                       boolean&nbsp;bool2)</pre>
+                       boolean&nbsp;hostile,
+                       boolean&nbsp;breedable)</pre>
 </li>
 </ul>
 </li>
@@ -497,13 +497,13 @@ not permitted.)</div>
 </dl>
 </li>
 </ul>
-<a id="method_7232()">
+<a id="getCategoryClass()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_7232</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="../class_1744.html" title="interface in net.minecraft">class_1744</a>&gt;&nbsp;method_7232()</pre>
+<h4>getCategoryClass</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="EntityCategoryProvider.html" title="interface in net.minecraft.entity">EntityCategoryProvider</a>&gt;&nbsp;getCategoryClass()</pre>
 </li>
 </ul>
 <a id="getSpawnCap()">
@@ -515,22 +515,22 @@ not permitted.)</div>
 <pre class="methodSignature">public&nbsp;int&nbsp;getSpawnCap()</pre>
 </li>
 </ul>
-<a id="method_7234()">
+<a id="isHostile()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_7234</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;method_7234()</pre>
+<h4>isHostile</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isHostile()</pre>
 </li>
 </ul>
-<a id="method_7235()">
+<a id="isBreedable()">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_7235</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;method_7235()</pre>
+<h4>isBreedable</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isBreedable()</pre>
 </li>
 </ul>
 </li>

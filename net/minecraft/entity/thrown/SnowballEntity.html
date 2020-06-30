@@ -126,7 +126,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="../Entity.html" title="class in net.minecraft.entity">net.minecraft.entity.Entity</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="ThrownEntity.html" title="class in net.minecraft.entity.thrown">net.minecraft.entity.thrown.ThrownEntity</a></li>
+<li><a href="ThrowableEntity.html" title="class in net.minecraft.entity.thrown">net.minecraft.entity.thrown.ThrowableEntity</a></li>
 <li>
 <ul class="inheritance">
 <li>net.minecraft.entity.thrown.SnowballEntity</li>
@@ -146,7 +146,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">SnowballEntity</span>
-extends <a href="ThrownEntity.html" title="class in net.minecraft.entity.thrown">ThrownEntity</a></pre>
+extends <a href="ThrowableEntity.html" title="class in net.minecraft.entity.thrown">ThrowableEntity</a></pre>
 </li>
 </ul>
 </div>
@@ -161,11 +161,11 @@ extends <a href="ThrownEntity.html" title="class in net.minecraft.entity.thrown"
 </a>
 <h3>Field Summary</h3>
 <ul class="blockList">
-<li class="blockList"><a id="fields.inherited.from.class.net.minecraft.entity.thrown.ThrownEntity">
+<li class="blockList"><a id="fields.inherited.from.class.net.minecraft.entity.thrown.ThrowableEntity">
 <!--   -->
 </a>
-<h3>Fields inherited from class&nbsp;net.minecraft.entity.thrown.<a href="ThrownEntity.html" title="class in net.minecraft.entity.thrown">ThrownEntity</a></h3>
-<code><a href="ThrownEntity.html#inGround">inGround</a>, <a href="ThrownEntity.html#shake">shake</a></code></li>
+<h3>Fields inherited from class&nbsp;net.minecraft.entity.thrown.<a href="ThrowableEntity.html" title="class in net.minecraft.entity.thrown">ThrowableEntity</a></h3>
+<code><a href="ThrowableEntity.html#inGround">inGround</a>, <a href="ThrowableEntity.html#shake">shake</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="fields.inherited.from.class.net.minecraft.entity.Entity">
@@ -226,16 +226,16 @@ extends <a href="ThrownEntity.html" title="class in net.minecraft.entity.thrown"
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onCollision(net.minecraft.util.hit.HitResult)">onCollision</a></span>&#8203;(<a href="../../util/hit/HitResult.html" title="class in net.minecraft.util.hit">HitResult</a>&nbsp;hitResult)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onCollision(net.minecraft.util.hit.HitResult)">onCollision</a></span>&#8203;(<a href="../../util/hit/HitResult.html" title="class in net.minecraft.util.hit">HitResult</a>&nbsp;result)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.net.minecraft.entity.thrown.ThrownEntity">
+<li class="blockList"><a id="methods.inherited.from.class.net.minecraft.entity.thrown.ThrowableEntity">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;net.minecraft.entity.thrown.<a href="ThrownEntity.html" title="class in net.minecraft.entity.thrown">ThrownEntity</a></h3>
-<code><a href="ThrownEntity.html#getGravity()">getGravity</a>, <a href="ThrownEntity.html#initDataTracker()">initDataTracker</a>, <a href="ThrownEntity.html#method_8069()">method_8069</a>, <a href="ThrownEntity.html#method_8070()">method_8070</a>, <a href="ThrownEntity.html#method_8072()">method_8072</a>, <a href="ThrownEntity.html#readCustomDataFromTag(net.minecraft.nbt.CompoundTag)">readCustomDataFromTag</a>, <a href="ThrownEntity.html#setVelocity(double,double,double,float,float)">setVelocity</a>, <a href="ThrownEntity.html#setVelocityClient(double,double,double)">setVelocityClient</a>, <a href="ThrownEntity.html#shouldRender(double)">shouldRender</a>, <a href="ThrownEntity.html#tick()">tick</a>, <a href="ThrownEntity.html#writeCustomDataToTag(net.minecraft.nbt.CompoundTag)">writeCustomDataToTag</a></code></li>
+<h3>Methods inherited from class&nbsp;net.minecraft.entity.thrown.<a href="ThrowableEntity.html" title="class in net.minecraft.entity.thrown">ThrowableEntity</a></h3>
+<code><a href="ThrowableEntity.html#getGravity()">getGravity</a>, <a href="ThrowableEntity.html#initDataTracker()">initDataTracker</a>, <a href="ThrowableEntity.html#method_8069()">method_8069</a>, <a href="ThrowableEntity.html#method_8070()">method_8070</a>, <a href="ThrowableEntity.html#method_8072()">method_8072</a>, <a href="ThrowableEntity.html#readCustomDataFromTag(net.minecraft.nbt.CompoundTag)">readCustomDataFromTag</a>, <a href="ThrowableEntity.html#setVelocity(double,double,double,float,float)">setVelocity</a>, <a href="ThrowableEntity.html#setVelocityClient(double,double,double)">setVelocityClient</a>, <a href="ThrowableEntity.html#shouldRender(double)">shouldRender</a>, <a href="ThrowableEntity.html#tick()">tick</a>, <a href="ThrowableEntity.html#writeCustomDataToTag(net.minecraft.nbt.CompoundTag)">writeCustomDataToTag</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.net.minecraft.entity.Entity">
@@ -314,10 +314,10 @@ extends <a href="ThrownEntity.html" title="class in net.minecraft.entity.thrown"
 <ul class="blockListLast">
 <li class="blockList">
 <h4>onCollision</h4>
-<pre class="methodSignature">protected&nbsp;void&nbsp;onCollision&#8203;(<a href="../../util/hit/HitResult.html" title="class in net.minecraft.util.hit">HitResult</a>&nbsp;hitResult)</pre>
+<pre class="methodSignature">protected&nbsp;void&nbsp;onCollision&#8203;(<a href="../../util/hit/HitResult.html" title="class in net.minecraft.util.hit">HitResult</a>&nbsp;result)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="ThrownEntity.html#onCollision(net.minecraft.util.hit.HitResult)">onCollision</a></code>&nbsp;in class&nbsp;<code><a href="ThrownEntity.html" title="class in net.minecraft.entity.thrown">ThrownEntity</a></code></dd>
+<dd><code><a href="ThrowableEntity.html#onCollision(net.minecraft.util.hit.HitResult)">onCollision</a></code>&nbsp;in class&nbsp;<code><a href="ThrowableEntity.html" title="class in net.minecraft.entity.thrown">ThrowableEntity</a></code></dd>
 </dl>
 </li>
 </ul>
