@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
+var data = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -201,17 +201,17 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(double,double,double,double,double,double)">Box</a></span>&#8203;(double&nbsp;double2,
-   double&nbsp;double3,
-   double&nbsp;double4,
-   double&nbsp;double5,
-   double&nbsp;double6,
-   double&nbsp;double7)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(double,double,double,double,double,double)">Box</a></span>&#8203;(double&nbsp;x1,
+   double&nbsp;y1,
+   double&nbsp;z1,
+   double&nbsp;x2,
+   double&nbsp;y2,
+   double&nbsp;z2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.util.math.BlockPos,net.minecraft.util.math.BlockPos)">Box</a></span>&#8203;(<a href="BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
-   <a href="BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos2)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.util.math.BlockPos,net.minecraft.util.math.BlockPos)">Box</a></span>&#8203;(<a href="BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos1,
+   <a href="BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -238,83 +238,83 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>static <a href="Box.html" title="class in net.minecraft.util.math">Box</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createNewBox(double,double,double,double,double,double)">createNewBox</a></span>&#8203;(double&nbsp;x1,
+            double&nbsp;y1,
+            double&nbsp;z1,
+            double&nbsp;x2,
+            double&nbsp;y2,
+            double&nbsp;z2)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="Box.html" title="class in net.minecraft.util.math">Box</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#expand(double,double,double)">expand</a></span>&#8203;(double&nbsp;x,
       double&nbsp;y,
       double&nbsp;z)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#intersects(net.minecraft.util.math.Box)">intersects</a></span>&#8203;(<a href="Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;box)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isValid()">isValid</a></span>()</code></th>
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getAverage()">getAverage</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_2054()">method_2054</a></span>()</code></th>
+<td class="colFirst"><code><a href="Box.html" title="class in net.minecraft.util.math">Box</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#increment(double,double,double)">increment</a></span>&#8203;(double&nbsp;x,
+         double&nbsp;y,
+         double&nbsp;z)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="Box.html" title="class in net.minecraft.util.math">Box</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_2055(double,double,double)">method_2055</a></span>&#8203;(double&nbsp;double2,
-           double&nbsp;double3,
-           double&nbsp;double4)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#incrementAll(double,double,double)">incrementAll</a></span>&#8203;(double&nbsp;x,
+            double&nbsp;y,
+            double&nbsp;z)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>static <a href="Box.html" title="class in net.minecraft.util.math">Box</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_2056(double,double,double,double,double,double)">method_2056</a></span>&#8203;(double&nbsp;double2,
-           double&nbsp;double3,
-           double&nbsp;double4,
-           double&nbsp;double5,
-           double&nbsp;double6,
-           double&nbsp;double7)</code></th>
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#intersects(net.minecraft.util.math.Box)">intersects</a></span>&#8203;(<a href="Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;box)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isInvalid()">isInvalid</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_2058(net.minecraft.util.math.Box,double)">method_2058</a></span>&#8203;(<a href="Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;box,
            double&nbsp;double2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../hit/HitResult.html" title="class in net.minecraft.util.hit">HitResult</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_2060(net.minecraft.util.math.Vec3d,net.minecraft.util.math.Vec3d)">method_2060</a></span>&#8203;(<a href="Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&nbsp;vec3d,
-           <a href="Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&nbsp;vec3d2)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_2060(net.minecraft.util.math.Vec3d,net.minecraft.util.math.Vec3d)">method_2060</a></span>&#8203;(<a href="Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&nbsp;vec1,
+           <a href="Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&nbsp;vec2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_2064(net.minecraft.util.math.Box,double)">method_2064</a></span>&#8203;(<a href="Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;box,
            double&nbsp;double2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>private boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_2065(net.minecraft.util.math.Vec3d)">method_2065</a></span>&#8203;(<a href="Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&nbsp;vec3d)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_2067(net.minecraft.util.math.Box,double)">method_2067</a></span>&#8203;(<a href="Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;box,
            double&nbsp;double2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>private boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_2068(net.minecraft.util.math.Vec3d)">method_2068</a></span>&#8203;(<a href="Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&nbsp;vec3d)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i13" class="rowColor">
-<td class="colFirst"><code><a href="Box.html" title="class in net.minecraft.util.math">Box</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_2069(double,double,double)">method_2069</a></span>&#8203;(double&nbsp;double2,
-           double&nbsp;double3,
-           double&nbsp;double4)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
@@ -433,12 +433,12 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>Box</h4>
-<pre>public&nbsp;Box&#8203;(double&nbsp;double2,
-           double&nbsp;double3,
-           double&nbsp;double4,
-           double&nbsp;double5,
-           double&nbsp;double6,
-           double&nbsp;double7)</pre>
+<pre>public&nbsp;Box&#8203;(double&nbsp;x1,
+           double&nbsp;y1,
+           double&nbsp;z1,
+           double&nbsp;x2,
+           double&nbsp;y2,
+           double&nbsp;z2)</pre>
 </li>
 </ul>
 <a id="&lt;init&gt;(net.minecraft.util.math.BlockPos,net.minecraft.util.math.BlockPos)">
@@ -447,8 +447,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockListLast">
 <li class="blockList">
 <h4>Box</h4>
-<pre>public&nbsp;Box&#8203;(<a href="BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
-           <a href="BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos2)</pre>
+<pre>public&nbsp;Box&#8203;(<a href="BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos1,
+           <a href="BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos2)</pre>
 </li>
 </ul>
 </li>
@@ -461,15 +461,15 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="method_2055(double,double,double)">
+<a id="incrementAll(double,double,double)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_2055</h4>
-<pre class="methodSignature">public&nbsp;<a href="Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;method_2055&#8203;(double&nbsp;double2,
-                       double&nbsp;double3,
-                       double&nbsp;double4)</pre>
+<h4>incrementAll</h4>
+<pre class="methodSignature">public&nbsp;<a href="Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;incrementAll&#8203;(double&nbsp;x,
+                        double&nbsp;y,
+                        double&nbsp;z)</pre>
 </li>
 </ul>
 <a id="expand(double,double,double)">
@@ -492,18 +492,18 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre class="methodSignature">public&nbsp;<a href="Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;union&#8203;(<a href="Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;box)</pre>
 </li>
 </ul>
-<a id="method_2056(double,double,double,double,double,double)">
+<a id="createNewBox(double,double,double,double,double,double)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_2056</h4>
-<pre class="methodSignature">public static&nbsp;<a href="Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;method_2056&#8203;(double&nbsp;double2,
-                              double&nbsp;double3,
-                              double&nbsp;double4,
-                              double&nbsp;double5,
-                              double&nbsp;double6,
-                              double&nbsp;double7)</pre>
+<h4>createNewBox</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;createNewBox&#8203;(double&nbsp;x1,
+                               double&nbsp;y1,
+                               double&nbsp;z1,
+                               double&nbsp;x2,
+                               double&nbsp;y2,
+                               double&nbsp;z2)</pre>
 </li>
 </ul>
 <a id="offset(double,double,double)">
@@ -565,24 +565,24 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre class="methodSignature">public&nbsp;boolean&nbsp;contains&#8203;(<a href="Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&nbsp;vec)</pre>
 </li>
 </ul>
-<a id="method_2054()">
+<a id="getAverage()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_2054</h4>
-<pre class="methodSignature">public&nbsp;double&nbsp;method_2054()</pre>
+<h4>getAverage</h4>
+<pre class="methodSignature">public&nbsp;double&nbsp;getAverage()</pre>
 </li>
 </ul>
-<a id="method_2069(double,double,double)">
+<a id="increment(double,double,double)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_2069</h4>
-<pre class="methodSignature">public&nbsp;<a href="Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;method_2069&#8203;(double&nbsp;double2,
-                       double&nbsp;double3,
-                       double&nbsp;double4)</pre>
+<h4>increment</h4>
+<pre class="methodSignature">public&nbsp;<a href="Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;increment&#8203;(double&nbsp;x,
+                     double&nbsp;y,
+                     double&nbsp;z)</pre>
 </li>
 </ul>
 <a id="method_2060(net.minecraft.util.math.Vec3d,net.minecraft.util.math.Vec3d)">
@@ -591,8 +591,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>method_2060</h4>
-<pre class="methodSignature">public&nbsp;<a href="../hit/HitResult.html" title="class in net.minecraft.util.hit">HitResult</a>&nbsp;method_2060&#8203;(<a href="Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&nbsp;vec3d,
-                             <a href="Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&nbsp;vec3d2)</pre>
+<pre class="methodSignature">public&nbsp;<a href="../hit/HitResult.html" title="class in net.minecraft.util.hit">HitResult</a>&nbsp;method_2060&#8203;(<a href="Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&nbsp;vec1,
+                             <a href="Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&nbsp;vec2)</pre>
 </li>
 </ul>
 <a id="method_2065(net.minecraft.util.math.Vec3d)">
@@ -635,14 +635,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </dl>
 </li>
 </ul>
-<a id="isValid()">
+<a id="isInvalid()">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>isValid</h4>
+<h4>isInvalid</h4>
 <pre class="methodSignature">@Environment(CLIENT)
-public&nbsp;boolean&nbsp;isValid()</pre>
+public&nbsp;boolean&nbsp;isInvalid()</pre>
 </li>
 </ul>
 </li>

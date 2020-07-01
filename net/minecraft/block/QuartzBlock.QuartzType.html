@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":9,"i5":9};
+var data = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":9,"i5":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -205,23 +205,23 @@ implements <a href="../util/StringIdentifiable.html" title="interface in net.min
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private static <a href="QuartzBlock.QuartzType.html" title="enum in net.minecraft.block">QuartzBlock.QuartzType</a>[]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1127">field_1127</a></span></code></th>
+<td class="colFirst"><code>private int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#id">id</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1128">field_1128</a></span></code></th>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#name">name</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1129">field_1129</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stateName">stateName</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1130">field_1130</a></span></code></th>
+<td class="colFirst"><code>private static <a href="QuartzBlock.QuartzType.html" title="enum in net.minecraft.block">QuartzBlock.QuartzType</a>[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TYPES">TYPES</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -244,9 +244,9 @@ implements <a href="../util/StringIdentifiable.html" title="interface in net.min
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private </code></td>
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(int,java.lang.String,java.lang.String)">QuartzType</a></span>&#8203;(int&nbsp;int2,
-          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
-          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string2)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(int,java.lang.String,java.lang.String)">QuartzType</a></span>&#8203;(int&nbsp;id,
+          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;stateName)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -273,13 +273,13 @@ implements <a href="../util/StringIdentifiable.html" title="interface in net.min
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#byId()">byId</a></span>()</code></th>
+<td class="colFirst"><code>static <a href="QuartzBlock.QuartzType.html" title="enum in net.minecraft.block">QuartzBlock.QuartzType</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getById(int)">getById</a></span>&#8203;(int&nbsp;id)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>static <a href="QuartzBlock.QuartzType.html" title="enum in net.minecraft.block">QuartzBlock.QuartzType</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_964(int)">method_964</a></span>&#8203;(int&nbsp;int2)</code></th>
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getId()">getId</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -351,15 +351,6 @@ the order they are declared.</div>
 <pre>public static final&nbsp;<a href="QuartzBlock.QuartzType.html" title="enum in net.minecraft.block">QuartzBlock.QuartzType</a> CHISELED</pre>
 </li>
 </ul>
-<a id="LINES_Y">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>LINES_Y</h4>
-<pre>public static final&nbsp;<a href="QuartzBlock.QuartzType.html" title="enum in net.minecraft.block">QuartzBlock.QuartzType</a> LINES_Y</pre>
-</li>
-</ul>
 <a id="LINES_X">
 <!--   -->
 </a>
@@ -367,6 +358,15 @@ the order they are declared.</div>
 <li class="blockList">
 <h4>LINES_X</h4>
 <pre>public static final&nbsp;<a href="QuartzBlock.QuartzType.html" title="enum in net.minecraft.block">QuartzBlock.QuartzType</a> LINES_X</pre>
+</li>
+</ul>
+<a id="LINES_Y">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>LINES_Y</h4>
+<pre>public static final&nbsp;<a href="QuartzBlock.QuartzType.html" title="enum in net.minecraft.block">QuartzBlock.QuartzType</a> LINES_Y</pre>
 </li>
 </ul>
 <a id="LINES_Z">
@@ -388,40 +388,40 @@ the order they are declared.</div>
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="field_1127">
+<a id="TYPES">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_1127</h4>
-<pre>private static final&nbsp;<a href="QuartzBlock.QuartzType.html" title="enum in net.minecraft.block">QuartzBlock.QuartzType</a>[] field_1127</pre>
+<h4>TYPES</h4>
+<pre>private static final&nbsp;<a href="QuartzBlock.QuartzType.html" title="enum in net.minecraft.block">QuartzBlock.QuartzType</a>[] TYPES</pre>
 </li>
 </ul>
-<a id="field_1128">
+<a id="id">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_1128</h4>
-<pre>private final&nbsp;int field_1128</pre>
+<h4>id</h4>
+<pre>private final&nbsp;int id</pre>
 </li>
 </ul>
-<a id="field_1129">
+<a id="name">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_1129</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> field_1129</pre>
+<h4>name</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> name</pre>
 </li>
 </ul>
-<a id="field_1130">
+<a id="stateName">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_1130</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> field_1130</pre>
+<h4>stateName</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> stateName</pre>
 </li>
 </ul>
 </li>
@@ -440,9 +440,9 @@ the order they are declared.</div>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>QuartzType</h4>
-<pre>private&nbsp;QuartzType&#8203;(int&nbsp;int2,
-                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
-                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string2)</pre>
+<pre>private&nbsp;QuartzType&#8203;(int&nbsp;id,
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;stateName)</pre>
 </li>
 </ul>
 </li>
@@ -497,13 +497,13 @@ not permitted.)</div>
 </dl>
 </li>
 </ul>
-<a id="byId()">
+<a id="getId()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>byId</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;byId()</pre>
+<h4>getId</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;getId()</pre>
 </li>
 </ul>
 <a id="toString()">
@@ -519,13 +519,13 @@ not permitted.)</div>
 </dl>
 </li>
 </ul>
-<a id="method_964(int)">
+<a id="getById(int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_964</h4>
-<pre class="methodSignature">public static&nbsp;<a href="QuartzBlock.QuartzType.html" title="enum in net.minecraft.block">QuartzBlock.QuartzType</a>&nbsp;method_964&#8203;(int&nbsp;int2)</pre>
+<h4>getById</h4>
+<pre class="methodSignature">public static&nbsp;<a href="QuartzBlock.QuartzType.html" title="enum in net.minecraft.block">QuartzBlock.QuartzType</a>&nbsp;getById&#8203;(int&nbsp;id)</pre>
 </li>
 </ul>
 <a id="asString()">

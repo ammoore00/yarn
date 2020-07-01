@@ -168,23 +168,23 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1523">field_1523</a></span></code></th>
+<td class="colFirst"><code>private <a href="../../util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#forward">forward</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1524">field_1524</a></span></code></th>
+<td class="colFirst"><code>private <a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#frontTopLeft">frontTopLeft</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1525">field_1525</a></span></code></th>
+<td class="colFirst"><code>private int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#height">height</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#height">height</a></span></code></th>
+<td class="colFirst"><code>private <a href="../../util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#up">up</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -210,13 +210,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction,net.minecraft.util.math.Direction,com.google.common.cache.LoadingCache,int,int,int)">Result</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
-      <a href="../../util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction,
-      <a href="../../util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction2,
-      <a href="https://guava.dev/releases/21.0/api/docs/com/google/common/cache/LoadingCache.html?is-external=true" title="class or interface in com.google.common.cache" class="externalLink">LoadingCache</a>&lt;<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>,&#8203;<a href="../../world/RayTraceContext.html" title="class in net.minecraft.world">RayTraceContext</a>&gt;&nbsp;loadingCache,
-      int&nbsp;int2,
-      int&nbsp;int3,
-      int&nbsp;int4)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction,net.minecraft.util.math.Direction,com.google.common.cache.LoadingCache,int,int,int)">Result</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;frontTopLeft,
+      <a href="../../util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;forward,
+      <a href="../../util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;up,
+      <a href="https://guava.dev/releases/21.0/api/docs/com/google/common/cache/LoadingCache.html?is-external=true" title="class or interface in com.google.common.cache" class="externalLink">LoadingCache</a>&lt;<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>,&#8203;<a href="../../world/RayTraceContext.html" title="class in net.minecraft.world">RayTraceContext</a>&gt;&nbsp;cache,
+      int&nbsp;width,
+      int&nbsp;height,
+      int&nbsp;depth)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -298,31 +298,31 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="field_1523">
+<a id="frontTopLeft">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_1523</h4>
-<pre>private final&nbsp;<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a> field_1523</pre>
+<h4>frontTopLeft</h4>
+<pre>private final&nbsp;<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a> frontTopLeft</pre>
 </li>
 </ul>
-<a id="field_1524">
+<a id="forward">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_1524</h4>
-<pre>private final&nbsp;<a href="../../util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a> field_1524</pre>
+<h4>forward</h4>
+<pre>private final&nbsp;<a href="../../util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a> forward</pre>
 </li>
 </ul>
-<a id="field_1525">
+<a id="up">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_1525</h4>
-<pre>private final&nbsp;<a href="../../util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a> field_1525</pre>
+<h4>up</h4>
+<pre>private final&nbsp;<a href="../../util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a> up</pre>
 </li>
 </ul>
 <a id="cache">
@@ -377,13 +377,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockListLast">
 <li class="blockList">
 <h4>Result</h4>
-<pre>public&nbsp;Result&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
-              <a href="../../util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction,
-              <a href="../../util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction2,
-              <a href="https://guava.dev/releases/21.0/api/docs/com/google/common/cache/LoadingCache.html?is-external=true" title="class or interface in com.google.common.cache" class="externalLink">LoadingCache</a>&lt;<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>,&#8203;<a href="../../world/RayTraceContext.html" title="class in net.minecraft.world">RayTraceContext</a>&gt;&nbsp;loadingCache,
-              int&nbsp;int2,
-              int&nbsp;int3,
-              int&nbsp;int4)</pre>
+<pre>public&nbsp;Result&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;frontTopLeft,
+              <a href="../../util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;forward,
+              <a href="../../util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;up,
+              <a href="https://guava.dev/releases/21.0/api/docs/com/google/common/cache/LoadingCache.html?is-external=true" title="class or interface in com.google.common.cache" class="externalLink">LoadingCache</a>&lt;<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>,&#8203;<a href="../../world/RayTraceContext.html" title="class in net.minecraft.world">RayTraceContext</a>&gt;&nbsp;cache,
+              int&nbsp;width,
+              int&nbsp;height,
+              int&nbsp;depth)</pre>
 </li>
 </ul>
 </li>

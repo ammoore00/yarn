@@ -273,53 +273,53 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#mapFeatures">mapFeatures</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code>static <a href="../Difficulty.html" title="enum in net.minecraft.world">Difficulty</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#NORMAL_DIFFICULTY">NORMAL_DIFFICULTY</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private <a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#player">player</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#playerNbt">playerNbt</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#raining">raining</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#rainTime">rainTime</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private long</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#seed">seed</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private long</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sizeOnDisk">sizeOnDisk</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#spawnX">spawnX</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#spawnY">spawnY</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#spawnZ">spawnZ</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#structures">structures</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -372,13 +372,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>&nbsp;</code></td>
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.world.level.LevelInfo,java.lang.String)">LevelProperties</a></span>&#8203;(<a href="LevelInfo.html" title="class in net.minecraft.world.level">LevelInfo</a>&nbsp;levelInfo,
-               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.world.level.LevelInfo,java.lang.String)">LevelProperties</a></span>&#8203;(<a href="LevelInfo.html" title="class in net.minecraft.world.level">LevelInfo</a>&nbsp;info,
+               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>&nbsp;</code></td>
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.world.level.LevelProperties)">LevelProperties</a></span>&#8203;(<a href="LevelProperties.html" title="class in net.minecraft.world.level">LevelProperties</a>&nbsp;levelProperties)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.world.level.LevelProperties)">LevelProperties</a></span>&#8203;(<a href="LevelProperties.html" title="class in net.minecraft.world.level">LevelProperties</a>&nbsp;copy)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -400,344 +400,344 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="LevelInfo.GameMode.html" title="enum in net.minecraft.world.level">LevelInfo.GameMode</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getGameMode()">getGameMode</a></span>()</code></th>
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#areCheatsEnabled()">areCheatsEnabled</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getGeneratorType()">getGeneratorType</a></span>()</code></th>
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBorderCenterX()">getBorderCenterX</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>long</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSeed()">getSeed</a></span>()</code></th>
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBorderCenterZ()">getBorderCenterZ</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasStructures()">hasStructures</a></span>()</code></th>
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBorderDamagePerBlock()">getBorderDamagePerBlock</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isHardcore()">isHardcore</a></span>()</code></th>
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBorderSize()">getBorderSize</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1913()">method_1913</a></span>()</code></th>
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBorderSizeLerpTarget()">getBorderSizeLerpTarget</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1914()">method_1914</a></span>()</code></th>
+<td class="colFirst"><code>long</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBorderSizeLerpTIme()">getBorderSizeLerpTIme</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1915()">method_1915</a></span>()</code></th>
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBorderWarningBlocks()">getBorderWarningBlocks</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code>double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1916()">method_1916</a></span>()</code></th>
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBorderWarningTime()">getBorderWarningTime</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code>double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1917()">method_1917</a></span>()</code></th>
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getClearWeatherTIme()">getClearWeatherTIme</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>long</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1918()">method_1918</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDayTime()">getDayTime</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code>double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1919()">method_1919</a></span>()</code></th>
+<td class="colFirst"><code><a href="../Difficulty.html" title="enum in net.minecraft.world">Difficulty</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDifficulty()">getDifficulty</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code>double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1920()">method_1920</a></span>()</code></th>
+<td class="colFirst"><code><a href="LevelInfo.GameMode.html" title="enum in net.minecraft.world.level">LevelInfo.GameMode</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getGameMode()">getGameMode</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code>double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1921()">method_1921</a></span>()</code></th>
+<td class="colFirst"><code><a href="../GameRules.html" title="class in net.minecraft.world">GameRules</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getGamerules()">getGamerules</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1922()">method_1922</a></span>()</code></th>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getGeneratorOptions()">getGeneratorOptions</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i15" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1923()">method_1923</a></span>()</code></th>
+<td class="colFirst"><code><a href="LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getGeneratorType()">getGeneratorType</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i16" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1925(double)">method_1925</a></span>&#8203;(double&nbsp;double2)</code></th>
+<td class="colFirst"><code>long</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLastPlayed()">getLastPlayed</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i17" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1926(int)">method_1926</a></span>&#8203;(int&nbsp;int2)</code></th>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLevelName()">getLevelName</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i18" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1927(net.minecraft.world.level.LevelInfo.GameMode)">method_1927</a></span>&#8203;(<a href="LevelInfo.GameMode.html" title="enum in net.minecraft.world.level">LevelInfo.GameMode</a>&nbsp;gameMode)</code></th>
+<td class="colFirst"><code><a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getNbt()">getNbt</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i19" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1928(net.minecraft.world.level.LevelInfo)">method_1928</a></span>&#8203;(<a href="LevelInfo.html" title="class in net.minecraft.world.level">LevelInfo</a>&nbsp;levelInfo)</code></th>
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getRainTIme()">getRainTIme</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i20" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1929(net.minecraft.world.level.LevelGeneratorType)">method_1929</a></span>&#8203;(<a href="LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a>&nbsp;levelGeneratorType)</code></th>
+<td class="colFirst"><code>double</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSafeZone()">getSafeZone</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i21" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1931(net.minecraft.util.crash.CrashReportSection)">method_1931</a></span>&#8203;(<a href="../../util/crash/CrashReportSection.html" title="class in net.minecraft.util.crash">CrashReportSection</a>&nbsp;crashReportSection)</code></th>
+<td class="colFirst"><code>long</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSeed()">getSeed</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i22" class="altColor">
-<td class="colFirst"><code>private void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1934(net.minecraft.nbt.CompoundTag,net.minecraft.nbt.CompoundTag)">method_1934</a></span>&#8203;(<a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;worldNbt,
-           <a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;playerData)</code></th>
+<td class="colFirst"><code>long</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSizeOnDisk()">getSizeOnDisk</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i23" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1935(java.lang.String)">method_1935</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</code></th>
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSpawnX()">getSpawnX</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i24" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1937(boolean)">method_1937</a></span>&#8203;(boolean&nbsp;bool)</code></th>
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSpawnY()">getSpawnY</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i25" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1939(double)">method_1939</a></span>&#8203;(double&nbsp;double2)</code></th>
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSpawnZ()">getSpawnZ</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i26" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1940(int)">method_1940</a></span>&#8203;(int&nbsp;int2)</code></th>
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getThunderTime()">getThunderTime</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i27" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1943(boolean)">method_1943</a></span>&#8203;(boolean&nbsp;bool)</code></th>
+<td class="colFirst"><code>long</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTime()">getTime</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i28" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1944()">method_1944</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getVersion()">getVersion</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i29" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1945(double)">method_1945</a></span>&#8203;(double&nbsp;double2)</code></th>
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasStructures()">hasStructures</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i30" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1946(int)">method_1946</a></span>&#8203;(int&nbsp;int2)</code></th>
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isDifficultyLocked()">isDifficultyLocked</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i31" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1947(long)">method_1947</a></span>&#8203;(long&nbsp;long2)</code></th>
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isHardcore()">isHardcore</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i32" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1949(boolean)">method_1949</a></span>&#8203;(boolean&nbsp;bool)</code></th>
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isInitialized()">isInitialized</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i33" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1950()">method_1950</a></span>()</code></th>
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isRaining()">isRaining</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i34" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1951(double)">method_1951</a></span>&#8203;(double&nbsp;double2)</code></th>
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isThundering()">isThundering</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i35" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1953(boolean)">method_1953</a></span>&#8203;(boolean&nbsp;bool)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1928(net.minecraft.world.level.LevelInfo)">method_1928</a></span>&#8203;(<a href="LevelInfo.html" title="class in net.minecraft.world.level">LevelInfo</a>&nbsp;info)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i36" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1954()">method_1954</a></span>()</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1931(net.minecraft.util.crash.CrashReportSection)">method_1931</a></span>&#8203;(<a href="../../util/crash/CrashReportSection.html" title="class in net.minecraft.util.crash">CrashReportSection</a>&nbsp;section)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i37" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1955(double)">method_1955</a></span>&#8203;(double&nbsp;double2)</code></th>
+<td class="colFirst"><code>private void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#putNbt(net.minecraft.nbt.CompoundTag,net.minecraft.nbt.CompoundTag)">putNbt</a></span>&#8203;(<a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;worldNbt,
+      <a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;playerData)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i38" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1956(int)">method_1956</a></span>&#8203;(int&nbsp;int2)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setBorderCenterX(double)">setBorderCenterX</a></span>&#8203;(double&nbsp;x)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i39" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1957(long)">method_1957</a></span>&#8203;(long&nbsp;long2)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setBorderCenterZ(double)">setBorderCenterZ</a></span>&#8203;(double&nbsp;y)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i40" class="altColor">
-<td class="colFirst"><code>long</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1960()">method_1960</a></span>()</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setBorderDamagePerBlock(double)">setBorderDamagePerBlock</a></span>&#8203;(double&nbsp;damage)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i41" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1961(double)">method_1961</a></span>&#8203;(double&nbsp;double2)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setBorderSize(double)">setBorderSize</a></span>&#8203;(double&nbsp;size)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i42" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1962(int)">method_1962</a></span>&#8203;(int&nbsp;int2)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setBorderSizeLerpTarget(double)">setBorderSizeLerpTarget</a></span>&#8203;(double&nbsp;target)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i43" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1964(boolean)">method_1964</a></span>&#8203;(boolean&nbsp;bool)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setBorderSizeLerpTime(long)">setBorderSizeLerpTime</a></span>&#8203;(long&nbsp;time)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i44" class="altColor">
-<td class="colFirst"><code>long</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1965()">method_1965</a></span>()</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setBorderWarningBlocks(int)">setBorderWarningBlocks</a></span>&#8203;(int&nbsp;blocks)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i45" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1966(int)">method_1966</a></span>&#8203;(int&nbsp;int2)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setBorderWarningTime(int)">setBorderWarningTime</a></span>&#8203;(int&nbsp;time)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i46" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1968(boolean)">method_1968</a></span>&#8203;(boolean&nbsp;bool)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCheats(boolean)">setCheats</a></span>&#8203;(boolean&nbsp;enabled)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i47" class="rowColor">
-<td class="colFirst"><code>long</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1969()">method_1969</a></span>()</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setClearWeatherTime(int)">setClearWeatherTime</a></span>&#8203;(int&nbsp;time)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i48" class="altColor">
-<td class="colFirst"><code><a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1971()">method_1971</a></span>()</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDayTime(long)">setDayTime</a></span>&#8203;(long&nbsp;time)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i49" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1972(int)">method_1972</a></span>&#8203;(int&nbsp;int2)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDifficulty(net.minecraft.world.Difficulty)">setDifficulty</a></span>&#8203;(<a href="../Difficulty.html" title="enum in net.minecraft.world">Difficulty</a>&nbsp;difficulty)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i50" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1974(int)">method_1974</a></span>&#8203;(int&nbsp;int2)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDifficultyLocked(boolean)">setDifficultyLocked</a></span>&#8203;(boolean&nbsp;difficultyLocked)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i51" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1976()">method_1976</a></span>()</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setGamemode(net.minecraft.world.level.LevelInfo.GameMode)">setGamemode</a></span>&#8203;(<a href="LevelInfo.GameMode.html" title="enum in net.minecraft.world.level">LevelInfo.GameMode</a>&nbsp;gamemode)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i52" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1977(int)">method_1977</a></span>&#8203;(int&nbsp;int2)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setHardcore(boolean)">setHardcore</a></span>&#8203;(boolean&nbsp;hardcore)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i53" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1979()">method_1979</a></span>()</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setInitialized(boolean)">setInitialized</a></span>&#8203;(boolean&nbsp;initialized)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i54" class="altColor">
-<td class="colFirst"><code>long</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1981()">method_1981</a></span>()</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setLevelGeneratorType(net.minecraft.world.level.LevelGeneratorType)">setLevelGeneratorType</a></span>&#8203;(<a href="LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a>&nbsp;type)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i55" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1983()">method_1983</a></span>()</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setLevelName(java.lang.String)">setLevelName</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i56" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1985()">method_1985</a></span>()</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setRaining(boolean)">setRaining</a></span>&#8203;(boolean&nbsp;raining)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i57" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1987()">method_1987</a></span>()</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setRainTime(int)">setRainTime</a></span>&#8203;(int&nbsp;rainTime)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i58" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1989()">method_1989</a></span>()</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setSafeZone(double)">setSafeZone</a></span>&#8203;(double&nbsp;zone)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i59" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1995()">method_1995</a></span>()</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setSpawnPos(net.minecraft.util.math.BlockPos)">setSpawnPos</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i60" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1996()">method_1996</a></span>()</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setSpawnX(int)">setSpawnX</a></span>&#8203;(int&nbsp;spawnX)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i61" class="rowColor">
-<td class="colFirst"><code><a href="../GameRules.html" title="class in net.minecraft.world">GameRules</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1997()">method_1997</a></span>()</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setSpawnY(int)">setSpawnY</a></span>&#8203;(int&nbsp;spawnY)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i62" class="altColor">
-<td class="colFirst"><code><a href="../Difficulty.html" title="enum in net.minecraft.world">Difficulty</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1998()">method_1998</a></span>()</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setSpawnZ(int)">setSpawnZ</a></span>&#8203;(int&nbsp;spawnZ)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i63" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1999()">method_1999</a></span>()</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setStructures(boolean)">setStructures</a></span>&#8203;(boolean&nbsp;structures)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i64" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDifficulty(net.minecraft.world.Difficulty)">setDifficulty</a></span>&#8203;(<a href="../Difficulty.html" title="enum in net.minecraft.world">Difficulty</a>&nbsp;difficulty)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setThundering(boolean)">setThundering</a></span>&#8203;(boolean&nbsp;thundering)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i65" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDifficultyLocked(boolean)">setDifficultyLocked</a></span>&#8203;(boolean&nbsp;bool)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setThunderTime(int)">setThunderTime</a></span>&#8203;(int&nbsp;time)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i66" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setSpawnPos(net.minecraft.util.math.BlockPos)">setSpawnPos</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTime(long)">setTime</a></span>&#8203;(long&nbsp;time)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i67" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTime(long)">setTime</a></span>&#8203;(long&nbsp;long2)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setVersion(int)">setVersion</a></span>&#8203;(int&nbsp;version)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i68" class="altColor">
@@ -747,7 +747,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i69" class="rowColor">
 <td class="colFirst"><code><a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toTag(net.minecraft.nbt.CompoundTag)">toTag</a></span>&#8203;(<a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toTag(net.minecraft.nbt.CompoundTag)">toTag</a></span>&#8203;(<a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;nbt)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -873,13 +873,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>private&nbsp;long sizeOnDisk</pre>
 </li>
 </ul>
-<a id="player">
+<a id="playerNbt">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>player</h4>
-<pre>private&nbsp;<a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a> player</pre>
+<h4>playerNbt</h4>
+<pre>private&nbsp;<a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a> playerNbt</pre>
 </li>
 </ul>
 <a id="dimension">
@@ -963,13 +963,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>private&nbsp;<a href="LevelInfo.GameMode.html" title="enum in net.minecraft.world.level">LevelInfo.GameMode</a> gamemode</pre>
 </li>
 </ul>
-<a id="mapFeatures">
+<a id="structures">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>mapFeatures</h4>
-<pre>private&nbsp;boolean mapFeatures</pre>
+<h4>structures</h4>
+<pre>private&nbsp;boolean structures</pre>
 </li>
 </ul>
 <a id="hardcore">
@@ -1141,8 +1141,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>LevelProperties</h4>
-<pre>public&nbsp;LevelProperties&#8203;(<a href="LevelInfo.html" title="class in net.minecraft.world.level">LevelInfo</a>&nbsp;levelInfo,
-                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</pre>
+<pre>public&nbsp;LevelProperties&#8203;(<a href="LevelInfo.html" title="class in net.minecraft.world.level">LevelInfo</a>&nbsp;info,
+                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
 </li>
 </ul>
 <a id="&lt;init&gt;(net.minecraft.world.level.LevelProperties)">
@@ -1151,7 +1151,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockListLast">
 <li class="blockList">
 <h4>LevelProperties</h4>
-<pre>public&nbsp;LevelProperties&#8203;(<a href="LevelProperties.html" title="class in net.minecraft.world.level">LevelProperties</a>&nbsp;levelProperties)</pre>
+<pre>public&nbsp;LevelProperties&#8203;(<a href="LevelProperties.html" title="class in net.minecraft.world.level">LevelProperties</a>&nbsp;copy)</pre>
 </li>
 </ul>
 </li>
@@ -1170,7 +1170,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>method_1928</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1928&#8203;(<a href="LevelInfo.html" title="class in net.minecraft.world.level">LevelInfo</a>&nbsp;levelInfo)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;method_1928&#8203;(<a href="LevelInfo.html" title="class in net.minecraft.world.level">LevelInfo</a>&nbsp;info)</pre>
 </li>
 </ul>
 <a id="toTag()">
@@ -1188,17 +1188,17 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>toTag</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;toTag&#8203;(<a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</pre>
+<pre class="methodSignature">public&nbsp;<a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;toTag&#8203;(<a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;nbt)</pre>
 </li>
 </ul>
-<a id="method_1934(net.minecraft.nbt.CompoundTag,net.minecraft.nbt.CompoundTag)">
+<a id="putNbt(net.minecraft.nbt.CompoundTag,net.minecraft.nbt.CompoundTag)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1934</h4>
-<pre class="methodSignature">private&nbsp;void&nbsp;method_1934&#8203;(<a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;worldNbt,
-                         <a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;playerData)</pre>
+<h4>putNbt</h4>
+<pre class="methodSignature">private&nbsp;void&nbsp;putNbt&#8203;(<a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;worldNbt,
+                    <a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;playerData)</pre>
 </li>
 </ul>
 <a id="getSeed()">
@@ -1210,98 +1210,98 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre class="methodSignature">public&nbsp;long&nbsp;getSeed()</pre>
 </li>
 </ul>
-<a id="method_1944()">
+<a id="getSpawnX()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1944</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;method_1944()</pre>
+<h4>getSpawnX</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;getSpawnX()</pre>
 </li>
 </ul>
-<a id="method_1950()">
+<a id="getSpawnY()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1950</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;method_1950()</pre>
+<h4>getSpawnY</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;getSpawnY()</pre>
 </li>
 </ul>
-<a id="method_1954()">
+<a id="getSpawnZ()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1954</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;method_1954()</pre>
+<h4>getSpawnZ</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;getSpawnZ()</pre>
 </li>
 </ul>
-<a id="method_1960()">
+<a id="getTime()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1960</h4>
-<pre class="methodSignature">public&nbsp;long&nbsp;method_1960()</pre>
+<h4>getTime</h4>
+<pre class="methodSignature">public&nbsp;long&nbsp;getTime()</pre>
 </li>
 </ul>
-<a id="method_1965()">
+<a id="getDayTime()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1965</h4>
-<pre class="methodSignature">public&nbsp;long&nbsp;method_1965()</pre>
+<h4>getDayTime</h4>
+<pre class="methodSignature">public&nbsp;long&nbsp;getDayTime()</pre>
 </li>
 </ul>
-<a id="method_1969()">
+<a id="getSizeOnDisk()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1969</h4>
+<h4>getSizeOnDisk</h4>
 <pre class="methodSignature">@Environment(CLIENT)
-public&nbsp;long&nbsp;method_1969()</pre>
+public&nbsp;long&nbsp;getSizeOnDisk()</pre>
 </li>
 </ul>
-<a id="method_1971()">
+<a id="getNbt()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1971</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;method_1971()</pre>
+<h4>getNbt</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;getNbt()</pre>
 </li>
 </ul>
-<a id="method_1926(int)">
+<a id="setSpawnX(int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1926</h4>
+<h4>setSpawnX</h4>
 <pre class="methodSignature">@Environment(CLIENT)
-public&nbsp;void&nbsp;method_1926&#8203;(int&nbsp;int2)</pre>
+public&nbsp;void&nbsp;setSpawnX&#8203;(int&nbsp;spawnX)</pre>
 </li>
 </ul>
-<a id="method_1940(int)">
+<a id="setSpawnY(int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1940</h4>
+<h4>setSpawnY</h4>
 <pre class="methodSignature">@Environment(CLIENT)
-public&nbsp;void&nbsp;method_1940&#8203;(int&nbsp;int2)</pre>
+public&nbsp;void&nbsp;setSpawnY&#8203;(int&nbsp;spawnY)</pre>
 </li>
 </ul>
-<a id="method_1946(int)">
+<a id="setSpawnZ(int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1946</h4>
+<h4>setSpawnZ</h4>
 <pre class="methodSignature">@Environment(CLIENT)
-public&nbsp;void&nbsp;method_1946&#8203;(int&nbsp;int2)</pre>
+public&nbsp;void&nbsp;setSpawnZ&#8203;(int&nbsp;spawnZ)</pre>
 </li>
 </ul>
 <a id="setTime(long)">
@@ -1310,16 +1310,16 @@ public&nbsp;void&nbsp;method_1946&#8203;(int&nbsp;int2)</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>setTime</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setTime&#8203;(long&nbsp;long2)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;setTime&#8203;(long&nbsp;time)</pre>
 </li>
 </ul>
-<a id="method_1947(long)">
+<a id="setDayTime(long)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1947</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1947&#8203;(long&nbsp;long2)</pre>
+<h4>setDayTime</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setDayTime&#8203;(long&nbsp;time)</pre>
 </li>
 </ul>
 <a id="setSpawnPos(net.minecraft.util.math.BlockPos)">
@@ -1328,143 +1328,143 @@ public&nbsp;void&nbsp;method_1946&#8203;(int&nbsp;int2)</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>setSpawnPos</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setSpawnPos&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;setSpawnPos&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</pre>
 </li>
 </ul>
-<a id="method_1976()">
+<a id="getLevelName()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1976</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;method_1976()</pre>
+<h4>getLevelName</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getLevelName()</pre>
 </li>
 </ul>
-<a id="method_1935(java.lang.String)">
+<a id="setLevelName(java.lang.String)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1935</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1935&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</pre>
+<h4>setLevelName</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setLevelName&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
 </li>
 </ul>
-<a id="method_1979()">
+<a id="getVersion()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1979</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;method_1979()</pre>
+<h4>getVersion</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;getVersion()</pre>
 </li>
 </ul>
-<a id="method_1956(int)">
+<a id="setVersion(int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1956</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1956&#8203;(int&nbsp;int2)</pre>
+<h4>setVersion</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setVersion&#8203;(int&nbsp;version)</pre>
 </li>
 </ul>
-<a id="method_1981()">
+<a id="getLastPlayed()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1981</h4>
+<h4>getLastPlayed</h4>
 <pre class="methodSignature">@Environment(CLIENT)
-public&nbsp;long&nbsp;method_1981()</pre>
+public&nbsp;long&nbsp;getLastPlayed()</pre>
 </li>
 </ul>
-<a id="method_1913()">
+<a id="getClearWeatherTIme()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1913</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;method_1913()</pre>
+<h4>getClearWeatherTIme</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;getClearWeatherTIme()</pre>
 </li>
 </ul>
-<a id="method_1972(int)">
+<a id="setClearWeatherTime(int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1972</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1972&#8203;(int&nbsp;int2)</pre>
+<h4>setClearWeatherTime</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setClearWeatherTime&#8203;(int&nbsp;time)</pre>
 </li>
 </ul>
-<a id="method_1983()">
+<a id="isThundering()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1983</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;method_1983()</pre>
+<h4>isThundering</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isThundering()</pre>
 </li>
 </ul>
-<a id="method_1937(boolean)">
+<a id="setThundering(boolean)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1937</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1937&#8203;(boolean&nbsp;bool)</pre>
+<h4>setThundering</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setThundering&#8203;(boolean&nbsp;thundering)</pre>
 </li>
 </ul>
-<a id="method_1985()">
+<a id="getThunderTime()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1985</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;method_1985()</pre>
+<h4>getThunderTime</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;getThunderTime()</pre>
 </li>
 </ul>
-<a id="method_1962(int)">
+<a id="setThunderTime(int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1962</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1962&#8203;(int&nbsp;int2)</pre>
+<h4>setThunderTime</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setThunderTime&#8203;(int&nbsp;time)</pre>
 </li>
 </ul>
-<a id="method_1987()">
+<a id="isRaining()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1987</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;method_1987()</pre>
+<h4>isRaining</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isRaining()</pre>
 </li>
 </ul>
-<a id="method_1943(boolean)">
+<a id="setRaining(boolean)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1943</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1943&#8203;(boolean&nbsp;bool)</pre>
+<h4>setRaining</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setRaining&#8203;(boolean&nbsp;raining)</pre>
 </li>
 </ul>
-<a id="method_1989()">
+<a id="getRainTIme()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1989</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;method_1989()</pre>
+<h4>getRainTIme</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;getRainTIme()</pre>
 </li>
 </ul>
-<a id="method_1966(int)">
+<a id="setRainTime(int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1966</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1966&#8203;(int&nbsp;int2)</pre>
+<h4>setRainTime</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setRainTime&#8203;(int&nbsp;rainTime)</pre>
 </li>
 </ul>
 <a id="getGameMode()">
@@ -1485,22 +1485,22 @@ public&nbsp;long&nbsp;method_1981()</pre>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;hasStructures()</pre>
 </li>
 </ul>
-<a id="method_1964(boolean)">
+<a id="setStructures(boolean)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1964</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1964&#8203;(boolean&nbsp;bool)</pre>
+<h4>setStructures</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setStructures&#8203;(boolean&nbsp;structures)</pre>
 </li>
 </ul>
-<a id="method_1927(net.minecraft.world.level.LevelInfo.GameMode)">
+<a id="setGamemode(net.minecraft.world.level.LevelInfo.GameMode)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1927</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1927&#8203;(<a href="LevelInfo.GameMode.html" title="enum in net.minecraft.world.level">LevelInfo.GameMode</a>&nbsp;gameMode)</pre>
+<h4>setGamemode</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setGamemode&#8203;(<a href="LevelInfo.GameMode.html" title="enum in net.minecraft.world.level">LevelInfo.GameMode</a>&nbsp;gamemode)</pre>
 </li>
 </ul>
 <a id="isHardcore()">
@@ -1512,13 +1512,13 @@ public&nbsp;long&nbsp;method_1981()</pre>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;isHardcore()</pre>
 </li>
 </ul>
-<a id="method_1968(boolean)">
+<a id="setHardcore(boolean)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1968</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1968&#8203;(boolean&nbsp;bool)</pre>
+<h4>setHardcore</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setHardcore&#8203;(boolean&nbsp;hardcore)</pre>
 </li>
 </ul>
 <a id="getGeneratorType()">
@@ -1530,238 +1530,238 @@ public&nbsp;long&nbsp;method_1981()</pre>
 <pre class="methodSignature">public&nbsp;<a href="LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a>&nbsp;getGeneratorType()</pre>
 </li>
 </ul>
-<a id="method_1929(net.minecraft.world.level.LevelGeneratorType)">
+<a id="setLevelGeneratorType(net.minecraft.world.level.LevelGeneratorType)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1929</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1929&#8203;(<a href="LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a>&nbsp;levelGeneratorType)</pre>
+<h4>setLevelGeneratorType</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setLevelGeneratorType&#8203;(<a href="LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a>&nbsp;type)</pre>
 </li>
 </ul>
-<a id="method_1914()">
+<a id="getGeneratorOptions()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1914</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;method_1914()</pre>
+<h4>getGeneratorOptions</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getGeneratorOptions()</pre>
 </li>
 </ul>
-<a id="method_1995()">
+<a id="areCheatsEnabled()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1995</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;method_1995()</pre>
+<h4>areCheatsEnabled</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;areCheatsEnabled()</pre>
 </li>
 </ul>
-<a id="method_1949(boolean)">
+<a id="setCheats(boolean)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1949</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1949&#8203;(boolean&nbsp;bool)</pre>
+<h4>setCheats</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setCheats&#8203;(boolean&nbsp;enabled)</pre>
 </li>
 </ul>
-<a id="method_1996()">
+<a id="isInitialized()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1996</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;method_1996()</pre>
+<h4>isInitialized</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isInitialized()</pre>
 </li>
 </ul>
-<a id="method_1953(boolean)">
+<a id="setInitialized(boolean)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1953</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1953&#8203;(boolean&nbsp;bool)</pre>
+<h4>setInitialized</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setInitialized&#8203;(boolean&nbsp;initialized)</pre>
 </li>
 </ul>
-<a id="method_1997()">
+<a id="getGamerules()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1997</h4>
-<pre class="methodSignature">public&nbsp;<a href="../GameRules.html" title="class in net.minecraft.world">GameRules</a>&nbsp;method_1997()</pre>
+<h4>getGamerules</h4>
+<pre class="methodSignature">public&nbsp;<a href="../GameRules.html" title="class in net.minecraft.world">GameRules</a>&nbsp;getGamerules()</pre>
 </li>
 </ul>
-<a id="method_1915()">
+<a id="getBorderCenterX()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1915</h4>
-<pre class="methodSignature">public&nbsp;double&nbsp;method_1915()</pre>
+<h4>getBorderCenterX</h4>
+<pre class="methodSignature">public&nbsp;double&nbsp;getBorderCenterX()</pre>
 </li>
 </ul>
-<a id="method_1916()">
+<a id="getBorderCenterZ()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1916</h4>
-<pre class="methodSignature">public&nbsp;double&nbsp;method_1916()</pre>
+<h4>getBorderCenterZ</h4>
+<pre class="methodSignature">public&nbsp;double&nbsp;getBorderCenterZ()</pre>
 </li>
 </ul>
-<a id="method_1917()">
+<a id="getBorderSize()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1917</h4>
-<pre class="methodSignature">public&nbsp;double&nbsp;method_1917()</pre>
+<h4>getBorderSize</h4>
+<pre class="methodSignature">public&nbsp;double&nbsp;getBorderSize()</pre>
 </li>
 </ul>
-<a id="method_1925(double)">
+<a id="setBorderSize(double)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1925</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1925&#8203;(double&nbsp;double2)</pre>
+<h4>setBorderSize</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setBorderSize&#8203;(double&nbsp;size)</pre>
 </li>
 </ul>
-<a id="method_1918()">
+<a id="getBorderSizeLerpTIme()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1918</h4>
-<pre class="methodSignature">public&nbsp;long&nbsp;method_1918()</pre>
+<h4>getBorderSizeLerpTIme</h4>
+<pre class="methodSignature">public&nbsp;long&nbsp;getBorderSizeLerpTIme()</pre>
 </li>
 </ul>
-<a id="method_1957(long)">
+<a id="setBorderSizeLerpTime(long)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1957</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1957&#8203;(long&nbsp;long2)</pre>
+<h4>setBorderSizeLerpTime</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setBorderSizeLerpTime&#8203;(long&nbsp;time)</pre>
 </li>
 </ul>
-<a id="method_1919()">
+<a id="getBorderSizeLerpTarget()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1919</h4>
-<pre class="methodSignature">public&nbsp;double&nbsp;method_1919()</pre>
+<h4>getBorderSizeLerpTarget</h4>
+<pre class="methodSignature">public&nbsp;double&nbsp;getBorderSizeLerpTarget()</pre>
 </li>
 </ul>
-<a id="method_1939(double)">
+<a id="setBorderSizeLerpTarget(double)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1939</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1939&#8203;(double&nbsp;double2)</pre>
+<h4>setBorderSizeLerpTarget</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setBorderSizeLerpTarget&#8203;(double&nbsp;target)</pre>
 </li>
 </ul>
-<a id="method_1945(double)">
+<a id="setBorderCenterZ(double)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1945</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1945&#8203;(double&nbsp;double2)</pre>
+<h4>setBorderCenterZ</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setBorderCenterZ&#8203;(double&nbsp;y)</pre>
 </li>
 </ul>
-<a id="method_1951(double)">
+<a id="setBorderCenterX(double)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1951</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1951&#8203;(double&nbsp;double2)</pre>
+<h4>setBorderCenterX</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setBorderCenterX&#8203;(double&nbsp;x)</pre>
 </li>
 </ul>
-<a id="method_1920()">
+<a id="getSafeZone()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1920</h4>
-<pre class="methodSignature">public&nbsp;double&nbsp;method_1920()</pre>
+<h4>getSafeZone</h4>
+<pre class="methodSignature">public&nbsp;double&nbsp;getSafeZone()</pre>
 </li>
 </ul>
-<a id="method_1955(double)">
+<a id="setSafeZone(double)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1955</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1955&#8203;(double&nbsp;double2)</pre>
+<h4>setSafeZone</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setSafeZone&#8203;(double&nbsp;zone)</pre>
 </li>
 </ul>
-<a id="method_1921()">
+<a id="getBorderDamagePerBlock()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1921</h4>
-<pre class="methodSignature">public&nbsp;double&nbsp;method_1921()</pre>
+<h4>getBorderDamagePerBlock</h4>
+<pre class="methodSignature">public&nbsp;double&nbsp;getBorderDamagePerBlock()</pre>
 </li>
 </ul>
-<a id="method_1961(double)">
+<a id="setBorderDamagePerBlock(double)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1961</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1961&#8203;(double&nbsp;double2)</pre>
+<h4>setBorderDamagePerBlock</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setBorderDamagePerBlock&#8203;(double&nbsp;damage)</pre>
 </li>
 </ul>
-<a id="method_1922()">
+<a id="getBorderWarningBlocks()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1922</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;method_1922()</pre>
+<h4>getBorderWarningBlocks</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;getBorderWarningBlocks()</pre>
 </li>
 </ul>
-<a id="method_1923()">
+<a id="getBorderWarningTime()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1923</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;method_1923()</pre>
+<h4>getBorderWarningTime</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;getBorderWarningTime()</pre>
 </li>
 </ul>
-<a id="method_1974(int)">
+<a id="setBorderWarningBlocks(int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1974</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1974&#8203;(int&nbsp;int2)</pre>
+<h4>setBorderWarningBlocks</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setBorderWarningBlocks&#8203;(int&nbsp;blocks)</pre>
 </li>
 </ul>
-<a id="method_1977(int)">
+<a id="setBorderWarningTime(int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1977</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1977&#8203;(int&nbsp;int2)</pre>
+<h4>setBorderWarningTime</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setBorderWarningTime&#8203;(int&nbsp;time)</pre>
 </li>
 </ul>
-<a id="method_1998()">
+<a id="getDifficulty()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1998</h4>
-<pre class="methodSignature">public&nbsp;<a href="../Difficulty.html" title="enum in net.minecraft.world">Difficulty</a>&nbsp;method_1998()</pre>
+<h4>getDifficulty</h4>
+<pre class="methodSignature">public&nbsp;<a href="../Difficulty.html" title="enum in net.minecraft.world">Difficulty</a>&nbsp;getDifficulty()</pre>
 </li>
 </ul>
 <a id="setDifficulty(net.minecraft.world.Difficulty)">
@@ -1773,13 +1773,13 @@ public&nbsp;long&nbsp;method_1981()</pre>
 <pre class="methodSignature">public&nbsp;void&nbsp;setDifficulty&#8203;(<a href="../Difficulty.html" title="enum in net.minecraft.world">Difficulty</a>&nbsp;difficulty)</pre>
 </li>
 </ul>
-<a id="method_1999()">
+<a id="isDifficultyLocked()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1999</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;method_1999()</pre>
+<h4>isDifficultyLocked</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isDifficultyLocked()</pre>
 </li>
 </ul>
 <a id="setDifficultyLocked(boolean)">
@@ -1788,7 +1788,7 @@ public&nbsp;long&nbsp;method_1981()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>setDifficultyLocked</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setDifficultyLocked&#8203;(boolean&nbsp;bool)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;setDifficultyLocked&#8203;(boolean&nbsp;difficultyLocked)</pre>
 </li>
 </ul>
 <a id="method_1931(net.minecraft.util.crash.CrashReportSection)">
@@ -1797,7 +1797,7 @@ public&nbsp;long&nbsp;method_1981()</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>method_1931</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1931&#8203;(<a href="../../util/crash/CrashReportSection.html" title="class in net.minecraft.util.crash">CrashReportSection</a>&nbsp;crashReportSection)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;method_1931&#8203;(<a href="../../util/crash/CrashReportSection.html" title="class in net.minecraft.util.crash">CrashReportSection</a>&nbsp;section)</pre>
 </li>
 </ul>
 </li>
