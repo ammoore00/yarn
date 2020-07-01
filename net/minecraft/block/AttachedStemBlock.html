@@ -206,7 +206,7 @@ implements <a href="Fertilizable.html" title="interface in net.minecraft.block">
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.block.<a href="Block.html" title="class in net.minecraft.block">Block</a></h3>
-<code><a href="Block.html#ANVIL">ANVIL</a>, <a href="Block.html#BLOCK_STATES">BLOCK_STATES</a>, <a href="Block.html#boundingBoxMaxX">boundingBoxMaxX</a>, <a href="Block.html#boundingBoxMaxY">boundingBoxMaxY</a>, <a href="Block.html#boundingBoxMaxZ">boundingBoxMaxZ</a>, <a href="Block.html#boundingBoxMinX">boundingBoxMinX</a>, <a href="Block.html#boundingBoxMinY">boundingBoxMinY</a>, <a href="Block.html#boundingBoxMinZ">boundingBoxMinZ</a>, <a href="Block.html#CLOTH">CLOTH</a>, <a href="Block.html#field_576">field_576</a>, <a href="Block.html#field_584">field_584</a>, <a href="Block.html#field_587">field_587</a>, <a href="Block.html#field_609">field_609</a>, <a href="Block.html#field_610">field_610</a>, <a href="Block.html#field_612">field_612</a>, <a href="Block.html#field_615">field_615</a>, <a href="Block.html#GLASS">GLASS</a>, <a href="Block.html#GRASS">GRASS</a>, <a href="Block.html#GRAVEL">GRAVEL</a>, <a href="Block.html#LADDER">LADDER</a>, <a href="Block.html#lightLevel">lightLevel</a>, <a href="Block.html#material">material</a>, <a href="Block.html#materialColor">materialColor</a>, <a href="Block.html#opaque">opaque</a>, <a href="Block.html#ORE">ORE</a>, <a href="Block.html#RAIL">RAIL</a>, <a href="Block.html#REGISTRY">REGISTRY</a>, <a href="Block.html#resistance">resistance</a>, <a href="Block.html#SAND">SAND</a>, <a href="Block.html#SLIME">SLIME</a>, <a href="Block.html#SNOW">SNOW</a>, <a href="Block.html#sound">sound</a>, <a href="Block.html#stateManager">stateManager</a>, <a href="Block.html#STONE">STONE</a>, <a href="Block.html#strength">strength</a>, <a href="Block.html#tickRandomly">tickRandomly</a>, <a href="Block.html#WOOD">WOOD</a></code></li>
+<code><a href="Block.html#ANVIL">ANVIL</a>, <a href="Block.html#BLOCK_STATES">BLOCK_STATES</a>, <a href="Block.html#blockEntity">blockEntity</a>, <a href="Block.html#boundingBoxMaxX">boundingBoxMaxX</a>, <a href="Block.html#boundingBoxMaxY">boundingBoxMaxY</a>, <a href="Block.html#boundingBoxMaxZ">boundingBoxMaxZ</a>, <a href="Block.html#boundingBoxMinX">boundingBoxMinX</a>, <a href="Block.html#boundingBoxMinY">boundingBoxMinY</a>, <a href="Block.html#boundingBoxMinZ">boundingBoxMinZ</a>, <a href="Block.html#CLOTH">CLOTH</a>, <a href="Block.html#fullBlock">fullBlock</a>, <a href="Block.html#GLASS">GLASS</a>, <a href="Block.html#GRASS">GRASS</a>, <a href="Block.html#GRAVEL">GRAVEL</a>, <a href="Block.html#LADDER">LADDER</a>, <a href="Block.html#lightLevel">lightLevel</a>, <a href="Block.html#material">material</a>, <a href="Block.html#materialColor">materialColor</a>, <a href="Block.html#opacity">opacity</a>, <a href="Block.html#ORE">ORE</a>, <a href="Block.html#particleGravity">particleGravity</a>, <a href="Block.html#RAIL">RAIL</a>, <a href="Block.html#randomTicks">randomTicks</a>, <a href="Block.html#REGISTRY">REGISTRY</a>, <a href="Block.html#resistance">resistance</a>, <a href="Block.html#SAND">SAND</a>, <a href="Block.html#SLIME">SLIME</a>, <a href="Block.html#slipperiness">slipperiness</a>, <a href="Block.html#SNOW">SNOW</a>, <a href="Block.html#sound">sound</a>, <a href="Block.html#stateManager">stateManager</a>, <a href="Block.html#stats">stats</a>, <a href="Block.html#STONE">STONE</a>, <a href="Block.html#strength">strength</a>, <a href="Block.html#transluscent">transluscent</a>, <a href="Block.html#useNeighbourLight">useNeighbourLight</a>, <a href="Block.html#WOOD">WOOD</a></code></li>
 </ul>
 </li>
 </ul>
@@ -251,7 +251,9 @@ implements <a href="Fertilizable.html" title="interface in net.minecraft.block">
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected <a href="../state/StateManager.html" title="class in net.minecraft.state">StateManager</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#appendProperties()">appendProperties</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Returns a new state manager with a property array.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
@@ -270,72 +272,69 @@ implements <a href="Fertilizable.html" title="interface in net.minecraft.block">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBlockColor(net.minecraft.world.WorldView,net.minecraft.util.math.BlockPos,int)">getBlockColor</a></span>&#8203;(<a href="../world/WorldView.html" title="interface in net.minecraft.world">WorldView</a>&nbsp;view,
              <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
-             int&nbsp;int2)</code></th>
-<td class="colLast">&nbsp;</td>
+             int&nbsp;id)</code></th>
+<td class="colLast">
+<div class="block">Returns the current block's color</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getData(net.minecraft.block.BlockState)">getData</a></span>&#8203;(<a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colFirst"><code><a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBlockState(net.minecraft.block.BlockState,net.minecraft.world.WorldView,net.minecraft.util.math.BlockPos)">getBlockState</a></span>&#8203;(<a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
+             <a href="../world/WorldView.html" title="interface in net.minecraft.world">WorldView</a>&nbsp;view,
+             <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
+<td class="colLast">
+<div class="block">Returns the current block's blockstate at a certain position</div>
+</td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getData(net.minecraft.block.BlockState)">getData</a></span>&#8203;(<a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state)</code></th>
+<td class="colLast">
+<div class="block">Returns the data value for a blockstate
+ Throws an <code>IllegalArmumentException</code> as this method does not work</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../item/Item.html" title="class in net.minecraft.item">Item</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDropItem(net.minecraft.block.BlockState,java.util.Random,int)">getDropItem</a></span>&#8203;(<a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;random,
            int&nbsp;state)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Returns the item that must be dropped when the block is broken</div>
+</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getOutlineShape(net.minecraft.world.WorldView,net.minecraft.util.math.BlockPos)">getOutlineShape</a></span>&#8203;(<a href="../world/WorldView.html" title="interface in net.minecraft.world">WorldView</a>&nbsp;view,
                <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../item/Item.html" title="class in net.minecraft.item">Item</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPickItem(net.minecraft.world.World,net.minecraft.util.math.BlockPos)">getPickItem</a></span>&#8203;(<a href="../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
            <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Called when a player presses the pick block key while facing the block.</div>
+</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>protected <a href="../item/Item.html" title="class in net.minecraft.item">Item</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSeeds()">getSeeds</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1015(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState)">method_1015</a></span>&#8203;(<a href="../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
            <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
            <a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_646(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,float,int)">method_646</a></span>&#8203;(<a href="../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-          <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
-          <a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState,
-          float&nbsp;float2,
-          int&nbsp;int2)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_673(net.minecraft.block.BlockState,net.minecraft.world.WorldView,net.minecraft.util.math.BlockPos)">method_673</a></span>&#8203;(<a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
-          <a href="../world/WorldView.html" title="interface in net.minecraft.world">WorldView</a>&nbsp;worldView,
-          <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_722(net.minecraft.block.BlockState)">method_722</a></span>&#8203;(<a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_722(net.minecraft.block.BlockState)">method_722</a></span>&#8203;(<a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i13" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_725()">method_725</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i14" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_750(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,boolean)">method_750</a></span>&#8203;(<a href="../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
           <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
@@ -343,7 +342,7 @@ implements <a href="Fertilizable.html" title="interface in net.minecraft.block">
           boolean&nbsp;bool)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_752(net.minecraft.world.World,java.util.Random,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState)">method_752</a></span>&#8203;(<a href="../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
           <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;random,
@@ -351,18 +350,40 @@ implements <a href="Fertilizable.html" title="interface in net.minecraft.block">
           <a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#randomDropAsItem(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,float,int)">randomDropAsItem</a></span>&#8203;(<a href="../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+                <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+                <a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
+                float&nbsp;chance,
+                int&nbsp;id)</code></th>
+<td class="colLast">
+<div class="block">Called when the block must be dropped as an item by <code>dropAsItem</code>, but luck is taken into consideration here.</div>
+</td>
+</tr>
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#scheduledTick(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,java.util.Random)">scheduledTick</a></span>&#8203;(<a href="../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
              <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
              <a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
-             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;random)</code></th>
-<td class="colLast">&nbsp;</td>
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;rand)</code></th>
+<td class="colLast">
+<div class="block">Runs when the block is updated as per a schedule</div>
+</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setBlockItemBounds()">setBlockItemBounds</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Sets the bounds for the BlockItem</div>
+</td>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stateFromData(int)">stateFromData</a></span>&#8203;(int&nbsp;data)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Returns a blockstate of the current block from it's id</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -370,14 +391,14 @@ implements <a href="Fertilizable.html" title="interface in net.minecraft.block">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.block.<a href="PlantBlock.html" title="class in net.minecraft.block">PlantBlock</a></h3>
-<code><a href="PlantBlock.html#getCollisionBox(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState)">getCollisionBox</a>, <a href="PlantBlock.html#getRenderLayer()">getRenderLayer</a>, <a href="PlantBlock.html#isOpaque()">isOpaque</a>, <a href="PlantBlock.html#method_709()">method_709</a>, <a href="PlantBlock.html#method_711(net.minecraft.world.World,net.minecraft.util.math.BlockPos)">method_711</a>, <a href="PlantBlock.html#method_754(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState)">method_754</a>, <a href="PlantBlock.html#method_755(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState)">method_755</a>, <a href="PlantBlock.html#neighborUpdate(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,net.minecraft.block.Block)">neighborUpdate</a></code></li>
+<code><a href="PlantBlock.html#canBePlacedAtPos(net.minecraft.world.World,net.minecraft.util.math.BlockPos)">canBePlacedAtPos</a>, <a href="PlantBlock.html#getCollisionBox(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState)">getCollisionBox</a>, <a href="PlantBlock.html#getRenderLayerType()">getRenderLayerType</a>, <a href="PlantBlock.html#method_699()">method_699</a>, <a href="PlantBlock.html#method_754(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState)">method_754</a>, <a href="PlantBlock.html#method_755(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState)">method_755</a>, <a href="PlantBlock.html#neighborUpdate(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,net.minecraft.block.Block)">neighborUpdate</a>, <a href="PlantBlock.html#renderAsNormalBlock()">renderAsNormalBlock</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.net.minecraft.block.Block">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.block.<a href="Block.html" title="class in net.minecraft.block">Block</a></h3>
-<code><a href="Block.html#appendStacks(net.minecraft.item.Item,net.minecraft.item.ItemGroup,java.util.List)">appendStacks</a>, <a href="Block.html#byId(int)">byId</a>, <a href="Block.html#calcBlockBreakingData(net.minecraft.entity.player.PlayerEntity,net.minecraft.world.World,net.minecraft.util.math.BlockPos)">calcBlockBreakingData</a>, <a href="Block.html#canMobSpawnInside()">canMobSpawnInside</a>, <a href="Block.html#dropExperience(net.minecraft.world.World,net.minecraft.util.math.BlockPos,int)">dropExperience</a>, <a href="Block.html#emitsRedstonePower()">emitsRedstonePower</a>, <a href="Block.html#get(java.lang.String)">get</a>, <a href="Block.html#getAmbientOcclusionLightLevel()">getAmbientOcclusionLightLevel</a>, <a href="Block.html#getBlockFromItem(net.minecraft.item.Item)">getBlockFromItem</a>, <a href="Block.html#getByBlockState(net.minecraft.block.BlockState)">getByBlockState</a>, <a href="Block.html#getComparatorOutput(net.minecraft.world.World,net.minecraft.util.math.BlockPos)">getComparatorOutput</a>, <a href="Block.html#getDefaultState()">getDefaultState</a>, <a href="Block.html#getDropCount(java.util.Random)">getDropCount</a>, <a href="Block.html#getIdByBlock(net.minecraft.block.Block)">getIdByBlock</a>, <a href="Block.html#getItemGroup()">getItemGroup</a>, <a href="Block.html#getLightLevel()">getLightLevel</a>, <a href="Block.html#getMaterial()">getMaterial</a>, <a href="Block.html#getMaterialColor(net.minecraft.block.BlockState)">getMaterialColor</a>, <a href="Block.html#getMeta(net.minecraft.block.BlockState)">getMeta</a>, <a href="Block.html#getMeta(net.minecraft.world.World,net.minecraft.util.math.BlockPos)">getMeta</a>, <a href="Block.html#getOffsetType()">getOffsetType</a>, <a href="Block.html#getStateFromRawId(int)">getStateFromRawId</a>, <a href="Block.html#getStrongRedstonePower(net.minecraft.world.WorldView,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,net.minecraft.util.math.Direction)">getStrongRedstonePower</a>, <a href="Block.html#getTickRate(net.minecraft.world.World)">getTickRate</a>, <a href="Block.html#getTranslatedName()">getTranslatedName</a>, <a href="Block.html#getTranslationKey()">getTranslationKey</a>, <a href="Block.html#getWeakRedstonePower(net.minecraft.world.WorldView,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,net.minecraft.util.math.Direction)">getWeakRedstonePower</a>, <a href="Block.html#hasComparatorOutput()">hasComparatorOutput</a>, <a href="Block.html#isFullCube()">isFullCube</a>, <a href="Block.html#isSideInvisible(net.minecraft.world.WorldView,net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction)">isSideInvisible</a>, <a href="Block.html#method_615()">method_615</a>, <a href="Block.html#method_616()">method_616</a>, <a href="Block.html#method_617()">method_617</a>, <a href="Block.html#method_618()">method_618</a>, <a href="Block.html#method_619()">method_619</a>, <a href="Block.html#method_620()">method_620</a>, <a href="Block.html#method_621()">method_621</a>, <a href="Block.html#method_622()">method_622</a>, <a href="Block.html#method_623()">method_623</a>, <a href="Block.html#method_624()">method_624</a>, <a href="Block.html#method_625()">method_625</a>, <a href="Block.html#method_627()">method_627</a>, <a href="Block.html#method_628()">method_628</a>, <a href="Block.html#method_630()">method_630</a>, <a href="Block.html#method_639(int,java.util.Random)">method_639</a>, <a href="Block.html#method_643(net.minecraft.world.World,net.minecraft.util.math.BlockPos)">method_643</a>, <a href="Block.html#method_647(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,int,int)">method_647</a>, <a href="Block.html#method_649(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,net.minecraft.util.math.Box,java.util.List,net.minecraft.entity.Entity)">method_649</a>, <a href="Block.html#method_650(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,java.util.Random)">method_650</a>, <a href="Block.html#method_655(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.util.math.Vec3d,net.minecraft.util.math.Vec3d)">method_655</a>, <a href="Block.html#method_656(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction,float,float,float,int,net.minecraft.entity.LivingEntity)">method_656</a>, <a href="Block.html#method_657(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction,net.minecraft.item.ItemStack)">method_657</a>, <a href="Block.html#method_660(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.entity.Entity,net.minecraft.util.math.Vec3d)">method_660</a>, <a href="Block.html#method_663(net.minecraft.world.World,net.minecraft.entity.Entity)">method_663</a>, <a href="Block.html#method_664(net.minecraft.world.World,net.minecraft.entity.player.PlayerEntity,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,net.minecraft.block.entity.BlockEntity)">method_664</a>, <a href="Block.html#method_671(net.minecraft.block.Block,net.minecraft.block.Block)">method_671</a>, <a href="Block.html#method_675(net.minecraft.block.BlockState,boolean)">method_675</a>, <a href="Block.html#method_678(net.minecraft.entity.Entity)">method_678</a>, <a href="Block.html#method_684()">method_684</a>, <a href="Block.html#method_686(net.minecraft.world.World,net.minecraft.util.math.BlockPos)">method_686</a>, <a href="Block.html#method_688(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState)">method_688</a>, <a href="Block.html#method_689(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,int)">method_689</a>, <a href="Block.html#method_691(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction)">method_691</a>, <a href="Block.html#method_692(net.minecraft.world.WorldView,net.minecraft.util.math.BlockPos)">method_692</a>, <a href="Block.html#method_694(net.minecraft.world.WorldView,net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction)">method_694</a>, <a href="Block.html#method_695(net.minecraft.block.Block)">method_695</a>, <a href="Block.html#method_696(net.minecraft.block.BlockState)">method_696</a>, <a href="Block.html#method_703(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState)">method_703</a>, <a href="Block.html#method_705(net.minecraft.world.WorldView,net.minecraft.util.math.BlockPos)">method_705</a>, <a href="Block.html#method_712(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState)">method_712</a>, <a href="Block.html#method_713(net.minecraft.world.WorldView,net.minecraft.util.math.BlockPos)">method_713</a>, <a href="Block.html#method_715(int)">method_715</a>, <a href="Block.html#method_719(net.minecraft.world.World,net.minecraft.util.math.BlockPos)">method_719</a>, <a href="Block.html#method_724(net.minecraft.block.BlockState)">method_724</a>, <a href="Block.html#method_728()">method_728</a>, <a href="Block.html#method_732()">method_732</a>, <a href="Block.html#method_733()">method_733</a>, <a href="Block.html#method_734()">method_734</a>, <a href="Block.html#method_736()">method_736</a>, <a href="Block.html#method_739()">method_739</a>, <a href="Block.html#method_740()">method_740</a>, <a href="Block.html#method_743()">method_743</a>, <a href="Block.html#onBlockBreak(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.item.ItemStack)">onBlockBreak</a>, <a href="Block.html#onBlockBreakStart(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.entity.player.PlayerEntity)">onBlockBreakStart</a>, <a href="Block.html#onBreak(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,net.minecraft.entity.player.PlayerEntity)">onBreak</a>, <a href="Block.html#onDestroyedByExplosion(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.world.explosion.Explosion)">onDestroyedByExplosion</a>, <a href="Block.html#onEntityCollision(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,net.minecraft.entity.Entity)">onEntityCollision</a>, <a href="Block.html#onLandedUpon(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.entity.Entity,float)">onLandedUpon</a>, <a href="Block.html#onPlaced(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,net.minecraft.entity.LivingEntity,net.minecraft.item.ItemStack)">onPlaced</a>, <a href="Block.html#onSteppedOn(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.entity.Entity)">onSteppedOn</a>, <a href="Block.html#onUse(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,net.minecraft.entity.player.PlayerEntity,net.minecraft.util.math.Direction,float,float,float)">onUse</a>, <a href="Block.html#rainTick(net.minecraft.world.World,net.minecraft.util.math.BlockPos)">rainTick</a>, <a href="Block.html#randomDisplayTick(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,java.util.Random)">randomDisplayTick</a>, <a href="Block.html#setBoundingBox(float,float,float,float,float,float)">setBoundingBox</a>, <a href="Block.html#setDefaultState(net.minecraft.block.BlockState)">setDefaultState</a>, <a href="Block.html#setItemGroup(net.minecraft.item.ItemGroup)">setItemGroup</a>, <a href="Block.html#setLightLevel(float)">setLightLevel</a>, <a href="Block.html#setResistance(float)">setResistance</a>, <a href="Block.html#setSound(net.minecraft.block.Block.Sound)">setSound</a>, <a href="Block.html#setStrength(float)">setStrength</a>, <a href="Block.html#setTickRandomly(boolean)">setTickRandomly</a>, <a href="Block.html#setTranslationKey(java.lang.String)">setTranslationKey</a>, <a href="Block.html#setUnbreakable()">setUnbreakable</a>, <a href="Block.html#setup()">setup</a>, <a href="Block.html#shouldDropItemsOnExplosion(net.minecraft.world.explosion.Explosion)">shouldDropItemsOnExplosion</a>, <a href="Block.html#ticksRandomly()">ticksRandomly</a>, <a href="Block.html#toString()">toString</a></code></li>
+<code><a href="Block.html#appendStacks(net.minecraft.item.Item,net.minecraft.item.ItemGroup,java.util.List)">appendStacks</a>, <a href="Block.html#areBlocksEqual(net.minecraft.block.Block,net.minecraft.block.Block)">areBlocksEqual</a>, <a href="Block.html#blocksMovement(net.minecraft.world.WorldView,net.minecraft.util.math.BlockPos)">blocksMovement</a>, <a href="Block.html#calcBlockBreakingData(net.minecraft.entity.player.PlayerEntity,net.minecraft.world.World,net.minecraft.util.math.BlockPos)">calcBlockBreakingData</a>, <a href="Block.html#canBePlacedAdjacent(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction)">canBePlacedAdjacent</a>, <a href="Block.html#canBeReplaced(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction,net.minecraft.item.ItemStack)">canBeReplaced</a>, <a href="Block.html#canCollide(net.minecraft.block.BlockState,boolean)">canCollide</a>, <a href="Block.html#canMobSpawnInside()">canMobSpawnInside</a>, <a href="Block.html#canSilkTouchHarvest()">canSilkTouchHarvest</a>, <a href="Block.html#createStackFromBlock(net.minecraft.block.BlockState)">createStackFromBlock</a>, <a href="Block.html#disableStats()">disableStats</a>, <a href="Block.html#dropAsItem(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,int)">dropAsItem</a>, <a href="Block.html#dropExperience(net.minecraft.world.World,net.minecraft.util.math.BlockPos,int)">dropExperience</a>, <a href="Block.html#emitsRedstonePower()">emitsRedstonePower</a>, <a href="Block.html#get(java.lang.String)">get</a>, <a href="Block.html#getAmbientOcclusionLightLevel()">getAmbientOcclusionLightLevel</a>, <a href="Block.html#getBlastResistance(net.minecraft.entity.Entity)">getBlastResistance</a>, <a href="Block.html#getBlockFromItem(net.minecraft.item.Item)">getBlockFromItem</a>, <a href="Block.html#getBonusDrops(int,java.util.Random)">getBonusDrops</a>, <a href="Block.html#getByBlockState(net.minecraft.block.BlockState)">getByBlockState</a>, <a href="Block.html#getById(int)">getById</a>, <a href="Block.html#getComparatorOutput(net.minecraft.world.World,net.minecraft.util.math.BlockPos)">getComparatorOutput</a>, <a href="Block.html#getDefaultState()">getDefaultState</a>, <a href="Block.html#getDropCount(java.util.Random)">getDropCount</a>, <a href="Block.html#getIdByBlock(net.minecraft.block.Block)">getIdByBlock</a>, <a href="Block.html#getItemGroup()">getItemGroup</a>, <a href="Block.html#getLightLevel()">getLightLevel</a>, <a href="Block.html#getMaterial()">getMaterial</a>, <a href="Block.html#getMaterialColor(net.minecraft.block.BlockState)">getMaterialColor</a>, <a href="Block.html#getMaxX()">getMaxX</a>, <a href="Block.html#getMaxY()">getMaxY</a>, <a href="Block.html#getMaxZ()">getMaxZ</a>, <a href="Block.html#getMeta(net.minecraft.block.BlockState)">getMeta</a>, <a href="Block.html#getMeta(net.minecraft.world.World,net.minecraft.util.math.BlockPos)">getMeta</a>, <a href="Block.html#getMinX()">getMinX</a>, <a href="Block.html#getMinY()">getMinY</a>, <a href="Block.html#getMinZ()">getMinZ</a>, <a href="Block.html#getOffsetType()">getOffsetType</a>, <a href="Block.html#getOpacity()">getOpacity</a>, <a href="Block.html#getPistonInteractionType()">getPistonInteractionType</a>, <a href="Block.html#getStateFromData(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction,float,float,float,int,net.minecraft.entity.LivingEntity)">getStateFromData</a>, <a href="Block.html#getStateFromRawId(int)">getStateFromRawId</a>, <a href="Block.html#getStateManager()">getStateManager</a>, <a href="Block.html#getStrength(net.minecraft.world.World,net.minecraft.util.math.BlockPos)">getStrength</a>, <a href="Block.html#getStrongRedstonePower(net.minecraft.world.WorldView,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,net.minecraft.util.math.Direction)">getStrongRedstonePower</a>, <a href="Block.html#getTickRate(net.minecraft.world.World)">getTickRate</a>, <a href="Block.html#getTranslatedName()">getTranslatedName</a>, <a href="Block.html#getTranslationKey()">getTranslationKey</a>, <a href="Block.html#getWeakRedstonePower(net.minecraft.world.WorldView,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,net.minecraft.util.math.Direction)">getWeakRedstonePower</a>, <a href="Block.html#harvest(net.minecraft.world.World,net.minecraft.entity.player.PlayerEntity,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,net.minecraft.block.entity.BlockEntity)">harvest</a>, <a href="Block.html#hasBlockEntity()">hasBlockEntity</a>, <a href="Block.html#hasCollision()">hasCollision</a>, <a href="Block.html#hasComparatorOutput()">hasComparatorOutput</a>, <a href="Block.html#hasStats()">hasStats</a>, <a href="Block.html#isEqualTo(net.minecraft.block.Block)">isEqualTo</a>, <a href="Block.html#isFullBlock()">isFullBlock</a>, <a href="Block.html#isFullCube()">isFullCube</a>, <a href="Block.html#isLeafBlock()">isLeafBlock</a>, <a href="Block.html#isNormalBlock()">isNormalBlock</a>, <a href="Block.html#isSideInvisible(net.minecraft.world.WorldView,net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction)">isSideInvisible</a>, <a href="Block.html#isTransluscent()">isTransluscent</a>, <a href="Block.html#method_622()">method_622</a>, <a href="Block.html#method_627()">method_627</a>, <a href="Block.html#method_628()">method_628</a>, <a href="Block.html#method_643(net.minecraft.world.World,net.minecraft.util.math.BlockPos)">method_643</a>, <a href="Block.html#method_649(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,net.minecraft.util.math.Box,java.util.List,net.minecraft.entity.Entity)">method_649</a>, <a href="Block.html#method_655(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.util.math.Vec3d,net.minecraft.util.math.Vec3d)">method_655</a>, <a href="Block.html#method_660(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.entity.Entity,net.minecraft.util.math.Vec3d)">method_660</a>, <a href="Block.html#method_684()">method_684</a>, <a href="Block.html#method_686(net.minecraft.world.World,net.minecraft.util.math.BlockPos)">method_686</a>, <a href="Block.html#method_694(net.minecraft.world.WorldView,net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction)">method_694</a>, <a href="Block.html#method_696(net.minecraft.block.BlockState)">method_696</a>, <a href="Block.html#method_705(net.minecraft.world.WorldView,net.minecraft.util.math.BlockPos)">method_705</a>, <a href="Block.html#method_713(net.minecraft.world.WorldView,net.minecraft.util.math.BlockPos)">method_713</a>, <a href="Block.html#onBlockBreak(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.item.ItemStack)">onBlockBreak</a>, <a href="Block.html#onBlockBreakStart(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.entity.player.PlayerEntity)">onBlockBreakStart</a>, <a href="Block.html#onBreakByPlayer(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState)">onBreakByPlayer</a>, <a href="Block.html#onBreakByPlayer(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,net.minecraft.entity.player.PlayerEntity)">onBreakByPlayer</a>, <a href="Block.html#onBreaking(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState)">onBreaking</a>, <a href="Block.html#onCreation(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState)">onCreation</a>, <a href="Block.html#onDestroyedByExplosion(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.world.explosion.Explosion)">onDestroyedByExplosion</a>, <a href="Block.html#onEntityCollision(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,net.minecraft.entity.Entity)">onEntityCollision</a>, <a href="Block.html#onEvent(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,int,int)">onEvent</a>, <a href="Block.html#onLandedUpon(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.entity.Entity,float)">onLandedUpon</a>, <a href="Block.html#onPlaced(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,net.minecraft.entity.LivingEntity,net.minecraft.item.ItemStack)">onPlaced</a>, <a href="Block.html#onSteppedOn(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.entity.Entity)">onSteppedOn</a>, <a href="Block.html#onUpdateTick(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,java.util.Random)">onUpdateTick</a>, <a href="Block.html#onUse(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,net.minecraft.entity.player.PlayerEntity,net.minecraft.util.math.Direction,float,float,float)">onUse</a>, <a href="Block.html#rainTick(net.minecraft.world.World,net.minecraft.util.math.BlockPos)">rainTick</a>, <a href="Block.html#randomDisplayTick(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,java.util.Random)">randomDisplayTick</a>, <a href="Block.html#setBoundingBox(float,float,float,float,float,float)">setBoundingBox</a>, <a href="Block.html#setDefaultState(net.minecraft.block.BlockState)">setDefaultState</a>, <a href="Block.html#setEntityVelocity(net.minecraft.world.World,net.minecraft.entity.Entity)">setEntityVelocity</a>, <a href="Block.html#setItemGroup(net.minecraft.item.ItemGroup)">setItemGroup</a>, <a href="Block.html#setLightLevel(float)">setLightLevel</a>, <a href="Block.html#setOpacity(int)">setOpacity</a>, <a href="Block.html#setResistance(float)">setResistance</a>, <a href="Block.html#setSound(net.minecraft.block.Block.Sound)">setSound</a>, <a href="Block.html#setStrength(float)">setStrength</a>, <a href="Block.html#setTickRandomly(boolean)">setTickRandomly</a>, <a href="Block.html#setTranslationKey(java.lang.String)">setTranslationKey</a>, <a href="Block.html#setUnbreakable()">setUnbreakable</a>, <a href="Block.html#setup()">setup</a>, <a href="Block.html#shouldDropItemsOnExplosion(net.minecraft.world.explosion.Explosion)">shouldDropItemsOnExplosion</a>, <a href="Block.html#ticksRandomly()">ticksRandomly</a>, <a href="Block.html#toString()">toString</a>, <a href="Block.html#usesNeighbourLight()">usesNeighbourLight</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -458,18 +479,25 @@ implements <a href="Fertilizable.html" title="interface in net.minecraft.block">
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="method_673(net.minecraft.block.BlockState,net.minecraft.world.WorldView,net.minecraft.util.math.BlockPos)">
+<a id="getBlockState(net.minecraft.block.BlockState,net.minecraft.world.WorldView,net.minecraft.util.math.BlockPos)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_673</h4>
-<pre class="methodSignature">public&nbsp;<a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;method_673&#8203;(<a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
-                             <a href="../world/WorldView.html" title="interface in net.minecraft.world">WorldView</a>&nbsp;worldView,
-                             <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</pre>
+<h4>getBlockState</h4>
+<pre class="methodSignature">public&nbsp;<a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;getBlockState&#8203;(<a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
+                                <a href="../world/WorldView.html" title="interface in net.minecraft.world">WorldView</a>&nbsp;view,
+                                <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</pre>
+<div class="block">Returns the current block's blockstate at a certain position</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="Block.html#method_673(net.minecraft.block.BlockState,net.minecraft.world.WorldView,net.minecraft.util.math.BlockPos)">method_673</a></code>&nbsp;in class&nbsp;<code><a href="Block.html" title="class in net.minecraft.block">Block</a></code></dd>
+<dd><code><a href="Block.html#getBlockState(net.minecraft.block.BlockState,net.minecraft.world.WorldView,net.minecraft.util.math.BlockPos)">getBlockState</a></code>&nbsp;in class&nbsp;<code><a href="Block.html" title="class in net.minecraft.block">Block</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>state</code> - The original blockstate</dd>
+<dd><code>view</code> - WorldView instance</dd>
+<dd><code>pos</code> - The block's position</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>state</dd>
 </dl>
 </li>
 </ul>
@@ -495,10 +523,16 @@ implements <a href="Fertilizable.html" title="interface in net.minecraft.block">
 <pre class="methodSignature">public&nbsp;void&nbsp;scheduledTick&#8203;(<a href="../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
                           <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
                           <a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
-                          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;random)</pre>
+                          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;rand)</pre>
+<div class="block">Runs when the block is updated as per a schedule</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="PlantBlock.html#scheduledTick(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,java.util.Random)">scheduledTick</a></code>&nbsp;in class&nbsp;<code><a href="PlantBlock.html" title="class in net.minecraft.block">PlantBlock</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>world</code> - The world that the block is placed in</dd>
+<dd><code>pos</code> - The block's position</dd>
+<dd><code>state</code> - The block's BlockState</dd>
+<dd><code>rand</code> - Random object</dd>
 </dl>
 </li>
 </ul>
@@ -520,7 +554,7 @@ implements <a href="Fertilizable.html" title="interface in net.minecraft.block">
 <li class="blockList">
 <h4>method_722</h4>
 <pre class="methodSignature">@Environment(CLIENT)
-public&nbsp;int&nbsp;method_722&#8203;(<a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState)</pre>
+public&nbsp;int&nbsp;method_722&#8203;(<a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="Block.html#method_722(net.minecraft.block.BlockState)">method_722</a></code>&nbsp;in class&nbsp;<code><a href="Block.html" title="class in net.minecraft.block">Block</a></code></dd>
@@ -536,23 +570,31 @@ public&nbsp;int&nbsp;method_722&#8203;(<a href="BlockState.html" title="interfac
 <pre class="methodSignature">@Environment(CLIENT)
 public&nbsp;int&nbsp;getBlockColor&#8203;(<a href="../world/WorldView.html" title="interface in net.minecraft.world">WorldView</a>&nbsp;view,
                          <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
-                         int&nbsp;int2)</pre>
+                         int&nbsp;id)</pre>
+<div class="block">Returns the current block's color</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="Block.html#getBlockColor(net.minecraft.world.WorldView,net.minecraft.util.math.BlockPos,int)">getBlockColor</a></code>&nbsp;in class&nbsp;<code><a href="Block.html" title="class in net.minecraft.block">Block</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>view</code> - WorldView instance</dd>
+<dd><code>pos</code> - The block's position</dd>
+<dd><code>id</code> - Id</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Block color</dd>
 </dl>
 </li>
 </ul>
-<a id="method_725()">
+<a id="setBlockItemBounds()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_725</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_725()</pre>
+<h4>setBlockItemBounds</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setBlockItemBounds()</pre>
+<div class="block">Sets the bounds for the BlockItem</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="Block.html#method_725()">method_725</a></code>&nbsp;in class&nbsp;<code><a href="Block.html" title="class in net.minecraft.block">Block</a></code></dd>
+<dd><code><a href="Block.html#setBlockItemBounds()">setBlockItemBounds</a></code>&nbsp;in class&nbsp;<code><a href="Block.html" title="class in net.minecraft.block">Block</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -570,20 +612,27 @@ public&nbsp;int&nbsp;getBlockColor&#8203;(<a href="../world/WorldView.html" titl
 </dl>
 </li>
 </ul>
-<a id="method_646(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,float,int)">
+<a id="randomDropAsItem(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,float,int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_646</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_646&#8203;(<a href="../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-                       <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
-                       <a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState,
-                       float&nbsp;float2,
-                       int&nbsp;int2)</pre>
+<h4>randomDropAsItem</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;randomDropAsItem&#8203;(<a href="../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+                             <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+                             <a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
+                             float&nbsp;chance,
+                             int&nbsp;id)</pre>
+<div class="block">Called when the block must be dropped as an item by <code>dropAsItem</code>, but luck is taken into consideration here.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="Block.html#method_646(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,float,int)">method_646</a></code>&nbsp;in class&nbsp;<code><a href="Block.html" title="class in net.minecraft.block">Block</a></code></dd>
+<dd><code><a href="Block.html#randomDropAsItem(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState,float,int)">randomDropAsItem</a></code>&nbsp;in class&nbsp;<code><a href="Block.html" title="class in net.minecraft.block">Block</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>world</code> - The world that the block is placed in</dd>
+<dd><code>pos</code> - The block's position</dd>
+<dd><code>state</code> - The block's BlockState</dd>
+<dd><code>chance</code> - The chance (luck factor)</dd>
+<dd><code>id</code> - Id</dd>
 </dl>
 </li>
 </ul>
@@ -605,9 +654,16 @@ public&nbsp;int&nbsp;getBlockColor&#8203;(<a href="../world/WorldView.html" titl
 <pre class="methodSignature">public&nbsp;<a href="../item/Item.html" title="class in net.minecraft.item">Item</a>&nbsp;getDropItem&#8203;(<a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState,
                         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;random,
                         int&nbsp;state)</pre>
+<div class="block">Returns the item that must be dropped when the block is broken</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="Block.html#getDropItem(net.minecraft.block.BlockState,java.util.Random,int)">getDropItem</a></code>&nbsp;in class&nbsp;<code><a href="Block.html" title="class in net.minecraft.block">Block</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>blockState</code> - The block's BlockState</dd>
+<dd><code>random</code> - Random object</dd>
+<dd><code>state</code> - State</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The Item that drops after the block breaks</dd>
 </dl>
 </li>
 </ul>
@@ -620,9 +676,13 @@ public&nbsp;int&nbsp;getBlockColor&#8203;(<a href="../world/WorldView.html" titl
 <pre class="methodSignature">@Environment(CLIENT)
 public&nbsp;<a href="../item/Item.html" title="class in net.minecraft.item">Item</a>&nbsp;getPickItem&#8203;(<a href="../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
                         <a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</pre>
+<div class="block">Called when a player presses the pick block key while facing the block.
+ It returns the item that must be placed into the player's inventory.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="Block.html#getPickItem(net.minecraft.world.World,net.minecraft.util.math.BlockPos)">getPickItem</a></code>&nbsp;in class&nbsp;<code><a href="Block.html" title="class in net.minecraft.block">Block</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The Item that must be placed into the player's inventory</dd>
 </dl>
 </li>
 </ul>
@@ -681,9 +741,14 @@ public&nbsp;<a href="../item/Item.html" title="class in net.minecraft.item">Item
 <li class="blockList">
 <h4>stateFromData</h4>
 <pre class="methodSignature">public&nbsp;<a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;stateFromData&#8203;(int&nbsp;data)</pre>
+<div class="block">Returns a blockstate of the current block from it's id</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="Block.html#stateFromData(int)">stateFromData</a></code>&nbsp;in class&nbsp;<code><a href="Block.html" title="class in net.minecraft.block">Block</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>data</code> - The Blockstate's associated data value</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The Default state</dd>
 </dl>
 </li>
 </ul>
@@ -694,9 +759,15 @@ public&nbsp;<a href="../item/Item.html" title="class in net.minecraft.item">Item
 <li class="blockList">
 <h4>getData</h4>
 <pre class="methodSignature">public&nbsp;int&nbsp;getData&#8203;(<a href="BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state)</pre>
+<div class="block">Returns the data value for a blockstate
+ Throws an <code>IllegalArmumentException</code> as this method does not work</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="Block.html#getData(net.minecraft.block.BlockState)">getData</a></code>&nbsp;in class&nbsp;<code><a href="Block.html" title="class in net.minecraft.block">Block</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>state</code> - The Blockstate</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Zero</dd>
 </dl>
 </li>
 </ul>
@@ -707,9 +778,12 @@ public&nbsp;<a href="../item/Item.html" title="class in net.minecraft.item">Item
 <li class="blockList">
 <h4>appendProperties</h4>
 <pre class="methodSignature">protected&nbsp;<a href="../state/StateManager.html" title="class in net.minecraft.state">StateManager</a>&nbsp;appendProperties()</pre>
+<div class="block">Returns a new state manager with a property array.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="Block.html#appendProperties()">appendProperties</a></code>&nbsp;in class&nbsp;<code><a href="Block.html" title="class in net.minecraft.block">Block</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>New state manager</dd>
 </dl>
 </li>
 </ul>
