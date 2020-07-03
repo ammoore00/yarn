@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":9,"i12":10,"i13":10,"i14":10,"i15":9,"i16":10,"i17":9,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":9,"i13":10,"i14":10,"i15":9,"i16":10,"i17":9,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -320,13 +320,13 @@ implements <a href="../../util/Tickable.html" title="interface in net.minecraft.
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code>static boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isFuel(net.minecraft.item.ItemStack)">isFuel</a></span>&#8203;(<a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</code></th>
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasCustomName()">hasCustomName</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isNamed()">isNamed</a></span>()</code></th>
+<td class="colFirst"><code>static boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isFuel(net.minecraft.item.ItemStack)">isFuel</a></span>&#8203;(<a href="../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
@@ -441,7 +441,7 @@ implements <a href="../../util/Tickable.html" title="interface in net.minecraft.
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.block.entity.<a href="BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></h3>
-<code><a href="BlockEntity.html#cancelRemoval()">cancelRemoval</a>, <a href="BlockEntity.html#createFromTag(net.minecraft.nbt.CompoundTag)">createFromTag</a>, <a href="BlockEntity.html#getPos()">getPos</a>, <a href="BlockEntity.html#getSquaredDistance(double,double,double)">getSquaredDistance</a>, <a href="BlockEntity.html#getSquaredRenderDistance()">getSquaredRenderDistance</a>, <a href="BlockEntity.html#getWorld()">getWorld</a>, <a href="BlockEntity.html#hasWorld()">hasWorld</a>, <a href="BlockEntity.html#isRemoved()">isRemoved</a>, <a href="BlockEntity.html#markDirty()">markDirty</a>, <a href="BlockEntity.html#markRemoved()">markRemoved</a>, <a href="BlockEntity.html#method_1095(net.minecraft.world.World)">method_1095</a>, <a href="BlockEntity.html#method_1106()">method_1106</a>, <a href="BlockEntity.html#method_1108()">method_1108</a>, <a href="BlockEntity.html#method_1111()">method_1111</a>, <a href="BlockEntity.html#onBlockAction(int,int)">onBlockAction</a>, <a href="BlockEntity.html#populateCrashReport(net.minecraft.util.crash.CrashReportSection)">populateCrashReport</a>, <a href="BlockEntity.html#resetBlock()">resetBlock</a>, <a href="BlockEntity.html#setPos(net.minecraft.util.math.BlockPos)">setPos</a>, <a href="BlockEntity.html#shouldNotCopyTagFromItem()">shouldNotCopyTagFromItem</a></code></li>
+<code><a href="BlockEntity.html#cancelRemoval()">cancelRemoval</a>, <a href="BlockEntity.html#createFromTag(net.minecraft.nbt.CompoundTag)">createFromTag</a>, <a href="BlockEntity.html#getPos()">getPos</a>, <a href="BlockEntity.html#getSquaredDistance(double,double,double)">getSquaredDistance</a>, <a href="BlockEntity.html#getSquaredRenderDistance()">getSquaredRenderDistance</a>, <a href="BlockEntity.html#getWorld()">getWorld</a>, <a href="BlockEntity.html#hasWorld()">hasWorld</a>, <a href="BlockEntity.html#isRemoved()">isRemoved</a>, <a href="BlockEntity.html#markDirty()">markDirty</a>, <a href="BlockEntity.html#markRemoved()">markRemoved</a>, <a href="BlockEntity.html#method_1106()">method_1106</a>, <a href="BlockEntity.html#method_1108()">method_1108</a>, <a href="BlockEntity.html#method_1111()">method_1111</a>, <a href="BlockEntity.html#onBlockAction(int,int)">onBlockAction</a>, <a href="BlockEntity.html#populateCrashReport(net.minecraft.util.crash.CrashReportSection)">populateCrashReport</a>, <a href="BlockEntity.html#resetBlock()">resetBlock</a>, <a href="BlockEntity.html#setPos(net.minecraft.util.math.BlockPos)">setPos</a>, <a href="BlockEntity.html#setWorld(net.minecraft.world.World)">setWorld</a>, <a href="BlockEntity.html#shouldNotCopyTagFromItem()">shouldNotCopyTagFromItem</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -670,16 +670,16 @@ implements <a href="../../util/Tickable.html" title="interface in net.minecraft.
 </dl>
 </li>
 </ul>
-<a id="isNamed()">
+<a id="hasCustomName()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>isNamed</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;isNamed()</pre>
+<h4>hasCustomName</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;hasCustomName()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../text/Nameable.html#isNamed()">isNamed</a></code>&nbsp;in interface&nbsp;<code><a href="../../text/Nameable.html" title="interface in net.minecraft.text">Nameable</a></code></dd>
+<dd><code><a href="../../text/Nameable.html#hasCustomName()">hasCustomName</a></code>&nbsp;in interface&nbsp;<code><a href="../../text/Nameable.html" title="interface in net.minecraft.text">Nameable</a></code></dd>
 </dl>
 </li>
 </ul>

@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -132,13 +132,16 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../resource/ResourceReloadListener.html" title="interface in net.minecraft.resource">ResourceReloadListener</a></code></dd>
+<dd><code><a href="../WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
+</dl>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><code><a href="../../class_1005.html" title="class in net.minecraft">class_1005</a></code></dd>
 </dl>
 <hr>
-<pre>@Environment(CLIENT)
-public class <span class="typeNameLabel">ChunkCache</span>
+<pre>public class <span class="typeNameLabel">ChunkCache</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
-implements <a href="../../resource/ResourceReloadListener.html" title="interface in net.minecraft.resource">ResourceReloadListener</a></pre>
+implements <a href="../WorldView.html" title="interface in net.minecraft.world">WorldView</a></pre>
 </li>
 </ul>
 </div>
@@ -160,23 +163,28 @@ implements <a href="../../resource/ResourceReloadListener.html" title="interface
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../util/registry/Registry.html" title="interface in net.minecraft.util.registry">Registry</a>&lt;<a href="../../client/util/ModelIdentifier.html" title="class in net.minecraft.client.util">ModelIdentifier</a>,&#8203;<a href="../../client/render/model/BakedModel.html" title="interface in net.minecraft.client.render.model">BakedModel</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_5377">field_5377</a></span></code></th>
+<td class="colFirst"><code>protected <a href="Chunk.html" title="class in net.minecraft.world.chunk">Chunk</a>[][]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#chunks">chunks</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../client/texture/BlockSprite.html" title="class in net.minecraft.client.texture">BlockSprite</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_5378">field_5378</a></span></code></th>
+<td class="colFirst"><code>protected int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_337">field_337</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../class_1047.html" title="class in net.minecraft">class_1047</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_5379">field_5379</a></span></code></th>
+<td class="colFirst"><code>protected int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_338">field_338</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../client/render/model/BakedModel.html" title="interface in net.minecraft.client.render.model">BakedModel</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_5380">field_5380</a></span></code></th>
+<td class="colFirst"><code>protected boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_340">field_340</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../World.html" title="class in net.minecraft.world">World</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#world">world</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -197,7 +205,10 @@ implements <a href="../../resource/ResourceReloadListener.html" title="interface
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.client.texture.BlockSprite)">ChunkCache</a></span>&#8203;(<a href="../../client/texture/BlockSprite.html" title="class in net.minecraft.client.texture">BlockSprite</a>&nbsp;blockSprite)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.util.math.BlockPos,int)">ChunkCache</a></span>&#8203;(<a href="../World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+          <a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;startPos,
+          <a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;endPos,
+          int&nbsp;int2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -219,28 +230,57 @@ implements <a href="../../resource/ResourceReloadListener.html" title="interface
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4366(net.minecraft.resource.ResourceManager)">method_4366</a></span>&#8203;(<a href="../../resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager)</code></th>
+<td class="colFirst"><code><a href="../biome/Biome.html" title="class in net.minecraft.world.biome">Biome</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBiomeAt(net.minecraft.util.math.BlockPos)">getBiomeAt</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../client/render/model/BakedModel.html" title="interface in net.minecraft.client.render.model">BakedModel</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4494()">method_4494</a></span>()</code></th>
+<td class="colFirst"><code><a href="../../block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBlockEntity(net.minecraft.util.math.BlockPos)">getBlockEntity</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../client/render/model/BakedModel.html" title="interface in net.minecraft.client.render.model">BakedModel</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4495(net.minecraft.client.util.ModelIdentifier)">method_4495</a></span>&#8203;(<a href="../../client/util/ModelIdentifier.html" title="class in net.minecraft.client.util">ModelIdentifier</a>&nbsp;modelIdentifier)</code></th>
+<td class="colFirst"><code><a href="../../block/BlockState.html" title="interface in net.minecraft.block">BlockState</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBlockState(net.minecraft.util.math.BlockPos)">getBlockState</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../client/texture/BlockSprite.html" title="class in net.minecraft.client.texture">BlockSprite</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4496()">method_4496</a></span>()</code></th>
+<td class="colFirst"><code><a href="../level/LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getGeneratorType()">getGeneratorType</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../class_1047.html" title="class in net.minecraft">class_1047</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4497()">method_4497</a></span>()</code></th>
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLight(net.minecraft.util.math.BlockPos,int)">getLight</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+        int&nbsp;minBlockLight)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getStrongRedstonePower(net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction)">getStrongRedstonePower</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+                      <a href="../../util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isAir(net.minecraft.util.math.BlockPos)">isAir</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_478()">method_478</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>private int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_506(net.minecraft.world.LightType,net.minecraft.util.math.BlockPos)">method_506</a></span>&#8203;(<a href="../LightType.html" title="enum in net.minecraft.world">LightType</a>&nbsp;type,
+          <a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_507(net.minecraft.world.LightType,net.minecraft.util.math.BlockPos)">method_507</a></span>&#8203;(<a href="../LightType.html" title="enum in net.minecraft.world">LightType</a>&nbsp;lightType,
+          <a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -267,40 +307,49 @@ implements <a href="../../resource/ResourceReloadListener.html" title="interface
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="field_5377">
+<a id="field_337">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_5377</h4>
-<pre>private&nbsp;<a href="../../util/registry/Registry.html" title="interface in net.minecraft.util.registry">Registry</a>&lt;<a href="../../client/util/ModelIdentifier.html" title="class in net.minecraft.client.util">ModelIdentifier</a>,&#8203;<a href="../../client/render/model/BakedModel.html" title="interface in net.minecraft.client.render.model">BakedModel</a>&gt; field_5377</pre>
+<h4>field_337</h4>
+<pre>protected&nbsp;int field_337</pre>
 </li>
 </ul>
-<a id="field_5378">
+<a id="field_338">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_5378</h4>
-<pre>private final&nbsp;<a href="../../client/texture/BlockSprite.html" title="class in net.minecraft.client.texture">BlockSprite</a> field_5378</pre>
+<h4>field_338</h4>
+<pre>protected&nbsp;int field_338</pre>
 </li>
 </ul>
-<a id="field_5379">
+<a id="chunks">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_5379</h4>
-<pre>private final&nbsp;<a href="../../class_1047.html" title="class in net.minecraft">class_1047</a> field_5379</pre>
+<h4>chunks</h4>
+<pre>protected&nbsp;<a href="Chunk.html" title="class in net.minecraft.world.chunk">Chunk</a>[][] chunks</pre>
 </li>
 </ul>
-<a id="field_5380">
+<a id="field_340">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>field_340</h4>
+<pre>protected&nbsp;boolean field_340</pre>
+</li>
+</ul>
+<a id="world">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_5380</h4>
-<pre>private&nbsp;<a href="../../client/render/model/BakedModel.html" title="interface in net.minecraft.client.render.model">BakedModel</a> field_5380</pre>
+<h4>world</h4>
+<pre>protected&nbsp;<a href="../World.html" title="class in net.minecraft.world">World</a> world</pre>
 </li>
 </ul>
 </li>
@@ -313,13 +362,16 @@ implements <a href="../../resource/ResourceReloadListener.html" title="interface
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(net.minecraft.client.texture.BlockSprite)">
+<a id="&lt;init&gt;(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.util.math.BlockPos,int)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ChunkCache</h4>
-<pre>public&nbsp;ChunkCache&#8203;(<a href="../../client/texture/BlockSprite.html" title="class in net.minecraft.client.texture">BlockSprite</a>&nbsp;blockSprite)</pre>
+<pre>public&nbsp;ChunkCache&#8203;(<a href="../World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+                  <a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;startPos,
+                  <a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;endPos,
+                  int&nbsp;int2)</pre>
 </li>
 </ul>
 </li>
@@ -332,53 +384,136 @@ implements <a href="../../resource/ResourceReloadListener.html" title="interface
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="method_4366(net.minecraft.resource.ResourceManager)">
+<a id="method_478()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_4366</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_4366&#8203;(<a href="../../resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager)</pre>
+<h4>method_478</h4>
+<pre class="methodSignature">@Environment(CLIENT)
+public&nbsp;boolean&nbsp;method_478()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../resource/ResourceReloadListener.html#method_4366(net.minecraft.resource.ResourceManager)">method_4366</a></code>&nbsp;in interface&nbsp;<code><a href="../../resource/ResourceReloadListener.html" title="interface in net.minecraft.resource">ResourceReloadListener</a></code></dd>
+<dd><code><a href="../WorldView.html#method_478()">method_478</a></code>&nbsp;in interface&nbsp;<code><a href="../WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
 </dl>
 </li>
 </ul>
-<a id="method_4495(net.minecraft.client.util.ModelIdentifier)">
+<a id="getBlockEntity(net.minecraft.util.math.BlockPos)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_4495</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../client/render/model/BakedModel.html" title="interface in net.minecraft.client.render.model">BakedModel</a>&nbsp;method_4495&#8203;(<a href="../../client/util/ModelIdentifier.html" title="class in net.minecraft.client.util">ModelIdentifier</a>&nbsp;modelIdentifier)</pre>
+<h4>getBlockEntity</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a>&nbsp;getBlockEntity&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../WorldView.html#getBlockEntity(net.minecraft.util.math.BlockPos)">getBlockEntity</a></code>&nbsp;in interface&nbsp;<code><a href="../WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
+</dl>
 </li>
 </ul>
-<a id="method_4494()">
+<a id="getLight(net.minecraft.util.math.BlockPos,int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_4494</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../client/render/model/BakedModel.html" title="interface in net.minecraft.client.render.model">BakedModel</a>&nbsp;method_4494()</pre>
+<h4>getLight</h4>
+<pre class="methodSignature">@Environment(CLIENT)
+public&nbsp;int&nbsp;getLight&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+                    int&nbsp;minBlockLight)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../WorldView.html#getLight(net.minecraft.util.math.BlockPos,int)">getLight</a></code>&nbsp;in interface&nbsp;<code><a href="../WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
+</dl>
 </li>
 </ul>
-<a id="method_4496()">
+<a id="getBlockState(net.minecraft.util.math.BlockPos)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_4496</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../client/texture/BlockSprite.html" title="class in net.minecraft.client.texture">BlockSprite</a>&nbsp;method_4496()</pre>
+<h4>getBlockState</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;getBlockState&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../WorldView.html#getBlockState(net.minecraft.util.math.BlockPos)">getBlockState</a></code>&nbsp;in interface&nbsp;<code><a href="../WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
+</dl>
 </li>
 </ul>
-<a id="method_4497()">
+<a id="getBiomeAt(net.minecraft.util.math.BlockPos)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getBiomeAt</h4>
+<pre class="methodSignature">@Environment(CLIENT)
+public&nbsp;<a href="../biome/Biome.html" title="class in net.minecraft.world.biome">Biome</a>&nbsp;getBiomeAt&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../WorldView.html#getBiomeAt(net.minecraft.util.math.BlockPos)">getBiomeAt</a></code>&nbsp;in interface&nbsp;<code><a href="../WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="method_506(net.minecraft.world.LightType,net.minecraft.util.math.BlockPos)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_506</h4>
+<pre class="methodSignature">@Environment(CLIENT)
+private&nbsp;int&nbsp;method_506&#8203;(<a href="../LightType.html" title="enum in net.minecraft.world">LightType</a>&nbsp;type,
+                       <a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</pre>
+</li>
+</ul>
+<a id="isAir(net.minecraft.util.math.BlockPos)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isAir</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isAir&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../WorldView.html#isAir(net.minecraft.util.math.BlockPos)">isAir</a></code>&nbsp;in interface&nbsp;<code><a href="../WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="method_507(net.minecraft.world.LightType,net.minecraft.util.math.BlockPos)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_507</h4>
+<pre class="methodSignature">@Environment(CLIENT)
+public&nbsp;int&nbsp;method_507&#8203;(<a href="../LightType.html" title="enum in net.minecraft.world">LightType</a>&nbsp;lightType,
+                      <a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</pre>
+</li>
+</ul>
+<a id="getStrongRedstonePower(net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStrongRedstonePower</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;getStrongRedstonePower&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+                                  <a href="../../util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../WorldView.html#getStrongRedstonePower(net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction)">getStrongRedstonePower</a></code>&nbsp;in interface&nbsp;<code><a href="../WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
+</dl>
+</li>
+</ul>
+<a id="getGeneratorType()">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_4497</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../class_1047.html" title="class in net.minecraft">class_1047</a>&nbsp;method_4497()</pre>
+<h4>getGeneratorType</h4>
+<pre class="methodSignature">@Environment(CLIENT)
+public&nbsp;<a href="../level/LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a>&nbsp;getGeneratorType()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../WorldView.html#getGeneratorType()">getGeneratorType</a></code>&nbsp;in interface&nbsp;<code><a href="../WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
+</dl>
 </li>
 </ul>
 </li>

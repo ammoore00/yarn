@@ -132,7 +132,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="chunk/CavesChunkGeneratorConfig.html" title="class in net.minecraft.world.gen.chunk">CavesChunkGeneratorConfig</a></code>, <code><a href="../../structure/NetherFortressFeature.class_485.html" title="class in net.minecraft.structure">NetherFortressFeature.class_485</a></code>, <code><a href="../../structure/OceanMonumentFeature.class_505.html" title="class in net.minecraft.structure">OceanMonumentFeature.class_505</a></code>, <code><a href="../../structure/StrongholdStructure.class_538.html" title="class in net.minecraft.structure">StrongholdStructure.class_538</a></code>, <code><a href="../../structure/VillageStructure.class_564.html" title="class in net.minecraft.structure">VillageStructure.class_564</a></code>, <code><a href="../../structure/WitchHutStructure.class_530.html" title="class in net.minecraft.structure">WitchHutStructure.class_530</a></code></dd>
+<dd><code><a href="chunk/CavesGeneratorConfig.html" title="class in net.minecraft.world.gen.chunk">CavesGeneratorConfig</a></code>, <code><a href="../../structure/NetherFortressFeature.NetherFortressGeneratorConfig.html" title="class in net.minecraft.structure">NetherFortressFeature.NetherFortressGeneratorConfig</a></code>, <code><a href="../../structure/OceanMonumentFeature.OceanMonumentGeneratorConfig.html" title="class in net.minecraft.structure">OceanMonumentFeature.OceanMonumentGeneratorConfig</a></code>, <code><a href="../../structure/StrongholdStructure.StrongholdGeneratorConfig.html" title="class in net.minecraft.structure">StrongholdStructure.StrongholdGeneratorConfig</a></code>, <code><a href="../../structure/VillageStructure.VillageGeneratorConfig.html" title="class in net.minecraft.structure">VillageStructure.VillageGeneratorConfig</a></code>, <code><a href="../../structure/WitchHutStructure.WitchHutGeneratorConfig.html" title="class in net.minecraft.structure">WitchHutStructure.WitchHutGeneratorConfig</a></code></dd>
 </dl>
 <hr>
 <pre>public abstract class <span class="typeNameLabel">GeneratorConfig</span>
@@ -158,23 +158,23 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html?is-external=true" title="class or interface in java.util" class="externalLink">LinkedList</a>&lt;<a href="../../structure/StructurePiece.html" title="class in net.minecraft.structure">StructurePiece</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_2118">field_2118</a></span></code></th>
+<td class="colFirst"><code>protected <a href="../../util/math/BlockBox.html" title="class in net.minecraft.util.math">BlockBox</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#box">box</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../util/math/BlockBox.html" title="class in net.minecraft.util.math">BlockBox</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_2119">field_2119</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code>private int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_2120">field_2120</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_2121">field_2121</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html?is-external=true" title="class or interface in java.util" class="externalLink">LinkedList</a>&lt;<a href="../../structure/StructurePiece.html" title="class in net.minecraft.structure">StructurePiece</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#pieces">pieces</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -223,34 +223,39 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../util/math/BlockBox.html" title="class in net.minecraft.util.math">BlockBox</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1739()">method_1739</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBox()">getBox</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html?is-external=true" title="class or interface in java.util" class="externalLink">LinkedList</a>&lt;<a href="../../structure/StructurePiece.html" title="class in net.minecraft.structure">StructurePiece</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPieces()">getPieces</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1740(int,int)">method_1740</a></span>&#8203;(int&nbsp;int2,
            int&nbsp;int3)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1741(net.minecraft.util.math.ColumnPos)">method_1741</a></span>&#8203;(<a href="../../util/math/ColumnPos.html" title="class in net.minecraft.util.math">ColumnPos</a>&nbsp;columnPos)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1742(net.minecraft.world.World,net.minecraft.nbt.CompoundTag)">method_1742</a></span>&#8203;(<a href="../World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
            <a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1743(net.minecraft.world.World,java.util.Random,int)">method_1743</a></span>&#8203;(<a href="../World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;random,
            int&nbsp;int2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1744(net.minecraft.world.World,java.util.Random,int,int)">method_1744</a></span>&#8203;(<a href="../World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;random,
@@ -258,21 +263,16 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
            int&nbsp;int3)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1745(net.minecraft.world.World,java.util.Random,net.minecraft.util.math.BlockBox)">method_1745</a></span>&#8203;(<a href="../World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;random,
            <a href="../../util/math/BlockBox.html" title="class in net.minecraft.util.math">BlockBox</a>&nbsp;blockBox)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1746(net.minecraft.nbt.CompoundTag)">method_1746</a></span>&#8203;(<a href="../../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html?is-external=true" title="class or interface in java.util" class="externalLink">LinkedList</a>&lt;<a href="../../structure/StructurePiece.html" title="class in net.minecraft.structure">StructurePiece</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1747()">method_1747</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
@@ -329,22 +329,22 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="field_2118">
+<a id="pieces">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_2118</h4>
-<pre>protected&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html?is-external=true" title="class or interface in java.util" class="externalLink">LinkedList</a>&lt;<a href="../../structure/StructurePiece.html" title="class in net.minecraft.structure">StructurePiece</a>&gt; field_2118</pre>
+<h4>pieces</h4>
+<pre>protected&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html?is-external=true" title="class or interface in java.util" class="externalLink">LinkedList</a>&lt;<a href="../../structure/StructurePiece.html" title="class in net.minecraft.structure">StructurePiece</a>&gt; pieces</pre>
 </li>
 </ul>
-<a id="field_2119">
+<a id="box">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_2119</h4>
-<pre>protected&nbsp;<a href="../../util/math/BlockBox.html" title="class in net.minecraft.util.math">BlockBox</a> field_2119</pre>
+<h4>box</h4>
+<pre>protected&nbsp;<a href="../../util/math/BlockBox.html" title="class in net.minecraft.util.math">BlockBox</a> box</pre>
 </li>
 </ul>
 <a id="field_2120">
@@ -404,22 +404,22 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="method_1739()">
+<a id="getBox()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1739</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../util/math/BlockBox.html" title="class in net.minecraft.util.math">BlockBox</a>&nbsp;method_1739()</pre>
+<h4>getBox</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../util/math/BlockBox.html" title="class in net.minecraft.util.math">BlockBox</a>&nbsp;getBox()</pre>
 </li>
 </ul>
-<a id="method_1747()">
+<a id="getPieces()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1747</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html?is-external=true" title="class or interface in java.util" class="externalLink">LinkedList</a>&lt;<a href="../../structure/StructurePiece.html" title="class in net.minecraft.structure">StructurePiece</a>&gt;&nbsp;method_1747()</pre>
+<h4>getPieces</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html?is-external=true" title="class or interface in java.util" class="externalLink">LinkedList</a>&lt;<a href="../../structure/StructurePiece.html" title="class in net.minecraft.structure">StructurePiece</a>&gt;&nbsp;getPieces()</pre>
 </li>
 </ul>
 <a id="method_1745(net.minecraft.world.World,java.util.Random,net.minecraft.util.math.BlockBox)">

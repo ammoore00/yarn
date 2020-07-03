@@ -132,7 +132,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="class_635.html" title="interface in net.minecraft">class_635</a></code>, <code><a href="world/WorldSaveHandler.html" title="interface in net.minecraft.world">WorldSaveHandler</a></code></dd>
+<dd><code><a href="world/SaveHandler.html" title="interface in net.minecraft.world">SaveHandler</a></code>, <code><a href="world/WorldSaveHandler.html" title="interface in net.minecraft.world">WorldSaveHandler</a></code></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -141,7 +141,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public class <span class="typeNameLabel">class_632</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
-implements <a href="class_635.html" title="interface in net.minecraft">class_635</a>, <a href="world/WorldSaveHandler.html" title="interface in net.minecraft.world">WorldSaveHandler</a></pre>
+implements <a href="world/SaveHandler.html" title="interface in net.minecraft.world">SaveHandler</a>, <a href="world/WorldSaveHandler.html" title="interface in net.minecraft.world">WorldSaveHandler</a></pre>
 </li>
 </ul>
 </div>
@@ -270,13 +270,13 @@ implements <a href="class_635.html" title="interface in net.minecraft">class_635
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="class_404.html" title="interface in net.minecraft">class_404</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_2010(net.minecraft.world.dimension.Dimension)">method_2010</a></span>&#8203;(<a href="world/dimension/Dimension.html" title="class in net.minecraft.world.dimension">Dimension</a>&nbsp;dimension)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_2010(net.minecraft.world.dimension.Dimension)">method_2010</a></span>&#8203;(<a href="world/dimension/Dimension.html" title="class in net.minecraft.world.dimension">Dimension</a>&nbsp;dim)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_2012(net.minecraft.world.level.LevelProperties,net.minecraft.nbt.CompoundTag)">method_2012</a></span>&#8203;(<a href="world/level/LevelProperties.html" title="class in net.minecraft.world.level">LevelProperties</a>&nbsp;levelProperties,
-           <a href="nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_2012(net.minecraft.world.level.LevelProperties,net.minecraft.nbt.CompoundTag)">method_2012</a></span>&#8203;(<a href="world/level/LevelProperties.html" title="class in net.minecraft.world.level">LevelProperties</a>&nbsp;properties,
+           <a href="nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;nbt)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
@@ -431,7 +431,7 @@ implements <a href="class_635.html" title="interface in net.minecraft">class_635
 <pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink">File</a>&nbsp;getWorldFolder()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="class_635.html#getWorldFolder()">getWorldFolder</a></code>&nbsp;in interface&nbsp;<code><a href="class_635.html" title="interface in net.minecraft">class_635</a></code></dd>
+<dd><code><a href="world/SaveHandler.html#getWorldFolder()">getWorldFolder</a></code>&nbsp;in interface&nbsp;<code><a href="world/SaveHandler.html" title="interface in net.minecraft.world">SaveHandler</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -445,7 +445,7 @@ implements <a href="class_635.html" title="interface in net.minecraft">class_635
                      throws <a href="world/level/storage/WorldLoadException.html" title="class in net.minecraft.world.level.storage">WorldLoadException</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="class_635.html#readSessionLock()">readSessionLock</a></code>&nbsp;in interface&nbsp;<code><a href="class_635.html" title="interface in net.minecraft">class_635</a></code></dd>
+<dd><code><a href="world/SaveHandler.html#readSessionLock()">readSessionLock</a></code>&nbsp;in interface&nbsp;<code><a href="world/SaveHandler.html" title="interface in net.minecraft.world">SaveHandler</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="world/level/storage/WorldLoadException.html" title="class in net.minecraft.world.level.storage">WorldLoadException</a></code></dd>
 </dl>
@@ -457,10 +457,10 @@ implements <a href="class_635.html" title="interface in net.minecraft">class_635
 <ul class="blockList">
 <li class="blockList">
 <h4>method_2010</h4>
-<pre class="methodSignature">public&nbsp;<a href="class_404.html" title="interface in net.minecraft">class_404</a>&nbsp;method_2010&#8203;(<a href="world/dimension/Dimension.html" title="class in net.minecraft.world.dimension">Dimension</a>&nbsp;dimension)</pre>
+<pre class="methodSignature">public&nbsp;<a href="class_404.html" title="interface in net.minecraft">class_404</a>&nbsp;method_2010&#8203;(<a href="world/dimension/Dimension.html" title="class in net.minecraft.world.dimension">Dimension</a>&nbsp;dim)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="class_635.html#method_2010(net.minecraft.world.dimension.Dimension)">method_2010</a></code>&nbsp;in interface&nbsp;<code><a href="class_635.html" title="interface in net.minecraft">class_635</a></code></dd>
+<dd><code><a href="world/SaveHandler.html#method_2010(net.minecraft.world.dimension.Dimension)">method_2010</a></code>&nbsp;in interface&nbsp;<code><a href="world/SaveHandler.html" title="interface in net.minecraft.world">SaveHandler</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -473,7 +473,7 @@ implements <a href="class_635.html" title="interface in net.minecraft">class_635
 <pre class="methodSignature">public&nbsp;<a href="world/level/LevelProperties.html" title="class in net.minecraft.world.level">LevelProperties</a>&nbsp;getLevelProperties()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="class_635.html#getLevelProperties()">getLevelProperties</a></code>&nbsp;in interface&nbsp;<code><a href="class_635.html" title="interface in net.minecraft">class_635</a></code></dd>
+<dd><code><a href="world/SaveHandler.html#getLevelProperties()">getLevelProperties</a></code>&nbsp;in interface&nbsp;<code><a href="world/SaveHandler.html" title="interface in net.minecraft.world">SaveHandler</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -483,11 +483,11 @@ implements <a href="class_635.html" title="interface in net.minecraft">class_635
 <ul class="blockList">
 <li class="blockList">
 <h4>method_2012</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_2012&#8203;(<a href="world/level/LevelProperties.html" title="class in net.minecraft.world.level">LevelProperties</a>&nbsp;levelProperties,
-                        <a href="nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;method_2012&#8203;(<a href="world/level/LevelProperties.html" title="class in net.minecraft.world.level">LevelProperties</a>&nbsp;properties,
+                        <a href="nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;nbt)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="class_635.html#method_2012(net.minecraft.world.level.LevelProperties,net.minecraft.nbt.CompoundTag)">method_2012</a></code>&nbsp;in interface&nbsp;<code><a href="class_635.html" title="interface in net.minecraft">class_635</a></code></dd>
+<dd><code><a href="world/SaveHandler.html#method_2012(net.minecraft.world.level.LevelProperties,net.minecraft.nbt.CompoundTag)">method_2012</a></code>&nbsp;in interface&nbsp;<code><a href="world/SaveHandler.html" title="interface in net.minecraft.world">SaveHandler</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -500,7 +500,7 @@ implements <a href="class_635.html" title="interface in net.minecraft">class_635
 <pre class="methodSignature">public&nbsp;void&nbsp;saveLevelProperties&#8203;(<a href="world/level/LevelProperties.html" title="class in net.minecraft.world.level">LevelProperties</a>&nbsp;levelProperties)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="class_635.html#saveLevelProperties(net.minecraft.world.level.LevelProperties)">saveLevelProperties</a></code>&nbsp;in interface&nbsp;<code><a href="class_635.html" title="interface in net.minecraft">class_635</a></code></dd>
+<dd><code><a href="world/SaveHandler.html#saveLevelProperties(net.minecraft.world.level.LevelProperties)">saveLevelProperties</a></code>&nbsp;in interface&nbsp;<code><a href="world/SaveHandler.html" title="interface in net.minecraft.world">SaveHandler</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -539,7 +539,7 @@ implements <a href="class_635.html" title="interface in net.minecraft">class_635
 <pre class="methodSignature">public&nbsp;<a href="world/WorldSaveHandler.html" title="interface in net.minecraft.world">WorldSaveHandler</a>&nbsp;getInstance()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="class_635.html#getInstance()">getInstance</a></code>&nbsp;in interface&nbsp;<code><a href="class_635.html" title="interface in net.minecraft">class_635</a></code></dd>
+<dd><code><a href="world/SaveHandler.html#getInstance()">getInstance</a></code>&nbsp;in interface&nbsp;<code><a href="world/SaveHandler.html" title="interface in net.minecraft.world">SaveHandler</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -565,7 +565,7 @@ implements <a href="class_635.html" title="interface in net.minecraft">class_635
 <pre class="methodSignature">public&nbsp;void&nbsp;method_2009()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="class_635.html#method_2009()">method_2009</a></code>&nbsp;in interface&nbsp;<code><a href="class_635.html" title="interface in net.minecraft">class_635</a></code></dd>
+<dd><code><a href="world/SaveHandler.html#method_2009()">method_2009</a></code>&nbsp;in interface&nbsp;<code><a href="world/SaveHandler.html" title="interface in net.minecraft.world">SaveHandler</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -578,7 +578,7 @@ implements <a href="class_635.html" title="interface in net.minecraft">class_635
 <pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io" class="externalLink">File</a>&nbsp;getDataFile&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;fileName)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="class_635.html#getDataFile(java.lang.String)">getDataFile</a></code>&nbsp;in interface&nbsp;<code><a href="class_635.html" title="interface in net.minecraft">class_635</a></code></dd>
+<dd><code><a href="world/SaveHandler.html#getDataFile(java.lang.String)">getDataFile</a></code>&nbsp;in interface&nbsp;<code><a href="world/SaveHandler.html" title="interface in net.minecraft.world">SaveHandler</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -591,7 +591,7 @@ implements <a href="class_635.html" title="interface in net.minecraft">class_635
 <pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;method_2018()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="class_635.html#method_2018()">method_2018</a></code>&nbsp;in interface&nbsp;<code><a href="class_635.html" title="interface in net.minecraft">class_635</a></code></dd>
+<dd><code><a href="world/SaveHandler.html#method_2018()">method_2018</a></code>&nbsp;in interface&nbsp;<code><a href="world/SaveHandler.html" title="interface in net.minecraft.world">SaveHandler</a></code></dd>
 </dl>
 </li>
 </ul>
