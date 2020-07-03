@@ -160,7 +160,7 @@ extends <a href="Item.html" title="class in net.minecraft.item">Item</a></pre>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="ArmorItem.ArmorMaterial.html" title="enum in net.minecraft.item">ArmorItem.ArmorMaterial</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="ArmorItem.stack.html" title="enum in net.minecraft.item">ArmorItem.stack</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -189,22 +189,22 @@ extends <a href="Item.html" title="class in net.minecraft.item">Item</a></pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>private static <a href="../block/dispenser/DispenserBehavior.html" title="interface in net.minecraft.block.dispenser">DispenserBehavior</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ARMOR_DISPENSER_BEHAVIOR">ARMOR_DISPENSER_BEHAVIOR</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>private static int[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#BASE_DURABILITY">BASE_DURABILITY</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_8530">field_8530</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code>private static <a href="../block/dispenser/DispenserBehavior.html" title="interface in net.minecraft.block.dispenser">DispenserBehavior</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_8535">field_8535</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="ArmorItem.ArmorMaterial.html" title="enum in net.minecraft.item">ArmorItem.ArmorMaterial</a></code></td>
+<td class="colFirst"><code>private <a href="ArmorItem.stack.html" title="enum in net.minecraft.item">ArmorItem.stack</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#material">material</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -248,7 +248,7 @@ extends <a href="Item.html" title="class in net.minecraft.item">Item</a></pre>
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.item.ArmorItem.ArmorMaterial,int,int)">ArmorItem</a></span>&#8203;(<a href="ArmorItem.ArmorMaterial.html" title="enum in net.minecraft.item">ArmorItem.ArmorMaterial</a>&nbsp;material,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.item.ArmorItem.stack,int,int)">ArmorItem</a></span>&#8203;(<a href="ArmorItem.stack.html" title="enum in net.minecraft.item">ArmorItem.stack</a>&nbsp;material,
          int&nbsp;materialId,
          int&nbsp;slot)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -275,37 +275,41 @@ extends <a href="Item.html" title="class in net.minecraft.item">Item</a></pre>
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#canRepair(net.minecraft.item.ItemStack,net.minecraft.item.ItemStack)">canRepair</a></span>&#8203;(<a href="ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
          <a href="ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;ingredient)</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Returns whether the item can be repaired via an anvil or crafting table.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEnchantability()">getEnchantability</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
+<td class="colLast">
+<div class="block">Returns the enchantability of an Item.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="ArmorItem.stack.html" title="enum in net.minecraft.item">ArmorItem.stack</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMaterial()">getMaterial</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasColor(net.minecraft.item.ItemStack)">hasColor</a></span>&#8203;(<a href="ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_8169(net.minecraft.item.ItemStack)">method_8169</a></span>&#8203;(<a href="ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_8170(net.minecraft.item.ItemStack,int)">method_8170</a></span>&#8203;(<a href="ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
            int&nbsp;int2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_8171(net.minecraft.item.ItemStack)">method_8171</a></span>&#8203;(<a href="ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_8173(net.minecraft.item.ItemStack)">method_8173</a></span>&#8203;(<a href="ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="ArmorItem.ArmorMaterial.html" title="enum in net.minecraft.item">ArmorItem.ArmorMaterial</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_8174()">method_8174</a></span>()</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_8171(net.minecraft.item.ItemStack)">method_8171</a></span>&#8203;(<a href="ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
@@ -327,7 +331,7 @@ extends <a href="Item.html" title="class in net.minecraft.item">Item</a></pre>
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.item.<a href="Item.html" title="class in net.minecraft.item">Item</a></h3>
-<code><a href="Item.html#addToItemGroup(net.minecraft.item.Item,net.minecraft.item.ItemGroup,java.util.List)">addToItemGroup</a>, <a href="Item.html#byRawId(int)">byRawId</a>, <a href="Item.html#fromBlock(net.minecraft.block.Block)">fromBlock</a>, <a href="Item.html#getFromId(java.lang.String)">getFromId</a>, <a href="Item.html#getItemGroup()">getItemGroup</a>, <a href="Item.html#getItemstackTranslationKey(net.minecraft.item.ItemStack)">getItemstackTranslationKey</a>, <a href="Item.html#getMaxCount()">getMaxCount</a>, <a href="Item.html#getMaxDamage()">getMaxDamage</a>, <a href="Item.html#getMaxUseTime(net.minecraft.item.ItemStack)">getMaxUseTime</a>, <a href="Item.html#getRarity(net.minecraft.item.ItemStack)">getRarity</a>, <a href="Item.html#getRawId(net.minecraft.item.Item)">getRawId</a>, <a href="Item.html#getRecipeRemainder()">getRecipeRemainder</a>, <a href="Item.html#getTranslationKey()">getTranslationKey</a>, <a href="Item.html#getTranslationKey(net.minecraft.item.ItemStack)">getTranslationKey</a>, <a href="Item.html#getUseAction(net.minecraft.item.ItemStack)">getUseAction</a>, <a href="Item.html#hasEnchantmentGlint(net.minecraft.item.ItemStack)">hasEnchantmentGlint</a>, <a href="Item.html#inventoryTick(net.minecraft.item.ItemStack,net.minecraft.world.World,net.minecraft.entity.Entity,int,boolean)">inventoryTick</a>, <a href="Item.html#isDamageable()">isDamageable</a>, <a href="Item.html#isEffectiveOn(net.minecraft.block.Block)">isEffectiveOn</a>, <a href="Item.html#isEnchantable(net.minecraft.item.ItemStack)">isEnchantable</a>, <a href="Item.html#isFood()">isFood</a>, <a href="Item.html#isHandheld()">isHandheld</a>, <a href="Item.html#isNetworkSynced()">isNetworkSynced</a>, <a href="Item.html#isUnbreakable()">isUnbreakable</a>, <a href="Item.html#matches(net.minecraft.item.ItemStack)">matches</a>, <a href="Item.html#method_8247(int)">method_8247</a>, <a href="Item.html#method_8256(net.minecraft.item.ItemStack)">method_8256</a>, <a href="Item.html#method_8258(net.minecraft.item.ItemStack,net.minecraft.world.World,net.minecraft.block.Block,net.minecraft.util.math.BlockPos,net.minecraft.entity.LivingEntity)">method_8258</a>, <a href="Item.html#method_8261(net.minecraft.item.ItemStack,net.minecraft.world.World,net.minecraft.entity.player.PlayerEntity,int)">method_8261</a>, <a href="Item.html#method_8262(net.minecraft.item.ItemStack,net.minecraft.block.Block)">method_8262</a>, <a href="Item.html#method_8263(net.minecraft.item.ItemStack,net.minecraft.entity.LivingEntity,net.minecraft.entity.LivingEntity)">method_8263</a>, <a href="Item.html#method_8265(net.minecraft.item.ItemStack,net.minecraft.entity.player.PlayerEntity,java.util.List,boolean)">method_8265</a>, <a href="Item.html#method_8266(net.minecraft.item.ItemStack,net.minecraft.entity.player.PlayerEntity,net.minecraft.entity.LivingEntity)">method_8266</a>, <a href="Item.html#method_8273(net.minecraft.item.ItemStack,net.minecraft.world.World,net.minecraft.entity.player.PlayerEntity)">method_8273</a>, <a href="Item.html#method_8283()">method_8283</a>, <a href="Item.html#method_8291()">method_8291</a>, <a href="Item.html#method_8293(net.minecraft.item.ItemStack)">method_8293</a>, <a href="Item.html#method_8303()">method_8303</a>, <a href="Item.html#onCraft(net.minecraft.item.ItemStack,net.minecraft.world.World,net.minecraft.entity.player.PlayerEntity)">onCraft</a>, <a href="Item.html#onHit(net.minecraft.world.World,net.minecraft.entity.player.PlayerEntity,boolean)">onHit</a>, <a href="Item.html#onUse(net.minecraft.item.ItemStack,net.minecraft.entity.player.PlayerEntity,net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction,float,float,float)">onUse</a>, <a href="Item.html#postProcessTag(net.minecraft.nbt.CompoundTag)">postProcessTag</a>, <a href="Item.html#registerBlockItem(net.minecraft.block.Block,net.minecraft.item.Item)">registerBlockItem</a>, <a href="Item.html#setHandheld()">setHandheld</a>, <a href="Item.html#setItem(net.minecraft.item.Item)">setItem</a>, <a href="Item.html#setItemGroup(net.minecraft.item.ItemGroup)">setItemGroup</a>, <a href="Item.html#setMaxCount(int)">setMaxCount</a>, <a href="Item.html#setMaxDamage(int)">setMaxDamage</a>, <a href="Item.html#setStatusEffectString(java.lang.String)">setStatusEffectString</a>, <a href="Item.html#setTranslationKey(java.lang.String)">setTranslationKey</a>, <a href="Item.html#setUnbreakable(boolean)">setUnbreakable</a>, <a href="Item.html#setup()">setup</a>, <a href="Item.html#shouldSyncTagToClient()">shouldSyncTagToClient</a></code></li>
+<code><a href="Item.html#addToItemGroup(net.minecraft.item.Item,net.minecraft.item.ItemGroup,java.util.List)">addToItemGroup</a>, <a href="Item.html#byRawId(int)">byRawId</a>, <a href="Item.html#fromBlock(net.minecraft.block.Block)">fromBlock</a>, <a href="Item.html#getAttributeModifierMap()">getAttributeModifierMap</a>, <a href="Item.html#getFromId(java.lang.String)">getFromId</a>, <a href="Item.html#getItemGroup()">getItemGroup</a>, <a href="Item.html#getItemstackTranslatedName(net.minecraft.item.ItemStack)">getItemstackTranslatedName</a>, <a href="Item.html#getMaxCount()">getMaxCount</a>, <a href="Item.html#getMaxDamage()">getMaxDamage</a>, <a href="Item.html#getMaxUseTime(net.minecraft.item.ItemStack)">getMaxUseTime</a>, <a href="Item.html#getMiningSpeedForBlock(net.minecraft.item.ItemStack,net.minecraft.block.Block)">getMiningSpeedForBlock</a>, <a href="Item.html#getRarity(net.minecraft.item.ItemStack)">getRarity</a>, <a href="Item.html#getRawId(net.minecraft.item.Item)">getRawId</a>, <a href="Item.html#getRecipeRemainder()">getRecipeRemainder</a>, <a href="Item.html#getStatusEffectString(net.minecraft.item.ItemStack)">getStatusEffectString</a>, <a href="Item.html#getTranslationKey()">getTranslationKey</a>, <a href="Item.html#getTranslationKey(net.minecraft.item.ItemStack)">getTranslationKey</a>, <a href="Item.html#getUseAction(net.minecraft.item.ItemStack)">getUseAction</a>, <a href="Item.html#hasEnchantmentGlint(net.minecraft.item.ItemStack)">hasEnchantmentGlint</a>, <a href="Item.html#hasStatusEffectString(net.minecraft.item.ItemStack)">hasStatusEffectString</a>, <a href="Item.html#inventoryTick(net.minecraft.item.ItemStack,net.minecraft.world.World,net.minecraft.entity.Entity,int,boolean)">inventoryTick</a>, <a href="Item.html#isDamageable()">isDamageable</a>, <a href="Item.html#isEffectiveOn(net.minecraft.block.Block)">isEffectiveOn</a>, <a href="Item.html#isEnchantable(net.minecraft.item.ItemStack)">isEnchantable</a>, <a href="Item.html#isFood()">isFood</a>, <a href="Item.html#isHandheld()">isHandheld</a>, <a href="Item.html#isNetworkSynced()">isNetworkSynced</a>, <a href="Item.html#isUnbreakable()">isUnbreakable</a>, <a href="Item.html#method_8247(int)">method_8247</a>, <a href="Item.html#method_8256(net.minecraft.item.ItemStack)">method_8256</a>, <a href="Item.html#method_8258(net.minecraft.item.ItemStack,net.minecraft.world.World,net.minecraft.block.Block,net.minecraft.util.math.BlockPos,net.minecraft.entity.LivingEntity)">method_8258</a>, <a href="Item.html#method_8261(net.minecraft.item.ItemStack,net.minecraft.world.World,net.minecraft.entity.player.PlayerEntity,int)">method_8261</a>, <a href="Item.html#method_8263(net.minecraft.item.ItemStack,net.minecraft.entity.LivingEntity,net.minecraft.entity.LivingEntity)">method_8263</a>, <a href="Item.html#method_8265(net.minecraft.item.ItemStack,net.minecraft.entity.player.PlayerEntity,java.util.List,boolean)">method_8265</a>, <a href="Item.html#method_8266(net.minecraft.item.ItemStack,net.minecraft.entity.player.PlayerEntity,net.minecraft.entity.LivingEntity)">method_8266</a>, <a href="Item.html#method_8273(net.minecraft.item.ItemStack,net.minecraft.world.World,net.minecraft.entity.player.PlayerEntity)">method_8273</a>, <a href="Item.html#method_8283()">method_8283</a>, <a href="Item.html#method_8303()">method_8303</a>, <a href="Item.html#onCraft(net.minecraft.item.ItemStack,net.minecraft.world.World,net.minecraft.entity.player.PlayerEntity)">onCraft</a>, <a href="Item.html#onHit(net.minecraft.world.World,net.minecraft.entity.player.PlayerEntity,boolean)">onHit</a>, <a href="Item.html#onUse(net.minecraft.item.ItemStack,net.minecraft.entity.player.PlayerEntity,net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction,float,float,float)">onUse</a>, <a href="Item.html#postProcessTag(net.minecraft.nbt.CompoundTag)">postProcessTag</a>, <a href="Item.html#registerBlockItem(net.minecraft.block.Block,net.minecraft.item.Item)">registerBlockItem</a>, <a href="Item.html#setHandheld()">setHandheld</a>, <a href="Item.html#setItemGroup(net.minecraft.item.ItemGroup)">setItemGroup</a>, <a href="Item.html#setMaxCount(int)">setMaxCount</a>, <a href="Item.html#setMaxDamage(int)">setMaxDamage</a>, <a href="Item.html#setRecipeRemainder(net.minecraft.item.Item)">setRecipeRemainder</a>, <a href="Item.html#setStatusEffectString(java.lang.String)">setStatusEffectString</a>, <a href="Item.html#setTranslationKey(java.lang.String)">setTranslationKey</a>, <a href="Item.html#setUnbreakable(boolean)">setUnbreakable</a>, <a href="Item.html#setup()">setup</a>, <a href="Item.html#shouldSyncTagToClient()">shouldSyncTagToClient</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -370,13 +374,13 @@ extends <a href="Item.html" title="class in net.minecraft.item">Item</a></pre>
 <pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>[] field_8530</pre>
 </li>
 </ul>
-<a id="field_8535">
+<a id="ARMOR_DISPENSER_BEHAVIOR">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_8535</h4>
-<pre>private static final&nbsp;<a href="../block/dispenser/DispenserBehavior.html" title="interface in net.minecraft.block.dispenser">DispenserBehavior</a> field_8535</pre>
+<h4>ARMOR_DISPENSER_BEHAVIOR</h4>
+<pre>private static final&nbsp;<a href="../block/dispenser/DispenserBehavior.html" title="interface in net.minecraft.block.dispenser">DispenserBehavior</a> ARMOR_DISPENSER_BEHAVIOR</pre>
 </li>
 </ul>
 <a id="slot">
@@ -412,7 +416,7 @@ extends <a href="Item.html" title="class in net.minecraft.item">Item</a></pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>material</h4>
-<pre>private final&nbsp;<a href="ArmorItem.ArmorMaterial.html" title="enum in net.minecraft.item">ArmorItem.ArmorMaterial</a> material</pre>
+<pre>private final&nbsp;<a href="ArmorItem.stack.html" title="enum in net.minecraft.item">ArmorItem.stack</a> material</pre>
 </li>
 </ul>
 </li>
@@ -425,13 +429,13 @@ extends <a href="Item.html" title="class in net.minecraft.item">Item</a></pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(net.minecraft.item.ArmorItem.ArmorMaterial,int,int)">
+<a id="&lt;init&gt;(net.minecraft.item.ArmorItem.stack,int,int)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ArmorItem</h4>
-<pre>public&nbsp;ArmorItem&#8203;(<a href="ArmorItem.ArmorMaterial.html" title="enum in net.minecraft.item">ArmorItem.ArmorMaterial</a>&nbsp;material,
+<pre>public&nbsp;ArmorItem&#8203;(<a href="ArmorItem.stack.html" title="enum in net.minecraft.item">ArmorItem.stack</a>&nbsp;material,
                  int&nbsp;materialId,
                  int&nbsp;slot)</pre>
 </li>
@@ -468,28 +472,35 @@ public&nbsp;int&nbsp;method_8257&#8203;(<a href="ItemStack.html" title="class in
 <li class="blockList">
 <h4>getEnchantability</h4>
 <pre class="methodSignature">public&nbsp;int&nbsp;getEnchantability()</pre>
+<div class="block">Returns the enchantability of an Item.
+ Used by tools and armor</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="Item.html#getEnchantability()">getEnchantability</a></code>&nbsp;in class&nbsp;<code><a href="Item.html" title="class in net.minecraft.item">Item</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Enchantability</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="ToolItem.html" title="class in net.minecraft.item"><code>ToolItem</code></a>, 
+<a href="ArmorItem.html" title="class in net.minecraft.item"><code>ArmorItem</code></a></dd>
 </dl>
 </li>
 </ul>
-<a id="method_8174()">
+<a id="getMaterial()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_8174</h4>
-<pre class="methodSignature">public&nbsp;<a href="ArmorItem.ArmorMaterial.html" title="enum in net.minecraft.item">ArmorItem.ArmorMaterial</a>&nbsp;method_8174()</pre>
+<h4>getMaterial</h4>
+<pre class="methodSignature">public&nbsp;<a href="ArmorItem.stack.html" title="enum in net.minecraft.item">ArmorItem.stack</a>&nbsp;getMaterial()</pre>
 </li>
 </ul>
-<a id="method_8173(net.minecraft.item.ItemStack)">
+<a id="hasColor(net.minecraft.item.ItemStack)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_8173</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;method_8173&#8203;(<a href="ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</pre>
+<h4>hasColor</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;hasColor&#8203;(<a href="ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</pre>
 </li>
 </ul>
 <a id="method_8169(net.minecraft.item.ItemStack)">
@@ -507,7 +518,7 @@ public&nbsp;int&nbsp;method_8257&#8203;(<a href="ItemStack.html" title="class in
 <ul class="blockList">
 <li class="blockList">
 <h4>method_8171</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_8171&#8203;(<a href="ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;method_8171&#8203;(<a href="ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</pre>
 </li>
 </ul>
 <a id="method_8170(net.minecraft.item.ItemStack,int)">
@@ -528,6 +539,7 @@ public&nbsp;int&nbsp;method_8257&#8203;(<a href="ItemStack.html" title="class in
 <h4>canRepair</h4>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;canRepair&#8203;(<a href="ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
                          <a href="ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;ingredient)</pre>
+<div class="block">Returns whether the item can be repaired via an anvil or crafting table.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="Item.html#canRepair(net.minecraft.item.ItemStack,net.minecraft.item.ItemStack)">canRepair</a></code>&nbsp;in class&nbsp;<code><a href="Item.html" title="class in net.minecraft.item">Item</a></code></dd>
