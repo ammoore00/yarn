@@ -126,7 +126,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="EntityRenderer.html" title="class in net.minecraft.client.render.entity">net.minecraft.client.render.entity.EntityRenderer</a>&lt;T&gt;</li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../class_1154.html" title="class in net.minecraft">net.minecraft.class_1154</a>&lt;<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&gt;</li>
+<li><a href="LivingEntityRenderer.html" title="class in net.minecraft.client.render.entity">net.minecraft.client.render.entity.LivingEntityRenderer</a>&lt;<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&gt;</li>
 <li>
 <ul class="inheritance">
 <li>net.minecraft.client.render.entity.PlayerEntityRenderer</li>
@@ -143,7 +143,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>@Environment(CLIENT)
 public class <span class="typeNameLabel">PlayerEntityRenderer</span>
-extends <a href="../../../class_1154.html" title="class in net.minecraft">class_1154</a>&lt;<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&gt;</pre>
+extends <a href="LivingEntityRenderer.html" title="class in net.minecraft.client.render.entity">LivingEntityRenderer</a>&lt;<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&gt;</pre>
 </li>
 </ul>
 </div>
@@ -166,16 +166,16 @@ extends <a href="../../../class_1154.html" title="class in net.minecraft">class_
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_4997">field_4997</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#slim">slim</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a id="fields.inherited.from.class.net.minecraft.class_1154">
+<li class="blockList"><a id="fields.inherited.from.class.net.minecraft.client.render.entity.LivingEntityRenderer">
 <!--   -->
 </a>
-<h3>Fields inherited from class&nbsp;net.minecraft.<a href="../../../class_1154.html" title="class in net.minecraft">class_1154</a></h3>
-<code><a href="../../../class_1154.html#features">features</a>, <a href="../../../class_1154.html#field_4896">field_4896</a>, <a href="../../../class_1154.html#field_4897">field_4897</a>, <a href="../../../class_1154.html#field_4899">field_4899</a></code></li>
+<h3>Fields inherited from class&nbsp;net.minecraft.client.render.entity.<a href="LivingEntityRenderer.html" title="class in net.minecraft.client.render.entity">LivingEntityRenderer</a></h3>
+<code><a href="LivingEntityRenderer.html#features">features</a>, <a href="LivingEntityRenderer.html#field_4897">field_4897</a>, <a href="LivingEntityRenderer.html#field_4899">field_4899</a>, <a href="LivingEntityRenderer.html#model">model</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="fields.inherited.from.class.net.minecraft.client.render.entity.EntityRenderer">
@@ -205,8 +205,8 @@ extends <a href="../../../class_1154.html" title="class in net.minecraft">class_
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.client.render.entity.EntityRenderDispatcher,boolean)">PlayerEntityRenderer</a></span>&#8203;(<a href="EntityRenderDispatcher.html" title="class in net.minecraft.client.render.entity">EntityRenderDispatcher</a>&nbsp;entityRenderDispatcher,
-                    boolean&nbsp;bool)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.client.render.entity.EntityRenderDispatcher,boolean)">PlayerEntityRenderer</a></span>&#8203;(<a href="EntityRenderDispatcher.html" title="class in net.minecraft.client.render.entity">EntityRenderDispatcher</a>&nbsp;dispatcher,
+                    boolean&nbsp;slim)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -302,11 +302,11 @@ extends <a href="../../../class_1154.html" title="class in net.minecraft">class_
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.net.minecraft.class_1154">
+<li class="blockList"><a id="methods.inherited.from.class.net.minecraft.client.render.entity.LivingEntityRenderer">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;net.minecraft.<a href="../../../class_1154.html" title="class in net.minecraft">class_1154</a></h3>
-<code><a href="../../../class_1154.html#hasLabel(T)">hasLabel</a>, <a href="../../../class_1154.html#method_3908(T,double,double,double)">method_3908</a>, <a href="../../../class_1154.html#method_3910(T,double,double,double,float,float)">method_3910</a>, <a href="../../../class_1154.html#method_4000(float,float,float)">method_4000</a>, <a href="../../../class_1154.html#method_4001(U)">method_4001</a>, <a href="../../../class_1154.html#method_4006(T,float,float)">method_4006</a>, <a href="../../../class_1154.html#method_4008(T,float,float,float,float,float,float)">method_4008</a>, <a href="../../../class_1154.html#method_4010(T,float,boolean)">method_4010</a>, <a href="../../../class_1154.html#method_4011(boolean)">method_4011</a>, <a href="../../../class_1154.html#method_4013(U)">method_4013</a>, <a href="../../../class_1154.html#method_4014(T)">method_4014</a>, <a href="../../../class_1154.html#method_4016(T,float)">method_4016</a>, <a href="../../../class_1154.html#method_4017(T)">method_4017</a>, <a href="../../../class_1154.html#method_4018(T,float)">method_4018</a>, <a href="../../../class_1154.html#method_4019(T,float)">method_4019</a>, <a href="../../../class_1154.html#method_4020()">method_4020</a>, <a href="../../../class_1154.html#method_4021()">method_4021</a>, <a href="../../../class_1154.html#renderFeatures(T,float,float,float,float,float,float,float)">renderFeatures</a></code></li>
+<h3>Methods inherited from class&nbsp;net.minecraft.client.render.entity.<a href="LivingEntityRenderer.html" title="class in net.minecraft.client.render.entity">LivingEntityRenderer</a></h3>
+<code><a href="LivingEntityRenderer.html#hasLabel(T)">hasLabel</a>, <a href="LivingEntityRenderer.html#method_3908(T,double,double,double)">method_3908</a>, <a href="LivingEntityRenderer.html#method_3910(T,double,double,double,float,float)">method_3910</a>, <a href="LivingEntityRenderer.html#method_4000(float,float,float)">method_4000</a>, <a href="LivingEntityRenderer.html#method_4001(U)">method_4001</a>, <a href="LivingEntityRenderer.html#method_4006(T,float,float)">method_4006</a>, <a href="LivingEntityRenderer.html#method_4008(T,float,float,float,float,float,float)">method_4008</a>, <a href="LivingEntityRenderer.html#method_4010(T,float,boolean)">method_4010</a>, <a href="LivingEntityRenderer.html#method_4011(boolean)">method_4011</a>, <a href="LivingEntityRenderer.html#method_4013(U)">method_4013</a>, <a href="LivingEntityRenderer.html#method_4014(T)">method_4014</a>, <a href="LivingEntityRenderer.html#method_4016(T,float)">method_4016</a>, <a href="LivingEntityRenderer.html#method_4017(T)">method_4017</a>, <a href="LivingEntityRenderer.html#method_4018(T,float)">method_4018</a>, <a href="LivingEntityRenderer.html#method_4019(T,float)">method_4019</a>, <a href="LivingEntityRenderer.html#method_4020()">method_4020</a>, <a href="LivingEntityRenderer.html#method_4021()">method_4021</a>, <a href="LivingEntityRenderer.html#renderFeatures(T,float,float,float,float,float,float,float)">renderFeatures</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.net.minecraft.client.render.entity.EntityRenderer">
@@ -338,13 +338,13 @@ extends <a href="../../../class_1154.html" title="class in net.minecraft">class_
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="field_4997">
+<a id="slim">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_4997</h4>
-<pre>private&nbsp;boolean field_4997</pre>
+<h4>slim</h4>
+<pre>private&nbsp;boolean slim</pre>
 </li>
 </ul>
 </li>
@@ -372,8 +372,8 @@ extends <a href="../../../class_1154.html" title="class in net.minecraft">class_
 <ul class="blockListLast">
 <li class="blockList">
 <h4>PlayerEntityRenderer</h4>
-<pre>public&nbsp;PlayerEntityRenderer&#8203;(<a href="EntityRenderDispatcher.html" title="class in net.minecraft.client.render.entity">EntityRenderDispatcher</a>&nbsp;entityRenderDispatcher,
-                            boolean&nbsp;bool)</pre>
+<pre>public&nbsp;PlayerEntityRenderer&#8203;(<a href="EntityRenderDispatcher.html" title="class in net.minecraft.client.render.entity">EntityRenderDispatcher</a>&nbsp;dispatcher,
+                            boolean&nbsp;slim)</pre>
 </li>
 </ul>
 </li>
@@ -395,7 +395,7 @@ extends <a href="../../../class_1154.html" title="class in net.minecraft">class_
 <pre class="methodSignature">public&nbsp;<a href="model/PlayerEntityModel.html" title="class in net.minecraft.client.render.entity.model">PlayerEntityModel</a>&nbsp;method_4012()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../class_1154.html#method_4012()">method_4012</a></code>&nbsp;in class&nbsp;<code><a href="../../../class_1154.html" title="class in net.minecraft">class_1154</a>&lt;<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&gt;</code></dd>
+<dd><code><a href="LivingEntityRenderer.html#method_4012()">method_4012</a></code>&nbsp;in class&nbsp;<code><a href="LivingEntityRenderer.html" title="class in net.minecraft.client.render.entity">LivingEntityRenderer</a>&lt;<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -444,7 +444,7 @@ extends <a href="../../../class_1154.html" title="class in net.minecraft">class_
 <pre class="methodSignature">public&nbsp;void&nbsp;method_3999()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../class_1154.html#method_3999()">method_3999</a></code>&nbsp;in class&nbsp;<code><a href="../../../class_1154.html" title="class in net.minecraft">class_1154</a>&lt;<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&gt;</code></dd>
+<dd><code><a href="LivingEntityRenderer.html#method_3999()">method_3999</a></code>&nbsp;in class&nbsp;<code><a href="LivingEntityRenderer.html" title="class in net.minecraft.client.render.entity">LivingEntityRenderer</a>&lt;<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -458,7 +458,7 @@ extends <a href="../../../class_1154.html" title="class in net.minecraft">class_
                            float&nbsp;float2)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../class_1154.html#method_4005(T,float)">method_4005</a></code>&nbsp;in class&nbsp;<code><a href="../../../class_1154.html" title="class in net.minecraft">class_1154</a>&lt;<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&gt;</code></dd>
+<dd><code><a href="LivingEntityRenderer.html#method_4005(T,float)">method_4005</a></code>&nbsp;in class&nbsp;<code><a href="LivingEntityRenderer.html" title="class in net.minecraft.client.render.entity">LivingEntityRenderer</a>&lt;<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -511,7 +511,7 @@ extends <a href="../../../class_1154.html" title="class in net.minecraft">class_
                            double&nbsp;double4)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../class_1154.html#method_4003(T,double,double,double)">method_4003</a></code>&nbsp;in class&nbsp;<code><a href="../../../class_1154.html" title="class in net.minecraft">class_1154</a>&lt;<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&gt;</code></dd>
+<dd><code><a href="LivingEntityRenderer.html#method_4003(T,double,double,double)">method_4003</a></code>&nbsp;in class&nbsp;<code><a href="LivingEntityRenderer.html" title="class in net.minecraft.client.render.entity">LivingEntityRenderer</a>&lt;<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -527,7 +527,7 @@ extends <a href="../../../class_1154.html" title="class in net.minecraft">class_
                            float&nbsp;float4)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../class_1154.html#method_4007(T,float,float,float)">method_4007</a></code>&nbsp;in class&nbsp;<code><a href="../../../class_1154.html" title="class in net.minecraft">class_1154</a>&lt;<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&gt;</code></dd>
+<dd><code><a href="LivingEntityRenderer.html#method_4007(T,float,float,float)">method_4007</a></code>&nbsp;in class&nbsp;<code><a href="LivingEntityRenderer.html" title="class in net.minecraft.client.render.entity">LivingEntityRenderer</a>&lt;<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
