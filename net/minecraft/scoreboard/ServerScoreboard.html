@@ -159,18 +159,18 @@ extends <a href="Scoreboard.html" title="class in net.minecraft.scoreboard">Scor
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="ScoreboardState.html" title="class in net.minecraft.scoreboard">ScoreboardState</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6530">field_6530</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#objectives">objectives</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private <a href="../server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#server">server</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="ScoreboardState.html" title="class in net.minecraft.scoreboard">ScoreboardState</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#state">state</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -191,7 +191,7 @@ extends <a href="Scoreboard.html" title="class in net.minecraft.scoreboard">Scor
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.server.MinecraftServer)">ServerScoreboard</a></span>&#8203;(<a href="../server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a>&nbsp;minecraftServer)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.server.MinecraftServer)">ServerScoreboard</a></span>&#8203;(<a href="../server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a>&nbsp;server)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -234,35 +234,35 @@ extends <a href="Scoreboard.html" title="class in net.minecraft.scoreboard">Scor
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5930(net.minecraft.scoreboard.ScoreboardState)">method_5930</a></span>&#8203;(<a href="ScoreboardState.html" title="class in net.minecraft.scoreboard">ScoreboardState</a>&nbsp;scoreboardState)</code></th>
+<td class="colFirst"><code>protected void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#markDirtyIfNull()">markDirtyIfNull</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>protected void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5931()">method_5931</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../network/Packet.html" title="interface in net.minecraft.network">Packet</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5934(net.minecraft.scoreboard.ScoreboardObjective)">method_5934</a></span>&#8203;(<a href="ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;scoreboardObjective)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removePlayerFromTeam(java.lang.String,net.minecraft.scoreboard.Team)">removePlayerFromTeam</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;playerName,
                     <a href="Team.html" title="class in net.minecraft.scoreboard">Team</a>&nbsp;team)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeScoreboardObjective(net.minecraft.scoreboard.ScoreboardObjective)">removeScoreboardObjective</a></span>&#8203;(<a href="ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setObjectiveSlot(int,net.minecraft.scoreboard.ScoreboardObjective)">setObjectiveSlot</a></span>&#8203;(int&nbsp;slot,
                 <a href="ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setScoreboardState(net.minecraft.scoreboard.ScoreboardState)">setScoreboardState</a></span>&#8203;(<a href="ScoreboardState.html" title="class in net.minecraft.scoreboard">ScoreboardState</a>&nbsp;state)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
@@ -360,13 +360,13 @@ extends <a href="Scoreboard.html" title="class in net.minecraft.scoreboard">Scor
 <pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&gt; objectives</pre>
 </li>
 </ul>
-<a id="field_6530">
+<a id="state">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_6530</h4>
-<pre>private&nbsp;<a href="ScoreboardState.html" title="class in net.minecraft.scoreboard">ScoreboardState</a> field_6530</pre>
+<h4>state</h4>
+<pre>private&nbsp;<a href="ScoreboardState.html" title="class in net.minecraft.scoreboard">ScoreboardState</a> state</pre>
 </li>
 </ul>
 </li>
@@ -385,7 +385,7 @@ extends <a href="Scoreboard.html" title="class in net.minecraft.scoreboard">Scor
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ServerScoreboard</h4>
-<pre>public&nbsp;ServerScoreboard&#8203;(<a href="../server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a>&nbsp;minecraftServer)</pre>
+<pre>public&nbsp;ServerScoreboard&#8203;(<a href="../server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a>&nbsp;server)</pre>
 </li>
 </ul>
 </li>
@@ -558,22 +558,22 @@ extends <a href="Scoreboard.html" title="class in net.minecraft.scoreboard">Scor
 </dl>
 </li>
 </ul>
-<a id="method_5930(net.minecraft.scoreboard.ScoreboardState)">
+<a id="setScoreboardState(net.minecraft.scoreboard.ScoreboardState)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_5930</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_5930&#8203;(<a href="ScoreboardState.html" title="class in net.minecraft.scoreboard">ScoreboardState</a>&nbsp;scoreboardState)</pre>
+<h4>setScoreboardState</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setScoreboardState&#8203;(<a href="ScoreboardState.html" title="class in net.minecraft.scoreboard">ScoreboardState</a>&nbsp;state)</pre>
 </li>
 </ul>
-<a id="method_5931()">
+<a id="markDirtyIfNull()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_5931</h4>
-<pre class="methodSignature">protected&nbsp;void&nbsp;method_5931()</pre>
+<h4>markDirtyIfNull</h4>
+<pre class="methodSignature">protected&nbsp;void&nbsp;markDirtyIfNull()</pre>
 </li>
 </ul>
 <a id="createChangePackets(net.minecraft.scoreboard.ScoreboardObjective)">

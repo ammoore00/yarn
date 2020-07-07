@@ -176,8 +176,8 @@ extends <a href="AbstractTeam.html" title="class in net.minecraft.scoreboard">Ab
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="Scoreboard.html" title="class in net.minecraft.scoreboard">Scoreboard</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_2430">field_2430</a></span></code></th>
+<td class="colFirst"><code>private <a href="../util/Formatting.html" title="enum in net.minecraft.util">Formatting</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#currentFormatting">currentFormatting</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -196,38 +196,38 @@ extends <a href="AbstractTeam.html" title="class in net.minecraft.scoreboard">Ab
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="AbstractTeam.VisibilityRule.html" title="enum in net.minecraft.scoreboard">AbstractTeam.VisibilityRule</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_2438">field_2438</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="AbstractTeam.VisibilityRule.html" title="enum in net.minecraft.scoreboard">AbstractTeam.VisibilityRule</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_2439">field_2439</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="../util/Formatting.html" title="enum in net.minecraft.util">Formatting</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_2440">field_2440</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>private boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#friendlyFire">friendlyFire</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#name">name</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#playerList">playerList</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="Scoreboard.html" title="class in net.minecraft.scoreboard">Scoreboard</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#scoreboardInstance">scoreboardInstance</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#showFriendlyInvisibles">showFriendlyInvisibles</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="AbstractTeam.VisibilityRule.html" title="enum in net.minecraft.scoreboard">AbstractTeam.VisibilityRule</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visibilityRile">visibilityRile</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="AbstractTeam.VisibilityRule.html" title="enum in net.minecraft.scoreboard">AbstractTeam.VisibilityRule</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#visibilityRule">visibilityRule</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -249,7 +249,7 @@ extends <a href="AbstractTeam.html" title="class in net.minecraft.scoreboard">Ab
 </tr>
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.scoreboard.Scoreboard,java.lang.String)">Team</a></span>&#8203;(<a href="Scoreboard.html" title="class in net.minecraft.scoreboard">Scoreboard</a>&nbsp;scoreboard,
-    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</code></th>
+    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -276,33 +276,33 @@ extends <a href="AbstractTeam.html" title="class in net.minecraft.scoreboard">Ab
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../util/Formatting.html" title="enum in net.minecraft.util">Formatting</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFormatting()">getFormatting</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFriendlyFlagsBitwise()">getFriendlyFlagsBitwise</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getName()">getName</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="AbstractTeam.VisibilityRule.html" title="enum in net.minecraft.scoreboard">AbstractTeam.VisibilityRule</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getNameTagVisibilityRule()">getNameTagVisibilityRule</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPlayerList()">getPlayerList</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isFriendlyFireAllowed()">isFriendlyFireAllowed</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_2096(net.minecraft.util.Formatting)">method_2096</a></span>&#8203;(<a href="../util/Formatting.html" title="enum in net.minecraft.util">Formatting</a>&nbsp;formatting)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
@@ -332,28 +332,28 @@ extends <a href="AbstractTeam.html" title="class in net.minecraft.scoreboard">Ab
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code><a href="../util/Formatting.html" title="enum in net.minecraft.util">Formatting</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_2109()">method_2109</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_2171(java.lang.String)">method_2171</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setColor(java.lang.String)">setColor</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDeathMessageVisibilityRule(net.minecraft.scoreboard.AbstractTeam.VisibilityRule)">setDeathMessageVisibilityRule</a></span>&#8203;(<a href="AbstractTeam.VisibilityRule.html" title="enum in net.minecraft.scoreboard">AbstractTeam.VisibilityRule</a>&nbsp;rule)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDeathMessageVisibilityRule(net.minecraft.scoreboard.AbstractTeam.VisibilityRule)">setDeathMessageVisibilityRule</a></span>&#8203;(<a href="AbstractTeam.VisibilityRule.html" title="enum in net.minecraft.scoreboard">AbstractTeam.VisibilityRule</a>&nbsp;visibilityRule)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDisplayName(java.lang.String)">setDisplayName</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDisplayName(java.lang.String)">setDisplayName</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setFormatting(net.minecraft.util.Formatting)">setFormatting</a></span>&#8203;(<a href="../util/Formatting.html" title="enum in net.minecraft.util">Formatting</a>&nbsp;formatting)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i17" class="rowColor">
@@ -363,12 +363,12 @@ extends <a href="AbstractTeam.html" title="class in net.minecraft.scoreboard">Ab
 </tr>
 <tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setFriendlyFlagsBitwise(int)">setFriendlyFlagsBitwise</a></span>&#8203;(int&nbsp;int2)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setFriendlyFlagsBitwise(int)">setFriendlyFlagsBitwise</a></span>&#8203;(int&nbsp;bit)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setNameTagVisibilityRule(net.minecraft.scoreboard.AbstractTeam.VisibilityRule)">setNameTagVisibilityRule</a></span>&#8203;(<a href="AbstractTeam.VisibilityRule.html" title="enum in net.minecraft.scoreboard">AbstractTeam.VisibilityRule</a>&nbsp;visibilityRule)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setNameTagVisibilityRule(net.minecraft.scoreboard.AbstractTeam.VisibilityRule)">setNameTagVisibilityRule</a></span>&#8203;(<a href="AbstractTeam.VisibilityRule.html" title="enum in net.minecraft.scoreboard">AbstractTeam.VisibilityRule</a>&nbsp;rule)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i20" class="altColor">
@@ -412,13 +412,13 @@ extends <a href="AbstractTeam.html" title="class in net.minecraft.scoreboard">Ab
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="field_2430">
+<a id="scoreboardInstance">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_2430</h4>
-<pre>private final&nbsp;<a href="Scoreboard.html" title="class in net.minecraft.scoreboard">Scoreboard</a> field_2430</pre>
+<h4>scoreboardInstance</h4>
+<pre>private final&nbsp;<a href="Scoreboard.html" title="class in net.minecraft.scoreboard">Scoreboard</a> scoreboardInstance</pre>
 </li>
 </ul>
 <a id="name">
@@ -484,31 +484,31 @@ extends <a href="AbstractTeam.html" title="class in net.minecraft.scoreboard">Ab
 <pre>private&nbsp;boolean showFriendlyInvisibles</pre>
 </li>
 </ul>
-<a id="field_2438">
+<a id="visibilityRule">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_2438</h4>
-<pre>private&nbsp;<a href="AbstractTeam.VisibilityRule.html" title="enum in net.minecraft.scoreboard">AbstractTeam.VisibilityRule</a> field_2438</pre>
+<h4>visibilityRule</h4>
+<pre>private&nbsp;<a href="AbstractTeam.VisibilityRule.html" title="enum in net.minecraft.scoreboard">AbstractTeam.VisibilityRule</a> visibilityRule</pre>
 </li>
 </ul>
-<a id="field_2439">
+<a id="visibilityRile">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_2439</h4>
-<pre>private&nbsp;<a href="AbstractTeam.VisibilityRule.html" title="enum in net.minecraft.scoreboard">AbstractTeam.VisibilityRule</a> field_2439</pre>
+<h4>visibilityRile</h4>
+<pre>private&nbsp;<a href="AbstractTeam.VisibilityRule.html" title="enum in net.minecraft.scoreboard">AbstractTeam.VisibilityRule</a> visibilityRile</pre>
 </li>
 </ul>
-<a id="field_2440">
+<a id="currentFormatting">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_2440</h4>
-<pre>private&nbsp;<a href="../util/Formatting.html" title="enum in net.minecraft.util">Formatting</a> field_2440</pre>
+<h4>currentFormatting</h4>
+<pre>private&nbsp;<a href="../util/Formatting.html" title="enum in net.minecraft.util">Formatting</a> currentFormatting</pre>
 </li>
 </ul>
 </li>
@@ -528,7 +528,7 @@ extends <a href="AbstractTeam.html" title="class in net.minecraft.scoreboard">Ab
 <li class="blockList">
 <h4>Team</h4>
 <pre>public&nbsp;Team&#8203;(<a href="Scoreboard.html" title="class in net.minecraft.scoreboard">Scoreboard</a>&nbsp;scoreboard,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</pre>
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
 </li>
 </ul>
 </li>
@@ -720,7 +720,7 @@ extends <a href="AbstractTeam.html" title="class in net.minecraft.scoreboard">Ab
 <ul class="blockList">
 <li class="blockList">
 <h4>setNameTagVisibilityRule</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setNameTagVisibilityRule&#8203;(<a href="AbstractTeam.VisibilityRule.html" title="enum in net.minecraft.scoreboard">AbstractTeam.VisibilityRule</a>&nbsp;visibilityRule)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;setNameTagVisibilityRule&#8203;(<a href="AbstractTeam.VisibilityRule.html" title="enum in net.minecraft.scoreboard">AbstractTeam.VisibilityRule</a>&nbsp;rule)</pre>
 </li>
 </ul>
 <a id="setDeathMessageVisibilityRule(net.minecraft.scoreboard.AbstractTeam.VisibilityRule)">
@@ -729,7 +729,7 @@ extends <a href="AbstractTeam.html" title="class in net.minecraft.scoreboard">Ab
 <ul class="blockList">
 <li class="blockList">
 <h4>setDeathMessageVisibilityRule</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setDeathMessageVisibilityRule&#8203;(<a href="AbstractTeam.VisibilityRule.html" title="enum in net.minecraft.scoreboard">AbstractTeam.VisibilityRule</a>&nbsp;visibilityRule)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;setDeathMessageVisibilityRule&#8203;(<a href="AbstractTeam.VisibilityRule.html" title="enum in net.minecraft.scoreboard">AbstractTeam.VisibilityRule</a>&nbsp;rule)</pre>
 </li>
 </ul>
 <a id="getFriendlyFlagsBitwise()">
@@ -748,25 +748,25 @@ extends <a href="AbstractTeam.html" title="class in net.minecraft.scoreboard">Ab
 <li class="blockList">
 <h4>setFriendlyFlagsBitwise</h4>
 <pre class="methodSignature">@Environment(CLIENT)
-public&nbsp;void&nbsp;setFriendlyFlagsBitwise&#8203;(int&nbsp;int2)</pre>
+public&nbsp;void&nbsp;setFriendlyFlagsBitwise&#8203;(int&nbsp;bit)</pre>
 </li>
 </ul>
-<a id="method_2096(net.minecraft.util.Formatting)">
+<a id="setFormatting(net.minecraft.util.Formatting)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_2096</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_2096&#8203;(<a href="../util/Formatting.html" title="enum in net.minecraft.util">Formatting</a>&nbsp;formatting)</pre>
+<h4>setFormatting</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setFormatting&#8203;(<a href="../util/Formatting.html" title="enum in net.minecraft.util">Formatting</a>&nbsp;formatting)</pre>
 </li>
 </ul>
-<a id="method_2109()">
+<a id="getFormatting()">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_2109</h4>
-<pre class="methodSignature">public&nbsp;<a href="../util/Formatting.html" title="enum in net.minecraft.util">Formatting</a>&nbsp;method_2109()</pre>
+<h4>getFormatting</h4>
+<pre class="methodSignature">public&nbsp;<a href="../util/Formatting.html" title="enum in net.minecraft.util">Formatting</a>&nbsp;getFormatting()</pre>
 </li>
 </ul>
 </li>
