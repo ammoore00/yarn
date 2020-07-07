@@ -654,8 +654,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i25" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gl20GetAttachShader(int,int)">gl20GetAttachShader</a></span>&#8203;(int&nbsp;i,
-                   int&nbsp;j)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gl20GetAttachShader(int,int)">gl20GetAttachShader</a></span>&#8203;(int&nbsp;program,
+                   int&nbsp;shader)</code></th>
 <td class="colLast">
 <div class="block">Attaches a shader object to a program object</div>
 </td>
@@ -670,40 +670,40 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i27" class="rowColor">
 <td class="colFirst"><code>static int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gl20GetProgrami(int,int)">gl20GetProgrami</a></span>&#8203;(int&nbsp;i,
-               int&nbsp;j)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gl20GetProgrami(int,int)">gl20GetProgrami</a></span>&#8203;(int&nbsp;program,
+               int&nbsp;param)</code></th>
 <td class="colLast">
 <div class="block">Returns a parameter from a program object</div>
 </td>
 </tr>
 <tr id="i28" class="altColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gl20GetProgramInfoLog(int,int)">gl20GetProgramInfoLog</a></span>&#8203;(int&nbsp;i,
-                     int&nbsp;j)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gl20GetProgramInfoLog(int,int)">gl20GetProgramInfoLog</a></span>&#8203;(int&nbsp;program,
+                     int&nbsp;maxLength)</code></th>
 <td class="colLast">
 <div class="block">Returns the information log for a program object</div>
 </td>
 </tr>
 <tr id="i29" class="rowColor">
 <td class="colFirst"><code>static int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gl20GetShaderi(int,int)">gl20GetShaderi</a></span>&#8203;(int&nbsp;i,
-              int&nbsp;j)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gl20GetShaderi(int,int)">gl20GetShaderi</a></span>&#8203;(int&nbsp;shader,
+              int&nbsp;param)</code></th>
 <td class="colLast">
 <div class="block">Returns a parameter from a shader object</div>
 </td>
 </tr>
 <tr id="i30" class="altColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gl20GetShaderInfoLog(int,int)">gl20GetShaderInfoLog</a></span>&#8203;(int&nbsp;i,
-                    int&nbsp;j)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gl20GetShaderInfoLog(int,int)">gl20GetShaderInfoLog</a></span>&#8203;(int&nbsp;shader,
+                    int&nbsp;maxLength)</code></th>
 <td class="colLast">
 <div class="block">Returns the information log for a shader object</div>
 </td>
 </tr>
 <tr id="i31" class="rowColor">
 <td class="colFirst"><code>static int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gl20GetUniformLocation(int,java.lang.CharSequence)">gl20GetUniformLocation</a></span>&#8203;(int&nbsp;loc,
-                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang" class="externalLink">CharSequence</a>&nbsp;sequence)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gl20GetUniformLocation(int,java.lang.CharSequence)">gl20GetUniformLocation</a></span>&#8203;(int&nbsp;program,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang" class="externalLink">CharSequence</a>&nbsp;name)</code></th>
 <td class="colLast">
 <div class="block">Returns the location of a uniform variable</div>
 </td>
@@ -718,79 +718,79 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <tr id="i33" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gl20ShaderSource(int,java.nio.ByteBuffer)">gl20ShaderSource</a></span>&#8203;(int&nbsp;shader,
-                <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/ByteBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">ByteBuffer</a>&nbsp;buf)</code></th>
+                <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/ByteBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">ByteBuffer</a>&nbsp;count)</code></th>
 <td class="colLast">
 <div class="block">Replaces the source code in a shader object</div>
 </td>
 </tr>
 <tr id="i34" class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gl20Uniform(int,java.nio.FloatBuffer)">gl20Uniform</a></span>&#8203;(int&nbsp;uniform,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/FloatBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">FloatBuffer</a>&nbsp;buf)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gl20Uniform(int,java.nio.FloatBuffer)">gl20Uniform</a></span>&#8203;(int&nbsp;loc,
+           <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/FloatBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">FloatBuffer</a>&nbsp;v)</code></th>
 <td class="colLast">
 <div class="block">Specifies the value of a uniform variable for the current program object</div>
 </td>
 </tr>
 <tr id="i35" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gl20Uniform1(int,int)">gl20Uniform1</a></span>&#8203;(int&nbsp;uniform,
-            int&nbsp;buf)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gl20Uniform1(int,int)">gl20Uniform1</a></span>&#8203;(int&nbsp;loc,
+            int&nbsp;v)</code></th>
 <td class="colLast">
 <div class="block">Specifies the value of a uniform variable for the current program object</div>
 </td>
 </tr>
 <tr id="i36" class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gl20Uniform1(int,java.nio.IntBuffer)">gl20Uniform1</a></span>&#8203;(int&nbsp;uniform,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/IntBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">IntBuffer</a>&nbsp;buf)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gl20Uniform1(int,java.nio.IntBuffer)">gl20Uniform1</a></span>&#8203;(int&nbsp;loc,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/IntBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">IntBuffer</a>&nbsp;v)</code></th>
 <td class="colLast">
 <div class="block">Specifies the value of a uniform variable for the current program object</div>
 </td>
 </tr>
 <tr id="i37" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gl20Uniform2(int,java.nio.FloatBuffer)">gl20Uniform2</a></span>&#8203;(int&nbsp;uniform,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/FloatBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">FloatBuffer</a>&nbsp;buf)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gl20Uniform2(int,java.nio.FloatBuffer)">gl20Uniform2</a></span>&#8203;(int&nbsp;loc,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/FloatBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">FloatBuffer</a>&nbsp;v)</code></th>
 <td class="colLast">
 <div class="block">Specifies the value of a uniform variable for the current program object</div>
 </td>
 </tr>
 <tr id="i38" class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gl20Uniform2(int,java.nio.IntBuffer)">gl20Uniform2</a></span>&#8203;(int&nbsp;uniform,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/IntBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">IntBuffer</a>&nbsp;buf)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gl20Uniform2(int,java.nio.IntBuffer)">gl20Uniform2</a></span>&#8203;(int&nbsp;loc,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/IntBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">IntBuffer</a>&nbsp;v)</code></th>
 <td class="colLast">
 <div class="block">Specifies the value of a uniform variable for the current program object</div>
 </td>
 </tr>
 <tr id="i39" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gl20Uniform3(int,java.nio.FloatBuffer)">gl20Uniform3</a></span>&#8203;(int&nbsp;uniform,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/FloatBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">FloatBuffer</a>&nbsp;buf)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gl20Uniform3(int,java.nio.FloatBuffer)">gl20Uniform3</a></span>&#8203;(int&nbsp;loc,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/FloatBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">FloatBuffer</a>&nbsp;v)</code></th>
 <td class="colLast">
 <div class="block">Specifies the value of a uniform variable for the current program object</div>
 </td>
 </tr>
 <tr id="i40" class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gl20Uniform3(int,java.nio.IntBuffer)">gl20Uniform3</a></span>&#8203;(int&nbsp;uniform,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/IntBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">IntBuffer</a>&nbsp;buf)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gl20Uniform3(int,java.nio.IntBuffer)">gl20Uniform3</a></span>&#8203;(int&nbsp;loc,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/IntBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">IntBuffer</a>&nbsp;v)</code></th>
 <td class="colLast">
 <div class="block">Specifies the value of a uniform variable for the current program object</div>
 </td>
 </tr>
 <tr id="i41" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gl20Uniform4(int,java.nio.FloatBuffer)">gl20Uniform4</a></span>&#8203;(int&nbsp;uniform,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/FloatBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">FloatBuffer</a>&nbsp;buf)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gl20Uniform4(int,java.nio.FloatBuffer)">gl20Uniform4</a></span>&#8203;(int&nbsp;loc,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/FloatBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">FloatBuffer</a>&nbsp;v)</code></th>
 <td class="colLast">
 <div class="block">Specifies the value of a uniform variable for the current program object</div>
 </td>
 </tr>
 <tr id="i42" class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gl20Uniform4(int,java.nio.IntBuffer)">gl20Uniform4</a></span>&#8203;(int&nbsp;uniform,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/IntBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">IntBuffer</a>&nbsp;buf)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gl20Uniform4(int,java.nio.IntBuffer)">gl20Uniform4</a></span>&#8203;(int&nbsp;loc,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/IntBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">IntBuffer</a>&nbsp;v)</code></th>
 <td class="colLast">
 <div class="block">Specifies the value of a uniform variable for the current program object</div>
 </td>
@@ -1425,8 +1425,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>gl20GetProgrami</h4>
-<pre class="methodSignature">public static&nbsp;int&nbsp;gl20GetProgrami&#8203;(int&nbsp;i,
-                                  int&nbsp;j)</pre>
+<pre class="methodSignature">public static&nbsp;int&nbsp;gl20GetProgrami&#8203;(int&nbsp;program,
+                                  int&nbsp;param)</pre>
 <div class="block">Returns a parameter from a program object</div>
 </li>
 </ul>
@@ -1436,8 +1436,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>gl20GetAttachShader</h4>
-<pre class="methodSignature">public static&nbsp;void&nbsp;gl20GetAttachShader&#8203;(int&nbsp;i,
-                                       int&nbsp;j)</pre>
+<pre class="methodSignature">public static&nbsp;void&nbsp;gl20GetAttachShader&#8203;(int&nbsp;program,
+                                       int&nbsp;shader)</pre>
 <div class="block">Attaches a shader object to a program object</div>
 </li>
 </ul>
@@ -1468,7 +1468,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>gl20ShaderSource</h4>
 <pre class="methodSignature">public static&nbsp;void&nbsp;gl20ShaderSource&#8203;(int&nbsp;shader,
-                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/ByteBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">ByteBuffer</a>&nbsp;buf)</pre>
+                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/ByteBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">ByteBuffer</a>&nbsp;count)</pre>
 <div class="block">Replaces the source code in a shader object</div>
 </li>
 </ul>
@@ -1488,8 +1488,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>gl20GetShaderi</h4>
-<pre class="methodSignature">public static&nbsp;int&nbsp;gl20GetShaderi&#8203;(int&nbsp;i,
-                                 int&nbsp;j)</pre>
+<pre class="methodSignature">public static&nbsp;int&nbsp;gl20GetShaderi&#8203;(int&nbsp;shader,
+                                 int&nbsp;param)</pre>
 <div class="block">Returns a parameter from a shader object</div>
 </li>
 </ul>
@@ -1499,8 +1499,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>gl20GetShaderInfoLog</h4>
-<pre class="methodSignature">public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;gl20GetShaderInfoLog&#8203;(int&nbsp;i,
-                                          int&nbsp;j)</pre>
+<pre class="methodSignature">public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;gl20GetShaderInfoLog&#8203;(int&nbsp;shader,
+                                          int&nbsp;maxLength)</pre>
 <div class="block">Returns the information log for a shader object</div>
 </li>
 </ul>
@@ -1510,8 +1510,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>gl20GetProgramInfoLog</h4>
-<pre class="methodSignature">public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;gl20GetProgramInfoLog&#8203;(int&nbsp;i,
-                                           int&nbsp;j)</pre>
+<pre class="methodSignature">public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;gl20GetProgramInfoLog&#8203;(int&nbsp;program,
+                                           int&nbsp;maxLength)</pre>
 <div class="block">Returns the information log for a program object</div>
 </li>
 </ul>
@@ -1561,8 +1561,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>gl20GetUniformLocation</h4>
-<pre class="methodSignature">public static&nbsp;int&nbsp;gl20GetUniformLocation&#8203;(int&nbsp;loc,
-                                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang" class="externalLink">CharSequence</a>&nbsp;sequence)</pre>
+<pre class="methodSignature">public static&nbsp;int&nbsp;gl20GetUniformLocation&#8203;(int&nbsp;program,
+                                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang" class="externalLink">CharSequence</a>&nbsp;name)</pre>
 <div class="block">Returns the location of a uniform variable</div>
 </li>
 </ul>
@@ -1572,8 +1572,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>gl20Uniform1</h4>
-<pre class="methodSignature">public static&nbsp;void&nbsp;gl20Uniform1&#8203;(int&nbsp;uniform,
-                                <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/IntBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">IntBuffer</a>&nbsp;buf)</pre>
+<pre class="methodSignature">public static&nbsp;void&nbsp;gl20Uniform1&#8203;(int&nbsp;loc,
+                                <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/IntBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">IntBuffer</a>&nbsp;v)</pre>
 <div class="block">Specifies the value of a uniform variable for the current program object</div>
 </li>
 </ul>
@@ -1583,8 +1583,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>gl20Uniform1</h4>
-<pre class="methodSignature">public static&nbsp;void&nbsp;gl20Uniform1&#8203;(int&nbsp;uniform,
-                                int&nbsp;buf)</pre>
+<pre class="methodSignature">public static&nbsp;void&nbsp;gl20Uniform1&#8203;(int&nbsp;loc,
+                                int&nbsp;v)</pre>
 <div class="block">Specifies the value of a uniform variable for the current program object</div>
 </li>
 </ul>
@@ -1594,8 +1594,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>gl20Uniform</h4>
-<pre class="methodSignature">public static&nbsp;void&nbsp;gl20Uniform&#8203;(int&nbsp;uniform,
-                               <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/FloatBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">FloatBuffer</a>&nbsp;buf)</pre>
+<pre class="methodSignature">public static&nbsp;void&nbsp;gl20Uniform&#8203;(int&nbsp;loc,
+                               <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/FloatBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">FloatBuffer</a>&nbsp;v)</pre>
 <div class="block">Specifies the value of a uniform variable for the current program object</div>
 </li>
 </ul>
@@ -1605,8 +1605,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>gl20Uniform2</h4>
-<pre class="methodSignature">public static&nbsp;void&nbsp;gl20Uniform2&#8203;(int&nbsp;uniform,
-                                <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/IntBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">IntBuffer</a>&nbsp;buf)</pre>
+<pre class="methodSignature">public static&nbsp;void&nbsp;gl20Uniform2&#8203;(int&nbsp;loc,
+                                <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/IntBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">IntBuffer</a>&nbsp;v)</pre>
 <div class="block">Specifies the value of a uniform variable for the current program object</div>
 </li>
 </ul>
@@ -1616,8 +1616,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>gl20Uniform2</h4>
-<pre class="methodSignature">public static&nbsp;void&nbsp;gl20Uniform2&#8203;(int&nbsp;uniform,
-                                <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/FloatBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">FloatBuffer</a>&nbsp;buf)</pre>
+<pre class="methodSignature">public static&nbsp;void&nbsp;gl20Uniform2&#8203;(int&nbsp;loc,
+                                <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/FloatBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">FloatBuffer</a>&nbsp;v)</pre>
 <div class="block">Specifies the value of a uniform variable for the current program object</div>
 </li>
 </ul>
@@ -1627,8 +1627,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>gl20Uniform3</h4>
-<pre class="methodSignature">public static&nbsp;void&nbsp;gl20Uniform3&#8203;(int&nbsp;uniform,
-                                <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/IntBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">IntBuffer</a>&nbsp;buf)</pre>
+<pre class="methodSignature">public static&nbsp;void&nbsp;gl20Uniform3&#8203;(int&nbsp;loc,
+                                <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/IntBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">IntBuffer</a>&nbsp;v)</pre>
 <div class="block">Specifies the value of a uniform variable for the current program object</div>
 </li>
 </ul>
@@ -1638,8 +1638,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>gl20Uniform3</h4>
-<pre class="methodSignature">public static&nbsp;void&nbsp;gl20Uniform3&#8203;(int&nbsp;uniform,
-                                <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/FloatBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">FloatBuffer</a>&nbsp;buf)</pre>
+<pre class="methodSignature">public static&nbsp;void&nbsp;gl20Uniform3&#8203;(int&nbsp;loc,
+                                <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/FloatBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">FloatBuffer</a>&nbsp;v)</pre>
 <div class="block">Specifies the value of a uniform variable for the current program object</div>
 </li>
 </ul>
@@ -1649,8 +1649,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>gl20Uniform4</h4>
-<pre class="methodSignature">public static&nbsp;void&nbsp;gl20Uniform4&#8203;(int&nbsp;uniform,
-                                <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/IntBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">IntBuffer</a>&nbsp;buf)</pre>
+<pre class="methodSignature">public static&nbsp;void&nbsp;gl20Uniform4&#8203;(int&nbsp;loc,
+                                <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/IntBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">IntBuffer</a>&nbsp;v)</pre>
 <div class="block">Specifies the value of a uniform variable for the current program object</div>
 </li>
 </ul>
@@ -1660,8 +1660,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>gl20Uniform4</h4>
-<pre class="methodSignature">public static&nbsp;void&nbsp;gl20Uniform4&#8203;(int&nbsp;uniform,
-                                <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/FloatBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">FloatBuffer</a>&nbsp;buf)</pre>
+<pre class="methodSignature">public static&nbsp;void&nbsp;gl20Uniform4&#8203;(int&nbsp;loc,
+                                <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/FloatBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">FloatBuffer</a>&nbsp;v)</pre>
 <div class="block">Specifies the value of a uniform variable for the current program object</div>
 </li>
 </ul>
