@@ -132,7 +132,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">net.minecraft.client.gui.screen.ingame.ContainerScreen</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="AbstractInventoryScreen.html" title="class in net.minecraft.client.gui.screen.ingame">net.minecraft.client.gui.screen.ingame.AbstractInventoryScreen</a></li>
+<li><a href="InventoryScreen.html" title="class in net.minecraft.client.gui.screen.ingame">net.minecraft.client.gui.screen.ingame.InventoryScreen</a></li>
 <li>
 <ul class="inheritance">
 <li>net.minecraft.client.gui.screen.ingame.CreativeInventoryScreen</li>
@@ -157,7 +157,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>@Environment(CLIENT)
 public class <span class="typeNameLabel">CreativeInventoryScreen</span>
-extends <a href="AbstractInventoryScreen.html" title="class in net.minecraft.client.gui.screen.ingame">AbstractInventoryScreen</a></pre>
+extends <a href="InventoryScreen.html" title="class in net.minecraft.client.gui.screen.ingame">InventoryScreen</a></pre>
 </li>
 </ul>
 </div>
@@ -207,48 +207,48 @@ extends <a href="AbstractInventoryScreen.html" title="class in net.minecraft.cli
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../widget/TextFieldWidget.html" title="class in net.minecraft.client.gui.widget">TextFieldWidget</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3462">field_3462</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>private <a href="../../../../container/Slot.html" title="class in net.minecraft.container">Slot</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3464">field_3464</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="CreativeInventoryListener.html" title="class in net.minecraft.client.gui.screen.ingame">CreativeInventoryListener</a></code></td>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="../../CreativeInventoryListener.html" title="class in net.minecraft.client.gui">CreativeInventoryListener</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3466">field_3466</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private static <a href="../../../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3467">field_3467</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private static <a href="../../../../inventory/BasicInventory.html" title="class in net.minecraft.inventory">BasicInventory</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3468">field_3468</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3471">field_3471</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3472">field_3472</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#scrolling">scrolling</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private float</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#scrollPosition">scrollPosition</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="../../widget/TextFieldWidget.html" title="class in net.minecraft.client.gui.widget">TextFieldWidget</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#searchField">searchField</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -544,13 +544,13 @@ extends <a href="AbstractInventoryScreen.html" title="class in net.minecraft.cli
 <pre>private&nbsp;boolean field_3472</pre>
 </li>
 </ul>
-<a id="field_3462">
+<a id="searchField">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_3462</h4>
-<pre>private&nbsp;<a href="../../widget/TextFieldWidget.html" title="class in net.minecraft.client.gui.widget">TextFieldWidget</a> field_3462</pre>
+<h4>searchField</h4>
+<pre>private&nbsp;<a href="../../widget/TextFieldWidget.html" title="class in net.minecraft.client.gui.widget">TextFieldWidget</a> searchField</pre>
 </li>
 </ul>
 <a id="slots">
@@ -586,7 +586,7 @@ extends <a href="AbstractInventoryScreen.html" title="class in net.minecraft.cli
 <ul class="blockListLast">
 <li class="blockList">
 <h4>field_3466</h4>
-<pre>private&nbsp;<a href="CreativeInventoryListener.html" title="class in net.minecraft.client.gui.screen.ingame">CreativeInventoryListener</a> field_3466</pre>
+<pre>private&nbsp;<a href="../../CreativeInventoryListener.html" title="class in net.minecraft.client.gui">CreativeInventoryListener</a> field_3466</pre>
 </li>
 </ul>
 </li>
@@ -656,7 +656,7 @@ extends <a href="AbstractInventoryScreen.html" title="class in net.minecraft.cli
 <pre class="methodSignature">protected&nbsp;void&nbsp;applyStatusEffectOffset()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="AbstractInventoryScreen.html#applyStatusEffectOffset()">applyStatusEffectOffset</a></code>&nbsp;in class&nbsp;<code><a href="AbstractInventoryScreen.html" title="class in net.minecraft.client.gui.screen.ingame">AbstractInventoryScreen</a></code></dd>
+<dd><code><a href="InventoryScreen.html#applyStatusEffectOffset()">applyStatusEffectOffset</a></code>&nbsp;in class&nbsp;<code><a href="InventoryScreen.html" title="class in net.minecraft.client.gui.screen.ingame">InventoryScreen</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -669,7 +669,7 @@ extends <a href="AbstractInventoryScreen.html" title="class in net.minecraft.cli
 <pre class="methodSignature">public&nbsp;void&nbsp;init()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="AbstractInventoryScreen.html#init()">init</a></code>&nbsp;in class&nbsp;<code><a href="AbstractInventoryScreen.html" title="class in net.minecraft.client.gui.screen.ingame">AbstractInventoryScreen</a></code></dd>
+<dd><code><a href="InventoryScreen.html#init()">init</a></code>&nbsp;in class&nbsp;<code><a href="InventoryScreen.html" title="class in net.minecraft.client.gui.screen.ingame">InventoryScreen</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -795,7 +795,7 @@ extends <a href="AbstractInventoryScreen.html" title="class in net.minecraft.cli
                    float&nbsp;delta)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="AbstractInventoryScreen.html#render(int,int,float)">render</a></code>&nbsp;in class&nbsp;<code><a href="AbstractInventoryScreen.html" title="class in net.minecraft.client.gui.screen.ingame">AbstractInventoryScreen</a></code></dd>
+<dd><code><a href="InventoryScreen.html#render(int,int,float)">render</a></code>&nbsp;in class&nbsp;<code><a href="InventoryScreen.html" title="class in net.minecraft.client.gui.screen.ingame">InventoryScreen</a></code></dd>
 </dl>
 </li>
 </ul>

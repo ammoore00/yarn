@@ -169,43 +169,43 @@ extends <a href="Screen.html" title="class in net.minecraft.client.gui.screen">S
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j" class="externalLink">Logger</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3448">field_3448</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="../widget/TextFieldWidget.html" title="class in net.minecraft.client.gui.widget">TextFieldWidget</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3449">field_3449</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="../widget/TextFieldWidget.html" title="class in net.minecraft.client.gui.widget">TextFieldWidget</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3450">field_3450</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>private <a href="../../../world/CommandBlockExecutor.html" title="class in net.minecraft.world">CommandBlockExecutor</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3451">field_3451</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#executor">executor</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private <a href="../widget/ButtonWidget.html" title="class in net.minecraft.client.gui.widget">ButtonWidget</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3452">field_3452</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private <a href="../widget/ButtonWidget.html" title="class in net.minecraft.client.gui.widget">ButtonWidget</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3453">field_3453</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private <a href="../widget/ButtonWidget.html" title="class in net.minecraft.client.gui.widget">ButtonWidget</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3454">field_3454</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3455">field_3455</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="../widget/TextFieldWidget.html" title="class in net.minecraft.client.gui.widget">TextFieldWidget</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#input">input</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j" class="externalLink">Logger</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#LOGGER">LOGGER</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="../widget/TextFieldWidget.html" title="class in net.minecraft.client.gui.widget">TextFieldWidget</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#output">output</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -240,7 +240,7 @@ extends <a href="Screen.html" title="class in net.minecraft.client.gui.screen">S
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.world.CommandBlockExecutor)">CommandBlockScreen</a></span>&#8203;(<a href="../../../world/CommandBlockExecutor.html" title="class in net.minecraft.world">CommandBlockExecutor</a>&nbsp;commandBlockExecutor)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.world.CommandBlockExecutor)">CommandBlockScreen</a></span>&#8203;(<a href="../../../world/CommandBlockExecutor.html" title="class in net.minecraft.world">CommandBlockExecutor</a>&nbsp;executor)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -344,40 +344,40 @@ extends <a href="Screen.html" title="class in net.minecraft.client.gui.screen">S
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="field_3448">
+<a id="LOGGER">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_3448</h4>
-<pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j" class="externalLink">Logger</a> field_3448</pre>
+<h4>LOGGER</h4>
+<pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j" class="externalLink">Logger</a> LOGGER</pre>
 </li>
 </ul>
-<a id="field_3449">
+<a id="input">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_3449</h4>
-<pre>private&nbsp;<a href="../widget/TextFieldWidget.html" title="class in net.minecraft.client.gui.widget">TextFieldWidget</a> field_3449</pre>
+<h4>input</h4>
+<pre>private&nbsp;<a href="../widget/TextFieldWidget.html" title="class in net.minecraft.client.gui.widget">TextFieldWidget</a> input</pre>
 </li>
 </ul>
-<a id="field_3450">
+<a id="output">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_3450</h4>
-<pre>private&nbsp;<a href="../widget/TextFieldWidget.html" title="class in net.minecraft.client.gui.widget">TextFieldWidget</a> field_3450</pre>
+<h4>output</h4>
+<pre>private&nbsp;<a href="../widget/TextFieldWidget.html" title="class in net.minecraft.client.gui.widget">TextFieldWidget</a> output</pre>
 </li>
 </ul>
-<a id="field_3451">
+<a id="executor">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_3451</h4>
-<pre>private final&nbsp;<a href="../../../world/CommandBlockExecutor.html" title="class in net.minecraft.world">CommandBlockExecutor</a> field_3451</pre>
+<h4>executor</h4>
+<pre>private final&nbsp;<a href="../../../world/CommandBlockExecutor.html" title="class in net.minecraft.world">CommandBlockExecutor</a> executor</pre>
 </li>
 </ul>
 <a id="field_3452">
@@ -432,7 +432,7 @@ extends <a href="Screen.html" title="class in net.minecraft.client.gui.screen">S
 <ul class="blockListLast">
 <li class="blockList">
 <h4>CommandBlockScreen</h4>
-<pre>public&nbsp;CommandBlockScreen&#8203;(<a href="../../../world/CommandBlockExecutor.html" title="class in net.minecraft.world">CommandBlockExecutor</a>&nbsp;commandBlockExecutor)</pre>
+<pre>public&nbsp;CommandBlockScreen&#8203;(<a href="../../../world/CommandBlockExecutor.html" title="class in net.minecraft.world">CommandBlockExecutor</a>&nbsp;executor)</pre>
 </li>
 </ul>
 </li>
