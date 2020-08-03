@@ -165,17 +165,7 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6320">field_6320</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6321">field_6321</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6324">field_6324</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#displayName">displayName</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -196,6 +186,16 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <tr class="rowColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#playerList">playerList</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#playerPrefix">playerPrefix</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#teamFormatting">teamFormatting</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -226,13 +226,13 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 </tr>
 <tr class="rowColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.scoreboard.Team,int)">TeamS2CPacket</a></span>&#8203;(<a href="../../../../scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a>&nbsp;team,
-             int&nbsp;int2)</code></th>
+             int&nbsp;mode)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.scoreboard.Team,java.util.Collection,int)">TeamS2CPacket</a></span>&#8203;(<a href="../../../../scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a>&nbsp;team,
              <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;collection,
-             int&nbsp;int2)</code></th>
+             int&nbsp;mode)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -346,22 +346,22 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> teamName</pre>
 </li>
 </ul>
-<a id="field_6320">
+<a id="displayName">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6320</h4>
-<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> field_6320</pre>
+<h4>displayName</h4>
+<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> displayName</pre>
 </li>
 </ul>
-<a id="field_6321">
+<a id="playerPrefix">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6321</h4>
-<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> field_6321</pre>
+<h4>playerPrefix</h4>
+<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> playerPrefix</pre>
 </li>
 </ul>
 <a id="nameTagVisibilityRule">
@@ -382,13 +382,13 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> collisionRule</pre>
 </li>
 </ul>
-<a id="field_6324">
+<a id="teamFormatting">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6324</h4>
-<pre>private&nbsp;int field_6324</pre>
+<h4>teamFormatting</h4>
+<pre>private&nbsp;int teamFormatting</pre>
 </li>
 </ul>
 <a id="playerList">
@@ -444,7 +444,7 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <li class="blockList">
 <h4>TeamS2CPacket</h4>
 <pre>public&nbsp;TeamS2CPacket&#8203;(<a href="../../../../scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a>&nbsp;team,
-                     int&nbsp;int2)</pre>
+                     int&nbsp;mode)</pre>
 </li>
 </ul>
 <a id="&lt;init&gt;(net.minecraft.scoreboard.Team,java.util.Collection,int)">
@@ -455,7 +455,7 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <h4>TeamS2CPacket</h4>
 <pre>public&nbsp;TeamS2CPacket&#8203;(<a href="../../../../scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a>&nbsp;team,
                      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;collection,
-                     int&nbsp;int2)</pre>
+                     int&nbsp;mode)</pre>
 </li>
 </ul>
 </li>

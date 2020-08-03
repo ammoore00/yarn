@@ -164,33 +164,33 @@ extends <a href="EntityRenderer.html" title="class in net.minecraft.client.rende
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/FloatBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">FloatBuffer</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#buffer">buffer</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="feature/FeatureRenderer.html" title="interface in net.minecraft.client.render.entity.feature">FeatureRenderer</a>&lt;<a href="LivingEntityRenderer.html" title="type parameter in LivingEntityRenderer">T</a>&gt;&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#features">features</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private static <a href="../../texture/NativeImageBackedTexture.html" title="class in net.minecraft.client.texture">NativeImageBackedTexture</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_4895">field_4895</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/FloatBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">FloatBuffer</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_4897">field_4897</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_4899">field_4899</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j" class="externalLink">Logger</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#LOGGER">LOGGER</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected <a href="model/EntityModel.html" title="class in net.minecraft.client.render.entity.model">EntityModel</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#model">model</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private static <a href="../../texture/NativeImageBackedTexture.html" title="class in net.minecraft.client.texture">NativeImageBackedTexture</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TEX">TEX</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -242,13 +242,23 @@ extends <a href="EntityRenderer.html" title="class in net.minecraft.client.rende
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>protected &lt;V extends <a href="../../../entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>,&#8203;U extends <a href="feature/FeatureRenderer.html" title="interface in net.minecraft.client.render.entity.feature">FeatureRenderer</a>&lt;V&gt;&gt;<br>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addFeature(U)">addFeature</a></span>&#8203;(U&nbsp;u)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="model/EntityModel.html" title="class in net.minecraft.client.render.entity.model">EntityModel</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getModel()">getModel</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasLabel(T)">hasLabel</a></span>&#8203;(<a href="LivingEntityRenderer.html" title="type parameter in LivingEntityRenderer">T</a>&nbsp;t)</code></th>
 <td class="colLast">
 <div class="block">Determines whether the passed entity should render with a nameplate above its head.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_3908(T,double,double,double)">method_3908</a></span>&#8203;(<a href="LivingEntityRenderer.html" title="type parameter in LivingEntityRenderer">T</a>&nbsp;t,
            double&nbsp;double2,
@@ -256,7 +266,7 @@ extends <a href="EntityRenderer.html" title="class in net.minecraft.client.rende
            double&nbsp;double4)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_3910(T,double,double,double,float,float)">method_3910</a></span>&#8203;(<a href="LivingEntityRenderer.html" title="type parameter in LivingEntityRenderer">T</a>&nbsp;t,
            double&nbsp;double2,
@@ -266,21 +276,11 @@ extends <a href="EntityRenderer.html" title="class in net.minecraft.client.rende
            float&nbsp;float3)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_3999()">method_3999</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>protected float</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4000(float,float,float)">method_4000</a></span>&#8203;(float&nbsp;float2,
            float&nbsp;float3,
            float&nbsp;float4)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>protected &lt;V extends <a href="../../../entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>,&#8203;U extends <a href="feature/FeatureRenderer.html" title="interface in net.minecraft.client.render.entity.feature">FeatureRenderer</a>&lt;V&gt;&gt;<br>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4001(U)">method_4001</a></span>&#8203;(U&nbsp;u)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
@@ -292,27 +292,21 @@ extends <a href="EntityRenderer.html" title="class in net.minecraft.client.rende
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>protected void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4005(T,float)">method_4005</a></span>&#8203;(<a href="LivingEntityRenderer.html" title="type parameter in LivingEntityRenderer">T</a>&nbsp;t,
-           float&nbsp;float2)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i8" class="altColor">
 <td class="colFirst"><code>protected int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4006(T,float,float)">method_4006</a></span>&#8203;(<a href="LivingEntityRenderer.html" title="type parameter in LivingEntityRenderer">T</a>&nbsp;t,
            float&nbsp;float2,
            float&nbsp;float3)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4007(T,float,float,float)">method_4007</a></span>&#8203;(<a href="LivingEntityRenderer.html" title="type parameter in LivingEntityRenderer">T</a>&nbsp;t,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4007(T,float,float,float)">method_4007</a></span>&#8203;(<a href="LivingEntityRenderer.html" title="type parameter in LivingEntityRenderer">T</a>&nbsp;squid,
            float&nbsp;float2,
            float&nbsp;float3,
            float&nbsp;float4)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4008(T,float,float,float,float,float,float)">method_4008</a></span>&#8203;(<a href="LivingEntityRenderer.html" title="type parameter in LivingEntityRenderer">T</a>&nbsp;t,
            float&nbsp;float2,
@@ -323,67 +317,62 @@ extends <a href="EntityRenderer.html" title="class in net.minecraft.client.rende
            float&nbsp;float7)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4010(T,float,boolean)">method_4010</a></span>&#8203;(<a href="LivingEntityRenderer.html" title="type parameter in LivingEntityRenderer">T</a>&nbsp;t,
            float&nbsp;float2,
            boolean&nbsp;bool)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4011(boolean)">method_4011</a></span>&#8203;(boolean&nbsp;bool)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>protected float</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4014(T)">method_4014</a></span>&#8203;(<a href="LivingEntityRenderer.html" title="type parameter in LivingEntityRenderer">T</a>&nbsp;entity)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code><a href="model/EntityModel.html" title="class in net.minecraft.client.render.entity.model">EntityModel</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4012()">method_4012</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i14" class="altColor">
-<td class="colFirst"><code>protected &lt;V extends <a href="../../../entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>,&#8203;U extends <a href="feature/FeatureRenderer.html" title="interface in net.minecraft.client.render.entity.feature">FeatureRenderer</a>&lt;V&gt;&gt;<br>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4013(U)">method_4013</a></span>&#8203;(U&nbsp;u)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i15" class="rowColor">
 <td class="colFirst"><code>protected float</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4014(T)">method_4014</a></span>&#8203;(<a href="LivingEntityRenderer.html" title="type parameter in LivingEntityRenderer">T</a>&nbsp;t)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i16" class="altColor">
-<td class="colFirst"><code>protected float</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4016(T,float)">method_4016</a></span>&#8203;(<a href="LivingEntityRenderer.html" title="type parameter in LivingEntityRenderer">T</a>&nbsp;t,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4016(T,float)">method_4016</a></span>&#8203;(<a href="LivingEntityRenderer.html" title="type parameter in LivingEntityRenderer">T</a>&nbsp;entity,
            float&nbsp;float2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4017(T)">method_4017</a></span>&#8203;(<a href="LivingEntityRenderer.html" title="type parameter in LivingEntityRenderer">T</a>&nbsp;t)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4018(T,float)">method_4018</a></span>&#8203;(<a href="LivingEntityRenderer.html" title="type parameter in LivingEntityRenderer">T</a>&nbsp;t,
            float&nbsp;float2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>protected float</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4019(T,float)">method_4019</a></span>&#8203;(<a href="LivingEntityRenderer.html" title="type parameter in LivingEntityRenderer">T</a>&nbsp;t,
            float&nbsp;float2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4020()">method_4020</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4021()">method_4021</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code>protected &lt;V extends <a href="../../../entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>,&#8203;U extends <a href="feature/FeatureRenderer.html" title="interface in net.minecraft.client.render.entity.feature">FeatureRenderer</a>&lt;V&gt;&gt;<br>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeFeature(U)">removeFeature</a></span>&#8203;(U&nbsp;u)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#renderFeatures(T,float,float,float,float,float,float,float)">renderFeatures</a></span>&#8203;(<a href="LivingEntityRenderer.html" title="type parameter in LivingEntityRenderer">T</a>&nbsp;t,
               float&nbsp;float2,
@@ -393,6 +382,17 @@ extends <a href="EntityRenderer.html" title="class in net.minecraft.client.rende
               float&nbsp;float6,
               float&nbsp;float7,
               float&nbsp;float8)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#scale(T,float)">scale</a></span>&#8203;(<a href="LivingEntityRenderer.html" title="type parameter in LivingEntityRenderer">T</a>&nbsp;skeleton,
+     float&nbsp;f)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i22" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#translate()">translate</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -435,13 +435,13 @@ extends <a href="EntityRenderer.html" title="class in net.minecraft.client.rende
 <pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j" class="externalLink">Logger</a> LOGGER</pre>
 </li>
 </ul>
-<a id="field_4895">
+<a id="TEX">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_4895</h4>
-<pre>private static final&nbsp;<a href="../../texture/NativeImageBackedTexture.html" title="class in net.minecraft.client.texture">NativeImageBackedTexture</a> field_4895</pre>
+<h4>TEX</h4>
+<pre>private static final&nbsp;<a href="../../texture/NativeImageBackedTexture.html" title="class in net.minecraft.client.texture">NativeImageBackedTexture</a> TEX</pre>
 </li>
 </ul>
 <a id="model">
@@ -453,13 +453,13 @@ extends <a href="EntityRenderer.html" title="class in net.minecraft.client.rende
 <pre>protected&nbsp;<a href="model/EntityModel.html" title="class in net.minecraft.client.render.entity.model">EntityModel</a> model</pre>
 </li>
 </ul>
-<a id="field_4897">
+<a id="buffer">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_4897</h4>
-<pre>protected&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/FloatBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">FloatBuffer</a> field_4897</pre>
+<h4>buffer</h4>
+<pre>protected&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/FloatBuffer.html?is-external=true" title="class or interface in java.nio" class="externalLink">FloatBuffer</a> buffer</pre>
 </li>
 </ul>
 <a id="features">
@@ -511,35 +511,35 @@ extends <a href="EntityRenderer.html" title="class in net.minecraft.client.rende
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="method_4001(net.minecraft.client.render.entity.feature.FeatureRenderer)">
+<a id="addFeature(net.minecraft.client.render.entity.feature.FeatureRenderer)">
 <!--   -->
-</a><a id="method_4001(U)">
+</a><a id="addFeature(U)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_4001</h4>
-<pre class="methodSignature">protected&nbsp;&lt;V extends <a href="../../../entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>,&#8203;U extends <a href="feature/FeatureRenderer.html" title="interface in net.minecraft.client.render.entity.feature">FeatureRenderer</a>&lt;V&gt;&gt;&nbsp;boolean&nbsp;method_4001&#8203;(U&nbsp;u)</pre>
+<h4>addFeature</h4>
+<pre class="methodSignature">protected&nbsp;&lt;V extends <a href="../../../entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>,&#8203;U extends <a href="feature/FeatureRenderer.html" title="interface in net.minecraft.client.render.entity.feature">FeatureRenderer</a>&lt;V&gt;&gt;&nbsp;boolean&nbsp;addFeature&#8203;(U&nbsp;u)</pre>
 </li>
 </ul>
-<a id="method_4013(net.minecraft.client.render.entity.feature.FeatureRenderer)">
+<a id="removeFeature(net.minecraft.client.render.entity.feature.FeatureRenderer)">
 <!--   -->
-</a><a id="method_4013(U)">
+</a><a id="removeFeature(U)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_4013</h4>
-<pre class="methodSignature">protected&nbsp;&lt;V extends <a href="../../../entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>,&#8203;U extends <a href="feature/FeatureRenderer.html" title="interface in net.minecraft.client.render.entity.feature">FeatureRenderer</a>&lt;V&gt;&gt;&nbsp;boolean&nbsp;method_4013&#8203;(U&nbsp;u)</pre>
+<h4>removeFeature</h4>
+<pre class="methodSignature">protected&nbsp;&lt;V extends <a href="../../../entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>,&#8203;U extends <a href="feature/FeatureRenderer.html" title="interface in net.minecraft.client.render.entity.feature">FeatureRenderer</a>&lt;V&gt;&gt;&nbsp;boolean&nbsp;removeFeature&#8203;(U&nbsp;u)</pre>
 </li>
 </ul>
-<a id="method_4012()">
+<a id="getModel()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_4012</h4>
-<pre class="methodSignature">public&nbsp;<a href="model/EntityModel.html" title="class in net.minecraft.client.render.entity.model">EntityModel</a>&nbsp;method_4012()</pre>
+<h4>getModel</h4>
+<pre class="methodSignature">public&nbsp;<a href="model/EntityModel.html" title="class in net.minecraft.client.render.entity.model">EntityModel</a>&nbsp;getModel()</pre>
 </li>
 </ul>
 <a id="method_4000(float,float,float)">
@@ -553,13 +553,13 @@ extends <a href="EntityRenderer.html" title="class in net.minecraft.client.rende
                             float&nbsp;float4)</pre>
 </li>
 </ul>
-<a id="method_3999()">
+<a id="translate()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_3999</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_3999()</pre>
+<h4>translate</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;translate()</pre>
 </li>
 </ul>
 <a id="method_3910(net.minecraft.entity.LivingEntity,double,double,double,float,float)">
@@ -675,7 +675,7 @@ extends <a href="EntityRenderer.html" title="class in net.minecraft.client.rende
 <ul class="blockList">
 <li class="blockList">
 <h4>method_4007</h4>
-<pre class="methodSignature">protected&nbsp;void&nbsp;method_4007&#8203;(<a href="LivingEntityRenderer.html" title="type parameter in LivingEntityRenderer">T</a>&nbsp;t,
+<pre class="methodSignature">protected&nbsp;void&nbsp;method_4007&#8203;(<a href="LivingEntityRenderer.html" title="type parameter in LivingEntityRenderer">T</a>&nbsp;squid,
                            float&nbsp;float2,
                            float&nbsp;float3,
                            float&nbsp;float4)</pre>
@@ -701,7 +701,7 @@ extends <a href="EntityRenderer.html" title="class in net.minecraft.client.rende
 <ul class="blockList">
 <li class="blockList">
 <h4>method_4016</h4>
-<pre class="methodSignature">protected&nbsp;float&nbsp;method_4016&#8203;(<a href="LivingEntityRenderer.html" title="type parameter in LivingEntityRenderer">T</a>&nbsp;t,
+<pre class="methodSignature">protected&nbsp;float&nbsp;method_4016&#8203;(<a href="LivingEntityRenderer.html" title="type parameter in LivingEntityRenderer">T</a>&nbsp;entity,
                             float&nbsp;float2)</pre>
 </li>
 </ul>
@@ -731,7 +731,7 @@ extends <a href="EntityRenderer.html" title="class in net.minecraft.client.rende
 <ul class="blockList">
 <li class="blockList">
 <h4>method_4014</h4>
-<pre class="methodSignature">protected&nbsp;float&nbsp;method_4014&#8203;(<a href="LivingEntityRenderer.html" title="type parameter in LivingEntityRenderer">T</a>&nbsp;t)</pre>
+<pre class="methodSignature">protected&nbsp;float&nbsp;method_4014&#8203;(<a href="LivingEntityRenderer.html" title="type parameter in LivingEntityRenderer">T</a>&nbsp;entity)</pre>
 </li>
 </ul>
 <a id="method_4006(net.minecraft.entity.LivingEntity,float,float)">
@@ -747,16 +747,16 @@ extends <a href="EntityRenderer.html" title="class in net.minecraft.client.rende
                           float&nbsp;float3)</pre>
 </li>
 </ul>
-<a id="method_4005(net.minecraft.entity.LivingEntity,float)">
+<a id="scale(net.minecraft.entity.LivingEntity,float)">
 <!--   -->
-</a><a id="method_4005(T,float)">
+</a><a id="scale(T,float)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_4005</h4>
-<pre class="methodSignature">protected&nbsp;void&nbsp;method_4005&#8203;(<a href="LivingEntityRenderer.html" title="type parameter in LivingEntityRenderer">T</a>&nbsp;t,
-                           float&nbsp;float2)</pre>
+<h4>scale</h4>
+<pre class="methodSignature">protected&nbsp;void&nbsp;scale&#8203;(<a href="LivingEntityRenderer.html" title="type parameter in LivingEntityRenderer">T</a>&nbsp;skeleton,
+                     float&nbsp;f)</pre>
 </li>
 </ul>
 <a id="method_3908(net.minecraft.entity.LivingEntity,double,double,double)">

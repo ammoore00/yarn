@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":6,"i6":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":6,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -221,8 +221,8 @@ extends <a href="../../widget/EntryListWidget.html" title="class in net.minecraf
 </tr>
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.client.MinecraftClient,int,int,java.util.List)">ResourcePackListWidget</a></span>&#8203;(<a href="../../../MinecraftClient.html" title="class in net.minecraft.client">MinecraftClient</a>&nbsp;client,
-                      int&nbsp;int2,
-                      int&nbsp;int3,
+                      int&nbsp;x,
+                      int&nbsp;y,
                       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="ResourcePackWidget.html" title="class in net.minecraft.client.gui.screen.resourcepack">ResourcePackWidget</a>&gt;&nbsp;widgets)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -265,19 +265,19 @@ extends <a href="../../widget/EntryListWidget.html" title="class in net.minecraf
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>protected abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTitle()">getTitle</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="ResourcePackWidget.html" title="class in net.minecraft.client.gui.screen.resourcepack">ResourcePackWidget</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getWidgets()">getWidgets</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>protected abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_2988()">method_2988</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#renderHeader(int,int,net.minecraft.client.render.Tessellator)">renderHeader</a></span>&#8203;(int&nbsp;int2,
-            int&nbsp;int3,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#renderHeader(int,int,net.minecraft.client.render.Tessellator)">renderHeader</a></span>&#8203;(int&nbsp;x,
+            int&nbsp;y,
             <a href="../../../render/Tessellator.html" title="class in net.minecraft.client.render">Tessellator</a>&nbsp;tessellator)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -294,7 +294,7 @@ extends <a href="../../widget/EntryListWidget.html" title="class in net.minecraf
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.client.gui.widget.<a href="../../widget/ListWidget.html" title="class in net.minecraft.client.gui.widget">ListWidget</a></h3>
-<code><a href="../../widget/ListWidget.html#buttonClicked(net.minecraft.client.gui.widget.ButtonWidget)">buttonClicked</a>, <a href="../../widget/ListWidget.html#capYPosition()">capYPosition</a>, <a href="../../widget/ListWidget.html#getEntryAt(int,int)">getEntryAt</a>, <a href="../../widget/ListWidget.html#getItemHeight()">getItemHeight</a>, <a href="../../widget/ListWidget.html#getMaxPosition()">getMaxPosition</a>, <a href="../../widget/ListWidget.html#getMaxScroll()">getMaxScroll</a>, <a href="../../widget/ListWidget.html#getScrollAmount()">getScrollAmount</a>, <a href="../../widget/ListWidget.html#handleMouse()">handleMouse</a>, <a href="../../widget/ListWidget.html#isDragging()">isDragging</a>, <a href="../../widget/ListWidget.html#isMouseInList(int)">isMouseInList</a>, <a href="../../widget/ListWidget.html#method_2630(int,int)">method_2630</a>, <a href="../../widget/ListWidget.html#method_2638(boolean,int)">method_2638</a>, <a href="../../widget/ListWidget.html#method_2642(boolean)">method_2642</a>, <a href="../../widget/ListWidget.html#render(int,int,float)">render</a>, <a href="../../widget/ListWidget.html#renderDecorations(int,int)">renderDecorations</a>, <a href="../../widget/ListWidget.html#renderHoleBackground(int,int,int,int)">renderHoleBackground</a>, <a href="../../widget/ListWidget.html#renderList(int,int,int,int)">renderList</a>, <a href="../../widget/ListWidget.html#scroll(int)">scroll</a>, <a href="../../widget/ListWidget.html#setButtonIds(int,int)">setButtonIds</a>, <a href="../../widget/ListWidget.html#setDragging(boolean)">setDragging</a>, <a href="../../widget/ListWidget.html#setXPos(int)">setXPos</a>, <a href="../../widget/ListWidget.html#updateBounds(int,int,int,int)">updateBounds</a></code></li>
+<code><a href="../../widget/ListWidget.html#buttonClicked(net.minecraft.client.gui.widget.ButtonWidget)">buttonClicked</a>, <a href="../../widget/ListWidget.html#capYPosition()">capYPosition</a>, <a href="../../widget/ListWidget.html#getEntryAt(int,int)">getEntryAt</a>, <a href="../../widget/ListWidget.html#getItemHeight()">getItemHeight</a>, <a href="../../widget/ListWidget.html#getMaxPosition()">getMaxPosition</a>, <a href="../../widget/ListWidget.html#getMaxScroll()">getMaxScroll</a>, <a href="../../widget/ListWidget.html#getScrollAmount()">getScrollAmount</a>, <a href="../../widget/ListWidget.html#handleMouse()">handleMouse</a>, <a href="../../widget/ListWidget.html#isDragging()">isDragging</a>, <a href="../../widget/ListWidget.html#isMouseInList(int)">isMouseInList</a>, <a href="../../widget/ListWidget.html#method_2630(int,int)">method_2630</a>, <a href="../../widget/ListWidget.html#render(int,int,float)">render</a>, <a href="../../widget/ListWidget.html#renderDecorations(int,int)">renderDecorations</a>, <a href="../../widget/ListWidget.html#renderHoleBackground(int,int,int,int)">renderHoleBackground</a>, <a href="../../widget/ListWidget.html#renderList(int,int,int,int)">renderList</a>, <a href="../../widget/ListWidget.html#scroll(int)">scroll</a>, <a href="../../widget/ListWidget.html#setButtonIds(int,int)">setButtonIds</a>, <a href="../../widget/ListWidget.html#setDragging(boolean)">setDragging</a>, <a href="../../widget/ListWidget.html#setHeader(boolean,int)">setHeader</a>, <a href="../../widget/ListWidget.html#setRenderSelection(boolean)">setRenderSelection</a>, <a href="../../widget/ListWidget.html#setXPos(int)">setXPos</a>, <a href="../../widget/ListWidget.html#updateBounds(int,int,int,int)">updateBounds</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -354,8 +354,8 @@ extends <a href="../../widget/EntryListWidget.html" title="class in net.minecraf
 <li class="blockList">
 <h4>ResourcePackListWidget</h4>
 <pre>public&nbsp;ResourcePackListWidget&#8203;(<a href="../../../MinecraftClient.html" title="class in net.minecraft.client">MinecraftClient</a>&nbsp;client,
-                              int&nbsp;int2,
-                              int&nbsp;int3,
+                              int&nbsp;x,
+                              int&nbsp;y,
                               <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="ResourcePackWidget.html" title="class in net.minecraft.client.gui.screen.resourcepack">ResourcePackWidget</a>&gt;&nbsp;widgets)</pre>
 </li>
 </ul>
@@ -375,8 +375,8 @@ extends <a href="../../widget/EntryListWidget.html" title="class in net.minecraf
 <ul class="blockList">
 <li class="blockList">
 <h4>renderHeader</h4>
-<pre class="methodSignature">protected&nbsp;void&nbsp;renderHeader&#8203;(int&nbsp;int2,
-                            int&nbsp;int3,
+<pre class="methodSignature">protected&nbsp;void&nbsp;renderHeader&#8203;(int&nbsp;x,
+                            int&nbsp;y,
                             <a href="../../../render/Tessellator.html" title="class in net.minecraft.client.render">Tessellator</a>&nbsp;tessellator)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
@@ -384,13 +384,13 @@ extends <a href="../../widget/EntryListWidget.html" title="class in net.minecraf
 </dl>
 </li>
 </ul>
-<a id="method_2988()">
+<a id="getTitle()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_2988</h4>
-<pre class="methodSignature">protected abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;method_2988()</pre>
+<h4>getTitle</h4>
+<pre class="methodSignature">protected abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getTitle()</pre>
 </li>
 </ul>
 <a id="getWidgets()">

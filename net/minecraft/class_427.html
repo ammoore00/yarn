@@ -274,28 +274,28 @@ implements <a href="world/chunk/ChunkProvider.html" title="interface in net.mine
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="structure/StrongholdStructure.html" title="class in net.minecraft.structure">StrongholdStructure</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1874">field_1874</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code>private <a href="structure/VillageStructure.html" title="class in net.minecraft.structure">VillageStructure</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1875">field_1875</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private <a href="structure/MineshaftStructure.html" title="class in net.minecraft.structure">MineshaftStructure</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1876">field_1876</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private <a href="structure/WitchHutStructure.html" title="class in net.minecraft.structure">WitchHutStructure</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1877">field_1877</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private <a href="world/Generatable.html" title="class in net.minecraft.world">Generatable</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1878">field_1878</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="structure/StrongholdStructure.html" title="class in net.minecraft.structure">StrongholdStructure</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#strongholdGenerator">strongholdGenerator</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -341,37 +341,43 @@ implements <a href="world/chunk/ChunkProvider.html" title="interface in net.mine
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#chunkExists(int,int)">chunkExists</a></span>&#8203;(int&nbsp;int2,
+           int&nbsp;int3)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="world/chunk/Chunk.html" title="class in net.minecraft.world.chunk">Chunk</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getChunk(int,int)">getChunk</a></span>&#8203;(int&nbsp;int2,
         int&nbsp;int3)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getChunkProviderName()">getChunkProviderName</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1321(int,int)">method_1321</a></span>&#8203;(int&nbsp;int2,
-           int&nbsp;int3)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1322(net.minecraft.world.World,java.lang.String,net.minecraft.util.math.BlockPos)">method_1322</a></span>&#8203;(<a href="world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
-           <a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getNearestStructurePos(net.minecraft.world.World,java.lang.String,net.minecraft.util.math.BlockPos)">getNearestStructurePos</a></span>&#8203;(<a href="world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;structureName,
+                      <a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="world/biome/Biome.SpawnEntry.html" title="class in net.minecraft.world.biome">Biome.SpawnEntry</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSpawnEntries(net.minecraft.entity.EntityCategory,net.minecraft.util.math.BlockPos)">getSpawnEntries</a></span>&#8203;(<a href="entity/EntityCategory.html" title="enum in net.minecraft.entity">EntityCategory</a>&nbsp;category,
+               <a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1323(net.minecraft.world.chunk.ChunkProvider,int,int)">method_1323</a></span>&#8203;(<a href="world/chunk/ChunkProvider.html" title="interface in net.minecraft.world.chunk">ChunkProvider</a>&nbsp;chunkProvider,
            int&nbsp;int2,
            int&nbsp;int3)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1324(net.minecraft.world.chunk.ChunkProvider,net.minecraft.world.chunk.Chunk,int,int)">method_1324</a></span>&#8203;(<a href="world/chunk/ChunkProvider.html" title="interface in net.minecraft.world.chunk">ChunkProvider</a>&nbsp;chunkProvider,
            <a href="world/chunk/Chunk.html" title="class in net.minecraft.world.chunk">Chunk</a>&nbsp;chunk,
@@ -379,22 +385,16 @@ implements <a href="world/chunk/ChunkProvider.html" title="interface in net.mine
            int&nbsp;int3)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1325(net.minecraft.world.chunk.Chunk,int,int)">method_1325</a></span>&#8203;(<a href="world/chunk/Chunk.html" title="class in net.minecraft.world.chunk">Chunk</a>&nbsp;chunk,
            int&nbsp;int2,
            int&nbsp;int3)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="world/chunk/Chunk.html" title="class in net.minecraft.world.chunk">Chunk</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1326(net.minecraft.util.math.BlockPos)">method_1326</a></span>&#8203;(<a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="world/biome/Biome.SpawnEntry.html" title="class in net.minecraft.world.biome">Biome.SpawnEntry</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1327(net.minecraft.entity.EntityCategory,net.minecraft.util.math.BlockPos)">method_1327</a></span>&#8203;(<a href="entity/EntityCategory.html" title="enum in net.minecraft.entity">EntityCategory</a>&nbsp;entityCategory,
-           <a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</code></th>
+<td class="colFirst"><code><a href="world/chunk/Chunk.html" title="class in net.minecraft.world.chunk">Chunk</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1326(net.minecraft.util.math.BlockPos)">method_1326</a></span>&#8203;(<a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
@@ -622,13 +622,13 @@ implements <a href="world/chunk/ChunkProvider.html" title="interface in net.mine
 <pre>private&nbsp;<a href="world/Generatable.html" title="class in net.minecraft.world">Generatable</a> field_1873</pre>
 </li>
 </ul>
-<a id="field_1874">
+<a id="strongholdGenerator">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_1874</h4>
-<pre>private&nbsp;<a href="structure/StrongholdStructure.html" title="class in net.minecraft.structure">StrongholdStructure</a> field_1874</pre>
+<h4>strongholdGenerator</h4>
+<pre>private&nbsp;<a href="structure/StrongholdStructure.html" title="class in net.minecraft.structure">StrongholdStructure</a> strongholdGenerator</pre>
 </li>
 </ul>
 <a id="field_1875">
@@ -801,17 +801,17 @@ implements <a href="world/chunk/ChunkProvider.html" title="interface in net.mine
                          int&nbsp;int4)</pre>
 </li>
 </ul>
-<a id="method_1321(int,int)">
+<a id="chunkExists(int,int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1321</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;method_1321&#8203;(int&nbsp;int2,
+<h4>chunkExists</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;chunkExists&#8203;(int&nbsp;int2,
                            int&nbsp;int3)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="world/chunk/ChunkProvider.html#method_1321(int,int)">method_1321</a></code>&nbsp;in interface&nbsp;<code><a href="world/chunk/ChunkProvider.html" title="interface in net.minecraft.world.chunk">ChunkProvider</a></code></dd>
+<dd><code><a href="world/chunk/ChunkProvider.html#chunkExists(int,int)">chunkExists</a></code>&nbsp;in interface&nbsp;<code><a href="world/chunk/ChunkProvider.html" title="interface in net.minecraft.world.chunk">ChunkProvider</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -912,32 +912,32 @@ implements <a href="world/chunk/ChunkProvider.html" title="interface in net.mine
 </dl>
 </li>
 </ul>
-<a id="method_1327(net.minecraft.entity.EntityCategory,net.minecraft.util.math.BlockPos)">
+<a id="getSpawnEntries(net.minecraft.entity.EntityCategory,net.minecraft.util.math.BlockPos)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1327</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="world/biome/Biome.SpawnEntry.html" title="class in net.minecraft.world.biome">Biome.SpawnEntry</a>&gt;&nbsp;method_1327&#8203;(<a href="entity/EntityCategory.html" title="enum in net.minecraft.entity">EntityCategory</a>&nbsp;entityCategory,
-                                          <a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</pre>
+<h4>getSpawnEntries</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="world/biome/Biome.SpawnEntry.html" title="class in net.minecraft.world.biome">Biome.SpawnEntry</a>&gt;&nbsp;getSpawnEntries&#8203;(<a href="entity/EntityCategory.html" title="enum in net.minecraft.entity">EntityCategory</a>&nbsp;category,
+                                              <a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="world/chunk/ChunkProvider.html#method_1327(net.minecraft.entity.EntityCategory,net.minecraft.util.math.BlockPos)">method_1327</a></code>&nbsp;in interface&nbsp;<code><a href="world/chunk/ChunkProvider.html" title="interface in net.minecraft.world.chunk">ChunkProvider</a></code></dd>
+<dd><code><a href="world/chunk/ChunkProvider.html#getSpawnEntries(net.minecraft.entity.EntityCategory,net.minecraft.util.math.BlockPos)">getSpawnEntries</a></code>&nbsp;in interface&nbsp;<code><a href="world/chunk/ChunkProvider.html" title="interface in net.minecraft.world.chunk">ChunkProvider</a></code></dd>
 </dl>
 </li>
 </ul>
-<a id="method_1322(net.minecraft.world.World,java.lang.String,net.minecraft.util.math.BlockPos)">
+<a id="getNearestStructurePos(net.minecraft.world.World,java.lang.String,net.minecraft.util.math.BlockPos)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1322</h4>
-<pre class="methodSignature">public&nbsp;<a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;method_1322&#8203;(<a href="world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-                            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
-                            <a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</pre>
+<h4>getNearestStructurePos</h4>
+<pre class="methodSignature">public&nbsp;<a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;getNearestStructurePos&#8203;(<a href="world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;structureName,
+                                       <a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="world/chunk/ChunkProvider.html#method_1322(net.minecraft.world.World,java.lang.String,net.minecraft.util.math.BlockPos)">method_1322</a></code>&nbsp;in interface&nbsp;<code><a href="world/chunk/ChunkProvider.html" title="interface in net.minecraft.world.chunk">ChunkProvider</a></code></dd>
+<dd><code><a href="world/chunk/ChunkProvider.html#getNearestStructurePos(net.minecraft.world.World,java.lang.String,net.minecraft.util.math.BlockPos)">getNearestStructurePos</a></code>&nbsp;in interface&nbsp;<code><a href="world/chunk/ChunkProvider.html" title="interface in net.minecraft.world.chunk">ChunkProvider</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -975,7 +975,7 @@ implements <a href="world/chunk/ChunkProvider.html" title="interface in net.mine
 <ul class="blockListLast">
 <li class="blockList">
 <h4>method_1326</h4>
-<pre class="methodSignature">public&nbsp;<a href="world/chunk/Chunk.html" title="class in net.minecraft.world.chunk">Chunk</a>&nbsp;method_1326&#8203;(<a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</pre>
+<pre class="methodSignature">public&nbsp;<a href="world/chunk/Chunk.html" title="class in net.minecraft.world.chunk">Chunk</a>&nbsp;method_1326&#8203;(<a href="util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="world/chunk/ChunkProvider.html#method_1326(net.minecraft.util.math.BlockPos)">method_1326</a></code>&nbsp;in interface&nbsp;<code><a href="world/chunk/ChunkProvider.html" title="interface in net.minecraft.world.chunk">ChunkProvider</a></code></dd>
