@@ -137,7 +137,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="../screen/ingame/BeaconScreen.BaseButtonWidget.html" title="class in net.minecraft.client.gui.screen.ingame">BeaconScreen.BaseButtonWidget</a></code>, <code><a href="../screen/ingame/BookEditScreen.class_789.html" title="class in net.minecraft.client.gui.screen.ingame">BookEditScreen.class_789</a></code>, <code><a href="../../../class_690.html" title="class in net.minecraft">class_690</a></code>, <code><a href="../../../class_693.html" title="class in net.minecraft">class_693</a></code>, <code><a href="../../../class_695.html" title="class in net.minecraft">class_695</a></code>, <code><a href="../../../class_717.html" title="class in net.minecraft">class_717</a></code>, <code><a href="LockButtonWidget.html" title="class in net.minecraft.client.gui.widget">LockButtonWidget</a></code>, <code><a href="OptionWidget.html" title="class in net.minecraft.client.gui.widget">OptionWidget</a></code>, <code><a href="../screen/options/SkinOptionsScreen.SkinOptionButton.html" title="class in net.minecraft.client.gui.screen.options">SkinOptionsScreen.SkinOptionButton</a></code>, <code><a href="SliderWidget.html" title="class in net.minecraft.client.gui.widget">SliderWidget</a></code>, <code><a href="../screen/SoundsScreen.class_763.html" title="class in net.minecraft.client.gui.screen">SoundsScreen.class_763</a></code>, <code><a href="../screen/ingame/VillagerTradingScreen.class_808.html" title="class in net.minecraft.client.gui.screen.ingame">VillagerTradingScreen.class_808</a></code></dd>
+<dd><code><a href="../screen/ingame/BeaconScreen.BaseButtonWidget.html" title="class in net.minecraft.client.gui.screen.ingame">BeaconScreen.BaseButtonWidget</a></code>, <code><a href="../screen/ingame/BookEditScreen.BookButton.html" title="class in net.minecraft.client.gui.screen.ingame">BookEditScreen.BookButton</a></code>, <code><a href="../../../class_690.html" title="class in net.minecraft">class_690</a></code>, <code><a href="../../../class_693.html" title="class in net.minecraft">class_693</a></code>, <code><a href="../../../class_695.html" title="class in net.minecraft">class_695</a></code>, <code><a href="../../../class_717.html" title="class in net.minecraft">class_717</a></code>, <code><a href="LockButtonWidget.html" title="class in net.minecraft.client.gui.widget">LockButtonWidget</a></code>, <code><a href="OptionWidget.html" title="class in net.minecraft.client.gui.widget">OptionWidget</a></code>, <code><a href="../screen/options/SkinOptionsScreen.SkinOptionButton.html" title="class in net.minecraft.client.gui.screen.options">SkinOptionsScreen.SkinOptionButton</a></code>, <code><a href="SliderWidget.html" title="class in net.minecraft.client.gui.widget">SliderWidget</a></code>, <code><a href="../screen/SoundsScreen.SoundButtonWidget.html" title="class in net.minecraft.client.gui.screen">SoundsScreen.SoundButtonWidget</a></code>, <code><a href="../screen/ingame/VillagerTradingScreen.NextButton.html" title="class in net.minecraft.client.gui.screen.ingame">VillagerTradingScreen.NextButton</a></code></dd>
 </dl>
 <hr>
 <pre>@Environment(CLIENT)
@@ -169,13 +169,13 @@ extends <a href="../DrawableHelper.html" title="class in net.minecraft.client.gu
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#focused">focused</a></span></code></th>
+<td class="colFirst"><code>protected int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#height">height</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#height">height</a></span></code></th>
+<td class="colFirst"><code>protected boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hovered">hovered</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -283,7 +283,7 @@ extends <a href="../DrawableHelper.html" title="class in net.minecraft.client.gu
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isFocused()">isFocused</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isHovered()">isHovered</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -335,7 +335,7 @@ extends <a href="../DrawableHelper.html" title="class in net.minecraft.client.gu
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.client.gui.<a href="../DrawableHelper.html" title="class in net.minecraft.client.gui">DrawableHelper</a></h3>
-<code><a href="../DrawableHelper.html#drawCenteredString(net.minecraft.client.font.TextRenderer,java.lang.String,int,int,int)">drawCenteredString</a>, <a href="../DrawableHelper.html#drawHorizontalLine(int,int,int,int)">drawHorizontalLine</a>, <a href="../DrawableHelper.html#drawString(net.minecraft.client.font.TextRenderer,java.lang.String,int,int,int)">drawString</a>, <a href="../DrawableHelper.html#drawTexture(int,int,int,int,int,int)">drawTexture</a>, <a href="../DrawableHelper.html#drawVerticalLine(int,int,int,int)">drawVerticalLine</a>, <a href="../DrawableHelper.html#fill(int,int,int,int,int)">fill</a>, <a href="../DrawableHelper.html#fillGradient(int,int,int,int,int,int)">fillGradient</a>, <a href="../DrawableHelper.html#method_2443(float,float,int,int,int,int)">method_2443</a>, <a href="../DrawableHelper.html#method_2444(int,int,float,float,int,int,float,float)">method_2444</a>, <a href="../DrawableHelper.html#method_2445(int,int,float,float,int,int,int,int,float,float)">method_2445</a>, <a href="../DrawableHelper.html#method_2449(int,int,net.minecraft.client.texture.Sprite,int,int)">method_2449</a></code></li>
+<code><a href="../DrawableHelper.html#drawCenteredString(net.minecraft.client.font.TextRenderer,java.lang.String,int,int,int)">drawCenteredString</a>, <a href="../DrawableHelper.html#drawHorizontalLine(int,int,int,int)">drawHorizontalLine</a>, <a href="../DrawableHelper.html#drawSprite(int,int,net.minecraft.client.texture.Sprite,int,int)">drawSprite</a>, <a href="../DrawableHelper.html#drawString(net.minecraft.client.font.TextRenderer,java.lang.String,int,int,int)">drawString</a>, <a href="../DrawableHelper.html#drawTexture(float,float,int,int,int,int)">drawTexture</a>, <a href="../DrawableHelper.html#drawTexture(int,int,float,float,int,int,float,float)">drawTexture</a>, <a href="../DrawableHelper.html#drawTexture(int,int,float,float,int,int,int,int,float,float)">drawTexture</a>, <a href="../DrawableHelper.html#drawTexture(int,int,int,int,int,int)">drawTexture</a>, <a href="../DrawableHelper.html#drawVerticalLine(int,int,int,int)">drawVerticalLine</a>, <a href="../DrawableHelper.html#fill(int,int,int,int,int)">fill</a>, <a href="../DrawableHelper.html#fillGradient(int,int,int,int,int,int)">fillGradient</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -441,13 +441,13 @@ extends <a href="../DrawableHelper.html" title="class in net.minecraft.client.gu
 <pre>public&nbsp;boolean visible</pre>
 </li>
 </ul>
-<a id="focused">
+<a id="hovered">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>focused</h4>
-<pre>protected&nbsp;boolean focused</pre>
+<h4>hovered</h4>
+<pre>protected&nbsp;boolean hovered</pre>
 </li>
 </ul>
 </li>
@@ -548,13 +548,13 @@ extends <a href="../DrawableHelper.html" title="class in net.minecraft.client.gu
                            int&nbsp;mouseY)</pre>
 </li>
 </ul>
-<a id="isFocused()">
+<a id="isHovered()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>isFocused</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;isFocused()</pre>
+<h4>isHovered</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isHovered()</pre>
 </li>
 </ul>
 <a id="renderToolTip(int,int)">

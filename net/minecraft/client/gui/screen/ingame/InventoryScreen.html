@@ -27,8 +27,8 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":9,"i6":10};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -132,12 +132,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">net.minecraft.client.gui.screen.ingame.ContainerScreen</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="AbstractInventoryScreen.html" title="class in net.minecraft.client.gui.screen.ingame">net.minecraft.client.gui.screen.ingame.AbstractInventoryScreen</a></li>
-<li>
-<ul class="inheritance">
 <li>net.minecraft.client.gui.screen.ingame.InventoryScreen</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -154,10 +149,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt>All Implemented Interfaces:</dt>
 <dd><code><a href="../../widget/IdentifibleBooleanConsumer.html" title="interface in net.minecraft.client.gui.widget">IdentifibleBooleanConsumer</a></code></dd>
 </dl>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><code><a href="CreativeInventoryScreen.html" title="class in net.minecraft.client.gui.screen.ingame">CreativeInventoryScreen</a></code>, <code><a href="SurvivalInventoryScreen.html" title="class in net.minecraft.client.gui.screen.ingame">SurvivalInventoryScreen</a></code></dd>
+</dl>
 <hr>
 <pre>@Environment(CLIENT)
-public class <span class="typeNameLabel">InventoryScreen</span>
-extends <a href="AbstractInventoryScreen.html" title="class in net.minecraft.client.gui.screen.ingame">AbstractInventoryScreen</a></pre>
+public abstract class <span class="typeNameLabel">InventoryScreen</span>
+extends <a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></pre>
 </li>
 </ul>
 </div>
@@ -179,13 +178,8 @@ extends <a href="AbstractInventoryScreen.html" title="class in net.minecraft.cli
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private float</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#mouseX">mouseX</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private float</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#mouseY">mouseY</a></span></code></th>
+<td class="colFirst"><code>private boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#offsetGuiForEffects">offsetGuiForEffects</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -227,7 +221,7 @@ extends <a href="AbstractInventoryScreen.html" title="class in net.minecraft.cli
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.entity.player.PlayerEntity)">InventoryScreen</a></span>&#8203;(<a href="../../../../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.container.Container)">InventoryScreen</a></span>&#8203;(<a href="../../../../container/Container.html" title="class in net.minecraft.container">Container</a>&nbsp;container)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -242,7 +236,7 @@ extends <a href="AbstractInventoryScreen.html" title="class in net.minecraft.cli
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colSecond" scope="col">Method</th>
@@ -250,77 +244,47 @@ extends <a href="AbstractInventoryScreen.html" title="class in net.minecraft.cli
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#buttonPressed(net.minecraft.client.gui.widget.ButtonWidget)">buttonPressed</a></span>&#8203;(<a href="../../widget/ButtonWidget.html" title="class in net.minecraft.client.gui.widget">ButtonWidget</a>&nbsp;button)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#applyStatusEffectOffset()">applyStatusEffectOffset</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>protected void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#drawBackground(float,int,int)">drawBackground</a></span>&#8203;(float&nbsp;delta,
-              int&nbsp;mouseX,
-              int&nbsp;mouseY)</code></th>
+<td class="colFirst"><code>private void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#drawStatusEffects()">drawStatusEffects</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>protected void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#drawForeground(int,int)">drawForeground</a></span>&#8203;(int&nbsp;mouseX,
-              int&nbsp;mouseY)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#init()">init</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#render(int,int,float)">render</a></span>&#8203;(int&nbsp;mouseX,
       int&nbsp;mouseY,
       float&nbsp;delta)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#renderEntity(int,int,int,float,float,net.minecraft.entity.LivingEntity)">renderEntity</a></span>&#8203;(int&nbsp;x,
-            int&nbsp;y,
-            int&nbsp;size,
-            float&nbsp;mouseX,
-            float&nbsp;mouseY,
-            <a href="../../../../entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;entity)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tick()">tick</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.net.minecraft.client.gui.screen.ingame.AbstractInventoryScreen">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;net.minecraft.client.gui.screen.ingame.<a href="AbstractInventoryScreen.html" title="class in net.minecraft.client.gui.screen.ingame">AbstractInventoryScreen</a></h3>
-<code><a href="AbstractInventoryScreen.html#applyStatusEffectOffset()">applyStatusEffectOffset</a></code></li>
-</ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.net.minecraft.client.gui.screen.ingame.ContainerScreen">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.client.gui.screen.ingame.<a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></h3>
-<code><a href="ContainerScreen.html#keyPressed(char,int)">keyPressed</a>, <a href="ContainerScreen.html#method_2785(int,int,int,long)">method_2785</a>, <a href="ContainerScreen.html#method_2903(net.minecraft.container.Slot,int,int,int)">method_2903</a>, <a href="ContainerScreen.html#method_2905(int)">method_2905</a>, <a href="ContainerScreen.html#method_2908(int,int,int,int,int,int)">method_2908</a>, <a href="ContainerScreen.html#mouseClicked(int,int,int)">mouseClicked</a>, <a href="ContainerScreen.html#mouseReleased(int,int,int)">mouseReleased</a>, <a href="ContainerScreen.html#removed()">removed</a>, <a href="ContainerScreen.html#shouldPauseGame()">shouldPauseGame</a></code></li>
+<code><a href="ContainerScreen.html#drawBackground(float,int,int)">drawBackground</a>, <a href="ContainerScreen.html#drawForeground(int,int)">drawForeground</a>, <a href="ContainerScreen.html#keyPressed(char,int)">keyPressed</a>, <a href="ContainerScreen.html#method_2785(int,int,int,long)">method_2785</a>, <a href="ContainerScreen.html#method_2903(net.minecraft.container.Slot,int,int,int)">method_2903</a>, <a href="ContainerScreen.html#method_2905(int)">method_2905</a>, <a href="ContainerScreen.html#method_2908(int,int,int,int,int,int)">method_2908</a>, <a href="ContainerScreen.html#mouseClicked(int,int,int)">mouseClicked</a>, <a href="ContainerScreen.html#mouseReleased(int,int,int)">mouseReleased</a>, <a href="ContainerScreen.html#removed()">removed</a>, <a href="ContainerScreen.html#shouldPauseGame()">shouldPauseGame</a>, <a href="ContainerScreen.html#tick()">tick</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.net.minecraft.client.gui.screen.Screen">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.client.gui.screen.<a href="../Screen.html" title="class in net.minecraft.client.gui.screen">Screen</a></h3>
-<code><a href="../Screen.html#accept(boolean,int)">accept</a>, <a href="../Screen.html#getClipboard()">getClipboard</a>, <a href="../Screen.html#handleInput()">handleInput</a>, <a href="../Screen.html#handleKeyboard()">handleKeyboard</a>, <a href="../Screen.html#handleMouse()">handleMouse</a>, <a href="../Screen.html#handleTextClick(net.minecraft.text.Text)">handleTextClick</a>, <a href="../Screen.html#hasAltDown()">hasAltDown</a>, <a href="../Screen.html#hasControlDown()">hasControlDown</a>, <a href="../Screen.html#hasShiftDown()">hasShiftDown</a>, <a href="../Screen.html#init(net.minecraft.client.MinecraftClient,int,int)">init</a>, <a href="../Screen.html#insertText(java.lang.String,boolean)">insertText</a>, <a href="../Screen.html#isCopy(int)">isCopy</a>, <a href="../Screen.html#isCut(int)">isCut</a>, <a href="../Screen.html#isPaste(int)">isPaste</a>, <a href="../Screen.html#isSelectAll(int)">isSelectAll</a>, <a href="../Screen.html#renderBackground()">renderBackground</a>, <a href="../Screen.html#renderBackground(int)">renderBackground</a>, <a href="../Screen.html#renderDirtBackground(int)">renderDirtBackground</a>, <a href="../Screen.html#renderTextHoverEffect(net.minecraft.text.Text,int,int)">renderTextHoverEffect</a>, <a href="../Screen.html#renderTooltip(java.lang.String,int,int)">renderTooltip</a>, <a href="../Screen.html#renderTooltip(java.util.List,int,int)">renderTooltip</a>, <a href="../Screen.html#renderTooltip(net.minecraft.item.ItemStack,int,int)">renderTooltip</a>, <a href="../Screen.html#resize(net.minecraft.client.MinecraftClient,int,int)">resize</a>, <a href="../Screen.html#sendMessage(java.lang.String)">sendMessage</a>, <a href="../Screen.html#sendMessage(java.lang.String,boolean)">sendMessage</a>, <a href="../Screen.html#setClipboard(java.lang.String)">setClipboard</a>, <a href="../Screen.html#setScreenBounds(int,int)">setScreenBounds</a></code></li>
+<code><a href="../Screen.html#accept(boolean,int)">accept</a>, <a href="../Screen.html#buttonClicked(net.minecraft.client.gui.widget.ButtonWidget)">buttonClicked</a>, <a href="../Screen.html#getClipboard()">getClipboard</a>, <a href="../Screen.html#handleInput()">handleInput</a>, <a href="../Screen.html#handleKeyboard()">handleKeyboard</a>, <a href="../Screen.html#handleMouse()">handleMouse</a>, <a href="../Screen.html#handleTextClick(net.minecraft.text.Text)">handleTextClick</a>, <a href="../Screen.html#hasAltDown()">hasAltDown</a>, <a href="../Screen.html#hasControlDown()">hasControlDown</a>, <a href="../Screen.html#hasShiftDown()">hasShiftDown</a>, <a href="../Screen.html#init(net.minecraft.client.MinecraftClient,int,int)">init</a>, <a href="../Screen.html#insertText(java.lang.String,boolean)">insertText</a>, <a href="../Screen.html#isCopy(int)">isCopy</a>, <a href="../Screen.html#isCut(int)">isCut</a>, <a href="../Screen.html#isPaste(int)">isPaste</a>, <a href="../Screen.html#isSelectAll(int)">isSelectAll</a>, <a href="../Screen.html#renderBackground()">renderBackground</a>, <a href="../Screen.html#renderBackground(int)">renderBackground</a>, <a href="../Screen.html#renderDirtBackground(int)">renderDirtBackground</a>, <a href="../Screen.html#renderTextHoverEffect(net.minecraft.text.Text,int,int)">renderTextHoverEffect</a>, <a href="../Screen.html#renderTooltip(java.lang.String,int,int)">renderTooltip</a>, <a href="../Screen.html#renderTooltip(java.util.List,int,int)">renderTooltip</a>, <a href="../Screen.html#renderTooltip(net.minecraft.item.ItemStack,int,int)">renderTooltip</a>, <a href="../Screen.html#resize(net.minecraft.client.MinecraftClient,int,int)">resize</a>, <a href="../Screen.html#sendMessage(java.lang.String)">sendMessage</a>, <a href="../Screen.html#sendMessage(java.lang.String,boolean)">sendMessage</a>, <a href="../Screen.html#setClipboard(java.lang.String)">setClipboard</a>, <a href="../Screen.html#setScreenBounds(int,int)">setScreenBounds</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.net.minecraft.client.gui.DrawableHelper">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.client.gui.<a href="../../DrawableHelper.html" title="class in net.minecraft.client.gui">DrawableHelper</a></h3>
-<code><a href="../../DrawableHelper.html#drawCenteredString(net.minecraft.client.font.TextRenderer,java.lang.String,int,int,int)">drawCenteredString</a>, <a href="../../DrawableHelper.html#drawHorizontalLine(int,int,int,int)">drawHorizontalLine</a>, <a href="../../DrawableHelper.html#drawString(net.minecraft.client.font.TextRenderer,java.lang.String,int,int,int)">drawString</a>, <a href="../../DrawableHelper.html#drawTexture(int,int,int,int,int,int)">drawTexture</a>, <a href="../../DrawableHelper.html#drawVerticalLine(int,int,int,int)">drawVerticalLine</a>, <a href="../../DrawableHelper.html#fill(int,int,int,int,int)">fill</a>, <a href="../../DrawableHelper.html#fillGradient(int,int,int,int,int,int)">fillGradient</a>, <a href="../../DrawableHelper.html#method_2443(float,float,int,int,int,int)">method_2443</a>, <a href="../../DrawableHelper.html#method_2444(int,int,float,float,int,int,float,float)">method_2444</a>, <a href="../../DrawableHelper.html#method_2445(int,int,float,float,int,int,int,int,float,float)">method_2445</a>, <a href="../../DrawableHelper.html#method_2449(int,int,net.minecraft.client.texture.Sprite,int,int)">method_2449</a></code></li>
+<code><a href="../../DrawableHelper.html#drawCenteredString(net.minecraft.client.font.TextRenderer,java.lang.String,int,int,int)">drawCenteredString</a>, <a href="../../DrawableHelper.html#drawHorizontalLine(int,int,int,int)">drawHorizontalLine</a>, <a href="../../DrawableHelper.html#drawSprite(int,int,net.minecraft.client.texture.Sprite,int,int)">drawSprite</a>, <a href="../../DrawableHelper.html#drawString(net.minecraft.client.font.TextRenderer,java.lang.String,int,int,int)">drawString</a>, <a href="../../DrawableHelper.html#drawTexture(float,float,int,int,int,int)">drawTexture</a>, <a href="../../DrawableHelper.html#drawTexture(int,int,float,float,int,int,float,float)">drawTexture</a>, <a href="../../DrawableHelper.html#drawTexture(int,int,float,float,int,int,int,int,float,float)">drawTexture</a>, <a href="../../DrawableHelper.html#drawTexture(int,int,int,int,int,int)">drawTexture</a>, <a href="../../DrawableHelper.html#drawVerticalLine(int,int,int,int)">drawVerticalLine</a>, <a href="../../DrawableHelper.html#fill(int,int,int,int,int)">fill</a>, <a href="../../DrawableHelper.html#fillGradient(int,int,int,int,int,int)">fillGradient</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -345,22 +309,13 @@ extends <a href="AbstractInventoryScreen.html" title="class in net.minecraft.cli
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="mouseX">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>mouseX</h4>
-<pre>private&nbsp;float mouseX</pre>
-</li>
-</ul>
-<a id="mouseY">
+<a id="offsetGuiForEffects">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>mouseY</h4>
-<pre>private&nbsp;float mouseY</pre>
+<h4>offsetGuiForEffects</h4>
+<pre>private&nbsp;boolean offsetGuiForEffects</pre>
 </li>
 </ul>
 </li>
@@ -373,13 +328,13 @@ extends <a href="AbstractInventoryScreen.html" title="class in net.minecraft.cli
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(net.minecraft.entity.player.PlayerEntity)">
+<a id="&lt;init&gt;(net.minecraft.container.Container)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>InventoryScreen</h4>
-<pre>public&nbsp;InventoryScreen&#8203;(<a href="../../../../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</pre>
+<pre>public&nbsp;InventoryScreen&#8203;(<a href="../../../../container/Container.html" title="class in net.minecraft.container">Container</a>&nbsp;container)</pre>
 </li>
 </ul>
 </li>
@@ -392,19 +347,6 @@ extends <a href="AbstractInventoryScreen.html" title="class in net.minecraft.cli
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="tick()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>tick</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;tick()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="ContainerScreen.html#tick()">tick</a></code>&nbsp;in class&nbsp;<code><a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></code></dd>
-</dl>
-</li>
-</ul>
 <a id="init()">
 <!--   -->
 </a>
@@ -414,22 +356,17 @@ extends <a href="AbstractInventoryScreen.html" title="class in net.minecraft.cli
 <pre class="methodSignature">public&nbsp;void&nbsp;init()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="AbstractInventoryScreen.html#init()">init</a></code>&nbsp;in class&nbsp;<code><a href="AbstractInventoryScreen.html" title="class in net.minecraft.client.gui.screen.ingame">AbstractInventoryScreen</a></code></dd>
+<dd><code><a href="ContainerScreen.html#init()">init</a></code>&nbsp;in class&nbsp;<code><a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></code></dd>
 </dl>
 </li>
 </ul>
-<a id="drawForeground(int,int)">
+<a id="applyStatusEffectOffset()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>drawForeground</h4>
-<pre class="methodSignature">protected&nbsp;void&nbsp;drawForeground&#8203;(int&nbsp;mouseX,
-                              int&nbsp;mouseY)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="ContainerScreen.html#drawForeground(int,int)">drawForeground</a></code>&nbsp;in class&nbsp;<code><a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></code></dd>
-</dl>
+<h4>applyStatusEffectOffset</h4>
+<pre class="methodSignature">protected&nbsp;void&nbsp;applyStatusEffectOffset()</pre>
 </li>
 </ul>
 <a id="render(int,int,float)">
@@ -443,50 +380,17 @@ extends <a href="AbstractInventoryScreen.html" title="class in net.minecraft.cli
                    float&nbsp;delta)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="AbstractInventoryScreen.html#render(int,int,float)">render</a></code>&nbsp;in class&nbsp;<code><a href="AbstractInventoryScreen.html" title="class in net.minecraft.client.gui.screen.ingame">AbstractInventoryScreen</a></code></dd>
+<dd><code><a href="ContainerScreen.html#render(int,int,float)">render</a></code>&nbsp;in class&nbsp;<code><a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></code></dd>
 </dl>
 </li>
 </ul>
-<a id="drawBackground(float,int,int)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>drawBackground</h4>
-<pre class="methodSignature">protected&nbsp;void&nbsp;drawBackground&#8203;(float&nbsp;delta,
-                              int&nbsp;mouseX,
-                              int&nbsp;mouseY)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="ContainerScreen.html#drawBackground(float,int,int)">drawBackground</a></code>&nbsp;in class&nbsp;<code><a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></code></dd>
-</dl>
-</li>
-</ul>
-<a id="renderEntity(int,int,int,float,float,net.minecraft.entity.LivingEntity)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>renderEntity</h4>
-<pre class="methodSignature">public static&nbsp;void&nbsp;renderEntity&#8203;(int&nbsp;x,
-                                int&nbsp;y,
-                                int&nbsp;size,
-                                float&nbsp;mouseX,
-                                float&nbsp;mouseY,
-                                <a href="../../../../entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;entity)</pre>
-</li>
-</ul>
-<a id="buttonPressed(net.minecraft.client.gui.widget.ButtonWidget)">
+<a id="drawStatusEffects()">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>buttonPressed</h4>
-<pre class="methodSignature">protected&nbsp;void&nbsp;buttonPressed&#8203;(<a href="../../widget/ButtonWidget.html" title="class in net.minecraft.client.gui.widget">ButtonWidget</a>&nbsp;button)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../Screen.html#buttonPressed(net.minecraft.client.gui.widget.ButtonWidget)">buttonPressed</a></code>&nbsp;in class&nbsp;<code><a href="../Screen.html" title="class in net.minecraft.client.gui.screen">Screen</a></code></dd>
-</dl>
+<h4>drawStatusEffects</h4>
+<pre class="methodSignature">private&nbsp;void&nbsp;drawStatusEffects()</pre>
 </li>
 </ul>
 </li>

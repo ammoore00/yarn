@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":6,"i10":10,"i11":6,"i12":6,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":6,"i12":6,"i13":6,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -164,13 +164,13 @@ implements <a href="../command/CommandSource.html" title="interface in net.minec
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private static <a href="https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html?is-external=true" title="class or interface in java.text" class="externalLink">SimpleDateFormat</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#DATE_FORMAT">DATE_FORMAT</a></span></code></th>
+<td class="colFirst"><code>private <a href="../command/CommandStats.html" title="class in net.minecraft.command">CommandStats</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#commandStats">commandStats</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../command/CommandStats.html" title="class in net.minecraft.command">CommandStats</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_195">field_195</a></span></code></th>
+<td class="colFirst"><code>private static <a href="https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html?is-external=true" title="class or interface in java.text" class="externalLink">SimpleDateFormat</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#DATE_FORMAT">DATE_FORMAT</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -233,8 +233,9 @@ implements <a href="../command/CommandSource.html" title="interface in net.minec
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#deserialize(net.minecraft.nbt.CompoundTag)">deserialize</a></span>&#8203;(<a href="../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;nbt)</code></th>
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#canUseCommand(int,java.lang.String)">canUseCommand</a></span>&#8203;(int&nbsp;permissionLevel,
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;commandLiteral)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -244,8 +245,7 @@ implements <a href="../command/CommandSource.html" title="interface in net.minec
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#feedback(net.minecraft.command.CommandStats.Type,int)">feedback</a></span>&#8203;(<a href="../command/CommandStats.Type.html" title="enum in net.minecraft.command">CommandStats.Type</a>&nbsp;statsType,
-        int&nbsp;value)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fromTag(net.minecraft.nbt.CompoundTag)">fromTag</a></span>&#8203;(<a href="../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;nbt)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -254,94 +254,94 @@ implements <a href="../command/CommandSource.html" title="interface in net.minec
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../command/CommandStats.html" title="class in net.minecraft.command">CommandStats</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCommandStats()">getCommandStats</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="../text/Text.html" title="interface in net.minecraft.text">Text</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLastOutput()">getLastOutput</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../text/Text.html" title="interface in net.minecraft.text">Text</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getName()">getName</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSuccessCount()">getSuccessCount</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTranslationKey()">getTranslationKey</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#interact(net.minecraft.entity.player.PlayerEntity)">interact</a></span>&#8203;(<a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isTrackingOutput()">isTrackingOutput</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#markDirty()">markDirty</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_155(net.minecraft.nbt.CompoundTag)">method_155</a></span>&#8203;(<a href="../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;nbt)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_156(io.netty.buffer.ByteBuf)">method_156</a></span>&#8203;(io.netty.buffer.ByteBuf&nbsp;byteBuf)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>abstract int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_164()">method_164</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
-<td class="colFirst"><code><a href="../text/Text.html" title="interface in net.minecraft.text">Text</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_166()">method_166</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr id="i14" class="altColor">
-<td class="colFirst"><code><a href="../command/CommandStats.html" title="class in net.minecraft.command">CommandStats</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_169()">method_169</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i15" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6255(int,java.lang.String)">method_6255</a></span>&#8203;(int&nbsp;int2,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i16" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendCommandFeedback()">sendCommandFeedback</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendMessage(net.minecraft.text.Text)">sendMessage</a></span>&#8203;(<a href="../text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;text)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCommand(java.lang.String)">setCommand</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCommand(java.lang.String)">setCommand</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;command)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCustomName(java.lang.String)">setCustomName</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i20" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setLastOutput(net.minecraft.text.Text)">setLastOutput</a></span>&#8203;(<a href="../text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;lastOutput)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i18" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setName(java.lang.String)">setName</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setStat(net.minecraft.command.CommandStats.Type,int)">setStat</a></span>&#8203;(<a href="../command/CommandStats.Type.html" title="enum in net.minecraft.command">CommandStats.Type</a>&nbsp;statsType,
+       int&nbsp;value)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#shouldTrackOutput(boolean)">shouldTrackOutput</a></span>&#8203;(boolean&nbsp;trackOutput)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toTag(net.minecraft.nbt.CompoundTag)">toTag</a></span>&#8203;(<a href="../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;nbt)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -429,13 +429,13 @@ implements <a href="../command/CommandSource.html" title="interface in net.minec
 <pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> name</pre>
 </li>
 </ul>
-<a id="field_195">
+<a id="commandStats">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_195</h4>
-<pre>private final&nbsp;<a href="../command/CommandStats.html" title="class in net.minecraft.command">CommandStats</a> field_195</pre>
+<h4>commandStats</h4>
+<pre>private final&nbsp;<a href="../command/CommandStats.html" title="class in net.minecraft.command">CommandStats</a> commandStats</pre>
 </li>
 </ul>
 </li>
@@ -476,44 +476,44 @@ implements <a href="../command/CommandSource.html" title="interface in net.minec
 <pre class="methodSignature">public&nbsp;int&nbsp;getSuccessCount()</pre>
 </li>
 </ul>
-<a id="method_166()">
+<a id="getLastOutput()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_166</h4>
-<pre class="methodSignature">public&nbsp;<a href="../text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;method_166()</pre>
+<h4>getLastOutput</h4>
+<pre class="methodSignature">public&nbsp;<a href="../text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;getLastOutput()</pre>
 </li>
 </ul>
-<a id="method_155(net.minecraft.nbt.CompoundTag)">
+<a id="toTag(net.minecraft.nbt.CompoundTag)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_155</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_155&#8203;(<a href="../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;nbt)</pre>
+<h4>toTag</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;toTag&#8203;(<a href="../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;nbt)</pre>
 </li>
 </ul>
-<a id="deserialize(net.minecraft.nbt.CompoundTag)">
+<a id="fromTag(net.minecraft.nbt.CompoundTag)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>deserialize</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;deserialize&#8203;(<a href="../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;nbt)</pre>
+<h4>fromTag</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;fromTag&#8203;(<a href="../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;nbt)</pre>
 </li>
 </ul>
-<a id="method_6255(int,java.lang.String)">
+<a id="canUseCommand(int,java.lang.String)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_6255</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;method_6255&#8203;(int&nbsp;int2,
-                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</pre>
+<h4>canUseCommand</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;canUseCommand&#8203;(int&nbsp;permissionLevel,
+                             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;commandLiteral)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../command/CommandSource.html#method_6255(int,java.lang.String)">method_6255</a></code>&nbsp;in interface&nbsp;<code><a href="../command/CommandSource.html" title="interface in net.minecraft.command">CommandSource</a></code></dd>
+<dd><code><a href="../command/CommandSource.html#canUseCommand(int,java.lang.String)">canUseCommand</a></code>&nbsp;in interface&nbsp;<code><a href="../command/CommandSource.html" title="interface in net.minecraft.command">CommandSource</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -523,7 +523,7 @@ implements <a href="../command/CommandSource.html" title="interface in net.minec
 <ul class="blockList">
 <li class="blockList">
 <h4>setCommand</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setCommand&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;setCommand&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;command)</pre>
 </li>
 </ul>
 <a id="getCommand()">
@@ -570,13 +570,13 @@ implements <a href="../command/CommandSource.html" title="interface in net.minec
 </dl>
 </li>
 </ul>
-<a id="setCustomName(java.lang.String)">
+<a id="setName(java.lang.String)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setCustomName</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setCustomName&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</pre>
+<h4>setName</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setName&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
 </li>
 </ul>
 <a id="sendMessage(net.minecraft.text.Text)">
@@ -605,17 +605,17 @@ implements <a href="../command/CommandSource.html" title="interface in net.minec
 </dl>
 </li>
 </ul>
-<a id="feedback(net.minecraft.command.CommandStats.Type,int)">
+<a id="setStat(net.minecraft.command.CommandStats.Type,int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>feedback</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;feedback&#8203;(<a href="../command/CommandStats.Type.html" title="enum in net.minecraft.command">CommandStats.Type</a>&nbsp;statsType,
-                     int&nbsp;value)</pre>
+<h4>setStat</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setStat&#8203;(<a href="../command/CommandStats.Type.html" title="enum in net.minecraft.command">CommandStats.Type</a>&nbsp;statsType,
+                    int&nbsp;value)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../command/CommandSource.html#feedback(net.minecraft.command.CommandStats.Type,int)">feedback</a></code>&nbsp;in interface&nbsp;<code><a href="../command/CommandSource.html" title="interface in net.minecraft.command">CommandSource</a></code></dd>
+<dd><code><a href="../command/CommandSource.html#setStat(net.minecraft.command.CommandStats.Type,int)">setStat</a></code>&nbsp;in interface&nbsp;<code><a href="../command/CommandSource.html" title="interface in net.minecraft.command">CommandSource</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -684,13 +684,13 @@ public abstract&nbsp;void&nbsp;method_156&#8203;(io.netty.buffer.ByteBuf&nbsp;by
 <pre class="methodSignature">public&nbsp;boolean&nbsp;interact&#8203;(<a href="../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</pre>
 </li>
 </ul>
-<a id="method_169()">
+<a id="getCommandStats()">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_169</h4>
-<pre class="methodSignature">public&nbsp;<a href="../command/CommandStats.html" title="class in net.minecraft.command">CommandStats</a>&nbsp;method_169()</pre>
+<h4>getCommandStats</h4>
+<pre class="methodSignature">public&nbsp;<a href="../command/CommandStats.html" title="class in net.minecraft.command">CommandStats</a>&nbsp;getCommandStats()</pre>
 </li>
 </ul>
 </li>

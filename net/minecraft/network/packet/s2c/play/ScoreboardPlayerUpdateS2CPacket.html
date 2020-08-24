@@ -160,7 +160,7 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="ScoreboardPlayerUpdateS2CPacket.class_1536.html" title="enum in net.minecraft.network.packet.s2c.play">ScoreboardPlayerUpdateS2CPacket.class_1536</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="ScoreboardPlayerUpdateS2CPacket.UpdateType.html" title="enum in net.minecraft.network.packet.s2c.play">ScoreboardPlayerUpdateS2CPacket.UpdateType</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -182,23 +182,23 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="ScoreboardPlayerUpdateS2CPacket.class_1536.html" title="enum in net.minecraft.network.packet.s2c.play">ScoreboardPlayerUpdateS2CPacket.class_1536</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6331">field_6331</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#objectiveName">objectiveName</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#playerName">playerName</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#score">score</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="ScoreboardPlayerUpdateS2CPacket.UpdateType.html" title="enum in net.minecraft.network.packet.s2c.play">ScoreboardPlayerUpdateS2CPacket.UpdateType</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#type">type</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -223,16 +223,16 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String)">ScoreboardPlayerUpdateS2CPacket</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String)">ScoreboardPlayerUpdateS2CPacket</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;playerName)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,net.minecraft.scoreboard.ScoreboardObjective)">ScoreboardPlayerUpdateS2CPacket</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
-                               <a href="../../../../scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;scoreboardObjective)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,net.minecraft.scoreboard.ScoreboardObjective)">ScoreboardPlayerUpdateS2CPacket</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;playerName,
+                               <a href="../../../../scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.scoreboard.ScoreboardPlayerScore)">ScoreboardPlayerUpdateS2CPacket</a></span>&#8203;(<a href="../../../../scoreboard/ScoreboardPlayerScore.html" title="class in net.minecraft.scoreboard">ScoreboardPlayerScore</a>&nbsp;scoreboardPlayerScore)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.scoreboard.ScoreboardPlayerScore)">ScoreboardPlayerUpdateS2CPacket</a></span>&#8203;(<a href="../../../../scoreboard/ScoreboardPlayerScore.html" title="class in net.minecraft.scoreboard">ScoreboardPlayerScore</a>&nbsp;score)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -274,8 +274,8 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="ScoreboardPlayerUpdateS2CPacket.class_1536.html" title="enum in net.minecraft.network.packet.s2c.play">ScoreboardPlayerUpdateS2CPacket.class_1536</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5626()">method_5626</a></span>()</code></th>
+<td class="colFirst"><code><a href="ScoreboardPlayerUpdateS2CPacket.UpdateType.html" title="enum in net.minecraft.network.packet.s2c.play">ScoreboardPlayerUpdateS2CPacket.UpdateType</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getType()">getType</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -339,13 +339,13 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <pre>private&nbsp;int score</pre>
 </li>
 </ul>
-<a id="field_6331">
+<a id="type">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_6331</h4>
-<pre>private&nbsp;<a href="ScoreboardPlayerUpdateS2CPacket.class_1536.html" title="enum in net.minecraft.network.packet.s2c.play">ScoreboardPlayerUpdateS2CPacket.class_1536</a> field_6331</pre>
+<h4>type</h4>
+<pre>private&nbsp;<a href="ScoreboardPlayerUpdateS2CPacket.UpdateType.html" title="enum in net.minecraft.network.packet.s2c.play">ScoreboardPlayerUpdateS2CPacket.UpdateType</a> type</pre>
 </li>
 </ul>
 </li>
@@ -373,7 +373,7 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <ul class="blockList">
 <li class="blockList">
 <h4>ScoreboardPlayerUpdateS2CPacket</h4>
-<pre>public&nbsp;ScoreboardPlayerUpdateS2CPacket&#8203;(<a href="../../../../scoreboard/ScoreboardPlayerScore.html" title="class in net.minecraft.scoreboard">ScoreboardPlayerScore</a>&nbsp;scoreboardPlayerScore)</pre>
+<pre>public&nbsp;ScoreboardPlayerUpdateS2CPacket&#8203;(<a href="../../../../scoreboard/ScoreboardPlayerScore.html" title="class in net.minecraft.scoreboard">ScoreboardPlayerScore</a>&nbsp;score)</pre>
 </li>
 </ul>
 <a id="&lt;init&gt;(java.lang.String)">
@@ -382,7 +382,7 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <ul class="blockList">
 <li class="blockList">
 <h4>ScoreboardPlayerUpdateS2CPacket</h4>
-<pre>public&nbsp;ScoreboardPlayerUpdateS2CPacket&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</pre>
+<pre>public&nbsp;ScoreboardPlayerUpdateS2CPacket&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;playerName)</pre>
 </li>
 </ul>
 <a id="&lt;init&gt;(java.lang.String,net.minecraft.scoreboard.ScoreboardObjective)">
@@ -391,8 +391,8 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ScoreboardPlayerUpdateS2CPacket</h4>
-<pre>public&nbsp;ScoreboardPlayerUpdateS2CPacket&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
-                                       <a href="../../../../scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;scoreboardObjective)</pre>
+<pre>public&nbsp;ScoreboardPlayerUpdateS2CPacket&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;playerName,
+                                       <a href="../../../../scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</pre>
 </li>
 </ul>
 </li>
@@ -480,14 +480,14 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.
 public&nbsp;int&nbsp;getScore()</pre>
 </li>
 </ul>
-<a id="method_5626()">
+<a id="getType()">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_5626</h4>
+<h4>getType</h4>
 <pre class="methodSignature">@Environment(CLIENT)
-public&nbsp;<a href="ScoreboardPlayerUpdateS2CPacket.class_1536.html" title="enum in net.minecraft.network.packet.s2c.play">ScoreboardPlayerUpdateS2CPacket.class_1536</a>&nbsp;method_5626()</pre>
+public&nbsp;<a href="ScoreboardPlayerUpdateS2CPacket.UpdateType.html" title="enum in net.minecraft.network.packet.s2c.play">ScoreboardPlayerUpdateS2CPacket.UpdateType</a>&nbsp;getType()</pre>
 </li>
 </ul>
 </li>
