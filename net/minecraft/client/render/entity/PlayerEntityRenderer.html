@@ -175,7 +175,7 @@ extends <a href="LivingEntityRenderer.html" title="class in net.minecraft.client
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.client.render.entity.<a href="LivingEntityRenderer.html" title="class in net.minecraft.client.render.entity">LivingEntityRenderer</a></h3>
-<code><a href="LivingEntityRenderer.html#buffer">buffer</a>, <a href="LivingEntityRenderer.html#features">features</a>, <a href="LivingEntityRenderer.html#field_4899">field_4899</a>, <a href="LivingEntityRenderer.html#model">model</a></code></li>
+<code><a href="LivingEntityRenderer.html#features">features</a>, <a href="LivingEntityRenderer.html#field_4897">field_4897</a>, <a href="LivingEntityRenderer.html#field_4899">field_4899</a>, <a href="LivingEntityRenderer.html#model">model</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="fields.inherited.from.class.net.minecraft.client.render.entity.EntityRenderer">
@@ -201,7 +201,7 @@ extends <a href="LivingEntityRenderer.html" title="class in net.minecraft.client
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.client.render.entity.EntityRenderDispatcher)">PlayerEntityRenderer</a></span>&#8203;(<a href="EntityRenderDispatcher.html" title="class in net.minecraft.client.render.entity">EntityRenderDispatcher</a>&nbsp;dispatcher)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.client.render.entity.EntityRenderDispatcher)">PlayerEntityRenderer</a></span>&#8203;(<a href="EntityRenderDispatcher.html" title="class in net.minecraft.client.render.entity">EntityRenderDispatcher</a>&nbsp;entityRenderDispatcher)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -228,26 +228,11 @@ extends <a href="LivingEntityRenderer.html" title="class in net.minecraft.client
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="model/PlayerEntityModel.html" title="class in net.minecraft.client.render.entity.model">PlayerEntityModel</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getModel()">getModel</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTexture(net.minecraft.client.network.AbstractClientPlayerEntity)">getTexture</a></span>&#8203;(<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&nbsp;abstractClientPlayerEntity)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_3910(net.minecraft.client.network.AbstractClientPlayerEntity,double,double,double,float,float)">method_3910</a></span>&#8203;(<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&nbsp;abstractClientPlayerEntity,
-           double&nbsp;double2,
-           double&nbsp;double3,
-           double&nbsp;double4,
-           float&nbsp;float2,
-           float&nbsp;float3)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i3" class="rowColor">
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_3911(net.minecraft.client.network.AbstractClientPlayerEntity,double,double,double,java.lang.String,float,double)">method_3911</a></span>&#8203;(<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&nbsp;abstractClientPlayerEntity,
            double&nbsp;double2,
@@ -258,7 +243,12 @@ extends <a href="LivingEntityRenderer.html" title="class in net.minecraft.client
            double&nbsp;double5)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_3999()">method_3999</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4003(net.minecraft.client.network.AbstractClientPlayerEntity,double,double,double)">method_4003</a></span>&#8203;(<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&nbsp;abstractClientPlayerEntity,
            double&nbsp;double2,
@@ -266,7 +256,23 @@ extends <a href="LivingEntityRenderer.html" title="class in net.minecraft.client
            double&nbsp;double4)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4004(net.minecraft.client.network.AbstractClientPlayerEntity,double,double,double,float,float)">method_4004</a></span>&#8203;(<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&nbsp;abstractClientPlayerEntity,
+           double&nbsp;double2,
+           double&nbsp;double3,
+           double&nbsp;double4,
+           float&nbsp;float2,
+           float&nbsp;float3)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4005(net.minecraft.client.network.AbstractClientPlayerEntity,float)">method_4005</a></span>&#8203;(<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&nbsp;abstractClientPlayerEntity,
+           float&nbsp;float2)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4007(net.minecraft.client.network.AbstractClientPlayerEntity,float,float,float)">method_4007</a></span>&#8203;(<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&nbsp;abstractClientPlayerEntity,
            float&nbsp;float2,
@@ -274,30 +280,24 @@ extends <a href="LivingEntityRenderer.html" title="class in net.minecraft.client
            float&nbsp;float4)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="model/PlayerEntityModel.html" title="class in net.minecraft.client.render.entity.model">PlayerEntityModel</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4012()">method_4012</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4121(net.minecraft.client.network.AbstractClientPlayerEntity)">method_4121</a></span>&#8203;(<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&nbsp;abstractClientPlayerEntity)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4122(net.minecraft.client.network.AbstractClientPlayerEntity)">method_4122</a></span>&#8203;(<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&nbsp;abstractClientPlayerEntity)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code>protected void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#scale(net.minecraft.client.network.AbstractClientPlayerEntity,float)">scale</a></span>&#8203;(<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&nbsp;abstractClientPlayerEntity,
-     float&nbsp;float2)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setModelPose(net.minecraft.client.network.AbstractClientPlayerEntity)">setModelPose</a></span>&#8203;(<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&nbsp;abstractClientPlayerEntity)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#translate()">translate</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -306,7 +306,7 @@ extends <a href="LivingEntityRenderer.html" title="class in net.minecraft.client
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.client.render.entity.<a href="LivingEntityRenderer.html" title="class in net.minecraft.client.render.entity">LivingEntityRenderer</a></h3>
-<code><a href="LivingEntityRenderer.html#addFeature(U)">addFeature</a>, <a href="LivingEntityRenderer.html#hasLabel(T)">hasLabel</a>, <a href="LivingEntityRenderer.html#method_3908(T,double,double,double)">method_3908</a>, <a href="LivingEntityRenderer.html#method_4000(float,float,float)">method_4000</a>, <a href="LivingEntityRenderer.html#method_4006(T,float,float)">method_4006</a>, <a href="LivingEntityRenderer.html#method_4008(T,float,float,float,float,float,float)">method_4008</a>, <a href="LivingEntityRenderer.html#method_4010(T,float,boolean)">method_4010</a>, <a href="LivingEntityRenderer.html#method_4011(boolean)">method_4011</a>, <a href="LivingEntityRenderer.html#method_4014(T)">method_4014</a>, <a href="LivingEntityRenderer.html#method_4016(T,float)">method_4016</a>, <a href="LivingEntityRenderer.html#method_4017(T)">method_4017</a>, <a href="LivingEntityRenderer.html#method_4018(T,float)">method_4018</a>, <a href="LivingEntityRenderer.html#method_4019(T,float)">method_4019</a>, <a href="LivingEntityRenderer.html#method_4020()">method_4020</a>, <a href="LivingEntityRenderer.html#method_4021()">method_4021</a>, <a href="LivingEntityRenderer.html#removeFeature(U)">removeFeature</a>, <a href="LivingEntityRenderer.html#renderFeatures(T,float,float,float,float,float,float,float)">renderFeatures</a></code></li>
+<code><a href="LivingEntityRenderer.html#hasLabel(T)">hasLabel</a>, <a href="LivingEntityRenderer.html#method_3908(T,double,double,double)">method_3908</a>, <a href="LivingEntityRenderer.html#method_3910(T,double,double,double,float,float)">method_3910</a>, <a href="LivingEntityRenderer.html#method_4000(float,float,float)">method_4000</a>, <a href="LivingEntityRenderer.html#method_4001(U)">method_4001</a>, <a href="LivingEntityRenderer.html#method_4006(T,float,float)">method_4006</a>, <a href="LivingEntityRenderer.html#method_4008(T,float,float,float,float,float,float)">method_4008</a>, <a href="LivingEntityRenderer.html#method_4010(T,float,boolean)">method_4010</a>, <a href="LivingEntityRenderer.html#method_4011(boolean)">method_4011</a>, <a href="LivingEntityRenderer.html#method_4013(U)">method_4013</a>, <a href="LivingEntityRenderer.html#method_4014(T)">method_4014</a>, <a href="LivingEntityRenderer.html#method_4016(T,float)">method_4016</a>, <a href="LivingEntityRenderer.html#method_4017(T)">method_4017</a>, <a href="LivingEntityRenderer.html#method_4018(T,float)">method_4018</a>, <a href="LivingEntityRenderer.html#method_4019(T,float)">method_4019</a>, <a href="LivingEntityRenderer.html#method_4020()">method_4020</a>, <a href="LivingEntityRenderer.html#method_4021()">method_4021</a>, <a href="LivingEntityRenderer.html#renderFeatures(T,float,float,float,float,float,float,float)">renderFeatures</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.net.minecraft.client.render.entity.EntityRenderer">
@@ -363,7 +363,7 @@ extends <a href="LivingEntityRenderer.html" title="class in net.minecraft.client
 <ul class="blockList">
 <li class="blockList">
 <h4>PlayerEntityRenderer</h4>
-<pre>public&nbsp;PlayerEntityRenderer&#8203;(<a href="EntityRenderDispatcher.html" title="class in net.minecraft.client.render.entity">EntityRenderDispatcher</a>&nbsp;dispatcher)</pre>
+<pre>public&nbsp;PlayerEntityRenderer&#8203;(<a href="EntityRenderDispatcher.html" title="class in net.minecraft.client.render.entity">EntityRenderDispatcher</a>&nbsp;entityRenderDispatcher)</pre>
 </li>
 </ul>
 <a id="&lt;init&gt;(net.minecraft.client.render.entity.EntityRenderDispatcher,boolean)">
@@ -386,35 +386,31 @@ extends <a href="LivingEntityRenderer.html" title="class in net.minecraft.client
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="getModel()">
+<a id="method_4012()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getModel</h4>
-<pre class="methodSignature">public&nbsp;<a href="model/PlayerEntityModel.html" title="class in net.minecraft.client.render.entity.model">PlayerEntityModel</a>&nbsp;getModel()</pre>
+<h4>method_4012</h4>
+<pre class="methodSignature">public&nbsp;<a href="model/PlayerEntityModel.html" title="class in net.minecraft.client.render.entity.model">PlayerEntityModel</a>&nbsp;method_4012()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="LivingEntityRenderer.html#getModel()">getModel</a></code>&nbsp;in class&nbsp;<code><a href="LivingEntityRenderer.html" title="class in net.minecraft.client.render.entity">LivingEntityRenderer</a>&lt;<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&gt;</code></dd>
+<dd><code><a href="LivingEntityRenderer.html#method_4012()">method_4012</a></code>&nbsp;in class&nbsp;<code><a href="LivingEntityRenderer.html" title="class in net.minecraft.client.render.entity">LivingEntityRenderer</a>&lt;<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
-<a id="method_3910(net.minecraft.client.network.AbstractClientPlayerEntity,double,double,double,float,float)">
+<a id="method_4004(net.minecraft.client.network.AbstractClientPlayerEntity,double,double,double,float,float)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_3910</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_3910&#8203;(<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&nbsp;abstractClientPlayerEntity,
+<h4>method_4004</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;method_4004&#8203;(<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&nbsp;abstractClientPlayerEntity,
                         double&nbsp;double2,
                         double&nbsp;double3,
                         double&nbsp;double4,
                         float&nbsp;float2,
                         float&nbsp;float3)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="LivingEntityRenderer.html#method_3910(T,double,double,double,float,float)">method_3910</a></code>&nbsp;in class&nbsp;<code><a href="LivingEntityRenderer.html" title="class in net.minecraft.client.render.entity">LivingEntityRenderer</a>&lt;<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&gt;</code></dd>
-</dl>
 </li>
 </ul>
 <a id="setModelPose(net.minecraft.client.network.AbstractClientPlayerEntity)">
@@ -439,30 +435,30 @@ extends <a href="LivingEntityRenderer.html" title="class in net.minecraft.client
 </dl>
 </li>
 </ul>
-<a id="translate()">
+<a id="method_3999()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>translate</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;translate()</pre>
+<h4>method_3999</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;method_3999()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="LivingEntityRenderer.html#translate()">translate</a></code>&nbsp;in class&nbsp;<code><a href="LivingEntityRenderer.html" title="class in net.minecraft.client.render.entity">LivingEntityRenderer</a>&lt;<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&gt;</code></dd>
+<dd><code><a href="LivingEntityRenderer.html#method_3999()">method_3999</a></code>&nbsp;in class&nbsp;<code><a href="LivingEntityRenderer.html" title="class in net.minecraft.client.render.entity">LivingEntityRenderer</a>&lt;<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
-<a id="scale(net.minecraft.client.network.AbstractClientPlayerEntity,float)">
+<a id="method_4005(net.minecraft.client.network.AbstractClientPlayerEntity,float)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>scale</h4>
-<pre class="methodSignature">protected&nbsp;void&nbsp;scale&#8203;(<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&nbsp;abstractClientPlayerEntity,
-                     float&nbsp;float2)</pre>
+<h4>method_4005</h4>
+<pre class="methodSignature">protected&nbsp;void&nbsp;method_4005&#8203;(<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&nbsp;abstractClientPlayerEntity,
+                           float&nbsp;float2)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="LivingEntityRenderer.html#scale(T,float)">scale</a></code>&nbsp;in class&nbsp;<code><a href="LivingEntityRenderer.html" title="class in net.minecraft.client.render.entity">LivingEntityRenderer</a>&lt;<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&gt;</code></dd>
+<dd><code><a href="LivingEntityRenderer.html#method_4005(T,float)">method_4005</a></code>&nbsp;in class&nbsp;<code><a href="LivingEntityRenderer.html" title="class in net.minecraft.client.render.entity">LivingEntityRenderer</a>&lt;<a href="../../network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>

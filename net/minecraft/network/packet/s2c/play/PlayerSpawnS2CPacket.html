@@ -159,13 +159,33 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../../entity/data/DataTracker.DataEntry.html" title="class in net.minecraft.entity.data">DataTracker.DataEntry</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dataTrackerEntries">dataTrackerEntries</a></span></code></th>
+<td class="colFirst"><code>private int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6101">field_6101</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#handStackid">handStackid</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6102">field_6102</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6103">field_6103</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6106">field_6106</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="../../../../entity/data/DataTracker.html" title="class in net.minecraft.entity.data">DataTracker</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6107">field_6107</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../../entity/data/DataTracker.DataEntry.html" title="class in net.minecraft.entity.data">DataTracker.DataEntry</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6108">field_6108</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -179,33 +199,13 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../entity/data/DataTracker.html" title="class in net.minecraft.entity.data">DataTracker</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#tracker">tracker</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#uuid">uuid</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code>private int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#x">x</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#y">y</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code>private byte</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#yaw">yaw</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#z">z</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -230,7 +230,7 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.entity.player.PlayerEntity)">PlayerSpawnS2CPacket</a></span>&#8203;(<a href="../../../../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.entity.player.PlayerEntity)">PlayerSpawnS2CPacket</a></span>&#8203;(<a href="../../../../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -257,48 +257,48 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../../entity/data/DataTracker.DataEntry.html" title="class in net.minecraft.entity.data">DataTracker.DataEntry</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDataTrackerEntries()">getDataTrackerEntries</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getHandStackId()">getHandStackId</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i3" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getId()">getId</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>byte</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPitch()">getPitch</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPlayerUuid()">getPlayerUuid</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getX()">getX</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getY()">getY</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>byte</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getYaw()">getYaw</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getZ()">getZ</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../../entity/data/DataTracker.DataEntry.html" title="class in net.minecraft.entity.data">DataTracker.DataEntry</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5373()">method_5373</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5382()">method_5382</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
@@ -353,31 +353,31 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util" class="externalLink">UUID</a> uuid</pre>
 </li>
 </ul>
-<a id="x">
+<a id="field_6101">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>x</h4>
-<pre>private&nbsp;int x</pre>
+<h4>field_6101</h4>
+<pre>private&nbsp;int field_6101</pre>
 </li>
 </ul>
-<a id="y">
+<a id="field_6102">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>y</h4>
-<pre>private&nbsp;int y</pre>
+<h4>field_6102</h4>
+<pre>private&nbsp;int field_6102</pre>
 </li>
 </ul>
-<a id="z">
+<a id="field_6103">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>z</h4>
-<pre>private&nbsp;int z</pre>
+<h4>field_6103</h4>
+<pre>private&nbsp;int field_6103</pre>
 </li>
 </ul>
 <a id="yaw">
@@ -398,31 +398,31 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <pre>private&nbsp;byte pitch</pre>
 </li>
 </ul>
-<a id="handStackid">
+<a id="field_6106">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>handStackid</h4>
-<pre>private&nbsp;int handStackid</pre>
+<h4>field_6106</h4>
+<pre>private&nbsp;int field_6106</pre>
 </li>
 </ul>
-<a id="tracker">
+<a id="field_6107">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>tracker</h4>
-<pre>private&nbsp;<a href="../../../../entity/data/DataTracker.html" title="class in net.minecraft.entity.data">DataTracker</a> tracker</pre>
+<h4>field_6107</h4>
+<pre>private&nbsp;<a href="../../../../entity/data/DataTracker.html" title="class in net.minecraft.entity.data">DataTracker</a> field_6107</pre>
 </li>
 </ul>
-<a id="dataTrackerEntries">
+<a id="field_6108">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>dataTrackerEntries</h4>
-<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../../entity/data/DataTracker.DataEntry.html" title="class in net.minecraft.entity.data">DataTracker.DataEntry</a>&gt; dataTrackerEntries</pre>
+<h4>field_6108</h4>
+<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../../entity/data/DataTracker.DataEntry.html" title="class in net.minecraft.entity.data">DataTracker.DataEntry</a>&gt; field_6108</pre>
 </li>
 </ul>
 </li>
@@ -450,7 +450,7 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <ul class="blockListLast">
 <li class="blockList">
 <h4>PlayerSpawnS2CPacket</h4>
-<pre>public&nbsp;PlayerSpawnS2CPacket&#8203;(<a href="../../../../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</pre>
+<pre>public&nbsp;PlayerSpawnS2CPacket&#8203;(<a href="../../../../entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</pre>
 </li>
 </ul>
 </li>
@@ -508,14 +508,14 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 </dl>
 </li>
 </ul>
-<a id="getDataTrackerEntries()">
+<a id="method_5373()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getDataTrackerEntries</h4>
+<h4>method_5373</h4>
 <pre class="methodSignature">@Environment(CLIENT)
-public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../../entity/data/DataTracker.DataEntry.html" title="class in net.minecraft.entity.data">DataTracker.DataEntry</a>&gt;&nbsp;getDataTrackerEntries()</pre>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../../entity/data/DataTracker.DataEntry.html" title="class in net.minecraft.entity.data">DataTracker.DataEntry</a>&gt;&nbsp;method_5373()</pre>
 </li>
 </ul>
 <a id="getId()">
@@ -588,14 +588,14 @@ public&nbsp;byte&nbsp;getYaw()</pre>
 public&nbsp;byte&nbsp;getPitch()</pre>
 </li>
 </ul>
-<a id="getHandStackId()">
+<a id="method_5382()">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getHandStackId</h4>
+<h4>method_5382</h4>
 <pre class="methodSignature">@Environment(CLIENT)
-public&nbsp;int&nbsp;getHandStackId()</pre>
+public&nbsp;int&nbsp;method_5382()</pre>
 </li>
 </ul>
 </li>

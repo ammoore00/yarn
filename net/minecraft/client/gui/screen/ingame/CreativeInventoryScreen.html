@@ -132,7 +132,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">net.minecraft.client.gui.screen.ingame.ContainerScreen</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="InventoryScreen.html" title="class in net.minecraft.client.gui.screen.ingame">net.minecraft.client.gui.screen.ingame.InventoryScreen</a></li>
+<li><a href="AbstractInventoryScreen.html" title="class in net.minecraft.client.gui.screen.ingame">net.minecraft.client.gui.screen.ingame.AbstractInventoryScreen</a></li>
 <li>
 <ul class="inheritance">
 <li>net.minecraft.client.gui.screen.ingame.CreativeInventoryScreen</li>
@@ -157,7 +157,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>@Environment(CLIENT)
 public class <span class="typeNameLabel">CreativeInventoryScreen</span>
-extends <a href="InventoryScreen.html" title="class in net.minecraft.client.gui.screen.ingame">InventoryScreen</a></pre>
+extends <a href="AbstractInventoryScreen.html" title="class in net.minecraft.client.gui.screen.ingame">AbstractInventoryScreen</a></pre>
 </li>
 </ul>
 </div>
@@ -207,48 +207,48 @@ extends <a href="InventoryScreen.html" title="class in net.minecraft.client.gui.
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>private <a href="../../widget/TextFieldWidget.html" title="class in net.minecraft.client.gui.widget">TextFieldWidget</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3462">field_3462</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>private <a href="../../../../container/Slot.html" title="class in net.minecraft.container">Slot</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3464">field_3464</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../CreativeInventoryListener.html" title="class in net.minecraft.client.gui">CreativeInventoryListener</a></code></td>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="CreativeInventoryListener.html" title="class in net.minecraft.client.gui.screen.ingame">CreativeInventoryListener</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3466">field_3466</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private static <a href="../../../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3467">field_3467</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private static <a href="../../../../inventory/BasicInventory.html" title="class in net.minecraft.inventory">BasicInventory</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3468">field_3468</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3471">field_3471</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3472">field_3472</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#scrolling">scrolling</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private float</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#scrollPosition">scrollPosition</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="../../widget/TextFieldWidget.html" title="class in net.minecraft.client.gui.widget">TextFieldWidget</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#searchField">searchField</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -328,7 +328,7 @@ extends <a href="InventoryScreen.html" title="class in net.minecraft.client.gui.
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#buttonClicked(net.minecraft.client.gui.widget.ButtonWidget)">buttonClicked</a></span>&#8203;(<a href="../../widget/ButtonWidget.html" title="class in net.minecraft.client.gui.widget">ButtonWidget</a>&nbsp;button)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#buttonPressed(net.minecraft.client.gui.widget.ButtonWidget)">buttonPressed</a></span>&#8203;(<a href="../../widget/ButtonWidget.html" title="class in net.minecraft.client.gui.widget">ButtonWidget</a>&nbsp;button)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
@@ -394,9 +394,9 @@ extends <a href="InventoryScreen.html" title="class in net.minecraft.client.gui.
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#mouseReleased(int,int,int)">mouseReleased</a></span>&#8203;(int&nbsp;mouseX,
-             int&nbsp;mouseY,
-             int&nbsp;button)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#mouseReleased(int,int,int)">mouseReleased</a></span>&#8203;(int&nbsp;int2,
+             int&nbsp;int3,
+             int&nbsp;int4)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
@@ -465,7 +465,7 @@ extends <a href="InventoryScreen.html" title="class in net.minecraft.client.gui.
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.client.gui.<a href="../../DrawableHelper.html" title="class in net.minecraft.client.gui">DrawableHelper</a></h3>
-<code><a href="../../DrawableHelper.html#drawCenteredString(net.minecraft.client.font.TextRenderer,java.lang.String,int,int,int)">drawCenteredString</a>, <a href="../../DrawableHelper.html#drawHorizontalLine(int,int,int,int)">drawHorizontalLine</a>, <a href="../../DrawableHelper.html#drawSprite(int,int,net.minecraft.client.texture.Sprite,int,int)">drawSprite</a>, <a href="../../DrawableHelper.html#drawString(net.minecraft.client.font.TextRenderer,java.lang.String,int,int,int)">drawString</a>, <a href="../../DrawableHelper.html#drawTexture(float,float,int,int,int,int)">drawTexture</a>, <a href="../../DrawableHelper.html#drawTexture(int,int,float,float,int,int,float,float)">drawTexture</a>, <a href="../../DrawableHelper.html#drawTexture(int,int,float,float,int,int,int,int,float,float)">drawTexture</a>, <a href="../../DrawableHelper.html#drawTexture(int,int,int,int,int,int)">drawTexture</a>, <a href="../../DrawableHelper.html#drawVerticalLine(int,int,int,int)">drawVerticalLine</a>, <a href="../../DrawableHelper.html#fill(int,int,int,int,int)">fill</a>, <a href="../../DrawableHelper.html#fillGradient(int,int,int,int,int,int)">fillGradient</a></code></li>
+<code><a href="../../DrawableHelper.html#drawCenteredString(net.minecraft.client.font.TextRenderer,java.lang.String,int,int,int)">drawCenteredString</a>, <a href="../../DrawableHelper.html#drawHorizontalLine(int,int,int,int)">drawHorizontalLine</a>, <a href="../../DrawableHelper.html#drawString(net.minecraft.client.font.TextRenderer,java.lang.String,int,int,int)">drawString</a>, <a href="../../DrawableHelper.html#drawTexture(int,int,int,int,int,int)">drawTexture</a>, <a href="../../DrawableHelper.html#drawVerticalLine(int,int,int,int)">drawVerticalLine</a>, <a href="../../DrawableHelper.html#fill(int,int,int,int,int)">fill</a>, <a href="../../DrawableHelper.html#fillGradient(int,int,int,int,int,int)">fillGradient</a>, <a href="../../DrawableHelper.html#method_2443(float,float,int,int,int,int)">method_2443</a>, <a href="../../DrawableHelper.html#method_2444(int,int,float,float,int,int,float,float)">method_2444</a>, <a href="../../DrawableHelper.html#method_2445(int,int,float,float,int,int,int,int,float,float)">method_2445</a>, <a href="../../DrawableHelper.html#method_2449(int,int,net.minecraft.client.texture.Sprite,int,int)">method_2449</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -544,13 +544,13 @@ extends <a href="InventoryScreen.html" title="class in net.minecraft.client.gui.
 <pre>private&nbsp;boolean field_3472</pre>
 </li>
 </ul>
-<a id="searchField">
+<a id="field_3462">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>searchField</h4>
-<pre>private&nbsp;<a href="../../widget/TextFieldWidget.html" title="class in net.minecraft.client.gui.widget">TextFieldWidget</a> searchField</pre>
+<h4>field_3462</h4>
+<pre>private&nbsp;<a href="../../widget/TextFieldWidget.html" title="class in net.minecraft.client.gui.widget">TextFieldWidget</a> field_3462</pre>
 </li>
 </ul>
 <a id="slots">
@@ -586,7 +586,7 @@ extends <a href="InventoryScreen.html" title="class in net.minecraft.client.gui.
 <ul class="blockListLast">
 <li class="blockList">
 <h4>field_3466</h4>
-<pre>private&nbsp;<a href="../../CreativeInventoryListener.html" title="class in net.minecraft.client.gui">CreativeInventoryListener</a> field_3466</pre>
+<pre>private&nbsp;<a href="CreativeInventoryListener.html" title="class in net.minecraft.client.gui.screen.ingame">CreativeInventoryListener</a> field_3466</pre>
 </li>
 </ul>
 </li>
@@ -656,7 +656,7 @@ extends <a href="InventoryScreen.html" title="class in net.minecraft.client.gui.
 <pre class="methodSignature">protected&nbsp;void&nbsp;applyStatusEffectOffset()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="InventoryScreen.html#applyStatusEffectOffset()">applyStatusEffectOffset</a></code>&nbsp;in class&nbsp;<code><a href="InventoryScreen.html" title="class in net.minecraft.client.gui.screen.ingame">InventoryScreen</a></code></dd>
+<dd><code><a href="AbstractInventoryScreen.html#applyStatusEffectOffset()">applyStatusEffectOffset</a></code>&nbsp;in class&nbsp;<code><a href="AbstractInventoryScreen.html" title="class in net.minecraft.client.gui.screen.ingame">AbstractInventoryScreen</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -669,7 +669,7 @@ extends <a href="InventoryScreen.html" title="class in net.minecraft.client.gui.
 <pre class="methodSignature">public&nbsp;void&nbsp;init()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="InventoryScreen.html#init()">init</a></code>&nbsp;in class&nbsp;<code><a href="InventoryScreen.html" title="class in net.minecraft.client.gui.screen.ingame">InventoryScreen</a></code></dd>
+<dd><code><a href="AbstractInventoryScreen.html#init()">init</a></code>&nbsp;in class&nbsp;<code><a href="AbstractInventoryScreen.html" title="class in net.minecraft.client.gui.screen.ingame">AbstractInventoryScreen</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -744,9 +744,9 @@ extends <a href="InventoryScreen.html" title="class in net.minecraft.client.gui.
 <ul class="blockList">
 <li class="blockList">
 <h4>mouseReleased</h4>
-<pre class="methodSignature">protected&nbsp;void&nbsp;mouseReleased&#8203;(int&nbsp;mouseX,
-                             int&nbsp;mouseY,
-                             int&nbsp;button)</pre>
+<pre class="methodSignature">protected&nbsp;void&nbsp;mouseReleased&#8203;(int&nbsp;int2,
+                             int&nbsp;int3,
+                             int&nbsp;int4)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="ContainerScreen.html#mouseReleased(int,int,int)">mouseReleased</a></code>&nbsp;in class&nbsp;<code><a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></code></dd>
@@ -795,7 +795,7 @@ extends <a href="InventoryScreen.html" title="class in net.minecraft.client.gui.
                    float&nbsp;delta)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="InventoryScreen.html#render(int,int,float)">render</a></code>&nbsp;in class&nbsp;<code><a href="InventoryScreen.html" title="class in net.minecraft.client.gui.screen.ingame">InventoryScreen</a></code></dd>
+<dd><code><a href="AbstractInventoryScreen.html#render(int,int,float)">render</a></code>&nbsp;in class&nbsp;<code><a href="AbstractInventoryScreen.html" title="class in net.minecraft.client.gui.screen.ingame">AbstractInventoryScreen</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -860,16 +860,16 @@ extends <a href="InventoryScreen.html" title="class in net.minecraft.client.gui.
 <pre class="methodSignature">protected&nbsp;void&nbsp;renderTabIcon&#8203;(<a href="../../../../item/ItemGroup.html" title="class in net.minecraft.item">ItemGroup</a>&nbsp;group)</pre>
 </li>
 </ul>
-<a id="buttonClicked(net.minecraft.client.gui.widget.ButtonWidget)">
+<a id="buttonPressed(net.minecraft.client.gui.widget.ButtonWidget)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>buttonClicked</h4>
-<pre class="methodSignature">protected&nbsp;void&nbsp;buttonClicked&#8203;(<a href="../../widget/ButtonWidget.html" title="class in net.minecraft.client.gui.widget">ButtonWidget</a>&nbsp;button)</pre>
+<h4>buttonPressed</h4>
+<pre class="methodSignature">protected&nbsp;void&nbsp;buttonPressed&#8203;(<a href="../../widget/ButtonWidget.html" title="class in net.minecraft.client.gui.widget">ButtonWidget</a>&nbsp;button)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../Screen.html#buttonClicked(net.minecraft.client.gui.widget.ButtonWidget)">buttonClicked</a></code>&nbsp;in class&nbsp;<code><a href="../Screen.html" title="class in net.minecraft.client.gui.screen">Screen</a></code></dd>
+<dd><code><a href="../Screen.html#buttonPressed(net.minecraft.client.gui.widget.ButtonWidget)">buttonPressed</a></code>&nbsp;in class&nbsp;<code><a href="../Screen.html" title="class in net.minecraft.client.gui.screen">Screen</a></code></dd>
 </dl>
 </li>
 </ul>
