@@ -159,33 +159,13 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>private int[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#args">args</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>private int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#count">count</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../../client/particle/ParticleType.html" title="enum in net.minecraft.client.particle">ParticleType</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6191">field_6191</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private float</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6192">field_6192</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private float</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6193">field_6193</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private float</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6194">field_6194</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private int[]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6201">field_6201</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -209,8 +189,28 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>private <a href="../../../../client/particle/ParticleType.html" title="enum in net.minecraft.client.particle">ParticleType</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#particleType">particleType</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>private float</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#speed">speed</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private float</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#x">x</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private float</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#y">y</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private float</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#z">z</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -236,16 +236,16 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 </tr>
 <tr class="rowColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.client.particle.ParticleType,boolean,float,float,float,float,float,float,float,int,int%5B%5D)">ParticleS2CPacket</a></span>&#8203;(<a href="../../../../client/particle/ParticleType.html" title="enum in net.minecraft.client.particle">ParticleType</a>&nbsp;particleType,
-                 boolean&nbsp;bool,
-                 float&nbsp;float2,
-                 float&nbsp;float3,
-                 float&nbsp;float4,
-                 float&nbsp;float5,
-                 float&nbsp;float6,
-                 float&nbsp;float7,
-                 float&nbsp;float8,
-                 int&nbsp;int2,
-                 int[]&nbsp;int3)</code></th>
+                 boolean&nbsp;longDistance,
+                 float&nbsp;x,
+                 float&nbsp;y,
+                 float&nbsp;z,
+                 float&nbsp;offsetX,
+                 float&nbsp;offsetY,
+                 float&nbsp;offsetZ,
+                 float&nbsp;speed,
+                 int&nbsp;count,
+                 int[]&nbsp;args)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -272,58 +272,58 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>int[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getArgs()">getArgs</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCount()">getCount</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>float</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getOffsetX()">getOffsetX</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>float</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getOffsetY()">getOffsetY</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>float</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getOffsetZ()">getOffsetZ</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../client/particle/ParticleType.html" title="enum in net.minecraft.client.particle">ParticleType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getParameters()">getParameters</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>float</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSpeed()">getSpeed</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getX()">getX</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getY()">getY</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getZ()">getZ</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isLongDistance()">isLongDistance</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i11" class="rowColor">
-<td class="colFirst"><code>int[]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5502()">method_5502</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
@@ -360,40 +360,40 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="field_6191">
+<a id="particleType">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6191</h4>
-<pre>private&nbsp;<a href="../../../../client/particle/ParticleType.html" title="enum in net.minecraft.client.particle">ParticleType</a> field_6191</pre>
+<h4>particleType</h4>
+<pre>private&nbsp;<a href="../../../../client/particle/ParticleType.html" title="enum in net.minecraft.client.particle">ParticleType</a> particleType</pre>
 </li>
 </ul>
-<a id="field_6192">
+<a id="x">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6192</h4>
-<pre>private&nbsp;float field_6192</pre>
+<h4>x</h4>
+<pre>private&nbsp;float x</pre>
 </li>
 </ul>
-<a id="field_6193">
+<a id="y">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6193</h4>
-<pre>private&nbsp;float field_6193</pre>
+<h4>y</h4>
+<pre>private&nbsp;float y</pre>
 </li>
 </ul>
-<a id="field_6194">
+<a id="z">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6194</h4>
-<pre>private&nbsp;float field_6194</pre>
+<h4>z</h4>
+<pre>private&nbsp;float z</pre>
 </li>
 </ul>
 <a id="offsetX">
@@ -450,13 +450,13 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <pre>private&nbsp;boolean longDistance</pre>
 </li>
 </ul>
-<a id="field_6201">
+<a id="args">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_6201</h4>
-<pre>private&nbsp;int[] field_6201</pre>
+<h4>args</h4>
+<pre>private&nbsp;int[] args</pre>
 </li>
 </ul>
 </li>
@@ -485,16 +485,16 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <li class="blockList">
 <h4>ParticleS2CPacket</h4>
 <pre>public&nbsp;ParticleS2CPacket&#8203;(<a href="../../../../client/particle/ParticleType.html" title="enum in net.minecraft.client.particle">ParticleType</a>&nbsp;particleType,
-                         boolean&nbsp;bool,
-                         float&nbsp;float2,
-                         float&nbsp;float3,
-                         float&nbsp;float4,
-                         float&nbsp;float5,
-                         float&nbsp;float6,
-                         float&nbsp;float7,
-                         float&nbsp;float8,
-                         int&nbsp;int2,
-                         int[]&nbsp;int3)</pre>
+                         boolean&nbsp;longDistance,
+                         float&nbsp;x,
+                         float&nbsp;y,
+                         float&nbsp;z,
+                         float&nbsp;offsetX,
+                         float&nbsp;offsetY,
+                         float&nbsp;offsetZ,
+                         float&nbsp;speed,
+                         int&nbsp;count,
+                         int[]&nbsp;args)</pre>
 </li>
 </ul>
 </li>
@@ -639,14 +639,14 @@ public&nbsp;float&nbsp;getSpeed()</pre>
 public&nbsp;int&nbsp;getCount()</pre>
 </li>
 </ul>
-<a id="method_5502()">
+<a id="getArgs()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_5502</h4>
+<h4>getArgs</h4>
 <pre class="methodSignature">@Environment(CLIENT)
-public&nbsp;int[]&nbsp;method_5502()</pre>
+public&nbsp;int[]&nbsp;getArgs()</pre>
 </li>
 </ul>
 <a id="apply(net.minecraft.network.listener.ClientPlayPacketListener)">

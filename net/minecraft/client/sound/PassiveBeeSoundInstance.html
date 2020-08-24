@@ -123,7 +123,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../class_1007.html" title="class in net.minecraft">net.minecraft.class_1007</a></li>
+<li><a href="../render/world/AbstractChunkRenderManager.html" title="class in net.minecraft.client.render.world">net.minecraft.client.render.world.AbstractChunkRenderManager</a></li>
 <li>
 <ul class="inheritance">
 <li>net.minecraft.client.sound.PassiveBeeSoundInstance</li>
@@ -138,7 +138,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>@Environment(CLIENT)
 public class <span class="typeNameLabel">PassiveBeeSoundInstance</span>
-extends <a href="../../class_1007.html" title="class in net.minecraft">class_1007</a></pre>
+extends <a href="../render/world/AbstractChunkRenderManager.html" title="class in net.minecraft.client.render.world">AbstractChunkRenderManager</a></pre>
 </li>
 </ul>
 </div>
@@ -153,11 +153,11 @@ extends <a href="../../class_1007.html" title="class in net.minecraft">class_100
 </a>
 <h3>Field Summary</h3>
 <ul class="blockList">
-<li class="blockList"><a id="fields.inherited.from.class.net.minecraft.class_1007">
+<li class="blockList"><a id="fields.inherited.from.class.net.minecraft.client.render.world.AbstractChunkRenderManager">
 <!--   -->
 </a>
-<h3>Fields inherited from class&nbsp;net.minecraft.<a href="../../class_1007.html" title="class in net.minecraft">class_1007</a></h3>
-<code><a href="../../class_1007.html#field_4218">field_4218</a>, <a href="../../class_1007.html#field_4219">field_4219</a></code></li>
+<h3>Fields inherited from class&nbsp;net.minecraft.client.render.world.<a href="../render/world/AbstractChunkRenderManager.html" title="class in net.minecraft.client.render.world">AbstractChunkRenderManager</a></h3>
+<code><a href="../render/world/AbstractChunkRenderManager.html#field_4219">field_4219</a>, <a href="../render/world/AbstractChunkRenderManager.html#helpers">helpers</a></code></li>
 </ul>
 </li>
 </ul>
@@ -198,22 +198,22 @@ extends <a href="../../class_1007.html" title="class in net.minecraft">class_100
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_3346(net.minecraft.client.render.RenderLayer)">method_3346</a></span>&#8203;(<a href="../render/RenderLayer.html" title="enum in net.minecraft.client.render">RenderLayer</a>&nbsp;renderLayer)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i1" class="rowColor">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_3570()">method_3570</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#render(net.minecraft.client.render.RenderLayer)">render</a></span>&#8203;(<a href="../render/RenderLayer.html" title="enum in net.minecraft.client.render">RenderLayer</a>&nbsp;layer)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.net.minecraft.class_1007">
+<li class="blockList"><a id="methods.inherited.from.class.net.minecraft.client.render.world.AbstractChunkRenderManager">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;net.minecraft.<a href="../../class_1007.html" title="class in net.minecraft">class_1007</a></h3>
-<code><a href="../../class_1007.html#method_3345(double,double,double)">method_3345</a>, <a href="../../class_1007.html#method_3347(net.minecraft.class_1111)">method_3347</a>, <a href="../../class_1007.html#method_3348(net.minecraft.class_1111,net.minecraft.client.render.RenderLayer)">method_3348</a></code></li>
+<h3>Methods inherited from class&nbsp;net.minecraft.client.render.world.<a href="../render/world/AbstractChunkRenderManager.html" title="class in net.minecraft.client.render.world">AbstractChunkRenderManager</a></h3>
+<code><a href="../render/world/AbstractChunkRenderManager.html#method_3347(net.minecraft.client.render.ChunkRenderHelper)">method_3347</a>, <a href="../render/world/AbstractChunkRenderManager.html#method_3348(net.minecraft.client.render.ChunkRenderHelper,net.minecraft.client.render.RenderLayer)">method_3348</a>, <a href="../render/world/AbstractChunkRenderManager.html#setViewPos(double,double,double)">setViewPos</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -257,16 +257,16 @@ extends <a href="../../class_1007.html" title="class in net.minecraft">class_100
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="method_3346(net.minecraft.client.render.RenderLayer)">
+<a id="render(net.minecraft.client.render.RenderLayer)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_3346</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_3346&#8203;(<a href="../render/RenderLayer.html" title="enum in net.minecraft.client.render">RenderLayer</a>&nbsp;renderLayer)</pre>
+<h4>render</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;render&#8203;(<a href="../render/RenderLayer.html" title="enum in net.minecraft.client.render">RenderLayer</a>&nbsp;layer)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../class_1007.html#method_3346(net.minecraft.client.render.RenderLayer)">method_3346</a></code>&nbsp;in class&nbsp;<code><a href="../../class_1007.html" title="class in net.minecraft">class_1007</a></code></dd>
+<dd><code><a href="../render/world/AbstractChunkRenderManager.html#render(net.minecraft.client.render.RenderLayer)">render</a></code>&nbsp;in class&nbsp;<code><a href="../render/world/AbstractChunkRenderManager.html" title="class in net.minecraft.client.render.world">AbstractChunkRenderManager</a></code></dd>
 </dl>
 </li>
 </ul>

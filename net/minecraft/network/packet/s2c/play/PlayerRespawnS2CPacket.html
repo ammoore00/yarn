@@ -165,7 +165,7 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6270">field_6270</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dimensionId">dimensionId</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -200,9 +200,9 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(int,net.minecraft.world.Difficulty,net.minecraft.world.level.LevelGeneratorType,net.minecraft.world.level.LevelInfo.GameMode)">PlayerRespawnS2CPacket</a></span>&#8203;(int&nbsp;int2,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(int,net.minecraft.world.Difficulty,net.minecraft.world.level.LevelGeneratorType,net.minecraft.world.level.LevelInfo.GameMode)">PlayerRespawnS2CPacket</a></span>&#8203;(int&nbsp;dimensionId,
                       <a href="../../../../world/Difficulty.html" title="enum in net.minecraft.world">Difficulty</a>&nbsp;difficulty,
-                      <a href="../../../../world/level/LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a>&nbsp;levelGeneratorType,
+                      <a href="../../../../world/level/LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a>&nbsp;generatorType,
                       <a href="../../../../world/level/LevelInfo.GameMode.html" title="enum in net.minecraft.world.level">LevelInfo.GameMode</a>&nbsp;gameMode)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -235,18 +235,18 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDimensionId()">getDimensionId</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../world/level/LevelInfo.GameMode.html" title="enum in net.minecraft.world.level">LevelInfo.GameMode</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getGameMode()">getGameMode</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../world/level/LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getGeneratorType()">getGeneratorType</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5566()">method_5566</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -283,13 +283,13 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="field_6270">
+<a id="dimensionId">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6270</h4>
-<pre>private&nbsp;int field_6270</pre>
+<h4>dimensionId</h4>
+<pre>private&nbsp;int dimensionId</pre>
 </li>
 </ul>
 <a id="difficulty">
@@ -344,9 +344,9 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <ul class="blockListLast">
 <li class="blockList">
 <h4>PlayerRespawnS2CPacket</h4>
-<pre>public&nbsp;PlayerRespawnS2CPacket&#8203;(int&nbsp;int2,
+<pre>public&nbsp;PlayerRespawnS2CPacket&#8203;(int&nbsp;dimensionId,
                               <a href="../../../../world/Difficulty.html" title="enum in net.minecraft.world">Difficulty</a>&nbsp;difficulty,
-                              <a href="../../../../world/level/LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a>&nbsp;levelGeneratorType,
+                              <a href="../../../../world/level/LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a>&nbsp;generatorType,
                               <a href="../../../../world/level/LevelInfo.GameMode.html" title="enum in net.minecraft.world.level">LevelInfo.GameMode</a>&nbsp;gameMode)</pre>
 </li>
 </ul>
@@ -405,14 +405,14 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 </dl>
 </li>
 </ul>
-<a id="method_5566()">
+<a id="getDimensionId()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_5566</h4>
+<h4>getDimensionId</h4>
 <pre class="methodSignature">@Environment(CLIENT)
-public&nbsp;int&nbsp;method_5566()</pre>
+public&nbsp;int&nbsp;getDimensionId()</pre>
 </li>
 </ul>
 <a id="getDifficulty()">

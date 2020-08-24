@@ -160,17 +160,17 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#button">button</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#actionType">actionType</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6400">field_6400</a></span></code></th>
+<td class="colFirst"><code>private int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#button">button</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6401">field_6401</a></span></code></th>
+<td class="colFirst"><code>private <a href="../../../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#selectedStack">selectedStack</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -210,12 +210,12 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(int,int,int,int,net.minecraft.item.ItemStack,short)">ClickWindowC2SPacket</a></span>&#8203;(int&nbsp;int2,
-                    int&nbsp;int3,
-                    int&nbsp;int4,
-                    int&nbsp;int5,
-                    <a href="../../../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
-                    short&nbsp;short2)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(int,int,int,int,net.minecraft.item.ItemStack,short)">ClickWindowC2SPacket</a></span>&#8203;(int&nbsp;syncId,
+                    int&nbsp;slot,
+                    int&nbsp;button,
+                    int&nbsp;actionType,
+                    <a href="../../../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;selectedSlot,
+                    short&nbsp;transactionId)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -243,32 +243,32 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getButton()">getButton</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getActionType()">getActionType</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSlot()">getSlot</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getButton()">getButton</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getStack()">getStack</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSelectedStack()">getSelectedStack</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSyncId()">getSyncId</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSlot()">getSlot</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>short</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTransactionId()">getTransactionId</a></span>()</code></th>
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSyncId()">getSyncId</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5759()">method_5759</a></span>()</code></th>
+<td class="colFirst"><code>short</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTransactionId()">getTransactionId</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
@@ -341,22 +341,22 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <pre>private&nbsp;short transactionId</pre>
 </li>
 </ul>
-<a id="field_6400">
+<a id="selectedStack">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6400</h4>
-<pre>private&nbsp;<a href="../../../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a> field_6400</pre>
+<h4>selectedStack</h4>
+<pre>private&nbsp;<a href="../../../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a> selectedStack</pre>
 </li>
 </ul>
-<a id="field_6401">
+<a id="actionType">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_6401</h4>
-<pre>private&nbsp;int field_6401</pre>
+<h4>actionType</h4>
+<pre>private&nbsp;int actionType</pre>
 </li>
 </ul>
 </li>
@@ -385,12 +385,12 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <li class="blockList">
 <h4>ClickWindowC2SPacket</h4>
 <pre>@Environment(CLIENT)
-public&nbsp;ClickWindowC2SPacket&#8203;(int&nbsp;int2,
-                            int&nbsp;int3,
-                            int&nbsp;int4,
-                            int&nbsp;int5,
-                            <a href="../../../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
-                            short&nbsp;short2)</pre>
+public&nbsp;ClickWindowC2SPacket&#8203;(int&nbsp;syncId,
+                            int&nbsp;slot,
+                            int&nbsp;button,
+                            int&nbsp;actionType,
+                            <a href="../../../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;selectedSlot,
+                            short&nbsp;transactionId)</pre>
 </li>
 </ul>
 </li>
@@ -484,22 +484,22 @@ public&nbsp;ClickWindowC2SPacket&#8203;(int&nbsp;int2,
 <pre class="methodSignature">public&nbsp;short&nbsp;getTransactionId()</pre>
 </li>
 </ul>
-<a id="getStack()">
+<a id="getSelectedStack()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getStack</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;getStack()</pre>
+<h4>getSelectedStack</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;getSelectedStack()</pre>
 </li>
 </ul>
-<a id="method_5759()">
+<a id="getActionType()">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_5759</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;method_5759()</pre>
+<h4>getActionType</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;getActionType()</pre>
 </li>
 </ul>
 </li>

@@ -132,7 +132,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Runnable</a></code>, <code><a href="../command/CommandSource.html" title="interface in net.minecraft.command">CommandSource</a></code>, <code><a href="../util/GameEngine.html" title="interface in net.minecraft.util">GameEngine</a></code>, <code><a href="../util/snooper/Snoopable.html" title="interface in net.minecraft.util.snooper">Snoopable</a></code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Runnable</a></code>, <code><a href="../command/CommandSource.html" title="interface in net.minecraft.command">CommandSource</a></code>, <code><a href="../util/snooper/Snoopable.html" title="interface in net.minecraft.util.snooper">Snoopable</a></code>, <code><a href="../util/ThreadExecutor.html" title="interface in net.minecraft.util">ThreadExecutor</a></code></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -141,7 +141,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public abstract class <span class="typeNameLabel">MinecraftServer</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
-implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Runnable</a>, <a href="../command/CommandSource.html" title="interface in net.minecraft.command">CommandSource</a>, <a href="../util/GameEngine.html" title="interface in net.minecraft.util">GameEngine</a>, <a href="../util/snooper/Snoopable.html" title="interface in net.minecraft.util.snooper">Snoopable</a></pre>
+implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Runnable</a>, <a href="../command/CommandSource.html" title="interface in net.minecraft.command">CommandSource</a>, <a href="../util/ThreadExecutor.html" title="interface in net.minecraft.util">ThreadExecutor</a>, <a href="../util/snooper/Snoopable.html" title="interface in net.minecraft.util.snooper">Snoopable</a></pre>
 </li>
 </ul>
 </div>
@@ -988,7 +988,7 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable
 </tr>
 <tr id="i100" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCrashReport(net.minecraft.util.crash.CrashReport)">setCrashReport</a></span>&#8203;(<a href="../util/crash/CrashReport.html" title="class in net.minecraft.util.crash">CrashReport</a>&nbsp;crashReport)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCrashReport(net.minecraft.util.crash.CrashReport)">setCrashReport</a></span>&#8203;(<a href="../util/crash/CrashReport.html" title="class in net.minecraft.util.crash">CrashReport</a>&nbsp;report)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i101" class="rowColor">
@@ -2014,7 +2014,7 @@ protected&nbsp;void&nbsp;setInstance()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>setCrashReport</h4>
-<pre class="methodSignature">protected&nbsp;void&nbsp;setCrashReport&#8203;(<a href="../util/crash/CrashReport.html" title="class in net.minecraft.util.crash">CrashReport</a>&nbsp;crashReport)</pre>
+<pre class="methodSignature">protected&nbsp;void&nbsp;setCrashReport&#8203;(<a href="../util/crash/CrashReport.html" title="class in net.minecraft.util.crash">CrashReport</a>&nbsp;report)</pre>
 </li>
 </ul>
 <a id="exit()">
@@ -3065,7 +3065,7 @@ public&nbsp;void&nbsp;setForceGameMode&#8203;(boolean&nbsp;forceGameMode)</pre>
 <pre class="methodSignature">public&nbsp;<a href="https://guava.dev/releases/21.0/api/docs/com/google/common/util/concurrent/ListenableFuture.html?is-external=true" title="class or interface in com.google.common.util.concurrent" class="externalLink">ListenableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>&gt;&nbsp;submit&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Runnable</a>&nbsp;task)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../util/GameEngine.html#submit(java.lang.Runnable)">submit</a></code>&nbsp;in interface&nbsp;<code><a href="../util/GameEngine.html" title="interface in net.minecraft.util">GameEngine</a></code></dd>
+<dd><code><a href="../util/ThreadExecutor.html#submit(java.lang.Runnable)">submit</a></code>&nbsp;in interface&nbsp;<code><a href="../util/ThreadExecutor.html" title="interface in net.minecraft.util">ThreadExecutor</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -3078,7 +3078,7 @@ public&nbsp;void&nbsp;setForceGameMode&#8203;(boolean&nbsp;forceGameMode)</pre>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;isOnThread()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../util/GameEngine.html#isOnThread()">isOnThread</a></code>&nbsp;in interface&nbsp;<code><a href="../util/GameEngine.html" title="interface in net.minecraft.util">GameEngine</a></code></dd>
+<dd><code><a href="../util/ThreadExecutor.html#isOnThread()">isOnThread</a></code>&nbsp;in interface&nbsp;<code><a href="../util/ThreadExecutor.html" title="interface in net.minecraft.util">ThreadExecutor</a></code></dd>
 </dl>
 </li>
 </ul>

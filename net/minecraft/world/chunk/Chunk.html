@@ -132,7 +132,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="SubChunk.html" title="class in net.minecraft.world.chunk">SubChunk</a></code></dd>
+<dd><code><a href="EmptyChunk.html" title="class in net.minecraft.world.chunk">EmptyChunk</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">Chunk</span>
@@ -159,7 +159,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="Chunk.class_400.html" title="enum in net.minecraft.world.chunk">Chunk.class_400</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="Chunk.Status.html" title="enum in net.minecraft.world.chunk">Chunk.Status</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -191,43 +191,43 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>private <a href="BlockStorage.html" title="class in net.minecraft.world.chunk">BlockStorage</a>[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#blockStorage">blockStorage</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#chunkX">chunkX</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#chunkZ">chunkZ</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#containsEntities">containsEntities</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>private <a href="../../util/TypeFilterableList.html" title="class in net.minecraft.util">TypeFilterableList</a>&lt;<a href="../../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&gt;[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#entities">entities</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1562">field_1562</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1563">field_1563</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="BlockStorage.html" title="class in net.minecraft.world.chunk">BlockStorage</a>[]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1565">field_1565</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code>private byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1566">field_1566</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private int[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1567">field_1567</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private boolean[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1568">field_1568</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1569">field_1569</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -237,57 +237,57 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1575">field_1575</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1576">field_1576</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1577">field_1577</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1578">field_1578</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1579">field_1579</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private long</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1580">field_1580</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1581">field_1581</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private long</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1582">field_1582</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>private int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1583">field_1583</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private int[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#heightmap">heightmap</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><code>private long</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#inhabitedTime">inhabitedTime</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 <tr class="rowColor">
+<td class="colFirst"><code>private long</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#lastSaveTime">lastSaveTime</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#lightPopulated">lightPopulated</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#loaded">loaded</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j" class="externalLink">Logger</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#LOGGER">LOGGER</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#minimumHeightMap">minimumHeightMap</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#modified">modified</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#terrainPopulated">terrainPopulated</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -314,13 +314,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.world.World,int,int)">Chunk</a></span>&#8203;(<a href="../World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-     int&nbsp;int2,
-     int&nbsp;int3)</code></th>
+     int&nbsp;chunkX,
+     int&nbsp;chunkZ)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.world.World,net.minecraft.class_416,int,int)">Chunk</a></span>&#8203;(<a href="../World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-     <a href="../../class_416.html" title="class in net.minecraft">class_416</a>&nbsp;class_416,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.world.World,net.minecraft.world.chunk.ChunkCoordinateRange,int,int)">Chunk</a></span>&#8203;(<a href="../World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+     <a href="ChunkCoordinateRange.html" title="class in net.minecraft.world.chunk">ChunkCoordinateRange</a>&nbsp;chunkCoordinateRange,
      int&nbsp;int2,
      int&nbsp;int3)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -344,55 +344,95 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="../../block/Block.html" title="class in net.minecraft.block">Block</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBlockAtPos(net.minecraft.util.math.BlockPos)">getBlockAtPos</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>,&#8203;<a href="../../block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBlockEntities()">getBlockEntities</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../block/BlockState.html" title="interface in net.minecraft.block">BlockState</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBlockState(net.minecraft.util.math.BlockPos)">getBlockState</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="BlockStorage.html" title="class in net.minecraft.world.chunk">BlockStorage</a>[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBlockStorage()">getBlockStorage</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../util/TypeFilterableList.html" title="class in net.minecraft.util">TypeFilterableList</a>&lt;<a href="../../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&gt;[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEntities()">getEntities</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>long</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getInhabitedTime()">getInhabitedTime</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>int[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLevelHeightmap()">getLevelHeightmap</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLightAtPos(net.minecraft.world.LightType,net.minecraft.util.math.BlockPos)">getLightAtPos</a></span>&#8203;(<a href="../LightType.html" title="enum in net.minecraft.world">LightType</a>&nbsp;type,
              <a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMinimumHeightMap()">getMinimumHeightMap</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../World.html" title="class in net.minecraft.world">World</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getWorld()">getWorld</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isChunkEqual(int,int)">isChunkEqual</a></span>&#8203;(int&nbsp;chunkX,
+            int&nbsp;chunkZ)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isEmpty()">isEmpty</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isLightPopulated()">isLightPopulated</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isLoaded()">isLoaded</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isTerrainPopulated()">isTerrainPopulated</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1343()">method_1343</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1344(int,int)">method_1344</a></span>&#8203;(int&nbsp;int2,
-           int&nbsp;int3)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i8" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../block/Block.html" title="class in net.minecraft.block">Block</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1345(int,int,int)">method_1345</a></span>&#8203;(int&nbsp;int2,
            int&nbsp;int3,
            int&nbsp;int4)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1346(int,int,int,int)">method_1346</a></span>&#8203;(int&nbsp;int2,
            int&nbsp;int3,
@@ -400,72 +440,67 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
            int&nbsp;int5)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1347(long)">method_1347</a></span>&#8203;(long&nbsp;long2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1349(net.minecraft.world.LightType,net.minecraft.util.math.BlockPos,int)">method_1349</a></span>&#8203;(<a href="../LightType.html" title="enum in net.minecraft.world">LightType</a>&nbsp;type,
            <a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
            int&nbsp;int2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1350(net.minecraft.block.entity.BlockEntity)">method_1350</a></span>&#8203;(<a href="../../block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a>&nbsp;be)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1351(net.minecraft.world.chunk.ChunkProvider,net.minecraft.world.chunk.ChunkProvider,int,int)">method_1351</a></span>&#8203;(<a href="ChunkProvider.html" title="interface in net.minecraft.world.chunk">ChunkProvider</a>&nbsp;chunkProvider,
-           <a href="ChunkProvider.html" title="interface in net.minecraft.world.chunk">ChunkProvider</a>&nbsp;chunkProvider2,
-           int&nbsp;int2,
-           int&nbsp;int3)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1351(net.minecraft.world.chunk.ChunkProvider,net.minecraft.world.chunk.ChunkProvider,int,int)">method_1351</a></span>&#8203;(<a href="ChunkProvider.html" title="interface in net.minecraft.world.chunk">ChunkProvider</a>&nbsp;provider,
+           <a href="ChunkProvider.html" title="interface in net.minecraft.world.chunk">ChunkProvider</a>&nbsp;chunkProvider,
+           int&nbsp;chunkX,
+           int&nbsp;chunkZ)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
-<td class="colFirst"><code><a href="../../block/Block.html" title="class in net.minecraft.block">Block</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1352(net.minecraft.util.math.BlockPos)">method_1352</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i15" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1353(net.minecraft.util.math.BlockPos,int)">method_1353</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
            int&nbsp;int2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../biome/Biome.html" title="class in net.minecraft.world.biome">Biome</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1354(net.minecraft.util.math.BlockPos,net.minecraft.world.biome.source.BiomeSource)">method_1354</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
            <a href="../biome/source/BiomeSource.html" title="class in net.minecraft.world.biome.source">BiomeSource</a>&nbsp;biomeSource)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1355(net.minecraft.util.math.BlockPos,net.minecraft.block.entity.BlockEntity)">method_1355</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
            <a href="../../block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a>&nbsp;be)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code><a href="../../block/BlockState.html" title="interface in net.minecraft.block">BlockState</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1356(net.minecraft.util.math.BlockPos,net.minecraft.block.BlockState)">method_1356</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
            <a href="../../block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code><a href="../../block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1357(net.minecraft.util.math.BlockPos,net.minecraft.world.chunk.Chunk.class_400)">method_1357</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
-           <a href="Chunk.class_400.html" title="enum in net.minecraft.world.chunk">Chunk.class_400</a>&nbsp;class_400)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1357(net.minecraft.util.math.BlockPos,net.minecraft.world.chunk.Chunk.Status)">method_1357</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+           <a href="Chunk.Status.html" title="enum in net.minecraft.world.chunk">Chunk.Status</a>&nbsp;status)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1358(net.minecraft.util.math.Direction)">method_1358</a></span>&#8203;(<a href="../../util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;dir)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>&lt;T extends <a href="../../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&gt;<br>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1359(java.lang.Class,net.minecraft.util.math.Box,java.util.List,com.google.common.base.Predicate)">method_1359</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends T&gt;&nbsp;clazz,
            <a href="../../util/math/Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;box,
@@ -473,18 +508,18 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
            <a href="https://guava.dev/releases/21.0/api/docs/com/google/common/base/Predicate.html?is-external=true" title="class or interface in com.google.common.base" class="externalLink">Predicate</a>&lt;? super T&gt;&nbsp;pred)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1360(net.minecraft.entity.Entity)">method_1360</a></span>&#8203;(<a href="../../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1361(net.minecraft.entity.Entity,int)">method_1361</a></span>&#8203;(<a href="../../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
            int&nbsp;int2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1362(net.minecraft.entity.Entity,net.minecraft.util.math.Box,java.util.List,com.google.common.base.Predicate)">method_1362</a></span>&#8203;(<a href="../../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
            <a href="../../util/math/Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;box,
@@ -492,163 +527,127 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
            <a href="https://guava.dev/releases/21.0/api/docs/com/google/common/base/Predicate.html?is-external=true" title="class or interface in com.google.common.base" class="externalLink">Predicate</a>&lt;? super <a href="../../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&gt;&nbsp;pred)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1363(boolean)">method_1363</a></span>&#8203;(boolean&nbsp;bool)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1364(byte%5B%5D)">method_1364</a></span>&#8203;(byte[]&nbsp;byte2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1365(byte%5B%5D,int,boolean)">method_1365</a></span>&#8203;(byte[]&nbsp;byte2,
            int&nbsp;int2,
            boolean&nbsp;bool)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1367(net.minecraft.world.chunk.BlockStorage%5B%5D)">method_1367</a></span>&#8203;(<a href="BlockStorage.html" title="class in net.minecraft.world.chunk">BlockStorage</a>[]&nbsp;blockStorage)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1368()">method_1368</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1369(int,int)">method_1369</a></span>&#8203;(int&nbsp;int2,
            int&nbsp;int3)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1370(long)">method_1370</a></span>&#8203;(long&nbsp;long2)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i32" class="altColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1371(net.minecraft.util.math.BlockPos)">method_1371</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1372(net.minecraft.entity.Entity)">method_1372</a></span>&#8203;(<a href="../../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1373(boolean)">method_1373</a></span>&#8203;(boolean&nbsp;bool)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1374()">method_1374</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1375(int,int)">method_1375</a></span>&#8203;(int&nbsp;int2,
            int&nbsp;int3)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1376(int,int,int)">method_1376</a></span>&#8203;(int&nbsp;int2,
            int&nbsp;int3,
            int&nbsp;int4)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1377(long)">method_1377</a></span>&#8203;(long&nbsp;long2)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i39" class="rowColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1378(net.minecraft.util.math.BlockPos)">method_1378</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i40" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1379(boolean)">method_1379</a></span>&#8203;(boolean&nbsp;bool)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i41" class="rowColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1380()">method_1380</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1381(int,int)">method_1381</a></span>&#8203;(int&nbsp;int2,
            int&nbsp;int3)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1382(int,int,int)">method_1382</a></span>&#8203;(int&nbsp;int2,
            int&nbsp;int3,
            int&nbsp;int4)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1383(net.minecraft.util.math.BlockPos)">method_1383</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i45" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1384(boolean)">method_1384</a></span>&#8203;(boolean&nbsp;bool)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i46" class="altColor">
+<tr id="i49" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1385()">method_1385</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i47" class="rowColor">
-<td class="colFirst"><code>private boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1386(int,int)">method_1386</a></span>&#8203;(int&nbsp;int2,
-           int&nbsp;int3)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i48" class="altColor">
+<tr id="i50" class="altColor">
 <td class="colFirst"><code>private int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1387(int,int,int)">method_1387</a></span>&#8203;(int&nbsp;int2,
            int&nbsp;int3,
            int&nbsp;int4)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i51" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1388(net.minecraft.util.math.BlockPos)">method_1388</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i50" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1389(boolean)">method_1389</a></span>&#8203;(boolean&nbsp;bool)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i51" class="rowColor">
+<tr id="i52" class="altColor">
 <td class="colFirst"><code>private <a href="../../block/Block.html" title="class in net.minecraft.block">Block</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1391(int,int,int)">method_1391</a></span>&#8203;(int&nbsp;int2,
            int&nbsp;int3,
            int&nbsp;int4)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i52" class="altColor">
+<tr id="i53" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1392(net.minecraft.util.math.BlockPos)">method_1392</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i53" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1393(boolean)">method_1393</a></span>&#8203;(boolean&nbsp;bool)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i54" class="altColor">
@@ -664,98 +663,99 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i56" class="altColor">
-<td class="colFirst"><code><a href="../../block/BlockState.html" title="interface in net.minecraft.block">BlockState</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1396(net.minecraft.util.math.BlockPos)">method_1396</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i57" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1397(boolean)">method_1397</a></span>&#8203;(boolean&nbsp;bool)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i58" class="altColor">
-<td class="colFirst"><code><a href="BlockStorage.html" title="class in net.minecraft.world.chunk">BlockStorage</a>[]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1398()">method_1398</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i59" class="rowColor">
 <td class="colFirst"><code><a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1399(net.minecraft.util.math.BlockPos)">method_1399</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i60" class="altColor">
+<tr id="i57" class="rowColor">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1400(boolean)">method_1400</a></span>&#8203;(boolean&nbsp;bool)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i61" class="rowColor">
+<tr id="i58" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1401()">method_1401</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i62" class="altColor">
+<tr id="i59" class="rowColor">
 <td class="colFirst"><code>private <a href="../../block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1402(net.minecraft.util.math.BlockPos)">method_1402</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i63" class="rowColor">
+<tr id="i60" class="altColor">
 <td class="colFirst"><code><a href="../../util/math/ColumnPos.html" title="class in net.minecraft.util.math">ColumnPos</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1403()">method_1403</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i64" class="altColor">
+<tr id="i61" class="rowColor">
 <td class="colFirst"><code>byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1404()">method_1404</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i65" class="rowColor">
+<tr id="i62" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1405()">method_1405</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i66" class="altColor">
+<tr id="i63" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1406()">method_1406</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i67" class="rowColor">
+<tr id="i64" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1407()">method_1407</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i68" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1408()">method_1408</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i69" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1413()">method_1413</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i70" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1414()">method_1414</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i71" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1415()">method_1415</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i72" class="altColor">
-<td class="colFirst"><code>long</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1416()">method_1416</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i73" class="rowColor">
+<tr id="i65" class="rowColor">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1417()">method_1417</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i74" class="altColor">
+<tr id="i66" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setChunkLoaded(boolean)">setChunkLoaded</a></span>&#8203;(boolean&nbsp;loaded)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i67" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setHasEntities(boolean)">setHasEntities</a></span>&#8203;(boolean&nbsp;containsEntities)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i68" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setInhabitedTime(long)">setInhabitedTime</a></span>&#8203;(long&nbsp;inhabitedTime)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i69" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setLastSaveTime(long)">setLastSaveTime</a></span>&#8203;(long&nbsp;lastSaveTime)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i70" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setLevelHeightmap(int%5B%5D)">setLevelHeightmap</a></span>&#8203;(int[]&nbsp;heightmap)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i71" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setLightPopulated(boolean)">setLightPopulated</a></span>&#8203;(boolean&nbsp;lightPopulated)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i72" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setModified(boolean)">setModified</a></span>&#8203;(boolean&nbsp;modified)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i73" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTerrainPopulated(boolean)">setTerrainPopulated</a></span>&#8203;(boolean&nbsp;terrainPopulated)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i74" class="altColor">
+<td class="colFirst"><code>private boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#updateLight(int,int)">updateLight</a></span>&#8203;(int&nbsp;int2,
+           int&nbsp;int3)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -791,13 +791,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j" class="externalLink">Logger</a> LOGGER</pre>
 </li>
 </ul>
-<a id="field_1565">
+<a id="blockStorage">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_1565</h4>
-<pre>private final&nbsp;<a href="BlockStorage.html" title="class in net.minecraft.world.chunk">BlockStorage</a>[] field_1565</pre>
+<h4>blockStorage</h4>
+<pre>private final&nbsp;<a href="BlockStorage.html" title="class in net.minecraft.world.chunk">BlockStorage</a>[] blockStorage</pre>
 </li>
 </ul>
 <a id="field_1566">
@@ -827,13 +827,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>private final&nbsp;boolean[] field_1568</pre>
 </li>
 </ul>
-<a id="field_1569">
+<a id="loaded">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_1569</h4>
-<pre>private&nbsp;boolean field_1569</pre>
+<h4>loaded</h4>
+<pre>private&nbsp;boolean loaded</pre>
 </li>
 </ul>
 <a id="world">
@@ -854,22 +854,22 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>private final&nbsp;int[] heightmap</pre>
 </li>
 </ul>
-<a id="field_1562">
+<a id="chunkX">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_1562</h4>
-<pre>public final&nbsp;int field_1562</pre>
+<h4>chunkX</h4>
+<pre>public final&nbsp;int chunkX</pre>
 </li>
 </ul>
-<a id="field_1563">
+<a id="chunkZ">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_1563</h4>
-<pre>public final&nbsp;int field_1563</pre>
+<h4>chunkZ</h4>
+<pre>public final&nbsp;int chunkZ</pre>
 </li>
 </ul>
 <a id="field_1572">
@@ -899,22 +899,22 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>private final&nbsp;<a href="../../util/TypeFilterableList.html" title="class in net.minecraft.util">TypeFilterableList</a>&lt;<a href="../../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&gt;[] entities</pre>
 </li>
 </ul>
-<a id="field_1575">
+<a id="terrainPopulated">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_1575</h4>
-<pre>private&nbsp;boolean field_1575</pre>
+<h4>terrainPopulated</h4>
+<pre>private&nbsp;boolean terrainPopulated</pre>
 </li>
 </ul>
-<a id="field_1576">
+<a id="lightPopulated">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_1576</h4>
-<pre>private&nbsp;boolean field_1576</pre>
+<h4>lightPopulated</h4>
+<pre>private&nbsp;boolean lightPopulated</pre>
 </li>
 </ul>
 <a id="field_1577">
@@ -926,49 +926,49 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>private&nbsp;boolean field_1577</pre>
 </li>
 </ul>
-<a id="field_1578">
+<a id="modified">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_1578</h4>
-<pre>private&nbsp;boolean field_1578</pre>
+<h4>modified</h4>
+<pre>private&nbsp;boolean modified</pre>
 </li>
 </ul>
-<a id="field_1579">
+<a id="containsEntities">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_1579</h4>
-<pre>private&nbsp;boolean field_1579</pre>
+<h4>containsEntities</h4>
+<pre>private&nbsp;boolean containsEntities</pre>
 </li>
 </ul>
-<a id="field_1580">
+<a id="lastSaveTime">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_1580</h4>
-<pre>private&nbsp;long field_1580</pre>
+<h4>lastSaveTime</h4>
+<pre>private&nbsp;long lastSaveTime</pre>
 </li>
 </ul>
-<a id="field_1581">
+<a id="minimumHeightMap">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_1581</h4>
-<pre>private&nbsp;int field_1581</pre>
+<h4>minimumHeightMap</h4>
+<pre>private&nbsp;int minimumHeightMap</pre>
 </li>
 </ul>
-<a id="field_1582">
+<a id="inhabitedTime">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_1582</h4>
-<pre>private&nbsp;long field_1582</pre>
+<h4>inhabitedTime</h4>
+<pre>private&nbsp;long inhabitedTime</pre>
 </li>
 </ul>
 <a id="field_1583">
@@ -1006,18 +1006,18 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>Chunk</h4>
 <pre>public&nbsp;Chunk&#8203;(<a href="../World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-             int&nbsp;int2,
-             int&nbsp;int3)</pre>
+             int&nbsp;chunkX,
+             int&nbsp;chunkZ)</pre>
 </li>
 </ul>
-<a id="&lt;init&gt;(net.minecraft.world.World,net.minecraft.class_416,int,int)">
+<a id="&lt;init&gt;(net.minecraft.world.World,net.minecraft.world.chunk.ChunkCoordinateRange,int,int)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>Chunk</h4>
 <pre>public&nbsp;Chunk&#8203;(<a href="../World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-             <a href="../../class_416.html" title="class in net.minecraft">class_416</a>&nbsp;class_416,
+             <a href="ChunkCoordinateRange.html" title="class in net.minecraft.world.chunk">ChunkCoordinateRange</a>&nbsp;chunkCoordinateRange,
              int&nbsp;int2,
              int&nbsp;int3)</pre>
 </li>
@@ -1032,14 +1032,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="method_1344(int,int)">
+<a id="isChunkEqual(int,int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1344</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;method_1344&#8203;(int&nbsp;int2,
-                           int&nbsp;int3)</pre>
+<h4>isChunkEqual</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isChunkEqual&#8203;(int&nbsp;chunkX,
+                            int&nbsp;chunkZ)</pre>
 </li>
 </ul>
 <a id="method_1392(net.minecraft.util.math.BlockPos)">
@@ -1070,13 +1070,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre class="methodSignature">public&nbsp;int&nbsp;method_1394()</pre>
 </li>
 </ul>
-<a id="method_1398()">
+<a id="getBlockStorage()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1398</h4>
-<pre class="methodSignature">public&nbsp;<a href="BlockStorage.html" title="class in net.minecraft.world.chunk">BlockStorage</a>[]&nbsp;method_1398()</pre>
+<h4>getBlockStorage</h4>
+<pre class="methodSignature">public&nbsp;<a href="BlockStorage.html" title="class in net.minecraft.world.chunk">BlockStorage</a>[]&nbsp;getBlockStorage()</pre>
 </li>
 </ul>
 <a id="method_1343()">
@@ -1193,22 +1193,22 @@ protected&nbsp;void&nbsp;method_1343()</pre>
                          int&nbsp;int4)</pre>
 </li>
 </ul>
-<a id="method_1352(net.minecraft.util.math.BlockPos)">
+<a id="getBlockAtPos(net.minecraft.util.math.BlockPos)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1352</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../block/Block.html" title="class in net.minecraft.block">Block</a>&nbsp;method_1352&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</pre>
+<h4>getBlockAtPos</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../block/Block.html" title="class in net.minecraft.block">Block</a>&nbsp;getBlockAtPos&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</pre>
 </li>
 </ul>
-<a id="method_1396(net.minecraft.util.math.BlockPos)">
+<a id="getBlockState(net.minecraft.util.math.BlockPos)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1396</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;method_1396&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</pre>
+<h4>getBlockState</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;getBlockState&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</pre>
 </li>
 </ul>
 <a id="method_1395(int,int,int)">
@@ -1318,14 +1318,14 @@ protected&nbsp;void&nbsp;method_1343()</pre>
 <pre class="methodSignature">private&nbsp;<a href="../../block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a>&nbsp;method_1402&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</pre>
 </li>
 </ul>
-<a id="method_1357(net.minecraft.util.math.BlockPos,net.minecraft.world.chunk.Chunk.class_400)">
+<a id="method_1357(net.minecraft.util.math.BlockPos,net.minecraft.world.chunk.Chunk.Status)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>method_1357</h4>
 <pre class="methodSignature">public&nbsp;<a href="../../block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a>&nbsp;method_1357&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
-                               <a href="Chunk.class_400.html" title="enum in net.minecraft.world.chunk">Chunk.class_400</a>&nbsp;class_400)</pre>
+                               <a href="Chunk.Status.html" title="enum in net.minecraft.world.chunk">Chunk.Status</a>&nbsp;status)</pre>
 </li>
 </ul>
 <a id="method_1350(net.minecraft.block.entity.BlockEntity)">
@@ -1440,10 +1440,10 @@ protected&nbsp;void&nbsp;method_1343()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>method_1351</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1351&#8203;(<a href="ChunkProvider.html" title="interface in net.minecraft.world.chunk">ChunkProvider</a>&nbsp;chunkProvider,
-                        <a href="ChunkProvider.html" title="interface in net.minecraft.world.chunk">ChunkProvider</a>&nbsp;chunkProvider2,
-                        int&nbsp;int2,
-                        int&nbsp;int3)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;method_1351&#8203;(<a href="ChunkProvider.html" title="interface in net.minecraft.world.chunk">ChunkProvider</a>&nbsp;provider,
+                        <a href="ChunkProvider.html" title="interface in net.minecraft.world.chunk">ChunkProvider</a>&nbsp;chunkProvider,
+                        int&nbsp;chunkX,
+                        int&nbsp;chunkZ)</pre>
 </li>
 </ul>
 <a id="method_1399(net.minecraft.util.math.BlockPos)">
@@ -1586,33 +1586,33 @@ public&nbsp;void&nbsp;method_1365&#8203;(byte[]&nbsp;byte2,
 <pre class="methodSignature">private&nbsp;void&nbsp;method_1358&#8203;(<a href="../../util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;dir)</pre>
 </li>
 </ul>
-<a id="method_1386(int,int)">
+<a id="updateLight(int,int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1386</h4>
-<pre class="methodSignature">private&nbsp;boolean&nbsp;method_1386&#8203;(int&nbsp;int2,
+<h4>updateLight</h4>
+<pre class="methodSignature">private&nbsp;boolean&nbsp;updateLight&#8203;(int&nbsp;int2,
                             int&nbsp;int3)</pre>
 </li>
 </ul>
-<a id="method_1408()">
+<a id="isLoaded()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1408</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;method_1408()</pre>
+<h4>isLoaded</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isLoaded()</pre>
 </li>
 </ul>
-<a id="method_1379(boolean)">
+<a id="setChunkLoaded(boolean)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1379</h4>
+<h4>setChunkLoaded</h4>
 <pre class="methodSignature">@Environment(CLIENT)
-public&nbsp;void&nbsp;method_1379&#8203;(boolean&nbsp;bool)</pre>
+public&nbsp;void&nbsp;setChunkLoaded&#8203;(boolean&nbsp;loaded)</pre>
 </li>
 </ul>
 <a id="getWorld()">
@@ -1660,94 +1660,94 @@ public&nbsp;void&nbsp;method_1379&#8203;(boolean&nbsp;bool)</pre>
 <pre class="methodSignature">public&nbsp;<a href="../../util/TypeFilterableList.html" title="class in net.minecraft.util">TypeFilterableList</a>&lt;<a href="../../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&gt;[]&nbsp;getEntities()</pre>
 </li>
 </ul>
-<a id="method_1413()">
+<a id="isTerrainPopulated()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1413</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;method_1413()</pre>
+<h4>isTerrainPopulated</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isTerrainPopulated()</pre>
 </li>
 </ul>
-<a id="method_1384(boolean)">
+<a id="setTerrainPopulated(boolean)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1384</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1384&#8203;(boolean&nbsp;bool)</pre>
+<h4>setTerrainPopulated</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setTerrainPopulated&#8203;(boolean&nbsp;terrainPopulated)</pre>
 </li>
 </ul>
-<a id="method_1414()">
+<a id="isLightPopulated()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1414</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;method_1414()</pre>
+<h4>isLightPopulated</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isLightPopulated()</pre>
 </li>
 </ul>
-<a id="method_1389(boolean)">
+<a id="setLightPopulated(boolean)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1389</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1389&#8203;(boolean&nbsp;bool)</pre>
+<h4>setLightPopulated</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setLightPopulated&#8203;(boolean&nbsp;lightPopulated)</pre>
 </li>
 </ul>
-<a id="method_1393(boolean)">
+<a id="setModified(boolean)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1393</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1393&#8203;(boolean&nbsp;bool)</pre>
+<h4>setModified</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setModified&#8203;(boolean&nbsp;modified)</pre>
 </li>
 </ul>
-<a id="method_1397(boolean)">
+<a id="setHasEntities(boolean)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1397</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1397&#8203;(boolean&nbsp;bool)</pre>
+<h4>setHasEntities</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setHasEntities&#8203;(boolean&nbsp;containsEntities)</pre>
 </li>
 </ul>
-<a id="method_1370(long)">
+<a id="setLastSaveTime(long)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1370</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1370&#8203;(long&nbsp;long2)</pre>
+<h4>setLastSaveTime</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setLastSaveTime&#8203;(long&nbsp;lastSaveTime)</pre>
 </li>
 </ul>
-<a id="method_1415()">
+<a id="getMinimumHeightMap()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1415</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;method_1415()</pre>
+<h4>getMinimumHeightMap</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;getMinimumHeightMap()</pre>
 </li>
 </ul>
-<a id="method_1416()">
+<a id="getInhabitedTime()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1416</h4>
-<pre class="methodSignature">public&nbsp;long&nbsp;method_1416()</pre>
+<h4>getInhabitedTime</h4>
+<pre class="methodSignature">public&nbsp;long&nbsp;getInhabitedTime()</pre>
 </li>
 </ul>
-<a id="method_1377(long)">
+<a id="setInhabitedTime(long)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_1377</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_1377&#8203;(long&nbsp;long2)</pre>
+<h4>setInhabitedTime</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setInhabitedTime&#8203;(long&nbsp;inhabitedTime)</pre>
 </li>
 </ul>
 </li>

@@ -197,13 +197,13 @@ extends <a href="RconBase.html" title="class in net.minecraft.server.rcon">RconB
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/net/SocketAddress.html?is-external=true" title="class or interface in java.net" class="externalLink">SocketAddress</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6863">field_6863</a></span></code></th>
+<td class="colFirst"><code>private <a href="DataStreamHelper.html" title="class in net.minecraft.server.rcon">DataStreamHelper</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dataStreamHelper">dataStreamHelper</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="DataStreamHelper.html" title="class in net.minecraft.server.rcon">DataStreamHelper</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6868">field_6868</a></span></code></th>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util" class="externalLink">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/net/SocketAddress.html?is-external=true" title="class or interface in java.net" class="externalLink">SocketAddress</a>,&#8203;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6863">field_6863</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -272,7 +272,7 @@ extends <a href="RconBase.html" title="class in net.minecraft.server.rcon">RconB
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.server.rcon.<a href="RconBase.html" title="class in net.minecraft.server.rcon">RconBase</a></h3>
-<code><a href="RconBase.html#description">description</a>, <a href="RconBase.html#field_6847">field_6847</a>, <a href="RconBase.html#field_6849">field_6849</a>, <a href="RconBase.html#field_6850">field_6850</a>, <a href="RconBase.html#running">running</a>, <a href="RconBase.html#serverSockets">serverSockets</a>, <a href="RconBase.html#sockets">sockets</a></code></li>
+<code><a href="RconBase.html#description">description</a>, <a href="RconBase.html#field_6850">field_6850</a>, <a href="RconBase.html#rconThread">rconThread</a>, <a href="RconBase.html#running">running</a>, <a href="RconBase.html#server">server</a>, <a href="RconBase.html#serverSockets">serverSockets</a>, <a href="RconBase.html#sockets">sockets</a></code></li>
 </ul>
 </li>
 </ul>
@@ -291,7 +291,7 @@ extends <a href="RconBase.html" title="class in net.minecraft.server.rcon">RconB
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.server.dedicated.DedicatedServerProvider)">QueryResponseHandler</a></span>&#8203;(<a href="../dedicated/DedicatedServerProvider.html" title="interface in net.minecraft.server.dedicated">DedicatedServerProvider</a>&nbsp;dedicatedServerProvider)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.server.dedicated.DedicatedServerProvider)">QueryResponseHandler</a></span>&#8203;(<a href="../dedicated/DedicatedServerProvider.html" title="interface in net.minecraft.server.dedicated">DedicatedServerProvider</a>&nbsp;server)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -355,7 +355,7 @@ extends <a href="RconBase.html" title="class in net.minecraft.server.rcon">RconB
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#reply(byte%5B%5D,java.net.DatagramPacket)">reply</a></span>&#8203;(byte[]&nbsp;buf,
-     <a href="https://docs.oracle.com/javase/8/docs/api/java/net/DatagramPacket.html?is-external=true" title="class or interface in java.net" class="externalLink">DatagramPacket</a>&nbsp;datagramPacket)</code></th>
+     <a href="https://docs.oracle.com/javase/8/docs/api/java/net/DatagramPacket.html?is-external=true" title="class or interface in java.net" class="externalLink">DatagramPacket</a>&nbsp;packet)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
@@ -525,13 +525,13 @@ extends <a href="RconBase.html" title="class in net.minecraft.server.rcon">RconB
 <pre>private&nbsp;long creationTime</pre>
 </li>
 </ul>
-<a id="field_6868">
+<a id="dataStreamHelper">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6868</h4>
-<pre>private&nbsp;<a href="DataStreamHelper.html" title="class in net.minecraft.server.rcon">DataStreamHelper</a> field_6868</pre>
+<h4>dataStreamHelper</h4>
+<pre>private&nbsp;<a href="DataStreamHelper.html" title="class in net.minecraft.server.rcon">DataStreamHelper</a> dataStreamHelper</pre>
 </li>
 </ul>
 <a id="lastResponseTime">
@@ -559,7 +559,7 @@ extends <a href="RconBase.html" title="class in net.minecraft.server.rcon">RconB
 <ul class="blockListLast">
 <li class="blockList">
 <h4>QueryResponseHandler</h4>
-<pre>public&nbsp;QueryResponseHandler&#8203;(<a href="../dedicated/DedicatedServerProvider.html" title="interface in net.minecraft.server.dedicated">DedicatedServerProvider</a>&nbsp;dedicatedServerProvider)</pre>
+<pre>public&nbsp;QueryResponseHandler&#8203;(<a href="../dedicated/DedicatedServerProvider.html" title="interface in net.minecraft.server.dedicated">DedicatedServerProvider</a>&nbsp;server)</pre>
 </li>
 </ul>
 </li>
@@ -579,7 +579,7 @@ extends <a href="RconBase.html" title="class in net.minecraft.server.rcon">RconB
 <li class="blockList">
 <h4>reply</h4>
 <pre class="methodSignature">private&nbsp;void&nbsp;reply&#8203;(byte[]&nbsp;buf,
-                   <a href="https://docs.oracle.com/javase/8/docs/api/java/net/DatagramPacket.html?is-external=true" title="class or interface in java.net" class="externalLink">DatagramPacket</a>&nbsp;datagramPacket)
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/net/DatagramPacket.html?is-external=true" title="class or interface in java.net" class="externalLink">DatagramPacket</a>&nbsp;packet)
             throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io" class="externalLink">IOException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>

@@ -123,7 +123,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../class_1776.html" title="class in net.minecraft">net.minecraft.class_1776</a></li>
+<li><a href="../EntityMotionHelper.html" title="class in net.minecraft.entity">net.minecraft.entity.EntityMotionHelper</a></li>
 <li>
 <ul class="inheritance">
 <li>net.minecraft.entity.mob.GhastEntity.GhastMoveControl</li>
@@ -141,7 +141,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <hr>
 <pre>static class <span class="typeNameLabel">GhastEntity.GhastMoveControl</span>
-extends <a href="../../class_1776.html" title="class in net.minecraft">class_1776</a></pre>
+extends <a href="../EntityMotionHelper.html" title="class in net.minecraft.entity">EntityMotionHelper</a></pre>
 </li>
 </ul>
 </div>
@@ -174,11 +174,11 @@ extends <a href="../../class_1776.html" title="class in net.minecraft">class_177
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a id="fields.inherited.from.class.net.minecraft.class_1776">
+<li class="blockList"><a id="fields.inherited.from.class.net.minecraft.entity.EntityMotionHelper">
 <!--   -->
 </a>
-<h3>Fields inherited from class&nbsp;net.minecraft.<a href="../../class_1776.html" title="class in net.minecraft">class_1776</a></h3>
-<code><a href="../../class_1776.html#field_7584">field_7584</a>, <a href="../../class_1776.html#field_7585">field_7585</a>, <a href="../../class_1776.html#field_7586">field_7586</a>, <a href="../../class_1776.html#field_7587">field_7587</a>, <a href="../../class_1776.html#field_7588">field_7588</a>, <a href="../../class_1776.html#field_7589">field_7589</a></code></li>
+<h3>Fields inherited from class&nbsp;net.minecraft.entity.<a href="../EntityMotionHelper.html" title="class in net.minecraft.entity">EntityMotionHelper</a></h3>
+<code><a href="../EntityMotionHelper.html#entity">entity</a>, <a href="../EntityMotionHelper.html#speed">speed</a>, <a href="../EntityMotionHelper.html#updated">updated</a>, <a href="../EntityMotionHelper.html#x">x</a>, <a href="../EntityMotionHelper.html#y">y</a>, <a href="../EntityMotionHelper.html#z">z</a></code></li>
 </ul>
 </li>
 </ul>
@@ -219,11 +219,6 @@ extends <a href="../../class_1776.html" title="class in net.minecraft">class_177
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7346()">method_7346</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i1" class="rowColor">
 <td class="colFirst"><code>private boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7850(double,double,double,double)">method_7850</a></span>&#8203;(double&nbsp;double2,
            double&nbsp;double3,
@@ -231,13 +226,18 @@ extends <a href="../../class_1776.html" title="class in net.minecraft">class_177
            double&nbsp;double5)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#updateMovement()">updateMovement</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.net.minecraft.class_1776">
+<li class="blockList"><a id="methods.inherited.from.class.net.minecraft.entity.EntityMotionHelper">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;net.minecraft.<a href="../../class_1776.html" title="class in net.minecraft">class_1776</a></h3>
-<code><a href="../../class_1776.html#method_7342()">method_7342</a>, <a href="../../class_1776.html#method_7343(double,double,double,double)">method_7343</a>, <a href="../../class_1776.html#method_7344(float,float,float)">method_7344</a>, <a href="../../class_1776.html#method_7345()">method_7345</a>, <a href="../../class_1776.html#method_7347()">method_7347</a>, <a href="../../class_1776.html#method_7348()">method_7348</a>, <a href="../../class_1776.html#method_7349()">method_7349</a></code></li>
+<h3>Methods inherited from class&nbsp;net.minecraft.entity.<a href="../EntityMotionHelper.html" title="class in net.minecraft.entity">EntityMotionHelper</a></h3>
+<code><a href="../EntityMotionHelper.html#getSpeed()">getSpeed</a>, <a href="../EntityMotionHelper.html#getX()">getX</a>, <a href="../EntityMotionHelper.html#getY()">getY</a>, <a href="../EntityMotionHelper.html#getZ()">getZ</a>, <a href="../EntityMotionHelper.html#isUpdated()">isUpdated</a>, <a href="../EntityMotionHelper.html#method_7344(float,float,float)">method_7344</a>, <a href="../EntityMotionHelper.html#update(double,double,double,double)">update</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -309,16 +309,16 @@ extends <a href="../../class_1776.html" title="class in net.minecraft">class_177
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="method_7346()">
+<a id="updateMovement()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_7346</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_7346()</pre>
+<h4>updateMovement</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;updateMovement()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../class_1776.html#method_7346()">method_7346</a></code>&nbsp;in class&nbsp;<code><a href="../../class_1776.html" title="class in net.minecraft">class_1776</a></code></dd>
+<dd><code><a href="../EntityMotionHelper.html#updateMovement()">updateMovement</a></code>&nbsp;in class&nbsp;<code><a href="../EntityMotionHelper.html" title="class in net.minecraft.entity">EntityMotionHelper</a></code></dd>
 </dl>
 </li>
 </ul>

@@ -132,13 +132,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../class_1337.class_1339.html" title="interface in net.minecraft">class_1337.class_1339</a></code>, <code><a href="Twitch.class_1345.html" title="interface in net.minecraft.client.twitch">Twitch.class_1345</a></code>, <code><a href="TwitchStream.class_1347.html" title="interface in net.minecraft.client.twitch">TwitchStream.class_1347</a></code>, <code><a href="../util/TwitchStreamProvider.html" title="interface in net.minecraft.client.util">TwitchStreamProvider</a></code></dd>
+<dd><code><a href="StreamController.Listener.html" title="interface in net.minecraft.client.twitch">StreamController.Listener</a></code>, <code><a href="Twitch.class_1345.html" title="interface in net.minecraft.client.twitch">Twitch.class_1345</a></code>, <code><a href="TwitchStream.class_1347.html" title="interface in net.minecraft.client.twitch">TwitchStream.class_1347</a></code>, <code><a href="../util/TwitchStreamProvider.html" title="interface in net.minecraft.client.util">TwitchStreamProvider</a></code></dd>
 </dl>
 <hr>
 <pre>@Environment(CLIENT)
 public class <span class="typeNameLabel">TwitchAuth</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
-implements <a href="../../class_1337.class_1339.html" title="interface in net.minecraft">class_1337.class_1339</a>, <a href="Twitch.class_1345.html" title="interface in net.minecraft.client.twitch">Twitch.class_1345</a>, <a href="TwitchStream.class_1347.html" title="interface in net.minecraft.client.twitch">TwitchStream.class_1347</a>, <a href="../util/TwitchStreamProvider.html" title="interface in net.minecraft.client.util">TwitchStreamProvider</a></pre>
+implements <a href="StreamController.Listener.html" title="interface in net.minecraft.client.twitch">StreamController.Listener</a>, <a href="Twitch.class_1345.html" title="interface in net.minecraft.client.twitch">Twitch.class_1345</a>, <a href="TwitchStream.class_1347.html" title="interface in net.minecraft.client.twitch">TwitchStream.class_1347</a>, <a href="../util/TwitchStreamProvider.html" title="interface in net.minecraft.client.util">TwitchStreamProvider</a></pre>
 </li>
 </ul>
 </div>
@@ -157,7 +157,7 @@ implements <a href="../../class_1337.class_1339.html" title="interface in net.mi
 <!--   -->
 </a>
 <h3>Nested classes/interfaces inherited from interface&nbsp;net.minecraft.client.util.<a href="../util/TwitchStreamProvider.html" title="interface in net.minecraft.client.util">TwitchStreamProvider</a></h3>
-<code><a href="../util/TwitchStreamProvider.class_1350.html" title="enum in net.minecraft.client.util">TwitchStreamProvider.class_1350</a></code></li>
+<code><a href="../util/TwitchStreamProvider.Reason.html" title="enum in net.minecraft.client.util">TwitchStreamProvider.Reason</a></code></li>
 </ul>
 </li>
 </ul>
@@ -182,7 +182,7 @@ implements <a href="../../class_1337.class_1339.html" title="interface in net.mi
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../class_1337.html" title="class in net.minecraft">class_1337</a></code></td>
+<td class="colFirst"><code>private <a href="StreamController.html" title="class in net.minecraft.client.twitch">StreamController</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_5676">field_5676</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -227,7 +227,7 @@ implements <a href="../../class_1337.class_1339.html" title="interface in net.mi
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../util/TwitchStreamProvider.class_1350.html" title="enum in net.minecraft.client.util">TwitchStreamProvider.class_1350</a></code></td>
+<td class="colFirst"><code>private <a href="../util/TwitchStreamProvider.Reason.html" title="enum in net.minecraft.client.util">TwitchStreamProvider.Reason</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_5690">field_5690</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -307,91 +307,96 @@ implements <a href="../../class_1337.class_1339.html" title="interface in net.mi
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4676()">method_4676</a></span>()</code></th>
+<td class="colFirst"><code><a href="../util/TwitchStreamProvider.Reason.html" title="enum in net.minecraft.client.util">TwitchStreamProvider.Reason</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getReason()">getReason</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4677(net.minecraft.class_1337.class_1338)">method_4677</a></span>&#8203;(<a href="../../class_1337.class_1338.html" title="enum in net.minecraft">class_1337.class_1338</a>&nbsp;class_1338)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4676()">method_4676</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4678(tv.twitch.ErrorCode)">method_4678</a></span>&#8203;(tv.twitch.ErrorCode&nbsp;errorCode)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4677(net.minecraft.client.twitch.StreamController.Status)">method_4677</a></span>&#8203;(<a href="StreamController.Status.html" title="enum in net.minecraft.client.twitch">StreamController.Status</a>&nbsp;status)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4679(tv.twitch.ErrorCode,tv.twitch.AuthToken)">method_4679</a></span>&#8203;(tv.twitch.ErrorCode&nbsp;errorCode,
-           tv.twitch.AuthToken&nbsp;authToken)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4678(tv.twitch.ErrorCode)">method_4678</a></span>&#8203;(tv.twitch.ErrorCode&nbsp;code)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4680(tv.twitch.ErrorCode,tv.twitch.broadcast.GameInfo%5B%5D)">method_4680</a></span>&#8203;(tv.twitch.ErrorCode&nbsp;errorCode,
-           tv.twitch.broadcast.GameInfo[]&nbsp;gameInfo)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4679(tv.twitch.ErrorCode,tv.twitch.AuthToken)">method_4679</a></span>&#8203;(tv.twitch.ErrorCode&nbsp;code,
+           tv.twitch.AuthToken&nbsp;token)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4681(tv.twitch.broadcast.IngestList)">method_4681</a></span>&#8203;(tv.twitch.broadcast.IngestList&nbsp;ingestList)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4680(tv.twitch.ErrorCode,tv.twitch.broadcast.GameInfo%5B%5D)">method_4680</a></span>&#8203;(tv.twitch.ErrorCode&nbsp;code,
+           tv.twitch.broadcast.GameInfo[]&nbsp;infoList)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4682(tv.twitch.broadcast.StreamInfo)">method_4682</a></span>&#8203;(tv.twitch.broadcast.StreamInfo&nbsp;streamInfo)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4681(tv.twitch.broadcast.IngestList)">method_4681</a></span>&#8203;(tv.twitch.broadcast.IngestList&nbsp;list)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4683()">method_4683</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4682(tv.twitch.broadcast.StreamInfo)">method_4682</a></span>&#8203;(tv.twitch.broadcast.StreamInfo&nbsp;info)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4684(tv.twitch.ErrorCode)">method_4684</a></span>&#8203;(tv.twitch.ErrorCode&nbsp;errorCode)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4683()">method_4683</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4685()">method_4685</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4684(tv.twitch.ErrorCode)">method_4684</a></span>&#8203;(tv.twitch.ErrorCode&nbsp;code)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4686(tv.twitch.ErrorCode)">method_4686</a></span>&#8203;(tv.twitch.ErrorCode&nbsp;errorCode)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4685()">method_4685</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4719(net.minecraft.client.twitch.Twitch.class_1343)">method_4719</a></span>&#8203;(<a href="Twitch.class_1343.html" title="enum in net.minecraft.client.twitch">Twitch.class_1343</a>&nbsp;class_1343)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4686(tv.twitch.ErrorCode)">method_4686</a></span>&#8203;(tv.twitch.ErrorCode&nbsp;code)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4720(java.lang.String)">method_4720</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4719(net.minecraft.client.twitch.Twitch.class_1343)">method_4719</a></span>&#8203;(<a href="Twitch.class_1343.html" title="enum in net.minecraft.client.twitch">Twitch.class_1343</a>&nbsp;class_1343)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4720(java.lang.String)">method_4720</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4721(java.lang.String,java.lang.String)">method_4721</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4722(java.lang.String,tv.twitch.chat.ChatRawMessage%5B%5D)">method_4722</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
            tv.twitch.chat.ChatRawMessage[]&nbsp;chatRawMessage)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4723(java.lang.String,tv.twitch.chat.ChatTokenizedMessage%5B%5D)">method_4723</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
            tv.twitch.chat.ChatTokenizedMessage[]&nbsp;chatTokenizedMessage)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4724(java.lang.String,tv.twitch.chat.ChatUserInfo%5B%5D,tv.twitch.chat.ChatUserInfo%5B%5D,tv.twitch.chat.ChatUserInfo%5B%5D)">method_4724</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
            tv.twitch.chat.ChatUserInfo[]&nbsp;chatUserInfo,
@@ -399,81 +404,76 @@ implements <a href="../../class_1337.class_1339.html" title="interface in net.mi
            tv.twitch.chat.ChatUserInfo[]&nbsp;chatUserInfo3)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4725(java.lang.String)">method_4725</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4726(java.lang.String)">method_4726</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4727()">method_4727</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4728(java.lang.String)">method_4728</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4729(tv.twitch.ErrorCode)">method_4729</a></span>&#8203;(tv.twitch.ErrorCode&nbsp;errorCode)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4730()">method_4730</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4731(tv.twitch.ErrorCode)">method_4731</a></span>&#8203;(tv.twitch.ErrorCode&nbsp;errorCode)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4747(net.minecraft.client.twitch.TwitchStream,net.minecraft.client.twitch.TwitchStream.Type)">method_4747</a></span>&#8203;(<a href="TwitchStream.html" title="class in net.minecraft.client.twitch">TwitchStream</a>&nbsp;twitchStream,
            <a href="TwitchStream.Type.html" title="enum in net.minecraft.client.twitch">TwitchStream.Type</a>&nbsp;type)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4748()">method_4748</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>tv.twitch.ErrorCode</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4749()">method_4749</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4750()">method_4750</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4751()">method_4751</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
-<td class="colFirst"><code><a href="../util/TwitchStreamProvider.class_1350.html" title="enum in net.minecraft.client.util">TwitchStreamProvider.class_1350</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4752()">method_4752</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr id="i30" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4753(net.minecraft.class_1336,long)">method_4753</a></span>&#8203;(<a href="../../class_1336.html" title="class in net.minecraft">class_1336</a>&nbsp;class_1336,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4753(net.minecraft.client.twitch.StreamMetdata,long)">method_4753</a></span>&#8203;(<a href="StreamMetdata.html" title="class in net.minecraft.client.twitch">StreamMetdata</a>&nbsp;streamMetdata,
            long&nbsp;long2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4754(net.minecraft.class_1336,long,long)">method_4754</a></span>&#8203;(<a href="../../class_1336.html" title="class in net.minecraft">class_1336</a>&nbsp;class_1336,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4754(net.minecraft.client.twitch.StreamMetdata,long,long)">method_4754</a></span>&#8203;(<a href="StreamMetdata.html" title="class in net.minecraft.client.twitch">StreamMetdata</a>&nbsp;streamMetdata,
            long&nbsp;long2,
            long&nbsp;long3)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -683,7 +683,7 @@ implements <a href="../../class_1337.class_1339.html" title="interface in net.mi
 <ul class="blockList">
 <li class="blockList">
 <h4>field_5676</h4>
-<pre>private final&nbsp;<a href="../../class_1337.html" title="class in net.minecraft">class_1337</a> field_5676</pre>
+<pre>private final&nbsp;<a href="StreamController.html" title="class in net.minecraft.client.twitch">StreamController</a> field_5676</pre>
 </li>
 </ul>
 <a id="twitch">
@@ -809,7 +809,7 @@ implements <a href="../../class_1337.class_1339.html" title="interface in net.mi
 <ul class="blockListLast">
 <li class="blockList">
 <h4>field_5690</h4>
-<pre>private&nbsp;<a href="../util/TwitchStreamProvider.class_1350.html" title="enum in net.minecraft.client.util">TwitchStreamProvider.class_1350</a> field_5690</pre>
+<pre>private&nbsp;<a href="../util/TwitchStreamProvider.Reason.html" title="enum in net.minecraft.client.util">TwitchStreamProvider.Reason</a> field_5690</pre>
 </li>
 </ul>
 </li>
@@ -929,32 +929,32 @@ implements <a href="../../class_1337.class_1339.html" title="interface in net.mi
 </dl>
 </li>
 </ul>
-<a id="method_4753(net.minecraft.class_1336,long)">
+<a id="method_4753(net.minecraft.client.twitch.StreamMetdata,long)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>method_4753</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_4753&#8203;(<a href="../../class_1336.html" title="class in net.minecraft">class_1336</a>&nbsp;class_1336,
+<pre class="methodSignature">public&nbsp;void&nbsp;method_4753&#8203;(<a href="StreamMetdata.html" title="class in net.minecraft.client.twitch">StreamMetdata</a>&nbsp;streamMetdata,
                         long&nbsp;long2)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../util/TwitchStreamProvider.html#method_4753(net.minecraft.class_1336,long)">method_4753</a></code>&nbsp;in interface&nbsp;<code><a href="../util/TwitchStreamProvider.html" title="interface in net.minecraft.client.util">TwitchStreamProvider</a></code></dd>
+<dd><code><a href="../util/TwitchStreamProvider.html#method_4753(net.minecraft.client.twitch.StreamMetdata,long)">method_4753</a></code>&nbsp;in interface&nbsp;<code><a href="../util/TwitchStreamProvider.html" title="interface in net.minecraft.client.util">TwitchStreamProvider</a></code></dd>
 </dl>
 </li>
 </ul>
-<a id="method_4754(net.minecraft.class_1336,long,long)">
+<a id="method_4754(net.minecraft.client.twitch.StreamMetdata,long,long)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>method_4754</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_4754&#8203;(<a href="../../class_1336.html" title="class in net.minecraft">class_1336</a>&nbsp;class_1336,
+<pre class="methodSignature">public&nbsp;void&nbsp;method_4754&#8203;(<a href="StreamMetdata.html" title="class in net.minecraft.client.twitch">StreamMetdata</a>&nbsp;streamMetdata,
                         long&nbsp;long2,
                         long&nbsp;long3)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../util/TwitchStreamProvider.html#method_4754(net.minecraft.class_1336,long,long)">method_4754</a></code>&nbsp;in interface&nbsp;<code><a href="../util/TwitchStreamProvider.html" title="interface in net.minecraft.client.util">TwitchStreamProvider</a></code></dd>
+<dd><code><a href="../util/TwitchStreamProvider.html#method_4754(net.minecraft.client.twitch.StreamMetdata,long,long)">method_4754</a></code>&nbsp;in interface&nbsp;<code><a href="../util/TwitchStreamProvider.html" title="interface in net.minecraft.client.util">TwitchStreamProvider</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1055,11 +1055,11 @@ implements <a href="../../class_1337.class_1339.html" title="interface in net.mi
 <ul class="blockList">
 <li class="blockList">
 <h4>method_4679</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_4679&#8203;(tv.twitch.ErrorCode&nbsp;errorCode,
-                        tv.twitch.AuthToken&nbsp;authToken)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;method_4679&#8203;(tv.twitch.ErrorCode&nbsp;code,
+                        tv.twitch.AuthToken&nbsp;token)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../class_1337.class_1339.html#method_4679(tv.twitch.ErrorCode,tv.twitch.AuthToken)">method_4679</a></code>&nbsp;in interface&nbsp;<code><a href="../../class_1337.class_1339.html" title="interface in net.minecraft">class_1337.class_1339</a></code></dd>
+<dd><code><a href="StreamController.Listener.html#method_4679(tv.twitch.ErrorCode,tv.twitch.AuthToken)">method_4679</a></code>&nbsp;in interface&nbsp;<code><a href="StreamController.Listener.html" title="interface in net.minecraft.client.twitch">StreamController.Listener</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1069,10 +1069,10 @@ implements <a href="../../class_1337.class_1339.html" title="interface in net.mi
 <ul class="blockList">
 <li class="blockList">
 <h4>method_4678</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_4678&#8203;(tv.twitch.ErrorCode&nbsp;errorCode)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;method_4678&#8203;(tv.twitch.ErrorCode&nbsp;code)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../class_1337.class_1339.html#method_4678(tv.twitch.ErrorCode)">method_4678</a></code>&nbsp;in interface&nbsp;<code><a href="../../class_1337.class_1339.html" title="interface in net.minecraft">class_1337.class_1339</a></code></dd>
+<dd><code><a href="StreamController.Listener.html#method_4678(tv.twitch.ErrorCode)">method_4678</a></code>&nbsp;in interface&nbsp;<code><a href="StreamController.Listener.html" title="interface in net.minecraft.client.twitch">StreamController.Listener</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1082,24 +1082,24 @@ implements <a href="../../class_1337.class_1339.html" title="interface in net.mi
 <ul class="blockList">
 <li class="blockList">
 <h4>method_4680</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_4680&#8203;(tv.twitch.ErrorCode&nbsp;errorCode,
-                        tv.twitch.broadcast.GameInfo[]&nbsp;gameInfo)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;method_4680&#8203;(tv.twitch.ErrorCode&nbsp;code,
+                        tv.twitch.broadcast.GameInfo[]&nbsp;infoList)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../class_1337.class_1339.html#method_4680(tv.twitch.ErrorCode,tv.twitch.broadcast.GameInfo%5B%5D)">method_4680</a></code>&nbsp;in interface&nbsp;<code><a href="../../class_1337.class_1339.html" title="interface in net.minecraft">class_1337.class_1339</a></code></dd>
+<dd><code><a href="StreamController.Listener.html#method_4680(tv.twitch.ErrorCode,tv.twitch.broadcast.GameInfo%5B%5D)">method_4680</a></code>&nbsp;in interface&nbsp;<code><a href="StreamController.Listener.html" title="interface in net.minecraft.client.twitch">StreamController.Listener</a></code></dd>
 </dl>
 </li>
 </ul>
-<a id="method_4677(net.minecraft.class_1337.class_1338)">
+<a id="method_4677(net.minecraft.client.twitch.StreamController.Status)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>method_4677</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_4677&#8203;(<a href="../../class_1337.class_1338.html" title="enum in net.minecraft">class_1337.class_1338</a>&nbsp;class_1338)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;method_4677&#8203;(<a href="StreamController.Status.html" title="enum in net.minecraft.client.twitch">StreamController.Status</a>&nbsp;status)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../class_1337.class_1339.html#method_4677(net.minecraft.class_1337.class_1338)">method_4677</a></code>&nbsp;in interface&nbsp;<code><a href="../../class_1337.class_1339.html" title="interface in net.minecraft">class_1337.class_1339</a></code></dd>
+<dd><code><a href="StreamController.Listener.html#method_4677(net.minecraft.client.twitch.StreamController.Status)">method_4677</a></code>&nbsp;in interface&nbsp;<code><a href="StreamController.Listener.html" title="interface in net.minecraft.client.twitch">StreamController.Listener</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1112,7 +1112,7 @@ implements <a href="../../class_1337.class_1339.html" title="interface in net.mi
 <pre class="methodSignature">public&nbsp;void&nbsp;method_4676()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../class_1337.class_1339.html#method_4676()">method_4676</a></code>&nbsp;in interface&nbsp;<code><a href="../../class_1337.class_1339.html" title="interface in net.minecraft">class_1337.class_1339</a></code></dd>
+<dd><code><a href="StreamController.Listener.html#method_4676()">method_4676</a></code>&nbsp;in interface&nbsp;<code><a href="StreamController.Listener.html" title="interface in net.minecraft.client.twitch">StreamController.Listener</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1122,10 +1122,10 @@ implements <a href="../../class_1337.class_1339.html" title="interface in net.mi
 <ul class="blockList">
 <li class="blockList">
 <h4>method_4682</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_4682&#8203;(tv.twitch.broadcast.StreamInfo&nbsp;streamInfo)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;method_4682&#8203;(tv.twitch.broadcast.StreamInfo&nbsp;info)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../class_1337.class_1339.html#method_4682(tv.twitch.broadcast.StreamInfo)">method_4682</a></code>&nbsp;in interface&nbsp;<code><a href="../../class_1337.class_1339.html" title="interface in net.minecraft">class_1337.class_1339</a></code></dd>
+<dd><code><a href="StreamController.Listener.html#method_4682(tv.twitch.broadcast.StreamInfo)">method_4682</a></code>&nbsp;in interface&nbsp;<code><a href="StreamController.Listener.html" title="interface in net.minecraft.client.twitch">StreamController.Listener</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1135,10 +1135,10 @@ implements <a href="../../class_1337.class_1339.html" title="interface in net.mi
 <ul class="blockList">
 <li class="blockList">
 <h4>method_4681</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_4681&#8203;(tv.twitch.broadcast.IngestList&nbsp;ingestList)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;method_4681&#8203;(tv.twitch.broadcast.IngestList&nbsp;list)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../class_1337.class_1339.html#method_4681(tv.twitch.broadcast.IngestList)">method_4681</a></code>&nbsp;in interface&nbsp;<code><a href="../../class_1337.class_1339.html" title="interface in net.minecraft">class_1337.class_1339</a></code></dd>
+<dd><code><a href="StreamController.Listener.html#method_4681(tv.twitch.broadcast.IngestList)">method_4681</a></code>&nbsp;in interface&nbsp;<code><a href="StreamController.Listener.html" title="interface in net.minecraft.client.twitch">StreamController.Listener</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1148,10 +1148,10 @@ implements <a href="../../class_1337.class_1339.html" title="interface in net.mi
 <ul class="blockList">
 <li class="blockList">
 <h4>method_4684</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_4684&#8203;(tv.twitch.ErrorCode&nbsp;errorCode)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;method_4684&#8203;(tv.twitch.ErrorCode&nbsp;code)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../class_1337.class_1339.html#method_4684(tv.twitch.ErrorCode)">method_4684</a></code>&nbsp;in interface&nbsp;<code><a href="../../class_1337.class_1339.html" title="interface in net.minecraft">class_1337.class_1339</a></code></dd>
+<dd><code><a href="StreamController.Listener.html#method_4684(tv.twitch.ErrorCode)">method_4684</a></code>&nbsp;in interface&nbsp;<code><a href="StreamController.Listener.html" title="interface in net.minecraft.client.twitch">StreamController.Listener</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1164,7 +1164,7 @@ implements <a href="../../class_1337.class_1339.html" title="interface in net.mi
 <pre class="methodSignature">public&nbsp;void&nbsp;method_4683()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../class_1337.class_1339.html#method_4683()">method_4683</a></code>&nbsp;in interface&nbsp;<code><a href="../../class_1337.class_1339.html" title="interface in net.minecraft">class_1337.class_1339</a></code></dd>
+<dd><code><a href="StreamController.Listener.html#method_4683()">method_4683</a></code>&nbsp;in interface&nbsp;<code><a href="StreamController.Listener.html" title="interface in net.minecraft.client.twitch">StreamController.Listener</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1177,7 +1177,7 @@ implements <a href="../../class_1337.class_1339.html" title="interface in net.mi
 <pre class="methodSignature">public&nbsp;void&nbsp;method_4685()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../class_1337.class_1339.html#method_4685()">method_4685</a></code>&nbsp;in interface&nbsp;<code><a href="../../class_1337.class_1339.html" title="interface in net.minecraft">class_1337.class_1339</a></code></dd>
+<dd><code><a href="StreamController.Listener.html#method_4685()">method_4685</a></code>&nbsp;in interface&nbsp;<code><a href="StreamController.Listener.html" title="interface in net.minecraft.client.twitch">StreamController.Listener</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1187,10 +1187,10 @@ implements <a href="../../class_1337.class_1339.html" title="interface in net.mi
 <ul class="blockList">
 <li class="blockList">
 <h4>method_4686</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_4686&#8203;(tv.twitch.ErrorCode&nbsp;errorCode)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;method_4686&#8203;(tv.twitch.ErrorCode&nbsp;code)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../class_1337.class_1339.html#method_4686(tv.twitch.ErrorCode)">method_4686</a></code>&nbsp;in interface&nbsp;<code><a href="../../class_1337.class_1339.html" title="interface in net.minecraft">class_1337.class_1339</a></code></dd>
+<dd><code><a href="StreamController.Listener.html#method_4686(tv.twitch.ErrorCode)">method_4686</a></code>&nbsp;in interface&nbsp;<code><a href="StreamController.Listener.html" title="interface in net.minecraft.client.twitch">StreamController.Listener</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1613,16 +1613,16 @@ implements <a href="../../class_1337.class_1339.html" title="interface in net.mi
 </dl>
 </li>
 </ul>
-<a id="method_4752()">
+<a id="getReason()">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_4752</h4>
-<pre class="methodSignature">public&nbsp;<a href="../util/TwitchStreamProvider.class_1350.html" title="enum in net.minecraft.client.util">TwitchStreamProvider.class_1350</a>&nbsp;method_4752()</pre>
+<h4>getReason</h4>
+<pre class="methodSignature">public&nbsp;<a href="../util/TwitchStreamProvider.Reason.html" title="enum in net.minecraft.client.util">TwitchStreamProvider.Reason</a>&nbsp;getReason()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../util/TwitchStreamProvider.html#method_4752()">method_4752</a></code>&nbsp;in interface&nbsp;<code><a href="../util/TwitchStreamProvider.html" title="interface in net.minecraft.client.util">TwitchStreamProvider</a></code></dd>
+<dd><code><a href="../util/TwitchStreamProvider.html#getReason()">getReason</a></code>&nbsp;in interface&nbsp;<code><a href="../util/TwitchStreamProvider.html" title="interface in net.minecraft.client.util">TwitchStreamProvider</a></code></dd>
 </dl>
 </li>
 </ul>

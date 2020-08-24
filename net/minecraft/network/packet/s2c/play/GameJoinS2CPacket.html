@@ -159,23 +159,13 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#chunkLoadDistance">chunkLoadDistance</a></span></code></th>
+<td class="colFirst"><code>private <a href="../../../../world/Difficulty.html" title="enum in net.minecraft.world">Difficulty</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#difficulty">difficulty</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private <a href="../../../../world/level/LevelInfo.GameMode.html" title="enum in net.minecraft.world.level">LevelInfo.GameMode</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6210">field_6210</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../world/Difficulty.html" title="enum in net.minecraft.world">Difficulty</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6212">field_6212</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../../world/level/LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6214">field_6214</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#gameMode">gameMode</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -184,18 +174,28 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#maxPlayers">maxPlayers</a></span></code></th>
+<td class="colFirst"><code>private <a href="../../../../world/level/LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#levelGeneratorType">levelGeneratorType</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#playerEntityId">playerEntityId</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#maxPlayers">maxPlayers</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>private int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#playerEntityId">playerEntityId</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>private boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#reducedDebugInfo">reducedDebugInfo</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#viewDistance">viewDistance</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -220,14 +220,14 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(int,net.minecraft.world.level.LevelInfo.GameMode,boolean,int,net.minecraft.world.Difficulty,int,net.minecraft.world.level.LevelGeneratorType,boolean)">GameJoinS2CPacket</a></span>&#8203;(int&nbsp;int2,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(int,net.minecraft.world.level.LevelInfo.GameMode,boolean,int,net.minecraft.world.Difficulty,int,net.minecraft.world.level.LevelGeneratorType,boolean)">GameJoinS2CPacket</a></span>&#8203;(int&nbsp;id,
                  <a href="../../../../world/level/LevelInfo.GameMode.html" title="enum in net.minecraft.world.level">LevelInfo.GameMode</a>&nbsp;gameMode,
-                 boolean&nbsp;bool,
-                 int&nbsp;int3,
+                 boolean&nbsp;hardCore,
+                 int&nbsp;viewDistance,
                  <a href="../../../../world/Difficulty.html" title="enum in net.minecraft.world">Difficulty</a>&nbsp;difficulty,
-                 int&nbsp;int4,
+                 int&nbsp;maxPlayers,
                  <a href="../../../../world/level/LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a>&nbsp;levelGeneratorType,
-                 boolean&nbsp;bool2)</code></th>
+                 boolean&nbsp;reducedDebugInfo)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -259,38 +259,38 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../../world/Difficulty.html" title="enum in net.minecraft.world">Difficulty</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDifficulty()">getDifficulty</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEntityId()">getEntityId</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../world/level/LevelInfo.GameMode.html" title="enum in net.minecraft.world.level">LevelInfo.GameMode</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getGameMode()">getGameMode</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../world/level/LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getGeneratorType()">getGeneratorType</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMaxPlayers()">getMaxPlayers</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#hasReducedDebugInfo()">hasReducedDebugInfo</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isHardcore()">isHardcore</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="../../../../world/Difficulty.html" title="enum in net.minecraft.world">Difficulty</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5515()">method_5515</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5516()">method_5516</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
@@ -345,31 +345,31 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <pre>private&nbsp;boolean hardcore</pre>
 </li>
 </ul>
-<a id="field_6210">
+<a id="gameMode">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6210</h4>
-<pre>private&nbsp;<a href="../../../../world/level/LevelInfo.GameMode.html" title="enum in net.minecraft.world.level">LevelInfo.GameMode</a> field_6210</pre>
+<h4>gameMode</h4>
+<pre>private&nbsp;<a href="../../../../world/level/LevelInfo.GameMode.html" title="enum in net.minecraft.world.level">LevelInfo.GameMode</a> gameMode</pre>
 </li>
 </ul>
-<a id="chunkLoadDistance">
+<a id="viewDistance">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>chunkLoadDistance</h4>
-<pre>private&nbsp;int chunkLoadDistance</pre>
+<h4>viewDistance</h4>
+<pre>private&nbsp;int viewDistance</pre>
 </li>
 </ul>
-<a id="field_6212">
+<a id="difficulty">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6212</h4>
-<pre>private&nbsp;<a href="../../../../world/Difficulty.html" title="enum in net.minecraft.world">Difficulty</a> field_6212</pre>
+<h4>difficulty</h4>
+<pre>private&nbsp;<a href="../../../../world/Difficulty.html" title="enum in net.minecraft.world">Difficulty</a> difficulty</pre>
 </li>
 </ul>
 <a id="maxPlayers">
@@ -381,13 +381,13 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <pre>private&nbsp;int maxPlayers</pre>
 </li>
 </ul>
-<a id="field_6214">
+<a id="levelGeneratorType">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6214</h4>
-<pre>private&nbsp;<a href="../../../../world/level/LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a> field_6214</pre>
+<h4>levelGeneratorType</h4>
+<pre>private&nbsp;<a href="../../../../world/level/LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a> levelGeneratorType</pre>
 </li>
 </ul>
 <a id="reducedDebugInfo">
@@ -424,14 +424,14 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <ul class="blockListLast">
 <li class="blockList">
 <h4>GameJoinS2CPacket</h4>
-<pre>public&nbsp;GameJoinS2CPacket&#8203;(int&nbsp;int2,
+<pre>public&nbsp;GameJoinS2CPacket&#8203;(int&nbsp;id,
                          <a href="../../../../world/level/LevelInfo.GameMode.html" title="enum in net.minecraft.world.level">LevelInfo.GameMode</a>&nbsp;gameMode,
-                         boolean&nbsp;bool,
-                         int&nbsp;int3,
+                         boolean&nbsp;hardCore,
+                         int&nbsp;viewDistance,
                          <a href="../../../../world/Difficulty.html" title="enum in net.minecraft.world">Difficulty</a>&nbsp;difficulty,
-                         int&nbsp;int4,
+                         int&nbsp;maxPlayers,
                          <a href="../../../../world/level/LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a>&nbsp;levelGeneratorType,
-                         boolean&nbsp;bool2)</pre>
+                         boolean&nbsp;reducedDebugInfo)</pre>
 </li>
 </ul>
 </li>
@@ -529,24 +529,24 @@ public&nbsp;<a href="../../../../world/level/LevelInfo.GameMode.html" title="enu
 public&nbsp;int&nbsp;getChunkLoadDistance()</pre>
 </li>
 </ul>
-<a id="method_5515()">
+<a id="getDifficulty()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_5515</h4>
+<h4>getDifficulty</h4>
 <pre class="methodSignature">@Environment(CLIENT)
-public&nbsp;<a href="../../../../world/Difficulty.html" title="enum in net.minecraft.world">Difficulty</a>&nbsp;method_5515()</pre>
+public&nbsp;<a href="../../../../world/Difficulty.html" title="enum in net.minecraft.world">Difficulty</a>&nbsp;getDifficulty()</pre>
 </li>
 </ul>
-<a id="method_5516()">
+<a id="getMaxPlayers()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_5516</h4>
+<h4>getMaxPlayers</h4>
 <pre class="methodSignature">@Environment(CLIENT)
-public&nbsp;int&nbsp;method_5516()</pre>
+public&nbsp;int&nbsp;getMaxPlayers()</pre>
 </li>
 </ul>
 <a id="getGeneratorType()">

@@ -257,7 +257,7 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(boolean)">PlayerMoveC2SPacket</a></span>&#8203;(boolean&nbsp;bool)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(boolean)">PlayerMoveC2SPacket</a></span>&#8203;(boolean&nbsp;onGround)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -310,27 +310,27 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isOnGround()">isOnGround</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isLookChanged()">isLookChanged</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5772(boolean)">method_5772</a></span>&#8203;(boolean&nbsp;bool)</code></th>
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isOnGround()">isOnGround</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5778()">method_5778</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isPositionChanged()">isPositionChanged</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5779()">method_5779</a></span>()</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#read(net.minecraft.util.PacketByteBuf)">read</a></span>&#8203;(<a href="../../../../util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#read(net.minecraft.util.PacketByteBuf)">read</a></span>&#8203;(<a href="../../../../util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPositionChanged(boolean)">setPositionChanged</a></span>&#8203;(boolean&nbsp;changePosition)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
@@ -460,7 +460,7 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <li class="blockList">
 <h4>PlayerMoveC2SPacket</h4>
 <pre>@Environment(CLIENT)
-public&nbsp;PlayerMoveC2SPacket&#8203;(boolean&nbsp;bool)</pre>
+public&nbsp;PlayerMoveC2SPacket&#8203;(boolean&nbsp;onGround)</pre>
 </li>
 </ul>
 </li>
@@ -572,31 +572,31 @@ public&nbsp;PlayerMoveC2SPacket&#8203;(boolean&nbsp;bool)</pre>
 <pre class="methodSignature">public&nbsp;boolean&nbsp;isOnGround()</pre>
 </li>
 </ul>
-<a id="method_5778()">
+<a id="isPositionChanged()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_5778</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;method_5778()</pre>
+<h4>isPositionChanged</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isPositionChanged()</pre>
 </li>
 </ul>
-<a id="method_5779()">
+<a id="isLookChanged()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_5779</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;method_5779()</pre>
+<h4>isLookChanged</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isLookChanged()</pre>
 </li>
 </ul>
-<a id="method_5772(boolean)">
+<a id="setPositionChanged(boolean)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_5772</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_5772&#8203;(boolean&nbsp;bool)</pre>
+<h4>setPositionChanged</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setPositionChanged&#8203;(boolean&nbsp;changePosition)</pre>
 </li>
 </ul>
 </li>

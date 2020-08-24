@@ -137,7 +137,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="../../../class_1779.html" title="class in net.minecraft">class_1779</a></code>, <code><a href="LongDoorInteractGoal.html" title="class in net.minecraft.entity.ai.goal">LongDoorInteractGoal</a></code></dd>
+<dd><code><a href="BreakDoorGoal.html" title="class in net.minecraft.entity.ai.goal">BreakDoorGoal</a></code>, <code><a href="LongDoorInteractGoal.html" title="class in net.minecraft.entity.ai.goal">LongDoorInteractGoal</a></code></dd>
 </dl>
 <hr>
 <pre>public abstract class <span class="typeNameLabel">DoorInteractGoal</span>
@@ -163,18 +163,18 @@ extends <a href="Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../mob/MobEntity.html" title="class in net.minecraft.entity.mob">MobEntity</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7619">field_7619</a></span></code></th>
+<td class="colFirst"><code>protected <a href="../../../block/DoorBlock.html" title="class in net.minecraft.block">DoorBlock</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#doorBlock">doorBlock</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7620">field_7620</a></span></code></th>
+<td class="colFirst"><code>protected <a href="../../mob/MobEntity.html" title="class in net.minecraft.entity.mob">MobEntity</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#entity">entity</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../block/DoorBlock.html" title="class in net.minecraft.block">DoorBlock</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7621">field_7621</a></span></code></th>
+<td class="colFirst"><code>protected <a href="../../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#pos">pos</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -210,7 +210,7 @@ extends <a href="Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.entity.mob.MobEntity)">DoorInteractGoal</a></span>&#8203;(<a href="../../mob/MobEntity.html" title="class in net.minecraft.entity.mob">MobEntity</a>&nbsp;mobEntity)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.entity.mob.MobEntity)">DoorInteractGoal</a></span>&#8203;(<a href="../../mob/MobEntity.html" title="class in net.minecraft.entity.mob">MobEntity</a>&nbsp;entity)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -287,31 +287,31 @@ extends <a href="Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="field_7619">
+<a id="entity">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7619</h4>
-<pre>protected&nbsp;<a href="../../mob/MobEntity.html" title="class in net.minecraft.entity.mob">MobEntity</a> field_7619</pre>
+<h4>entity</h4>
+<pre>protected&nbsp;<a href="../../mob/MobEntity.html" title="class in net.minecraft.entity.mob">MobEntity</a> entity</pre>
 </li>
 </ul>
-<a id="field_7620">
+<a id="pos">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7620</h4>
-<pre>protected&nbsp;<a href="../../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a> field_7620</pre>
+<h4>pos</h4>
+<pre>protected&nbsp;<a href="../../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a> pos</pre>
 </li>
 </ul>
-<a id="field_7621">
+<a id="doorBlock">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7621</h4>
-<pre>protected&nbsp;<a href="../../../block/DoorBlock.html" title="class in net.minecraft.block">DoorBlock</a> field_7621</pre>
+<h4>doorBlock</h4>
+<pre>protected&nbsp;<a href="../../../block/DoorBlock.html" title="class in net.minecraft.block">DoorBlock</a> doorBlock</pre>
 </li>
 </ul>
 <a id="shouldStop">
@@ -357,7 +357,7 @@ extends <a href="Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DoorInteractGoal</h4>
-<pre>public&nbsp;DoorInteractGoal&#8203;(<a href="../../mob/MobEntity.html" title="class in net.minecraft.entity.mob">MobEntity</a>&nbsp;mobEntity)</pre>
+<pre>public&nbsp;DoorInteractGoal&#8203;(<a href="../../mob/MobEntity.html" title="class in net.minecraft.entity.mob">MobEntity</a>&nbsp;entity)</pre>
 </li>
 </ul>
 </li>

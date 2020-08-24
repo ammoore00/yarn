@@ -194,7 +194,7 @@ extends <a href="Sprite.html" title="class in net.minecraft.client.texture">Spri
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String)">ClockSprite</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String)">ClockSprite</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -217,7 +217,7 @@ extends <a href="Sprite.html" title="class in net.minecraft.client.texture">Spri
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4262()">method_4262</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#update()">update</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -226,7 +226,7 @@ extends <a href="Sprite.html" title="class in net.minecraft.client.texture">Spri
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.client.texture.<a href="Sprite.html" title="class in net.minecraft.client.texture">Sprite</a></h3>
-<code><a href="Sprite.html#getFrameU(double)">getFrameU</a>, <a href="Sprite.html#getFrameV(double)">getFrameV</a>, <a href="Sprite.html#getHeight()">getHeight</a>, <a href="Sprite.html#getMaxU()">getMaxU</a>, <a href="Sprite.html#getMaxV()">getMaxV</a>, <a href="Sprite.html#getMinU()">getMinU</a>, <a href="Sprite.html#getMinV()">getMinV</a>, <a href="Sprite.html#getWidth()">getWidth</a>, <a href="Sprite.html#getX()">getX</a>, <a href="Sprite.html#getY()">getY</a>, <a href="Sprite.html#method_4240(int)">method_4240</a>, <a href="Sprite.html#method_4241(int,int,int,int,boolean)">method_4241</a>, <a href="Sprite.html#method_4242(net.minecraft.client.texture.Sprite)">method_4242</a>, <a href="Sprite.html#method_4243(java.lang.String)">method_4243</a>, <a href="Sprite.html#method_4244(java.util.List)">method_4244</a>, <a href="Sprite.html#method_4245(net.minecraft.util.Identifier)">method_4245</a>, <a href="Sprite.html#method_4246(java.awt.image.BufferedImage%5B%5D,net.minecraft.class_1278)">method_4246</a>, <a href="Sprite.html#method_4250(int)">method_4250</a>, <a href="Sprite.html#method_4251(java.lang.String)">method_4251</a>, <a href="Sprite.html#method_4253(int)">method_4253</a>, <a href="Sprite.html#method_4255(int)">method_4255</a>, <a href="Sprite.html#method_4261()">method_4261</a>, <a href="Sprite.html#method_4263()">method_4263</a>, <a href="Sprite.html#method_4264()">method_4264</a>, <a href="Sprite.html#method_4265()">method_4265</a>, <a href="Sprite.html#toString()">toString</a></code></li>
+<code><a href="Sprite.html#clearFrames()">clearFrames</a>, <a href="Sprite.html#copyData(net.minecraft.client.texture.Sprite)">copyData</a>, <a href="Sprite.html#get(net.minecraft.util.Identifier)">get</a>, <a href="Sprite.html#getFrameU(double)">getFrameU</a>, <a href="Sprite.html#getFrameV(double)">getFrameV</a>, <a href="Sprite.html#getHeight()">getHeight</a>, <a href="Sprite.html#getMaxU()">getMaxU</a>, <a href="Sprite.html#getMaxV()">getMaxV</a>, <a href="Sprite.html#getMinU()">getMinU</a>, <a href="Sprite.html#getMinV()">getMinV</a>, <a href="Sprite.html#getName()">getName</a>, <a href="Sprite.html#getWidth()">getWidth</a>, <a href="Sprite.html#getX()">getX</a>, <a href="Sprite.html#getY()">getY</a>, <a href="Sprite.html#hasMeta()">hasMeta</a>, <a href="Sprite.html#method_4240(int)">method_4240</a>, <a href="Sprite.html#method_4246(java.awt.image.BufferedImage%5B%5D,net.minecraft.client.resource.AnimationMetadata)">method_4246</a>, <a href="Sprite.html#method_4250(int)">method_4250</a>, <a href="Sprite.html#method_4253(int)">method_4253</a>, <a href="Sprite.html#method_4255(int)">method_4255</a>, <a href="Sprite.html#method_4263()">method_4263</a>, <a href="Sprite.html#reInitialize(int,int,int,int,boolean)">reInitialize</a>, <a href="Sprite.html#setClockTex(java.lang.String)">setClockTex</a>, <a href="Sprite.html#setCompassTex(java.lang.String)">setCompassTex</a>, <a href="Sprite.html#setFrames(java.util.List)">setFrames</a>, <a href="Sprite.html#toString()">toString</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -285,7 +285,7 @@ extends <a href="Sprite.html" title="class in net.minecraft.client.texture">Spri
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ClockSprite</h4>
-<pre>public&nbsp;ClockSprite&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</pre>
+<pre>public&nbsp;ClockSprite&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
 </li>
 </ul>
 </li>
@@ -298,16 +298,16 @@ extends <a href="Sprite.html" title="class in net.minecraft.client.texture">Spri
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="method_4262()">
+<a id="update()">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_4262</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_4262()</pre>
+<h4>update</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;update()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="Sprite.html#method_4262()">method_4262</a></code>&nbsp;in class&nbsp;<code><a href="Sprite.html" title="class in net.minecraft.client.texture">Sprite</a></code></dd>
+<dd><code><a href="Sprite.html#update()">update</a></code>&nbsp;in class&nbsp;<code><a href="Sprite.html" title="class in net.minecraft.client.texture">Sprite</a></code></dd>
 </dl>
 </li>
 </ul>

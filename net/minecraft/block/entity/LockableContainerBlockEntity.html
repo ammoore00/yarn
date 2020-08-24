@@ -137,7 +137,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="LockableContainerProvider.html" title="interface in net.minecraft.block.entity">LockableContainerProvider</a></code>, <code><a href="../../inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code>, <code><a href="../../text/Nameable.html" title="interface in net.minecraft.text">Nameable</a></code>, <code><a href="../../world/biome/layer/type/Nameable.html" title="interface in net.minecraft.world.biome.layer.type">Nameable</a></code></dd>
+<dd><code><a href="LockableContainerProvider.html" title="interface in net.minecraft.block.entity">LockableContainerProvider</a></code>, <code><a href="../../container/Nameable.html" title="interface in net.minecraft.container">Nameable</a></code>, <code><a href="../../inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code>, <code><a href="../../text/Nameable.html" title="interface in net.minecraft.text">Nameable</a></code></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -146,7 +146,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public abstract class <span class="typeNameLabel">LockableContainerBlockEntity</span>
 extends <a href="BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a>
-implements <a href="../../world/biome/layer/type/Nameable.html" title="interface in net.minecraft.world.biome.layer.type">Nameable</a>, <a href="LockableContainerProvider.html" title="interface in net.minecraft.block.entity">LockableContainerProvider</a></pre>
+implements <a href="../../container/Nameable.html" title="interface in net.minecraft.container">Nameable</a>, <a href="LockableContainerProvider.html" title="interface in net.minecraft.block.entity">LockableContainerProvider</a></pre>
 </li>
 </ul>
 </div>
@@ -254,7 +254,7 @@ implements <a href="../../world/biome/layer/type/Nameable.html" title="interface
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.block.entity.<a href="BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></h3>
-<code><a href="BlockEntity.html#cancelRemoval()">cancelRemoval</a>, <a href="BlockEntity.html#createFromTag(net.minecraft.nbt.CompoundTag)">createFromTag</a>, <a href="BlockEntity.html#getPos()">getPos</a>, <a href="BlockEntity.html#getSquaredDistance(double,double,double)">getSquaredDistance</a>, <a href="BlockEntity.html#getSquaredRenderDistance()">getSquaredRenderDistance</a>, <a href="BlockEntity.html#getWorld()">getWorld</a>, <a href="BlockEntity.html#hasWorld()">hasWorld</a>, <a href="BlockEntity.html#isRemoved()">isRemoved</a>, <a href="BlockEntity.html#markDirty()">markDirty</a>, <a href="BlockEntity.html#markRemoved()">markRemoved</a>, <a href="BlockEntity.html#method_1106()">method_1106</a>, <a href="BlockEntity.html#method_1108()">method_1108</a>, <a href="BlockEntity.html#method_1111()">method_1111</a>, <a href="BlockEntity.html#onBlockAction(int,int)">onBlockAction</a>, <a href="BlockEntity.html#populateCrashReport(net.minecraft.util.crash.CrashReportSection)">populateCrashReport</a>, <a href="BlockEntity.html#resetBlock()">resetBlock</a>, <a href="BlockEntity.html#setPos(net.minecraft.util.math.BlockPos)">setPos</a>, <a href="BlockEntity.html#setWorld(net.minecraft.world.World)">setWorld</a>, <a href="BlockEntity.html#shouldNotCopyTagFromItem()">shouldNotCopyTagFromItem</a></code></li>
+<code><a href="BlockEntity.html#cancelRemoval()">cancelRemoval</a>, <a href="BlockEntity.html#createFromTag(net.minecraft.nbt.CompoundTag)">createFromTag</a>, <a href="BlockEntity.html#getPacket()">getPacket</a>, <a href="BlockEntity.html#getPos()">getPos</a>, <a href="BlockEntity.html#getSquaredDistance(double,double,double)">getSquaredDistance</a>, <a href="BlockEntity.html#getSquaredRenderDistance()">getSquaredRenderDistance</a>, <a href="BlockEntity.html#getWorld()">getWorld</a>, <a href="BlockEntity.html#hasWorld()">hasWorld</a>, <a href="BlockEntity.html#isRemoved()">isRemoved</a>, <a href="BlockEntity.html#markDirty()">markDirty</a>, <a href="BlockEntity.html#markRemoved()">markRemoved</a>, <a href="BlockEntity.html#method_1106()">method_1106</a>, <a href="BlockEntity.html#method_1108()">method_1108</a>, <a href="BlockEntity.html#onBlockAction(int,int)">onBlockAction</a>, <a href="BlockEntity.html#populateCrashReport(net.minecraft.util.crash.CrashReportSection)">populateCrashReport</a>, <a href="BlockEntity.html#resetBlock()">resetBlock</a>, <a href="BlockEntity.html#setPos(net.minecraft.util.math.BlockPos)">setPos</a>, <a href="BlockEntity.html#setWorld(net.minecraft.world.World)">setWorld</a>, <a href="BlockEntity.html#shouldNotCopyTagFromItem()">shouldNotCopyTagFromItem</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -271,18 +271,18 @@ implements <a href="../../world/biome/layer/type/Nameable.html" title="interface
 <code><a href="../../inventory/Inventory.html#canPlayerUseInv(net.minecraft.entity.player.PlayerEntity)">canPlayerUseInv</a>, <a href="../../inventory/Inventory.html#clear()">clear</a>, <a href="../../inventory/Inventory.html#getInvMaxStackAmount()">getInvMaxStackAmount</a>, <a href="../../inventory/Inventory.html#getInvSize()">getInvSize</a>, <a href="../../inventory/Inventory.html#getInvStack(int)">getInvStack</a>, <a href="../../inventory/Inventory.html#getProperties()">getProperties</a>, <a href="../../inventory/Inventory.html#getProperty(int)">getProperty</a>, <a href="../../inventory/Inventory.html#isValidInvStack(int,net.minecraft.item.ItemStack)">isValidInvStack</a>, <a href="../../inventory/Inventory.html#markDirty()">markDirty</a>, <a href="../../inventory/Inventory.html#onInvClose(net.minecraft.entity.player.PlayerEntity)">onInvClose</a>, <a href="../../inventory/Inventory.html#onInvOpen(net.minecraft.entity.player.PlayerEntity)">onInvOpen</a>, <a href="../../inventory/Inventory.html#removeInvStack(int)">removeInvStack</a>, <a href="../../inventory/Inventory.html#setInvStack(int,net.minecraft.item.ItemStack)">setInvStack</a>, <a href="../../inventory/Inventory.html#setProperty(int,int)">setProperty</a>, <a href="../../inventory/Inventory.html#takeInvStack(int,int)">takeInvStack</a></code></li>
 </ul>
 <ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.net.minecraft.container.Nameable">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;net.minecraft.container.<a href="../../container/Nameable.html" title="interface in net.minecraft.container">Nameable</a></h3>
+<code><a href="../../container/Nameable.html#createContainer(net.minecraft.entity.player.PlayerInventory,net.minecraft.entity.player.PlayerEntity)">createContainer</a>, <a href="../../container/Nameable.html#getId()">getId</a></code></li>
+</ul>
+<ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.net.minecraft.text.Nameable">
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;net.minecraft.text.<a href="../../text/Nameable.html" title="interface in net.minecraft.text">Nameable</a></h3>
 <code><a href="../../text/Nameable.html#getTranslationKey()">getTranslationKey</a>, <a href="../../text/Nameable.html#hasCustomName()">hasCustomName</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.net.minecraft.world.biome.layer.type.Nameable">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;net.minecraft.world.biome.layer.type.<a href="../../world/biome/layer/type/Nameable.html" title="interface in net.minecraft.world.biome.layer.type">Nameable</a></h3>
-<code><a href="../../world/biome/layer/type/Nameable.html#createContainer(net.minecraft.entity.player.PlayerInventory,net.minecraft.entity.player.PlayerEntity)">createContainer</a>, <a href="../../world/biome/layer/type/Nameable.html#getId()">getId</a></code></li>
 </ul>
 </li>
 </ul>

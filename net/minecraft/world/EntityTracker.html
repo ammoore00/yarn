@@ -154,12 +154,12 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../class_1639.html" title="class in net.minecraft">class_1639</a>&gt;</code></td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../entity/EntityTracker.html" title="class in net.minecraft.entity">EntityTracker</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6588">field_6588</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../util/IntObjectStorage.html" title="class in net.minecraft.util">IntObjectStorage</a>&lt;<a href="../class_1639.html" title="class in net.minecraft">class_1639</a>&gt;</code></td>
+<td class="colFirst"><code>private <a href="../util/IntObjectStorage.html" title="class in net.minecraft.util">IntObjectStorage</a>&lt;<a href="../entity/EntityTracker.html" title="class in net.minecraft.entity">EntityTracker</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6589">field_6589</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -255,24 +255,24 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5992(net.minecraft.entity.Entity,net.minecraft.network.Packet)">method_5992</a></span>&#8203;(<a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
-           <a href="../network/Packet.html" title="interface in net.minecraft.network">Packet</a>&nbsp;packet)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5993(net.minecraft.entity.player.ServerPlayerEntity)">method_5993</a></span>&#8203;(<a href="../entity/player/ServerPlayerEntity.html" title="class in net.minecraft.entity.player">ServerPlayerEntity</a>&nbsp;serverPlayerEntity)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5993(net.minecraft.entity.player.ServerPlayerEntity)">method_5993</a></span>&#8203;(<a href="../entity/player/ServerPlayerEntity.html" title="class in net.minecraft.entity.player">ServerPlayerEntity</a>&nbsp;serverPlayerEntity)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5994(net.minecraft.entity.Entity)">method_5994</a></span>&#8203;(<a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5994(net.minecraft.entity.Entity)">method_5994</a></span>&#8203;(<a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendToAllTrackingEntities(net.minecraft.entity.Entity,net.minecraft.network.Packet)">sendToAllTrackingEntities</a></span>&#8203;(<a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
+                         <a href="../network/Packet.html" title="interface in net.minecraft.network">Packet</a>&nbsp;packet)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5995(net.minecraft.entity.Entity,net.minecraft.network.Packet)">method_5995</a></span>&#8203;(<a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
-           <a href="../network/Packet.html" title="interface in net.minecraft.network">Packet</a>&nbsp;packet)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendToOtherTrackingEntities(net.minecraft.entity.Entity,net.minecraft.network.Packet)">sendToOtherTrackingEntities</a></span>&#8203;(<a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
+                           <a href="../network/Packet.html" title="interface in net.minecraft.network">Packet</a>&nbsp;packet)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -323,7 +323,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>field_6588</h4>
-<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../class_1639.html" title="class in net.minecraft">class_1639</a>&gt; field_6588</pre>
+<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util" class="externalLink">Set</a>&lt;<a href="../entity/EntityTracker.html" title="class in net.minecraft.entity">EntityTracker</a>&gt; field_6588</pre>
 </li>
 </ul>
 <a id="field_6589">
@@ -332,7 +332,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>field_6589</h4>
-<pre>private&nbsp;<a href="../util/IntObjectStorage.html" title="class in net.minecraft.util">IntObjectStorage</a>&lt;<a href="../class_1639.html" title="class in net.minecraft">class_1639</a>&gt; field_6589</pre>
+<pre>private&nbsp;<a href="../util/IntObjectStorage.html" title="class in net.minecraft.util">IntObjectStorage</a>&lt;<a href="../entity/EntityTracker.html" title="class in net.minecraft.entity">EntityTracker</a>&gt; field_6589</pre>
 </li>
 </ul>
 <a id="field_6590">
@@ -432,24 +432,24 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre class="methodSignature">public&nbsp;void&nbsp;method_5987&#8203;(<a href="../entity/player/ServerPlayerEntity.html" title="class in net.minecraft.entity.player">ServerPlayerEntity</a>&nbsp;serverPlayerEntity)</pre>
 </li>
 </ul>
-<a id="method_5992(net.minecraft.entity.Entity,net.minecraft.network.Packet)">
+<a id="sendToOtherTrackingEntities(net.minecraft.entity.Entity,net.minecraft.network.Packet)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_5992</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_5992&#8203;(<a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
-                        <a href="../network/Packet.html" title="interface in net.minecraft.network">Packet</a>&nbsp;packet)</pre>
+<h4>sendToOtherTrackingEntities</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;sendToOtherTrackingEntities&#8203;(<a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
+                                        <a href="../network/Packet.html" title="interface in net.minecraft.network">Packet</a>&nbsp;packet)</pre>
 </li>
 </ul>
-<a id="method_5995(net.minecraft.entity.Entity,net.minecraft.network.Packet)">
+<a id="sendToAllTrackingEntities(net.minecraft.entity.Entity,net.minecraft.network.Packet)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_5995</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_5995&#8203;(<a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
-                        <a href="../network/Packet.html" title="interface in net.minecraft.network">Packet</a>&nbsp;packet)</pre>
+<h4>sendToAllTrackingEntities</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;sendToAllTrackingEntities&#8203;(<a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
+                                      <a href="../network/Packet.html" title="interface in net.minecraft.network">Packet</a>&nbsp;packet)</pre>
 </li>
 </ul>
 <a id="method_5993(net.minecraft.entity.player.ServerPlayerEntity)">

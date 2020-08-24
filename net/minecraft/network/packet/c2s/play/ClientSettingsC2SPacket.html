@@ -165,7 +165,7 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private <a href="../../../../entity/player/PlayerEntity.ChatVisibilityType.html" title="enum in net.minecraft.entity.player">PlayerEntity.ChatVisibilityType</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6388">field_6388</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#chatVisibilityType">chatVisibilityType</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -205,11 +205,11 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,int,net.minecraft.entity.player.PlayerEntity.ChatVisibilityType,boolean,int)">ClientSettingsC2SPacket</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
-                       int&nbsp;int2,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,int,net.minecraft.entity.player.PlayerEntity.ChatVisibilityType,boolean,int)">ClientSettingsC2SPacket</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;language,
+                       int&nbsp;viewDistance,
                        <a href="../../../../entity/player/PlayerEntity.ChatVisibilityType.html" title="enum in net.minecraft.entity.player">PlayerEntity.ChatVisibilityType</a>&nbsp;chatVisibilityType,
-                       boolean&nbsp;bool,
-                       int&nbsp;int3)</code></th>
+                       boolean&nbsp;chatColors,
+                       int&nbsp;playerModelBitMask)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -307,13 +307,13 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <pre>private&nbsp;int viewDistance</pre>
 </li>
 </ul>
-<a id="field_6388">
+<a id="chatVisibilityType">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6388</h4>
-<pre>private&nbsp;<a href="../../../../entity/player/PlayerEntity.ChatVisibilityType.html" title="enum in net.minecraft.entity.player">PlayerEntity.ChatVisibilityType</a> field_6388</pre>
+<h4>chatVisibilityType</h4>
+<pre>private&nbsp;<a href="../../../../entity/player/PlayerEntity.ChatVisibilityType.html" title="enum in net.minecraft.entity.player">PlayerEntity.ChatVisibilityType</a> chatVisibilityType</pre>
 </li>
 </ul>
 <a id="chatColors">
@@ -360,11 +360,11 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <li class="blockList">
 <h4>ClientSettingsC2SPacket</h4>
 <pre>@Environment(CLIENT)
-public&nbsp;ClientSettingsC2SPacket&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
-                               int&nbsp;int2,
+public&nbsp;ClientSettingsC2SPacket&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;language,
+                               int&nbsp;viewDistance,
                                <a href="../../../../entity/player/PlayerEntity.ChatVisibilityType.html" title="enum in net.minecraft.entity.player">PlayerEntity.ChatVisibilityType</a>&nbsp;chatVisibilityType,
-                               boolean&nbsp;bool,
-                               int&nbsp;int3)</pre>
+                               boolean&nbsp;chatColors,
+                               int&nbsp;playerModelBitMask)</pre>
 </li>
 </ul>
 </li>

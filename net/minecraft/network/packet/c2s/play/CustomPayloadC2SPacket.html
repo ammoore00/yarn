@@ -160,12 +160,12 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6403">field_6403</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#channel">channel</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private <a href="../../../../util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6404">field_6404</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#payload">payload</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -190,8 +190,8 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,net.minecraft.util.PacketByteBuf)">CustomPayloadC2SPacket</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
-                      <a href="../../../../util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;packetByteBuf)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(java.lang.String,net.minecraft.util.PacketByteBuf)">CustomPayloadC2SPacket</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;channel,
+                      <a href="../../../../util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;payload)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -219,12 +219,12 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5761()">method_5761</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getChannel()">getChannel</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_5763()">method_5763</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPayload()">getPayload</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -261,22 +261,22 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="field_6403">
+<a id="channel">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6403</h4>
-<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> field_6403</pre>
+<h4>channel</h4>
+<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a> channel</pre>
 </li>
 </ul>
-<a id="field_6404">
+<a id="payload">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_6404</h4>
-<pre>private&nbsp;<a href="../../../../util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a> field_6404</pre>
+<h4>payload</h4>
+<pre>private&nbsp;<a href="../../../../util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a> payload</pre>
 </li>
 </ul>
 </li>
@@ -305,8 +305,8 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <li class="blockList">
 <h4>CustomPayloadC2SPacket</h4>
 <pre>@Environment(CLIENT)
-public&nbsp;CustomPayloadC2SPacket&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
-                              <a href="../../../../util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;packetByteBuf)</pre>
+public&nbsp;CustomPayloadC2SPacket&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;channel,
+                              <a href="../../../../util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;payload)</pre>
 </li>
 </ul>
 </li>
@@ -364,22 +364,22 @@ public&nbsp;CustomPayloadC2SPacket&#8203;(<a href="https://docs.oracle.com/javas
 </dl>
 </li>
 </ul>
-<a id="method_5761()">
+<a id="getChannel()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_5761</h4>
-<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;method_5761()</pre>
+<h4>getChannel</h4>
+<pre class="methodSignature">public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;getChannel()</pre>
 </li>
 </ul>
-<a id="method_5763()">
+<a id="getPayload()">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_5763</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../../../util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;method_5763()</pre>
+<h4>getPayload</h4>
+<pre class="methodSignature">public&nbsp;<a href="../../../../util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;getPayload()</pre>
 </li>
 </ul>
 </li>

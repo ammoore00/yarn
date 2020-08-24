@@ -155,7 +155,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../class_1111.html" title="class in net.minecraft">class_1111</a>[]</code></td>
+<td class="colFirst"><code><a href="ChunkRenderHelper.html" title="class in net.minecraft.client.render">ChunkRenderHelper</a>[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#chunks">chunks</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -202,10 +202,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.world.World,int,net.minecraft.client.render.WorldRenderer,net.minecraft.class_1112)">BuiltChunkStorage</a></span>&#8203;(<a href="../../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.world.World,int,net.minecraft.client.render.WorldRenderer,net.minecraft.client.render.world.ChunkRenderFactory)">BuiltChunkStorage</a></span>&#8203;(<a href="../../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
                  int&nbsp;viewDistance,
                  <a href="WorldRenderer.html" title="class in net.minecraft.client.render">WorldRenderer</a>&nbsp;worldRenderer,
-                 <a href="../../class_1112.html" title="interface in net.minecraft">class_1112</a>&nbsp;class_1112)</code></th>
+                 <a href="world/ChunkRenderFactory.html" title="interface in net.minecraft.client.render.world">ChunkRenderFactory</a>&nbsp;chunkRenderFactory)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -233,11 +233,11 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createChunks(net.minecraft.class_1112)">createChunks</a></span>&#8203;(<a href="../../class_1112.html" title="interface in net.minecraft">class_1112</a>&nbsp;class_1112)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createChunks(net.minecraft.client.render.world.ChunkRenderFactory)">createChunks</a></span>&#8203;(<a href="world/ChunkRenderFactory.html" title="interface in net.minecraft.client.render.world">ChunkRenderFactory</a>&nbsp;chunkRenderFactory)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>protected <a href="../../class_1111.html" title="class in net.minecraft">class_1111</a></code></td>
+<td class="colFirst"><code>protected <a href="ChunkRenderHelper.html" title="class in net.minecraft.client.render">ChunkRenderHelper</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getRenderedChunk(net.minecraft.util.math.BlockPos)">getRenderedChunk</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -344,7 +344,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockListLast">
 <li class="blockList">
 <h4>chunks</h4>
-<pre>public&nbsp;<a href="../../class_1111.html" title="class in net.minecraft">class_1111</a>[] chunks</pre>
+<pre>public&nbsp;<a href="ChunkRenderHelper.html" title="class in net.minecraft.client.render">ChunkRenderHelper</a>[] chunks</pre>
 </li>
 </ul>
 </li>
@@ -357,7 +357,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(net.minecraft.world.World,int,net.minecraft.client.render.WorldRenderer,net.minecraft.class_1112)">
+<a id="&lt;init&gt;(net.minecraft.world.World,int,net.minecraft.client.render.WorldRenderer,net.minecraft.client.render.world.ChunkRenderFactory)">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -366,7 +366,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>public&nbsp;BuiltChunkStorage&#8203;(<a href="../../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
                          int&nbsp;viewDistance,
                          <a href="WorldRenderer.html" title="class in net.minecraft.client.render">WorldRenderer</a>&nbsp;worldRenderer,
-                         <a href="../../class_1112.html" title="interface in net.minecraft">class_1112</a>&nbsp;class_1112)</pre>
+                         <a href="world/ChunkRenderFactory.html" title="interface in net.minecraft.client.render.world">ChunkRenderFactory</a>&nbsp;chunkRenderFactory)</pre>
 </li>
 </ul>
 </li>
@@ -379,13 +379,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="createChunks(net.minecraft.class_1112)">
+<a id="createChunks(net.minecraft.client.render.world.ChunkRenderFactory)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>createChunks</h4>
-<pre class="methodSignature">protected&nbsp;void&nbsp;createChunks&#8203;(<a href="../../class_1112.html" title="interface in net.minecraft">class_1112</a>&nbsp;class_1112)</pre>
+<pre class="methodSignature">protected&nbsp;void&nbsp;createChunks&#8203;(<a href="world/ChunkRenderFactory.html" title="interface in net.minecraft.client.render.world">ChunkRenderFactory</a>&nbsp;chunkRenderFactory)</pre>
 </li>
 </ul>
 <a id="clear()">
@@ -447,7 +447,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getRenderedChunk</h4>
-<pre class="methodSignature">protected&nbsp;<a href="../../class_1111.html" title="class in net.minecraft">class_1111</a>&nbsp;getRenderedChunk&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</pre>
+<pre class="methodSignature">protected&nbsp;<a href="ChunkRenderHelper.html" title="class in net.minecraft.client.render">ChunkRenderHelper</a>&nbsp;getRenderedChunk&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</pre>
 </li>
 </ul>
 </li>

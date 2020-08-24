@@ -142,7 +142,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="../../../class_1829.html" title="class in net.minecraft">class_1829</a></code>, <code><a href="../../mob/EndermanEntity.class_1912.html" title="class in net.minecraft.entity.mob">EndermanEntity.class_1912</a></code>, <code><a href="../../passive/IronGolemEntity.class_1870.html" title="class in net.minecraft.entity.passive">IronGolemEntity.class_1870</a></code>, <code><a href="../../mob/SpiderEntity.FollowTargetGoal.html" title="class in net.minecraft.entity.mob">SpiderEntity.FollowTargetGoal</a></code>, <code><a href="../../mob/ZombiePigmanEntity.FollowPlayerIfAngryGoal.html" title="class in net.minecraft.entity.mob">ZombiePigmanEntity.FollowPlayerIfAngryGoal</a></code></dd>
+<dd><code><a href="../../mob/EndermanEntity.class_1912.html" title="class in net.minecraft.entity.mob">EndermanEntity.class_1912</a></code>, <code><a href="../../passive/IronGolemEntity.class_1870.html" title="class in net.minecraft.entity.passive">IronGolemEntity.class_1870</a></code>, <code><a href="NonTamedEntityHurtGoal.html" title="class in net.minecraft.entity.ai.goal">NonTamedEntityHurtGoal</a></code>, <code><a href="../../mob/SpiderEntity.FollowTargetGoal.html" title="class in net.minecraft.entity.mob">SpiderEntity.FollowTargetGoal</a></code>, <code><a href="../../mob/ZombiePigmanEntity.FollowPlayerIfAngryGoal.html" title="class in net.minecraft.entity.mob">ZombiePigmanEntity.FollowPlayerIfAngryGoal</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">AttackEntityGoal&lt;T extends <a href="../../LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&gt;</span>
@@ -240,20 +240,20 @@ extends <a href="TrackTargetGoal.html" title="class in net.minecraft.entity.ai.g
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.class_1760,java.lang.Class,boolean)">AttackEntityGoal</a></span>&#8203;(<a href="../../../class_1760.html" title="class in net.minecraft">class_1760</a>&nbsp;class_1760,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.entity.PassivePathFindingEntity,java.lang.Class,boolean)">AttackEntityGoal</a></span>&#8203;(<a href="../../PassivePathFindingEntity.html" title="class in net.minecraft.entity">PassivePathFindingEntity</a>&nbsp;passivePathFindingEntity,
                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="AttackEntityGoal.html" title="type parameter in AttackEntityGoal">T</a>&gt;&nbsp;class2,
                 boolean&nbsp;bool)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.class_1760,java.lang.Class,boolean,boolean)">AttackEntityGoal</a></span>&#8203;(<a href="../../../class_1760.html" title="class in net.minecraft">class_1760</a>&nbsp;class_1760,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.entity.PassivePathFindingEntity,java.lang.Class,boolean,boolean)">AttackEntityGoal</a></span>&#8203;(<a href="../../PassivePathFindingEntity.html" title="class in net.minecraft.entity">PassivePathFindingEntity</a>&nbsp;passivePathFindingEntity,
                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="AttackEntityGoal.html" title="type parameter in AttackEntityGoal">T</a>&gt;&nbsp;class2,
                 boolean&nbsp;bool,
                 boolean&nbsp;bool2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.class_1760,java.lang.Class,int,boolean,boolean,com.google.common.base.Predicate)">AttackEntityGoal</a></span>&#8203;(<a href="../../../class_1760.html" title="class in net.minecraft">class_1760</a>&nbsp;class_1760,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.entity.PassivePathFindingEntity,java.lang.Class,int,boolean,boolean,com.google.common.base.Predicate)">AttackEntityGoal</a></span>&#8203;(<a href="../../PassivePathFindingEntity.html" title="class in net.minecraft.entity">PassivePathFindingEntity</a>&nbsp;passivePathFindingEntity,
                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="AttackEntityGoal.html" title="type parameter in AttackEntityGoal">T</a>&gt;&nbsp;class2,
                 int&nbsp;int2,
                 boolean&nbsp;bool,
@@ -382,36 +382,36 @@ extends <a href="TrackTargetGoal.html" title="class in net.minecraft.entity.ai.g
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(net.minecraft.class_1760,java.lang.Class,boolean)">
+<a id="&lt;init&gt;(net.minecraft.entity.PassivePathFindingEntity,java.lang.Class,boolean)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>AttackEntityGoal</h4>
-<pre>public&nbsp;AttackEntityGoal&#8203;(<a href="../../../class_1760.html" title="class in net.minecraft">class_1760</a>&nbsp;class_1760,
+<pre>public&nbsp;AttackEntityGoal&#8203;(<a href="../../PassivePathFindingEntity.html" title="class in net.minecraft.entity">PassivePathFindingEntity</a>&nbsp;passivePathFindingEntity,
                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="AttackEntityGoal.html" title="type parameter in AttackEntityGoal">T</a>&gt;&nbsp;class2,
                         boolean&nbsp;bool)</pre>
 </li>
 </ul>
-<a id="&lt;init&gt;(net.minecraft.class_1760,java.lang.Class,boolean,boolean)">
+<a id="&lt;init&gt;(net.minecraft.entity.PassivePathFindingEntity,java.lang.Class,boolean,boolean)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>AttackEntityGoal</h4>
-<pre>public&nbsp;AttackEntityGoal&#8203;(<a href="../../../class_1760.html" title="class in net.minecraft">class_1760</a>&nbsp;class_1760,
+<pre>public&nbsp;AttackEntityGoal&#8203;(<a href="../../PassivePathFindingEntity.html" title="class in net.minecraft.entity">PassivePathFindingEntity</a>&nbsp;passivePathFindingEntity,
                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="AttackEntityGoal.html" title="type parameter in AttackEntityGoal">T</a>&gt;&nbsp;class2,
                         boolean&nbsp;bool,
                         boolean&nbsp;bool2)</pre>
 </li>
 </ul>
-<a id="&lt;init&gt;(net.minecraft.class_1760,java.lang.Class,int,boolean,boolean,com.google.common.base.Predicate)">
+<a id="&lt;init&gt;(net.minecraft.entity.PassivePathFindingEntity,java.lang.Class,int,boolean,boolean,com.google.common.base.Predicate)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AttackEntityGoal</h4>
-<pre>public&nbsp;AttackEntityGoal&#8203;(<a href="../../../class_1760.html" title="class in net.minecraft">class_1760</a>&nbsp;class_1760,
+<pre>public&nbsp;AttackEntityGoal&#8203;(<a href="../../PassivePathFindingEntity.html" title="class in net.minecraft.entity">PassivePathFindingEntity</a>&nbsp;passivePathFindingEntity,
                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;<a href="AttackEntityGoal.html" title="type parameter in AttackEntityGoal">T</a>&gt;&nbsp;class2,
                         int&nbsp;int2,
                         boolean&nbsp;bool,

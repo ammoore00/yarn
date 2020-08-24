@@ -132,13 +132,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../../class_1117.html" title="interface in net.minecraft">class_1117</a></code></dd>
+<dd><code><a href="CameraView.html" title="interface in net.minecraft.client.render.debug">CameraView</a></code></dd>
 </dl>
 <hr>
 <pre>@Environment(CLIENT)
 public class <span class="typeNameLabel">StructureDebugRenderer</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang" class="externalLink">Object</a>
-implements <a href="../../../class_1117.html" title="interface in net.minecraft">class_1117</a></pre>
+implements <a href="CameraView.html" title="interface in net.minecraft.client.render.debug">CameraView</a></pre>
 </li>
 </ul>
 </div>
@@ -160,23 +160,23 @@ implements <a href="../../../class_1117.html" title="interface in net.minecraft"
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../class_1120.html" title="class in net.minecraft">class_1120</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_4790">field_4790</a></span></code></th>
+<td class="colFirst"><code>private <a href="../../util/BaseClipper.html" title="class in net.minecraft.client.util">BaseClipper</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#clipper">clipper</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_4791">field_4791</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#x">x</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_4792">field_4792</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#y">y</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private double</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_4793">field_4793</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#z">z</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -201,7 +201,7 @@ implements <a href="../../../class_1117.html" title="interface in net.minecraft"
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.class_1120)">StructureDebugRenderer</a></span>&#8203;(<a href="../../../class_1120.html" title="class in net.minecraft">class_1120</a>&nbsp;class_1120)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.client.util.BaseClipper)">StructureDebugRenderer</a></span>&#8203;(<a href="../../util/BaseClipper.html" title="class in net.minecraft.client.util">BaseClipper</a>&nbsp;clipper)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -223,25 +223,25 @@ implements <a href="../../../class_1117.html" title="interface in net.minecraft"
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_3844(double,double,double)">method_3844</a></span>&#8203;(double&nbsp;double2,
-           double&nbsp;double3,
-           double&nbsp;double4)</code></th>
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isBoxInFrustum(double,double,double,double,double,double)">isBoxInFrustum</a></span>&#8203;(double&nbsp;minX,
+              double&nbsp;minY,
+              double&nbsp;minZ,
+              double&nbsp;maxX,
+              double&nbsp;maxY,
+              double&nbsp;maxZ)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_3845(net.minecraft.util.math.Box)">method_3845</a></span>&#8203;(<a href="../../../util/math/Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;box)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isBoxInFrustum(net.minecraft.util.math.Box)">isBoxInFrustum</a></span>&#8203;(<a href="../../../util/math/Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;box)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_3849(double,double,double,double,double,double)">method_3849</a></span>&#8203;(double&nbsp;double2,
-           double&nbsp;double3,
-           double&nbsp;double4,
-           double&nbsp;double5,
-           double&nbsp;double6,
-           double&nbsp;double7)</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPos(double,double,double)">setPos</a></span>&#8203;(double&nbsp;x,
+      double&nbsp;y,
+      double&nbsp;z)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -268,40 +268,40 @@ implements <a href="../../../class_1117.html" title="interface in net.minecraft"
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="field_4790">
+<a id="clipper">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_4790</h4>
-<pre>private&nbsp;<a href="../../../class_1120.html" title="class in net.minecraft">class_1120</a> field_4790</pre>
+<h4>clipper</h4>
+<pre>private&nbsp;<a href="../../util/BaseClipper.html" title="class in net.minecraft.client.util">BaseClipper</a> clipper</pre>
 </li>
 </ul>
-<a id="field_4791">
+<a id="x">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_4791</h4>
-<pre>private&nbsp;double field_4791</pre>
+<h4>x</h4>
+<pre>private&nbsp;double x</pre>
 </li>
 </ul>
-<a id="field_4792">
+<a id="y">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_4792</h4>
-<pre>private&nbsp;double field_4792</pre>
+<h4>y</h4>
+<pre>private&nbsp;double y</pre>
 </li>
 </ul>
-<a id="field_4793">
+<a id="z">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_4793</h4>
-<pre>private&nbsp;double field_4793</pre>
+<h4>z</h4>
+<pre>private&nbsp;double z</pre>
 </li>
 </ul>
 </li>
@@ -323,13 +323,13 @@ implements <a href="../../../class_1117.html" title="interface in net.minecraft"
 <pre>public&nbsp;StructureDebugRenderer()</pre>
 </li>
 </ul>
-<a id="&lt;init&gt;(net.minecraft.class_1120)">
+<a id="&lt;init&gt;(net.minecraft.client.util.BaseClipper)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>StructureDebugRenderer</h4>
-<pre>public&nbsp;StructureDebugRenderer&#8203;(<a href="../../../class_1120.html" title="class in net.minecraft">class_1120</a>&nbsp;class_1120)</pre>
+<pre>public&nbsp;StructureDebugRenderer&#8203;(<a href="../../util/BaseClipper.html" title="class in net.minecraft.client.util">BaseClipper</a>&nbsp;clipper)</pre>
 </li>
 </ul>
 </li>
@@ -342,45 +342,45 @@ implements <a href="../../../class_1117.html" title="interface in net.minecraft"
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="method_3844(double,double,double)">
+<a id="setPos(double,double,double)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_3844</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_3844&#8203;(double&nbsp;double2,
-                        double&nbsp;double3,
-                        double&nbsp;double4)</pre>
+<h4>setPos</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setPos&#8203;(double&nbsp;x,
+                   double&nbsp;y,
+                   double&nbsp;z)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../class_1117.html#method_3844(double,double,double)">method_3844</a></code>&nbsp;in interface&nbsp;<code><a href="../../../class_1117.html" title="interface in net.minecraft">class_1117</a></code></dd>
+<dd><code><a href="CameraView.html#setPos(double,double,double)">setPos</a></code>&nbsp;in interface&nbsp;<code><a href="CameraView.html" title="interface in net.minecraft.client.render.debug">CameraView</a></code></dd>
 </dl>
 </li>
 </ul>
-<a id="method_3849(double,double,double,double,double,double)">
+<a id="isBoxInFrustum(double,double,double,double,double,double)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_3849</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;method_3849&#8203;(double&nbsp;double2,
-                           double&nbsp;double3,
-                           double&nbsp;double4,
-                           double&nbsp;double5,
-                           double&nbsp;double6,
-                           double&nbsp;double7)</pre>
+<h4>isBoxInFrustum</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isBoxInFrustum&#8203;(double&nbsp;minX,
+                              double&nbsp;minY,
+                              double&nbsp;minZ,
+                              double&nbsp;maxX,
+                              double&nbsp;maxY,
+                              double&nbsp;maxZ)</pre>
 </li>
 </ul>
-<a id="method_3845(net.minecraft.util.math.Box)">
+<a id="isBoxInFrustum(net.minecraft.util.math.Box)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_3845</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;method_3845&#8203;(<a href="../../../util/math/Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;box)</pre>
+<h4>isBoxInFrustum</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isBoxInFrustum&#8203;(<a href="../../../util/math/Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;box)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../class_1117.html#method_3845(net.minecraft.util.math.Box)">method_3845</a></code>&nbsp;in interface&nbsp;<code><a href="../../../class_1117.html" title="interface in net.minecraft">class_1117</a></code></dd>
+<dd><code><a href="CameraView.html#isBoxInFrustum(net.minecraft.util.math.Box)">isBoxInFrustum</a></code>&nbsp;in interface&nbsp;<code><a href="CameraView.html" title="interface in net.minecraft.client.render.debug">CameraView</a></code></dd>
 </dl>
 </li>
 </ul>

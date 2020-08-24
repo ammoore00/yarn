@@ -159,13 +159,13 @@ implements <a href="BlockPointer.html" title="interface in net.minecraft.util.ma
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../world/World.html" title="class in net.minecraft.world">World</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_5787">field_5787</a></span></code></th>
+<td class="colFirst"><code>private <a href="BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#pos">pos</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_5788">field_5788</a></span></code></th>
+<td class="colFirst"><code>private <a href="../../world/World.html" title="class in net.minecraft.world">World</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#world">world</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -187,7 +187,7 @@ implements <a href="BlockPointer.html" title="interface in net.minecraft.util.ma
 </tr>
 <tr class="altColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.world.World,net.minecraft.util.math.BlockPos)">BlockPointerImpl</a></span>&#8203;(<a href="../../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-                <a href="BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</code></th>
+                <a href="BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -219,28 +219,28 @@ implements <a href="BlockPointer.html" title="interface in net.minecraft.util.ma
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBlockStateData()">getBlockStateData</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../world/World.html" title="class in net.minecraft.world">World</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getWorld()">getWorld</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getX()">getX</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getY()">getY</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getZ()">getZ</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4894()">method_4894</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -267,22 +267,22 @@ implements <a href="BlockPointer.html" title="interface in net.minecraft.util.ma
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="field_5787">
+<a id="world">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_5787</h4>
-<pre>private final&nbsp;<a href="../../world/World.html" title="class in net.minecraft.world">World</a> field_5787</pre>
+<h4>world</h4>
+<pre>private final&nbsp;<a href="../../world/World.html" title="class in net.minecraft.world">World</a> world</pre>
 </li>
 </ul>
-<a id="field_5788">
+<a id="pos">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_5788</h4>
-<pre>private final&nbsp;<a href="BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a> field_5788</pre>
+<h4>pos</h4>
+<pre>private final&nbsp;<a href="BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a> pos</pre>
 </li>
 </ul>
 </li>
@@ -302,7 +302,7 @@ implements <a href="BlockPointer.html" title="interface in net.minecraft.util.ma
 <li class="blockList">
 <h4>BlockPointerImpl</h4>
 <pre>public&nbsp;BlockPointerImpl&#8203;(<a href="../../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-                        <a href="BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</pre>
+                        <a href="BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</pre>
 </li>
 </ul>
 </li>
@@ -386,16 +386,16 @@ implements <a href="BlockPointer.html" title="interface in net.minecraft.util.ma
 </dl>
 </li>
 </ul>
-<a id="method_4894()">
+<a id="getBlockStateData()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_4894</h4>
-<pre class="methodSignature">public&nbsp;int&nbsp;method_4894()</pre>
+<h4>getBlockStateData</h4>
+<pre class="methodSignature">public&nbsp;int&nbsp;getBlockStateData()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="BlockPointer.html#method_4894()">method_4894</a></code>&nbsp;in interface&nbsp;<code><a href="BlockPointer.html" title="interface in net.minecraft.util.math">BlockPointer</a></code></dd>
+<dd><code><a href="BlockPointer.html#getBlockStateData()">getBlockStateData</a></code>&nbsp;in interface&nbsp;<code><a href="BlockPointer.html" title="interface in net.minecraft.util.math">BlockPointer</a></code></dd>
 </dl>
 </li>
 </ul>

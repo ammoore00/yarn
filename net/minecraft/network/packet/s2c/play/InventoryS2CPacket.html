@@ -159,13 +159,13 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>[]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6150">field_6150</a></span></code></th>
+<td class="colFirst"><code>private int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#screenId">screenId</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#guiId">guiId</a></span></code></th>
+<td class="colFirst"><code>private <a href="../../../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stacks">stacks</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -190,8 +190,8 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(int,java.util.List)">InventoryS2CPacket</a></span>&#8203;(int&nbsp;int2,
-                  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&gt;&nbsp;list)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(int,java.util.List)">InventoryS2CPacket</a></span>&#8203;(int&nbsp;screenId,
+                  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&gt;&nbsp;stacks)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -219,7 +219,7 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getGuiId()">getGuiId</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getScreenId()">getScreenId</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
@@ -261,22 +261,22 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="guiId">
+<a id="screenId">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>guiId</h4>
-<pre>private&nbsp;int guiId</pre>
+<h4>screenId</h4>
+<pre>private&nbsp;int screenId</pre>
 </li>
 </ul>
-<a id="field_6150">
+<a id="stacks">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_6150</h4>
-<pre>private&nbsp;<a href="../../../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>[] field_6150</pre>
+<h4>stacks</h4>
+<pre>private&nbsp;<a href="../../../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>[] stacks</pre>
 </li>
 </ul>
 </li>
@@ -304,8 +304,8 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 <ul class="blockListLast">
 <li class="blockList">
 <h4>InventoryS2CPacket</h4>
-<pre>public&nbsp;InventoryS2CPacket&#8203;(int&nbsp;int2,
-                          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&gt;&nbsp;list)</pre>
+<pre>public&nbsp;InventoryS2CPacket&#8203;(int&nbsp;screenId,
+                          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&gt;&nbsp;stacks)</pre>
 </li>
 </ul>
 </li>
@@ -363,14 +363,14 @@ implements <a href="../../../Packet.html" title="interface in net.minecraft.netw
 </dl>
 </li>
 </ul>
-<a id="getGuiId()">
+<a id="getScreenId()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getGuiId</h4>
+<h4>getScreenId</h4>
 <pre class="methodSignature">@Environment(CLIENT)
-public&nbsp;int&nbsp;getGuiId()</pre>
+public&nbsp;int&nbsp;getScreenId()</pre>
 </li>
 </ul>
 <a id="getSlotStacks()">

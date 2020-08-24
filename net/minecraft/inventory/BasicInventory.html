@@ -136,7 +136,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="../class_1984.html" title="class in net.minecraft">class_1984</a></code>, <code><a href="ClientNetworkSyncedInventory.html" title="class in net.minecraft.inventory">ClientNetworkSyncedInventory</a></code>, <code><a href="EnderChestInventory.html" title="class in net.minecraft.inventory">EnderChestInventory</a></code></dd>
+<dd><code><a href="AnimalInventory.html" title="class in net.minecraft.inventory">AnimalInventory</a></code>, <code><a href="ClientNetworkSyncedInventory.html" title="class in net.minecraft.inventory">ClientNetworkSyncedInventory</a></code>, <code><a href="EnderChestInventory.html" title="class in net.minecraft.inventory">EnderChestInventory</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">BasicInventory</span>
@@ -178,7 +178,7 @@ implements <a href="Inventory.html" title="interface in net.minecraft.inventory"
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../class_1719.html" title="interface in net.minecraft">class_1719</a>&gt;</code></td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="BasicInventoryListener.html" title="interface in net.minecraft.inventory">BasicInventoryListener</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#listeners">listeners</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -212,7 +212,7 @@ implements <a href="Inventory.html" title="interface in net.minecraft.inventory"
 </tr>
 <tr class="rowColor">
 <th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.text.Text,int)">BasicInventory</a></span>&#8203;(<a href="../text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;text,
-              int&nbsp;int2)</code></th>
+              int&nbsp;id)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -301,7 +301,7 @@ implements <a href="Inventory.html" title="interface in net.minecraft.inventory"
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6772(net.minecraft.class_1719)">method_6772</a></span>&#8203;(<a href="../class_1719.html" title="interface in net.minecraft">class_1719</a>&nbsp;class_1719)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6772(net.minecraft.inventory.BasicInventoryListener)">method_6772</a></span>&#8203;(<a href="BasicInventoryListener.html" title="interface in net.minecraft.inventory">BasicInventoryListener</a>&nbsp;basicInventoryListener)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
@@ -311,7 +311,7 @@ implements <a href="Inventory.html" title="interface in net.minecraft.inventory"
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6774(net.minecraft.class_1719)">method_6774</a></span>&#8203;(<a href="../class_1719.html" title="interface in net.minecraft">class_1719</a>&nbsp;class_1719)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6774(net.minecraft.inventory.BasicInventoryListener)">method_6774</a></span>&#8203;(<a href="BasicInventoryListener.html" title="interface in net.minecraft.inventory">BasicInventoryListener</a>&nbsp;basicInventoryListener)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i16" class="altColor">
@@ -404,7 +404,7 @@ implements <a href="Inventory.html" title="interface in net.minecraft.inventory"
 <ul class="blockList">
 <li class="blockList">
 <h4>listeners</h4>
-<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../class_1719.html" title="interface in net.minecraft">class_1719</a>&gt; listeners</pre>
+<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="BasicInventoryListener.html" title="interface in net.minecraft.inventory">BasicInventoryListener</a>&gt; listeners</pre>
 </li>
 </ul>
 <a id="field_7220">
@@ -445,7 +445,7 @@ implements <a href="Inventory.html" title="interface in net.minecraft.inventory"
 <h4>BasicInventory</h4>
 <pre>@Environment(CLIENT)
 public&nbsp;BasicInventory&#8203;(<a href="../text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;text,
-                      int&nbsp;int2)</pre>
+                      int&nbsp;id)</pre>
 </li>
 </ul>
 </li>
@@ -458,22 +458,22 @@ public&nbsp;BasicInventory&#8203;(<a href="../text/Text.html" title="interface i
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="method_6772(net.minecraft.class_1719)">
+<a id="method_6772(net.minecraft.inventory.BasicInventoryListener)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>method_6772</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_6772&#8203;(<a href="../class_1719.html" title="interface in net.minecraft">class_1719</a>&nbsp;class_1719)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;method_6772&#8203;(<a href="BasicInventoryListener.html" title="interface in net.minecraft.inventory">BasicInventoryListener</a>&nbsp;basicInventoryListener)</pre>
 </li>
 </ul>
-<a id="method_6774(net.minecraft.class_1719)">
+<a id="method_6774(net.minecraft.inventory.BasicInventoryListener)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>method_6774</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_6774&#8203;(<a href="../class_1719.html" title="interface in net.minecraft">class_1719</a>&nbsp;class_1719)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;method_6774&#8203;(<a href="BasicInventoryListener.html" title="interface in net.minecraft.inventory">BasicInventoryListener</a>&nbsp;basicInventoryListener)</pre>
 </li>
 </ul>
 <a id="getInvStack(int)">
