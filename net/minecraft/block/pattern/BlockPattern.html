@@ -187,13 +187,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="https://guava.dev/releases/21.0/api/docs/com/google/common/base/Predicate.html?is-external=true" title="class or interface in com.google.common.base" class="externalLink">Predicate</a>&lt;<a href="../../world/RayTraceResult.html" title="class in net.minecraft.world">RayTraceResult</a>&gt;[][][]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_1517">field_1517</a></span></code></th>
+<td class="colFirst"><code>private int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#height">height</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#height">height</a></span></code></th>
+<td class="colFirst"><code>private <a href="https://guava.dev/releases/21.0/api/docs/com/google/common/base/Predicate.html?is-external=true" title="class or interface in com.google.common.base" class="externalLink">Predicate</a>&lt;<a href="../../world/RayTraceResult.html" title="class in net.minecraft.world">RayTraceResult</a>&gt;[][][]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#resultPredicates">resultPredicates</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -219,7 +219,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.google.common.base.Predicate%5B%5D%5B%5D%5B%5D)">BlockPattern</a></span>&#8203;(<a href="https://guava.dev/releases/21.0/api/docs/com/google/common/base/Predicate.html?is-external=true" title="class or interface in com.google.common.base" class="externalLink">Predicate</a>&lt;<a href="../../world/RayTraceResult.html" title="class in net.minecraft.world">RayTraceResult</a>&gt;[][][]&nbsp;predicate)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.google.common.base.Predicate%5B%5D%5B%5D%5B%5D)">BlockPattern</a></span>&#8203;(<a href="https://guava.dev/releases/21.0/api/docs/com/google/common/base/Predicate.html?is-external=true" title="class or interface in com.google.common.base" class="externalLink">Predicate</a>&lt;<a href="../../world/RayTraceResult.html" title="class in net.minecraft.world">RayTraceResult</a>&gt;[][][]&nbsp;resultPredicates)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -264,10 +264,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>private <a href="BlockPattern.Result.html" title="class in net.minecraft.block.pattern">BlockPattern.Result</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1245(net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction,net.minecraft.util.math.Direction,com.google.common.cache.LoadingCache)">method_1245</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1245(net.minecraft.util.math.BlockPos,net.minecraft.util.math.Direction,net.minecraft.util.math.Direction,com.google.common.cache.LoadingCache)">method_1245</a></span>&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
            <a href="../../util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction,
            <a href="../../util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction2,
-           <a href="https://guava.dev/releases/21.0/api/docs/com/google/common/cache/LoadingCache.html?is-external=true" title="class or interface in com.google.common.cache" class="externalLink">LoadingCache</a>&lt;<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>,&#8203;<a href="../../world/RayTraceResult.html" title="class in net.minecraft.world">RayTraceResult</a>&gt;&nbsp;loadingCache)</code></th>
+           <a href="https://guava.dev/releases/21.0/api/docs/com/google/common/cache/LoadingCache.html?is-external=true" title="class or interface in com.google.common.cache" class="externalLink">LoadingCache</a>&lt;<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>,&#8203;<a href="../../world/RayTraceResult.html" title="class in net.minecraft.world">RayTraceResult</a>&gt;&nbsp;cache)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -304,13 +304,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="field_1517">
+<a id="resultPredicates">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_1517</h4>
-<pre>private final&nbsp;<a href="https://guava.dev/releases/21.0/api/docs/com/google/common/base/Predicate.html?is-external=true" title="class or interface in com.google.common.base" class="externalLink">Predicate</a>&lt;<a href="../../world/RayTraceResult.html" title="class in net.minecraft.world">RayTraceResult</a>&gt;[][][] field_1517</pre>
+<h4>resultPredicates</h4>
+<pre>private final&nbsp;<a href="https://guava.dev/releases/21.0/api/docs/com/google/common/base/Predicate.html?is-external=true" title="class or interface in com.google.common.base" class="externalLink">Predicate</a>&lt;<a href="../../world/RayTraceResult.html" title="class in net.minecraft.world">RayTraceResult</a>&gt;[][][] resultPredicates</pre>
 </li>
 </ul>
 <a id="depth">
@@ -356,7 +356,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockListLast">
 <li class="blockList">
 <h4>BlockPattern</h4>
-<pre>public&nbsp;BlockPattern&#8203;(<a href="https://guava.dev/releases/21.0/api/docs/com/google/common/base/Predicate.html?is-external=true" title="class or interface in com.google.common.base" class="externalLink">Predicate</a>&lt;<a href="../../world/RayTraceResult.html" title="class in net.minecraft.world">RayTraceResult</a>&gt;[][][]&nbsp;predicate)</pre>
+<pre>public&nbsp;BlockPattern&#8203;(<a href="https://guava.dev/releases/21.0/api/docs/com/google/common/base/Predicate.html?is-external=true" title="class or interface in com.google.common.base" class="externalLink">Predicate</a>&lt;<a href="../../world/RayTraceResult.html" title="class in net.minecraft.world">RayTraceResult</a>&gt;[][][]&nbsp;resultPredicates)</pre>
 </li>
 </ul>
 </li>
@@ -393,10 +393,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>method_1245</h4>
-<pre class="methodSignature">private&nbsp;<a href="BlockPattern.Result.html" title="class in net.minecraft.block.pattern">BlockPattern.Result</a>&nbsp;method_1245&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
+<pre class="methodSignature">private&nbsp;<a href="BlockPattern.Result.html" title="class in net.minecraft.block.pattern">BlockPattern.Result</a>&nbsp;method_1245&#8203;(<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
                                         <a href="../../util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction,
                                         <a href="../../util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction2,
-                                        <a href="https://guava.dev/releases/21.0/api/docs/com/google/common/cache/LoadingCache.html?is-external=true" title="class or interface in com.google.common.cache" class="externalLink">LoadingCache</a>&lt;<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>,&#8203;<a href="../../world/RayTraceResult.html" title="class in net.minecraft.world">RayTraceResult</a>&gt;&nbsp;loadingCache)</pre>
+                                        <a href="https://guava.dev/releases/21.0/api/docs/com/google/common/cache/LoadingCache.html?is-external=true" title="class or interface in com.google.common.cache" class="externalLink">LoadingCache</a>&lt;<a href="../../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>,&#8203;<a href="../../world/RayTraceResult.html" title="class in net.minecraft.world">RayTraceResult</a>&gt;&nbsp;cache)</pre>
 </li>
 </ul>
 <a id="method_1242(net.minecraft.world.World,net.minecraft.util.math.BlockPos)">

@@ -169,16 +169,6 @@ extends <a href="../MinecraftServer.html" title="class in net.minecraft.server">
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_5450">field_5450</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="../LanServerPinger.html" title="class in net.minecraft.server">LanServerPinger</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_5451">field_5451</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>private <a href="../../world/level/LevelInfo.html" title="class in net.minecraft.world.level">LevelInfo</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#levelInfo">levelInfo</a></span></code></th>
 <td class="colLast">&nbsp;</td>
@@ -191,6 +181,16 @@ extends <a href="../MinecraftServer.html" title="class in net.minecraft.server">
 <tr class="rowColor">
 <td class="colFirst"><code>private boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#paused">paused</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="../LanServerPinger.html" title="class in net.minecraft.server">LanServerPinger</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#pinger">pinger</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#published">published</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -293,7 +293,7 @@ extends <a href="../MinecraftServer.html" title="class in net.minecraft.server">
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isRemote()">isRemote</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isPublished()">isPublished</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
@@ -312,53 +312,53 @@ extends <a href="../MinecraftServer.html" title="class in net.minecraft.server">
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_4550()">method_4550</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6437(net.minecraft.world.level.LevelInfo.GameMode,boolean)">method_6437</a></span>&#8203;(<a href="../../world/level/LevelInfo.GameMode.html" title="enum in net.minecraft.world.level">LevelInfo.GameMode</a>&nbsp;gameMode,
            boolean&nbsp;bool)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6450(net.minecraft.world.Difficulty)">method_6450</a></span>&#8203;(<a href="../../world/Difficulty.html" title="enum in net.minecraft.world">Difficulty</a>&nbsp;difficulty)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i16" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../util/crash/CrashReport.html" title="class in net.minecraft.util.crash">CrashReport</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#populateCrashReport(net.minecraft.util.crash.CrashReport)">populateCrashReport</a></span>&#8203;(<a href="../../util/crash/CrashReport.html" title="class in net.minecraft.util.crash">CrashReport</a>&nbsp;report)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCrashReport(net.minecraft.util.crash.CrashReport)">setCrashReport</a></span>&#8203;(<a href="../../util/crash/CrashReport.html" title="class in net.minecraft.util.crash">CrashReport</a>&nbsp;report)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDefaultGameMode(net.minecraft.world.level.LevelInfo.GameMode)">setDefaultGameMode</a></span>&#8203;(<a href="../../world/level/LevelInfo.GameMode.html" title="enum in net.minecraft.world.level">LevelInfo.GameMode</a>&nbsp;gamemode)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDifficulty(net.minecraft.world.Difficulty)">setDifficulty</a></span>&#8203;(<a href="../../world/Difficulty.html" title="enum in net.minecraft.world">Difficulty</a>&nbsp;difficulty)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setupServer()">setupServer</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setupWorld()">setupWorld</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setupWorld(java.lang.String,java.lang.String,long,net.minecraft.world.level.LevelGeneratorType,java.lang.String)">setupWorld</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;world,
           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
           long&nbsp;long2,
           <a href="../../world/level/LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a>&nbsp;generatorType,
           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string2)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#shouldBroadcastConsoleToIps()">shouldBroadcastConsoleToIps</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i22" class="altColor">
@@ -387,7 +387,7 @@ extends <a href="../MinecraftServer.html" title="class in net.minecraft.server">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.server.<a href="../MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></h3>
-<code><a href="../MinecraftServer.html#addSnooper(net.minecraft.util.snooper.Snooper)">addSnooper</a>, <a href="../MinecraftServer.html#canUseCommand(int,java.lang.String)">canUseCommand</a>, <a href="../MinecraftServer.html#enableProfiler()">enableProfiler</a>, <a href="../MinecraftServer.html#exit()">exit</a>, <a href="../MinecraftServer.html#forcePlayerSampleUpdate()">forcePlayerSampleUpdate</a>, <a href="../MinecraftServer.html#getBlockPos()">getBlockPos</a>, <a href="../MinecraftServer.html#getCommandManager()">getCommandManager</a>, <a href="../MinecraftServer.html#getCompletions(net.minecraft.command.CommandSource,java.lang.String,net.minecraft.util.math.BlockPos)">getCompletions</a>, <a href="../MinecraftServer.html#getCurrentPlayerCount()">getCurrentPlayerCount</a>, <a href="../MinecraftServer.html#getEntity()">getEntity</a>, <a href="../MinecraftServer.html#getEntity(java.util.UUID)">getEntity</a>, <a href="../MinecraftServer.html#getFile(java.lang.String)">getFile</a>, <a href="../MinecraftServer.html#getGameProfileRepo()">getGameProfileRepo</a>, <a href="../MinecraftServer.html#getKeyPair()">getKeyPair</a>, <a href="../MinecraftServer.html#getLevelName()">getLevelName</a>, <a href="../MinecraftServer.html#getMaxPlayerCount()">getMaxPlayerCount</a>, <a href="../MinecraftServer.html#getMaxWorldBorderRadius()">getMaxWorldBorderRadius</a>, <a href="../MinecraftServer.html#getName()">getName</a>, <a href="../MinecraftServer.html#getNetworkCompressionThreshold()">getNetworkCompressionThreshold</a>, <a href="../MinecraftServer.html#getNetworkIo()">getNetworkIo</a>, <a href="../MinecraftServer.html#getPlayerIdleTimeout()">getPlayerIdleTimeout</a>, <a href="../MinecraftServer.html#getPlayerManager()">getPlayerManager</a>, <a href="../MinecraftServer.html#getPlayerNames()">getPlayerNames</a>, <a href="../MinecraftServer.html#getPos()">getPos</a>, <a href="../MinecraftServer.html#getResourcePackHash()">getResourcePackHash</a>, <a href="../MinecraftServer.html#getResourcePackUrl()">getResourcePackUrl</a>, <a href="../MinecraftServer.html#getServer()">getServer</a>, <a href="../MinecraftServer.html#getServerIp()">getServerIp</a>, <a href="../MinecraftServer.html#getServerMetadata()">getServerMetadata</a>, <a href="../MinecraftServer.html#getServerModName()">getServerModName</a>, <a href="../MinecraftServer.html#getServerMotd()">getServerMotd</a>, <a href="../MinecraftServer.html#getServerName()">getServerName</a>, <a href="../MinecraftServer.html#getServerOperation()">getServerOperation</a>, <a href="../MinecraftServer.html#getServerPort()">getServerPort</a>, <a href="../MinecraftServer.html#getServerStartTime()">getServerStartTime</a>, <a href="../MinecraftServer.html#getSessionService()">getSessionService</a>, <a href="../MinecraftServer.html#getSpawnProtectionRadius()">getSpawnProtectionRadius</a>, <a href="../MinecraftServer.html#getThread()">getThread</a>, <a href="../MinecraftServer.html#getTicks()">getTicks</a>, <a href="../MinecraftServer.html#getTimeMillis()">getTimeMillis</a>, <a href="../MinecraftServer.html#getTranslationKey()">getTranslationKey</a>, <a href="../MinecraftServer.html#getUserCache()">getUserCache</a>, <a href="../MinecraftServer.html#getUserName()">getUserName</a>, <a href="../MinecraftServer.html#getVersion()">getVersion</a>, <a href="../MinecraftServer.html#getWorld()">getWorld</a>, <a href="../MinecraftServer.html#getWorld(int)">getWorld</a>, <a href="../MinecraftServer.html#getWorldHeight()">getWorldHeight</a>, <a href="../MinecraftServer.html#hasGameDir()">hasGameDir</a>, <a href="../MinecraftServer.html#hasGui()">hasGui</a>, <a href="../MinecraftServer.html#info(java.lang.String)">info</a>, <a href="../MinecraftServer.html#isDebuggingEnabled()">isDebuggingEnabled</a>, <a href="../MinecraftServer.html#isDemo()">isDemo</a>, <a href="../MinecraftServer.html#isFlightEnabled()">isFlightEnabled</a>, <a href="../MinecraftServer.html#isLoading()">isLoading</a>, <a href="../MinecraftServer.html#isMonsterSpawningEnabled()">isMonsterSpawningEnabled</a>, <a href="../MinecraftServer.html#isNetherAllowed()">isNetherAllowed</a>, <a href="../MinecraftServer.html#isOnlineMode()">isOnlineMode</a>, <a href="../MinecraftServer.html#isOnThread()">isOnThread</a>, <a href="../MinecraftServer.html#isPvpEnabled()">isPvpEnabled</a>, <a href="../MinecraftServer.html#isRunning()">isRunning</a>, <a href="../MinecraftServer.html#isSinglePlayer()">isSinglePlayer</a>, <a href="../MinecraftServer.html#isSpawnProtected(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.entity.player.PlayerEntity)">isSpawnProtected</a>, <a href="../MinecraftServer.html#isStopped()">isStopped</a>, <a href="../MinecraftServer.html#loadResourcePack(java.lang.String,net.minecraft.world.SaveHandler)">loadResourcePack</a>, <a href="../MinecraftServer.html#log(java.lang.String)">log</a>, <a href="../MinecraftServer.html#logError(java.lang.String)">logError</a>, <a href="../MinecraftServer.html#logProgress(java.lang.String,int)">logProgress</a>, <a href="../MinecraftServer.html#main(java.lang.String%5B%5D)">main</a>, <a href="../MinecraftServer.html#method_5910()">method_5910</a>, <a href="../MinecraftServer.html#method_5911()">method_5911</a>, <a href="../MinecraftServer.html#method_5912()">method_5912</a>, <a href="../MinecraftServer.html#method_6421()">method_6421</a>, <a href="../MinecraftServer.html#method_6422()">method_6422</a>, <a href="../MinecraftServer.html#method_6433()">method_6433</a>, <a href="../MinecraftServer.html#method_6444(java.util.concurrent.Callable)">method_6444</a>, <a href="../MinecraftServer.html#method_6446(net.minecraft.util.Tickable)">method_6446</a>, <a href="../MinecraftServer.html#method_6466()">method_6466</a>, <a href="../MinecraftServer.html#method_6486()">method_6486</a>, <a href="../MinecraftServer.html#method_6489()">method_6489</a>, <a href="../MinecraftServer.html#method_6521()">method_6521</a>, <a href="../MinecraftServer.html#prepareWorlds()">prepareWorlds</a>, <a href="../MinecraftServer.html#run()">run</a>, <a href="../MinecraftServer.html#saveWorlds(boolean)">saveWorlds</a>, <a href="../MinecraftServer.html#sendCommandFeedback()">sendCommandFeedback</a>, <a href="../MinecraftServer.html#sendMessage(net.minecraft.text.Text)">sendMessage</a>, <a href="../MinecraftServer.html#setDemo(boolean)">setDemo</a>, <a href="../MinecraftServer.html#setFlightEnabled(boolean)">setFlightEnabled</a>, <a href="../MinecraftServer.html#setForceGameMode(boolean)">setForceGameMode</a>, <a href="../MinecraftServer.html#setForceWorldUpgrade(boolean)">setForceWorldUpgrade</a>, <a href="../MinecraftServer.html#setInstance()">setInstance</a>, <a href="../MinecraftServer.html#setKeyPair(java.security.KeyPair)">setKeyPair</a>, <a href="../MinecraftServer.html#setLevelName(java.lang.String)">setLevelName</a>, <a href="../MinecraftServer.html#setMotd(java.lang.String)">setMotd</a>, <a href="../MinecraftServer.html#setOnlineMode(boolean)">setOnlineMode</a>, <a href="../MinecraftServer.html#setPlayerIdleTimeout(int)">setPlayerIdleTimeout</a>, <a href="../MinecraftServer.html#setPlayerManager(net.minecraft.server.PlayerNetworkHandler)">setPlayerManager</a>, <a href="../MinecraftServer.html#setPvpEnabled(boolean)">setPvpEnabled</a>, <a href="../MinecraftServer.html#setResourcePack(java.lang.String,java.lang.String)">setResourcePack</a>, <a href="../MinecraftServer.html#setServerIp(java.lang.String)">setServerIp</a>, <a href="../MinecraftServer.html#setServerName(java.lang.String)">setServerName</a>, <a href="../MinecraftServer.html#setServerOperation(java.lang.String)">setServerOperation</a>, <a href="../MinecraftServer.html#setServerPort(int)">setServerPort</a>, <a href="../MinecraftServer.html#setSpawnAnimals(boolean)">setSpawnAnimals</a>, <a href="../MinecraftServer.html#setSpawnNpcs(boolean)">setSpawnNpcs</a>, <a href="../MinecraftServer.html#setStat(net.minecraft.command.CommandStats.Type,int)">setStat</a>, <a href="../MinecraftServer.html#setUserName(java.lang.String)">setUserName</a>, <a href="../MinecraftServer.html#setWorldHeight(int)">setWorldHeight</a>, <a href="../MinecraftServer.html#shouldAnnouncePlayerAchievements()">shouldAnnouncePlayerAchievements</a>, <a href="../MinecraftServer.html#shouldForceGameMode()">shouldForceGameMode</a>, <a href="../MinecraftServer.html#shouldSpawnAnimals()">shouldSpawnAnimals</a>, <a href="../MinecraftServer.html#shouldSpawnNpcs()">shouldSpawnNpcs</a>, <a href="../MinecraftServer.html#shutdown()">shutdown</a>, <a href="../MinecraftServer.html#submit(java.lang.Runnable)">submit</a>, <a href="../MinecraftServer.html#upgradeWorld(java.lang.String)">upgradeWorld</a>, <a href="../MinecraftServer.html#warn(java.lang.String)">warn</a></code></li>
+<code><a href="../MinecraftServer.html#addSnooper(net.minecraft.util.snooper.Snooper)">addSnooper</a>, <a href="../MinecraftServer.html#addTickable(net.minecraft.util.Tickable)">addTickable</a>, <a href="../MinecraftServer.html#canUseCommand(int,java.lang.String)">canUseCommand</a>, <a href="../MinecraftServer.html#enableProfiler()">enableProfiler</a>, <a href="../MinecraftServer.html#execute(java.lang.Runnable)">execute</a>, <a href="../MinecraftServer.html#exit()">exit</a>, <a href="../MinecraftServer.html#forcePlayerSampleUpdate()">forcePlayerSampleUpdate</a>, <a href="../MinecraftServer.html#getBlockPos()">getBlockPos</a>, <a href="../MinecraftServer.html#getCommandManager()">getCommandManager</a>, <a href="../MinecraftServer.html#getCompletions(net.minecraft.command.CommandSource,java.lang.String,net.minecraft.util.math.BlockPos)">getCompletions</a>, <a href="../MinecraftServer.html#getCurrentPlayerCount()">getCurrentPlayerCount</a>, <a href="../MinecraftServer.html#getEntity()">getEntity</a>, <a href="../MinecraftServer.html#getEntity(java.util.UUID)">getEntity</a>, <a href="../MinecraftServer.html#getFile(java.lang.String)">getFile</a>, <a href="../MinecraftServer.html#getGameProfileRepo()">getGameProfileRepo</a>, <a href="../MinecraftServer.html#getIp()">getIp</a>, <a href="../MinecraftServer.html#getKeyPair()">getKeyPair</a>, <a href="../MinecraftServer.html#getLevelName()">getLevelName</a>, <a href="../MinecraftServer.html#getMaxPlayerCount()">getMaxPlayerCount</a>, <a href="../MinecraftServer.html#getMaxWorldBorderRadius()">getMaxWorldBorderRadius</a>, <a href="../MinecraftServer.html#getMotd()">getMotd</a>, <a href="../MinecraftServer.html#getName()">getName</a>, <a href="../MinecraftServer.html#getNetworkCompressionThreshold()">getNetworkCompressionThreshold</a>, <a href="../MinecraftServer.html#getNetworkIo()">getNetworkIo</a>, <a href="../MinecraftServer.html#getPlayerIdleTimeout()">getPlayerIdleTimeout</a>, <a href="../MinecraftServer.html#getPlayerManager()">getPlayerManager</a>, <a href="../MinecraftServer.html#getPlayerNames()">getPlayerNames</a>, <a href="../MinecraftServer.html#getPort()">getPort</a>, <a href="../MinecraftServer.html#getPos()">getPos</a>, <a href="../MinecraftServer.html#getProfiles()">getProfiles</a>, <a href="../MinecraftServer.html#getProxy()">getProxy</a>, <a href="../MinecraftServer.html#getResourcePackHash()">getResourcePackHash</a>, <a href="../MinecraftServer.html#getResourcePackUrl()">getResourcePackUrl</a>, <a href="../MinecraftServer.html#getSaveStorage()">getSaveStorage</a>, <a href="../MinecraftServer.html#getServer()">getServer</a>, <a href="../MinecraftServer.html#getServerIp()">getServerIp</a>, <a href="../MinecraftServer.html#getServerMetadata()">getServerMetadata</a>, <a href="../MinecraftServer.html#getServerModName()">getServerModName</a>, <a href="../MinecraftServer.html#getServerMotd()">getServerMotd</a>, <a href="../MinecraftServer.html#getServerName()">getServerName</a>, <a href="../MinecraftServer.html#getServerOperation()">getServerOperation</a>, <a href="../MinecraftServer.html#getServerPort()">getServerPort</a>, <a href="../MinecraftServer.html#getServerStartTime()">getServerStartTime</a>, <a href="../MinecraftServer.html#getSessionService()">getSessionService</a>, <a href="../MinecraftServer.html#getSnooper()">getSnooper</a>, <a href="../MinecraftServer.html#getSpawnProtectionRadius()">getSpawnProtectionRadius</a>, <a href="../MinecraftServer.html#getThread()">getThread</a>, <a href="../MinecraftServer.html#getTicks()">getTicks</a>, <a href="../MinecraftServer.html#getTimeMillis()">getTimeMillis</a>, <a href="../MinecraftServer.html#getTranslationKey()">getTranslationKey</a>, <a href="../MinecraftServer.html#getUserCache()">getUserCache</a>, <a href="../MinecraftServer.html#getUserName()">getUserName</a>, <a href="../MinecraftServer.html#getVersion()">getVersion</a>, <a href="../MinecraftServer.html#getWorld()">getWorld</a>, <a href="../MinecraftServer.html#getWorld(int)">getWorld</a>, <a href="../MinecraftServer.html#getWorldHeight()">getWorldHeight</a>, <a href="../MinecraftServer.html#hasGameDir()">hasGameDir</a>, <a href="../MinecraftServer.html#hasGui()">hasGui</a>, <a href="../MinecraftServer.html#info(java.lang.String)">info</a>, <a href="../MinecraftServer.html#isDebuggingEnabled()">isDebuggingEnabled</a>, <a href="../MinecraftServer.html#isDemo()">isDemo</a>, <a href="../MinecraftServer.html#isFlightEnabled()">isFlightEnabled</a>, <a href="../MinecraftServer.html#isLoading()">isLoading</a>, <a href="../MinecraftServer.html#isMonsterSpawningEnabled()">isMonsterSpawningEnabled</a>, <a href="../MinecraftServer.html#isNetherAllowed()">isNetherAllowed</a>, <a href="../MinecraftServer.html#isOnlineMode()">isOnlineMode</a>, <a href="../MinecraftServer.html#isOnThread()">isOnThread</a>, <a href="../MinecraftServer.html#isPvpEnabled()">isPvpEnabled</a>, <a href="../MinecraftServer.html#isRunning()">isRunning</a>, <a href="../MinecraftServer.html#isSinglePlayer()">isSinglePlayer</a>, <a href="../MinecraftServer.html#isSpawnProtected(net.minecraft.world.World,net.minecraft.util.math.BlockPos,net.minecraft.entity.player.PlayerEntity)">isSpawnProtected</a>, <a href="../MinecraftServer.html#isStopped()">isStopped</a>, <a href="../MinecraftServer.html#loadResourcePack(java.lang.String,net.minecraft.world.SaveHandler)">loadResourcePack</a>, <a href="../MinecraftServer.html#log(java.lang.String)">log</a>, <a href="../MinecraftServer.html#logError(java.lang.String)">logError</a>, <a href="../MinecraftServer.html#logProgress(java.lang.String,int)">logProgress</a>, <a href="../MinecraftServer.html#main(java.lang.String%5B%5D)">main</a>, <a href="../MinecraftServer.html#method_6444(java.util.concurrent.Callable)">method_6444</a>, <a href="../MinecraftServer.html#method_6466()">method_6466</a>, <a href="../MinecraftServer.html#method_6521()">method_6521</a>, <a href="../MinecraftServer.html#prepareWorlds()">prepareWorlds</a>, <a href="../MinecraftServer.html#run()">run</a>, <a href="../MinecraftServer.html#saveWorlds(boolean)">saveWorlds</a>, <a href="../MinecraftServer.html#sendCommandFeedback()">sendCommandFeedback</a>, <a href="../MinecraftServer.html#sendMessage(net.minecraft.text.Text)">sendMessage</a>, <a href="../MinecraftServer.html#setDemo(boolean)">setDemo</a>, <a href="../MinecraftServer.html#setFlightEnabled(boolean)">setFlightEnabled</a>, <a href="../MinecraftServer.html#setForceGameMode(boolean)">setForceGameMode</a>, <a href="../MinecraftServer.html#setForceWorldUpgrade(boolean)">setForceWorldUpgrade</a>, <a href="../MinecraftServer.html#setInstance()">setInstance</a>, <a href="../MinecraftServer.html#setKeyPair(java.security.KeyPair)">setKeyPair</a>, <a href="../MinecraftServer.html#setLevelName(java.lang.String)">setLevelName</a>, <a href="../MinecraftServer.html#setMotd(java.lang.String)">setMotd</a>, <a href="../MinecraftServer.html#setOnlineMode(boolean)">setOnlineMode</a>, <a href="../MinecraftServer.html#setPlayerIdleTimeout(int)">setPlayerIdleTimeout</a>, <a href="../MinecraftServer.html#setPlayerManager(net.minecraft.server.PlayerManager)">setPlayerManager</a>, <a href="../MinecraftServer.html#setPvpEnabled(boolean)">setPvpEnabled</a>, <a href="../MinecraftServer.html#setResourcePack(java.lang.String,java.lang.String)">setResourcePack</a>, <a href="../MinecraftServer.html#setServerIp(java.lang.String)">setServerIp</a>, <a href="../MinecraftServer.html#setServerName(java.lang.String)">setServerName</a>, <a href="../MinecraftServer.html#setServerOperation(java.lang.String)">setServerOperation</a>, <a href="../MinecraftServer.html#setServerPort(int)">setServerPort</a>, <a href="../MinecraftServer.html#setSpawnAnimals(boolean)">setSpawnAnimals</a>, <a href="../MinecraftServer.html#setSpawnNpcs(boolean)">setSpawnNpcs</a>, <a href="../MinecraftServer.html#setStat(net.minecraft.command.CommandStats.Type,int)">setStat</a>, <a href="../MinecraftServer.html#setUserName(java.lang.String)">setUserName</a>, <a href="../MinecraftServer.html#setWorldHeight(int)">setWorldHeight</a>, <a href="../MinecraftServer.html#shouldAnnouncePlayerAchievements()">shouldAnnouncePlayerAchievements</a>, <a href="../MinecraftServer.html#shouldForceGameMode()">shouldForceGameMode</a>, <a href="../MinecraftServer.html#shouldSpawnAnimals()">shouldSpawnAnimals</a>, <a href="../MinecraftServer.html#shouldSpawnNpcs()">shouldSpawnNpcs</a>, <a href="../MinecraftServer.html#shutdown()">shutdown</a>, <a href="../MinecraftServer.html#startServerThread()">startServerThread</a>, <a href="../MinecraftServer.html#upgradeWorld(java.lang.String)">upgradeWorld</a>, <a href="../MinecraftServer.html#warn(java.lang.String)">warn</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -448,22 +448,22 @@ extends <a href="../MinecraftServer.html" title="class in net.minecraft.server">
 <pre>private&nbsp;boolean paused</pre>
 </li>
 </ul>
-<a id="field_5450">
+<a id="published">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_5450</h4>
-<pre>private&nbsp;boolean field_5450</pre>
+<h4>published</h4>
+<pre>private&nbsp;boolean published</pre>
 </li>
 </ul>
-<a id="field_5451">
+<a id="pinger">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_5451</h4>
-<pre>private&nbsp;<a href="../LanServerPinger.html" title="class in net.minecraft.server">LanServerPinger</a> field_5451</pre>
+<h4>pinger</h4>
+<pre>private&nbsp;<a href="../LanServerPinger.html" title="class in net.minecraft.server">LanServerPinger</a> pinger</pre>
 </li>
 </ul>
 </li>
@@ -631,16 +631,16 @@ extends <a href="../MinecraftServer.html" title="class in net.minecraft.server">
 </dl>
 </li>
 </ul>
-<a id="isRemote()">
+<a id="shouldBroadcastConsoleToIps()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>isRemote</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;isRemote()</pre>
+<h4>shouldBroadcastConsoleToIps</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;shouldBroadcastConsoleToIps()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../MinecraftServer.html#isRemote()">isRemote</a></code>&nbsp;in class&nbsp;<code><a href="../MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
+<dd><code><a href="../MinecraftServer.html#shouldBroadcastConsoleToIps()">shouldBroadcastConsoleToIps</a></code>&nbsp;in class&nbsp;<code><a href="../MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -709,16 +709,16 @@ extends <a href="../MinecraftServer.html" title="class in net.minecraft.server">
 </dl>
 </li>
 </ul>
-<a id="method_6450(net.minecraft.world.Difficulty)">
+<a id="setDifficulty(net.minecraft.world.Difficulty)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_6450</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_6450&#8203;(<a href="../../world/Difficulty.html" title="enum in net.minecraft.world">Difficulty</a>&nbsp;difficulty)</pre>
+<h4>setDifficulty</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;setDifficulty&#8203;(<a href="../../world/Difficulty.html" title="enum in net.minecraft.world">Difficulty</a>&nbsp;difficulty)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../MinecraftServer.html#method_6450(net.minecraft.world.Difficulty)">method_6450</a></code>&nbsp;in class&nbsp;<code><a href="../MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
+<dd><code><a href="../MinecraftServer.html#setDifficulty(net.minecraft.world.Difficulty)">setDifficulty</a></code>&nbsp;in class&nbsp;<code><a href="../MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -801,13 +801,13 @@ extends <a href="../MinecraftServer.html" title="class in net.minecraft.server">
 <pre class="methodSignature">public&nbsp;void&nbsp;method_4549()</pre>
 </li>
 </ul>
-<a id="method_4550()">
+<a id="isPublished()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_4550</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;method_4550()</pre>
+<h4>isPublished</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;isPublished()</pre>
 </li>
 </ul>
 <a id="setDefaultGameMode(net.minecraft.world.level.LevelInfo.GameMode)">

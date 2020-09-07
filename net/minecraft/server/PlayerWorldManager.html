@@ -155,7 +155,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>(package private) class&nbsp;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="PlayerWorldManager.class_1633.html" title="class in net.minecraft.server">PlayerWorldManager.class_1633</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="PlayerWorldManager.PlayerInstance.html" title="class in net.minecraft.server">PlayerWorldManager.PlayerInstance</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -177,18 +177,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../util/LongObjectStorage.html" title="class in net.minecraft.util">LongObjectStorage</a>&lt;<a href="PlayerWorldManager.class_1633.html" title="class in net.minecraft.server">PlayerWorldManager.class_1633</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6598">field_6598</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="PlayerWorldManager.class_1633.html" title="class in net.minecraft.server">PlayerWorldManager.class_1633</a>&gt;</code></td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="PlayerWorldManager.PlayerInstance.html" title="class in net.minecraft.server">PlayerWorldManager.PlayerInstance</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6599">field_6599</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="PlayerWorldManager.class_1633.html" title="class in net.minecraft.server">PlayerWorldManager.class_1633</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_6600">field_6600</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -212,7 +202,17 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../entity/player/ServerPlayerEntity.html" title="class in net.minecraft.entity.player">ServerPlayerEntity</a>&gt;</code></td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="PlayerWorldManager.PlayerInstance.html" title="class in net.minecraft.server">PlayerWorldManager.PlayerInstance</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#playerInstances">playerInstances</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="../util/LongObjectStorage.html" title="class in net.minecraft.util">LongObjectStorage</a>&lt;<a href="PlayerWorldManager.PlayerInstance.html" title="class in net.minecraft.server">PlayerWorldManager.PlayerInstance</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#playerInstancesById">playerInstancesById</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="network/ServerPlayerEntity.html" title="class in net.minecraft.server.network">ServerPlayerEntity</a>&gt;</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#players">players</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -286,7 +286,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>private <a href="PlayerWorldManager.class_1633.html" title="class in net.minecraft.server">PlayerWorldManager.class_1633</a></code></td>
+<td class="colFirst"><code>private <a href="PlayerWorldManager.PlayerInstance.html" title="class in net.minecraft.server">PlayerWorldManager.PlayerInstance</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6001(int,int,boolean)">method_6001</a></span>&#8203;(int&nbsp;int2,
            int&nbsp;int3,
            boolean&nbsp;bool)</code></th>
@@ -299,12 +299,12 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6004(net.minecraft.entity.player.ServerPlayerEntity)">method_6004</a></span>&#8203;(<a href="../entity/player/ServerPlayerEntity.html" title="class in net.minecraft.entity.player">ServerPlayerEntity</a>&nbsp;serverPlayerEntity)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6004(net.minecraft.server.network.ServerPlayerEntity)">method_6004</a></span>&#8203;(<a href="network/ServerPlayerEntity.html" title="class in net.minecraft.server.network">ServerPlayerEntity</a>&nbsp;serverPlayerEntity)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6005(net.minecraft.entity.player.ServerPlayerEntity,int,int)">method_6005</a></span>&#8203;(<a href="../entity/player/ServerPlayerEntity.html" title="class in net.minecraft.entity.player">ServerPlayerEntity</a>&nbsp;serverPlayerEntity,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6005(net.minecraft.server.network.ServerPlayerEntity,int,int)">method_6005</a></span>&#8203;(<a href="network/ServerPlayerEntity.html" title="class in net.minecraft.server.network">ServerPlayerEntity</a>&nbsp;serverPlayerEntity,
            int&nbsp;int2,
            int&nbsp;int3)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -321,17 +321,17 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6009(net.minecraft.entity.player.ServerPlayerEntity)">method_6009</a></span>&#8203;(<a href="../entity/player/ServerPlayerEntity.html" title="class in net.minecraft.entity.player">ServerPlayerEntity</a>&nbsp;serverPlayerEntity)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6009(net.minecraft.server.network.ServerPlayerEntity)">method_6009</a></span>&#8203;(<a href="network/ServerPlayerEntity.html" title="class in net.minecraft.server.network">ServerPlayerEntity</a>&nbsp;serverPlayerEntity)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6012(net.minecraft.entity.player.ServerPlayerEntity)">method_6012</a></span>&#8203;(<a href="../entity/player/ServerPlayerEntity.html" title="class in net.minecraft.entity.player">ServerPlayerEntity</a>&nbsp;serverPlayerEntity)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6012(net.minecraft.server.network.ServerPlayerEntity)">method_6012</a></span>&#8203;(<a href="network/ServerPlayerEntity.html" title="class in net.minecraft.server.network">ServerPlayerEntity</a>&nbsp;serverPlayerEntity)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6014(net.minecraft.entity.player.ServerPlayerEntity)">method_6014</a></span>&#8203;(<a href="../entity/player/ServerPlayerEntity.html" title="class in net.minecraft.entity.player">ServerPlayerEntity</a>&nbsp;serverPlayerEntity)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6014(net.minecraft.server.network.ServerPlayerEntity)">method_6014</a></span>&#8203;(<a href="network/ServerPlayerEntity.html" title="class in net.minecraft.server.network">ServerPlayerEntity</a>&nbsp;serverPlayerEntity)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -382,16 +382,16 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>players</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../entity/player/ServerPlayerEntity.html" title="class in net.minecraft.entity.player">ServerPlayerEntity</a>&gt; players</pre>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="network/ServerPlayerEntity.html" title="class in net.minecraft.server.network">ServerPlayerEntity</a>&gt; players</pre>
 </li>
 </ul>
-<a id="field_6598">
+<a id="playerInstancesById">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6598</h4>
-<pre>private final&nbsp;<a href="../util/LongObjectStorage.html" title="class in net.minecraft.util">LongObjectStorage</a>&lt;<a href="PlayerWorldManager.class_1633.html" title="class in net.minecraft.server">PlayerWorldManager.class_1633</a>&gt; field_6598</pre>
+<h4>playerInstancesById</h4>
+<pre>private final&nbsp;<a href="../util/LongObjectStorage.html" title="class in net.minecraft.util">LongObjectStorage</a>&lt;<a href="PlayerWorldManager.PlayerInstance.html" title="class in net.minecraft.server">PlayerWorldManager.PlayerInstance</a>&gt; playerInstancesById</pre>
 </li>
 </ul>
 <a id="field_6599">
@@ -400,16 +400,16 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>field_6599</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="PlayerWorldManager.class_1633.html" title="class in net.minecraft.server">PlayerWorldManager.class_1633</a>&gt; field_6599</pre>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="PlayerWorldManager.PlayerInstance.html" title="class in net.minecraft.server">PlayerWorldManager.PlayerInstance</a>&gt; field_6599</pre>
 </li>
 </ul>
-<a id="field_6600">
+<a id="playerInstances">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6600</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="PlayerWorldManager.class_1633.html" title="class in net.minecraft.server">PlayerWorldManager.class_1633</a>&gt; field_6600</pre>
+<h4>playerInstances</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="PlayerWorldManager.PlayerInstance.html" title="class in net.minecraft.server">PlayerWorldManager.PlayerInstance</a>&gt; playerInstances</pre>
 </li>
 </ul>
 <a id="field_6601">
@@ -502,9 +502,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>method_6001</h4>
-<pre class="methodSignature">private&nbsp;<a href="PlayerWorldManager.class_1633.html" title="class in net.minecraft.server">PlayerWorldManager.class_1633</a>&nbsp;method_6001&#8203;(int&nbsp;int2,
-                                                  int&nbsp;int3,
-                                                  boolean&nbsp;bool)</pre>
+<pre class="methodSignature">private&nbsp;<a href="PlayerWorldManager.PlayerInstance.html" title="class in net.minecraft.server">PlayerWorldManager.PlayerInstance</a>&nbsp;method_6001&#8203;(int&nbsp;int2,
+                                                      int&nbsp;int3,
+                                                      boolean&nbsp;bool)</pre>
 </li>
 </ul>
 <a id="method_6002(net.minecraft.util.math.BlockPos)">
@@ -516,31 +516,31 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre class="methodSignature">public&nbsp;void&nbsp;method_6002&#8203;(<a href="../util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</pre>
 </li>
 </ul>
-<a id="method_6004(net.minecraft.entity.player.ServerPlayerEntity)">
+<a id="method_6004(net.minecraft.server.network.ServerPlayerEntity)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>method_6004</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_6004&#8203;(<a href="../entity/player/ServerPlayerEntity.html" title="class in net.minecraft.entity.player">ServerPlayerEntity</a>&nbsp;serverPlayerEntity)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;method_6004&#8203;(<a href="network/ServerPlayerEntity.html" title="class in net.minecraft.server.network">ServerPlayerEntity</a>&nbsp;serverPlayerEntity)</pre>
 </li>
 </ul>
-<a id="method_6009(net.minecraft.entity.player.ServerPlayerEntity)">
+<a id="method_6009(net.minecraft.server.network.ServerPlayerEntity)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>method_6009</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_6009&#8203;(<a href="../entity/player/ServerPlayerEntity.html" title="class in net.minecraft.entity.player">ServerPlayerEntity</a>&nbsp;serverPlayerEntity)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;method_6009&#8203;(<a href="network/ServerPlayerEntity.html" title="class in net.minecraft.server.network">ServerPlayerEntity</a>&nbsp;serverPlayerEntity)</pre>
 </li>
 </ul>
-<a id="method_6012(net.minecraft.entity.player.ServerPlayerEntity)">
+<a id="method_6012(net.minecraft.server.network.ServerPlayerEntity)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>method_6012</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_6012&#8203;(<a href="../entity/player/ServerPlayerEntity.html" title="class in net.minecraft.entity.player">ServerPlayerEntity</a>&nbsp;serverPlayerEntity)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;method_6012&#8203;(<a href="network/ServerPlayerEntity.html" title="class in net.minecraft.server.network">ServerPlayerEntity</a>&nbsp;serverPlayerEntity)</pre>
 </li>
 </ul>
 <a id="method_6000(int,int,int,int,int)">
@@ -556,22 +556,22 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
                             int&nbsp;int6)</pre>
 </li>
 </ul>
-<a id="method_6014(net.minecraft.entity.player.ServerPlayerEntity)">
+<a id="method_6014(net.minecraft.server.network.ServerPlayerEntity)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>method_6014</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_6014&#8203;(<a href="../entity/player/ServerPlayerEntity.html" title="class in net.minecraft.entity.player">ServerPlayerEntity</a>&nbsp;serverPlayerEntity)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;method_6014&#8203;(<a href="network/ServerPlayerEntity.html" title="class in net.minecraft.server.network">ServerPlayerEntity</a>&nbsp;serverPlayerEntity)</pre>
 </li>
 </ul>
-<a id="method_6005(net.minecraft.entity.player.ServerPlayerEntity,int,int)">
+<a id="method_6005(net.minecraft.server.network.ServerPlayerEntity,int,int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>method_6005</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;method_6005&#8203;(<a href="../entity/player/ServerPlayerEntity.html" title="class in net.minecraft.entity.player">ServerPlayerEntity</a>&nbsp;serverPlayerEntity,
+<pre class="methodSignature">public&nbsp;boolean&nbsp;method_6005&#8203;(<a href="network/ServerPlayerEntity.html" title="class in net.minecraft.server.network">ServerPlayerEntity</a>&nbsp;serverPlayerEntity,
                            int&nbsp;int2,
                            int&nbsp;int3)</pre>
 </li>
