@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":9,"i5":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":9,"i4":9,"i5":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -237,7 +237,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fromTag(net.minecraft.nbt.CompoundTag)">fromTag</a></span>&#8203;(<a href="../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#fromTag(net.minecraft.nbt.CompoundTag)">fromTag</a></span>&#8203;(<a href="../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -248,27 +248,27 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>private static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6378(net.minecraft.command.CommandStats,net.minecraft.command.CommandStats.Type)">method_6378</a></span>&#8203;(<a href="CommandStats.html" title="class in net.minecraft.command">CommandStats</a>&nbsp;stats,
-           <a href="CommandStats.Type.html" title="enum in net.minecraft.command">CommandStats.Type</a>&nbsp;type)</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6377(net.minecraft.command.CommandStats)">method_6377</a></span>&#8203;(<a href="CommandStats.html" title="class in net.minecraft.command">CommandStats</a>&nbsp;commandStats)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setAllStats(net.minecraft.command.CommandStats)">setAllStats</a></span>&#8203;(<a href="CommandStats.html" title="class in net.minecraft.command">CommandStats</a>&nbsp;sats)</code></th>
+<td class="colFirst"><code>private static void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6378(net.minecraft.command.CommandStats,net.minecraft.command.CommandStats.Type)">method_6378</a></span>&#8203;(<a href="CommandStats.html" title="class in net.minecraft.command">CommandStats</a>&nbsp;commandStats,
+           <a href="CommandStats.Type.html" title="enum in net.minecraft.command">CommandStats.Type</a>&nbsp;type)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setStat(net.minecraft.command.CommandStats,net.minecraft.command.CommandStats.Type,java.lang.String,java.lang.String)">setStat</a></span>&#8203;(<a href="CommandStats.html" title="class in net.minecraft.command">CommandStats</a>&nbsp;stats,
-       <a href="CommandStats.Type.html" title="enum in net.minecraft.command">CommandStats.Type</a>&nbsp;type,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
-       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;objective)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6379(net.minecraft.command.CommandStats,net.minecraft.command.CommandStats.Type,java.lang.String,java.lang.String)">method_6379</a></span>&#8203;(<a href="CommandStats.html" title="class in net.minecraft.command">CommandStats</a>&nbsp;commandStats,
+           <a href="CommandStats.Type.html" title="enum in net.minecraft.command">CommandStats.Type</a>&nbsp;type,
+           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
+           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toTag(net.minecraft.nbt.CompoundTag)">toTag</a></span>&#8203;(<a href="../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#toTag(net.minecraft.nbt.CompoundTag)">toTag</a></span>&#8203;(<a href="../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -377,7 +377,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>fromTag</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;fromTag&#8203;(<a href="../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;fromTag&#8203;(<a href="../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</pre>
 </li>
 </ul>
 <a id="toTag(net.minecraft.nbt.CompoundTag)">
@@ -386,19 +386,19 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>toTag</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;toTag&#8203;(<a href="../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;toTag&#8203;(<a href="../nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</pre>
 </li>
 </ul>
-<a id="setStat(net.minecraft.command.CommandStats,net.minecraft.command.CommandStats.Type,java.lang.String,java.lang.String)">
+<a id="method_6379(net.minecraft.command.CommandStats,net.minecraft.command.CommandStats.Type,java.lang.String,java.lang.String)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setStat</h4>
-<pre class="methodSignature">public static&nbsp;void&nbsp;setStat&#8203;(<a href="CommandStats.html" title="class in net.minecraft.command">CommandStats</a>&nbsp;stats,
-                           <a href="CommandStats.Type.html" title="enum in net.minecraft.command">CommandStats.Type</a>&nbsp;type,
-                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
-                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;objective)</pre>
+<h4>method_6379</h4>
+<pre class="methodSignature">public static&nbsp;void&nbsp;method_6379&#8203;(<a href="CommandStats.html" title="class in net.minecraft.command">CommandStats</a>&nbsp;commandStats,
+                               <a href="CommandStats.Type.html" title="enum in net.minecraft.command">CommandStats.Type</a>&nbsp;type,
+                               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
+                               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string2)</pre>
 </li>
 </ul>
 <a id="method_6378(net.minecraft.command.CommandStats,net.minecraft.command.CommandStats.Type)">
@@ -407,17 +407,17 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>method_6378</h4>
-<pre class="methodSignature">private static&nbsp;void&nbsp;method_6378&#8203;(<a href="CommandStats.html" title="class in net.minecraft.command">CommandStats</a>&nbsp;stats,
+<pre class="methodSignature">private static&nbsp;void&nbsp;method_6378&#8203;(<a href="CommandStats.html" title="class in net.minecraft.command">CommandStats</a>&nbsp;commandStats,
                                 <a href="CommandStats.Type.html" title="enum in net.minecraft.command">CommandStats.Type</a>&nbsp;type)</pre>
 </li>
 </ul>
-<a id="setAllStats(net.minecraft.command.CommandStats)">
+<a id="method_6377(net.minecraft.command.CommandStats)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>setAllStats</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setAllStats&#8203;(<a href="CommandStats.html" title="class in net.minecraft.command">CommandStats</a>&nbsp;sats)</pre>
+<h4>method_6377</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;method_6377&#8203;(<a href="CommandStats.html" title="class in net.minecraft.command">CommandStats</a>&nbsp;commandStats)</pre>
 </li>
 </ul>
 </li>

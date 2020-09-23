@@ -174,13 +174,13 @@ extends <a href="Enchantment.html" title="class in net.minecraft.enchantment">En
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>[]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TYPE_NAMES">TYPE_NAMES</a></span></code></th>
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#typeIndex">typeIndex</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#typeIndex">typeIndex</a></span></code></th>
+<td class="colFirst"><code>private static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#typeNames">typeNames</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -208,10 +208,10 @@ extends <a href="Enchantment.html" title="class in net.minecraft.enchantment">En
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(int,net.minecraft.util.Identifier,int,int)">DamageEnchantment</a></span>&#8203;(int&nbsp;id,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(int,net.minecraft.util.Identifier,int,int)">DamageEnchantment</a></span>&#8203;(int&nbsp;int2,
                  <a href="../util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier,
-                 int&nbsp;enchantmentType,
-                 int&nbsp;typeIndex)</code></th>
+                 int&nbsp;int3,
+                 int&nbsp;int4)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -270,9 +270,9 @@ extends <a href="Enchantment.html" title="class in net.minecraft.enchantment">En
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onDamage(net.minecraft.entity.LivingEntity,net.minecraft.entity.Entity,int)">onDamage</a></span>&#8203;(<a href="../entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;livingEntity,
-        <a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
-        int&nbsp;power)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_84(net.minecraft.entity.LivingEntity,net.minecraft.entity.Entity,int)">method_84</a></span>&#8203;(<a href="../entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;livingEntity,
+         <a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
+         int&nbsp;int2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -281,7 +281,7 @@ extends <a href="Enchantment.html" title="class in net.minecraft.enchantment">En
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.enchantment.<a href="Enchantment.html" title="class in net.minecraft.enchantment">Enchantment</a></h3>
-<code><a href="Enchantment.html#byRawId(int)">byRawId</a>, <a href="Enchantment.html#getByName(java.lang.String)">getByName</a>, <a href="Enchantment.html#getEnchantmentType()">getEnchantmentType</a>, <a href="Enchantment.html#getMinimumLevel()">getMinimumLevel</a>, <a href="Enchantment.html#getProtectionAmount(int,net.minecraft.entity.damage.DamageSource)">getProtectionAmount</a>, <a href="Enchantment.html#getSet()">getSet</a>, <a href="Enchantment.html#getTranslatedName(int)">getTranslatedName</a>, <a href="Enchantment.html#onDamaged(net.minecraft.entity.LivingEntity,net.minecraft.entity.Entity,int)">onDamaged</a>, <a href="Enchantment.html#setName(java.lang.String)">setName</a></code></li>
+<code><a href="Enchantment.html#byRawId(int)">byRawId</a>, <a href="Enchantment.html#getByName(java.lang.String)">getByName</a>, <a href="Enchantment.html#getEnchantmentType()">getEnchantmentType</a>, <a href="Enchantment.html#getMinimumLevel()">getMinimumLevel</a>, <a href="Enchantment.html#getProtectionAmount(int,net.minecraft.entity.damage.DamageSource)">getProtectionAmount</a>, <a href="Enchantment.html#getSet()">getSet</a>, <a href="Enchantment.html#getTranslatedName(int)">getTranslatedName</a>, <a href="Enchantment.html#method_89(net.minecraft.entity.LivingEntity,net.minecraft.entity.Entity,int)">method_89</a>, <a href="Enchantment.html#setName(java.lang.String)">setName</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -306,13 +306,13 @@ extends <a href="Enchantment.html" title="class in net.minecraft.enchantment">En
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="TYPE_NAMES">
+<a id="typeNames">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>TYPE_NAMES</h4>
-<pre>private static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>[] TYPE_NAMES</pre>
+<h4>typeNames</h4>
+<pre>private static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>[] typeNames</pre>
 </li>
 </ul>
 <a id="field_108">
@@ -367,10 +367,10 @@ extends <a href="Enchantment.html" title="class in net.minecraft.enchantment">En
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DamageEnchantment</h4>
-<pre>public&nbsp;DamageEnchantment&#8203;(int&nbsp;id,
+<pre>public&nbsp;DamageEnchantment&#8203;(int&nbsp;int2,
                          <a href="../util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier,
-                         int&nbsp;enchantmentType,
-                         int&nbsp;typeIndex)</pre>
+                         int&nbsp;int3,
+                         int&nbsp;int4)</pre>
 </li>
 </ul>
 </li>
@@ -475,18 +475,18 @@ extends <a href="Enchantment.html" title="class in net.minecraft.enchantment">En
 </dl>
 </li>
 </ul>
-<a id="onDamage(net.minecraft.entity.LivingEntity,net.minecraft.entity.Entity,int)">
+<a id="method_84(net.minecraft.entity.LivingEntity,net.minecraft.entity.Entity,int)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>onDamage</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;onDamage&#8203;(<a href="../entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;livingEntity,
-                     <a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
-                     int&nbsp;power)</pre>
+<h4>method_84</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;method_84&#8203;(<a href="../entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;livingEntity,
+                      <a href="../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
+                      int&nbsp;int2)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="Enchantment.html#onDamage(net.minecraft.entity.LivingEntity,net.minecraft.entity.Entity,int)">onDamage</a></code>&nbsp;in class&nbsp;<code><a href="Enchantment.html" title="class in net.minecraft.enchantment">Enchantment</a></code></dd>
+<dd><code><a href="Enchantment.html#method_84(net.minecraft.entity.LivingEntity,net.minecraft.entity.Entity,int)">method_84</a></code>&nbsp;in class&nbsp;<code><a href="Enchantment.html" title="class in net.minecraft.enchantment">Enchantment</a></code></dd>
 </dl>
 </li>
 </ul>
