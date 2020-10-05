@@ -132,7 +132,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="AreaEffectCloudEntityRenderer.html" title="class in net.minecraft.client.render.entity">AreaEffectCloudEntityRenderer</a></code>, <code><a href="ArrowEntityRenderer.html" title="class in net.minecraft.client.render.entity">ArrowEntityRenderer</a></code>, <code><a href="BoatEntityRenderer.html" title="class in net.minecraft.client.render.entity">BoatEntityRenderer</a></code>, <code><a href="EnderCrystalEntityRenderer.html" title="class in net.minecraft.client.render.entity">EnderCrystalEntityRenderer</a></code>, <code><a href="ExperienceOrbEntityRenderer.html" title="class in net.minecraft.client.render.entity">ExperienceOrbEntityRenderer</a></code>, <code><a href="FallingBlockEntityRenderer.html" title="class in net.minecraft.client.render.entity">FallingBlockEntityRenderer</a></code>, <code><a href="FishingBobberEntityRenderer.html" title="class in net.minecraft.client.render.entity">FishingBobberEntityRenderer</a></code>, <code><a href="FlyingItemEntityRenderer.html" title="class in net.minecraft.client.render.entity">FlyingItemEntityRenderer</a></code>, <code><a href="../../../entity/ai/brain/task/GoToNearbyEntityTask.html" title="class in net.minecraft.entity.ai.brain.task">GoToNearbyEntityTask</a></code>, <code><a href="ItemEntityRenderer.html" title="class in net.minecraft.client.render.entity">ItemEntityRenderer</a></code>, <code><a href="ItemFrameEntityRenderer.html" title="class in net.minecraft.client.render.entity">ItemFrameEntityRenderer</a></code>, <code><a href="LeashKnotEntityRenderer.html" title="class in net.minecraft.client.render.entity">LeashKnotEntityRenderer</a></code>, <code><a href="LightningEntityRenderer.html" title="class in net.minecraft.client.render.entity">LightningEntityRenderer</a></code>, <code><a href="LivingEntityRenderer.html" title="class in net.minecraft.client.render.entity">LivingEntityRenderer</a></code>, <code><a href="MinecartEntityRenderer.html" title="class in net.minecraft.client.render.entity">MinecartEntityRenderer</a></code>, <code><a href="PaintingEntityRenderer.html" title="class in net.minecraft.client.render.entity">PaintingEntityRenderer</a></code>, <code><a href="TntEntityRenderer.html" title="class in net.minecraft.client.render.entity">TntEntityRenderer</a></code>, <code><a href="WitherSkullEntityRenderer.html" title="class in net.minecraft.client.render.entity">WitherSkullEntityRenderer</a></code></dd>
+<dd><code><a href="AreaEffectCloudEntityRenderer.html" title="class in net.minecraft.client.render.entity">AreaEffectCloudEntityRenderer</a></code>, <code><a href="ArrowEntityRenderer.html" title="class in net.minecraft.client.render.entity">ArrowEntityRenderer</a></code>, <code><a href="BoatEntityRenderer.html" title="class in net.minecraft.client.render.entity">BoatEntityRenderer</a></code>, <code><a href="EnderCrystalEntityRenderer.html" title="class in net.minecraft.client.render.entity">EnderCrystalEntityRenderer</a></code>, <code><a href="ExperienceOrbEntityRenderer.html" title="class in net.minecraft.client.render.entity">ExperienceOrbEntityRenderer</a></code>, <code><a href="FallingBlockEntityRenderer.html" title="class in net.minecraft.client.render.entity">FallingBlockEntityRenderer</a></code>, <code><a href="FireballEntityRenderer.html" title="class in net.minecraft.client.render.entity">FireballEntityRenderer</a></code>, <code><a href="FishingBobberEntityRenderer.html" title="class in net.minecraft.client.render.entity">FishingBobberEntityRenderer</a></code>, <code><a href="FlyingItemEntityRenderer.html" title="class in net.minecraft.client.render.entity">FlyingItemEntityRenderer</a></code>, <code><a href="ItemEntityRenderer.html" title="class in net.minecraft.client.render.entity">ItemEntityRenderer</a></code>, <code><a href="ItemFrameEntityRenderer.html" title="class in net.minecraft.client.render.entity">ItemFrameEntityRenderer</a></code>, <code><a href="LeashKnotEntityRenderer.html" title="class in net.minecraft.client.render.entity">LeashKnotEntityRenderer</a></code>, <code><a href="LightningEntityRenderer.html" title="class in net.minecraft.client.render.entity">LightningEntityRenderer</a></code>, <code><a href="LivingEntityRenderer.html" title="class in net.minecraft.client.render.entity">LivingEntityRenderer</a></code>, <code><a href="MinecartEntityRenderer.html" title="class in net.minecraft.client.render.entity">MinecartEntityRenderer</a></code>, <code><a href="PaintingEntityRenderer.html" title="class in net.minecraft.client.render.entity">PaintingEntityRenderer</a></code>, <code><a href="TntEntityRenderer.html" title="class in net.minecraft.client.render.entity">TntEntityRenderer</a></code>, <code><a href="WitherSkullEntityRenderer.html" title="class in net.minecraft.client.render.entity">WitherSkullEntityRenderer</a></code></dd>
 </dl>
 <hr>
 <pre>@Environment(CLIENT)
@@ -159,13 +159,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private static <a href="../../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_4839">field_4839</a></span></code></th>
+<td class="colFirst"><code>protected <a href="EntityRenderDispatcher.html" title="class in net.minecraft.client.render.entity">EntityRenderDispatcher</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#dispatcher">dispatcher</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="EntityRenderDispatcher.html" title="class in net.minecraft.client.render.entity">EntityRenderDispatcher</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_4840">field_4840</a></span></code></th>
+<td class="colFirst"><code>private static <a href="../../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_4839">field_4839</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -291,16 +291,6 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_3910(T,double,double,double,float,float)">method_3910</a></span>&#8203;(<a href="EntityRenderer.html" title="type parameter in EntityRenderer">T</a>&nbsp;wolf,
-           double&nbsp;x,
-           double&nbsp;y,
-           double&nbsp;z,
-           float&nbsp;float2,
-           float&nbsp;float3)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i11" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_3911(T,double,double,double,java.lang.String,float,double)">method_3911</a></span>&#8203;(<a href="EntityRenderer.html" title="type parameter in EntityRenderer">T</a>&nbsp;t,
            double&nbsp;double2,
@@ -311,7 +301,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
            double&nbsp;double5)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_3912(T,net.minecraft.client.render.debug.CameraView,double,double,double)">method_3912</a></span>&#8203;(<a href="EntityRenderer.html" title="type parameter in EntityRenderer">T</a>&nbsp;t,
            <a href="../debug/CameraView.html" title="interface in net.minecraft.client.render.debug">CameraView</a>&nbsp;cameraView,
@@ -320,7 +310,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
            double&nbsp;double4)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_3913(T,java.lang.String,double,double,double,int)">method_3913</a></span>&#8203;(<a href="EntityRenderer.html" title="type parameter in EntityRenderer">T</a>&nbsp;t,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string,
@@ -330,7 +320,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
            int&nbsp;int2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_3915(net.minecraft.entity.Entity,double,double,double,float,float)">method_3915</a></span>&#8203;(<a href="../../../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
            double&nbsp;double2,
@@ -340,12 +330,12 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
            float&nbsp;float3)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_3917(T)">method_3917</a></span>&#8203;(<a href="EntityRenderer.html" title="type parameter in EntityRenderer">T</a>&nbsp;t)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_3918(net.minecraft.entity.Entity,double,double,double,float,float)">method_3918</a></span>&#8203;(<a href="../../../entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
            double&nbsp;double2,
@@ -353,6 +343,16 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
            double&nbsp;double4,
            float&nbsp;float2,
            float&nbsp;float3)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#render(T,double,double,double,float,float)">render</a></span>&#8203;(<a href="EntityRenderer.html" title="type parameter in EntityRenderer">T</a>&nbsp;entity,
+      double&nbsp;x,
+      double&nbsp;y,
+      double&nbsp;z,
+      float&nbsp;float2,
+      float&nbsp;float3)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -388,13 +388,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>private static final&nbsp;<a href="../../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a> field_4839</pre>
 </li>
 </ul>
-<a id="field_4840">
+<a id="dispatcher">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_4840</h4>
-<pre>protected final&nbsp;<a href="EntityRenderDispatcher.html" title="class in net.minecraft.client.render.entity">EntityRenderDispatcher</a> field_4840</pre>
+<h4>dispatcher</h4>
+<pre>protected final&nbsp;<a href="EntityRenderDispatcher.html" title="class in net.minecraft.client.render.entity">EntityRenderDispatcher</a> dispatcher</pre>
 </li>
 </ul>
 <a id="shadowSize">
@@ -459,20 +459,20 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
                            double&nbsp;double4)</pre>
 </li>
 </ul>
-<a id="method_3910(net.minecraft.entity.Entity,double,double,double,float,float)">
+<a id="render(net.minecraft.entity.Entity,double,double,double,float,float)">
 <!--   -->
-</a><a id="method_3910(T,double,double,double,float,float)">
+</a><a id="render(T,double,double,double,float,float)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_3910</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;method_3910&#8203;(<a href="EntityRenderer.html" title="type parameter in EntityRenderer">T</a>&nbsp;wolf,
-                        double&nbsp;x,
-                        double&nbsp;y,
-                        double&nbsp;z,
-                        float&nbsp;float2,
-                        float&nbsp;float3)</pre>
+<h4>render</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;render&#8203;(<a href="EntityRenderer.html" title="type parameter in EntityRenderer">T</a>&nbsp;entity,
+                   double&nbsp;x,
+                   double&nbsp;y,
+                   double&nbsp;z,
+                   float&nbsp;float2,
+                   float&nbsp;float3)</pre>
 </li>
 </ul>
 <a id="method_3908(net.minecraft.entity.Entity,double,double,double)">
