@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":6,"i2":10,"i3":10,"i4":9,"i5":10,"i6":9,"i7":10,"i8":10};
+var data = {"i0":9,"i1":10,"i2":9,"i3":9,"i4":6,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -132,7 +132,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="../../../class_594.html" title="class in net.minecraft">class_594</a></code>, <code><a href="../../../class_597.html" title="class in net.minecraft">class_597</a></code>, <code><a href="../../../class_599.html" title="class in net.minecraft">class_599</a></code>, <code><a href="../../../class_600.html" title="class in net.minecraft">class_600</a></code>, <code><a href="../../../class_607.html" title="class in net.minecraft">class_607</a></code>, <code><a href="../../../class_608.html" title="class in net.minecraft">class_608</a></code>, <code><a href="../../../class_609.html" title="class in net.minecraft">class_609</a></code>, <code><a href="../../../class_610.html" title="class in net.minecraft">class_610</a></code>, <code><a href="../../../class_612.html" title="class in net.minecraft">class_612</a></code>, <code><a href="../../../class_613.html" title="class in net.minecraft">class_613</a></code>, <code><a href="../../../class_614.html" title="class in net.minecraft">class_614</a></code>, <code><a href="../../../class_615.html" title="class in net.minecraft">class_615</a></code>, <code><a href="../../../class_616.html" title="class in net.minecraft">class_616</a></code>, <code><a href="EdgeLayer.html" title="class in net.minecraft.world.biome.layer">EdgeLayer</a></code>, <code><a href="IslandLayer.html" title="class in net.minecraft.world.biome.layer">IslandLayer</a></code>, <code><a href="MushroomIslandLayer.html" title="class in net.minecraft.world.biome.layer">MushroomIslandLayer</a></code>, <code><a href="RiverLayer.html" title="class in net.minecraft.world.biome.layer">RiverLayer</a></code>, <code><a href="SetBaseBiomesLayer.html" title="class in net.minecraft.world.biome.layer">SetBaseBiomesLayer</a></code></dd>
+<dd><code><a href="AddHillsLayer.html" title="class in net.minecraft.world.biome.layer">AddHillsLayer</a></code>, <code><a href="AddRiverLayer.html" title="class in net.minecraft.world.biome.layer">AddRiverLayer</a></code>, <code><a href="../../../class_594.html" title="class in net.minecraft">class_594</a></code>, <code><a href="../../../class_597.html" title="class in net.minecraft">class_597</a></code>, <code><a href="../../../class_599.html" title="class in net.minecraft">class_599</a></code>, <code><a href="../../../class_600.html" title="class in net.minecraft">class_600</a></code>, <code><a href="../../../class_605.html" title="class in net.minecraft">class_605</a></code>, <code><a href="../../../class_607.html" title="class in net.minecraft">class_607</a></code>, <code><a href="../../../class_609.html" title="class in net.minecraft">class_609</a></code>, <code><a href="../../../class_610.html" title="class in net.minecraft">class_610</a></code>, <code><a href="../../../class_612.html" title="class in net.minecraft">class_612</a></code>, <code><a href="../../../class_613.html" title="class in net.minecraft">class_613</a></code>, <code><a href="../../../class_614.html" title="class in net.minecraft">class_614</a></code>, <code><a href="../../../class_615.html" title="class in net.minecraft">class_615</a></code>, <code><a href="../../../class_616.html" title="class in net.minecraft">class_616</a></code>, <code><a href="EdgeLayer.html" title="class in net.minecraft.world.biome.layer">EdgeLayer</a></code>, <code><a href="MushroomIslandLayer.html" title="class in net.minecraft.world.biome.layer">MushroomIslandLayer</a></code>, <code><a href="SetBaseBiomesLayer.html" title="class in net.minecraft.world.biome.layer">SetBaseBiomesLayer</a></code></dd>
 </dl>
 <hr>
 <pre>public abstract class <span class="typeNameLabel">Layer</span>
@@ -218,11 +218,28 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected static boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1828(int,int)">method_1828</a></span>&#8203;(int&nbsp;int2,
-           int&nbsp;int3)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#compareBiomes(int,int)">compareBiomes</a></span>&#8203;(int&nbsp;biomeAId,
+             int&nbsp;biomeBId)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>protected int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getRandomBiome(int%5B%5D)">getRandomBiome</a></span>&#8203;(int[]&nbsp;args)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>static <a href="Layer.html" title="class in net.minecraft.world.biome.layer">Layer</a>[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#init(long,net.minecraft.world.level.LevelGeneratorType,java.lang.String)">init</a></span>&#8203;(long&nbsp;seed,
+    <a href="../../level/LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a>&nbsp;type,
+    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>protected static boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isOcean(int)">isOcean</a></span>&#8203;(int&nbsp;biomeId)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>abstract int[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1829(int,int,int,int)">method_1829</a></span>&#8203;(int&nbsp;int2,
            int&nbsp;int3,
@@ -230,32 +247,15 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
            int&nbsp;int5)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1830(long)">method_1830</a></span>&#8203;(long&nbsp;long2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1831(long,long)">method_1831</a></span>&#8203;(long&nbsp;long2,
            long&nbsp;long3)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>static <a href="Layer.html" title="class in net.minecraft.world.biome.layer">Layer</a>[]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1832(long,net.minecraft.world.level.LevelGeneratorType,java.lang.String)">method_1832</a></span>&#8203;(long&nbsp;long2,
-           <a href="../../level/LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a>&nbsp;levelGeneratorType,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>protected int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1833(int%5B%5D)">method_1833</a></span>&#8203;(int[]&nbsp;int2)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>protected static boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_1834(int)">method_1834</a></span>&#8203;(int&nbsp;int2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
@@ -360,15 +360,15 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="method_1832(long,net.minecraft.world.level.LevelGeneratorType,java.lang.String)">
+<a id="init(long,net.minecraft.world.level.LevelGeneratorType,java.lang.String)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1832</h4>
-<pre class="methodSignature">public static&nbsp;<a href="Layer.html" title="class in net.minecraft.world.biome.layer">Layer</a>[]&nbsp;method_1832&#8203;(long&nbsp;long2,
-                                  <a href="../../level/LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a>&nbsp;levelGeneratorType,
-                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</pre>
+<h4>init</h4>
+<pre class="methodSignature">public static&nbsp;<a href="Layer.html" title="class in net.minecraft.world.biome.layer">Layer</a>[]&nbsp;init&#8203;(long&nbsp;seed,
+                           <a href="../../level/LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a>&nbsp;type,
+                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</pre>
 </li>
 </ul>
 <a id="method_1830(long)">
@@ -411,32 +411,32 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
                                   int&nbsp;int5)</pre>
 </li>
 </ul>
-<a id="method_1828(int,int)">
+<a id="compareBiomes(int,int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1828</h4>
-<pre class="methodSignature">protected static&nbsp;boolean&nbsp;method_1828&#8203;(int&nbsp;int2,
-                                     int&nbsp;int3)</pre>
+<h4>compareBiomes</h4>
+<pre class="methodSignature">protected static&nbsp;boolean&nbsp;compareBiomes&#8203;(int&nbsp;biomeAId,
+                                       int&nbsp;biomeBId)</pre>
 </li>
 </ul>
-<a id="method_1834(int)">
+<a id="isOcean(int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1834</h4>
-<pre class="methodSignature">protected static&nbsp;boolean&nbsp;method_1834&#8203;(int&nbsp;int2)</pre>
+<h4>isOcean</h4>
+<pre class="methodSignature">protected static&nbsp;boolean&nbsp;isOcean&#8203;(int&nbsp;biomeId)</pre>
 </li>
 </ul>
-<a id="method_1833(int[])">
+<a id="getRandomBiome(int[])">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1833</h4>
-<pre class="methodSignature">protected&nbsp;int&nbsp;method_1833&#8203;(int[]&nbsp;int2)</pre>
+<h4>getRandomBiome</h4>
+<pre class="methodSignature">protected&nbsp;int&nbsp;getRandomBiome&#8203;(int[]&nbsp;args)</pre>
 </li>
 </ul>
 <a id="method_1835(int,int,int,int)">

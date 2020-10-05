@@ -252,7 +252,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static <a href="Entity.html" title="class in net.minecraft.entity">Entity</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createInstanceFromId(int,net.minecraft.world.World)">createInstanceFromId</a></span>&#8203;(int&nbsp;int2,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#createInstanceFromId(int,net.minecraft.world.World)">createInstanceFromId</a></span>&#8203;(int&nbsp;id,
                     <a href="../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -290,28 +290,28 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>static int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getIdByEntity(net.minecraft.entity.Entity)">getIdByEntity</a></span>&#8203;(<a href="Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</code></th>
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEntityNames()">getEntityNames</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>static int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getIdByName(java.lang.String)">getIdByName</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getIdByEntity(net.minecraft.entity.Entity)">getIdByEntity</a></span>&#8203;(<a href="Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code>static boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isPlayer(java.lang.String)">isPlayer</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
+<td class="colFirst"><code>static int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getIdByName(java.lang.String)">getIdByName</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code>static void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#load()">load</a></span>()</code></th>
+<td class="colFirst"><code>static boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isEntityRegistered(java.lang.String)">isEntityRegistered</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_7075()">method_7075</a></span>()</code></th>
+<td class="colFirst"><code>static void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#load()">load</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
@@ -326,8 +326,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registerEntity(java.lang.Class,java.lang.String,int,int,int)">registerEntity</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="Entity.html" title="class in net.minecraft.entity">Entity</a>&gt;&nbsp;clazz,
               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
               int&nbsp;id,
-              int&nbsp;int2,
-              int&nbsp;int3)</code></th>
+              int&nbsp;foregroundColor,
+              int&nbsp;backgroundColor)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -466,8 +466,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre class="methodSignature">private static&nbsp;void&nbsp;registerEntity&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang" class="externalLink">Class</a>&lt;? extends <a href="Entity.html" title="class in net.minecraft.entity">Entity</a>&gt;&nbsp;clazz,
                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name,
                                    int&nbsp;id,
-                                   int&nbsp;int2,
-                                   int&nbsp;int3)</pre>
+                                   int&nbsp;foregroundColor,
+                                   int&nbsp;backgroundColor)</pre>
 </li>
 </ul>
 <a id="createInstanceFromName(java.lang.String,net.minecraft.world.World)">
@@ -496,7 +496,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>createInstanceFromId</h4>
-<pre class="methodSignature">public static&nbsp;<a href="Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;createInstanceFromId&#8203;(int&nbsp;int2,
+<pre class="methodSignature">public static&nbsp;<a href="Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;createInstanceFromId&#8203;(int&nbsp;id,
                                           <a href="../world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world)</pre>
 </li>
 </ul>
@@ -555,13 +555,13 @@ public static&nbsp;int&nbsp;getIdByName&#8203;(<a href="https://docs.oracle.com/
 <pre class="methodSignature">public static&nbsp;void&nbsp;load()</pre>
 </li>
 </ul>
-<a id="method_7075()">
+<a id="getEntityNames()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_7075</h4>
-<pre class="methodSignature">public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;method_7075()</pre>
+<h4>getEntityNames</h4>
+<pre class="methodSignature">public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt;&nbsp;getEntityNames()</pre>
 </li>
 </ul>
 <a id="equals(net.minecraft.entity.Entity,java.lang.String)">
@@ -574,13 +574,13 @@ public static&nbsp;int&nbsp;getIdByName&#8203;(<a href="https://docs.oracle.com/
                              <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</pre>
 </li>
 </ul>
-<a id="isPlayer(java.lang.String)">
+<a id="isEntityRegistered(java.lang.String)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>isPlayer</h4>
-<pre class="methodSignature">public static&nbsp;boolean&nbsp;isPlayer&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
+<h4>isEntityRegistered</h4>
+<pre class="methodSignature">public static&nbsp;boolean&nbsp;isEntityRegistered&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;name)</pre>
 </li>
 </ul>
 </li>

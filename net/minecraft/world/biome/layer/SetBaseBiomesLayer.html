@@ -160,7 +160,7 @@ extends <a href="Layer.html" title="class in net.minecraft.world.biome.layer">La
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private <a href="../Biome.html" title="class in net.minecraft.world.biome">Biome</a>[]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_2262">field_2262</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#coolBiomes">coolBiomes</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -174,13 +174,13 @@ extends <a href="Layer.html" title="class in net.minecraft.world.biome.layer">La
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../Biome.html" title="class in net.minecraft.world.biome">Biome</a>[]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_2265">field_2265</a></span></code></th>
+<td class="colFirst"><code>private <a href="../../gen/CustomizedWorldProperties.html" title="class in net.minecraft.world.gen">CustomizedWorldProperties</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#properties">properties</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../gen/CustomizedWorldProperties.html" title="class in net.minecraft.world.gen">CustomizedWorldProperties</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_2266">field_2266</a></span></code></th>
+<td class="colFirst"><code>private <a href="../Biome.html" title="class in net.minecraft.world.biome">Biome</a>[]</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#warmBiomes">warmBiomes</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -208,9 +208,9 @@ extends <a href="Layer.html" title="class in net.minecraft.world.biome.layer">La
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(long,net.minecraft.world.biome.layer.Layer,net.minecraft.world.level.LevelGeneratorType,java.lang.String)">SetBaseBiomesLayer</a></span>&#8203;(long&nbsp;long2,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(long,net.minecraft.world.biome.layer.Layer,net.minecraft.world.level.LevelGeneratorType,java.lang.String)">SetBaseBiomesLayer</a></span>&#8203;(long&nbsp;seed,
                   <a href="Layer.html" title="class in net.minecraft.world.biome.layer">Layer</a>&nbsp;layer,
-                  <a href="../../level/LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a>&nbsp;levelGeneratorType,
+                  <a href="../../level/LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a>&nbsp;type,
                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -246,7 +246,7 @@ extends <a href="Layer.html" title="class in net.minecraft.world.biome.layer">La
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.world.biome.layer.<a href="Layer.html" title="class in net.minecraft.world.biome.layer">Layer</a></h3>
-<code><a href="Layer.html#method_1828(int,int)">method_1828</a>, <a href="Layer.html#method_1830(long)">method_1830</a>, <a href="Layer.html#method_1831(long,long)">method_1831</a>, <a href="Layer.html#method_1832(long,net.minecraft.world.level.LevelGeneratorType,java.lang.String)">method_1832</a>, <a href="Layer.html#method_1833(int%5B%5D)">method_1833</a>, <a href="Layer.html#method_1834(int)">method_1834</a>, <a href="Layer.html#method_1835(int,int,int,int)">method_1835</a>, <a href="Layer.html#nextInt(int)">nextInt</a></code></li>
+<code><a href="Layer.html#compareBiomes(int,int)">compareBiomes</a>, <a href="Layer.html#getRandomBiome(int%5B%5D)">getRandomBiome</a>, <a href="Layer.html#init(long,net.minecraft.world.level.LevelGeneratorType,java.lang.String)">init</a>, <a href="Layer.html#isOcean(int)">isOcean</a>, <a href="Layer.html#method_1830(long)">method_1830</a>, <a href="Layer.html#method_1831(long,long)">method_1831</a>, <a href="Layer.html#method_1835(int,int,int,int)">method_1835</a>, <a href="Layer.html#nextInt(int)">nextInt</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -271,13 +271,13 @@ extends <a href="Layer.html" title="class in net.minecraft.world.biome.layer">La
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="field_2262">
+<a id="warmBiomes">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_2262</h4>
-<pre>private&nbsp;<a href="../Biome.html" title="class in net.minecraft.world.biome">Biome</a>[] field_2262</pre>
+<h4>warmBiomes</h4>
+<pre>private&nbsp;<a href="../Biome.html" title="class in net.minecraft.world.biome">Biome</a>[] warmBiomes</pre>
 </li>
 </ul>
 <a id="field_2263">
@@ -298,22 +298,22 @@ extends <a href="Layer.html" title="class in net.minecraft.world.biome.layer">La
 <pre>private&nbsp;<a href="../Biome.html" title="class in net.minecraft.world.biome">Biome</a>[] field_2264</pre>
 </li>
 </ul>
-<a id="field_2265">
+<a id="coolBiomes">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_2265</h4>
-<pre>private&nbsp;<a href="../Biome.html" title="class in net.minecraft.world.biome">Biome</a>[] field_2265</pre>
+<h4>coolBiomes</h4>
+<pre>private&nbsp;<a href="../Biome.html" title="class in net.minecraft.world.biome">Biome</a>[] coolBiomes</pre>
 </li>
 </ul>
-<a id="field_2266">
+<a id="properties">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_2266</h4>
-<pre>private final&nbsp;<a href="../../gen/CustomizedWorldProperties.html" title="class in net.minecraft.world.gen">CustomizedWorldProperties</a> field_2266</pre>
+<h4>properties</h4>
+<pre>private final&nbsp;<a href="../../gen/CustomizedWorldProperties.html" title="class in net.minecraft.world.gen">CustomizedWorldProperties</a> properties</pre>
 </li>
 </ul>
 </li>
@@ -332,9 +332,9 @@ extends <a href="Layer.html" title="class in net.minecraft.world.biome.layer">La
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SetBaseBiomesLayer</h4>
-<pre>public&nbsp;SetBaseBiomesLayer&#8203;(long&nbsp;long2,
+<pre>public&nbsp;SetBaseBiomesLayer&#8203;(long&nbsp;seed,
                           <a href="Layer.html" title="class in net.minecraft.world.biome.layer">Layer</a>&nbsp;layer,
-                          <a href="../../level/LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a>&nbsp;levelGeneratorType,
+                          <a href="../../level/LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a>&nbsp;type,
                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&nbsp;string)</pre>
 </li>
 </ul>

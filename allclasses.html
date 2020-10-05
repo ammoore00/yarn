@@ -53,6 +53,8 @@
 <li><a href="net/minecraft/client/gui/AchievementNotification.html" title="class in net.minecraft.client.gui">AchievementNotification</a></li>
 <li><a href="net/minecraft/achievement/Achievements.html" title="class in net.minecraft.achievement">Achievements</a></li>
 <li><a href="net/minecraft/client/gui/screen/AchievementsScreen.html" title="class in net.minecraft.client.gui.screen">AchievementsScreen</a></li>
+<li><a href="net/minecraft/world/biome/layer/AddHillsLayer.html" title="class in net.minecraft.world.biome.layer">AddHillsLayer</a></li>
+<li><a href="net/minecraft/world/biome/layer/AddRiverLayer.html" title="class in net.minecraft.world.biome.layer">AddRiverLayer</a></li>
 <li><a href="net/minecraft/client/gui/screen/AddServerScreen.html" title="class in net.minecraft.client.gui.screen">AddServerScreen</a></li>
 <li><a href="com/mojang/blaze3d/platform/AdvancedOpenGlManager.html" title="class in com.mojang.blaze3d.platform">AdvancedOpenGlManager</a></li>
 <li><a href="net/minecraft/client/render/AdvancedVertexBuffer.html" title="class in net.minecraft.client.render">AdvancedVertexBuffer</a></li>
@@ -158,7 +160,7 @@
 <li><a href="net/minecraft/world/biome/BiomeCache.html" title="class in net.minecraft.world.biome">BiomeCache</a></li>
 <li><a href="net/minecraft/client/color/world/BiomeColors.html" title="class in net.minecraft.client.color.world">BiomeColors</a></li>
 <li><a href="net/minecraft/client/color/world/BiomeColors.ColorProvider.html" title="interface in net.minecraft.client.color.world"><span class="interfaceName">BiomeColors.ColorProvider</span></a></li>
-<li><a href="net/minecraft/world/biome/BiomePopulator.html" title="class in net.minecraft.world.biome">BiomePopulator</a></li>
+<li><a href="net/minecraft/world/biome/BiomeDecorator.html" title="class in net.minecraft.world.biome">BiomeDecorator</a></li>
 <li><a href="net/minecraft/world/biome/source/BiomeSource.html" title="class in net.minecraft.world.biome.source">BiomeSource</a></li>
 <li><a href="net/minecraft/client/render/entity/BipedEntityRenderer.html" title="class in net.minecraft.client.render.entity">BipedEntityRenderer</a></li>
 <li><a href="net/minecraft/client/render/entity/model/BiPedModel.html" title="class in net.minecraft.client.render.entity.model">BiPedModel</a></li>
@@ -283,7 +285,6 @@
 <li><a href="net/minecraft/client/gui/screen/ChatScreen.html" title="class in net.minecraft.client.gui.screen">ChatScreen</a></li>
 <li><a href="net/minecraft/util/ChatSerializer.html" title="class in net.minecraft.util">ChatSerializer</a></li>
 <li><a href="net/minecraft/util/ChatUtil.html" title="class in net.minecraft.util">ChatUtil</a></li>
-<li><a href="net/minecraft/world/biome/source/CheckerboardBiomeSourceConfig.html" title="class in net.minecraft.world.biome.source">CheckerboardBiomeSourceConfig</a></li>
 <li><a href="net/minecraft/block/ChestBlock.html" title="class in net.minecraft.block">ChestBlock</a></li>
 <li><a href="net/minecraft/block/entity/ChestBlockEntity.html" title="class in net.minecraft.block.entity">ChestBlockEntity</a></li>
 <li><a href="net/minecraft/client/render/entity/model/ChestBlockEntityModel.html" title="class in net.minecraft.client.render.entity.model">ChestBlockEntityModel</a></li>
@@ -306,6 +307,7 @@
 <li><a href="net/minecraft/network/packet/s2c/play/ChunkMapS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ChunkMapS2CPacket</a></li>
 <li><a href="net/minecraft/client/render/chunk/ChunkOcclusionData.html" title="class in net.minecraft.client.render.chunk">ChunkOcclusionData</a></li>
 <li><a href="net/minecraft/client/render/chunk/ChunkOcclusionDataBuilder.html" title="class in net.minecraft.client.render.chunk">ChunkOcclusionDataBuilder</a></li>
+<li><a href="net/minecraft/util/math/ChunkPos.html" title="class in net.minecraft.util.math">ChunkPos</a></li>
 <li><a href="net/minecraft/world/chunk/ChunkProvider.html" title="interface in net.minecraft.world.chunk"><span class="interfaceName">ChunkProvider</span></a></li>
 <li><a href="net/minecraft/client/world/ChunkRenderCache.html" title="class in net.minecraft.client.world">ChunkRenderCache</a></li>
 <li><a href="net/minecraft/network/packet/s2c/play/ChunkRenderDistanceCenterS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ChunkRenderDistanceCenterS2CPacket</a></li>
@@ -322,11 +324,9 @@
 <li><a href="net/minecraft/class_430.html" title="class in net.minecraft">class_430</a></li>
 <li><a href="net/minecraft/class_430.class_431.html" title="class in net.minecraft">class_430.class_431</a></li>
 <li><a href="net/minecraft/class_433.html" title="class in net.minecraft">class_433</a></li>
-<li><a href="net/minecraft/class_435.html" title="class in net.minecraft">class_435</a></li>
 <li><a href="net/minecraft/class_449.html" title="class in net.minecraft">class_449</a></li>
 <li><a href="net/minecraft/class_454.html" title="class in net.minecraft">class_454</a></li>
 <li><a href="net/minecraft/class_455.html" title="class in net.minecraft">class_455</a></li>
-<li><a href="net/minecraft/class_463.html" title="class in net.minecraft">class_463</a></li>
 <li><a href="net/minecraft/class_559.html" title="class in net.minecraft">class_559</a></li>
 <li><a href="net/minecraft/class_583.html" title="class in net.minecraft">class_583</a></li>
 <li><a href="net/minecraft/class_585.html" title="class in net.minecraft">class_585</a></li>
@@ -337,8 +337,8 @@
 <li><a href="net/minecraft/class_600.html" title="class in net.minecraft">class_600</a></li>
 <li><a href="net/minecraft/class_603.html" title="class in net.minecraft">class_603</a></li>
 <li><a href="net/minecraft/class_604.html" title="class in net.minecraft">class_604</a></li>
+<li><a href="net/minecraft/class_605.html" title="class in net.minecraft">class_605</a></li>
 <li><a href="net/minecraft/class_607.html" title="class in net.minecraft">class_607</a></li>
-<li><a href="net/minecraft/class_608.html" title="class in net.minecraft">class_608</a></li>
 <li><a href="net/minecraft/class_609.html" title="class in net.minecraft">class_609</a></li>
 <li><a href="net/minecraft/class_610.html" title="class in net.minecraft">class_610</a></li>
 <li><a href="net/minecraft/class_612.html" title="class in net.minecraft">class_612</a></li>
@@ -419,7 +419,6 @@
 <li><a href="net/minecraft/util/CollectionBuilders.Product.html" title="class in net.minecraft.util">CollectionBuilders.Product</a></li>
 <li><a href="net/minecraft/util/CollectionBuilders.Product.class_1379.html" title="class in net.minecraft.util">CollectionBuilders.Product.class_1379</a></li>
 <li><a href="net/minecraft/client/texture/ColorMaskTexture.html" title="class in net.minecraft.client.texture">ColorMaskTexture</a></li>
-<li><a href="net/minecraft/util/math/ColumnPos.html" title="class in net.minecraft.util.math">ColumnPos</a></li>
 <li><a href="net/minecraft/network/packet/s2c/play/CombatEventS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">CombatEventS2CPacket</a></li>
 <li><a href="net/minecraft/network/packet/s2c/play/CombatEventS2CPacket.Type.html" title="enum in net.minecraft.network.packet.s2c.play">CombatEventS2CPacket.Type</a></li>
 <li><a href="net/minecraft/recipe/CombatItemRecipeDispatcher.html" title="class in net.minecraft.recipe">CombatItemRecipeDispatcher</a></li>
@@ -558,6 +557,7 @@
 <li><a href="net/minecraft/realms/DisconnectedRealmsScreen.html" title="class in net.minecraft.realms">DisconnectedRealmsScreen</a></li>
 <li><a href="net/minecraft/client/gui/screen/DisconnectedScreen.html" title="class in net.minecraft.client.gui.screen">DisconnectedScreen</a></li>
 <li><a href="net/minecraft/network/packet/s2c/play/DisconnectS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">DisconnectS2CPacket</a></li>
+<li><a href="net/minecraft/world/gen/feature/DiskFeature.html" title="class in net.minecraft.world.gen.feature">DiskFeature</a></li>
 <li><a href="net/minecraft/block/dispenser/DispenserBehavior.html" title="interface in net.minecraft.block.dispenser"><span class="interfaceName">DispenserBehavior</span></a></li>
 <li><a href="net/minecraft/block/DispenserBlock.html" title="class in net.minecraft.block">DispenserBlock</a></li>
 <li><a href="net/minecraft/block/entity/DispenserBlockEntity.html" title="class in net.minecraft.block.entity">DispenserBlockEntity</a></li>
@@ -624,7 +624,7 @@
 <li><a href="net/minecraft/enchantment/EnchantmentInfoEntry.html" title="class in net.minecraft.enchantment">EnchantmentInfoEntry</a></li>
 <li><a href="net/minecraft/enchantment/EnchantmentTarget.html" title="enum in net.minecraft.enchantment">EnchantmentTarget</a></li>
 <li><a href="net/minecraft/world/biome/EndBiome.html" title="class in net.minecraft.world.biome">EndBiome</a></li>
-<li><a href="net/minecraft/world/biome/EndBiomePopulator.html" title="class in net.minecraft.world.biome">EndBiomePopulator</a></li>
+<li><a href="net/minecraft/world/biome/EndBiomeDecorator.html" title="class in net.minecraft.world.biome">EndBiomeDecorator</a></li>
 <li><a href="net/minecraft/world/chunk/EndChunkGenerator.html" title="class in net.minecraft.world.chunk">EndChunkGenerator</a></li>
 <li><a href="net/minecraft/entity/EndCrystalEntity.html" title="class in net.minecraft.entity">EndCrystalEntity</a></li>
 <li><a href="net/minecraft/block/EnderChestBlock.html" title="class in net.minecraft.block">EnderChestBlock</a></li>
@@ -971,7 +971,6 @@
 <li><a href="net/minecraft/client/render/entity/IronGolemEntityRenderer.html" title="class in net.minecraft.client.render.entity">IronGolemEntityRenderer</a></li>
 <li><a href="net/minecraft/client/render/entity/feature/IronGolemFlowerFeatureRenderer.html" title="class in net.minecraft.client.render.entity.feature">IronGolemFlowerFeatureRenderer</a></li>
 <li><a href="net/minecraft/entity/ai/goal/IronGolemLookGoal.html" title="class in net.minecraft.entity.ai.goal">IronGolemLookGoal</a></li>
-<li><a href="net/minecraft/world/biome/layer/IslandLayer.html" title="class in net.minecraft.world.biome.layer">IslandLayer</a></li>
 <li><a href="net/minecraft/item/Item.html" title="class in net.minecraft.item">Item</a></li>
 <li><a href="net/minecraft/item/Item.ToolMaterialType.html" title="enum in net.minecraft.item">Item.ToolMaterialType</a></li>
 <li><a href="net/minecraft/block/dispenser/ItemDispenserBehavior.html" title="class in net.minecraft.block.dispenser">ItemDispenserBehavior</a></li>
@@ -992,6 +991,7 @@
 <li><a href="net/minecraft/util/JsonElementProvider.html" title="interface in net.minecraft.util"><span class="interfaceName">JsonElementProvider</span></a></li>
 <li><a href="net/minecraft/client/gl/JsonGlProgram.html" title="class in net.minecraft.client.gl">JsonGlProgram</a></li>
 <li><a href="net/minecraft/util/JsonHelper.html" title="class in net.minecraft.util">JsonHelper</a></li>
+<li><a href="net/minecraft/util/JsonIntSerializable.html" title="class in net.minecraft.util">JsonIntSerializable</a></li>
 <li><a href="net/minecraft/util/JsonSet.html" title="class in net.minecraft.util">JsonSet</a></li>
 <li><a href="net/minecraft/block/JukeboxBlock.html" title="class in net.minecraft.block">JukeboxBlock</a></li>
 <li><a href="net/minecraft/block/JukeboxBlock.JukeboxBlockEntity.html" title="class in net.minecraft.block">JukeboxBlock.JukeboxBlockEntity</a></li>
@@ -1179,6 +1179,7 @@
 <li><a href="net/minecraft/world/MultiServerWorld.html" title="class in net.minecraft.world">MultiServerWorld</a></li>
 <li><a href="net/minecraft/world/biome/MushroomBiome.html" title="class in net.minecraft.world.biome">MushroomBiome</a></li>
 <li><a href="net/minecraft/block/MushroomBlock.html" title="class in net.minecraft.block">MushroomBlock</a></li>
+<li><a href="net/minecraft/world/gen/feature/MushroomFeature.html" title="class in net.minecraft.world.gen.feature">MushroomFeature</a></li>
 <li><a href="net/minecraft/world/biome/layer/MushroomIslandLayer.html" title="class in net.minecraft.world.biome.layer">MushroomIslandLayer</a></li>
 <li><a href="net/minecraft/item/MusicDiscItem.html" title="class in net.minecraft.item">MusicDiscItem</a></li>
 <li><a href="net/minecraft/client/sound/MusicTracker.html" title="class in net.minecraft.client.sound">MusicTracker</a></li>
@@ -1501,7 +1502,6 @@
 <li><a href="net/minecraft/entity/ai/goal/RestrictOpenDoorGoal.html" title="class in net.minecraft.entity.ai.goal">RestrictOpenDoorGoal</a></li>
 <li><a href="net/minecraft/entity/ai/goal/RevengeGoal.html" title="class in net.minecraft.entity.ai.goal">RevengeGoal</a></li>
 <li><a href="net/minecraft/world/biome/RiverBiome.html" title="class in net.minecraft.world.biome">RiverBiome</a></li>
-<li><a href="net/minecraft/world/biome/layer/RiverLayer.html" title="class in net.minecraft.world.biome.layer">RiverLayer</a></li>
 <li><a href="net/minecraft/client/gui/hud/spectator/RootSpectatorCommandGroup.html" title="class in net.minecraft.client.gui.hud.spectator">RootSpectatorCommandGroup</a></li>
 <li><a href="net/minecraft/client/RunArgs.html" title="class in net.minecraft.client">RunArgs</a></li>
 <li><a href="net/minecraft/client/RunArgs.Args.html" title="class in net.minecraft.client">RunArgs.Args</a></li>
