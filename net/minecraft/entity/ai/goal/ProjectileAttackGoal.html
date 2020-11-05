@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -160,17 +159,7 @@ extends <a href="Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private <a href="../../mob/MobEntity.html" title="class in net.minecraft.entity.mob">MobEntity</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7749">field_7749</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="../RangedAttackMob.html" title="interface in net.minecraft.entity.ai">RangedAttackMob</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7750">field_7750</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="../../LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_7751">field_7751</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#entity">entity</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -199,8 +188,18 @@ extends <a href="Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>private <a href="../../RangedAttackMob.html" title="interface in net.minecraft.entity">RangedAttackMob</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#rangedAttackMob">rangedAttackMob</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>private int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#seenTargetTicks">seenTargetTicks</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="../../LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#target">target</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -226,14 +225,14 @@ extends <a href="Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.entity.ai.RangedAttackMob,double,int,float)">ProjectileAttackGoal</a></span>&#8203;(<a href="../RangedAttackMob.html" title="interface in net.minecraft.entity.ai">RangedAttackMob</a>&nbsp;rangedAttackMob,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.entity.RangedAttackMob,double,int,float)">ProjectileAttackGoal</a></span>&#8203;(<a href="../../RangedAttackMob.html" title="interface in net.minecraft.entity">RangedAttackMob</a>&nbsp;rangedAttackMob,
                     double&nbsp;double2,
                     int&nbsp;int2,
                     float&nbsp;float2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.entity.ai.RangedAttackMob,double,int,int,float)">ProjectileAttackGoal</a></span>&#8203;(<a href="../RangedAttackMob.html" title="interface in net.minecraft.entity.ai">RangedAttackMob</a>&nbsp;rangedAttackMob,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(net.minecraft.entity.RangedAttackMob,double,int,int,float)">ProjectileAttackGoal</a></span>&#8203;(<a href="../../RangedAttackMob.html" title="interface in net.minecraft.entity">RangedAttackMob</a>&nbsp;mob,
                     double&nbsp;double2,
                     int&nbsp;int2,
                     int&nbsp;int3,
@@ -309,31 +308,31 @@ extends <a href="Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="field_7749">
+<a id="entity">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7749</h4>
-<pre>private final&nbsp;<a href="../../mob/MobEntity.html" title="class in net.minecraft.entity.mob">MobEntity</a> field_7749</pre>
+<h4>entity</h4>
+<pre>private final&nbsp;<a href="../../mob/MobEntity.html" title="class in net.minecraft.entity.mob">MobEntity</a> entity</pre>
 </li>
 </ul>
-<a id="field_7750">
+<a id="rangedAttackMob">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7750</h4>
-<pre>private final&nbsp;<a href="../RangedAttackMob.html" title="interface in net.minecraft.entity.ai">RangedAttackMob</a> field_7750</pre>
+<h4>rangedAttackMob</h4>
+<pre>private final&nbsp;<a href="../../RangedAttackMob.html" title="interface in net.minecraft.entity">RangedAttackMob</a> rangedAttackMob</pre>
 </li>
 </ul>
-<a id="field_7751">
+<a id="target">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7751</h4>
-<pre>private&nbsp;<a href="../../LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a> field_7751</pre>
+<h4>target</h4>
+<pre>private&nbsp;<a href="../../LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a> target</pre>
 </li>
 </ul>
 <a id="updateCountdownTicks">
@@ -409,25 +408,25 @@ extends <a href="Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a id="&lt;init&gt;(net.minecraft.entity.ai.RangedAttackMob,double,int,float)">
+<a id="&lt;init&gt;(net.minecraft.entity.RangedAttackMob,double,int,float)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>ProjectileAttackGoal</h4>
-<pre>public&nbsp;ProjectileAttackGoal&#8203;(<a href="../RangedAttackMob.html" title="interface in net.minecraft.entity.ai">RangedAttackMob</a>&nbsp;rangedAttackMob,
+<pre>public&nbsp;ProjectileAttackGoal&#8203;(<a href="../../RangedAttackMob.html" title="interface in net.minecraft.entity">RangedAttackMob</a>&nbsp;rangedAttackMob,
                             double&nbsp;double2,
                             int&nbsp;int2,
                             float&nbsp;float2)</pre>
 </li>
 </ul>
-<a id="&lt;init&gt;(net.minecraft.entity.ai.RangedAttackMob,double,int,int,float)">
+<a id="&lt;init&gt;(net.minecraft.entity.RangedAttackMob,double,int,int,float)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ProjectileAttackGoal</h4>
-<pre>public&nbsp;ProjectileAttackGoal&#8203;(<a href="../RangedAttackMob.html" title="interface in net.minecraft.entity.ai">RangedAttackMob</a>&nbsp;rangedAttackMob,
+<pre>public&nbsp;ProjectileAttackGoal&#8203;(<a href="../../RangedAttackMob.html" title="interface in net.minecraft.entity">RangedAttackMob</a>&nbsp;mob,
                             double&nbsp;double2,
                             int&nbsp;int2,
                             int&nbsp;int3,

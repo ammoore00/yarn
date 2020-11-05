@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -129,7 +128,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="../Screen.html" title="class in net.minecraft.client.gui.screen">net.minecraft.client.gui.screen.Screen</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">net.minecraft.client.gui.screen.ingame.ContainerScreen</a></li>
+<li><a href="HandledScreen.html" title="class in net.minecraft.client.gui.screen.ingame">net.minecraft.client.gui.screen.ingame.HandledScreen</a></li>
 <li>
 <ul class="inheritance">
 <li>net.minecraft.client.gui.screen.ingame.EnchantingScreen</li>
@@ -152,7 +151,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>@Environment(CLIENT)
 public class <span class="typeNameLabel">EnchantingScreen</span>
-extends <a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></pre>
+extends <a href="HandledScreen.html" title="class in net.minecraft.client.gui.screen.ingame">HandledScreen</a></pre>
 </li>
 </ul>
 </div>
@@ -179,63 +178,63 @@ extends <a href="ContainerScreen.html" title="class in net.minecraft.client.gui.
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>private static <a href="../../../render/entity/model/BookModel.html" title="class in net.minecraft.client.render.entity.model">BookModel</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#BOOK_MODEL">BOOK_MODEL</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private static <a href="../../../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#BOOK_TEXTURE">BOOK_TEXTURE</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private static <a href="../../../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ENCHANTING_TABLE_TEXTURE">ENCHANTING_TABLE_TEXTURE</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="../../../../screen/EnchantingScreenHandler.html" title="class in net.minecraft.screen">EnchantingScreenHandler</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#enchantingScreenHandler">enchantingScreenHandler</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>(package private) <a href="../../../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3484">field_3484</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private static <a href="../../../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3485">field_3485</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private static <a href="../../../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3486">field_3486</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private static <a href="../../../render/entity/model/BookModel.html" title="class in net.minecraft.client.render.entity.model">BookModel</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3487">field_3487</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../../entity/player/PlayerInventory.html" title="class in net.minecraft.entity.player">PlayerInventory</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3488">field_3488</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../container/EnchantingTableContainer.html" title="class in net.minecraft.container">EnchantingTableContainer</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3490">field_3490</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>private <a href="../../../../text/Nameable.html" title="interface in net.minecraft.text">Nameable</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#field_3491">field_3491</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#nameable">nameable</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>float</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#nextPageAngle">nextPageAngle</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>float</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#nextPageTurningSpeed">nextPageTurningSpeed</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>float</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#pageAngle">pageAngle</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>float</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#pageRotationSpeed">pageRotationSpeed</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>float</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#pageTurningSpeed">pageTurningSpeed</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="../../../../entity/player/PlayerInventory.html" title="class in net.minecraft.entity.player">PlayerInventory</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#playerInventory">playerInventory</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -250,11 +249,11 @@ extends <a href="ContainerScreen.html" title="class in net.minecraft.client.gui.
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a id="fields.inherited.from.class.net.minecraft.client.gui.screen.ingame.ContainerScreen">
+<li class="blockList"><a id="fields.inherited.from.class.net.minecraft.client.gui.screen.ingame.HandledScreen">
 <!--   -->
 </a>
-<h3>Fields inherited from class&nbsp;net.minecraft.client.gui.screen.ingame.<a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></h3>
-<code><a href="ContainerScreen.html#container">container</a>, <a href="ContainerScreen.html#containerHeight">containerHeight</a>, <a href="ContainerScreen.html#containerWidth">containerWidth</a>, <a href="ContainerScreen.html#cursorDragSlots">cursorDragSlots</a>, <a href="ContainerScreen.html#INVENTORY_TEXTURE">INVENTORY_TEXTURE</a>, <a href="ContainerScreen.html#isCursorDragging">isCursorDragging</a>, <a href="ContainerScreen.html#x">x</a>, <a href="ContainerScreen.html#y">y</a></code></li>
+<h3>Fields inherited from class&nbsp;net.minecraft.client.gui.screen.ingame.<a href="HandledScreen.html" title="class in net.minecraft.client.gui.screen.ingame">HandledScreen</a></h3>
+<code><a href="HandledScreen.html#backgroundHeight">backgroundHeight</a>, <a href="HandledScreen.html#backgroundWidth">backgroundWidth</a>, <a href="HandledScreen.html#cursorDragSlots">cursorDragSlots</a>, <a href="HandledScreen.html#INVENTORY_TEXTURE">INVENTORY_TEXTURE</a>, <a href="HandledScreen.html#isCursorDragging">isCursorDragging</a>, <a href="HandledScreen.html#screenHandler">screenHandler</a>, <a href="HandledScreen.html#x">x</a>, <a href="HandledScreen.html#y">y</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="fields.inherited.from.class.net.minecraft.client.gui.screen.Screen">
@@ -349,11 +348,11 @@ extends <a href="ContainerScreen.html" title="class in net.minecraft.client.gui.
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.net.minecraft.client.gui.screen.ingame.ContainerScreen">
+<li class="blockList"><a id="methods.inherited.from.class.net.minecraft.client.gui.screen.ingame.HandledScreen">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;net.minecraft.client.gui.screen.ingame.<a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></h3>
-<code><a href="ContainerScreen.html#init()">init</a>, <a href="ContainerScreen.html#keyPressed(char,int)">keyPressed</a>, <a href="ContainerScreen.html#method_2903(net.minecraft.container.Slot,int,int,int)">method_2903</a>, <a href="ContainerScreen.html#method_2905(int)">method_2905</a>, <a href="ContainerScreen.html#method_2908(int,int,int,int,int,int)">method_2908</a>, <a href="ContainerScreen.html#mouseDragged(int,int,int,long)">mouseDragged</a>, <a href="ContainerScreen.html#mouseReleased(int,int,int)">mouseReleased</a>, <a href="ContainerScreen.html#removed()">removed</a>, <a href="ContainerScreen.html#shouldPauseGame()">shouldPauseGame</a></code></li>
+<h3>Methods inherited from class&nbsp;net.minecraft.client.gui.screen.ingame.<a href="HandledScreen.html" title="class in net.minecraft.client.gui.screen.ingame">HandledScreen</a></h3>
+<code><a href="HandledScreen.html#init()">init</a>, <a href="HandledScreen.html#keyPressed(char,int)">keyPressed</a>, <a href="HandledScreen.html#method_2903(net.minecraft.inventory.slot.Slot,int,int,int)">method_2903</a>, <a href="HandledScreen.html#method_2905(int)">method_2905</a>, <a href="HandledScreen.html#method_2908(int,int,int,int,int,int)">method_2908</a>, <a href="HandledScreen.html#mouseDragged(int,int,int,long)">mouseDragged</a>, <a href="HandledScreen.html#mouseReleased(int,int,int)">mouseReleased</a>, <a href="HandledScreen.html#removed()">removed</a>, <a href="HandledScreen.html#shouldPauseGame()">shouldPauseGame</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.net.minecraft.client.gui.screen.Screen">
@@ -392,40 +391,40 @@ extends <a href="ContainerScreen.html" title="class in net.minecraft.client.gui.
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="field_3485">
+<a id="ENCHANTING_TABLE_TEXTURE">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_3485</h4>
-<pre>private static final&nbsp;<a href="../../../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a> field_3485</pre>
+<h4>ENCHANTING_TABLE_TEXTURE</h4>
+<pre>private static final&nbsp;<a href="../../../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a> ENCHANTING_TABLE_TEXTURE</pre>
 </li>
 </ul>
-<a id="field_3486">
+<a id="BOOK_TEXTURE">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_3486</h4>
-<pre>private static final&nbsp;<a href="../../../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a> field_3486</pre>
+<h4>BOOK_TEXTURE</h4>
+<pre>private static final&nbsp;<a href="../../../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a> BOOK_TEXTURE</pre>
 </li>
 </ul>
-<a id="field_3487">
+<a id="BOOK_MODEL">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_3487</h4>
-<pre>private static final&nbsp;<a href="../../../render/entity/model/BookModel.html" title="class in net.minecraft.client.render.entity.model">BookModel</a> field_3487</pre>
+<h4>BOOK_MODEL</h4>
+<pre>private static final&nbsp;<a href="../../../render/entity/model/BookModel.html" title="class in net.minecraft.client.render.entity.model">BookModel</a> BOOK_MODEL</pre>
 </li>
 </ul>
-<a id="field_3488">
+<a id="playerInventory">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_3488</h4>
-<pre>private final&nbsp;<a href="../../../../entity/player/PlayerInventory.html" title="class in net.minecraft.entity.player">PlayerInventory</a> field_3488</pre>
+<h4>playerInventory</h4>
+<pre>private final&nbsp;<a href="../../../../entity/player/PlayerInventory.html" title="class in net.minecraft.entity.player">PlayerInventory</a> playerInventory</pre>
 </li>
 </ul>
 <a id="random">
@@ -437,13 +436,13 @@ extends <a href="ContainerScreen.html" title="class in net.minecraft.client.gui.
 <pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a> random</pre>
 </li>
 </ul>
-<a id="field_3490">
+<a id="enchantingScreenHandler">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_3490</h4>
-<pre>private&nbsp;<a href="../../../../container/EnchantingTableContainer.html" title="class in net.minecraft.container">EnchantingTableContainer</a> field_3490</pre>
+<h4>enchantingScreenHandler</h4>
+<pre>private&nbsp;<a href="../../../../screen/EnchantingScreenHandler.html" title="class in net.minecraft.screen">EnchantingScreenHandler</a> enchantingScreenHandler</pre>
 </li>
 </ul>
 <a id="ticks">
@@ -518,13 +517,13 @@ extends <a href="ContainerScreen.html" title="class in net.minecraft.client.gui.
 <pre><a href="../../../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a> field_3484</pre>
 </li>
 </ul>
-<a id="field_3491">
+<a id="nameable">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_3491</h4>
-<pre>private final&nbsp;<a href="../../../../text/Nameable.html" title="interface in net.minecraft.text">Nameable</a> field_3491</pre>
+<h4>nameable</h4>
+<pre>private final&nbsp;<a href="../../../../text/Nameable.html" title="interface in net.minecraft.text">Nameable</a> nameable</pre>
 </li>
 </ul>
 </li>
@@ -568,7 +567,7 @@ extends <a href="ContainerScreen.html" title="class in net.minecraft.client.gui.
                               int&nbsp;mouseY)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="ContainerScreen.html#drawForeground(int,int)">drawForeground</a></code>&nbsp;in class&nbsp;<code><a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></code></dd>
+<dd><code><a href="HandledScreen.html#drawForeground(int,int)">drawForeground</a></code>&nbsp;in class&nbsp;<code><a href="HandledScreen.html" title="class in net.minecraft.client.gui.screen.ingame">HandledScreen</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -581,7 +580,7 @@ extends <a href="ContainerScreen.html" title="class in net.minecraft.client.gui.
 <pre class="methodSignature">public&nbsp;void&nbsp;tick()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="ContainerScreen.html#tick()">tick</a></code>&nbsp;in class&nbsp;<code><a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></code></dd>
+<dd><code><a href="HandledScreen.html#tick()">tick</a></code>&nbsp;in class&nbsp;<code><a href="HandledScreen.html" title="class in net.minecraft.client.gui.screen.ingame">HandledScreen</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -596,7 +595,7 @@ extends <a href="ContainerScreen.html" title="class in net.minecraft.client.gui.
                             int&nbsp;button)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="ContainerScreen.html#mouseClicked(int,int,int)">mouseClicked</a></code>&nbsp;in class&nbsp;<code><a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></code></dd>
+<dd><code><a href="HandledScreen.html#mouseClicked(int,int,int)">mouseClicked</a></code>&nbsp;in class&nbsp;<code><a href="HandledScreen.html" title="class in net.minecraft.client.gui.screen.ingame">HandledScreen</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -611,7 +610,7 @@ extends <a href="ContainerScreen.html" title="class in net.minecraft.client.gui.
                               int&nbsp;mouseY)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="ContainerScreen.html#drawBackground(float,int,int)">drawBackground</a></code>&nbsp;in class&nbsp;<code><a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></code></dd>
+<dd><code><a href="HandledScreen.html#drawBackground(float,int,int)">drawBackground</a></code>&nbsp;in class&nbsp;<code><a href="HandledScreen.html" title="class in net.minecraft.client.gui.screen.ingame">HandledScreen</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -626,7 +625,7 @@ extends <a href="ContainerScreen.html" title="class in net.minecraft.client.gui.
                    float&nbsp;delta)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="ContainerScreen.html#render(int,int,float)">render</a></code>&nbsp;in class&nbsp;<code><a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></code></dd>
+<dd><code><a href="HandledScreen.html#render(int,int,float)">render</a></code>&nbsp;in class&nbsp;<code><a href="HandledScreen.html" title="class in net.minecraft.client.gui.screen.ingame">HandledScreen</a></code></dd>
 </dl>
 </li>
 </ul>

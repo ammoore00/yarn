@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -129,7 +128,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="../Screen.html" title="class in net.minecraft.client.gui.screen">net.minecraft.client.gui.screen.Screen</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">net.minecraft.client.gui.screen.ingame.ContainerScreen</a></li>
+<li><a href="HandledScreen.html" title="class in net.minecraft.client.gui.screen.ingame">net.minecraft.client.gui.screen.ingame.HandledScreen</a></li>
 <li>
 <ul class="inheritance">
 <li>net.minecraft.client.gui.screen.ingame.AnvilScreen</li>
@@ -147,13 +146,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../widget/IdentifibleBooleanConsumer.html" title="interface in net.minecraft.client.gui.widget">IdentifibleBooleanConsumer</a></code>, <code><a href="../../../../container/ContainerListener.html" title="interface in net.minecraft.container">ContainerListener</a></code></dd>
+<dd><code><a href="../../widget/IdentifibleBooleanConsumer.html" title="interface in net.minecraft.client.gui.widget">IdentifibleBooleanConsumer</a></code>, <code><a href="../../../../screen/ScreenHandlerListener.html" title="interface in net.minecraft.screen">ScreenHandlerListener</a></code></dd>
 </dl>
 <hr>
 <pre>@Environment(CLIENT)
 public class <span class="typeNameLabel">AnvilScreen</span>
-extends <a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a>
-implements <a href="../../../../container/ContainerListener.html" title="interface in net.minecraft.container">ContainerListener</a></pre>
+extends <a href="HandledScreen.html" title="class in net.minecraft.client.gui.screen.ingame">HandledScreen</a>
+implements <a href="../../../../screen/ScreenHandlerListener.html" title="interface in net.minecraft.screen">ScreenHandlerListener</a></pre>
 </li>
 </ul>
 </div>
@@ -180,8 +179,8 @@ implements <a href="../../../../container/ContainerListener.html" title="interfa
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../../container/AnvilContainer.html" title="class in net.minecraft.container">AnvilContainer</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#anvilContainer">anvilContainer</a></span></code></th>
+<td class="colFirst"><code>private <a href="../../../../screen/AnvilScreenHandler.html" title="class in net.minecraft.screen">AnvilScreenHandler</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#anvilScreenHandler">anvilScreenHandler</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -196,11 +195,11 @@ implements <a href="../../../../container/ContainerListener.html" title="interfa
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a id="fields.inherited.from.class.net.minecraft.client.gui.screen.ingame.ContainerScreen">
+<li class="blockList"><a id="fields.inherited.from.class.net.minecraft.client.gui.screen.ingame.HandledScreen">
 <!--   -->
 </a>
-<h3>Fields inherited from class&nbsp;net.minecraft.client.gui.screen.ingame.<a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></h3>
-<code><a href="ContainerScreen.html#container">container</a>, <a href="ContainerScreen.html#containerHeight">containerHeight</a>, <a href="ContainerScreen.html#containerWidth">containerWidth</a>, <a href="ContainerScreen.html#cursorDragSlots">cursorDragSlots</a>, <a href="ContainerScreen.html#INVENTORY_TEXTURE">INVENTORY_TEXTURE</a>, <a href="ContainerScreen.html#isCursorDragging">isCursorDragging</a>, <a href="ContainerScreen.html#x">x</a>, <a href="ContainerScreen.html#y">y</a></code></li>
+<h3>Fields inherited from class&nbsp;net.minecraft.client.gui.screen.ingame.<a href="HandledScreen.html" title="class in net.minecraft.client.gui.screen.ingame">HandledScreen</a></h3>
+<code><a href="HandledScreen.html#backgroundHeight">backgroundHeight</a>, <a href="HandledScreen.html#backgroundWidth">backgroundWidth</a>, <a href="HandledScreen.html#cursorDragSlots">cursorDragSlots</a>, <a href="HandledScreen.html#INVENTORY_TEXTURE">INVENTORY_TEXTURE</a>, <a href="HandledScreen.html#isCursorDragging">isCursorDragging</a>, <a href="HandledScreen.html#screenHandler">screenHandler</a>, <a href="HandledScreen.html#x">x</a>, <a href="HandledScreen.html#y">y</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="fields.inherited.from.class.net.minecraft.client.gui.screen.Screen">
@@ -288,54 +287,54 @@ implements <a href="../../../../container/ContainerListener.html" title="interfa
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onContainerInventoryUpdate(net.minecraft.container.Container,net.minecraft.inventory.Inventory)">onContainerInventoryUpdate</a></span>&#8203;(<a href="../../../../container/Container.html" title="class in net.minecraft.container">Container</a>&nbsp;container,
-                          <a href="../../../../inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onScreenHandlerInventoryUpdate(net.minecraft.screen.ScreenHandler,net.minecraft.inventory.Inventory)">onScreenHandlerInventoryUpdate</a></span>&#8203;(<a href="../../../../screen/ScreenHandler.html" title="class in net.minecraft.screen">ScreenHandler</a>&nbsp;handler,
+                              <a href="../../../../inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onContainerPropertyUpdate(net.minecraft.container.Container,int,int)">onContainerPropertyUpdate</a></span>&#8203;(<a href="../../../../container/Container.html" title="class in net.minecraft.container">Container</a>&nbsp;container,
-                         int&nbsp;propertyId,
-                         int&nbsp;value)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onScreenHandlerPropertyUpdate(net.minecraft.screen.ScreenHandler,int,int)">onScreenHandlerPropertyUpdate</a></span>&#8203;(<a href="../../../../screen/ScreenHandler.html" title="class in net.minecraft.screen">ScreenHandler</a>&nbsp;handler,
+                             int&nbsp;propertyId,
+                             int&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onContainerRegistered(net.minecraft.container.Container,java.util.List)">onContainerRegistered</a></span>&#8203;(<a href="../../../../container/Container.html" title="class in net.minecraft.container">Container</a>&nbsp;container,
-                     <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&gt;&nbsp;list)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onScreenHandlerSlotUpdate(net.minecraft.screen.ScreenHandler,int,net.minecraft.item.ItemStack)">onScreenHandlerSlotUpdate</a></span>&#8203;(<a href="../../../../screen/ScreenHandler.html" title="class in net.minecraft.screen">ScreenHandler</a>&nbsp;handler,
+                         int&nbsp;slotId,
+                         <a href="../../../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#onContainerSlotUpdate(net.minecraft.container.Container,int,net.minecraft.item.ItemStack)">onContainerSlotUpdate</a></span>&#8203;(<a href="../../../../container/Container.html" title="class in net.minecraft.container">Container</a>&nbsp;container,
-                     int&nbsp;slotId,
-                     <a href="../../../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removed()">removed</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#render(int,int,float)">render</a></span>&#8203;(int&nbsp;mouseX,
       int&nbsp;mouseY,
       float&nbsp;delta)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>private void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#sendRepameUpdates()">sendRepameUpdates</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#updateScreenHandler(net.minecraft.screen.ScreenHandler,java.util.List)">updateScreenHandler</a></span>&#8203;(<a href="../../../../screen/ScreenHandler.html" title="class in net.minecraft.screen">ScreenHandler</a>&nbsp;handler,
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&gt;&nbsp;list)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.net.minecraft.client.gui.screen.ingame.ContainerScreen">
+<li class="blockList"><a id="methods.inherited.from.class.net.minecraft.client.gui.screen.ingame.HandledScreen">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;net.minecraft.client.gui.screen.ingame.<a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></h3>
-<code><a href="ContainerScreen.html#method_2903(net.minecraft.container.Slot,int,int,int)">method_2903</a>, <a href="ContainerScreen.html#method_2905(int)">method_2905</a>, <a href="ContainerScreen.html#method_2908(int,int,int,int,int,int)">method_2908</a>, <a href="ContainerScreen.html#mouseDragged(int,int,int,long)">mouseDragged</a>, <a href="ContainerScreen.html#mouseReleased(int,int,int)">mouseReleased</a>, <a href="ContainerScreen.html#shouldPauseGame()">shouldPauseGame</a>, <a href="ContainerScreen.html#tick()">tick</a></code></li>
+<h3>Methods inherited from class&nbsp;net.minecraft.client.gui.screen.ingame.<a href="HandledScreen.html" title="class in net.minecraft.client.gui.screen.ingame">HandledScreen</a></h3>
+<code><a href="HandledScreen.html#method_2903(net.minecraft.inventory.slot.Slot,int,int,int)">method_2903</a>, <a href="HandledScreen.html#method_2905(int)">method_2905</a>, <a href="HandledScreen.html#method_2908(int,int,int,int,int,int)">method_2908</a>, <a href="HandledScreen.html#mouseDragged(int,int,int,long)">mouseDragged</a>, <a href="HandledScreen.html#mouseReleased(int,int,int)">mouseReleased</a>, <a href="HandledScreen.html#shouldPauseGame()">shouldPauseGame</a>, <a href="HandledScreen.html#tick()">tick</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.net.minecraft.client.gui.screen.Screen">
@@ -383,13 +382,13 @@ implements <a href="../../../../container/ContainerListener.html" title="interfa
 <pre>private static final&nbsp;<a href="../../../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a> ANVIL_TEXTURE</pre>
 </li>
 </ul>
-<a id="anvilContainer">
+<a id="anvilScreenHandler">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>anvilContainer</h4>
-<pre>private&nbsp;<a href="../../../../container/AnvilContainer.html" title="class in net.minecraft.container">AnvilContainer</a> anvilContainer</pre>
+<h4>anvilScreenHandler</h4>
+<pre>private&nbsp;<a href="../../../../screen/AnvilScreenHandler.html" title="class in net.minecraft.screen">AnvilScreenHandler</a> anvilScreenHandler</pre>
 </li>
 </ul>
 <a id="renameTextField">
@@ -449,7 +448,7 @@ implements <a href="../../../../container/ContainerListener.html" title="interfa
 <pre class="methodSignature">public&nbsp;void&nbsp;init()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="ContainerScreen.html#init()">init</a></code>&nbsp;in class&nbsp;<code><a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></code></dd>
+<dd><code><a href="HandledScreen.html#init()">init</a></code>&nbsp;in class&nbsp;<code><a href="HandledScreen.html" title="class in net.minecraft.client.gui.screen.ingame">HandledScreen</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -462,7 +461,7 @@ implements <a href="../../../../container/ContainerListener.html" title="interfa
 <pre class="methodSignature">public&nbsp;void&nbsp;removed()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="ContainerScreen.html#removed()">removed</a></code>&nbsp;in class&nbsp;<code><a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></code></dd>
+<dd><code><a href="HandledScreen.html#removed()">removed</a></code>&nbsp;in class&nbsp;<code><a href="HandledScreen.html" title="class in net.minecraft.client.gui.screen.ingame">HandledScreen</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -476,7 +475,7 @@ implements <a href="../../../../container/ContainerListener.html" title="interfa
                               int&nbsp;mouseY)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="ContainerScreen.html#drawForeground(int,int)">drawForeground</a></code>&nbsp;in class&nbsp;<code><a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></code></dd>
+<dd><code><a href="HandledScreen.html#drawForeground(int,int)">drawForeground</a></code>&nbsp;in class&nbsp;<code><a href="HandledScreen.html" title="class in net.minecraft.client.gui.screen.ingame">HandledScreen</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -490,7 +489,7 @@ implements <a href="../../../../container/ContainerListener.html" title="interfa
                           int&nbsp;code)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="ContainerScreen.html#keyPressed(char,int)">keyPressed</a></code>&nbsp;in class&nbsp;<code><a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></code></dd>
+<dd><code><a href="HandledScreen.html#keyPressed(char,int)">keyPressed</a></code>&nbsp;in class&nbsp;<code><a href="HandledScreen.html" title="class in net.minecraft.client.gui.screen.ingame">HandledScreen</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -514,7 +513,7 @@ implements <a href="../../../../container/ContainerListener.html" title="interfa
                             int&nbsp;button)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="ContainerScreen.html#mouseClicked(int,int,int)">mouseClicked</a></code>&nbsp;in class&nbsp;<code><a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></code></dd>
+<dd><code><a href="HandledScreen.html#mouseClicked(int,int,int)">mouseClicked</a></code>&nbsp;in class&nbsp;<code><a href="HandledScreen.html" title="class in net.minecraft.client.gui.screen.ingame">HandledScreen</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -529,7 +528,7 @@ implements <a href="../../../../container/ContainerListener.html" title="interfa
                    float&nbsp;delta)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="ContainerScreen.html#render(int,int,float)">render</a></code>&nbsp;in class&nbsp;<code><a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></code></dd>
+<dd><code><a href="HandledScreen.html#render(int,int,float)">render</a></code>&nbsp;in class&nbsp;<code><a href="HandledScreen.html" title="class in net.minecraft.client.gui.screen.ingame">HandledScreen</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -544,65 +543,65 @@ implements <a href="../../../../container/ContainerListener.html" title="interfa
                               int&nbsp;mouseY)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="ContainerScreen.html#drawBackground(float,int,int)">drawBackground</a></code>&nbsp;in class&nbsp;<code><a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></code></dd>
+<dd><code><a href="HandledScreen.html#drawBackground(float,int,int)">drawBackground</a></code>&nbsp;in class&nbsp;<code><a href="HandledScreen.html" title="class in net.minecraft.client.gui.screen.ingame">HandledScreen</a></code></dd>
 </dl>
 </li>
 </ul>
-<a id="onContainerRegistered(net.minecraft.container.Container,java.util.List)">
+<a id="updateScreenHandler(net.minecraft.screen.ScreenHandler,java.util.List)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>onContainerRegistered</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;onContainerRegistered&#8203;(<a href="../../../../container/Container.html" title="class in net.minecraft.container">Container</a>&nbsp;container,
-                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&gt;&nbsp;list)</pre>
+<h4>updateScreenHandler</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;updateScreenHandler&#8203;(<a href="../../../../screen/ScreenHandler.html" title="class in net.minecraft.screen">ScreenHandler</a>&nbsp;handler,
+                                <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="../../../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&gt;&nbsp;list)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../container/ContainerListener.html#onContainerRegistered(net.minecraft.container.Container,java.util.List)">onContainerRegistered</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../container/ContainerListener.html" title="interface in net.minecraft.container">ContainerListener</a></code></dd>
+<dd><code><a href="../../../../screen/ScreenHandlerListener.html#updateScreenHandler(net.minecraft.screen.ScreenHandler,java.util.List)">updateScreenHandler</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../screen/ScreenHandlerListener.html" title="interface in net.minecraft.screen">ScreenHandlerListener</a></code></dd>
 </dl>
 </li>
 </ul>
-<a id="onContainerSlotUpdate(net.minecraft.container.Container,int,net.minecraft.item.ItemStack)">
+<a id="onScreenHandlerSlotUpdate(net.minecraft.screen.ScreenHandler,int,net.minecraft.item.ItemStack)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>onContainerSlotUpdate</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;onContainerSlotUpdate&#8203;(<a href="../../../../container/Container.html" title="class in net.minecraft.container">Container</a>&nbsp;container,
-                                  int&nbsp;slotId,
-                                  <a href="../../../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</pre>
+<h4>onScreenHandlerSlotUpdate</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;onScreenHandlerSlotUpdate&#8203;(<a href="../../../../screen/ScreenHandler.html" title="class in net.minecraft.screen">ScreenHandler</a>&nbsp;handler,
+                                      int&nbsp;slotId,
+                                      <a href="../../../../item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../container/ContainerListener.html#onContainerSlotUpdate(net.minecraft.container.Container,int,net.minecraft.item.ItemStack)">onContainerSlotUpdate</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../container/ContainerListener.html" title="interface in net.minecraft.container">ContainerListener</a></code></dd>
+<dd><code><a href="../../../../screen/ScreenHandlerListener.html#onScreenHandlerSlotUpdate(net.minecraft.screen.ScreenHandler,int,net.minecraft.item.ItemStack)">onScreenHandlerSlotUpdate</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../screen/ScreenHandlerListener.html" title="interface in net.minecraft.screen">ScreenHandlerListener</a></code></dd>
 </dl>
 </li>
 </ul>
-<a id="onContainerPropertyUpdate(net.minecraft.container.Container,int,int)">
+<a id="onScreenHandlerPropertyUpdate(net.minecraft.screen.ScreenHandler,int,int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>onContainerPropertyUpdate</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;onContainerPropertyUpdate&#8203;(<a href="../../../../container/Container.html" title="class in net.minecraft.container">Container</a>&nbsp;container,
-                                      int&nbsp;propertyId,
-                                      int&nbsp;value)</pre>
+<h4>onScreenHandlerPropertyUpdate</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;onScreenHandlerPropertyUpdate&#8203;(<a href="../../../../screen/ScreenHandler.html" title="class in net.minecraft.screen">ScreenHandler</a>&nbsp;handler,
+                                          int&nbsp;propertyId,
+                                          int&nbsp;value)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../container/ContainerListener.html#onContainerPropertyUpdate(net.minecraft.container.Container,int,int)">onContainerPropertyUpdate</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../container/ContainerListener.html" title="interface in net.minecraft.container">ContainerListener</a></code></dd>
+<dd><code><a href="../../../../screen/ScreenHandlerListener.html#onScreenHandlerPropertyUpdate(net.minecraft.screen.ScreenHandler,int,int)">onScreenHandlerPropertyUpdate</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../screen/ScreenHandlerListener.html" title="interface in net.minecraft.screen">ScreenHandlerListener</a></code></dd>
 </dl>
 </li>
 </ul>
-<a id="onContainerInventoryUpdate(net.minecraft.container.Container,net.minecraft.inventory.Inventory)">
+<a id="onScreenHandlerInventoryUpdate(net.minecraft.screen.ScreenHandler,net.minecraft.inventory.Inventory)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>onContainerInventoryUpdate</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;onContainerInventoryUpdate&#8203;(<a href="../../../../container/Container.html" title="class in net.minecraft.container">Container</a>&nbsp;container,
-                                       <a href="../../../../inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory)</pre>
+<h4>onScreenHandlerInventoryUpdate</h4>
+<pre class="methodSignature">public&nbsp;void&nbsp;onScreenHandlerInventoryUpdate&#8203;(<a href="../../../../screen/ScreenHandler.html" title="class in net.minecraft.screen">ScreenHandler</a>&nbsp;handler,
+                                           <a href="../../../../inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../container/ContainerListener.html#onContainerInventoryUpdate(net.minecraft.container.Container,net.minecraft.inventory.Inventory)">onContainerInventoryUpdate</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../container/ContainerListener.html" title="interface in net.minecraft.container">ContainerListener</a></code></dd>
+<dd><code><a href="../../../../screen/ScreenHandlerListener.html#onScreenHandlerInventoryUpdate(net.minecraft.screen.ScreenHandler,net.minecraft.inventory.Inventory)">onScreenHandlerInventoryUpdate</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../screen/ScreenHandlerListener.html" title="interface in net.minecraft.screen">ScreenHandlerListener</a></code></dd>
 </dl>
 </li>
 </ul>

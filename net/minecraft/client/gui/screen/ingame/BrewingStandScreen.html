@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -129,7 +128,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="../Screen.html" title="class in net.minecraft.client.gui.screen">net.minecraft.client.gui.screen.Screen</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">net.minecraft.client.gui.screen.ingame.ContainerScreen</a></li>
+<li><a href="HandledScreen.html" title="class in net.minecraft.client.gui.screen.ingame">net.minecraft.client.gui.screen.ingame.HandledScreen</a></li>
 <li>
 <ul class="inheritance">
 <li>net.minecraft.client.gui.screen.ingame.BrewingStandScreen</li>
@@ -152,7 +151,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>@Environment(CLIENT)
 public class <span class="typeNameLabel">BrewingStandScreen</span>
-extends <a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></pre>
+extends <a href="HandledScreen.html" title="class in net.minecraft.client.gui.screen.ingame">HandledScreen</a></pre>
 </li>
 </ul>
 </div>
@@ -190,11 +189,11 @@ extends <a href="ContainerScreen.html" title="class in net.minecraft.client.gui.
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a id="fields.inherited.from.class.net.minecraft.client.gui.screen.ingame.ContainerScreen">
+<li class="blockList"><a id="fields.inherited.from.class.net.minecraft.client.gui.screen.ingame.HandledScreen">
 <!--   -->
 </a>
-<h3>Fields inherited from class&nbsp;net.minecraft.client.gui.screen.ingame.<a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></h3>
-<code><a href="ContainerScreen.html#container">container</a>, <a href="ContainerScreen.html#containerHeight">containerHeight</a>, <a href="ContainerScreen.html#containerWidth">containerWidth</a>, <a href="ContainerScreen.html#cursorDragSlots">cursorDragSlots</a>, <a href="ContainerScreen.html#INVENTORY_TEXTURE">INVENTORY_TEXTURE</a>, <a href="ContainerScreen.html#isCursorDragging">isCursorDragging</a>, <a href="ContainerScreen.html#x">x</a>, <a href="ContainerScreen.html#y">y</a></code></li>
+<h3>Fields inherited from class&nbsp;net.minecraft.client.gui.screen.ingame.<a href="HandledScreen.html" title="class in net.minecraft.client.gui.screen.ingame">HandledScreen</a></h3>
+<code><a href="HandledScreen.html#backgroundHeight">backgroundHeight</a>, <a href="HandledScreen.html#backgroundWidth">backgroundWidth</a>, <a href="HandledScreen.html#cursorDragSlots">cursorDragSlots</a>, <a href="HandledScreen.html#INVENTORY_TEXTURE">INVENTORY_TEXTURE</a>, <a href="HandledScreen.html#isCursorDragging">isCursorDragging</a>, <a href="HandledScreen.html#screenHandler">screenHandler</a>, <a href="HandledScreen.html#x">x</a>, <a href="HandledScreen.html#y">y</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="fields.inherited.from.class.net.minecraft.client.gui.screen.Screen">
@@ -264,11 +263,11 @@ extends <a href="ContainerScreen.html" title="class in net.minecraft.client.gui.
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.net.minecraft.client.gui.screen.ingame.ContainerScreen">
+<li class="blockList"><a id="methods.inherited.from.class.net.minecraft.client.gui.screen.ingame.HandledScreen">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;net.minecraft.client.gui.screen.ingame.<a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></h3>
-<code><a href="ContainerScreen.html#init()">init</a>, <a href="ContainerScreen.html#keyPressed(char,int)">keyPressed</a>, <a href="ContainerScreen.html#method_2903(net.minecraft.container.Slot,int,int,int)">method_2903</a>, <a href="ContainerScreen.html#method_2905(int)">method_2905</a>, <a href="ContainerScreen.html#method_2908(int,int,int,int,int,int)">method_2908</a>, <a href="ContainerScreen.html#mouseClicked(int,int,int)">mouseClicked</a>, <a href="ContainerScreen.html#mouseDragged(int,int,int,long)">mouseDragged</a>, <a href="ContainerScreen.html#mouseReleased(int,int,int)">mouseReleased</a>, <a href="ContainerScreen.html#removed()">removed</a>, <a href="ContainerScreen.html#render(int,int,float)">render</a>, <a href="ContainerScreen.html#shouldPauseGame()">shouldPauseGame</a>, <a href="ContainerScreen.html#tick()">tick</a></code></li>
+<h3>Methods inherited from class&nbsp;net.minecraft.client.gui.screen.ingame.<a href="HandledScreen.html" title="class in net.minecraft.client.gui.screen.ingame">HandledScreen</a></h3>
+<code><a href="HandledScreen.html#init()">init</a>, <a href="HandledScreen.html#keyPressed(char,int)">keyPressed</a>, <a href="HandledScreen.html#method_2903(net.minecraft.inventory.slot.Slot,int,int,int)">method_2903</a>, <a href="HandledScreen.html#method_2905(int)">method_2905</a>, <a href="HandledScreen.html#method_2908(int,int,int,int,int,int)">method_2908</a>, <a href="HandledScreen.html#mouseClicked(int,int,int)">mouseClicked</a>, <a href="HandledScreen.html#mouseDragged(int,int,int,long)">mouseDragged</a>, <a href="HandledScreen.html#mouseReleased(int,int,int)">mouseReleased</a>, <a href="HandledScreen.html#removed()">removed</a>, <a href="HandledScreen.html#render(int,int,float)">render</a>, <a href="HandledScreen.html#shouldPauseGame()">shouldPauseGame</a>, <a href="HandledScreen.html#tick()">tick</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.net.minecraft.client.gui.screen.Screen">
@@ -374,7 +373,7 @@ extends <a href="ContainerScreen.html" title="class in net.minecraft.client.gui.
                               int&nbsp;mouseY)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="ContainerScreen.html#drawForeground(int,int)">drawForeground</a></code>&nbsp;in class&nbsp;<code><a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></code></dd>
+<dd><code><a href="HandledScreen.html#drawForeground(int,int)">drawForeground</a></code>&nbsp;in class&nbsp;<code><a href="HandledScreen.html" title="class in net.minecraft.client.gui.screen.ingame">HandledScreen</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -389,7 +388,7 @@ extends <a href="ContainerScreen.html" title="class in net.minecraft.client.gui.
                               int&nbsp;mouseY)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="ContainerScreen.html#drawBackground(float,int,int)">drawBackground</a></code>&nbsp;in class&nbsp;<code><a href="ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></code></dd>
+<dd><code><a href="HandledScreen.html#drawBackground(float,int,int)">drawBackground</a></code>&nbsp;in class&nbsp;<code><a href="HandledScreen.html" title="class in net.minecraft.client.gui.screen.ingame">HandledScreen</a></code></dd>
 </dl>
 </li>
 </ul>

@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -137,7 +136,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="LockableContainerProvider.html" title="interface in net.minecraft.block.entity">LockableContainerProvider</a></code>, <code><a href="../../container/Nameable.html" title="interface in net.minecraft.container">Nameable</a></code>, <code><a href="../../inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code>, <code><a href="../../text/Nameable.html" title="interface in net.minecraft.text">Nameable</a></code></dd>
+<dd><code><a href="LockableScreenHandlerFactory.html" title="interface in net.minecraft.block.entity">LockableScreenHandlerFactory</a></code>, <code><a href="../../inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code>, <code><a href="../../screen/NamedScreenHandlerFactory.html" title="interface in net.minecraft.screen">NamedScreenHandlerFactory</a></code>, <code><a href="../../text/Nameable.html" title="interface in net.minecraft.text">Nameable</a></code></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -146,7 +145,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public abstract class <span class="typeNameLabel">LockableContainerBlockEntity</span>
 extends <a href="BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a>
-implements <a href="../../container/Nameable.html" title="interface in net.minecraft.container">Nameable</a>, <a href="LockableContainerProvider.html" title="interface in net.minecraft.block.entity">LockableContainerProvider</a></pre>
+implements <a href="../../screen/NamedScreenHandlerFactory.html" title="interface in net.minecraft.screen">NamedScreenHandlerFactory</a>, <a href="LockableScreenHandlerFactory.html" title="interface in net.minecraft.block.entity">LockableScreenHandlerFactory</a></pre>
 </li>
 </ul>
 </div>
@@ -168,7 +167,7 @@ implements <a href="../../container/Nameable.html" title="interface in net.minec
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../inventory/ContainerLock.html" title="class in net.minecraft.inventory">ContainerLock</a></code></td>
+<td class="colFirst"><code>private <a href="../../inventory/ScreenHandlerLock.html" title="class in net.minecraft.inventory">ScreenHandlerLock</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#lock">lock</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -224,7 +223,7 @@ implements <a href="../../container/Nameable.html" title="interface in net.minec
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../inventory/ContainerLock.html" title="class in net.minecraft.inventory">ContainerLock</a></code></td>
+<td class="colFirst"><code><a href="../../inventory/ScreenHandlerLock.html" title="class in net.minecraft.inventory">ScreenHandlerLock</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLock()">getLock</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -240,7 +239,7 @@ implements <a href="../../container/Nameable.html" title="interface in net.minec
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setLock(net.minecraft.inventory.ContainerLock)">setLock</a></span>&#8203;(<a href="../../inventory/ContainerLock.html" title="class in net.minecraft.inventory">ContainerLock</a>&nbsp;lock)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setLock(net.minecraft.inventory.ScreenHandlerLock)">setLock</a></span>&#8203;(<a href="../../inventory/ScreenHandlerLock.html" title="class in net.minecraft.inventory">ScreenHandlerLock</a>&nbsp;lock)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -271,18 +270,18 @@ implements <a href="../../container/Nameable.html" title="interface in net.minec
 <code><a href="../../inventory/Inventory.html#canPlayerUseInv(net.minecraft.entity.player.PlayerEntity)">canPlayerUseInv</a>, <a href="../../inventory/Inventory.html#clear()">clear</a>, <a href="../../inventory/Inventory.html#getInvMaxStackAmount()">getInvMaxStackAmount</a>, <a href="../../inventory/Inventory.html#getInvSize()">getInvSize</a>, <a href="../../inventory/Inventory.html#getInvStack(int)">getInvStack</a>, <a href="../../inventory/Inventory.html#getProperties()">getProperties</a>, <a href="../../inventory/Inventory.html#getProperty(int)">getProperty</a>, <a href="../../inventory/Inventory.html#isValidInvStack(int,net.minecraft.item.ItemStack)">isValidInvStack</a>, <a href="../../inventory/Inventory.html#markDirty()">markDirty</a>, <a href="../../inventory/Inventory.html#onInvClose(net.minecraft.entity.player.PlayerEntity)">onInvClose</a>, <a href="../../inventory/Inventory.html#onInvOpen(net.minecraft.entity.player.PlayerEntity)">onInvOpen</a>, <a href="../../inventory/Inventory.html#removeInvStack(int)">removeInvStack</a>, <a href="../../inventory/Inventory.html#setInvStack(int,net.minecraft.item.ItemStack)">setInvStack</a>, <a href="../../inventory/Inventory.html#setProperty(int,int)">setProperty</a>, <a href="../../inventory/Inventory.html#takeInvStack(int,int)">takeInvStack</a></code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.net.minecraft.container.Nameable">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;net.minecraft.container.<a href="../../container/Nameable.html" title="interface in net.minecraft.container">Nameable</a></h3>
-<code><a href="../../container/Nameable.html#createContainer(net.minecraft.entity.player.PlayerInventory,net.minecraft.entity.player.PlayerEntity)">createContainer</a>, <a href="../../container/Nameable.html#getId()">getId</a></code></li>
-</ul>
-<ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.net.minecraft.text.Nameable">
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;net.minecraft.text.<a href="../../text/Nameable.html" title="interface in net.minecraft.text">Nameable</a></h3>
 <code><a href="../../text/Nameable.html#getTranslationKey()">getTranslationKey</a>, <a href="../../text/Nameable.html#hasCustomName()">hasCustomName</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a id="methods.inherited.from.class.net.minecraft.screen.NamedScreenHandlerFactory">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;net.minecraft.screen.<a href="../../screen/NamedScreenHandlerFactory.html" title="interface in net.minecraft.screen">NamedScreenHandlerFactory</a></h3>
+<code><a href="../../screen/NamedScreenHandlerFactory.html#createScreenHandler(net.minecraft.entity.player.PlayerInventory,net.minecraft.entity.player.PlayerEntity)">createScreenHandler</a>, <a href="../../screen/NamedScreenHandlerFactory.html#getId()">getId</a></code></li>
 </ul>
 </li>
 </ul>
@@ -306,7 +305,7 @@ implements <a href="../../container/Nameable.html" title="interface in net.minec
 <ul class="blockListLast">
 <li class="blockList">
 <h4>lock</h4>
-<pre>private&nbsp;<a href="../../inventory/ContainerLock.html" title="class in net.minecraft.inventory">ContainerLock</a> lock</pre>
+<pre>private&nbsp;<a href="../../inventory/ScreenHandlerLock.html" title="class in net.minecraft.inventory">ScreenHandlerLock</a> lock</pre>
 </li>
 </ul>
 </li>
@@ -373,7 +372,7 @@ implements <a href="../../container/Nameable.html" title="interface in net.minec
 <pre class="methodSignature">public&nbsp;boolean&nbsp;hasLock()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="LockableContainerProvider.html#hasLock()">hasLock</a></code>&nbsp;in interface&nbsp;<code><a href="LockableContainerProvider.html" title="interface in net.minecraft.block.entity">LockableContainerProvider</a></code></dd>
+<dd><code><a href="LockableScreenHandlerFactory.html#hasLock()">hasLock</a></code>&nbsp;in interface&nbsp;<code><a href="LockableScreenHandlerFactory.html" title="interface in net.minecraft.block.entity">LockableScreenHandlerFactory</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -383,23 +382,23 @@ implements <a href="../../container/Nameable.html" title="interface in net.minec
 <ul class="blockList">
 <li class="blockList">
 <h4>getLock</h4>
-<pre class="methodSignature">public&nbsp;<a href="../../inventory/ContainerLock.html" title="class in net.minecraft.inventory">ContainerLock</a>&nbsp;getLock()</pre>
+<pre class="methodSignature">public&nbsp;<a href="../../inventory/ScreenHandlerLock.html" title="class in net.minecraft.inventory">ScreenHandlerLock</a>&nbsp;getLock()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="LockableContainerProvider.html#getLock()">getLock</a></code>&nbsp;in interface&nbsp;<code><a href="LockableContainerProvider.html" title="interface in net.minecraft.block.entity">LockableContainerProvider</a></code></dd>
+<dd><code><a href="LockableScreenHandlerFactory.html#getLock()">getLock</a></code>&nbsp;in interface&nbsp;<code><a href="LockableScreenHandlerFactory.html" title="interface in net.minecraft.block.entity">LockableScreenHandlerFactory</a></code></dd>
 </dl>
 </li>
 </ul>
-<a id="setLock(net.minecraft.inventory.ContainerLock)">
+<a id="setLock(net.minecraft.inventory.ScreenHandlerLock)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setLock</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;setLock&#8203;(<a href="../../inventory/ContainerLock.html" title="class in net.minecraft.inventory">ContainerLock</a>&nbsp;lock)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;setLock&#8203;(<a href="../../inventory/ScreenHandlerLock.html" title="class in net.minecraft.inventory">ScreenHandlerLock</a>&nbsp;lock)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="LockableContainerProvider.html#setLock(net.minecraft.inventory.ContainerLock)">setLock</a></code>&nbsp;in interface&nbsp;<code><a href="LockableContainerProvider.html" title="interface in net.minecraft.block.entity">LockableContainerProvider</a></code></dd>
+<dd><code><a href="LockableScreenHandlerFactory.html#setLock(net.minecraft.inventory.ScreenHandlerLock)">setLock</a></code>&nbsp;in interface&nbsp;<code><a href="LockableScreenHandlerFactory.html" title="interface in net.minecraft.block.entity">LockableScreenHandlerFactory</a></code></dd>
 </dl>
 </li>
 </ul>

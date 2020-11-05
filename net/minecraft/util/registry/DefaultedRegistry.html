@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -27,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10};
+var data = {"i0":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -126,12 +125,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="MutableRegistry.html" title="class in net.minecraft.util.registry">net.minecraft.util.registry.MutableRegistry</a>&lt;K,&#8203;V&gt;</li>
 <li>
 <ul class="inheritance">
-<li><a href="SimpleRegistry.html" title="class in net.minecraft.util.registry">net.minecraft.util.registry.SimpleRegistry</a>&lt;K,&#8203;V&gt;</li>
-<li>
-<ul class="inheritance">
 <li>net.minecraft.util.registry.DefaultedRegistry&lt;K,&#8203;V&gt;</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -142,11 +136,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;V&gt;</code>, <code><a href="../ObjectIdIterable.html" title="interface in net.minecraft.util">ObjectIdIterable</a>&lt;V&gt;</code>, <code><a href="Registry.html" title="interface in net.minecraft.util.registry">Registry</a>&lt;K,&#8203;V&gt;</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang" class="externalLink">Iterable</a>&lt;V&gt;</code>, <code><a href="Registry.html" title="interface in net.minecraft.util.registry">Registry</a>&lt;K,&#8203;V&gt;</code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">DefaultedRegistry&lt;K,&#8203;V&gt;</span>
-extends <a href="SimpleRegistry.html" title="class in net.minecraft.util.registry">SimpleRegistry</a>&lt;K,&#8203;V&gt;</pre>
+extends <a href="MutableRegistry.html" title="class in net.minecraft.util.registry">MutableRegistry</a>&lt;K,&#8203;V&gt;</pre>
 </li>
 </ul>
 </div>
@@ -172,19 +166,7 @@ extends <a href="SimpleRegistry.html" title="class in net.minecraft.util.registr
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#defaultValue">defaultValue</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#objectType">objectType</a></span></code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a id="fields.inherited.from.class.net.minecraft.util.registry.SimpleRegistry">
-<!--   -->
-</a>
-<h3>Fields inherited from class&nbsp;net.minecraft.util.registry.<a href="SimpleRegistry.html" title="class in net.minecraft.util.registry">SimpleRegistry</a></h3>
-<code><a href="SimpleRegistry.html#ids">ids</a>, <a href="SimpleRegistry.html#objects">objects</a></code></li>
-</ul>
 <ul class="blockList">
 <li class="blockList"><a id="fields.inherited.from.class.net.minecraft.util.registry.MutableRegistry">
 <!--   -->
@@ -209,7 +191,7 @@ extends <a href="SimpleRegistry.html" title="class in net.minecraft.util.registr
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(K)">DefaultedRegistry</a></span>&#8203;(<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>&nbsp;objectType)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(V)">DefaultedRegistry</a></span>&#8203;(<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&nbsp;defaultValue)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -231,41 +213,17 @@ extends <a href="SimpleRegistry.html" title="class in net.minecraft.util.registr
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#add(int,K,V)">add</a></span>&#8203;(int&nbsp;id,
-   <a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>&nbsp;identifier,
-   <a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&nbsp;object)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#byIndex(int)">byIndex</a></span>&#8203;(int&nbsp;index)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#get(K)">get</a></span>&#8203;(<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>&nbsp;key)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#validateObjectType()">validateObjectType</a></span>()</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a id="methods.inherited.from.class.net.minecraft.util.registry.SimpleRegistry">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;net.minecraft.util.registry.<a href="SimpleRegistry.html" title="class in net.minecraft.util.registry">SimpleRegistry</a></h3>
-<code><a href="SimpleRegistry.html#containsKey(K)">containsKey</a>, <a href="SimpleRegistry.html#createMap()">createMap</a>, <a href="SimpleRegistry.html#getIdentifier(V)">getIdentifier</a>, <a href="SimpleRegistry.html#getIndex(V)">getIndex</a>, <a href="SimpleRegistry.html#iterator()">iterator</a></code></li>
-</ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.net.minecraft.util.registry.MutableRegistry">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.util.registry.<a href="MutableRegistry.html" title="class in net.minecraft.util.registry">MutableRegistry</a></h3>
-<code><a href="MutableRegistry.html#keySet()">keySet</a>, <a href="MutableRegistry.html#put(K,V)">put</a></code></li>
+<code><a href="MutableRegistry.html#containsKey(K)">containsKey</a>, <a href="MutableRegistry.html#createMap()">createMap</a>, <a href="MutableRegistry.html#iterator()">iterator</a>, <a href="MutableRegistry.html#keySet()">keySet</a>, <a href="MutableRegistry.html#put(K,V)">put</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a id="methods.inherited.from.class.java.lang.Object">
@@ -297,22 +255,13 @@ extends <a href="SimpleRegistry.html" title="class in net.minecraft.util.registr
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a id="objectType">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>objectType</h4>
-<pre>private final&nbsp;<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a> objectType</pre>
-</li>
-</ul>
 <a id="defaultValue">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>defaultValue</h4>
-<pre>private&nbsp;<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a> defaultValue</pre>
+<pre>private final&nbsp;<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a> defaultValue</pre>
 </li>
 </ul>
 </li>
@@ -327,13 +276,13 @@ extends <a href="SimpleRegistry.html" title="class in net.minecraft.util.registr
 <h3>Constructor Detail</h3>
 <a id="&lt;init&gt;(java.lang.Object)">
 <!--   -->
-</a><a id="&lt;init&gt;(K)">
+</a><a id="&lt;init&gt;(V)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DefaultedRegistry</h4>
-<pre>public&nbsp;DefaultedRegistry&#8203;(<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>&nbsp;objectType)</pre>
+<pre>public&nbsp;DefaultedRegistry&#8203;(<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&nbsp;defaultValue)</pre>
 </li>
 </ul>
 </li>
@@ -346,38 +295,12 @@ extends <a href="SimpleRegistry.html" title="class in net.minecraft.util.registr
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="add(int,java.lang.Object,java.lang.Object)">
-<!--   -->
-</a><a id="add(int,K,V)">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>add</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;add&#8203;(int&nbsp;id,
-                <a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>&nbsp;identifier,
-                <a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&nbsp;object)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="SimpleRegistry.html#add(int,K,V)">add</a></code>&nbsp;in class&nbsp;<code><a href="SimpleRegistry.html" title="class in net.minecraft.util.registry">SimpleRegistry</a>&lt;<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>,&#8203;<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a id="validateObjectType()">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>validateObjectType</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;validateObjectType()</pre>
-</li>
-</ul>
 <a id="get(java.lang.Object)">
 <!--   -->
 </a><a id="get(K)">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>get</h4>
 <pre class="methodSignature">public&nbsp;<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&nbsp;get&#8203;(<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>&nbsp;key)</pre>
@@ -385,20 +308,7 @@ extends <a href="SimpleRegistry.html" title="class in net.minecraft.util.registr
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="Registry.html#get(K)">get</a></code>&nbsp;in interface&nbsp;<code><a href="Registry.html" title="interface in net.minecraft.util.registry">Registry</a>&lt;<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>,&#8203;<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="SimpleRegistry.html#get(K)">get</a></code>&nbsp;in class&nbsp;<code><a href="SimpleRegistry.html" title="class in net.minecraft.util.registry">SimpleRegistry</a>&lt;<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>,&#8203;<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a id="byIndex(int)">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>byIndex</h4>
-<pre class="methodSignature">public&nbsp;<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&nbsp;byIndex&#8203;(int&nbsp;index)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="SimpleRegistry.html#byIndex(int)">byIndex</a></code>&nbsp;in class&nbsp;<code><a href="SimpleRegistry.html" title="class in net.minecraft.util.registry">SimpleRegistry</a>&lt;<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>,&#8203;<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&gt;</code></dd>
+<dd><code><a href="MutableRegistry.html#get(K)">get</a></code>&nbsp;in class&nbsp;<code><a href="MutableRegistry.html" title="class in net.minecraft.util.registry">MutableRegistry</a>&lt;<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>,&#8203;<a href="DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>

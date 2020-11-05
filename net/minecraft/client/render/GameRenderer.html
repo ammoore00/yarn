@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -411,7 +410,7 @@ implements <a href="../../resource/ResourceReloadListener.html" title="interface
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private <a href="../../resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#resourceContainer">resourceContainer</a></span></code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#resourceManager">resourceManager</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -485,28 +484,28 @@ implements <a href="../../resource/ResourceReloadListener.html" title="interface
 <th class="colLast" scope="col">Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#areShadersSupported()">areShadersSupported</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#disableShader()">disableShader</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../gui/MapRenderer.html" title="class in net.minecraft.client.gui">MapRenderer</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getMapRenderer()">getMapRenderer</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../gl/ShaderEffect.html" title="class in net.minecraft.client.gl">ShaderEffect</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getShader()">getShader</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>private void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#loadShader(net.minecraft.util.Identifier)">loadShader</a></span>&#8203;(<a href="../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_3352()">method_3352</a></span>()</code></th>
+<td class="colFirst"><code>private void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#loadShader(net.minecraft.util.Identifier)">loadShader</a></span>&#8203;(<a href="../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;id)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -780,13 +779,13 @@ implements <a href="../../resource/ResourceReloadListener.html" title="interface
 <pre>private&nbsp;<a href="../MinecraftClient.html" title="class in net.minecraft.client">MinecraftClient</a> client</pre>
 </li>
 </ul>
-<a id="resourceContainer">
+<a id="resourceManager">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>resourceContainer</h4>
-<pre>private final&nbsp;<a href="../../resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a> resourceContainer</pre>
+<h4>resourceManager</h4>
+<pre>private final&nbsp;<a href="../../resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a> resourceManager</pre>
 </li>
 </ul>
 <a id="random">
@@ -1251,13 +1250,13 @@ implements <a href="../../resource/ResourceReloadListener.html" title="interface
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="method_3352()">
+<a id="areShadersSupported()">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_3352</h4>
-<pre class="methodSignature">public&nbsp;boolean&nbsp;method_3352()</pre>
+<h4>areShadersSupported</h4>
+<pre class="methodSignature">public&nbsp;boolean&nbsp;areShadersSupported()</pre>
 </li>
 </ul>
 <a id="disableShader()">
@@ -1302,7 +1301,7 @@ implements <a href="../../resource/ResourceReloadListener.html" title="interface
 <ul class="blockList">
 <li class="blockList">
 <h4>loadShader</h4>
-<pre class="methodSignature">private&nbsp;void&nbsp;loadShader&#8203;(<a href="../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier)</pre>
+<pre class="methodSignature">private&nbsp;void&nbsp;loadShader&#8203;(<a href="../../util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;id)</pre>
 </li>
 </ul>
 <a id="reload(net.minecraft.resource.ResourceManager)">

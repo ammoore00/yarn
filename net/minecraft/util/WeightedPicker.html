@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -199,26 +198,26 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static int</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6726(java.util.Collection)">method_6726</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;? extends <a href="WeightedPicker.Entry.html" title="class in net.minecraft.util">WeightedPicker.Entry</a>&gt;&nbsp;collection)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getRate(java.util.Collection)">getRate</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;? extends <a href="WeightedPicker.Entry.html" title="class in net.minecraft.util">WeightedPicker.Entry</a>&gt;&nbsp;entries)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static &lt;T extends <a href="WeightedPicker.Entry.html" title="class in net.minecraft.util">WeightedPicker.Entry</a>&gt;<br>T</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6727(java.util.Collection,int)">method_6727</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;T&gt;&nbsp;collection,
-           int&nbsp;int2)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#pick(java.util.Collection,int)">pick</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;T&gt;&nbsp;entries,
+    int&nbsp;rate)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>static &lt;T extends <a href="WeightedPicker.Entry.html" title="class in net.minecraft.util">WeightedPicker.Entry</a>&gt;<br>T</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6728(java.util.Random,java.util.Collection)">method_6728</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;random,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;T&gt;&nbsp;collection)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#pickRandomly(java.util.Random,java.util.Collection,int)">pickRandomly</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;rand,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;T&gt;&nbsp;entries,
+            int&nbsp;rate)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>static &lt;T extends <a href="WeightedPicker.Entry.html" title="class in net.minecraft.util">WeightedPicker.Entry</a>&gt;<br>T</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_6729(java.util.Random,java.util.Collection,int)">method_6729</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;random,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;T&gt;&nbsp;collection,
-           int&nbsp;int2)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#rand(java.util.Random,java.util.Collection)">rand</a></span>&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;rand,
+    <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;T&gt;&nbsp;entries)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </table>
@@ -264,44 +263,44 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="method_6726(java.util.Collection)">
+<a id="getRate(java.util.Collection)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_6726</h4>
-<pre class="methodSignature">public static&nbsp;int&nbsp;method_6726&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;? extends <a href="WeightedPicker.Entry.html" title="class in net.minecraft.util">WeightedPicker.Entry</a>&gt;&nbsp;collection)</pre>
+<h4>getRate</h4>
+<pre class="methodSignature">public static&nbsp;int&nbsp;getRate&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;? extends <a href="WeightedPicker.Entry.html" title="class in net.minecraft.util">WeightedPicker.Entry</a>&gt;&nbsp;entries)</pre>
 </li>
 </ul>
-<a id="method_6729(java.util.Random,java.util.Collection,int)">
+<a id="pickRandomly(java.util.Random,java.util.Collection,int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_6729</h4>
-<pre class="methodSignature">public static&nbsp;&lt;T extends <a href="WeightedPicker.Entry.html" title="class in net.minecraft.util">WeightedPicker.Entry</a>&gt;&nbsp;T&nbsp;method_6729&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;random,
-                                                             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;T&gt;&nbsp;collection,
-                                                             int&nbsp;int2)</pre>
+<h4>pickRandomly</h4>
+<pre class="methodSignature">public static&nbsp;&lt;T extends <a href="WeightedPicker.Entry.html" title="class in net.minecraft.util">WeightedPicker.Entry</a>&gt;&nbsp;T&nbsp;pickRandomly&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;rand,
+                                                              <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;T&gt;&nbsp;entries,
+                                                              int&nbsp;rate)</pre>
 </li>
 </ul>
-<a id="method_6727(java.util.Collection,int)">
+<a id="pick(java.util.Collection,int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_6727</h4>
-<pre class="methodSignature">public static&nbsp;&lt;T extends <a href="WeightedPicker.Entry.html" title="class in net.minecraft.util">WeightedPicker.Entry</a>&gt;&nbsp;T&nbsp;method_6727&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;T&gt;&nbsp;collection,
-                                                             int&nbsp;int2)</pre>
+<h4>pick</h4>
+<pre class="methodSignature">public static&nbsp;&lt;T extends <a href="WeightedPicker.Entry.html" title="class in net.minecraft.util">WeightedPicker.Entry</a>&gt;&nbsp;T&nbsp;pick&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;T&gt;&nbsp;entries,
+                                                      int&nbsp;rate)</pre>
 </li>
 </ul>
-<a id="method_6728(java.util.Random,java.util.Collection)">
+<a id="rand(java.util.Random,java.util.Collection)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_6728</h4>
-<pre class="methodSignature">public static&nbsp;&lt;T extends <a href="WeightedPicker.Entry.html" title="class in net.minecraft.util">WeightedPicker.Entry</a>&gt;&nbsp;T&nbsp;method_6728&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;random,
-                                                             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;T&gt;&nbsp;collection)</pre>
+<h4>rand</h4>
+<pre class="methodSignature">public static&nbsp;&lt;T extends <a href="WeightedPicker.Entry.html" title="class in net.minecraft.util">WeightedPicker.Entry</a>&gt;&nbsp;T&nbsp;rand&#8203;(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util" class="externalLink">Random</a>&nbsp;rand,
+                                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util" class="externalLink">Collection</a>&lt;T&gt;&nbsp;entries)</pre>
 </li>
 </ul>
 </li>

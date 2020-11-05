@@ -13,8 +13,7 @@
 <!--[if IE]>
 <script type="text/javascript" src="../../../../../jquery/jszip-utils/dist/jszip-utils-ie.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="../../../../../jquery/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="../../../../../jquery/jquery-migrate-3.0.1.js"></script>
+<script type="text/javascript" src="../../../../../jquery/jquery-3.5.1.js"></script>
 <script type="text/javascript" src="../../../../../jquery/jquery-ui.js"></script>
 </head>
 <body>
@@ -137,7 +136,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="../../../class_701.html" title="class in net.minecraft">class_701</a></code>, <code><a href="../../../class_703.html" title="class in net.minecraft">class_703</a></code>, <code><a href="../screen/options/ControlsListWidget.html" title="class in net.minecraft.client.gui.screen.options">ControlsListWidget</a></code>, <code><a href="../screen/multiplayer/MultiplayerServerListWidget.html" title="class in net.minecraft.client.gui.screen.multiplayer">MultiplayerServerListWidget</a></code>, <code><a href="../screen/resourcepack/ResourcePackListWidget.html" title="class in net.minecraft.client.gui.screen.resourcepack">ResourcePackListWidget</a></code></dd>
+<dd><code><a href="../screen/options/ControlsListWidget.html" title="class in net.minecraft.client.gui.screen.options">ControlsListWidget</a></code>, <code><a href="../screen/multiplayer/MultiplayerServerListWidget.html" title="class in net.minecraft.client.gui.screen.multiplayer">MultiplayerServerListWidget</a></code>, <code><a href="OptionPairWidget.html" title="class in net.minecraft.client.gui.widget">OptionPairWidget</a></code>, <code><a href="PagedEntryListWidget.html" title="class in net.minecraft.client.gui.widget">PagedEntryListWidget</a></code>, <code><a href="../screen/resourcepack/ResourcePackListWidget.html" title="class in net.minecraft.client.gui.screen.resourcepack">ResourcePackListWidget</a></code></dd>
 </dl>
 <hr>
 <pre>@Environment(CLIENT)
@@ -240,33 +239,25 @@ extends <a href="ListWidget.html" title="class in net.minecraft.client.gui.widge
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>protected void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#method_2636(int,boolean,int,int)">method_2636</a></span>&#8203;(int&nbsp;int2,
-           boolean&nbsp;bool,
-           int&nbsp;int3,
-           int&nbsp;int4)</code></th>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#mouseClicked(int,int,int)">mouseClicked</a></span>&#8203;(int&nbsp;mouseX,
             int&nbsp;mouseY,
             int&nbsp;button)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#mouseReleased(int,int,int)">mouseReleased</a></span>&#8203;(int&nbsp;mouseX,
              int&nbsp;mouseY,
              int&nbsp;button)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#renderBackground()">renderBackground</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#renderEntry(int,int,int,int,int,int)">renderEntry</a></span>&#8203;(int&nbsp;index,
            int&nbsp;x,
@@ -274,6 +265,14 @@ extends <a href="ListWidget.html" title="class in net.minecraft.client.gui.widge
            int&nbsp;rowHeight,
            int&nbsp;mouseX,
            int&nbsp;mouseY)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#selectEntry(int,boolean,int,int)">selectEntry</a></span>&#8203;(int&nbsp;int2,
+           boolean&nbsp;bool,
+           int&nbsp;lastMouseX,
+           int&nbsp;lastMouseY)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
@@ -338,19 +337,19 @@ extends <a href="ListWidget.html" title="class in net.minecraft.client.gui.widge
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="method_2636(int,boolean,int,int)">
+<a id="selectEntry(int,boolean,int,int)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_2636</h4>
-<pre class="methodSignature">protected&nbsp;void&nbsp;method_2636&#8203;(int&nbsp;int2,
+<h4>selectEntry</h4>
+<pre class="methodSignature">protected&nbsp;void&nbsp;selectEntry&#8203;(int&nbsp;int2,
                            boolean&nbsp;bool,
-                           int&nbsp;int3,
-                           int&nbsp;int4)</pre>
+                           int&nbsp;lastMouseX,
+                           int&nbsp;lastMouseY)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="ListWidget.html#method_2636(int,boolean,int,int)">method_2636</a></code>&nbsp;in class&nbsp;<code><a href="ListWidget.html" title="class in net.minecraft.client.gui.widget">ListWidget</a></code></dd>
+<dd><code><a href="ListWidget.html#selectEntry(int,boolean,int,int)">selectEntry</a></code>&nbsp;in class&nbsp;<code><a href="ListWidget.html" title="class in net.minecraft.client.gui.widget">ListWidget</a></code></dd>
 </dl>
 </li>
 </ul>
