@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+var methods = {"i0":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../net/minecraft/network/SizePrepender.html" title="class in net.minecraft.network"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/network/SplitterHandler.class_6396.html" title="class in net.minecraft.network"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/network/SplitterHandler.html" target="_top">Frames</a></li>
@@ -73,14 +73,14 @@ var activeTableTab = "activeTableTab";
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#nested.classes.inherited.from.class.io.netty.handler.codec.ByteToMessageDecoder">Nested</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.io.netty.handler.codec.ByteToMessageDecoder">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -92,14 +92,29 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">net.minecraft.network</div>
-<h2 title="Class SplitterHandler" class="title">Class SplitterHandler&lt;K,V extends <a href="../../../net/minecraft/class_6395.html" title="class in net.minecraft">class_6395</a>&lt;K&gt;&gt;</h2>
+<h2 title="Class SplitterHandler" class="title">Class SplitterHandler</h2>
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li>net.minecraft.network.SplitterHandler&lt;K,V&gt;</li>
+<li>io.netty.channel.ChannelHandlerAdapter</li>
+<li>
+<ul class="inheritance">
+<li>io.netty.channel.ChannelInboundHandlerAdapter</li>
+<li>
+<ul class="inheritance">
+<li>io.netty.handler.codec.ByteToMessageDecoder</li>
+<li>
+<ul class="inheritance">
+<li>net.minecraft.network.SplitterHandler</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -107,13 +122,13 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <dl>
-<dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../net/minecraft/class_6390.html" title="class in net.minecraft">class_6390</a>, <a href="../../../net/minecraft/class_6397.html" title="class in net.minecraft">class_6397</a>, <a href="../../../net/minecraft/network/listener/PacketListener.html" title="class in net.minecraft.network.listener">PacketListener</a>, <a href="../../../net/minecraft/network/SizePrepender.html" title="class in net.minecraft.network">SizePrepender</a></dd>
+<dt>All Implemented Interfaces:</dt>
+<dd>io.netty.channel.ChannelHandler, io.netty.channel.ChannelInboundHandler</dd>
 </dl>
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">SplitterHandler&lt;K,V extends <a href="../../../net/minecraft/class_6395.html" title="class in net.minecraft">class_6395</a>&lt;K&gt;&gt;</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<pre>public class <span class="typeNameLabel">SplitterHandler</span>
+extends io.netty.handler.codec.ByteToMessageDecoder</pre>
 </li>
 </ul>
 </div>
@@ -126,17 +141,20 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Nested Class Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Nested Class Summary table, listing nested classes, and an explanation">
-<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Class and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>(package private) class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/SplitterHandler.class_6396.html" title="class in net.minecraft.network">SplitterHandler.class_6396</a></span></code>&nbsp;</td>
-</tr>
-</table>
+<ul class="blockList">
+<li class="blockList"><a name="nested.classes.inherited.from.class.io.netty.handler.codec.ByteToMessageDecoder">
+<!--   -->
+</a>
+<h3>Nested classes/interfaces inherited from class&nbsp;io.netty.handler.codec.ByteToMessageDecoder</h3>
+<code>io.netty.handler.codec.ByteToMessageDecoder.Cumulator</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="nested.classes.inherited.from.class.io.netty.channel.ChannelHandler">
+<!--   -->
+</a>
+<h3>Nested classes/interfaces inherited from interface&nbsp;io.netty.channel.ChannelHandler</h3>
+<code>io.netty.channel.ChannelHandler.Sharable</code></li>
+</ul>
 </li>
 </ul>
 <!-- =========== FIELD SUMMARY =========== -->
@@ -145,37 +163,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Field Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
-<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Field and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/SplitterHandler.html#field_31975">field_31975</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected <a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/Gson.html?is-external=true" title="class or interface in com.google.gson">Gson</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/SplitterHandler.html#field_31976">field_31976</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/SplitterHandler.html#field_31977">field_31977</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../net/minecraft/network/SplitterHandler.html" title="type parameter in SplitterHandler">V</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/SplitterHandler.html#field_31978">field_31978</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/SplitterHandler.html#field_31979">field_31979</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/ParameterizedType.html?is-external=true" title="class or interface in java.lang.reflect">ParameterizedType</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/SplitterHandler.html#field_31980">field_31980</a></span></code>&nbsp;</td>
-</tr>
-</table>
+<ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.io.netty.handler.codec.ByteToMessageDecoder">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;io.netty.handler.codec.ByteToMessageDecoder</h3>
+<code>COMPOSITE_CUMULATOR, MERGE_CUMULATOR</code></li>
+</ul>
 </li>
 </ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -190,7 +184,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/SplitterHandler.html#SplitterHandler-java.io.File-">SplitterHandler</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/SplitterHandler.html#SplitterHandler--">SplitterHandler</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -208,72 +202,46 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/SplitterHandler.html#method_33763--">method_33763</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../net/minecraft/class_6395.html" title="class in net.minecraft">class_6395</a>&lt;<a href="../../../net/minecraft/network/SplitterHandler.html" title="type parameter in SplitterHandler">K</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/SplitterHandler.html#method_33764-com.google.gson.JsonObject-">method_33764</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject)</code>&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/SplitterHandler.html#method_33765-K-">method_33765</a></span>(<a href="../../../net/minecraft/network/SplitterHandler.html" title="type parameter in SplitterHandler">K</a>&nbsp;k)</code>&nbsp;</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/SplitterHandler.html#method_33766-V-">method_33766</a></span>(<a href="../../../net/minecraft/network/SplitterHandler.html" title="type parameter in SplitterHandler">V</a>&nbsp;v)</code>&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/SplitterHandler.html#method_33767-boolean-">method_33767</a></span>(boolean&nbsp;bool)</code>&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/SplitterHandler.html#method_33768--">method_33768</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/network/SplitterHandler.html" title="type parameter in SplitterHandler">V</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/SplitterHandler.html#method_33769-K-">method_33769</a></span>(<a href="../../../net/minecraft/network/SplitterHandler.html" title="type parameter in SplitterHandler">K</a>&nbsp;k)</code>&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/SplitterHandler.html#method_33770--">method_33770</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/SplitterHandler.html#method_33771-K-">method_33771</a></span>(<a href="../../../net/minecraft/network/SplitterHandler.html" title="type parameter in SplitterHandler">K</a>&nbsp;k)</code>&nbsp;</td>
-</tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/SplitterHandler.html#method_33772--">method_33772</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code>protected boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/SplitterHandler.html#method_33773-K-">method_33773</a></span>(<a href="../../../net/minecraft/network/SplitterHandler.html" title="type parameter in SplitterHandler">K</a>&nbsp;k)</code>&nbsp;</td>
-</tr>
-<tr id="i11" class="rowColor">
-<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../net/minecraft/network/SplitterHandler.html" title="type parameter in SplitterHandler">V</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/SplitterHandler.html#method_33774--">method_33774</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i12" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/SplitterHandler.html#method_33775--">method_33775</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i13" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/SplitterHandler.html#method_33776--">method_33776</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i14" class="altColor">
-<td class="colFirst"><code>private void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/SplitterHandler.html#method_33777--">method_33777</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/SplitterHandler.html#decode-io.netty.channel.ChannelHandlerContext-io.netty.buffer.ByteBuf-java.util.List-">decode</a></span>(io.netty.channel.ChannelHandlerContext&nbsp;channelHandlerContext,
+      io.netty.buffer.ByteBuf&nbsp;byteBuf,
+      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;list)</code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.io.netty.handler.codec.ByteToMessageDecoder">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.netty.handler.codec.ByteToMessageDecoder</h3>
+<code>actualReadableBytes, callDecode, channelInactive, channelRead, channelReadComplete, decodeLast, discardSomeReadBytes, handlerRemoved, handlerRemoved0, internalBuffer, isSingleDecode, setCumulator, setDiscardAfterReads, setSingleDecode, userEventTriggered</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.io.netty.channel.ChannelInboundHandlerAdapter">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.netty.channel.ChannelInboundHandlerAdapter</h3>
+<code>channelActive, channelRegistered, channelUnregistered, channelWritabilityChanged, exceptionCaught</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.io.netty.channel.ChannelHandlerAdapter">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.netty.channel.ChannelHandlerAdapter</h3>
+<code>ensureNotSharable, handlerAdded, isSharable</code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
 <code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.io.netty.channel.ChannelHandler">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.netty.channel.ChannelHandler</h3>
+<code>handlerAdded</code></li>
 </ul>
 </li>
 </ul>
@@ -283,81 +251,19 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ============ FIELD DETAIL =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.detail">
-<!--   -->
-</a>
-<h3>Field Detail</h3>
-<a name="field_31975">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31975</h4>
-<pre>protected static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a> field_31975</pre>
-</li>
-</ul>
-<a name="field_31980">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31980</h4>
-<pre>private static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/ParameterizedType.html?is-external=true" title="class or interface in java.lang.reflect">ParameterizedType</a> field_31980</pre>
-</li>
-</ul>
-<a name="field_31976">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31976</h4>
-<pre>protected final&nbsp;<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/Gson.html?is-external=true" title="class or interface in com.google.gson">Gson</a> field_31976</pre>
-</li>
-</ul>
-<a name="field_31977">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31977</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a> field_31977</pre>
-</li>
-</ul>
-<a name="field_31978">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31978</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../net/minecraft/network/SplitterHandler.html" title="type parameter in SplitterHandler">V</a> extends <a href="../../../net/minecraft/class_6395.html" title="class in net.minecraft">class_6395</a>&lt;<a href="../../../net/minecraft/network/SplitterHandler.html" title="type parameter in SplitterHandler">K</a>&gt;&gt; field_31978</pre>
-</li>
-</ul>
-<a name="field_31979">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>field_31979</h4>
-<pre>private&nbsp;boolean field_31979</pre>
-</li>
-</ul>
-</li>
-</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="SplitterHandler-java.io.File-">
+<a name="SplitterHandler--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SplitterHandler</h4>
-<pre>public&nbsp;SplitterHandler(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file)</pre>
+<pre>public&nbsp;SplitterHandler()</pre>
 </li>
 </ul>
 </li>
@@ -368,161 +274,18 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_33768--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33768</h4>
-<pre>public&nbsp;boolean&nbsp;method_33768()</pre>
-</li>
-</ul>
-<a name="method_33767-boolean-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33767</h4>
-<pre>public&nbsp;void&nbsp;method_33767(boolean&nbsp;bool)</pre>
-</li>
-</ul>
-<a name="method_33770--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33770</h4>
-<pre>@Environment(value=SERVER)
-public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;method_33770()</pre>
-</li>
-</ul>
-<a name="method_33766-net.minecraft.class_6395-">
-<!--   -->
-</a><a name="method_33766-V-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33766</h4>
-<pre>public&nbsp;void&nbsp;method_33766(<a href="../../../net/minecraft/network/SplitterHandler.html" title="type parameter in SplitterHandler">V</a>&nbsp;v)</pre>
-</li>
-</ul>
-<a name="method_33769-java.lang.Object-">
-<!--   -->
-</a><a name="method_33769-K-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33769</h4>
-<pre>public&nbsp;<a href="../../../net/minecraft/network/SplitterHandler.html" title="type parameter in SplitterHandler">V</a>&nbsp;method_33769(<a href="../../../net/minecraft/network/SplitterHandler.html" title="type parameter in SplitterHandler">K</a>&nbsp;k)</pre>
-</li>
-</ul>
-<a name="method_33771-java.lang.Object-">
-<!--   -->
-</a><a name="method_33771-K-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33771</h4>
-<pre>public&nbsp;void&nbsp;method_33771(<a href="../../../net/minecraft/network/SplitterHandler.html" title="type parameter in SplitterHandler">K</a>&nbsp;k)</pre>
-</li>
-</ul>
-<a name="method_33763--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33763</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;method_33763()</pre>
-</li>
-</ul>
-<a name="method_33772--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33772</h4>
-<pre>@Environment(value=SERVER)
-public&nbsp;boolean&nbsp;method_33772()</pre>
-</li>
-</ul>
-<a name="method_33765-java.lang.Object-">
-<!--   -->
-</a><a name="method_33765-K-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33765</h4>
-<pre>protected&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;method_33765(<a href="../../../net/minecraft/network/SplitterHandler.html" title="type parameter in SplitterHandler">K</a>&nbsp;k)</pre>
-</li>
-</ul>
-<a name="method_33773-java.lang.Object-">
-<!--   -->
-</a><a name="method_33773-K-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33773</h4>
-<pre>protected&nbsp;boolean&nbsp;method_33773(<a href="../../../net/minecraft/network/SplitterHandler.html" title="type parameter in SplitterHandler">K</a>&nbsp;k)</pre>
-</li>
-</ul>
-<a name="method_33777--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33777</h4>
-<pre>private&nbsp;void&nbsp;method_33777()</pre>
-</li>
-</ul>
-<a name="method_33764-com.google.gson.JsonObject-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33764</h4>
-<pre>protected&nbsp;<a href="../../../net/minecraft/class_6395.html" title="class in net.minecraft">class_6395</a>&lt;<a href="../../../net/minecraft/network/SplitterHandler.html" title="type parameter in SplitterHandler">K</a>&gt;&nbsp;method_33764(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject)</pre>
-</li>
-</ul>
-<a name="method_33774--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33774</h4>
-<pre>protected&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../net/minecraft/network/SplitterHandler.html" title="type parameter in SplitterHandler">V</a>&gt;&nbsp;method_33774()</pre>
-</li>
-</ul>
-<a name="method_33775--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33775</h4>
-<pre>public&nbsp;void&nbsp;method_33775()
-                  throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_33776--">
+<a name="decode-io.netty.channel.ChannelHandlerContext-io.netty.buffer.ByteBuf-java.util.List-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_33776</h4>
-<pre>@Environment(value=SERVER)
-public&nbsp;void&nbsp;method_33776()
-                                             throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/FileNotFoundException.html?is-external=true" title="class or interface in java.io">FileNotFoundException</a></pre>
+<h4>decode</h4>
+<pre>protected&nbsp;void&nbsp;decode(io.netty.channel.ChannelHandlerContext&nbsp;channelHandlerContext,
+                      io.netty.buffer.ByteBuf&nbsp;byteBuf,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;list)</pre>
 <dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/FileNotFoundException.html?is-external=true" title="class or interface in java.io">FileNotFoundException</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>decode</code>&nbsp;in class&nbsp;<code>io.netty.handler.codec.ByteToMessageDecoder</code></dd>
 </dl>
 </li>
 </ul>
@@ -554,7 +317,7 @@ public&nbsp;void&nbsp;method_33776()
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../net/minecraft/network/SizePrepender.html" title="class in net.minecraft.network"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/network/SplitterHandler.class_6396.html" title="class in net.minecraft.network"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/network/SplitterHandler.html" target="_top">Frames</a></li>
@@ -578,14 +341,14 @@ public&nbsp;void&nbsp;method_33776()
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#nested.classes.inherited.from.class.io.netty.handler.codec.ByteToMessageDecoder">Nested</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.io.netty.handler.codec.ByteToMessageDecoder">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>

@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../net/minecraft/network/listener/PacketListener.html" title="class in net.minecraft.network.listener"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/network/listener/ClientLoginPacketListener.html" target="_top">Frames</a></li>
@@ -99,12 +99,17 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <dl>
+<dt>All Superinterfaces:</dt>
+<dd><a href="../../../../net/minecraft/network/listener/PacketListener.html" title="interface in net.minecraft.network.listener">PacketListener</a></dd>
+</dl>
+<dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><a href="../../../../net/minecraft/class_4787.html" title="class in net.minecraft">class_4787</a>, <a href="../../../../net/minecraft/class_4788.html" title="class in net.minecraft">class_4788</a>, <a href="../../../../net/minecraft/class_4789.html" title="class in net.minecraft">class_4789</a>, <a href="../../../../net/minecraft/class_4790.html" title="class in net.minecraft">class_4790</a>, <a href="../../../../net/minecraft/class_4791.html" title="class in net.minecraft">class_4791</a>, <a href="../../../../net/minecraft/network/packet/c2s/handshake/HandshakeC2SPacket.html" title="class in net.minecraft.network.packet.c2s.handshake">HandshakeC2SPacket</a>, <a href="../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">HandSwingC2SPacket</a>, <a href="../../../../net/minecraft/network/packet/s2c/login/LoginDisconnectS2CPacket.html" title="class in net.minecraft.network.packet.s2c.login">LoginDisconnectS2CPacket</a>, <a href="../../../../net/minecraft/network/packet/s2c/login/LoginHelloS2CPacket.html" title="class in net.minecraft.network.packet.s2c.login">LoginHelloS2CPacket</a>, <a href="../../../../net/minecraft/network/packet/s2c/login/LoginSuccessS2CPacket.html" title="class in net.minecraft.network.packet.s2c.login">LoginSuccessS2CPacket</a>, <a href="../../../../net/minecraft/network/packet/c2s/play/PlayerInteractBlockC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">PlayerInteractBlockC2SPacket</a>, <a href="../../../../net/minecraft/network/packet/c2s/play/PlayerInteractItemC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">PlayerInteractItemC2SPacket</a>, <a href="../../../../net/minecraft/network/packet/c2s/play/SpectatorTeleportC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">SpectatorTeleportC2SPacket</a></dd>
+<dd><a href="../../../../net/minecraft/client/network/ClientLoginNetworkHandler.html" title="class in net.minecraft.client.network">ClientLoginNetworkHandler</a></dd>
 </dl>
 <hr>
 <br>
-<pre>public interface <span class="typeNameLabel">ClientLoginPacketListener</span></pre>
+<pre>public interface <span class="typeNameLabel">ClientLoginPacketListener</span>
+extends <a href="../../../../net/minecraft/network/listener/PacketListener.html" title="interface in net.minecraft.network.listener">PacketListener</a></pre>
 </li>
 </ul>
 </div>
@@ -124,55 +129,29 @@ var activeTableTab = "activeTableTab";
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/network/listener/ClientLoginPacketListener.html#method_24560--">method_24560</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/network/listener/ClientLoginPacketListener.html#onCompression-net.minecraft.network.packet.s2c.login.LoginCompressionS2CPacket-">onCompression</a></span>(<a href="../../../../net/minecraft/network/packet/s2c/login/LoginCompressionS2CPacket.html" title="class in net.minecraft.network.packet.s2c.login">LoginCompressionS2CPacket</a>&nbsp;packet)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/network/listener/ClientLoginPacketListener.html#method_24561-net.minecraft.class_4785-net.minecraft.command.arguments.EntitySummonArgumentType-float-">method_24561</a></span>(<a href="../../../../net/minecraft/class_4785.html" title="class in net.minecraft">class_4785</a>&nbsp;class_4785,
-            <a href="../../../../net/minecraft/command/arguments/EntitySummonArgumentType.html" title="class in net.minecraft.command.arguments">EntitySummonArgumentType</a>&nbsp;entitySummonArgumentType,
-            float&nbsp;float2)</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/network/listener/ClientLoginPacketListener.html#onDisconnect-net.minecraft.network.packet.s2c.login.LoginDisconnectS2CPacket-">onDisconnect</a></span>(<a href="../../../../net/minecraft/network/packet/s2c/login/LoginDisconnectS2CPacket.html" title="class in net.minecraft.network.packet.s2c.login">LoginDisconnectS2CPacket</a>&nbsp;packet)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/network/listener/ClientLoginPacketListener.html#method_24562-net.minecraft.class_4786-net.minecraft.class_6183-net.minecraft.command.arguments.EntitySummonArgumentType-net.minecraft.class_4890-">method_24562</a></span>(<a href="../../../../net/minecraft/class_4786.html" title="class in net.minecraft">class_4786</a>&nbsp;class_4786,
-            <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-            <a href="../../../../net/minecraft/command/arguments/EntitySummonArgumentType.html" title="class in net.minecraft.command.arguments">EntitySummonArgumentType</a>&nbsp;entitySummonArgumentType,
-            <a href="../../../../net/minecraft/class_4890.html" title="class in net.minecraft">class_4890</a>&nbsp;class_4890)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/network/listener/ClientLoginPacketListener.html#onHello-net.minecraft.network.packet.s2c.login.LoginHelloS2CPacket-">onHello</a></span>(<a href="../../../../net/minecraft/network/packet/s2c/login/LoginHelloS2CPacket.html" title="class in net.minecraft.network.packet.s2c.login">LoginHelloS2CPacket</a>&nbsp;packet)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/network/listener/ClientLoginPacketListener.html#method_24563--">method_24563</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/network/listener/ClientLoginPacketListener.html#method_24564--">method_24564</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/network/listener/ClientLoginPacketListener.html#method_24565--">method_24565</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/network/listener/ClientLoginPacketListener.html#method_24566--">method_24566</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/network/listener/ClientLoginPacketListener.html#method_24567--">method_24567</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/class_5559.html" title="class in net.minecraft">class_5559</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/network/listener/ClientLoginPacketListener.html#method_24568--">method_24568</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/network/listener/ClientLoginPacketListener.html#method_24569--">method_24569</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/class_4792.html" title="class in net.minecraft">class_4792</a>&lt;? extends <a href="../../../../net/minecraft/network/listener/ClientLoginPacketListener.html" title="interface in net.minecraft.network.listener">ClientLoginPacketListener</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/network/listener/ClientLoginPacketListener.html#method_24570--">method_24570</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/network/listener/ClientLoginPacketListener.html#onLoginSuccess-net.minecraft.network.packet.s2c.login.LoginSuccessS2CPacket-">onLoginSuccess</a></span>(<a href="../../../../net/minecraft/network/packet/s2c/login/LoginSuccessS2CPacket.html" title="class in net.minecraft.network.packet.s2c.login">LoginSuccessS2CPacket</a>&nbsp;packet)</code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.network.listener.PacketListener">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;net.minecraft.network.listener.<a href="../../../../net/minecraft/network/listener/PacketListener.html" title="interface in net.minecraft.network.listener">PacketListener</a></h3>
+<code><a href="../../../../net/minecraft/network/listener/PacketListener.html#onDisconnected-net.minecraft.text.Text-">onDisconnected</a></code></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -187,110 +166,40 @@ var activeTableTab = "activeTableTab";
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_24560--">
+<a name="onHello-net.minecraft.network.packet.s2c.login.LoginHelloS2CPacket-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_24560</h4>
-<pre>boolean&nbsp;method_24560()</pre>
+<h4>onHello</h4>
+<pre>void&nbsp;onHello(<a href="../../../../net/minecraft/network/packet/s2c/login/LoginHelloS2CPacket.html" title="class in net.minecraft.network.packet.s2c.login">LoginHelloS2CPacket</a>&nbsp;packet)</pre>
 </li>
 </ul>
-<a name="method_24563--">
+<a name="onLoginSuccess-net.minecraft.network.packet.s2c.login.LoginSuccessS2CPacket-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_24563</h4>
-<pre>void&nbsp;method_24563()</pre>
+<h4>onLoginSuccess</h4>
+<pre>void&nbsp;onLoginSuccess(<a href="../../../../net/minecraft/network/packet/s2c/login/LoginSuccessS2CPacket.html" title="class in net.minecraft.network.packet.s2c.login">LoginSuccessS2CPacket</a>&nbsp;packet)</pre>
 </li>
 </ul>
-<a name="method_24564--">
+<a name="onDisconnect-net.minecraft.network.packet.s2c.login.LoginDisconnectS2CPacket-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_24564</h4>
-<pre>void&nbsp;method_24564()</pre>
+<h4>onDisconnect</h4>
+<pre>void&nbsp;onDisconnect(<a href="../../../../net/minecraft/network/packet/s2c/login/LoginDisconnectS2CPacket.html" title="class in net.minecraft.network.packet.s2c.login">LoginDisconnectS2CPacket</a>&nbsp;packet)</pre>
 </li>
 </ul>
-<a name="method_24562-net.minecraft.class_4786-net.minecraft.class_6183-net.minecraft.command.arguments.EntitySummonArgumentType-net.minecraft.class_4890-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_24562</h4>
-<pre>void&nbsp;method_24562(<a href="../../../../net/minecraft/class_4786.html" title="class in net.minecraft">class_4786</a>&nbsp;class_4786,
-                  <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-                  <a href="../../../../net/minecraft/command/arguments/EntitySummonArgumentType.html" title="class in net.minecraft.command.arguments">EntitySummonArgumentType</a>&nbsp;entitySummonArgumentType,
-                  <a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-                  <a href="../../../../net/minecraft/class_4890.html" title="class in net.minecraft">class_4890</a>&nbsp;class_4890)</pre>
-</li>
-</ul>
-<a name="method_24565--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_24565</h4>
-<pre>void&nbsp;method_24565()</pre>
-</li>
-</ul>
-<a name="method_24566--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_24566</h4>
-<pre>void&nbsp;method_24566()</pre>
-</li>
-</ul>
-<a name="method_24567--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_24567</h4>
-<pre>float&nbsp;method_24567()</pre>
-</li>
-</ul>
-<a name="method_24569--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_24569</h4>
-<pre>float&nbsp;method_24569()</pre>
-</li>
-</ul>
-<a name="method_24570--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_24570</h4>
-<pre><a href="../../../../net/minecraft/class_4792.html" title="class in net.minecraft">class_4792</a>&lt;? extends <a href="../../../../net/minecraft/network/listener/ClientLoginPacketListener.html" title="interface in net.minecraft.network.listener">ClientLoginPacketListener</a>&gt;&nbsp;method_24570()</pre>
-</li>
-</ul>
-<a name="method_24568--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_24568</h4>
-<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-<a href="../../../../net/minecraft/class_5559.html" title="class in net.minecraft">class_5559</a>&nbsp;method_24568()</pre>
-</li>
-</ul>
-<a name="method_24561-net.minecraft.class_4785-net.minecraft.command.arguments.EntitySummonArgumentType-float-">
+<a name="onCompression-net.minecraft.network.packet.s2c.login.LoginCompressionS2CPacket-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_24561</h4>
-<pre>float&nbsp;method_24561(<a href="../../../../net/minecraft/class_4785.html" title="class in net.minecraft">class_4785</a>&nbsp;class_4785,
-                   <a href="../../../../net/minecraft/command/arguments/EntitySummonArgumentType.html" title="class in net.minecraft.command.arguments">EntitySummonArgumentType</a>&nbsp;entitySummonArgumentType,
-                   float&nbsp;float2)</pre>
+<h4>onCompression</h4>
+<pre>void&nbsp;onCompression(<a href="../../../../net/minecraft/network/packet/s2c/login/LoginCompressionS2CPacket.html" title="class in net.minecraft.network.packet.s2c.login">LoginCompressionS2CPacket</a>&nbsp;packet)</pre>
 </li>
 </ul>
 </li>
@@ -321,7 +230,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../net/minecraft/network/listener/PacketListener.html" title="class in net.minecraft.network.listener"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/network/listener/ClientLoginPacketListener.html" target="_top">Frames</a></li>

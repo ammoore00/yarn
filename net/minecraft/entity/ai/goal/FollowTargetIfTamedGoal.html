@@ -18,6 +18,12 @@
     catch(err) {
     }
 //-->
+var methods = {"i0":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
 </script>
 <noscript>
 <div>JavaScript is disabled on your browser.</div>
@@ -42,7 +48,7 @@
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../net/minecraft/entity/ai/goal/FollowParentGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/entity/ai/goal/FollowTargetGoal.class_6504.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../net/minecraft/entity/ai/goal/FormCaravanGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -67,16 +73,16 @@
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested.classes.inherited.from.class.net.minecraft.entity.ai.goal.FollowTargetGoal">Nested</a>&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.java.lang.Object">Method</a></li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.top">
@@ -86,14 +92,29 @@
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">net.minecraft.entity.ai.goal</div>
-<h2 title="Class FollowTargetIfTamedGoal" class="title">Class FollowTargetIfTamedGoal</h2>
+<h2 title="Class FollowTargetIfTamedGoal" class="title">Class FollowTargetIfTamedGoal&lt;T extends <a href="../../../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&gt;</h2>
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li>net.minecraft.entity.ai.goal.FollowTargetIfTamedGoal</li>
+<li><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal">net.minecraft.entity.ai.goal.Goal</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../net/minecraft/entity/ai/goal/TrackTargetGoal.html" title="class in net.minecraft.entity.ai.goal">net.minecraft.entity.ai.goal.TrackTargetGoal</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../net/minecraft/entity/ai/goal/FollowTargetGoal.html" title="class in net.minecraft.entity.ai.goal">net.minecraft.entity.ai.goal.FollowTargetGoal</a>&lt;T&gt;</li>
+<li>
+<ul class="inheritance">
+<li>net.minecraft.entity.ai.goal.FollowTargetIfTamedGoal&lt;T&gt;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -102,15 +123,29 @@
 <li class="blockList">
 <hr>
 <br>
-<pre>@Environment(value=CLIENT)
-public class <span class="typeNameLabel">FollowTargetIfTamedGoal</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<pre>public class <span class="typeNameLabel">FollowTargetIfTamedGoal&lt;T extends <a href="../../../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&gt;</span>
+extends <a href="../../../../../net/minecraft/entity/ai/goal/FollowTargetGoal.html" title="class in net.minecraft.entity.ai.goal">FollowTargetGoal</a>&lt;T&gt;</pre>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="nested.class.summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="nested.classes.inherited.from.class.net.minecraft.entity.ai.goal.FollowTargetGoal">
+<!--   -->
+</a>
+<h3>Nested classes/interfaces inherited from class&nbsp;net.minecraft.entity.ai.goal.<a href="../../../../../net/minecraft/entity/ai/goal/FollowTargetGoal.html" title="class in net.minecraft.entity.ai.goal">FollowTargetGoal</a></h3>
+<code><a href="../../../../../net/minecraft/entity/ai/goal/FollowTargetGoal.class_6504.html" title="class in net.minecraft.entity.ai.goal">FollowTargetGoal.class_6504</a></code></li>
+</ul>
+</li>
+</ul>
 <!-- =========== FIELD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="field.summary">
@@ -124,14 +159,24 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FollowTargetIfTamedGoal.html#field_28571">field_28571</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FollowTargetIfTamedGoal.html#field_28572">field_28572</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../../../net/minecraft/entity/passive/TameableEntity.html" title="class in net.minecraft.entity.passive">TameableEntity</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FollowTargetIfTamedGoal.html#tameable">tameable</a></span></code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.entity.ai.goal.FollowTargetGoal">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;net.minecraft.entity.ai.goal.<a href="../../../../../net/minecraft/entity/ai/goal/FollowTargetGoal.html" title="class in net.minecraft.entity.ai.goal">FollowTargetGoal</a></h3>
+<code><a href="../../../../../net/minecraft/entity/ai/goal/FollowTargetGoal.html#field_33583">field_33583</a>, <a href="../../../../../net/minecraft/entity/ai/goal/FollowTargetGoal.html#field_33584">field_33584</a>, <a href="../../../../../net/minecraft/entity/ai/goal/FollowTargetGoal.html#field_33585">field_33585</a>, <a href="../../../../../net/minecraft/entity/ai/goal/FollowTargetGoal.html#field_33586">field_33586</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.entity.ai.goal.TrackTargetGoal">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;net.minecraft.entity.ai.goal.<a href="../../../../../net/minecraft/entity/ai/goal/TrackTargetGoal.html" title="class in net.minecraft.entity.ai.goal">TrackTargetGoal</a></h3>
+<code><a href="../../../../../net/minecraft/entity/ai/goal/TrackTargetGoal.html#checkVisibility">checkVisibility</a>, <a href="../../../../../net/minecraft/entity/ai/goal/TrackTargetGoal.html#field_33608">field_33608</a>, <a href="../../../../../net/minecraft/entity/ai/goal/TrackTargetGoal.html#maxTimeWithoutVisibility">maxTimeWithoutVisibility</a>, <a href="../../../../../net/minecraft/entity/ai/goal/TrackTargetGoal.html#target">target</a></code></li>
+</ul>
 </li>
 </ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -146,8 +191,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FollowTargetIfTamedGoal.html#FollowTargetIfTamedGoal-int-int-">FollowTargetIfTamedGoal</a></span>(int&nbsp;int2,
-                       int&nbsp;int3)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FollowTargetIfTamedGoal.html#FollowTargetIfTamedGoal-net.minecraft.entity.passive.TameableEntity-java.lang.Class-boolean-com.google.common.base.Predicate-">FollowTargetIfTamedGoal</a></span>(<a href="../../../../../net/minecraft/entity/passive/TameableEntity.html" title="class in net.minecraft.entity.passive">TameableEntity</a>&nbsp;tameable,
+                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="../../../../../net/minecraft/entity/ai/goal/FollowTargetIfTamedGoal.html" title="type parameter in FollowTargetIfTamedGoal">T</a>&gt;&nbsp;targetClass,
+                       boolean&nbsp;checkVisibility,
+                       <a href="https://guava.dev/releases/21.0/api/docs/com/google/common/base/Predicate.html?is-external=true" title="class or interface in com.google.common.base">Predicate</a>&lt;? super <a href="../../../../../net/minecraft/entity/ai/goal/FollowTargetIfTamedGoal.html" title="type parameter in FollowTargetIfTamedGoal">T</a>&gt;&nbsp;predicate)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -158,6 +205,38 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FollowTargetIfTamedGoal.html#canStart--">canStart</a></span>()</code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.entity.ai.goal.FollowTargetGoal">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;net.minecraft.entity.ai.goal.<a href="../../../../../net/minecraft/entity/ai/goal/FollowTargetGoal.html" title="class in net.minecraft.entity.ai.goal">FollowTargetGoal</a></h3>
+<code><a href="../../../../../net/minecraft/entity/ai/goal/FollowTargetGoal.html#getSearchBox-double-">getSearchBox</a>, <a href="../../../../../net/minecraft/entity/ai/goal/FollowTargetGoal.html#start--">start</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.entity.ai.goal.TrackTargetGoal">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;net.minecraft.entity.ai.goal.<a href="../../../../../net/minecraft/entity/ai/goal/TrackTargetGoal.html" title="class in net.minecraft.entity.ai.goal">TrackTargetGoal</a></h3>
+<code><a href="../../../../../net/minecraft/entity/ai/goal/TrackTargetGoal.html#canTrack-net.minecraft.entity.LivingEntity-boolean-">canTrack</a>, <a href="../../../../../net/minecraft/entity/ai/goal/TrackTargetGoal.html#getFollowRange--">getFollowRange</a>, <a href="../../../../../net/minecraft/entity/ai/goal/TrackTargetGoal.html#method_35007-net.minecraft.entity.mob.MobEntity-net.minecraft.entity.LivingEntity-boolean-boolean-">method_35007</a>, <a href="../../../../../net/minecraft/entity/ai/goal/TrackTargetGoal.html#setMaxTimeWithoutVisibility-int-">setMaxTimeWithoutVisibility</a>, <a href="../../../../../net/minecraft/entity/ai/goal/TrackTargetGoal.html#shouldContinue--">shouldContinue</a>, <a href="../../../../../net/minecraft/entity/ai/goal/TrackTargetGoal.html#stop--">stop</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.entity.ai.goal.Goal">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;net.minecraft.entity.ai.goal.<a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</a></h3>
+<code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#canStop--">canStop</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_34938-int-">method_34938</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_34944--">method_34944</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#tick--">tick</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -179,22 +258,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_28571">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_28571</h4>
-<pre>public final&nbsp;int field_28571</pre>
-</li>
-</ul>
-<a name="field_28572">
+<a name="tameable">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_28572</h4>
-<pre>public final&nbsp;int field_28572</pre>
+<h4>tameable</h4>
+<pre>private final&nbsp;<a href="../../../../../net/minecraft/entity/passive/TameableEntity.html" title="class in net.minecraft.entity.passive">TameableEntity</a> tameable</pre>
 </li>
 </ul>
 </li>
@@ -205,14 +275,37 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="FollowTargetIfTamedGoal-int-int-">
+<a name="FollowTargetIfTamedGoal-net.minecraft.entity.passive.TameableEntity-java.lang.Class-boolean-com.google.common.base.Predicate-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>FollowTargetIfTamedGoal</h4>
-<pre>public&nbsp;FollowTargetIfTamedGoal(int&nbsp;int2,
-                               int&nbsp;int3)</pre>
+<pre>public&nbsp;FollowTargetIfTamedGoal(<a href="../../../../../net/minecraft/entity/passive/TameableEntity.html" title="class in net.minecraft.entity.passive">TameableEntity</a>&nbsp;tameable,
+                               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="../../../../../net/minecraft/entity/ai/goal/FollowTargetIfTamedGoal.html" title="type parameter in FollowTargetIfTamedGoal">T</a>&gt;&nbsp;targetClass,
+                               boolean&nbsp;checkVisibility,
+                               <a href="https://guava.dev/releases/21.0/api/docs/com/google/common/base/Predicate.html?is-external=true" title="class or interface in com.google.common.base">Predicate</a>&lt;? super <a href="../../../../../net/minecraft/entity/ai/goal/FollowTargetIfTamedGoal.html" title="type parameter in FollowTargetIfTamedGoal">T</a>&gt;&nbsp;predicate)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="canStart--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>canStart</h4>
+<pre>public&nbsp;boolean&nbsp;canStart()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../../net/minecraft/entity/ai/goal/FollowTargetGoal.html#canStart--">canStart</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../net/minecraft/entity/ai/goal/FollowTargetGoal.html" title="class in net.minecraft.entity.ai.goal">FollowTargetGoal</a>&lt;<a href="../../../../../net/minecraft/entity/ai/goal/FollowTargetIfTamedGoal.html" title="type parameter in FollowTargetIfTamedGoal">T</a> extends <a href="../../../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&gt;</code></dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -242,7 +335,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../net/minecraft/entity/ai/goal/FollowParentGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/entity/ai/goal/FollowTargetGoal.class_6504.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../net/minecraft/entity/ai/goal/FormCaravanGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -267,16 +360,16 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested.classes.inherited.from.class.net.minecraft.entity.ai.goal.FollowTargetGoal">Nested</a>&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.java.lang.Object">Method</a></li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.bottom">

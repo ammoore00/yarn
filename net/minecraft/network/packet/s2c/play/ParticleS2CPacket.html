@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -74,13 +74,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -106,16 +106,80 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&gt;</dd>
+</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">ParticleS2CPacket</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
+implements <a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&gt;</pre>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#count">count</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#field_31084">field_31084</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#field_31085">field_31085</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#field_31086">field_31086</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private int[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#field_31093">field_31093</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#longDistance">longDistance</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#offsetX">offsetX</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#offsetY">offsetY</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#offsetZ">offsetZ</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="../../../../../../net/minecraft/class_6208.html" title="enum in net.minecraft">class_6208</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#parameters">parameters</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#speed">speed</a></span></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.summary">
@@ -130,6 +194,19 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#ParticleS2CPacket--">ParticleS2CPacket</a></span>()</code>&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#ParticleS2CPacket-net.minecraft.class_6208-boolean-float-float-float-float-float-float-float-int-int:A-">ParticleS2CPacket</a></span>(<a href="../../../../../../net/minecraft/class_6208.html" title="enum in net.minecraft">class_6208</a>&nbsp;class_6208,
+                 boolean&nbsp;bool,
+                 float&nbsp;float2,
+                 float&nbsp;float3,
+                 float&nbsp;float4,
+                 float&nbsp;float5,
+                 float&nbsp;float6,
+                 float&nbsp;float7,
+                 float&nbsp;float8,
+                 int&nbsp;int2,
+                 int[]&nbsp;int3)</code>&nbsp;</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -140,58 +217,66 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#method_32118-net.minecraft.util.math.AxisCycleDirection-java.io.DataOutput-">method_32118</a></span>(<a href="../../../../../../net/minecraft/util/math/AxisCycleDirection.html" title="class in net.minecraft.util.math">AxisCycleDirection</a>&nbsp;axisCycleDirection,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataOutput.html?is-external=true" title="class or interface in java.io">DataOutput</a>&nbsp;dataOutput)</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#apply-net.minecraft.network.listener.ClientPlayPacketListener-">apply</a></span>(<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&nbsp;clientPlayPacketListener)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#method_32119-net.minecraft.util.math.AxisCycleDirection-java.io.File-">method_32119</a></span>(<a href="../../../../../../net/minecraft/util/math/AxisCycleDirection.html" title="class in net.minecraft.util.math">AxisCycleDirection</a>&nbsp;axisCycleDirection,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file)</code>&nbsp;</td>
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#getCount--">getCount</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#method_32120-net.minecraft.util.math.AxisCycleDirection-java.io.OutputStream-">method_32120</a></span>(<a href="../../../../../../net/minecraft/util/math/AxisCycleDirection.html" title="class in net.minecraft.util.math">AxisCycleDirection</a>&nbsp;axisCycleDirection,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;outputStream)</code>&nbsp;</td>
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#getOffsetX--">getOffsetX</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>private static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#method_32121-net.minecraft.class_6222-java.io.DataOutput-">method_32121</a></span>(<a href="../../../../../../net/minecraft/class_6222.html" title="class in net.minecraft">class_6222</a>&nbsp;class_6222,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataOutput.html?is-external=true" title="class or interface in java.io">DataOutput</a>&nbsp;dataOutput)</code>&nbsp;</td>
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#getOffsetY--">getOffsetY</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>private static <a href="../../../../../../net/minecraft/class_6222.html" title="class in net.minecraft">class_6222</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#method_32122-java.io.DataInput-int-net.minecraft.class_6219-">method_32122</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataInput.html?is-external=true" title="class or interface in java.io">DataInput</a>&nbsp;dataInput,
-            int&nbsp;int2,
-            <a href="../../../../../../net/minecraft/class_6219.html" title="class in net.minecraft">class_6219</a>&nbsp;class_6219)</code>&nbsp;</td>
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#getOffsetZ--">getOffsetZ</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>static <a href="../../../../../../net/minecraft/util/math/AxisCycleDirection.html" title="class in net.minecraft.util.math">AxisCycleDirection</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#method_32123-java.io.DataInput-net.minecraft.class_6219-">method_32123</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataInput.html?is-external=true" title="class or interface in java.io">DataInput</a>&nbsp;dataInput,
-            <a href="../../../../../../net/minecraft/class_6219.html" title="class in net.minecraft">class_6219</a>&nbsp;class_6219)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../../net/minecraft/class_6208.html" title="enum in net.minecraft">class_6208</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#getParameters--">getParameters</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>static <a href="../../../../../../net/minecraft/util/math/AxisCycleDirection.html" title="class in net.minecraft.util.math">AxisCycleDirection</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#method_32124-java.io.DataInputStream-">method_32124</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataInputStream.html?is-external=true" title="class or interface in java.io">DataInputStream</a>&nbsp;dataInputStream)</code>&nbsp;</td>
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#getSpeed--">getSpeed</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>static <a href="../../../../../../net/minecraft/util/math/AxisCycleDirection.html" title="class in net.minecraft.util.math">AxisCycleDirection</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#method_32125-java.io.File-">method_32125</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file)</code>&nbsp;</td>
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#getX--">getX</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code>static <a href="../../../../../../net/minecraft/util/math/AxisCycleDirection.html" title="class in net.minecraft.util.math">AxisCycleDirection</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#method_32126-java.io.InputStream-">method_32126</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;inputStream)</code>&nbsp;</td>
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#getY--">getY</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#method_32127-net.minecraft.util.math.AxisCycleDirection-java.io.File-">method_32127</a></span>(<a href="../../../../../../net/minecraft/util/math/AxisCycleDirection.html" title="class in net.minecraft.util.math">AxisCycleDirection</a>&nbsp;axisCycleDirection,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file)</code>&nbsp;</td>
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#getZ--">getZ</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#isLongDistance--">isLongDistance</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>int[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#method_32655--">method_32655</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#read-net.minecraft.util.PacketByteBuf-">read</a></span>(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html#write-net.minecraft.util.PacketByteBuf-">write</a></span>(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -209,6 +294,113 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="parameters">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>parameters</h4>
+<pre>private&nbsp;<a href="../../../../../../net/minecraft/class_6208.html" title="enum in net.minecraft">class_6208</a> parameters</pre>
+</li>
+</ul>
+<a name="field_31084">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>field_31084</h4>
+<pre>private&nbsp;float field_31084</pre>
+</li>
+</ul>
+<a name="field_31085">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>field_31085</h4>
+<pre>private&nbsp;float field_31085</pre>
+</li>
+</ul>
+<a name="field_31086">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>field_31086</h4>
+<pre>private&nbsp;float field_31086</pre>
+</li>
+</ul>
+<a name="offsetX">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>offsetX</h4>
+<pre>private&nbsp;float offsetX</pre>
+</li>
+</ul>
+<a name="offsetY">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>offsetY</h4>
+<pre>private&nbsp;float offsetY</pre>
+</li>
+</ul>
+<a name="offsetZ">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>offsetZ</h4>
+<pre>private&nbsp;float offsetZ</pre>
+</li>
+</ul>
+<a name="speed">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>speed</h4>
+<pre>private&nbsp;float speed</pre>
+</li>
+</ul>
+<a name="count">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>count</h4>
+<pre>private&nbsp;int count</pre>
+</li>
+</ul>
+<a name="longDistance">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>longDistance</h4>
+<pre>private&nbsp;boolean longDistance</pre>
+</li>
+</ul>
+<a name="field_31093">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>field_31093</h4>
+<pre>private&nbsp;int[] field_31093</pre>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
@@ -218,10 +410,29 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <a name="ParticleS2CPacket--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>ParticleS2CPacket</h4>
 <pre>public&nbsp;ParticleS2CPacket()</pre>
+</li>
+</ul>
+<a name="ParticleS2CPacket-net.minecraft.class_6208-boolean-float-float-float-float-float-float-float-int-int:A-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>ParticleS2CPacket</h4>
+<pre>public&nbsp;ParticleS2CPacket(<a href="../../../../../../net/minecraft/class_6208.html" title="enum in net.minecraft">class_6208</a>&nbsp;class_6208,
+                         boolean&nbsp;bool,
+                         float&nbsp;float2,
+                         float&nbsp;float3,
+                         float&nbsp;float4,
+                         float&nbsp;float5,
+                         float&nbsp;float6,
+                         float&nbsp;float7,
+                         float&nbsp;float8,
+                         int&nbsp;int2,
+                         int[]&nbsp;int3)</pre>
 </li>
 </ul>
 </li>
@@ -232,155 +443,158 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_32126-java.io.InputStream-">
+<a name="read-net.minecraft.util.PacketByteBuf-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_32126</h4>
-<pre>public static&nbsp;<a href="../../../../../../net/minecraft/util/math/AxisCycleDirection.html" title="class in net.minecraft.util.math">AxisCycleDirection</a>&nbsp;method_32126(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;inputStream)
-                                       throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<h4>read</h4>
+<pre>public&nbsp;void&nbsp;read(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)
+          throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/network/Packet.html#read-net.minecraft.util.PacketByteBuf-">read</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_32120-net.minecraft.util.math.AxisCycleDirection-java.io.OutputStream-">
+<a name="write-net.minecraft.util.PacketByteBuf-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_32120</h4>
-<pre>public static&nbsp;void&nbsp;method_32120(<a href="../../../../../../net/minecraft/util/math/AxisCycleDirection.html" title="class in net.minecraft.util.math">AxisCycleDirection</a>&nbsp;axisCycleDirection,
-                                <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;outputStream)
-                         throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<h4>write</h4>
+<pre>public&nbsp;void&nbsp;write(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)
+           throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/network/Packet.html#write-net.minecraft.util.PacketByteBuf-">write</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_32119-net.minecraft.util.math.AxisCycleDirection-java.io.File-">
+<a name="getParameters--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_32119</h4>
+<h4>getParameters</h4>
 <pre>@Environment(value=CLIENT)
-public static&nbsp;void&nbsp;method_32119(<a href="../../../../../../net/minecraft/util/math/AxisCycleDirection.html" title="class in net.minecraft.util.math">AxisCycleDirection</a>&nbsp;axisCycleDirection,
-                                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file)
-                                                    throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
-</dl>
+public&nbsp;<a href="../../../../../../net/minecraft/class_6208.html" title="enum in net.minecraft">class_6208</a>&nbsp;getParameters()</pre>
 </li>
 </ul>
-<a name="method_32127-net.minecraft.util.math.AxisCycleDirection-java.io.File-">
+<a name="isLongDistance--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_32127</h4>
+<h4>isLongDistance</h4>
 <pre>@Environment(value=CLIENT)
-public static&nbsp;void&nbsp;method_32127(<a href="../../../../../../net/minecraft/util/math/AxisCycleDirection.html" title="class in net.minecraft.util.math">AxisCycleDirection</a>&nbsp;axisCycleDirection,
-                                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file)
-                                                    throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
-</dl>
+public&nbsp;boolean&nbsp;isLongDistance()</pre>
 </li>
 </ul>
-<a name="method_32125-java.io.File-">
+<a name="getX--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_32125</h4>
+<h4>getX</h4>
 <pre>@Environment(value=CLIENT)
- <a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-public static&nbsp;<a href="../../../../../../net/minecraft/util/math/AxisCycleDirection.html" title="class in net.minecraft.util.math">AxisCycleDirection</a>&nbsp;method_32125(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file)
-                                                                             throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
-</dl>
+public&nbsp;double&nbsp;getX()</pre>
 </li>
 </ul>
-<a name="method_32124-java.io.DataInputStream-">
+<a name="getY--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_32124</h4>
-<pre>public static&nbsp;<a href="../../../../../../net/minecraft/util/math/AxisCycleDirection.html" title="class in net.minecraft.util.math">AxisCycleDirection</a>&nbsp;method_32124(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataInputStream.html?is-external=true" title="class or interface in java.io">DataInputStream</a>&nbsp;dataInputStream)
-                                       throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
-</dl>
+<h4>getY</h4>
+<pre>@Environment(value=CLIENT)
+public&nbsp;double&nbsp;getY()</pre>
 </li>
 </ul>
-<a name="method_32123-java.io.DataInput-net.minecraft.class_6219-">
+<a name="getZ--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_32123</h4>
-<pre>public static&nbsp;<a href="../../../../../../net/minecraft/util/math/AxisCycleDirection.html" title="class in net.minecraft.util.math">AxisCycleDirection</a>&nbsp;method_32123(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataInput.html?is-external=true" title="class or interface in java.io">DataInput</a>&nbsp;dataInput,
-                                              <a href="../../../../../../net/minecraft/class_6219.html" title="class in net.minecraft">class_6219</a>&nbsp;class_6219)
-                                       throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
-</dl>
+<h4>getZ</h4>
+<pre>@Environment(value=CLIENT)
+public&nbsp;double&nbsp;getZ()</pre>
 </li>
 </ul>
-<a name="method_32118-net.minecraft.util.math.AxisCycleDirection-java.io.DataOutput-">
+<a name="getOffsetX--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_32118</h4>
-<pre>public static&nbsp;void&nbsp;method_32118(<a href="../../../../../../net/minecraft/util/math/AxisCycleDirection.html" title="class in net.minecraft.util.math">AxisCycleDirection</a>&nbsp;axisCycleDirection,
-                                <a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataOutput.html?is-external=true" title="class or interface in java.io">DataOutput</a>&nbsp;dataOutput)
-                         throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
-</dl>
+<h4>getOffsetX</h4>
+<pre>@Environment(value=CLIENT)
+public&nbsp;float&nbsp;getOffsetX()</pre>
 </li>
 </ul>
-<a name="method_32121-net.minecraft.class_6222-java.io.DataOutput-">
+<a name="getOffsetY--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_32121</h4>
-<pre>private static&nbsp;void&nbsp;method_32121(<a href="../../../../../../net/minecraft/class_6222.html" title="class in net.minecraft">class_6222</a>&nbsp;class_6222,
-                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataOutput.html?is-external=true" title="class or interface in java.io">DataOutput</a>&nbsp;dataOutput)
-                          throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
-</dl>
+<h4>getOffsetY</h4>
+<pre>@Environment(value=CLIENT)
+public&nbsp;float&nbsp;getOffsetY()</pre>
 </li>
 </ul>
-<a name="method_32122-java.io.DataInput-int-net.minecraft.class_6219-">
+<a name="getOffsetZ--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOffsetZ</h4>
+<pre>@Environment(value=CLIENT)
+public&nbsp;float&nbsp;getOffsetZ()</pre>
+</li>
+</ul>
+<a name="getSpeed--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSpeed</h4>
+<pre>@Environment(value=CLIENT)
+public&nbsp;float&nbsp;getSpeed()</pre>
+</li>
+</ul>
+<a name="getCount--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCount</h4>
+<pre>@Environment(value=CLIENT)
+public&nbsp;int&nbsp;getCount()</pre>
+</li>
+</ul>
+<a name="method_32655--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_32655</h4>
+<pre>@Environment(value=CLIENT)
+public&nbsp;int[]&nbsp;method_32655()</pre>
+</li>
+</ul>
+<a name="apply-net.minecraft.network.listener.ClientPlayPacketListener-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_32122</h4>
-<pre>private static&nbsp;<a href="../../../../../../net/minecraft/class_6222.html" title="class in net.minecraft">class_6222</a>&nbsp;method_32122(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataInput.html?is-external=true" title="class or interface in java.io">DataInput</a>&nbsp;dataInput,
-                                       int&nbsp;int2,
-                                       <a href="../../../../../../net/minecraft/class_6219.html" title="class in net.minecraft">class_6219</a>&nbsp;class_6219)
-                                throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<h4>apply</h4>
+<pre>public&nbsp;void&nbsp;apply(<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&nbsp;clientPlayPacketListener)</pre>
 <dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/network/Packet.html#apply-T-">apply</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -437,13 +651,13 @@ public static&nbsp;<a href="../../../../../../net/minecraft/util/math/AxisCycleD
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>

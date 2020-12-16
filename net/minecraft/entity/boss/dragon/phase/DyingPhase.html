@@ -18,6 +18,12 @@
     catch(err) {
     }
 //-->
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
 </script>
 <noscript>
 <div>JavaScript is disabled on your browser.</div>
@@ -70,13 +76,13 @@
 <li>Nested&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.java.lang.Object">Method</a></li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.top">
@@ -93,18 +99,26 @@
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
+<li><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html" title="class in net.minecraft.entity.boss.dragon.phase">net.minecraft.entity.boss.dragon.phase.AbstractPhase</a></li>
+<li>
+<ul class="inheritance">
 <li>net.minecraft.entity.boss.dragon.phase.DyingPhase</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html" title="interface in net.minecraft.entity.boss.dragon.phase">Phase</a></dd>
+</dl>
 <hr>
 <br>
-<pre>@Environment(value=CLIENT)
-public class <span class="typeNameLabel">DyingPhase</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<pre>public class <span class="typeNameLabel">DyingPhase</span>
+extends <a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html" title="class in net.minecraft.entity.boss.dragon.phase">AbstractPhase</a></pre>
 </li>
 </ul>
 </div>
@@ -124,22 +138,21 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>org.lwjgl.util.vector.Vector3f</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/DyingPhase.html#field_29337">field_29337</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../../../../net/minecraft/util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/DyingPhase.html#field_22083">field_22083</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../net/minecraft/class_6196.class_6197.html" title="enum in net.minecraft">class_6196.class_6197</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/DyingPhase.html#field_29338">field_29338</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/DyingPhase.html#field_29339">field_29339</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/DyingPhase.html#field_29340">field_29340</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/DyingPhase.html#ticks">ticks</a></span></code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.entity.boss.dragon.phase.AbstractPhase">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;net.minecraft.entity.boss.dragon.phase.<a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html" title="class in net.minecraft.entity.boss.dragon.phase">AbstractPhase</a></h3>
+<code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#dragon">dragon</a></code></li>
+</ul>
 </li>
 </ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -154,10 +167,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/DyingPhase.html#DyingPhase-org.lwjgl.util.vector.Vector3f-net.minecraft.class_6196.class_6197-float-boolean-">DyingPhase</a></span>(org.lwjgl.util.vector.Vector3f&nbsp;vector3f,
-          <a href="../../../../../../net/minecraft/class_6196.class_6197.html" title="enum in net.minecraft">class_6196.class_6197</a>&nbsp;class_6197,
-          float&nbsp;float2,
-          boolean&nbsp;bool)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/DyingPhase.html#DyingPhase-net.minecraft.entity.boss.dragon.EnderDragonEntity-">DyingPhase</a></span>(<a href="../../../../../../net/minecraft/entity/boss/dragon/EnderDragonEntity.html" title="class in net.minecraft.entity.boss.dragon">EnderDragonEntity</a>&nbsp;dragon)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -168,6 +178,44 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/DyingPhase.html#beginPhase--">beginPhase</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/DyingPhase.html#clientTick--">clientTick</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../net/minecraft/util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/DyingPhase.html#getTarget--">getTarget</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/PhaseType.html" title="class in net.minecraft.entity.boss.dragon.phase">PhaseType</a>&lt;<a href="../../../../../../net/minecraft/entity/boss/dragon/phase/DyingPhase.html" title="class in net.minecraft.entity.boss.dragon.phase">DyingPhase</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/DyingPhase.html#getType--">getType</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/DyingPhase.html#method_24567--">method_24567</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/DyingPhase.html#serverTick--">serverTick</a></span>()</code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.entity.boss.dragon.phase.AbstractPhase">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;net.minecraft.entity.boss.dragon.phase.<a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html" title="class in net.minecraft.entity.boss.dragon.phase">AbstractPhase</a></h3>
+<code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#crystalDestroyed-net.minecraft.entity.decoration.EnderCrystalEntity-net.minecraft.util.math.BlockPos-net.minecraft.entity.damage.DamageSource-net.minecraft.entity.player.PlayerEntity-">crystalDestroyed</a>, <a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#endPhase--">endPhase</a>, <a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#method_24560--">method_24560</a>, <a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#method_24569--">method_24569</a>, <a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#modifyDamageTaken-net.minecraft.entity.boss.dragon.EnderDragonPart-net.minecraft.entity.damage.DamageSource-float-">modifyDamageTaken</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -189,40 +237,22 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_29337">
+<a name="field_22083">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_29337</h4>
-<pre>public final&nbsp;org.lwjgl.util.vector.Vector3f field_29337</pre>
+<h4>field_22083</h4>
+<pre>private&nbsp;<a href="../../../../../../net/minecraft/util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a> field_22083</pre>
 </li>
 </ul>
-<a name="field_29338">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_29338</h4>
-<pre>public final&nbsp;<a href="../../../../../../net/minecraft/class_6196.class_6197.html" title="enum in net.minecraft">class_6196.class_6197</a> field_29338</pre>
-</li>
-</ul>
-<a name="field_29339">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_29339</h4>
-<pre>public final&nbsp;float field_29339</pre>
-</li>
-</ul>
-<a name="field_29340">
+<a name="ticks">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_29340</h4>
-<pre>public final&nbsp;boolean field_29340</pre>
+<h4>ticks</h4>
+<pre>private&nbsp;int ticks</pre>
 </li>
 </ul>
 </li>
@@ -233,16 +263,106 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="DyingPhase-org.lwjgl.util.vector.Vector3f-net.minecraft.class_6196.class_6197-float-boolean-">
+<a name="DyingPhase-net.minecraft.entity.boss.dragon.EnderDragonEntity-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DyingPhase</h4>
-<pre>public&nbsp;DyingPhase(org.lwjgl.util.vector.Vector3f&nbsp;vector3f,
-                  <a href="../../../../../../net/minecraft/class_6196.class_6197.html" title="enum in net.minecraft">class_6196.class_6197</a>&nbsp;class_6197,
-                  float&nbsp;float2,
-                  boolean&nbsp;bool)</pre>
+<pre>public&nbsp;DyingPhase(<a href="../../../../../../net/minecraft/entity/boss/dragon/EnderDragonEntity.html" title="class in net.minecraft.entity.boss.dragon">EnderDragonEntity</a>&nbsp;dragon)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="clientTick--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clientTick</h4>
+<pre>public&nbsp;void&nbsp;clientTick()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html#clientTick--">clientTick</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html" title="interface in net.minecraft.entity.boss.dragon.phase">Phase</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#clientTick--">clientTick</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html" title="class in net.minecraft.entity.boss.dragon.phase">AbstractPhase</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="serverTick--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>serverTick</h4>
+<pre>public&nbsp;void&nbsp;serverTick()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html#serverTick--">serverTick</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html" title="interface in net.minecraft.entity.boss.dragon.phase">Phase</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#serverTick--">serverTick</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html" title="class in net.minecraft.entity.boss.dragon.phase">AbstractPhase</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="beginPhase--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>beginPhase</h4>
+<pre>public&nbsp;void&nbsp;beginPhase()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html#beginPhase--">beginPhase</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html" title="interface in net.minecraft.entity.boss.dragon.phase">Phase</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#beginPhase--">beginPhase</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html" title="class in net.minecraft.entity.boss.dragon.phase">AbstractPhase</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="method_24567--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_24567</h4>
+<pre>public&nbsp;float&nbsp;method_24567()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html#method_24567--">method_24567</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html" title="interface in net.minecraft.entity.boss.dragon.phase">Phase</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#method_24567--">method_24567</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html" title="class in net.minecraft.entity.boss.dragon.phase">AbstractPhase</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getTarget--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTarget</h4>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="../../../../../../net/minecraft/util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&nbsp;getTarget()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html#getTarget--">getTarget</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html" title="interface in net.minecraft.entity.boss.dragon.phase">Phase</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#getTarget--">getTarget</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html" title="class in net.minecraft.entity.boss.dragon.phase">AbstractPhase</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getType--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getType</h4>
+<pre>public&nbsp;<a href="../../../../../../net/minecraft/entity/boss/dragon/phase/PhaseType.html" title="class in net.minecraft.entity.boss.dragon.phase">PhaseType</a>&lt;<a href="../../../../../../net/minecraft/entity/boss/dragon/phase/DyingPhase.html" title="class in net.minecraft.entity.boss.dragon.phase">DyingPhase</a>&gt;&nbsp;getType()</pre>
 </li>
 </ul>
 </li>
@@ -300,13 +420,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li>Nested&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.java.lang.Object">Method</a></li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.bottom">

@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var methods = {"i0":10,"i1":10,"i2":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../../net/minecraft/network/packet/s2c/play/ChunkDataS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../../net/minecraft/network/packet/s2c/play/ChunkDeltaUpdateS2CPacket.ChunkDeltaRecord.html" title="class in net.minecraft.network.packet.s2c.play"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../../net/minecraft/network/packet/s2c/play/CombatEventS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -74,14 +74,14 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
@@ -92,25 +92,74 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">net.minecraft.network.packet.s2c.play</div>
-<h2 title="Interface CloseContainerS2CPacket" class="title">Interface CloseContainerS2CPacket</h2>
+<h2 title="Class CloseContainerS2CPacket" class="title">Class CloseContainerS2CPacket</h2>
 </div>
 <div class="contentContainer">
+<ul class="inheritance">
+<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>net.minecraft.network.packet.s2c.play.CloseContainerS2CPacket</li>
+</ul>
+</li>
+</ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
 <dl>
-<dt>All Known Implementing Classes:</dt>
-<dd><a href="../../../../../../net/minecraft/network/packet/s2c/play/ChunkDataS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ChunkDataS2CPacket</a>, <a href="../../../../../../net/minecraft/class_6419.html" title="class in net.minecraft">class_6419</a>, <a href="../../../../../../net/minecraft/class_6420.html" title="class in net.minecraft">class_6420</a>, <a href="../../../../../../net/minecraft/class_6421.html" title="class in net.minecraft">class_6421</a>, <a href="../../../../../../net/minecraft/class_6422.html" title="class in net.minecraft">class_6422</a>, <a href="../../../../../../net/minecraft/class_6423.html" title="class in net.minecraft">class_6423</a>, <a href="../../../../../../net/minecraft/class_6424.html" title="class in net.minecraft">class_6424</a>, <a href="../../../../../../net/minecraft/class_6425.html" title="class in net.minecraft">class_6425</a>, <a href="../../../../../../net/minecraft/class_6426.html" title="class in net.minecraft">class_6426</a>, <a href="../../../../../../net/minecraft/class_6427.html" title="class in net.minecraft">class_6427</a>, <a href="../../../../../../net/minecraft/class_6428.html" title="class in net.minecraft">class_6428</a>, <a href="../../../../../../net/minecraft/class_6429.html" title="class in net.minecraft">class_6429</a>, <a href="../../../../../../net/minecraft/class_6430.html" title="class in net.minecraft">class_6430</a>, <a href="../../../../../../net/minecraft/class_6431.html" title="class in net.minecraft">class_6431</a>, <a href="../../../../../../net/minecraft/class_6432.html" title="class in net.minecraft">class_6432</a>, <a href="../../../../../../net/minecraft/network/packet/s2c/play/CombatEventS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">CombatEventS2CPacket</a>, <a href="../../../../../../net/minecraft/network/packet/s2c/play/CraftFailedResponseS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">CraftFailedResponseS2CPacket</a>, <a href="../../../../../../net/minecraft/predicate/entity/EntityEffectPredicate.html" title="class in net.minecraft.predicate.entity">EntityEffectPredicate</a>, <a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">EntityS2CPacket</a>, <a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityStatusS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">EntityStatusS2CPacket</a>, <a href="../../../../../../net/minecraft/network/packet/s2c/play/ExplosionS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ExplosionS2CPacket</a>, <a href="../../../../../../net/minecraft/network/packet/s2c/play/GameJoinS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">GameJoinS2CPacket</a>, <a href="../../../../../../net/minecraft/network/packet/s2c/play/LightUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">LightUpdateS2CPacket</a>, <a href="../../../../../../net/minecraft/network/packet/s2c/play/LookAtS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">LookAtS2CPacket</a>, <a href="../../../../../../net/minecraft/network/packet/s2c/play/MapUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">MapUpdateS2CPacket</a>, <a href="../../../../../../net/minecraft/predicate/NbtPredicate.html" title="class in net.minecraft.predicate">NbtPredicate</a>, <a href="../../../../../../net/minecraft/predicate/NumberRange.html" title="class in net.minecraft.predicate">NumberRange</a>, <a href="../../../../../../net/minecraft/network/packet/s2c/play/OpenContainerS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">OpenContainerS2CPacket</a>, <a href="../../../../../../net/minecraft/network/packet/s2c/play/OpenWrittenBookS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">OpenWrittenBookS2CPacket</a>, <a href="../../../../../../net/minecraft/network/packet/s2c/play/PlayerAbilitiesS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">PlayerAbilitiesS2CPacket</a>, <a href="../../../../../../net/minecraft/network/packet/s2c/play/PlayerListS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">PlayerListS2CPacket</a>, <a href="../../../../../../net/minecraft/network/packet/s2c/play/UnloadChunkS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">UnloadChunkS2CPacket</a>, <a href="../../../../../../net/minecraft/network/packet/s2c/play/VehicleMoveS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">VehicleMoveS2CPacket</a></dd>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&gt;</dd>
 </dl>
 <hr>
 <br>
-<pre>public interface <span class="typeNameLabel">CloseContainerS2CPacket</span></pre>
+<pre>public class <span class="typeNameLabel">CloseContainerS2CPacket</span>
+extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
+implements <a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&gt;</pre>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/CloseContainerS2CPacket.html#syncId">syncId</a></span></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/CloseContainerS2CPacket.html#CloseContainerS2CPacket--">CloseContainerS2CPacket</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/CloseContainerS2CPacket.html#CloseContainerS2CPacket-int-">CloseContainerS2CPacket</a></span>(int&nbsp;syncId)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ========== METHOD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.summary">
@@ -118,20 +167,31 @@ var activeTableTab = "activeTableTab";
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/CloseContainerS2CPacket.html#method_34101--">method_34101</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/CloseContainerS2CPacket.html#apply-net.minecraft.network.listener.ClientPlayPacketListener-">apply</a></span>(<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&nbsp;clientPlayPacketListener)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../net/minecraft/util/math/AxisCycleDirection.html" title="class in net.minecraft.util.math">AxisCycleDirection</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/CloseContainerS2CPacket.html#method_34102-net.minecraft.util.math.AxisCycleDirection-">method_34102</a></span>(<a href="../../../../../../net/minecraft/util/math/AxisCycleDirection.html" title="class in net.minecraft.util.math">AxisCycleDirection</a>&nbsp;axisCycleDirection)</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/CloseContainerS2CPacket.html#read-net.minecraft.util.PacketByteBuf-">read</a></span>(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/CloseContainerS2CPacket.html#write-net.minecraft.util.PacketByteBuf-">write</a></span>(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)</code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -140,28 +200,98 @@ var activeTableTab = "activeTableTab";
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="syncId">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>syncId</h4>
+<pre>private&nbsp;int syncId</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="CloseContainerS2CPacket--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CloseContainerS2CPacket</h4>
+<pre>public&nbsp;CloseContainerS2CPacket()</pre>
+</li>
+</ul>
+<a name="CloseContainerS2CPacket-int-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>CloseContainerS2CPacket</h4>
+<pre>public&nbsp;CloseContainerS2CPacket(int&nbsp;syncId)</pre>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ============ METHOD DETAIL ========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.detail">
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_34101--">
+<a name="apply-net.minecraft.network.listener.ClientPlayPacketListener-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_34101</h4>
-<pre>int&nbsp;method_34101()</pre>
+<h4>apply</h4>
+<pre>public&nbsp;void&nbsp;apply(<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&nbsp;clientPlayPacketListener)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/network/Packet.html#apply-T-">apply</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&gt;</code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_34102-net.minecraft.util.math.AxisCycleDirection-">
+<a name="read-net.minecraft.util.PacketByteBuf-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>read</h4>
+<pre>public&nbsp;void&nbsp;read(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)
+          throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/network/Packet.html#read-net.minecraft.util.PacketByteBuf-">read</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="write-net.minecraft.util.PacketByteBuf-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_34102</h4>
-<pre><a href="../../../../../../net/minecraft/util/math/AxisCycleDirection.html" title="class in net.minecraft.util.math">AxisCycleDirection</a>&nbsp;method_34102(<a href="../../../../../../net/minecraft/util/math/AxisCycleDirection.html" title="class in net.minecraft.util.math">AxisCycleDirection</a>&nbsp;axisCycleDirection)</pre>
+<h4>write</h4>
+<pre>public&nbsp;void&nbsp;write(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)
+           throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/network/Packet.html#write-net.minecraft.util.PacketByteBuf-">write</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -191,7 +321,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../../net/minecraft/network/packet/s2c/play/ChunkDataS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../../net/minecraft/network/packet/s2c/play/ChunkDeltaUpdateS2CPacket.ChunkDeltaRecord.html" title="class in net.minecraft.network.packet.s2c.play"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../../net/minecraft/network/packet/s2c/play/CombatEventS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -217,14 +347,14 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>

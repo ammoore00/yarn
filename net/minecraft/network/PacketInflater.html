@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":9,"i38":9,"i39":10,"i40":10,"i41":10};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":10,"i1":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../net/minecraft/network/PacketEncoder.html" title="class in net.minecraft.network"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/network/SizePrepender.html" title="class in net.minecraft.network"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/network/ServerAddress.html" title="class in net.minecraft.network"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/network/PacketInflater.html" target="_top">Frames</a></li>
@@ -73,7 +73,7 @@ var activeTableTab = "activeTableTab";
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested.classes.inherited.from.class.io.netty.handler.codec.ByteToMessageDecoder">Nested</a>&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
@@ -99,7 +99,22 @@ var activeTableTab = "activeTableTab";
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
+<li>io.netty.channel.ChannelHandlerAdapter</li>
+<li>
+<ul class="inheritance">
+<li>io.netty.channel.ChannelInboundHandlerAdapter</li>
+<li>
+<ul class="inheritance">
+<li>io.netty.handler.codec.ByteToMessageDecoder</li>
+<li>
+<ul class="inheritance">
 <li>net.minecraft.network.PacketInflater</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -108,19 +123,40 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../net/minecraft/class_6237.html" title="interface in net.minecraft">class_6237</a>, <a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a>, <a href="../../../net/minecraft/nbt/AbstractListTag.html" title="interface in net.minecraft.nbt">AbstractListTag</a></dd>
+<dd>io.netty.channel.ChannelHandler, io.netty.channel.ChannelInboundHandler</dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">PacketInflater</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
-implements <a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a>, <a href="../../../net/minecraft/nbt/AbstractListTag.html" title="interface in net.minecraft.nbt">AbstractListTag</a></pre>
+extends io.netty.handler.codec.ByteToMessageDecoder</pre>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="nested.class.summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="nested.classes.inherited.from.class.io.netty.handler.codec.ByteToMessageDecoder">
+<!--   -->
+</a>
+<h3>Nested classes/interfaces inherited from class&nbsp;io.netty.handler.codec.ByteToMessageDecoder</h3>
+<code>io.netty.handler.codec.ByteToMessageDecoder.Cumulator</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="nested.classes.inherited.from.class.io.netty.channel.ChannelHandler">
+<!--   -->
+</a>
+<h3>Nested classes/interfaces inherited from interface&nbsp;io.netty.channel.ChannelHandler</h3>
+<code>io.netty.channel.ChannelHandler.Sharable</code></li>
+</ul>
+</li>
+</ul>
 <!-- =========== FIELD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="field.summary">
@@ -135,141 +171,20 @@ implements <a href="../../../net/minecraft/data/DataCache.html" title="interface
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31840">field_31840</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#compressionThreshold">compressionThreshold</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31841">field_31841</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31842">field_31842</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31843">field_31843</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31844">field_31844</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31845">field_31845</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31846">field_31846</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../net/minecraft/test/TickLimitExceededException.html" title="class in net.minecraft.test">TickLimitExceededException</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31847">field_31847</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/class_6230.html" title="class in net.minecraft">class_6230</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31848">field_31848</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31849">field_31849</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31850">field_31850</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31851">field_31851</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31852">field_31852</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private long</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31853">field_31853</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31854">field_31854</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private long</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31855">field_31855</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31856">field_31856</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31857">field_31857</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../net/minecraft/class_6411.html" title="class in net.minecraft">class_6411</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html?is-external=true" title="class or interface in java.lang">Short</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31858">field_31858</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31859">field_31859</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31860">field_31860</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31861">field_31861</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31862">field_31862</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31863">field_31863</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31864">field_31864</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../net/minecraft/command/arguments/ScoreboardSlotArgumentType.html" title="class in net.minecraft.command.arguments">ScoreboardSlotArgumentType</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31865">field_31865</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31866">field_31866</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31867">field_31867</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31868">field_31868</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31869">field_31869</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31870">field_31870</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31871">field_31871</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../net/minecraft/class_5559.html" title="class in net.minecraft">class_5559</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31872">field_31872</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#field_31873">field_31873</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/Inflater.html?is-external=true" title="class or interface in java.util.zip">Inflater</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#inflater">inflater</a></span></code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.io.netty.handler.codec.ByteToMessageDecoder">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;io.netty.handler.codec.ByteToMessageDecoder</h3>
+<code>COMPOSITE_CUMULATOR, MERGE_CUMULATOR</code></li>
+</ul>
 </li>
 </ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -284,9 +199,7 @@ implements <a href="../../../net/minecraft/data/DataCache.html" title="interface
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#PacketInflater-net.minecraft.server.MinecraftServer-net.minecraft.class_6230-net.minecraft.nbt.Tag-">PacketInflater</a></span>(<a href="../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a>&nbsp;minecraftServer,
-              <a href="../../../net/minecraft/class_6230.html" title="class in net.minecraft">class_6230</a>&nbsp;class_6230,
-              <a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a>&nbsp;tag)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#PacketInflater-int-">PacketInflater</a></span>(int&nbsp;int2)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -298,195 +211,56 @@ implements <a href="../../../net/minecraft/data/DataCache.html" title="interface
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_32258-net.minecraft.class_6244-">method_32258</a></span>(<a href="../../../net/minecraft/class_6244.html" title="interface in net.minecraft">class_6244</a>&nbsp;class_6244)</code>&nbsp;</td>
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#decode-io.netty.channel.ChannelHandlerContext-io.netty.buffer.ByteBuf-java.util.List-">decode</a></span>(io.netty.channel.ChannelHandlerContext&nbsp;channelHandlerContext,
+      io.netty.buffer.ByteBuf&nbsp;byteBuf,
+      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;list)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_32877-net.minecraft.data.server.AdvancementsProvider-">method_32877</a></span>(<a href="../../../net/minecraft/data/server/AdvancementsProvider.html" title="class in net.minecraft.data.server">AdvancementsProvider</a>&nbsp;advancementsProvider)</code>&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_32878-net.minecraft.class_6330-">method_32878</a></span>(<a href="../../../net/minecraft/class_6330.html" title="class in net.minecraft">class_6330</a>&nbsp;class_6330)</code>&nbsp;</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_32879-net.minecraft.data.server.AdventureTabAdvancementGenerator-">method_32879</a></span>(<a href="../../../net/minecraft/data/server/AdventureTabAdvancementGenerator.html" title="class in net.minecraft.data.server">AdventureTabAdvancementGenerator</a>&nbsp;adventureTabAdvancementGenerator)</code>&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_32880-net.minecraft.data.server.HusbandryTabAdvancementGenerator-">method_32880</a></span>(<a href="../../../net/minecraft/data/server/HusbandryTabAdvancementGenerator.html" title="class in net.minecraft.data.server">HusbandryTabAdvancementGenerator</a>&nbsp;husbandryTabAdvancementGenerator)</code>&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_32881-net.minecraft.data.server.NetherTabAdvancementGenerator-">method_32881</a></span>(<a href="../../../net/minecraft/data/server/NetherTabAdvancementGenerator.html" title="class in net.minecraft.data.server">NetherTabAdvancementGenerator</a>&nbsp;netherTabAdvancementGenerator)</code>&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_32882-net.minecraft.data.server.StoryTabAdvancementGenerator-">method_32882</a></span>(<a href="../../../net/minecraft/data/server/StoryTabAdvancementGenerator.html" title="class in net.minecraft.data.server">StoryTabAdvancementGenerator</a>&nbsp;storyTabAdvancementGenerator)</code>&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_32883-net.minecraft.data.server.EndTabAdvancementGenerator-">method_32883</a></span>(<a href="../../../net/minecraft/data/server/EndTabAdvancementGenerator.html" title="class in net.minecraft.data.server">EndTabAdvancementGenerator</a>&nbsp;endTabAdvancementGenerator)</code>&nbsp;</td>
-</tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_32884-net.minecraft.class_6334-">method_32884</a></span>(<a href="../../../net/minecraft/class_6334.html" title="class in net.minecraft">class_6334</a>&nbsp;class_6334)</code>&nbsp;</td>
-</tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_32885-net.minecraft.data.report.BlockListProvider-">method_32885</a></span>(<a href="../../../net/minecraft/data/report/BlockListProvider.html" title="class in net.minecraft.data.report">BlockListProvider</a>&nbsp;blockListProvider)</code>&nbsp;</td>
-</tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_32886-net.minecraft.class_6335-">method_32886</a></span>(<a href="../../../net/minecraft/class_6335.html" title="class in net.minecraft">class_6335</a>&nbsp;class_6335)</code>&nbsp;</td>
-</tr>
-<tr id="i11" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_32887-net.minecraft.data.report.CommandSyntaxProvider-">method_32887</a></span>(<a href="../../../net/minecraft/data/report/CommandSyntaxProvider.html" title="class in net.minecraft.data.report">CommandSyntaxProvider</a>&nbsp;commandSyntaxProvider)</code>&nbsp;</td>
-</tr>
-<tr id="i12" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_32888-net.minecraft.data.report.ItemListProvider-">method_32888</a></span>(<a href="../../../net/minecraft/data/report/ItemListProvider.html" title="class in net.minecraft.data.report">ItemListProvider</a>&nbsp;itemListProvider)</code>&nbsp;</td>
-</tr>
-<tr id="i13" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_32889-net.minecraft.class_6337-">method_32889</a></span>(<a href="../../../net/minecraft/class_6337.html" title="class in net.minecraft">class_6337</a>&nbsp;class_6337)</code>&nbsp;</td>
-</tr>
-<tr id="i14" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_32890-net.minecraft.class_6341-">method_32890</a></span>(<a href="../../../net/minecraft/class_6341.html" title="class in net.minecraft">class_6341</a>&nbsp;class_6341)</code>&nbsp;</td>
-</tr>
-<tr id="i15" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_32891-net.minecraft.data.server.BlockLootTableGenerator-">method_32891</a></span>(<a href="../../../net/minecraft/data/server/BlockLootTableGenerator.html" title="class in net.minecraft.data.server">BlockLootTableGenerator</a>&nbsp;blockLootTableGenerator)</code>&nbsp;</td>
-</tr>
-<tr id="i16" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_32892-net.minecraft.data.server.ChestLootTableGenerator-">method_32892</a></span>(<a href="../../../net/minecraft/data/server/ChestLootTableGenerator.html" title="class in net.minecraft.data.server">ChestLootTableGenerator</a>&nbsp;chestLootTableGenerator)</code>&nbsp;</td>
-</tr>
-<tr id="i17" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_32893-net.minecraft.data.server.EntityLootTableGenerator-">method_32893</a></span>(<a href="../../../net/minecraft/data/server/EntityLootTableGenerator.html" title="class in net.minecraft.data.server">EntityLootTableGenerator</a>&nbsp;entityLootTableGenerator)</code>&nbsp;</td>
-</tr>
-<tr id="i18" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_32894-net.minecraft.data.server.FishingLootTableGenerator-">method_32894</a></span>(<a href="../../../net/minecraft/data/server/FishingLootTableGenerator.html" title="class in net.minecraft.data.server">FishingLootTableGenerator</a>&nbsp;fishingLootTableGenerator)</code>&nbsp;</td>
-</tr>
-<tr id="i19" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_32895-net.minecraft.data.server.GiftLootTableGenerator-">method_32895</a></span>(<a href="../../../net/minecraft/data/server/GiftLootTableGenerator.html" title="class in net.minecraft.data.server">GiftLootTableGenerator</a>&nbsp;giftLootTableGenerator)</code>&nbsp;</td>
-</tr>
-<tr id="i20" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_32896-net.minecraft.class_6344-">method_32896</a></span>(<a href="../../../net/minecraft/class_6344.html" title="class in net.minecraft">class_6344</a>&nbsp;class_6344)</code>&nbsp;</td>
-</tr>
-<tr id="i21" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_32897-net.minecraft.class_6345-">method_32897</a></span>(<a href="../../../net/minecraft/class_6345.html" title="class in net.minecraft">class_6345</a>&nbsp;class_6345)</code>&nbsp;</td>
-</tr>
-<tr id="i22" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_32898-net.minecraft.class_6347-">method_32898</a></span>(<a href="../../../net/minecraft/class_6347.html" title="class in net.minecraft">class_6347</a>&nbsp;class_6347)</code>&nbsp;</td>
-</tr>
-<tr id="i23" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_32899-net.minecraft.data.server.recipe.RecipeJsonProvider-">method_32899</a></span>(<a href="../../../net/minecraft/data/server/recipe/RecipeJsonProvider.html" title="class in net.minecraft.data.server.recipe">RecipeJsonProvider</a>&nbsp;recipeJsonProvider)</code>&nbsp;</td>
-</tr>
-<tr id="i24" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_32900-net.minecraft.data.server.RecipesProvider-">method_32900</a></span>(<a href="../../../net/minecraft/data/server/RecipesProvider.html" title="class in net.minecraft.data.server">RecipesProvider</a>&nbsp;recipesProvider)</code>&nbsp;</td>
-</tr>
-<tr id="i25" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_32901-net.minecraft.data.server.recipe.ShapedRecipeJsonFactory-">method_32901</a></span>(<a href="../../../net/minecraft/data/server/recipe/ShapedRecipeJsonFactory.html" title="class in net.minecraft.data.server.recipe">ShapedRecipeJsonFactory</a>&nbsp;shapedRecipeJsonFactory)</code>&nbsp;</td>
-</tr>
-<tr id="i26" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_32902-net.minecraft.data.server.recipe.ShapelessRecipeJsonFactory-">method_32902</a></span>(<a href="../../../net/minecraft/data/server/recipe/ShapelessRecipeJsonFactory.html" title="class in net.minecraft.data.server.recipe">ShapelessRecipeJsonFactory</a>&nbsp;shapelessRecipeJsonFactory)</code>&nbsp;</td>
-</tr>
-<tr id="i27" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_32903-net.minecraft.data.server.recipe.CookingRecipeJsonFactory-">method_32903</a></span>(<a href="../../../net/minecraft/data/server/recipe/CookingRecipeJsonFactory.html" title="class in net.minecraft.data.server.recipe">CookingRecipeJsonFactory</a>&nbsp;cookingRecipeJsonFactory)</code>&nbsp;</td>
-</tr>
-<tr id="i28" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_32904-net.minecraft.data.server.recipe.SingleItemRecipeJsonFactory-">method_32904</a></span>(<a href="../../../net/minecraft/data/server/recipe/SingleItemRecipeJsonFactory.html" title="class in net.minecraft.data.server.recipe">SingleItemRecipeJsonFactory</a>&nbsp;singleItemRecipeJsonFactory)</code>&nbsp;</td>
-</tr>
-<tr id="i29" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_32905-net.minecraft.data.server.recipe.ComplexRecipeJsonFactory-">method_32905</a></span>(<a href="../../../net/minecraft/data/server/recipe/ComplexRecipeJsonFactory.html" title="class in net.minecraft.data.server.recipe">ComplexRecipeJsonFactory</a>&nbsp;complexRecipeJsonFactory)</code>&nbsp;</td>
-</tr>
-<tr id="i30" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_32906-net.minecraft.class_6351-">method_32906</a></span>(<a href="../../../net/minecraft/class_6351.html" title="class in net.minecraft">class_6351</a>&nbsp;class_6351)</code>&nbsp;</td>
-</tr>
-<tr id="i31" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_33379--">method_33379</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i32" class="altColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/class_6230.html" title="class in net.minecraft">class_6230</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_33621--">method_33621</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i33" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_33622-double-double-double-float-float-">method_33622</a></span>(double&nbsp;double2,
-            double&nbsp;double3,
-            double&nbsp;double4,
-            float&nbsp;float2,
-            float&nbsp;float3)</code>&nbsp;</td>
-</tr>
-<tr id="i34" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_33623-double-double-double-float-float-java.util.Set-">method_33623</a></span>(double&nbsp;double2,
-            double&nbsp;double3,
-            double&nbsp;double4,
-            float&nbsp;float2,
-            float&nbsp;float3,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../net/minecraft/util/MapUtil.class_6314.html" title="enum in net.minecraft.util">MapUtil.class_6314</a>&gt;&nbsp;set)</code>&nbsp;</td>
-</tr>
-<tr id="i35" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_33624-net.minecraft.class_6257-">method_33624</a></span>(<a href="../../../net/minecraft/class_6257.html" title="interface in net.minecraft">class_6257</a>&lt;?&gt;&nbsp;class_6257)</code>&nbsp;</td>
-</tr>
-<tr id="i36" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_33625-net.minecraft.class_6244-">method_33625</a></span>(<a href="../../../net/minecraft/class_6244.html" title="interface in net.minecraft">class_6244</a>&nbsp;class_6244)</code>&nbsp;</td>
-</tr>
-<tr id="i37" class="rowColor">
-<td class="colFirst"><code>private static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_33626-net.minecraft.class_6337-">method_33626</a></span>(<a href="../../../net/minecraft/class_6337.html" title="class in net.minecraft">class_6337</a>&nbsp;class_6337)</code>&nbsp;</td>
-</tr>
-<tr id="i38" class="altColor">
-<td class="colFirst"><code>private static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_33627-net.minecraft.class_6341-">method_33627</a></span>(<a href="../../../net/minecraft/class_6341.html" title="class in net.minecraft">class_6341</a>&nbsp;class_6341)</code>&nbsp;</td>
-</tr>
-<tr id="i39" class="rowColor">
-<td class="colFirst"><code>private void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_33628--">method_33628</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i40" class="altColor">
-<td class="colFirst"><code>private void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_33629-java.lang.String-">method_33629</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
-</tr>
-<tr id="i41" class="rowColor">
-<td class="colFirst"><code>private long</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#method_33630--">method_33630</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketInflater.html#setCompressionThreshold-int-">setCompressionThreshold</a></span>(int&nbsp;compressionThreshold)</code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.io.netty.handler.codec.ByteToMessageDecoder">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.netty.handler.codec.ByteToMessageDecoder</h3>
+<code>actualReadableBytes, callDecode, channelInactive, channelRead, channelReadComplete, decodeLast, discardSomeReadBytes, handlerRemoved, handlerRemoved0, internalBuffer, isSingleDecode, setCumulator, setDiscardAfterReads, setSingleDecode, userEventTriggered</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.io.netty.channel.ChannelInboundHandlerAdapter">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.netty.channel.ChannelInboundHandlerAdapter</h3>
+<code>channelActive, channelRegistered, channelUnregistered, channelWritabilityChanged, exceptionCaught</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.io.netty.channel.ChannelHandlerAdapter">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.netty.channel.ChannelHandlerAdapter</h3>
+<code>ensureNotSharable, handlerAdded, isSharable</code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
 <code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.io.netty.channel.ChannelHandler">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.netty.channel.ChannelHandler</h3>
+<code>handlerAdded</code></li>
 </ul>
 </li>
 </ul>
@@ -502,310 +276,22 @@ implements <a href="../../../net/minecraft/data/DataCache.html" title="interface
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_31850">
+<a name="inflater">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_31850</h4>
-<pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a> field_31850</pre>
+<h4>inflater</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/Inflater.html?is-external=true" title="class or interface in java.util.zip">Inflater</a> inflater</pre>
 </li>
 </ul>
-<a name="field_31848">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31848</h4>
-<pre>public final&nbsp;<a href="../../../net/minecraft/class_6230.html" title="class in net.minecraft">class_6230</a> field_31848</pre>
-</li>
-</ul>
-<a name="field_31851">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31851</h4>
-<pre>private final&nbsp;<a href="../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a> field_31851</pre>
-</li>
-</ul>
-<a name="field_31849">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31849</h4>
-<pre>public&nbsp;<a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a> field_31849</pre>
-</li>
-</ul>
-<a name="field_31852">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31852</h4>
-<pre>private&nbsp;int field_31852</pre>
-</li>
-</ul>
-<a name="field_31853">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31853</h4>
-<pre>private&nbsp;long field_31853</pre>
-</li>
-</ul>
-<a name="field_31854">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31854</h4>
-<pre>private&nbsp;boolean field_31854</pre>
-</li>
-</ul>
-<a name="field_31855">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31855</h4>
-<pre>private&nbsp;long field_31855</pre>
-</li>
-</ul>
-<a name="field_31856">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31856</h4>
-<pre>private&nbsp;int field_31856</pre>
-</li>
-</ul>
-<a name="field_31857">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31857</h4>
-<pre>private&nbsp;int field_31857</pre>
-</li>
-</ul>
-<a name="field_31858">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31858</h4>
-<pre>private final&nbsp;<a href="../../../net/minecraft/class_6411.html" title="class in net.minecraft">class_6411</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html?is-external=true" title="class or interface in java.lang">Short</a>&gt; field_31858</pre>
-</li>
-</ul>
-<a name="field_31859">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31859</h4>
-<pre>private&nbsp;double field_31859</pre>
-</li>
-</ul>
-<a name="field_31860">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31860</h4>
-<pre>private&nbsp;double field_31860</pre>
-</li>
-</ul>
-<a name="field_31861">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31861</h4>
-<pre>private&nbsp;double field_31861</pre>
-</li>
-</ul>
-<a name="field_31862">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31862</h4>
-<pre>private&nbsp;double field_31862</pre>
-</li>
-</ul>
-<a name="field_31863">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31863</h4>
-<pre>private&nbsp;double field_31863</pre>
-</li>
-</ul>
-<a name="field_31864">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31864</h4>
-<pre>private&nbsp;double field_31864</pre>
-</li>
-</ul>
-<a name="field_31865">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31865</h4>
-<pre>private&nbsp;<a href="../../../net/minecraft/command/arguments/ScoreboardSlotArgumentType.html" title="class in net.minecraft.command.arguments">ScoreboardSlotArgumentType</a> field_31865</pre>
-</li>
-</ul>
-<a name="field_31866">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31866</h4>
-<pre>private&nbsp;double field_31866</pre>
-</li>
-</ul>
-<a name="field_31867">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31867</h4>
-<pre>private&nbsp;double field_31867</pre>
-</li>
-</ul>
-<a name="field_31868">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31868</h4>
-<pre>private&nbsp;double field_31868</pre>
-</li>
-</ul>
-<a name="field_31869">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31869</h4>
-<pre>private&nbsp;double field_31869</pre>
-</li>
-</ul>
-<a name="field_31870">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31870</h4>
-<pre>private&nbsp;double field_31870</pre>
-</li>
-</ul>
-<a name="field_31871">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31871</h4>
-<pre>private&nbsp;double field_31871</pre>
-</li>
-</ul>
-<a name="field_31872">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31872</h4>
-<pre>private&nbsp;<a href="../../../net/minecraft/class_5559.html" title="class in net.minecraft">class_5559</a> field_31872</pre>
-</li>
-</ul>
-<a name="field_31873">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31873</h4>
-<pre>private&nbsp;int field_31873</pre>
-</li>
-</ul>
-<a name="field_31840">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31840</h4>
-<pre>private&nbsp;int field_31840</pre>
-</li>
-</ul>
-<a name="field_31841">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31841</h4>
-<pre>private&nbsp;boolean field_31841</pre>
-</li>
-</ul>
-<a name="field_31842">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31842</h4>
-<pre>private&nbsp;int field_31842</pre>
-</li>
-</ul>
-<a name="field_31843">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31843</h4>
-<pre>private&nbsp;boolean field_31843</pre>
-</li>
-</ul>
-<a name="field_31844">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31844</h4>
-<pre>private&nbsp;int field_31844</pre>
-</li>
-</ul>
-<a name="field_31845">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31845</h4>
-<pre>private&nbsp;int field_31845</pre>
-</li>
-</ul>
-<a name="field_31846">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31846</h4>
-<pre>private&nbsp;int field_31846</pre>
-</li>
-</ul>
-<a name="field_31847">
+<a name="compressionThreshold">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_31847</h4>
-<pre>private&nbsp;<a href="../../../net/minecraft/test/TickLimitExceededException.html" title="class in net.minecraft.test">TickLimitExceededException</a> field_31847</pre>
+<h4>compressionThreshold</h4>
+<pre>private&nbsp;int compressionThreshold</pre>
 </li>
 </ul>
 </li>
@@ -816,15 +302,13 @@ implements <a href="../../../net/minecraft/data/DataCache.html" title="interface
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="PacketInflater-net.minecraft.server.MinecraftServer-net.minecraft.class_6230-net.minecraft.nbt.Tag-">
+<a name="PacketInflater-int-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>PacketInflater</h4>
-<pre>public&nbsp;PacketInflater(<a href="../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a>&nbsp;minecraftServer,
-                      <a href="../../../net/minecraft/class_6230.html" title="class in net.minecraft">class_6230</a>&nbsp;class_6230,
-                      <a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a>&nbsp;tag)</pre>
+<pre>public&nbsp;PacketInflater(int&nbsp;int2)</pre>
 </li>
 </ul>
 </li>
@@ -835,519 +319,28 @@ implements <a href="../../../net/minecraft/data/DataCache.html" title="interface
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_33379--">
+<a name="decode-io.netty.channel.ChannelHandlerContext-io.netty.buffer.ByteBuf-java.util.List-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_33379</h4>
-<pre>public&nbsp;void&nbsp;method_33379()</pre>
+<h4>decode</h4>
+<pre>protected&nbsp;void&nbsp;decode(io.netty.channel.ChannelHandlerContext&nbsp;channelHandlerContext,
+                      io.netty.buffer.ByteBuf&nbsp;byteBuf,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;list)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/nbt/AbstractListTag.html#method_33379--">method_33379</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/nbt/AbstractListTag.html" title="interface in net.minecraft.nbt">AbstractListTag</a></code></dd>
+<dd><code>decode</code>&nbsp;in class&nbsp;<code>io.netty.handler.codec.ByteToMessageDecoder</code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_33628--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33628</h4>
-<pre>private&nbsp;void&nbsp;method_33628()</pre>
-</li>
-</ul>
-<a name="method_33621--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33621</h4>
-<pre>public&nbsp;<a href="../../../net/minecraft/class_6230.html" title="class in net.minecraft">class_6230</a>&nbsp;method_33621()</pre>
-</li>
-</ul>
-<a name="method_33625-net.minecraft.class_6244-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33625</h4>
-<pre>public&nbsp;void&nbsp;method_33625(<a href="../../../net/minecraft/class_6244.html" title="interface in net.minecraft">class_6244</a>&nbsp;class_6244)</pre>
-</li>
-</ul>
-<a name="method_32896-net.minecraft.class_6344-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_32896</h4>
-<pre>public&nbsp;void&nbsp;method_32896(<a href="../../../net/minecraft/class_6344.html" title="class in net.minecraft">class_6344</a>&nbsp;class_6344)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/DataCache.html#method_32896-net.minecraft.class_6344-">method_32896</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_33626-net.minecraft.class_6337-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33626</h4>
-<pre>private static&nbsp;boolean&nbsp;method_33626(<a href="../../../net/minecraft/class_6337.html" title="class in net.minecraft">class_6337</a>&nbsp;class_6337)</pre>
-</li>
-</ul>
-<a name="method_33627-net.minecraft.class_6341-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33627</h4>
-<pre>private static&nbsp;boolean&nbsp;method_33627(<a href="../../../net/minecraft/class_6341.html" title="class in net.minecraft">class_6341</a>&nbsp;class_6341)</pre>
-</li>
-</ul>
-<a name="method_32890-net.minecraft.class_6341-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_32890</h4>
-<pre>public&nbsp;void&nbsp;method_32890(<a href="../../../net/minecraft/class_6341.html" title="class in net.minecraft">class_6341</a>&nbsp;class_6341)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/DataCache.html#method_32890-net.minecraft.class_6341-">method_32890</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_32877-net.minecraft.data.server.AdvancementsProvider-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_32877</h4>
-<pre>public&nbsp;void&nbsp;method_32877(<a href="../../../net/minecraft/data/server/AdvancementsProvider.html" title="class in net.minecraft.data.server">AdvancementsProvider</a>&nbsp;advancementsProvider)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/DataCache.html#method_32877-net.minecraft.data.server.AdvancementsProvider-">method_32877</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_32897-net.minecraft.class_6345-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_32897</h4>
-<pre>public&nbsp;void&nbsp;method_32897(<a href="../../../net/minecraft/class_6345.html" title="class in net.minecraft">class_6345</a>&nbsp;class_6345)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/DataCache.html#method_32897-net.minecraft.class_6345-">method_32897</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_32899-net.minecraft.data.server.recipe.RecipeJsonProvider-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_32899</h4>
-<pre>public&nbsp;void&nbsp;method_32899(<a href="../../../net/minecraft/data/server/recipe/RecipeJsonProvider.html" title="class in net.minecraft.data.server.recipe">RecipeJsonProvider</a>&nbsp;recipeJsonProvider)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/DataCache.html#method_32899-net.minecraft.data.server.recipe.RecipeJsonProvider-">method_32899</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_32889-net.minecraft.class_6337-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_32889</h4>
-<pre>public&nbsp;void&nbsp;method_32889(<a href="../../../net/minecraft/class_6337.html" title="class in net.minecraft">class_6337</a>&nbsp;class_6337)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/DataCache.html#method_32889-net.minecraft.class_6337-">method_32889</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_33622-double-double-double-float-float-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33622</h4>
-<pre>public&nbsp;void&nbsp;method_33622(double&nbsp;double2,
-                         double&nbsp;double3,
-                         double&nbsp;double4,
-                         float&nbsp;float2,
-                         float&nbsp;float3)</pre>
-</li>
-</ul>
-<a name="method_33623-double-double-double-float-float-java.util.Set-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33623</h4>
-<pre>public&nbsp;void&nbsp;method_33623(double&nbsp;double2,
-                         double&nbsp;double3,
-                         double&nbsp;double4,
-                         float&nbsp;float2,
-                         float&nbsp;float3,
-                         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../net/minecraft/util/MapUtil.class_6314.html" title="enum in net.minecraft.util">MapUtil.class_6314</a>&gt;&nbsp;set)</pre>
-</li>
-</ul>
-<a name="method_32894-net.minecraft.data.server.FishingLootTableGenerator-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_32894</h4>
-<pre>public&nbsp;void&nbsp;method_32894(<a href="../../../net/minecraft/data/server/FishingLootTableGenerator.html" title="class in net.minecraft.data.server">FishingLootTableGenerator</a>&nbsp;fishingLootTableGenerator)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/DataCache.html#method_32894-net.minecraft.data.server.FishingLootTableGenerator-">method_32894</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_32905-net.minecraft.data.server.recipe.ComplexRecipeJsonFactory-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_32905</h4>
-<pre>public&nbsp;void&nbsp;method_32905(<a href="../../../net/minecraft/data/server/recipe/ComplexRecipeJsonFactory.html" title="class in net.minecraft.data.server.recipe">ComplexRecipeJsonFactory</a>&nbsp;complexRecipeJsonFactory)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/DataCache.html#method_32905-net.minecraft.data.server.recipe.ComplexRecipeJsonFactory-">method_32905</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_32906-net.minecraft.class_6351-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_32906</h4>
-<pre>public&nbsp;void&nbsp;method_32906(<a href="../../../net/minecraft/class_6351.html" title="class in net.minecraft">class_6351</a>&nbsp;class_6351)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/DataCache.html#method_32906-net.minecraft.class_6351-">method_32906</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_32904-net.minecraft.data.server.recipe.SingleItemRecipeJsonFactory-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_32904</h4>
-<pre>public&nbsp;void&nbsp;method_32904(<a href="../../../net/minecraft/data/server/recipe/SingleItemRecipeJsonFactory.html" title="class in net.minecraft.data.server.recipe">SingleItemRecipeJsonFactory</a>&nbsp;singleItemRecipeJsonFactory)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/DataCache.html#method_32904-net.minecraft.data.server.recipe.SingleItemRecipeJsonFactory-">method_32904</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_32898-net.minecraft.class_6347-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_32898</h4>
-<pre>public&nbsp;void&nbsp;method_32898(<a href="../../../net/minecraft/class_6347.html" title="class in net.minecraft">class_6347</a>&nbsp;class_6347)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/DataCache.html#method_32898-net.minecraft.class_6347-">method_32898</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_32891-net.minecraft.data.server.BlockLootTableGenerator-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_32891</h4>
-<pre>public&nbsp;void&nbsp;method_32891(<a href="../../../net/minecraft/data/server/BlockLootTableGenerator.html" title="class in net.minecraft.data.server">BlockLootTableGenerator</a>&nbsp;blockLootTableGenerator)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/DataCache.html#method_32891-net.minecraft.data.server.BlockLootTableGenerator-">method_32891</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_32258-net.minecraft.class_6244-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_32258</h4>
-<pre>public&nbsp;void&nbsp;method_32258(<a href="../../../net/minecraft/class_6244.html" title="interface in net.minecraft">class_6244</a>&nbsp;class_6244)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/class_6237.html#method_32258-net.minecraft.class_6244-">method_32258</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/class_6237.html" title="interface in net.minecraft">class_6237</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_33624-net.minecraft.class_6257-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33624</h4>
-<pre>public&nbsp;void&nbsp;method_33624(<a href="../../../net/minecraft/class_6257.html" title="interface in net.minecraft">class_6257</a>&lt;?&gt;&nbsp;class_6257)</pre>
-</li>
-</ul>
-<a name="method_32900-net.minecraft.data.server.RecipesProvider-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_32900</h4>
-<pre>public&nbsp;void&nbsp;method_32900(<a href="../../../net/minecraft/data/server/RecipesProvider.html" title="class in net.minecraft.data.server">RecipesProvider</a>&nbsp;recipesProvider)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/DataCache.html#method_32900-net.minecraft.data.server.RecipesProvider-">method_32900</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_32879-net.minecraft.data.server.AdventureTabAdvancementGenerator-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_32879</h4>
-<pre>public&nbsp;void&nbsp;method_32879(<a href="../../../net/minecraft/data/server/AdventureTabAdvancementGenerator.html" title="class in net.minecraft.data.server">AdventureTabAdvancementGenerator</a>&nbsp;adventureTabAdvancementGenerator)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/DataCache.html#method_32879-net.minecraft.data.server.AdventureTabAdvancementGenerator-">method_32879</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_33629-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33629</h4>
-<pre>private&nbsp;void&nbsp;method_33629(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
-</li>
-</ul>
-<a name="method_32903-net.minecraft.data.server.recipe.CookingRecipeJsonFactory-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_32903</h4>
-<pre>public&nbsp;void&nbsp;method_32903(<a href="../../../net/minecraft/data/server/recipe/CookingRecipeJsonFactory.html" title="class in net.minecraft.data.server.recipe">CookingRecipeJsonFactory</a>&nbsp;cookingRecipeJsonFactory)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/DataCache.html#method_32903-net.minecraft.data.server.recipe.CookingRecipeJsonFactory-">method_32903</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_32895-net.minecraft.data.server.GiftLootTableGenerator-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_32895</h4>
-<pre>public&nbsp;void&nbsp;method_32895(<a href="../../../net/minecraft/data/server/GiftLootTableGenerator.html" title="class in net.minecraft.data.server">GiftLootTableGenerator</a>&nbsp;giftLootTableGenerator)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/DataCache.html#method_32895-net.minecraft.data.server.GiftLootTableGenerator-">method_32895</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_32887-net.minecraft.data.report.CommandSyntaxProvider-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_32887</h4>
-<pre>public&nbsp;void&nbsp;method_32887(<a href="../../../net/minecraft/data/report/CommandSyntaxProvider.html" title="class in net.minecraft.data.report">CommandSyntaxProvider</a>&nbsp;commandSyntaxProvider)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/DataCache.html#method_32887-net.minecraft.data.report.CommandSyntaxProvider-">method_32887</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_32880-net.minecraft.data.server.HusbandryTabAdvancementGenerator-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_32880</h4>
-<pre>public&nbsp;void&nbsp;method_32880(<a href="../../../net/minecraft/data/server/HusbandryTabAdvancementGenerator.html" title="class in net.minecraft.data.server">HusbandryTabAdvancementGenerator</a>&nbsp;husbandryTabAdvancementGenerator)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/DataCache.html#method_32880-net.minecraft.data.server.HusbandryTabAdvancementGenerator-">method_32880</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_32885-net.minecraft.data.report.BlockListProvider-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_32885</h4>
-<pre>public&nbsp;void&nbsp;method_32885(<a href="../../../net/minecraft/data/report/BlockListProvider.html" title="class in net.minecraft.data.report">BlockListProvider</a>&nbsp;blockListProvider)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/DataCache.html#method_32885-net.minecraft.data.report.BlockListProvider-">method_32885</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_32884-net.minecraft.class_6334-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_32884</h4>
-<pre>public&nbsp;void&nbsp;method_32884(<a href="../../../net/minecraft/class_6334.html" title="class in net.minecraft">class_6334</a>&nbsp;class_6334)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/DataCache.html#method_32884-net.minecraft.class_6334-">method_32884</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_32892-net.minecraft.data.server.ChestLootTableGenerator-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_32892</h4>
-<pre>public&nbsp;void&nbsp;method_32892(<a href="../../../net/minecraft/data/server/ChestLootTableGenerator.html" title="class in net.minecraft.data.server">ChestLootTableGenerator</a>&nbsp;chestLootTableGenerator)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/DataCache.html#method_32892-net.minecraft.data.server.ChestLootTableGenerator-">method_32892</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_32883-net.minecraft.data.server.EndTabAdvancementGenerator-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_32883</h4>
-<pre>public&nbsp;void&nbsp;method_32883(<a href="../../../net/minecraft/data/server/EndTabAdvancementGenerator.html" title="class in net.minecraft.data.server">EndTabAdvancementGenerator</a>&nbsp;endTabAdvancementGenerator)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/DataCache.html#method_32883-net.minecraft.data.server.EndTabAdvancementGenerator-">method_32883</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_32901-net.minecraft.data.server.recipe.ShapedRecipeJsonFactory-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_32901</h4>
-<pre>public&nbsp;void&nbsp;method_32901(<a href="../../../net/minecraft/data/server/recipe/ShapedRecipeJsonFactory.html" title="class in net.minecraft.data.server.recipe">ShapedRecipeJsonFactory</a>&nbsp;shapedRecipeJsonFactory)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/DataCache.html#method_32901-net.minecraft.data.server.recipe.ShapedRecipeJsonFactory-">method_32901</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_32882-net.minecraft.data.server.StoryTabAdvancementGenerator-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_32882</h4>
-<pre>public&nbsp;void&nbsp;method_32882(<a href="../../../net/minecraft/data/server/StoryTabAdvancementGenerator.html" title="class in net.minecraft.data.server">StoryTabAdvancementGenerator</a>&nbsp;storyTabAdvancementGenerator)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/DataCache.html#method_32882-net.minecraft.data.server.StoryTabAdvancementGenerator-">method_32882</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_32902-net.minecraft.data.server.recipe.ShapelessRecipeJsonFactory-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_32902</h4>
-<pre>public&nbsp;void&nbsp;method_32902(<a href="../../../net/minecraft/data/server/recipe/ShapelessRecipeJsonFactory.html" title="class in net.minecraft.data.server.recipe">ShapelessRecipeJsonFactory</a>&nbsp;shapelessRecipeJsonFactory)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/DataCache.html#method_32902-net.minecraft.data.server.recipe.ShapelessRecipeJsonFactory-">method_32902</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_32888-net.minecraft.data.report.ItemListProvider-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_32888</h4>
-<pre>public&nbsp;void&nbsp;method_32888(<a href="../../../net/minecraft/data/report/ItemListProvider.html" title="class in net.minecraft.data.report">ItemListProvider</a>&nbsp;itemListProvider)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/DataCache.html#method_32888-net.minecraft.data.report.ItemListProvider-">method_32888</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_33630--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33630</h4>
-<pre>private&nbsp;long&nbsp;method_33630()</pre>
-</li>
-</ul>
-<a name="method_32893-net.minecraft.data.server.EntityLootTableGenerator-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_32893</h4>
-<pre>public&nbsp;void&nbsp;method_32893(<a href="../../../net/minecraft/data/server/EntityLootTableGenerator.html" title="class in net.minecraft.data.server">EntityLootTableGenerator</a>&nbsp;entityLootTableGenerator)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/DataCache.html#method_32893-net.minecraft.data.server.EntityLootTableGenerator-">method_32893</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_32878-net.minecraft.class_6330-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_32878</h4>
-<pre>public&nbsp;void&nbsp;method_32878(<a href="../../../net/minecraft/class_6330.html" title="class in net.minecraft">class_6330</a>&nbsp;class_6330)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/DataCache.html#method_32878-net.minecraft.class_6330-">method_32878</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_32881-net.minecraft.data.server.NetherTabAdvancementGenerator-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_32881</h4>
-<pre>public&nbsp;void&nbsp;method_32881(<a href="../../../net/minecraft/data/server/NetherTabAdvancementGenerator.html" title="class in net.minecraft.data.server">NetherTabAdvancementGenerator</a>&nbsp;netherTabAdvancementGenerator)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/DataCache.html#method_32881-net.minecraft.data.server.NetherTabAdvancementGenerator-">method_32881</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_32886-net.minecraft.class_6335-">
+<a name="setCompressionThreshold-int-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_32886</h4>
-<pre>public&nbsp;void&nbsp;method_32886(<a href="../../../net/minecraft/class_6335.html" title="class in net.minecraft">class_6335</a>&nbsp;class_6335)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/DataCache.html#method_32886-net.minecraft.class_6335-">method_32886</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/DataCache.html" title="interface in net.minecraft.data">DataCache</a></code></dd>
-</dl>
+<h4>setCompressionThreshold</h4>
+<pre>public&nbsp;void&nbsp;setCompressionThreshold(int&nbsp;compressionThreshold)</pre>
 </li>
 </ul>
 </li>
@@ -1378,7 +371,7 @@ implements <a href="../../../net/minecraft/data/DataCache.html" title="interface
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../net/minecraft/network/PacketEncoder.html" title="class in net.minecraft.network"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/network/SizePrepender.html" title="class in net.minecraft.network"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/network/ServerAddress.html" title="class in net.minecraft.network"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/network/PacketInflater.html" target="_top">Frames</a></li>
@@ -1402,7 +395,7 @@ implements <a href="../../../net/minecraft/data/DataCache.html" title="interface
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested.classes.inherited.from.class.io.netty.handler.codec.ByteToMessageDecoder">Nested</a>&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>

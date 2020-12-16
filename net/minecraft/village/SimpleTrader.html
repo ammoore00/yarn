@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../net/minecraft/village/TradeOffers.html" title="class in net.minecraft.village"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/village/TradeOffer.html" title="class in net.minecraft.village"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/village/SimpleTrader.html" target="_top">Frames</a></li>
@@ -99,23 +99,23 @@ var activeTableTab = "activeTableTab";
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../net/minecraft/class_5958.html" title="class in net.minecraft">net.minecraft.class_5958</a>&lt;<a href="../../../net/minecraft/class_4799.html" title="class in net.minecraft">class_4799</a>&gt;</li>
-<li>
-<ul class="inheritance">
 <li>net.minecraft.village.SimpleTrader</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../net/minecraft/village/Trader.html" title="interface in net.minecraft.village">Trader</a></dd>
+</dl>
 <hr>
 <br>
 <pre>@Environment(value=CLIENT)
 public class <span class="typeNameLabel">SimpleTrader</span>
-extends <a href="../../../net/minecraft/class_5958.html" title="class in net.minecraft">class_5958</a>&lt;<a href="../../../net/minecraft/class_4799.html" title="class in net.minecraft">class_4799</a>&gt;</pre>
+extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
+implements <a href="../../../net/minecraft/village/Trader.html" title="interface in net.minecraft.village">Trader</a></pre>
 </li>
 </ul>
 </div>
@@ -135,17 +135,22 @@ extends <a href="../../../net/minecraft/class_5958.html" title="class in net.min
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private static <a href="../../../net/minecraft/test/FailureLoggingTestCompletionListener.html" title="class in net.minecraft.test">FailureLoggingTestCompletionListener</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/SimpleTrader.html#field_29787">field_29787</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../net/minecraft/village/TraderOfferList.html" title="class in net.minecraft.village">TraderOfferList</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/SimpleTrader.html#field_22452">field_22452</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/SimpleTrader.html#field_22453">field_22453</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/SimpleTrader.html#player">player</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="../../../net/minecraft/village/TraderInventory.html" title="class in net.minecraft.village">TraderInventory</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/SimpleTrader.html#traderInventory">traderInventory</a></span></code>&nbsp;</td>
 </tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.class_5958">
-<!--   -->
-</a>
-<h3>Fields inherited from class&nbsp;net.minecraft.<a href="../../../net/minecraft/class_5958.html" title="class in net.minecraft">class_5958</a></h3>
-<code><a href="../../../net/minecraft/class_5958.html#field_29705">field_29705</a>, <a href="../../../net/minecraft/class_5958.html#field_29706">field_29706</a>, <a href="../../../net/minecraft/class_5958.html#field_29707">field_29707</a>, <a href="../../../net/minecraft/class_5958.html#field_29708">field_29708</a></code></li>
-</ul>
 </li>
 </ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -160,7 +165,8 @@ extends <a href="../../../net/minecraft/class_5958.html" title="class in net.min
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/SimpleTrader.html#SimpleTrader-net.minecraft.class_5957-">SimpleTrader</a></span>(<a href="../../../net/minecraft/class_5957.html" title="class in net.minecraft">class_5957</a>&nbsp;class_5957)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/SimpleTrader.html#SimpleTrader-net.minecraft.entity.player.PlayerEntity-net.minecraft.text.Text-">SimpleTrader</a></span>(<a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity,
+            <a href="../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;text)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -178,40 +184,42 @@ extends <a href="../../../net/minecraft/class_5958.html" title="class in net.min
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>protected <a href="../../../net/minecraft/test/FailureLoggingTestCompletionListener.html" title="class in net.minecraft.test">FailureLoggingTestCompletionListener</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/SimpleTrader.html#a-net.minecraft.class_4799-">a</a></span>(<a href="../../../net/minecraft/class_4799.html" title="class in net.minecraft">class_4799</a>&nbsp;class_4799)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/SimpleTrader.html#getCurrentCustomer--">getCurrentCustomer</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/SimpleTrader.html#method_30943-net.minecraft.class_4799-double-double-double-float-float-">method_30943</a></span>(<a href="../../../net/minecraft/class_4799.html" title="class in net.minecraft">class_4799</a>&nbsp;class_4799,
-            double&nbsp;double2,
-            double&nbsp;double3,
-            double&nbsp;double4,
-            float&nbsp;float2,
-            float&nbsp;float3)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/SimpleTrader.html#getDisplayName--">getDisplayName</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>private void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/SimpleTrader.html#method_31093-net.minecraft.class_4799-float-float-">method_31093</a></span>(<a href="../../../net/minecraft/class_4799.html" title="class in net.minecraft">class_4799</a>&nbsp;class_4799,
-            float&nbsp;float2,
-            float&nbsp;float3)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/SimpleTrader.html#getTraderWorld--">getTraderWorld</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>private void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/SimpleTrader.html#method_31094-net.minecraft.class_4799-int-int-int-int-">method_31094</a></span>(<a href="../../../net/minecraft/class_4799.html" title="class in net.minecraft">class_4799</a>&nbsp;class_4799,
-            int&nbsp;int2,
-            int&nbsp;int3,
-            int&nbsp;int4,
-            int&nbsp;int5)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/SimpleTrader.html#getYesSound--">getYesSound</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../net/minecraft/village/TraderOfferList.html" title="class in net.minecraft.village">TraderOfferList</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/SimpleTrader.html#method_25829-net.minecraft.entity.player.PlayerEntity-">method_25829</a></span>(<a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/SimpleTrader.html#onSellingItem-net.minecraft.item.ItemStack-">onSellingItem</a></span>(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/SimpleTrader.html#setCurrentCustomer-net.minecraft.entity.player.PlayerEntity-">setCurrentCustomer</a></span>(<a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;customer)</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/SimpleTrader.html#setOffersFromServer-net.minecraft.village.TraderOfferList-">setOffersFromServer</a></span>(<a href="../../../net/minecraft/village/TraderOfferList.html" title="class in net.minecraft.village">TraderOfferList</a>&nbsp;traderOfferList)</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/SimpleTrader.html#trade-net.minecraft.village.TradeOffer-">trade</a></span>(<a href="../../../net/minecraft/village/TradeOffer.html" title="class in net.minecraft.village">TradeOffer</a>&nbsp;tradeOffer)</code>&nbsp;</td>
 </tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.class_5958">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;net.minecraft.<a href="../../../net/minecraft/class_5958.html" title="class in net.minecraft">class_5958</a></h3>
-<code><a href="../../../net/minecraft/class_5958.html#method_30936--">method_30936</a>, <a href="../../../net/minecraft/class_5958.html#method_30938-net.minecraft.entity.ExperienceOrbEntity-double-double-double-">method_30938</a>, <a href="../../../net/minecraft/class_5958.html#method_30939-net.minecraft.test.FailureLoggingTestCompletionListener-">method_30939</a>, <a href="../../../net/minecraft/class_5958.html#method_30941-T-double-double-double-">method_30941</a>, <a href="../../../net/minecraft/class_5958.html#method_30944-T-double-double-double-java.lang.String-double-">method_30944</a>, <a href="../../../net/minecraft/class_5958.html#method_30945-T-net.minecraft.class_5941-double-double-double-">method_30945</a>, <a href="../../../net/minecraft/class_5958.html#method_30946-T-java.lang.String-double-double-double-int-">method_30946</a>, <a href="../../../net/minecraft/class_5958.html#method_30947-boolean-">method_30947</a>, <a href="../../../net/minecraft/class_5958.html#method_30949-T-">method_30949</a>, <a href="../../../net/minecraft/class_5958.html#method_30950-T-double-double-double-float-float-">method_30950</a>, <a href="../../../net/minecraft/class_5958.html#method_30951-T-">method_30951</a>, <a href="../../../net/minecraft/class_5958.html#method_30952-net.minecraft.command.arguments.ScoreboardSlotArgumentType-double-double-double-float-float-">method_30952</a>, <a href="../../../net/minecraft/class_5958.html#method_30953--">method_30953</a>, <a href="../../../net/minecraft/class_5958.html#method_30954-T-">method_30954</a>, <a href="../../../net/minecraft/class_5958.html#method_30956--">method_30956</a></code></li>
-</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -233,13 +241,40 @@ extends <a href="../../../net/minecraft/class_5958.html" title="class in net.min
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_29787">
+<a name="traderInventory">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>traderInventory</h4>
+<pre>private final&nbsp;<a href="../../../net/minecraft/village/TraderInventory.html" title="class in net.minecraft.village">TraderInventory</a> traderInventory</pre>
+</li>
+</ul>
+<a name="player">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>player</h4>
+<pre>private final&nbsp;<a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a> player</pre>
+</li>
+</ul>
+<a name="field_22452">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>field_22452</h4>
+<pre>private&nbsp;<a href="../../../net/minecraft/village/TraderOfferList.html" title="class in net.minecraft.village">TraderOfferList</a> field_22452</pre>
+</li>
+</ul>
+<a name="field_22453">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_29787</h4>
-<pre>private static final&nbsp;<a href="../../../net/minecraft/test/FailureLoggingTestCompletionListener.html" title="class in net.minecraft.test">FailureLoggingTestCompletionListener</a> field_29787</pre>
+<h4>field_22453</h4>
+<pre>private final&nbsp;<a href="../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a> field_22453</pre>
 </li>
 </ul>
 </li>
@@ -250,13 +285,14 @@ extends <a href="../../../net/minecraft/class_5958.html" title="class in net.min
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="SimpleTrader-net.minecraft.class_5957-">
+<a name="SimpleTrader-net.minecraft.entity.player.PlayerEntity-net.minecraft.text.Text-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SimpleTrader</h4>
-<pre>public&nbsp;SimpleTrader(<a href="../../../net/minecraft/class_5957.html" title="class in net.minecraft">class_5957</a>&nbsp;class_5957)</pre>
+<pre>public&nbsp;SimpleTrader(<a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity,
+                    <a href="../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;text)</pre>
 </li>
 </ul>
 </li>
@@ -267,59 +303,125 @@ extends <a href="../../../net/minecraft/class_5958.html" title="class in net.min
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_30943-net.minecraft.class_4799-double-double-double-float-float-">
+<a name="getCurrentCustomer--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_30943</h4>
-<pre>public&nbsp;void&nbsp;method_30943(<a href="../../../net/minecraft/class_4799.html" title="class in net.minecraft">class_4799</a>&nbsp;class_4799,
-                         double&nbsp;double2,
-                         double&nbsp;double3,
-                         double&nbsp;double4,
-                         float&nbsp;float2,
-                         float&nbsp;float3)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../net/minecraft/class_5958.html#method_30943-T-double-double-double-float-float-">method_30943</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/class_5958.html" title="class in net.minecraft">class_5958</a>&lt;<a href="../../../net/minecraft/class_4799.html" title="class in net.minecraft">class_4799</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="a-net.minecraft.class_4799-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>a</h4>
-<pre>protected&nbsp;<a href="../../../net/minecraft/test/FailureLoggingTestCompletionListener.html" title="class in net.minecraft.test">FailureLoggingTestCompletionListener</a>&nbsp;a(<a href="../../../net/minecraft/class_4799.html" title="class in net.minecraft">class_4799</a>&nbsp;class_4799)</pre>
+<h4>getCurrentCustomer</h4>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;getCurrentCustomer()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/class_5958.html#a-T-">a</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/class_5958.html" title="class in net.minecraft">class_5958</a>&lt;<a href="../../../net/minecraft/class_4799.html" title="class in net.minecraft">class_4799</a>&gt;</code></dd>
+<dd><code><a href="../../../net/minecraft/village/Trader.html#getCurrentCustomer--">getCurrentCustomer</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/village/Trader.html" title="interface in net.minecraft.village">Trader</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_31094-net.minecraft.class_4799-int-int-int-int-">
+<a name="setCurrentCustomer-net.minecraft.entity.player.PlayerEntity-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_31094</h4>
-<pre>private&nbsp;void&nbsp;method_31094(<a href="../../../net/minecraft/class_4799.html" title="class in net.minecraft">class_4799</a>&nbsp;class_4799,
-                          int&nbsp;int2,
-                          int&nbsp;int3,
-                          int&nbsp;int4,
-                          int&nbsp;int5)</pre>
+<h4>setCurrentCustomer</h4>
+<pre>public&nbsp;void&nbsp;setCurrentCustomer(<a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                               <a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;customer)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../net/minecraft/village/Trader.html#setCurrentCustomer-net.minecraft.entity.player.PlayerEntity-">setCurrentCustomer</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/village/Trader.html" title="interface in net.minecraft.village">Trader</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_31093-net.minecraft.class_4799-float-float-">
+<a name="method_25829-net.minecraft.entity.player.PlayerEntity-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_25829</h4>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="../../../net/minecraft/village/TraderOfferList.html" title="class in net.minecraft.village">TraderOfferList</a>&nbsp;method_25829(<a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../net/minecraft/village/Trader.html#method_25829-net.minecraft.entity.player.PlayerEntity-">method_25829</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/village/Trader.html" title="interface in net.minecraft.village">Trader</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setOffersFromServer-net.minecraft.village.TraderOfferList-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setOffersFromServer</h4>
+<pre>public&nbsp;void&nbsp;setOffersFromServer(<a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                                <a href="../../../net/minecraft/village/TraderOfferList.html" title="class in net.minecraft.village">TraderOfferList</a>&nbsp;traderOfferList)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../net/minecraft/village/Trader.html#setOffersFromServer-net.minecraft.village.TraderOfferList-">setOffersFromServer</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/village/Trader.html" title="interface in net.minecraft.village">Trader</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="trade-net.minecraft.village.TradeOffer-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>trade</h4>
+<pre>public&nbsp;void&nbsp;trade(<a href="../../../net/minecraft/village/TradeOffer.html" title="class in net.minecraft.village">TradeOffer</a>&nbsp;tradeOffer)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../net/minecraft/village/Trader.html#trade-net.minecraft.village.TradeOffer-">trade</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/village/Trader.html" title="interface in net.minecraft.village">Trader</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="onSellingItem-net.minecraft.item.ItemStack-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onSellingItem</h4>
+<pre>public&nbsp;void&nbsp;onSellingItem(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../net/minecraft/village/Trader.html#onSellingItem-net.minecraft.item.ItemStack-">onSellingItem</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/village/Trader.html" title="interface in net.minecraft.village">Trader</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getDisplayName--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDisplayName</h4>
+<pre>public&nbsp;<a href="../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;getDisplayName()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../net/minecraft/village/Trader.html#getDisplayName--">getDisplayName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/village/Trader.html" title="interface in net.minecraft.village">Trader</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getTraderWorld--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTraderWorld</h4>
+<pre>public&nbsp;<a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;getTraderWorld()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../net/minecraft/village/Trader.html#getTraderWorld--">getTraderWorld</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/village/Trader.html" title="interface in net.minecraft.village">Trader</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getYesSound--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_31093</h4>
-<pre>private&nbsp;void&nbsp;method_31093(<a href="../../../net/minecraft/class_4799.html" title="class in net.minecraft">class_4799</a>&nbsp;class_4799,
-                          float&nbsp;float2,
-                          float&nbsp;float3)</pre>
+<h4>getYesSound</h4>
+<pre>public&nbsp;<a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;getYesSound()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../net/minecraft/village/Trader.html#getYesSound--">getYesSound</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/village/Trader.html" title="interface in net.minecraft.village">Trader</a></code></dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -350,7 +452,7 @@ extends <a href="../../../net/minecraft/class_5958.html" title="class in net.min
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../net/minecraft/village/TradeOffers.html" title="class in net.minecraft.village"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/village/TradeOffer.html" title="class in net.minecraft.village"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/village/SimpleTrader.html" target="_top">Frames</a></li>

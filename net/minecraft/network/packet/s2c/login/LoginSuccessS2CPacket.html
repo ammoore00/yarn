@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -99,17 +99,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">net.minecraft.network.packet.c2s.play.HandSwingC2SPacket</a></li>
-<li>
-<ul class="inheritance">
-<li><a href="../../../../../../net/minecraft/network/packet/c2s/play/SpectatorTeleportC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">net.minecraft.network.packet.c2s.play.SpectatorTeleportC2SPacket</a></li>
-<li>
-<ul class="inheritance">
 <li>net.minecraft.network.packet.s2c.login.LoginSuccessS2CPacket</li>
-</ul>
-</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -118,12 +108,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../../../net/minecraft/network/listener/ClientLoginPacketListener.html" title="interface in net.minecraft.network.listener">ClientLoginPacketListener</a></dd>
+<dd><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientLoginPacketListener.html" title="interface in net.minecraft.network.listener">ClientLoginPacketListener</a>&gt;</dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">LoginSuccessS2CPacket</span>
-extends <a href="../../../../../../net/minecraft/network/packet/c2s/play/SpectatorTeleportC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">SpectatorTeleportC2SPacket</a></pre>
+extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
+implements <a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientLoginPacketListener.html" title="interface in net.minecraft.network.listener">ClientLoginPacketListener</a>&gt;</pre>
 </li>
 </ul>
 </div>
@@ -143,17 +134,10 @@ extends <a href="../../../../../../net/minecraft/network/packet/c2s/play/Spectat
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/login/LoginSuccessS2CPacket.html#field_22096">field_22096</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private com.mojang.authlib.GameProfile</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/login/LoginSuccessS2CPacket.html#profile">profile</a></span></code>&nbsp;</td>
 </tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.network.packet.c2s.play.HandSwingC2SPacket">
-<!--   -->
-</a>
-<h3>Fields inherited from class&nbsp;net.minecraft.network.packet.c2s.play.<a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">HandSwingC2SPacket</a></h3>
-<code><a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html#field_22079">field_22079</a></code></li>
-</ul>
 </li>
 </ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -168,7 +152,10 @@ extends <a href="../../../../../../net/minecraft/network/packet/c2s/play/Spectat
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/login/LoginSuccessS2CPacket.html#LoginSuccessS2CPacket-net.minecraft.network.packet.c2s.play.UpdateJigsawC2SPacket-">LoginSuccessS2CPacket</a></span>(<a href="../../../../../../net/minecraft/network/packet/c2s/play/UpdateJigsawC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">UpdateJigsawC2SPacket</a>&nbsp;updateJigsawC2SPacket)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/login/LoginSuccessS2CPacket.html#LoginSuccessS2CPacket--">LoginSuccessS2CPacket</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/login/LoginSuccessS2CPacket.html#LoginSuccessS2CPacket-com.mojang.authlib.GameProfile-">LoginSuccessS2CPacket</a></span>(com.mojang.authlib.GameProfile&nbsp;profile)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -187,31 +174,21 @@ extends <a href="../../../../../../net/minecraft/network/packet/c2s/play/Spectat
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/login/LoginSuccessS2CPacket.html#method_24564--">method_24564</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/login/LoginSuccessS2CPacket.html#apply-net.minecraft.network.listener.ClientLoginPacketListener-">apply</a></span>(<a href="../../../../../../net/minecraft/network/listener/ClientLoginPacketListener.html" title="interface in net.minecraft.network.listener">ClientLoginPacketListener</a>&nbsp;clientLoginPacketListener)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/login/LoginSuccessS2CPacket.html#method_24565--">method_24565</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>com.mojang.authlib.GameProfile</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/login/LoginSuccessS2CPacket.html#getProfile--">getProfile</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../net/minecraft/class_4792.html" title="class in net.minecraft">class_4792</a>&lt;<a href="../../../../../../net/minecraft/network/packet/s2c/login/LoginSuccessS2CPacket.html" title="class in net.minecraft.network.packet.s2c.login">LoginSuccessS2CPacket</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/login/LoginSuccessS2CPacket.html#method_24570--">method_24570</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/login/LoginSuccessS2CPacket.html#read-net.minecraft.util.PacketByteBuf-">read</a></span>(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/login/LoginSuccessS2CPacket.html#write-net.minecraft.util.PacketByteBuf-">write</a></span>(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)</code>&nbsp;</td>
 </tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.network.packet.c2s.play.SpectatorTeleportC2SPacket">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;net.minecraft.network.packet.c2s.play.<a href="../../../../../../net/minecraft/network/packet/c2s/play/SpectatorTeleportC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">SpectatorTeleportC2SPacket</a></h3>
-<code><a href="../../../../../../net/minecraft/network/packet/c2s/play/SpectatorTeleportC2SPacket.html#method_24560--">method_24560</a>, <a href="../../../../../../net/minecraft/network/packet/c2s/play/SpectatorTeleportC2SPacket.html#method_24561-net.minecraft.class_4785-net.minecraft.command.arguments.EntitySummonArgumentType-float-">method_24561</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.network.packet.c2s.play.HandSwingC2SPacket">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;net.minecraft.network.packet.c2s.play.<a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">HandSwingC2SPacket</a></h3>
-<code><a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html#method_24562-net.minecraft.class_4786-net.minecraft.class_6183-net.minecraft.command.arguments.EntitySummonArgumentType-net.minecraft.class_4890-">method_24562</a>, <a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html#method_24563--">method_24563</a>, <a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html#method_24566--">method_24566</a>, <a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html#method_24567--">method_24567</a>, <a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html#method_24568--">method_24568</a>, <a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html#method_24569--">method_24569</a></code></li>
-</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -233,13 +210,13 @@ extends <a href="../../../../../../net/minecraft/network/packet/c2s/play/Spectat
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_22096">
+<a name="profile">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_22096</h4>
-<pre>private&nbsp;int field_22096</pre>
+<h4>profile</h4>
+<pre>private&nbsp;com.mojang.authlib.GameProfile profile</pre>
 </li>
 </ul>
 </li>
@@ -250,13 +227,22 @@ extends <a href="../../../../../../net/minecraft/network/packet/c2s/play/Spectat
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="LoginSuccessS2CPacket-net.minecraft.network.packet.c2s.play.UpdateJigsawC2SPacket-">
+<a name="LoginSuccessS2CPacket--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>LoginSuccessS2CPacket</h4>
+<pre>public&nbsp;LoginSuccessS2CPacket()</pre>
+</li>
+</ul>
+<a name="LoginSuccessS2CPacket-com.mojang.authlib.GameProfile-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>LoginSuccessS2CPacket</h4>
-<pre>public&nbsp;LoginSuccessS2CPacket(<a href="../../../../../../net/minecraft/network/packet/c2s/play/UpdateJigsawC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">UpdateJigsawC2SPacket</a>&nbsp;updateJigsawC2SPacket)</pre>
+<pre>public&nbsp;LoginSuccessS2CPacket(com.mojang.authlib.GameProfile&nbsp;profile)</pre>
 </li>
 </ul>
 </li>
@@ -267,43 +253,59 @@ extends <a href="../../../../../../net/minecraft/network/packet/c2s/play/Spectat
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_24564--">
+<a name="read-net.minecraft.util.PacketByteBuf-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_24564</h4>
-<pre>public&nbsp;void&nbsp;method_24564()</pre>
+<h4>read</h4>
+<pre>public&nbsp;void&nbsp;read(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)
+          throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../net/minecraft/network/listener/ClientLoginPacketListener.html#method_24564--">method_24564</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/listener/ClientLoginPacketListener.html" title="interface in net.minecraft.network.listener">ClientLoginPacketListener</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html#method_24564--">method_24564</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">HandSwingC2SPacket</a></code></dd>
+<dd><code><a href="../../../../../../net/minecraft/network/Packet.html#read-net.minecraft.util.PacketByteBuf-">read</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientLoginPacketListener.html" title="interface in net.minecraft.network.listener">ClientLoginPacketListener</a>&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_24565--">
+<a name="write-net.minecraft.util.PacketByteBuf-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_24565</h4>
-<pre>public&nbsp;void&nbsp;method_24565()</pre>
+<h4>write</h4>
+<pre>public&nbsp;void&nbsp;write(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)
+           throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../net/minecraft/network/listener/ClientLoginPacketListener.html#method_24565--">method_24565</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/listener/ClientLoginPacketListener.html" title="interface in net.minecraft.network.listener">ClientLoginPacketListener</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html#method_24565--">method_24565</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">HandSwingC2SPacket</a></code></dd>
+<dd><code><a href="../../../../../../net/minecraft/network/Packet.html#write-net.minecraft.util.PacketByteBuf-">write</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientLoginPacketListener.html" title="interface in net.minecraft.network.listener">ClientLoginPacketListener</a>&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_24570--">
+<a name="apply-net.minecraft.network.listener.ClientLoginPacketListener-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>apply</h4>
+<pre>public&nbsp;void&nbsp;apply(<a href="../../../../../../net/minecraft/network/listener/ClientLoginPacketListener.html" title="interface in net.minecraft.network.listener">ClientLoginPacketListener</a>&nbsp;clientLoginPacketListener)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/network/Packet.html#apply-T-">apply</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientLoginPacketListener.html" title="interface in net.minecraft.network.listener">ClientLoginPacketListener</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getProfile--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_24570</h4>
-<pre>public&nbsp;<a href="../../../../../../net/minecraft/class_4792.html" title="class in net.minecraft">class_4792</a>&lt;<a href="../../../../../../net/minecraft/network/packet/s2c/login/LoginSuccessS2CPacket.html" title="class in net.minecraft.network.packet.s2c.login">LoginSuccessS2CPacket</a>&gt;&nbsp;method_24570()</pre>
+<h4>getProfile</h4>
+<pre>@Environment(value=CLIENT)
+public&nbsp;com.mojang.authlib.GameProfile&nbsp;getProfile()</pre>
 </li>
 </ul>
 </li>

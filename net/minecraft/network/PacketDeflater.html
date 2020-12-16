@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var methods = {"i0":10,"i1":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/network/Packet.html" title="class in net.minecraft.network"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/network/PacketDeflater.class_6386.html" title="enum in net.minecraft.network"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/network/PacketEncoder.html" title="class in net.minecraft.network"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/network/PacketDeflater.html" target="_top">Frames</a></li>
@@ -73,7 +73,7 @@ var activeTableTab = "activeTableTab";
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
@@ -99,7 +99,22 @@ var activeTableTab = "activeTableTab";
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
+<li>io.netty.channel.ChannelHandlerAdapter</li>
+<li>
+<ul class="inheritance">
+<li>io.netty.channel.ChannelOutboundHandlerAdapter</li>
+<li>
+<ul class="inheritance">
+<li>io.netty.handler.codec.MessageToByteEncoder&lt;io.netty.buffer.ByteBuf&gt;</li>
+<li>
+<ul class="inheritance">
 <li>net.minecraft.network.PacketDeflater</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -108,13 +123,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../net/minecraft/class_6237.html" title="interface in net.minecraft">class_6237</a>, <a href="../../../net/minecraft/data/server/AbstractTagProvider.html" title="interface in net.minecraft.data.server">AbstractTagProvider</a>, <a href="../../../net/minecraft/nbt/AbstractListTag.html" title="interface in net.minecraft.nbt">AbstractListTag</a></dd>
+<dd>io.netty.channel.ChannelHandler, io.netty.channel.ChannelOutboundHandler</dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">PacketDeflater</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
-implements <a href="../../../net/minecraft/data/server/AbstractTagProvider.html" title="interface in net.minecraft.data.server">AbstractTagProvider</a>, <a href="../../../net/minecraft/nbt/AbstractListTag.html" title="interface in net.minecraft.nbt">AbstractListTag</a></pre>
+extends io.netty.handler.codec.MessageToByteEncoder&lt;io.netty.buffer.ByteBuf&gt;</pre>
 </li>
 </ul>
 </div>
@@ -127,17 +141,13 @@ implements <a href="../../../net/minecraft/data/server/AbstractTagProvider.html"
 <!--   -->
 </a>
 <h3>Nested Class Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Nested Class Summary table, listing nested classes, and an explanation">
-<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Class and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>(package private) static class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketDeflater.class_6386.html" title="enum in net.minecraft.network">PacketDeflater.class_6386</a></span></code>&nbsp;</td>
-</tr>
-</table>
+<ul class="blockList">
+<li class="blockList"><a name="nested.classes.inherited.from.class.io.netty.channel.ChannelHandler">
+<!--   -->
+</a>
+<h3>Nested classes/interfaces inherited from interface&nbsp;io.netty.channel.ChannelHandler</h3>
+<code>io.netty.channel.ChannelHandler.Sharable</code></li>
+</ul>
 </li>
 </ul>
 <!-- =========== FIELD SUMMARY =========== -->
@@ -153,52 +163,16 @@ implements <a href="../../../net/minecraft/data/server/AbstractTagProvider.html"
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/class_6230.html" title="class in net.minecraft">class_6230</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketDeflater.html#field_31886">field_31886</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicInteger.html?is-external=true" title="class or interface in java.util.concurrent.atomic">AtomicInteger</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketDeflater.html#field_31887">field_31887</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketDeflater.html#field_31888">field_31888</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util">Random</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketDeflater.html#field_31889">field_31889</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private byte[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketDeflater.html#field_31890">field_31890</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketDeflater.html#field_31891">field_31891</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../net/minecraft/network/PacketDeflater.class_6386.html" title="enum in net.minecraft.network">PacketDeflater.class_6386</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketDeflater.html#field_31892">field_31892</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketDeflater.html#field_31893">field_31893</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private com.mojang.authlib.GameProfile</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketDeflater.html#field_31894">field_31894</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketDeflater.html#compressionThreshold">compressionThreshold</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketDeflater.html#field_31895">field_31895</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private byte[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketDeflater.html#deflateBuffer">deflateBuffer</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketDeflater.html#field_31896">field_31896</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketDeflater.html#field_31897">field_31897</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/Deflater.html?is-external=true" title="class or interface in java.util.zip">Deflater</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketDeflater.html#deflater">deflater</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -215,8 +189,7 @@ implements <a href="../../../net/minecraft/data/server/AbstractTagProvider.html"
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketDeflater.html#PacketDeflater-net.minecraft.server.MinecraftServer-net.minecraft.class_6230-">PacketDeflater</a></span>(<a href="../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a>&nbsp;minecraftServer,
-              <a href="../../../net/minecraft/class_6230.html" title="class in net.minecraft">class_6230</a>&nbsp;class_6230)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketDeflater.html#PacketDeflater-int-">PacketDeflater</a></span>(int&nbsp;int2)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -234,44 +207,50 @@ implements <a href="../../../net/minecraft/data/server/AbstractTagProvider.html"
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketDeflater.html#method_32258-net.minecraft.class_6244-">method_32258</a></span>(<a href="../../../net/minecraft/class_6244.html" title="interface in net.minecraft">class_6244</a>&nbsp;class_6244)</code>&nbsp;</td>
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketDeflater.html#encode-io.netty.channel.ChannelHandlerContext-io.netty.buffer.ByteBuf-io.netty.buffer.ByteBuf-">encode</a></span>(io.netty.channel.ChannelHandlerContext&nbsp;channelHandlerContext,
+      io.netty.buffer.ByteBuf&nbsp;byteBuf,
+      io.netty.buffer.ByteBuf&nbsp;byteBuf2)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketDeflater.html#method_33045-net.minecraft.class_6353-">method_33045</a></span>(<a href="../../../net/minecraft/class_6353.html" title="class in net.minecraft">class_6353</a>&nbsp;class_6353)</code>&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketDeflater.html#method_33046-net.minecraft.class_6354-">method_33046</a></span>(<a href="../../../net/minecraft/class_6354.html" title="class in net.minecraft">class_6354</a>&nbsp;class_6354)</code>&nbsp;</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketDeflater.html#method_33379--">method_33379</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>protected com.mojang.authlib.GameProfile</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketDeflater.html#method_33632-com.mojang.authlib.GameProfile-">method_33632</a></span>(com.mojang.authlib.GameProfile&nbsp;gameProfile)</code>&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketDeflater.html#method_33636--">method_33636</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketDeflater.html#method_33637-net.minecraft.class_6244-">method_33637</a></span>(<a href="../../../net/minecraft/class_6244.html" title="interface in net.minecraft">class_6244</a>&nbsp;class_6244)</code>&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketDeflater.html#method_33639--">method_33639</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/PacketDeflater.html#setCompressionThreshold-int-">setCompressionThreshold</a></span>(int&nbsp;compressionThreshold)</code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.io.netty.handler.codec.MessageToByteEncoder">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.netty.handler.codec.MessageToByteEncoder</h3>
+<code>acceptOutboundMessage, allocateBuffer, isPreferDirect, write</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.io.netty.channel.ChannelOutboundHandlerAdapter">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.netty.channel.ChannelOutboundHandlerAdapter</h3>
+<code>bind, close, connect, deregister, disconnect, flush, read</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.io.netty.channel.ChannelHandlerAdapter">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;io.netty.channel.ChannelHandlerAdapter</h3>
+<code>ensureNotSharable, exceptionCaught, handlerAdded, handlerRemoved, isSharable</code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
 <code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.io.netty.channel.ChannelHandler">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;io.netty.channel.ChannelHandler</h3>
+<code>exceptionCaught, handlerAdded, handlerRemoved</code></li>
 </ul>
 </li>
 </ul>
@@ -287,116 +266,31 @@ implements <a href="../../../net/minecraft/data/server/AbstractTagProvider.html"
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_31887">
+<a name="deflateBuffer">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_31887</h4>
-<pre>private static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicInteger.html?is-external=true" title="class or interface in java.util.concurrent.atomic">AtomicInteger</a> field_31887</pre>
+<h4>deflateBuffer</h4>
+<pre>private final&nbsp;byte[] deflateBuffer</pre>
 </li>
 </ul>
-<a name="field_31888">
+<a name="deflater">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_31888</h4>
-<pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a> field_31888</pre>
+<h4>deflater</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/zip/Deflater.html?is-external=true" title="class or interface in java.util.zip">Deflater</a> deflater</pre>
 </li>
 </ul>
-<a name="field_31889">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31889</h4>
-<pre>private static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util">Random</a> field_31889</pre>
-</li>
-</ul>
-<a name="field_31890">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31890</h4>
-<pre>private final&nbsp;byte[] field_31890</pre>
-</li>
-</ul>
-<a name="field_31891">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31891</h4>
-<pre>private final&nbsp;<a href="../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a> field_31891</pre>
-</li>
-</ul>
-<a name="field_31886">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31886</h4>
-<pre>public final&nbsp;<a href="../../../net/minecraft/class_6230.html" title="class in net.minecraft">class_6230</a> field_31886</pre>
-</li>
-</ul>
-<a name="field_31892">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31892</h4>
-<pre>private&nbsp;<a href="../../../net/minecraft/network/PacketDeflater.class_6386.html" title="enum in net.minecraft.network">PacketDeflater.class_6386</a> field_31892</pre>
-</li>
-</ul>
-<a name="field_31893">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31893</h4>
-<pre>private&nbsp;int field_31893</pre>
-</li>
-</ul>
-<a name="field_31894">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31894</h4>
-<pre>private&nbsp;com.mojang.authlib.GameProfile field_31894</pre>
-</li>
-</ul>
-<a name="field_31895">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31895</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> field_31895</pre>
-<dl>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../constant-values.html#net.minecraft.network.PacketDeflater.field_31895">Constant Field Values</a></dd>
-</dl>
-</li>
-</ul>
-<a name="field_31896">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31896</h4>
-<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</a> field_31896</pre>
-</li>
-</ul>
-<a name="field_31897">
+<a name="compressionThreshold">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_31897</h4>
-<pre>private&nbsp;<a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a> field_31897</pre>
+<h4>compressionThreshold</h4>
+<pre>private&nbsp;int compressionThreshold</pre>
 </li>
 </ul>
 </li>
@@ -407,14 +301,13 @@ implements <a href="../../../net/minecraft/data/server/AbstractTagProvider.html"
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="PacketDeflater-net.minecraft.server.MinecraftServer-net.minecraft.class_6230-">
+<a name="PacketDeflater-int-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>PacketDeflater</h4>
-<pre>public&nbsp;PacketDeflater(<a href="../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a>&nbsp;minecraftServer,
-                      <a href="../../../net/minecraft/class_6230.html" title="class in net.minecraft">class_6230</a>&nbsp;class_6230)</pre>
+<pre>public&nbsp;PacketDeflater(int&nbsp;int2)</pre>
 </li>
 </ul>
 </li>
@@ -425,92 +318,31 @@ implements <a href="../../../net/minecraft/data/server/AbstractTagProvider.html"
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_33379--">
+<a name="encode-io.netty.channel.ChannelHandlerContext-io.netty.buffer.ByteBuf-io.netty.buffer.ByteBuf-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_33379</h4>
-<pre>public&nbsp;void&nbsp;method_33379()</pre>
+<h4>encode</h4>
+<pre>protected&nbsp;void&nbsp;encode(io.netty.channel.ChannelHandlerContext&nbsp;channelHandlerContext,
+                      io.netty.buffer.ByteBuf&nbsp;byteBuf,
+                      io.netty.buffer.ByteBuf&nbsp;byteBuf2)
+               throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/nbt/AbstractListTag.html#method_33379--">method_33379</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/nbt/AbstractListTag.html" title="interface in net.minecraft.nbt">AbstractListTag</a></code></dd>
+<dd><code>encode</code>&nbsp;in class&nbsp;<code>io.netty.handler.codec.MessageToByteEncoder&lt;io.netty.buffer.ByteBuf&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_33637-net.minecraft.class_6244-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33637</h4>
-<pre>public&nbsp;void&nbsp;method_33637(<a href="../../../net/minecraft/class_6244.html" title="interface in net.minecraft">class_6244</a>&nbsp;class_6244)</pre>
-</li>
-</ul>
-<a name="method_33636--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33636</h4>
-<pre>public&nbsp;void&nbsp;method_33636()</pre>
-</li>
-</ul>
-<a name="method_32258-net.minecraft.class_6244-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_32258</h4>
-<pre>public&nbsp;void&nbsp;method_32258(<a href="../../../net/minecraft/class_6244.html" title="interface in net.minecraft">class_6244</a>&nbsp;class_6244)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/class_6237.html#method_32258-net.minecraft.class_6244-">method_32258</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/class_6237.html" title="interface in net.minecraft">class_6237</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_33639--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33639</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;method_33639()</pre>
-</li>
-</ul>
-<a name="method_33045-net.minecraft.class_6353-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33045</h4>
-<pre>public&nbsp;void&nbsp;method_33045(<a href="../../../net/minecraft/class_6353.html" title="class in net.minecraft">class_6353</a>&nbsp;class_6353)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/server/AbstractTagProvider.html#method_33045-net.minecraft.class_6353-">method_33045</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/server/AbstractTagProvider.html" title="interface in net.minecraft.data.server">AbstractTagProvider</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_33046-net.minecraft.class_6354-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33046</h4>
-<pre>public&nbsp;void&nbsp;method_33046(<a href="../../../net/minecraft/class_6354.html" title="class in net.minecraft">class_6354</a>&nbsp;class_6354)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/data/server/AbstractTagProvider.html#method_33046-net.minecraft.class_6354-">method_33046</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/data/server/AbstractTagProvider.html" title="interface in net.minecraft.data.server">AbstractTagProvider</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_33632-com.mojang.authlib.GameProfile-">
+<a name="setCompressionThreshold-int-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_33632</h4>
-<pre>protected&nbsp;com.mojang.authlib.GameProfile&nbsp;method_33632(com.mojang.authlib.GameProfile&nbsp;gameProfile)</pre>
+<h4>setCompressionThreshold</h4>
+<pre>public&nbsp;void&nbsp;setCompressionThreshold(int&nbsp;compressionThreshold)</pre>
 </li>
 </ul>
 </li>
@@ -540,8 +372,8 @@ implements <a href="../../../net/minecraft/data/server/AbstractTagProvider.html"
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/network/Packet.html" title="class in net.minecraft.network"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/network/PacketDeflater.class_6386.html" title="enum in net.minecraft.network"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/network/PacketEncoder.html" title="class in net.minecraft.network"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/network/PacketDeflater.html" target="_top">Frames</a></li>
@@ -565,7 +397,7 @@ implements <a href="../../../net/minecraft/data/server/AbstractTagProvider.html"
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>

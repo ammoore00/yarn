@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":6,"i1":10,"i2":10,"i3":10,"i4":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -74,13 +74,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -99,7 +99,12 @@ var activeTableTab = "activeTableTab";
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
+<li><a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html" title="class in net.minecraft.block.dispenser">net.minecraft.block.dispenser.ItemDispenserBehavior</a></li>
+<li>
+<ul class="inheritance">
 <li>net.minecraft.block.dispenser.ProjectileDispenserBehavior</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -108,13 +113,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../net/minecraft/class_6257.html" title="interface in net.minecraft">class_6257</a>&lt;<a href="../../../../net/minecraft/class_6260.html" title="interface in net.minecraft">class_6260</a>&gt;</dd>
+<dd><a href="../../../../net/minecraft/block/dispenser/DispenserBehavior.html" title="interface in net.minecraft.block.dispenser">DispenserBehavior</a></dd>
 </dl>
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">ProjectileDispenserBehavior</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
-implements <a href="../../../../net/minecraft/class_6257.html" title="interface in net.minecraft">class_6257</a>&lt;<a href="../../../../net/minecraft/class_6260.html" title="interface in net.minecraft">class_6260</a>&gt;</pre>
+<pre>public abstract class <span class="typeNameLabel">ProjectileDispenserBehavior</span>
+extends <a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html" title="class in net.minecraft.block.dispenser">ItemDispenserBehavior</a></pre>
 </li>
 </ul>
 </div>
@@ -127,21 +131,13 @@ implements <a href="../../../../net/minecraft/class_6257.html" title="interface 
 <!--   -->
 </a>
 <h3>Field Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
-<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Field and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ProjectileDispenserBehavior.html#field_31217">field_31217</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../net/minecraft/class_6362.class_6363.html" title="class in net.minecraft">class_6362.class_6363</a>&lt;?&gt;&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ProjectileDispenserBehavior.html#field_31218">field_31218</a></span></code>&nbsp;</td>
-</tr>
-</table>
+<ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.block.dispenser.DispenserBehavior">
+<!--   -->
+</a>
+<h3>Fields inherited from interface&nbsp;net.minecraft.block.dispenser.<a href="../../../../net/minecraft/block/dispenser/DispenserBehavior.html" title="interface in net.minecraft.block.dispenser">DispenserBehavior</a></h3>
+<code><a href="../../../../net/minecraft/block/dispenser/DispenserBehavior.html#field_30682">field_30682</a></code></li>
+</ul>
 </li>
 </ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -158,11 +154,6 @@ implements <a href="../../../../net/minecraft/class_6257.html" title="interface 
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ProjectileDispenserBehavior.html#ProjectileDispenserBehavior--">ProjectileDispenserBehavior</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ProjectileDispenserBehavior.html#ProjectileDispenserBehavior-int-net.minecraft.class_6362-boolean-">ProjectileDispenserBehavior</a></span>(int&nbsp;int2,
-                           <a href="../../../../net/minecraft/class_6362.html" title="class in net.minecraft">class_6362</a>&nbsp;class_6362,
-                           boolean&nbsp;bool)</code>&nbsp;</td>
-</tr>
 </table>
 </li>
 </ul>
@@ -173,32 +164,42 @@ implements <a href="../../../../net/minecraft/class_6257.html" title="interface 
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ProjectileDispenserBehavior.html#method_32354-net.minecraft.class_6233-">method_32354</a></span>(<a href="../../../../net/minecraft/class_6233.html" title="class in net.minecraft">class_6233</a>&nbsp;class_6233)</code>&nbsp;</td>
+<td class="colFirst"><code>protected abstract <a href="../../../../net/minecraft/entity/projectile/Projectile.html" title="interface in net.minecraft.entity.projectile">Projectile</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ProjectileDispenserBehavior.html#createProjectile-net.minecraft.world.World-net.minecraft.util.math.Position-net.minecraft.item.ItemStack-">createProjectile</a></span>(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;position,
+                <a href="../../../../net/minecraft/util/math/Position.html" title="interface in net.minecraft.util.math">Position</a>&nbsp;stack,
+                <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ProjectileDispenserBehavior.html#method_32355-net.minecraft.class_6260-">method_32355</a></span>(<a href="../../../../net/minecraft/class_6260.html" title="interface in net.minecraft">class_6260</a>&nbsp;class_6260)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ProjectileDispenserBehavior.html#dispenseSilently-net.minecraft.util.math.BlockPointer-net.minecraft.item.ItemStack-">dispenseSilently</a></span>(<a href="../../../../net/minecraft/util/math/BlockPointer.html" title="interface in net.minecraft.util.math">BlockPointer</a>&nbsp;pointer,
+                <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ProjectileDispenserBehavior.html#method_32356-net.minecraft.class_6233-">method_32356</a></span>(<a href="../../../../net/minecraft/class_6233.html" title="class in net.minecraft">class_6233</a>&nbsp;class_6233)</code>&nbsp;</td>
+<td class="colFirst"><code>protected float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ProjectileDispenserBehavior.html#getForce--">getForce</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../net/minecraft/class_6362.class_6363.html" title="class in net.minecraft">class_6362.class_6363</a>&lt;?&gt;&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ProjectileDispenserBehavior.html#method_32775--">method_32775</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>protected float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ProjectileDispenserBehavior.html#getVariation--">getVariation</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ProjectileDispenserBehavior.html#method_32777--">method_32777</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ProjectileDispenserBehavior.html#playSound-net.minecraft.util.math.BlockPointer-">playSound</a></span>(<a href="../../../../net/minecraft/util/math/BlockPointer.html" title="interface in net.minecraft.util.math">BlockPointer</a>&nbsp;pointer)</code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.block.dispenser.ItemDispenserBehavior">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;net.minecraft.block.dispenser.<a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html" title="class in net.minecraft.block.dispenser">ItemDispenserBehavior</a></h3>
+<code><a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html#method_31948-net.minecraft.world.World-net.minecraft.item.ItemStack-int-net.minecraft.util.math.Direction-net.minecraft.util.math.Position-">method_31948</a>, <a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html#method_31989-net.minecraft.util.math.BlockPointer-net.minecraft.item.ItemStack-">method_31989</a>, <a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html#spawnParticles-net.minecraft.util.math.BlockPointer-net.minecraft.util.math.Direction-">spawnParticles</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -214,32 +215,6 @@ implements <a href="../../../../net/minecraft/class_6257.html" title="interface 
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ============ FIELD DETAIL =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.detail">
-<!--   -->
-</a>
-<h3>Field Detail</h3>
-<a name="field_31217">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31217</h4>
-<pre>private&nbsp;int field_31217</pre>
-</li>
-</ul>
-<a name="field_31218">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>field_31218</h4>
-<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../net/minecraft/class_6362.class_6363.html" title="class in net.minecraft">class_6362.class_6363</a>&lt;?&gt;&gt; field_31218</pre>
-</li>
-</ul>
-</li>
-</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
@@ -249,21 +224,10 @@ implements <a href="../../../../net/minecraft/class_6257.html" title="interface 
 <a name="ProjectileDispenserBehavior--">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
-<h4>ProjectileDispenserBehavior</h4>
-<pre>public&nbsp;ProjectileDispenserBehavior()</pre>
-</li>
-</ul>
-<a name="ProjectileDispenserBehavior-int-net.minecraft.class_6362-boolean-">
-<!--   -->
-</a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ProjectileDispenserBehavior</h4>
-<pre>public&nbsp;ProjectileDispenserBehavior(int&nbsp;int2,
-                                   <a href="../../../../net/minecraft/class_6362.html" title="class in net.minecraft">class_6362</a>&nbsp;class_6362,
-                                   boolean&nbsp;bool)</pre>
+<pre>public&nbsp;ProjectileDispenserBehavior()</pre>
 </li>
 </ul>
 </li>
@@ -274,69 +238,60 @@ implements <a href="../../../../net/minecraft/class_6257.html" title="interface 
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_32354-net.minecraft.class_6233-">
+<a name="dispenseSilently-net.minecraft.util.math.BlockPointer-net.minecraft.item.ItemStack-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_32354</h4>
-<pre>public&nbsp;void&nbsp;method_32354(<a href="../../../../net/minecraft/class_6233.html" title="class in net.minecraft">class_6233</a>&nbsp;class_6233)
-                  throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<h4>dispenseSilently</h4>
+<pre>public&nbsp;<a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;dispenseSilently(<a href="../../../../net/minecraft/util/math/BlockPointer.html" title="interface in net.minecraft.util.math">BlockPointer</a>&nbsp;pointer,
+                                  <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</pre>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_6257.html#method_32354-net.minecraft.class_6233-">method_32354</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/class_6257.html" title="interface in net.minecraft">class_6257</a>&lt;<a href="../../../../net/minecraft/class_6260.html" title="interface in net.minecraft">class_6260</a>&gt;</code></dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html#dispenseSilently-net.minecraft.util.math.BlockPointer-net.minecraft.item.ItemStack-">dispenseSilently</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html" title="class in net.minecraft.block.dispenser">ItemDispenserBehavior</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_32356-net.minecraft.class_6233-">
+<a name="playSound-net.minecraft.util.math.BlockPointer-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_32356</h4>
-<pre>public&nbsp;void&nbsp;method_32356(<a href="../../../../net/minecraft/class_6233.html" title="class in net.minecraft">class_6233</a>&nbsp;class_6233)
-                  throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<h4>playSound</h4>
+<pre>protected&nbsp;void&nbsp;playSound(<a href="../../../../net/minecraft/util/math/BlockPointer.html" title="interface in net.minecraft.util.math">BlockPointer</a>&nbsp;pointer)</pre>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_6257.html#method_32356-net.minecraft.class_6233-">method_32356</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/class_6257.html" title="interface in net.minecraft">class_6257</a>&lt;<a href="../../../../net/minecraft/class_6260.html" title="interface in net.minecraft">class_6260</a>&gt;</code></dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html#playSound-net.minecraft.util.math.BlockPointer-">playSound</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html" title="class in net.minecraft.block.dispenser">ItemDispenserBehavior</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_32355-net.minecraft.class_6260-">
+<a name="createProjectile-net.minecraft.world.World-net.minecraft.util.math.Position-net.minecraft.item.ItemStack-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_32355</h4>
-<pre>public&nbsp;void&nbsp;method_32355(<a href="../../../../net/minecraft/class_6260.html" title="interface in net.minecraft">class_6260</a>&nbsp;class_6260)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_6257.html#method_32355-T-">method_32355</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/class_6257.html" title="interface in net.minecraft">class_6257</a>&lt;<a href="../../../../net/minecraft/class_6260.html" title="interface in net.minecraft">class_6260</a>&gt;</code></dd>
-</dl>
+<h4>createProjectile</h4>
+<pre>protected abstract&nbsp;<a href="../../../../net/minecraft/entity/projectile/Projectile.html" title="interface in net.minecraft.entity.projectile">Projectile</a>&nbsp;createProjectile(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;position,
+                                               <a href="../../../../net/minecraft/util/math/Position.html" title="interface in net.minecraft.util.math">Position</a>&nbsp;stack,
+                                               <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</pre>
 </li>
 </ul>
-<a name="method_32775--">
+<a name="getVariation--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_32775</h4>
-<pre>@Environment(value=CLIENT)
-public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../net/minecraft/class_6362.class_6363.html" title="class in net.minecraft">class_6362.class_6363</a>&lt;?&gt;&gt;&nbsp;method_32775()</pre>
+<h4>getVariation</h4>
+<pre>protected&nbsp;float&nbsp;getVariation()</pre>
 </li>
 </ul>
-<a name="method_32777--">
+<a name="getForce--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_32777</h4>
-<pre>@Environment(value=CLIENT)
-public&nbsp;int&nbsp;method_32777()</pre>
+<h4>getForce</h4>
+<pre>protected&nbsp;float&nbsp;getForce()</pre>
 </li>
 </ul>
 </li>
@@ -392,13 +347,13 @@ public&nbsp;int&nbsp;method_32777()</pre>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>

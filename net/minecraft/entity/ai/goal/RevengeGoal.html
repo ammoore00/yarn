@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../net/minecraft/entity/ai/goal/RaidGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../net/minecraft/entity/ai/goal/SitOnOwnerShoulderGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/entity/ai/goal/ProjectileAttackGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/entity/ai/goal/SitGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?net/minecraft/entity/ai/goal/RevengeGoal.html" target="_top">Frames</a></li>
@@ -99,18 +99,31 @@ var activeTableTab = "activeTableTab";
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
+<li><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal">net.minecraft.entity.ai.goal.Goal</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../net/minecraft/entity/ai/goal/TrackTargetGoal.html" title="class in net.minecraft.entity.ai.goal">net.minecraft.entity.ai.goal.TrackTargetGoal</a></li>
+<li>
+<ul class="inheritance">
 <li>net.minecraft.entity.ai.goal.RevengeGoal</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><a href="../../../../../net/minecraft/entity/passive/LlamaEntity.SpitRevengeGoal.html" title="class in net.minecraft.entity.passive">LlamaEntity.SpitRevengeGoal</a>, <a href="../../../../../net/minecraft/entity/passive/PolarBearEntity.PolarBearRevengeGoal.html" title="class in net.minecraft.entity.passive">PolarBearEntity.PolarBearRevengeGoal</a>, <a href="../../../../../net/minecraft/entity/mob/ZombiePigmanEntity.AvoidZombiesGoal.html" title="class in net.minecraft.entity.mob">ZombiePigmanEntity.AvoidZombiesGoal</a></dd>
+</dl>
 <hr>
 <br>
-<pre>@Environment(value=CLIENT)
-public class <span class="typeNameLabel">RevengeGoal</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<pre>public class <span class="typeNameLabel">RevengeGoal</span>
+extends <a href="../../../../../net/minecraft/entity/ai/goal/TrackTargetGoal.html" title="class in net.minecraft.entity.ai.goal">TrackTargetGoal</a></pre>
 </li>
 </ul>
 </div>
@@ -130,42 +143,25 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/RevengeGoal.html#field_28540">field_28540</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/RevengeGoal.html#field_33567">field_33567</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/RevengeGoal.html#field_28541">field_28541</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/RevengeGoal.html#field_33569">field_33569</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/RevengeGoal.html#field_28542">field_28542</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/RevengeGoal.html#field_28543">field_28543</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/RevengeGoal.html#field_28544">field_28544</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/RevengeGoal.html#field_28545">field_28545</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/RevengeGoal.html#field_28546">field_28546</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../../../net/minecraft/entity/ai/brain/task/PlayWithVillagerBabiesTask.html" title="class in net.minecraft.entity.ai.brain.task">PlayWithVillagerBabiesTask</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/RevengeGoal.html#field_28547">field_28547</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../../net/minecraft/class_5755.html" title="class in net.minecraft">class_5755</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/RevengeGoal.html#field_28548">field_28548</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/RevengeGoal.html#lastAttackedTime">lastAttackedTime</a></span></code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.entity.ai.goal.TrackTargetGoal">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;net.minecraft.entity.ai.goal.<a href="../../../../../net/minecraft/entity/ai/goal/TrackTargetGoal.html" title="class in net.minecraft.entity.ai.goal">TrackTargetGoal</a></h3>
+<code><a href="../../../../../net/minecraft/entity/ai/goal/TrackTargetGoal.html#checkVisibility">checkVisibility</a>, <a href="../../../../../net/minecraft/entity/ai/goal/TrackTargetGoal.html#field_33608">field_33608</a>, <a href="../../../../../net/minecraft/entity/ai/goal/TrackTargetGoal.html#maxTimeWithoutVisibility">maxTimeWithoutVisibility</a>, <a href="../../../../../net/minecraft/entity/ai/goal/TrackTargetGoal.html#target">target</a></code></li>
+</ul>
 </li>
 </ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -180,29 +176,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/RevengeGoal.html#RevengeGoal-net.minecraft.entity.ai.goal.RaidGoal-int-int-float-float-float-int-int-int-float-">RevengeGoal</a></span>(<a href="../../../../../net/minecraft/entity/ai/goal/RaidGoal.html" title="class in net.minecraft.entity.ai.goal">RaidGoal</a>&nbsp;raidGoal,
-           int&nbsp;int2,
-           int&nbsp;int3,
-           float&nbsp;float2,
-           float&nbsp;float3,
-           float&nbsp;float4,
-           int&nbsp;int4,
-           int&nbsp;int5,
-           int&nbsp;int6,
-           float&nbsp;float5)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/RevengeGoal.html#RevengeGoal-net.minecraft.entity.ai.goal.RaidGoal-int-int-float-float-float-int-int-int-float-boolean-">RevengeGoal</a></span>(<a href="../../../../../net/minecraft/entity/ai/goal/RaidGoal.html" title="class in net.minecraft.entity.ai.goal">RaidGoal</a>&nbsp;raidGoal,
-           int&nbsp;int2,
-           int&nbsp;int3,
-           float&nbsp;float2,
-           float&nbsp;float3,
-           float&nbsp;float4,
-           int&nbsp;int4,
-           int&nbsp;int5,
-           int&nbsp;int6,
-           float&nbsp;float5,
-           boolean&nbsp;bool)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/RevengeGoal.html#RevengeGoal-net.minecraft.entity.mob.MobEntityWithAi-boolean-java.lang.Class:A-">RevengeGoal</a></span>(<a href="../../../../../net/minecraft/entity/mob/MobEntityWithAi.html" title="class in net.minecraft.entity.mob">MobEntityWithAi</a>&nbsp;mob,
+           boolean&nbsp;bool,
+           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;[]&nbsp;class2)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -220,15 +196,37 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/RevengeGoal.html#method_29910-net.minecraft.class_5842-float-">method_29910</a></span>(<a href="../../../../../net/minecraft/class_5842.html" title="class in net.minecraft">class_5842</a>&nbsp;class_5842,
-            float&nbsp;float2)</code>&nbsp;</td>
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/RevengeGoal.html#callSameTypeForRevenge--">callSameTypeForRevenge</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../net/minecraft/entity/ai/goal/RevengeGoal.html" title="class in net.minecraft.entity.ai.goal">RevengeGoal</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/RevengeGoal.html#method_29911-java.lang.String-">method_29911</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/RevengeGoal.html#canStart--">canStart</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/RevengeGoal.html#setMobEntityTarget-net.minecraft.entity.mob.MobEntityWithAi-net.minecraft.entity.LivingEntity-">setMobEntityTarget</a></span>(<a href="../../../../../net/minecraft/entity/mob/MobEntityWithAi.html" title="class in net.minecraft.entity.mob">MobEntityWithAi</a>&nbsp;mobEntityWithAi,
+                  <a href="../../../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;target)</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/RevengeGoal.html#start--">start</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.entity.ai.goal.TrackTargetGoal">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;net.minecraft.entity.ai.goal.<a href="../../../../../net/minecraft/entity/ai/goal/TrackTargetGoal.html" title="class in net.minecraft.entity.ai.goal">TrackTargetGoal</a></h3>
+<code><a href="../../../../../net/minecraft/entity/ai/goal/TrackTargetGoal.html#canTrack-net.minecraft.entity.LivingEntity-boolean-">canTrack</a>, <a href="../../../../../net/minecraft/entity/ai/goal/TrackTargetGoal.html#getFollowRange--">getFollowRange</a>, <a href="../../../../../net/minecraft/entity/ai/goal/TrackTargetGoal.html#method_35007-net.minecraft.entity.mob.MobEntity-net.minecraft.entity.LivingEntity-boolean-boolean-">method_35007</a>, <a href="../../../../../net/minecraft/entity/ai/goal/TrackTargetGoal.html#setMaxTimeWithoutVisibility-int-">setMaxTimeWithoutVisibility</a>, <a href="../../../../../net/minecraft/entity/ai/goal/TrackTargetGoal.html#shouldContinue--">shouldContinue</a>, <a href="../../../../../net/minecraft/entity/ai/goal/TrackTargetGoal.html#stop--">stop</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.entity.ai.goal.Goal">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;net.minecraft.entity.ai.goal.<a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</a></h3>
+<code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#canStop--">canStop</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_34938-int-">method_34938</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_34944--">method_34944</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#tick--">tick</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -250,85 +248,31 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_28547">
+<a name="field_33567">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_28547</h4>
-<pre>private final&nbsp;<a href="../../../../../net/minecraft/entity/ai/brain/task/PlayWithVillagerBabiesTask.html" title="class in net.minecraft.entity.ai.brain.task">PlayWithVillagerBabiesTask</a>[] field_28547</pre>
+<h4>field_33567</h4>
+<pre>private final&nbsp;boolean field_33567</pre>
 </li>
 </ul>
-<a name="field_28548">
+<a name="lastAttackedTime">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_28548</h4>
-<pre>private final&nbsp;<a href="../../../../../net/minecraft/class_5755.html" title="class in net.minecraft">class_5755</a>[] field_28548</pre>
+<h4>lastAttackedTime</h4>
+<pre>private&nbsp;int lastAttackedTime</pre>
 </li>
 </ul>
-<a name="field_28540">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_28540</h4>
-<pre>public final&nbsp;float field_28540</pre>
-</li>
-</ul>
-<a name="field_28541">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_28541</h4>
-<pre>public final&nbsp;float field_28541</pre>
-</li>
-</ul>
-<a name="field_28542">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_28542</h4>
-<pre>public final&nbsp;float field_28542</pre>
-</li>
-</ul>
-<a name="field_28543">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_28543</h4>
-<pre>public final&nbsp;float field_28543</pre>
-</li>
-</ul>
-<a name="field_28544">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_28544</h4>
-<pre>public final&nbsp;float field_28544</pre>
-</li>
-</ul>
-<a name="field_28545">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_28545</h4>
-<pre>public final&nbsp;float field_28545</pre>
-</li>
-</ul>
-<a name="field_28546">
+<a name="field_33569">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_28546</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> field_28546</pre>
+<h4>field_33569</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;[] field_33569</pre>
 </li>
 </ul>
 </li>
@@ -339,41 +283,15 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="RevengeGoal-net.minecraft.entity.ai.goal.RaidGoal-int-int-float-float-float-int-int-int-float-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>RevengeGoal</h4>
-<pre>public&nbsp;RevengeGoal(<a href="../../../../../net/minecraft/entity/ai/goal/RaidGoal.html" title="class in net.minecraft.entity.ai.goal">RaidGoal</a>&nbsp;raidGoal,
-                   int&nbsp;int2,
-                   int&nbsp;int3,
-                   float&nbsp;float2,
-                   float&nbsp;float3,
-                   float&nbsp;float4,
-                   int&nbsp;int4,
-                   int&nbsp;int5,
-                   int&nbsp;int6,
-                   float&nbsp;float5)</pre>
-</li>
-</ul>
-<a name="RevengeGoal-net.minecraft.entity.ai.goal.RaidGoal-int-int-float-float-float-int-int-int-float-boolean-">
+<a name="RevengeGoal-net.minecraft.entity.mob.MobEntityWithAi-boolean-java.lang.Class:A-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>RevengeGoal</h4>
-<pre>public&nbsp;RevengeGoal(<a href="../../../../../net/minecraft/entity/ai/goal/RaidGoal.html" title="class in net.minecraft.entity.ai.goal">RaidGoal</a>&nbsp;raidGoal,
-                   int&nbsp;int2,
-                   int&nbsp;int3,
-                   float&nbsp;float2,
-                   float&nbsp;float3,
-                   float&nbsp;float4,
-                   int&nbsp;int4,
-                   int&nbsp;int5,
-                   int&nbsp;int6,
-                   float&nbsp;float5,
-                   boolean&nbsp;bool)</pre>
+<pre>public&nbsp;RevengeGoal(<a href="../../../../../net/minecraft/entity/mob/MobEntityWithAi.html" title="class in net.minecraft.entity.mob">MobEntityWithAi</a>&nbsp;mob,
+                   boolean&nbsp;bool,
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;[]&nbsp;class2)</pre>
 </li>
 </ul>
 </li>
@@ -384,23 +302,49 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_29910-net.minecraft.class_5842-float-">
+<a name="canStart--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_29910</h4>
-<pre>public&nbsp;void&nbsp;method_29910(<a href="../../../../../net/minecraft/class_5842.html" title="class in net.minecraft">class_5842</a>&nbsp;class_5842,
-                         float&nbsp;float2)</pre>
+<h4>canStart</h4>
+<pre>public&nbsp;boolean&nbsp;canStart()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#canStart--">canStart</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_29911-java.lang.String-">
+<a name="start--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>start</h4>
+<pre>public&nbsp;void&nbsp;start()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../../net/minecraft/entity/ai/goal/TrackTargetGoal.html#start--">start</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../net/minecraft/entity/ai/goal/TrackTargetGoal.html" title="class in net.minecraft.entity.ai.goal">TrackTargetGoal</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="callSameTypeForRevenge--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>callSameTypeForRevenge</h4>
+<pre>protected&nbsp;void&nbsp;callSameTypeForRevenge()</pre>
+</li>
+</ul>
+<a name="setMobEntityTarget-net.minecraft.entity.mob.MobEntityWithAi-net.minecraft.entity.LivingEntity-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_29911</h4>
-<pre>public&nbsp;<a href="../../../../../net/minecraft/entity/ai/goal/RevengeGoal.html" title="class in net.minecraft.entity.ai.goal">RevengeGoal</a>&nbsp;method_29911(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
+<h4>setMobEntityTarget</h4>
+<pre>protected&nbsp;void&nbsp;setMobEntityTarget(<a href="../../../../../net/minecraft/entity/mob/MobEntityWithAi.html" title="class in net.minecraft.entity.mob">MobEntityWithAi</a>&nbsp;mobEntityWithAi,
+                                  <a href="../../../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;target)</pre>
 </li>
 </ul>
 </li>
@@ -430,8 +374,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../net/minecraft/entity/ai/goal/RaidGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../net/minecraft/entity/ai/goal/SitOnOwnerShoulderGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/entity/ai/goal/ProjectileAttackGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/entity/ai/goal/SitGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?net/minecraft/entity/ai/goal/RevengeGoal.html" target="_top">Frames</a></li>

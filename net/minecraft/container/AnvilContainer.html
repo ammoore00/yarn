@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../net/minecraft/container/BlockContext.html" title="class in net.minecraft.container"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/container/BrewingStandContainer.html" title="class in net.minecraft.container"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/container/AnvilContainer.html" target="_top">Frames</a></li>
@@ -99,10 +99,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../net/minecraft/class_6020.html" title="class in net.minecraft">net.minecraft.class_6020</a></li>
-<li>
-<ul class="inheritance">
-<li><a href="../../../net/minecraft/class_6025.html" title="class in net.minecraft">net.minecraft.class_6025</a></li>
+<li><a href="../../../net/minecraft/container/Container.html" title="class in net.minecraft.container">net.minecraft.container.Container</a></li>
 <li>
 <ul class="inheritance">
 <li>net.minecraft.container.AnvilContainer</li>
@@ -111,20 +108,13 @@ var activeTableTab = "activeTableTab";
 </ul>
 </li>
 </ul>
-</li>
-</ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../net/minecraft/entity/ai/brain/Schedule.html" title="interface in net.minecraft.entity.ai.brain">Schedule</a></dd>
-</dl>
 <hr>
 <br>
-<pre>@Environment(value=CLIENT)
-public class <span class="typeNameLabel">AnvilContainer</span>
-extends <a href="../../../net/minecraft/class_6025.html" title="class in net.minecraft">class_6025</a></pre>
+<pre>public class <span class="typeNameLabel">AnvilContainer</span>
+extends <a href="../../../net/minecraft/container/Container.html" title="class in net.minecraft.container">Container</a></pre>
 </li>
 </ul>
 </div>
@@ -144,51 +134,48 @@ extends <a href="../../../net/minecraft/class_6025.html" title="class in net.min
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#field_29998">field_29998</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#context">context</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicInteger.html?is-external=true" title="class or interface in java.util.concurrent.atomic">AtomicInteger</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#field_29999">field_29999</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#field_22774">field_22774</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#field_30000">field_30000</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#field_22777">field_22777</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#field_22778">field_22778</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#LOGGER">LOGGER</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#field_30001">field_30001</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#newItemName">newItemName</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../net/minecraft/entity/passive/HorseBaseEntity.html" title="interface in net.minecraft.entity.passive">HorseBaseEntity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#field_30002">field_30002</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#player">player</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/BufferedImage.html?is-external=true" title="class or interface in java.awt.image">BufferedImage</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#field_30003">field_30003</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#repairItemUsage">repairItemUsage</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html?is-external=true" title="class or interface in java.lang">Thread</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#field_30004">field_30004</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#field_30005">field_30005</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#result">result</a></span></code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.class_6025">
+<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.container.Container">
 <!--   -->
 </a>
-<h3>Fields inherited from class&nbsp;net.minecraft.<a href="../../../net/minecraft/class_6025.html" title="class in net.minecraft">class_6025</a></h3>
-<code><a href="../../../net/minecraft/class_6025.html#field_30015">field_30015</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.class_6020">
-<!--   -->
-</a>
-<h3>Fields inherited from class&nbsp;net.minecraft.<a href="../../../net/minecraft/class_6020.html" title="class in net.minecraft">class_6020</a></h3>
-<code><a href="../../../net/minecraft/class_6020.html#field_29990">field_29990</a>, <a href="../../../net/minecraft/class_6020.html#field_29991">field_29991</a>, <a href="../../../net/minecraft/class_6020.html#field_29992">field_29992</a>, <a href="../../../net/minecraft/class_6020.html#field_29993">field_29993</a>, <a href="../../../net/minecraft/class_6020.html#field_29994">field_29994</a></code></li>
+<h3>Fields inherited from class&nbsp;net.minecraft.container.<a href="../../../net/minecraft/container/Container.html" title="class in net.minecraft.container">Container</a></h3>
+<code><a href="../../../net/minecraft/container/Container.html#field_22767">field_22767</a>, <a href="../../../net/minecraft/container/Container.html#field_22768">field_22768</a>, <a href="../../../net/minecraft/container/Container.html#listeners">listeners</a>, <a href="../../../net/minecraft/container/Container.html#trackedStacks">trackedStacks</a></code></li>
 </ul>
 </li>
 </ul>
@@ -204,10 +191,15 @@ extends <a href="../../../net/minecraft/class_6025.html" title="class in net.min
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#AnvilContainer-java.io.File-java.lang.String-net.minecraft.test.FailureLoggingTestCompletionListener-net.minecraft.entity.passive.HorseBaseEntity-">AnvilContainer</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file,
-              <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-              <a href="../../../net/minecraft/test/FailureLoggingTestCompletionListener.html" title="class in net.minecraft.test">FailureLoggingTestCompletionListener</a>&nbsp;failureLoggingTestCompletionListener,
-              <a href="../../../net/minecraft/entity/passive/HorseBaseEntity.html" title="interface in net.minecraft.entity.passive">HorseBaseEntity</a>&nbsp;horseBaseEntity)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#AnvilContainer-net.minecraft.entity.player.PlayerInventory-net.minecraft.world.World-net.minecraft.util.math.BlockPos-net.minecraft.entity.player.PlayerEntity-">AnvilContainer</a></span>(<a href="../../../net/minecraft/entity/player/PlayerInventory.html" title="class in net.minecraft.entity.player">PlayerInventory</a>&nbsp;playerInventory,
+              <a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+              <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
+              <a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#AnvilContainer-net.minecraft.entity.player.PlayerInventory-net.minecraft.world.World-net.minecraft.entity.player.PlayerEntity-">AnvilContainer</a></span>(<a href="../../../net/minecraft/entity/player/PlayerInventory.html" title="class in net.minecraft.entity.player">PlayerInventory</a>&nbsp;playerInventory,
+              <a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+              <a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -225,32 +217,46 @@ extends <a href="../../../net/minecraft/class_6025.html" title="class in net.min
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#method_31282-java.awt.image.BufferedImage-">method_31282</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/BufferedImage.html?is-external=true" title="class or interface in java.awt.image">BufferedImage</a>&nbsp;bufferedImage)</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#canUse-net.minecraft.entity.player.PlayerEntity-">canUse</a></span>(<a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#method_31285--">method_31285</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#close-net.minecraft.entity.player.PlayerEntity-">close</a></span>(<a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>private void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#method_31287--">method_31287</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#method_25296-net.minecraft.container.ContainerListener-">method_25296</a></span>(<a href="../../../net/minecraft/container/ContainerListener.html" title="interface in net.minecraft.container">ContainerListener</a>&nbsp;containerListener)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#method_31365-net.minecraft.container.ContainerType-">method_31365</a></span>(<a href="../../../net/minecraft/container/ContainerType.html" title="interface in net.minecraft.container">ContainerType</a>&nbsp;containerType)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#method_25309-int-int-">method_25309</a></span>(int&nbsp;int2,
+            int&nbsp;int3)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#method_31366--">method_31366</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#onContentChanged-net.minecraft.inventory.Inventory-">onContentChanged</a></span>(<a href="../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory)</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#setNewItemName-java.lang.String-">setNewItemName</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#transferSlot-net.minecraft.entity.player.PlayerEntity-int-">transferSlot</a></span>(<a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player,
+            int&nbsp;invSlot)</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/container/AnvilContainer.html#updateResult--">updateResult</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.class_6020">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.container.Container">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;net.minecraft.<a href="../../../net/minecraft/class_6020.html" title="class in net.minecraft">class_6020</a></h3>
-<code><a href="../../../net/minecraft/class_6020.html#method_31277-boolean-boolean-">method_31277</a>, <a href="../../../net/minecraft/class_6020.html#method_31278--">method_31278</a>, <a href="../../../net/minecraft/class_6020.html#method_31364--">method_31364</a>, <a href="../../../net/minecraft/class_6020.html#method_31367-boolean-boolean-">method_31367</a></code></li>
+<h3>Methods inherited from class&nbsp;net.minecraft.container.<a href="../../../net/minecraft/container/Container.html" title="class in net.minecraft.container">Container</a></h3>
+<code><a href="../../../net/minecraft/container/Container.html#addSlot-net.minecraft.container.Slot-">addSlot</a>, <a href="../../../net/minecraft/container/Container.html#calculateComparatorOutput-net.minecraft.block.entity.BlockEntity-">calculateComparatorOutput</a>, <a href="../../../net/minecraft/container/Container.html#calculateComparatorOutput-net.minecraft.inventory.Inventory-">calculateComparatorOutput</a>, <a href="../../../net/minecraft/container/Container.html#calculateStackSize-java.util.Set-int-net.minecraft.item.ItemStack-int-">calculateStackSize</a>, <a href="../../../net/minecraft/container/Container.html#canInsertIntoSlot-net.minecraft.item.ItemStack-net.minecraft.container.Slot-">canInsertIntoSlot</a>, <a href="../../../net/minecraft/container/Container.html#canInsertIntoSlot-net.minecraft.container.Slot-">canInsertIntoSlot</a>, <a href="../../../net/minecraft/container/Container.html#canInsertItemIntoSlot-net.minecraft.container.Slot-net.minecraft.item.ItemStack-boolean-">canInsertItemIntoSlot</a>, <a href="../../../net/minecraft/container/Container.html#dropInventory-net.minecraft.entity.player.PlayerEntity-net.minecraft.world.World-net.minecraft.inventory.Inventory-">dropInventory</a>, <a href="../../../net/minecraft/container/Container.html#endQuickCraft--">endQuickCraft</a>, <a href="../../../net/minecraft/container/Container.html#getNextActionId-net.minecraft.entity.player.PlayerInventory-">getNextActionId</a>, <a href="../../../net/minecraft/container/Container.html#getSlot-int-">getSlot</a>, <a href="../../../net/minecraft/container/Container.html#getStacks--">getStacks</a>, <a href="../../../net/minecraft/container/Container.html#insertItem-net.minecraft.item.ItemStack-int-int-boolean-">insertItem</a>, <a href="../../../net/minecraft/container/Container.html#isNotRestricted-net.minecraft.entity.player.PlayerEntity-">isNotRestricted</a>, <a href="../../../net/minecraft/container/Container.html#method_25301-net.minecraft.world.World-net.minecraft.entity.player.PlayerEntity-net.minecraft.inventory.CraftingInventory-net.minecraft.inventory.CraftingResultInventory-">method_25301</a>, <a href="../../../net/minecraft/container/Container.html#method_25306-net.minecraft.inventory.Inventory-int-">method_25306</a>, <a href="../../../net/minecraft/container/Container.html#method_25307--">method_25307</a>, <a href="../../../net/minecraft/container/Container.html#onButtonClick-net.minecraft.entity.player.PlayerEntity-int-">onButtonClick</a>, <a href="../../../net/minecraft/container/Container.html#onSlotClick-int-int-net.minecraft.container.SlotActionType-net.minecraft.entity.player.PlayerEntity-">onSlotClick</a>, <a href="../../../net/minecraft/container/Container.html#packClickData-int-int-">packClickData</a>, <a href="../../../net/minecraft/container/Container.html#removeListener-net.minecraft.container.ContainerListener-">removeListener</a>, <a href="../../../net/minecraft/container/Container.html#setPlayerRestriction-net.minecraft.entity.player.PlayerEntity-boolean-">setPlayerRestriction</a>, <a href="../../../net/minecraft/container/Container.html#setStackInSlot-int-net.minecraft.item.ItemStack-">setStackInSlot</a>, <a href="../../../net/minecraft/container/Container.html#shouldQuickCraftContinue-int-net.minecraft.entity.player.PlayerEntity-">shouldQuickCraftContinue</a>, <a href="../../../net/minecraft/container/Container.html#unpackButtonId-int-">unpackButtonId</a>, <a href="../../../net/minecraft/container/Container.html#unpackQuickCraftStage-int-">unpackQuickCraftStage</a>, <a href="../../../net/minecraft/container/Container.html#updateSlotStacks-java.util.List-">updateSlotStacks</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -273,80 +279,85 @@ extends <a href="../../../net/minecraft/class_6025.html" title="class in net.min
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_29998">
+<a name="LOGGER">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_29998</h4>
-<pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a> field_29998</pre>
+<h4>LOGGER</h4>
+<pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a> LOGGER</pre>
 </li>
 </ul>
-<a name="field_29999">
+<a name="result">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_29999</h4>
-<pre>private static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicInteger.html?is-external=true" title="class or interface in java.util.concurrent.atomic">AtomicInteger</a> field_29999</pre>
+<h4>result</h4>
+<pre>private final&nbsp;<a href="../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a> result</pre>
 </li>
 </ul>
-<a name="field_30000">
+<a name="field_22777">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_30000</h4>
-<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a> field_30000</pre>
+<h4>field_22777</h4>
+<pre>private final&nbsp;<a href="../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a> field_22777</pre>
 </li>
 </ul>
-<a name="field_30001">
+<a name="field_22778">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_30001</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> field_30001</pre>
+<h4>field_22778</h4>
+<pre>private final&nbsp;<a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a> field_22778</pre>
 </li>
 </ul>
-<a name="field_30002">
+<a name="context">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_30002</h4>
-<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-private final&nbsp;<a href="../../../net/minecraft/entity/passive/HorseBaseEntity.html" title="interface in net.minecraft.entity.passive">HorseBaseEntity</a> field_30002</pre>
+<h4>context</h4>
+<pre>private final&nbsp;<a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a> context</pre>
 </li>
 </ul>
-<a name="field_30003">
+<a name="field_22774">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_30003</h4>
-<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/BufferedImage.html?is-external=true" title="class or interface in java.awt.image">BufferedImage</a> field_30003</pre>
+<h4>field_22774</h4>
+<pre>public&nbsp;int field_22774</pre>
 </li>
 </ul>
-<a name="field_30004">
+<a name="repairItemUsage">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_30004</h4>
-<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html?is-external=true" title="class or interface in java.lang">Thread</a> field_30004</pre>
+<h4>repairItemUsage</h4>
+<pre>private&nbsp;int repairItemUsage</pre>
 </li>
 </ul>
-<a name="field_30005">
+<a name="newItemName">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newItemName</h4>
+<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> newItemName</pre>
+</li>
+</ul>
+<a name="player">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_30005</h4>
-<pre>private&nbsp;boolean field_30005</pre>
+<h4>player</h4>
+<pre>private final&nbsp;<a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a> player</pre>
 </li>
 </ul>
 </li>
@@ -357,18 +368,28 @@ private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="AnvilContainer-java.io.File-java.lang.String-net.minecraft.test.FailureLoggingTestCompletionListener-net.minecraft.entity.passive.HorseBaseEntity-">
+<a name="AnvilContainer-net.minecraft.entity.player.PlayerInventory-net.minecraft.world.World-net.minecraft.entity.player.PlayerEntity-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>AnvilContainer</h4>
+<pre>@Environment(value=CLIENT)
+public&nbsp;AnvilContainer(<a href="../../../net/minecraft/entity/player/PlayerInventory.html" title="class in net.minecraft.entity.player">PlayerInventory</a>&nbsp;playerInventory,
+                                                 <a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+                                                 <a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</pre>
+</li>
+</ul>
+<a name="AnvilContainer-net.minecraft.entity.player.PlayerInventory-net.minecraft.world.World-net.minecraft.util.math.BlockPos-net.minecraft.entity.player.PlayerEntity-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AnvilContainer</h4>
-<pre>public&nbsp;AnvilContainer(<a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-                      <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file,
-                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                      <a href="../../../net/minecraft/test/FailureLoggingTestCompletionListener.html" title="class in net.minecraft.test">FailureLoggingTestCompletionListener</a>&nbsp;failureLoggingTestCompletionListener,
-                      <a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-                      <a href="../../../net/minecraft/entity/passive/HorseBaseEntity.html" title="interface in net.minecraft.entity.passive">HorseBaseEntity</a>&nbsp;horseBaseEntity)</pre>
+<pre>public&nbsp;AnvilContainer(<a href="../../../net/minecraft/entity/player/PlayerInventory.html" title="class in net.minecraft.entity.player">PlayerInventory</a>&nbsp;playerInventory,
+                      <a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+                      <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
+                      <a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</pre>
 </li>
 </ul>
 </li>
@@ -379,64 +400,103 @@ private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_31287--">
+<a name="onContentChanged-net.minecraft.inventory.Inventory-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_31287</h4>
-<pre>private&nbsp;void&nbsp;method_31287()</pre>
-</li>
-</ul>
-<a name="method_31366--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_31366</h4>
-<pre>public&nbsp;int&nbsp;method_31366()</pre>
+<h4>onContentChanged</h4>
+<pre>public&nbsp;void&nbsp;onContentChanged(<a href="../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory)</pre>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/entity/ai/brain/Schedule.html#method_31366--">method_31366</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/entity/ai/brain/Schedule.html" title="interface in net.minecraft.entity.ai.brain">Schedule</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../net/minecraft/class_6020.html#method_31366--">method_31366</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/class_6020.html" title="class in net.minecraft">class_6020</a></code></dd>
+<dd><code><a href="../../../net/minecraft/container/Container.html#onContentChanged-net.minecraft.inventory.Inventory-">onContentChanged</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/container/Container.html" title="class in net.minecraft.container">Container</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_31282-java.awt.image.BufferedImage-">
+<a name="updateResult--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_31282</h4>
-<pre>public&nbsp;void&nbsp;method_31282(<a href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/BufferedImage.html?is-external=true" title="class or interface in java.awt.image">BufferedImage</a>&nbsp;bufferedImage)</pre>
+<h4>updateResult</h4>
+<pre>public&nbsp;void&nbsp;updateResult()</pre>
 </li>
 </ul>
-<a name="method_31365-net.minecraft.container.ContainerType-">
+<a name="method_25296-net.minecraft.container.ContainerListener-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_31365</h4>
-<pre>public&nbsp;void&nbsp;method_31365(<a href="../../../net/minecraft/container/ContainerType.html" title="interface in net.minecraft.container">ContainerType</a>&nbsp;containerType)
-                  throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<h4>method_25296</h4>
+<pre>public&nbsp;void&nbsp;method_25296(<a href="../../../net/minecraft/container/ContainerListener.html" title="interface in net.minecraft.container">ContainerListener</a>&nbsp;containerListener)</pre>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/entity/ai/brain/Schedule.html#method_31365-net.minecraft.container.ContainerType-">method_31365</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/entity/ai/brain/Schedule.html" title="interface in net.minecraft.entity.ai.brain">Schedule</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../net/minecraft/class_6025.html#method_31365-net.minecraft.container.ContainerType-">method_31365</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/class_6025.html" title="class in net.minecraft">class_6025</a></code></dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code><a href="../../../net/minecraft/container/Container.html#method_25296-net.minecraft.container.ContainerListener-">method_25296</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/container/Container.html" title="class in net.minecraft.container">Container</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_31285--">
+<a name="method_25309-int-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_25309</h4>
+<pre>@Environment(value=CLIENT)
+public&nbsp;void&nbsp;method_25309(int&nbsp;int2,
+                                                    int&nbsp;int3)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../net/minecraft/container/Container.html#method_25309-int-int-">method_25309</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/container/Container.html" title="class in net.minecraft.container">Container</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="close-net.minecraft.entity.player.PlayerEntity-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>close</h4>
+<pre>public&nbsp;void&nbsp;close(<a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../net/minecraft/container/Container.html#close-net.minecraft.entity.player.PlayerEntity-">close</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/container/Container.html" title="class in net.minecraft.container">Container</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="canUse-net.minecraft.entity.player.PlayerEntity-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>canUse</h4>
+<pre>public&nbsp;boolean&nbsp;canUse(<a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../net/minecraft/container/Container.html#canUse-net.minecraft.entity.player.PlayerEntity-">canUse</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/container/Container.html" title="class in net.minecraft.container">Container</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="transferSlot-net.minecraft.entity.player.PlayerEntity-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>transferSlot</h4>
+<pre>public&nbsp;<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;transferSlot(<a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player,
+                              int&nbsp;invSlot)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../net/minecraft/container/Container.html#transferSlot-net.minecraft.entity.player.PlayerEntity-int-">transferSlot</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/container/Container.html" title="class in net.minecraft.container">Container</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setNewItemName-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_31285</h4>
-<pre>protected&nbsp;void&nbsp;method_31285()</pre>
+<h4>setNewItemName</h4>
+<pre>public&nbsp;void&nbsp;setNewItemName(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
 </li>
 </ul>
 </li>
@@ -467,7 +527,7 @@ private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../net/minecraft/container/BlockContext.html" title="class in net.minecraft.container"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/container/BrewingStandContainer.html" title="class in net.minecraft.container"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/container/AnvilContainer.html" target="_top">Frames</a></li>

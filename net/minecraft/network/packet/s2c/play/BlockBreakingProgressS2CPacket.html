@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -92,24 +92,29 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">net.minecraft.network.packet.s2c.play</div>
-<h2 title="Class BlockBreakingProgressS2CPacket" class="title">Class BlockBreakingProgressS2CPacket&lt;T&gt;</h2>
+<h2 title="Class BlockBreakingProgressS2CPacket" class="title">Class BlockBreakingProgressS2CPacket</h2>
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li>net.minecraft.network.packet.s2c.play.BlockBreakingProgressS2CPacket&lt;T&gt;</li>
+<li>net.minecraft.network.packet.s2c.play.BlockBreakingProgressS2CPacket</li>
 </ul>
 </li>
 </ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&gt;</dd>
+</dl>
 <hr>
 <br>
-<pre>public abstract class <span class="typeNameLabel">BlockBreakingProgressS2CPacket&lt;T&gt;</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<pre>public class <span class="typeNameLabel">BlockBreakingProgressS2CPacket</span>
+extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
+implements <a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&gt;</pre>
 </li>
 </ul>
 </div>
@@ -129,12 +134,16 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../../../net/minecraft/network/packet/s2c/play/BlockBreakingProgressS2CPacket.html" title="type parameter in BlockBreakingProgressS2CPacket">T</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/BlockBreakingProgressS2CPacket.html#field_32731">field_32731</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/BlockBreakingProgressS2CPacket.html#entityId">entityId</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/BlockBreakingProgressS2CPacket.html#field_32732">field_32732</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/BlockBreakingProgressS2CPacket.html#pos">pos</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/BlockBreakingProgressS2CPacket.html#progress">progress</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -153,6 +162,11 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/BlockBreakingProgressS2CPacket.html#BlockBreakingProgressS2CPacket--">BlockBreakingProgressS2CPacket</a></span>()</code>&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/BlockBreakingProgressS2CPacket.html#BlockBreakingProgressS2CPacket-int-net.minecraft.util.math.BlockPos-int-">BlockBreakingProgressS2CPacket</a></span>(int&nbsp;entityId,
+                              <a href="../../../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+                              int&nbsp;progress)</code>&nbsp;</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -163,18 +177,34 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>protected abstract <a href="../../../../../../net/minecraft/network/packet/s2c/play/BlockBreakingProgressS2CPacket.html" title="type parameter in BlockBreakingProgressS2CPacket">T</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/BlockBreakingProgressS2CPacket.html#method_34020--">method_34020</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/BlockBreakingProgressS2CPacket.html#apply-net.minecraft.network.listener.ClientPlayPacketListener-">apply</a></span>(<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&nbsp;clientPlayPacketListener)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../net/minecraft/network/packet/s2c/play/BlockBreakingProgressS2CPacket.html" title="type parameter in BlockBreakingProgressS2CPacket">T</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/BlockBreakingProgressS2CPacket.html#method_34021--">method_34021</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/BlockBreakingProgressS2CPacket.html#getEntityId--">getEntityId</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/BlockBreakingProgressS2CPacket.html#getPos--">getPos</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/BlockBreakingProgressS2CPacket.html#getProgress--">getProgress</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/BlockBreakingProgressS2CPacket.html#read-net.minecraft.util.PacketByteBuf-">read</a></span>(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/BlockBreakingProgressS2CPacket.html#write-net.minecraft.util.PacketByteBuf-">write</a></span>(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -198,22 +228,31 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_32731">
+<a name="entityId">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_32731</h4>
-<pre>private&nbsp;<a href="../../../../../../net/minecraft/network/packet/s2c/play/BlockBreakingProgressS2CPacket.html" title="type parameter in BlockBreakingProgressS2CPacket">T</a> field_32731</pre>
+<h4>entityId</h4>
+<pre>private&nbsp;int entityId</pre>
 </li>
 </ul>
-<a name="field_32732">
+<a name="pos">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>pos</h4>
+<pre>private&nbsp;<a href="../../../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a> pos</pre>
+</li>
+</ul>
+<a name="progress">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_32732</h4>
-<pre>private&nbsp;boolean field_32732</pre>
+<h4>progress</h4>
+<pre>private&nbsp;int progress</pre>
 </li>
 </ul>
 </li>
@@ -227,10 +266,21 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <a name="BlockBreakingProgressS2CPacket--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>BlockBreakingProgressS2CPacket</h4>
 <pre>public&nbsp;BlockBreakingProgressS2CPacket()</pre>
+</li>
+</ul>
+<a name="BlockBreakingProgressS2CPacket-int-net.minecraft.util.math.BlockPos-int-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>BlockBreakingProgressS2CPacket</h4>
+<pre>public&nbsp;BlockBreakingProgressS2CPacket(int&nbsp;entityId,
+                                      <a href="../../../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+                                      int&nbsp;progress)</pre>
 </li>
 </ul>
 </li>
@@ -241,22 +291,79 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_34021--">
+<a name="read-net.minecraft.util.PacketByteBuf-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_34021</h4>
-<pre>public&nbsp;<a href="../../../../../../net/minecraft/network/packet/s2c/play/BlockBreakingProgressS2CPacket.html" title="type parameter in BlockBreakingProgressS2CPacket">T</a>&nbsp;method_34021()</pre>
+<h4>read</h4>
+<pre>public&nbsp;void&nbsp;read(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)
+          throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/network/Packet.html#read-net.minecraft.util.PacketByteBuf-">read</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_34020--">
+<a name="write-net.minecraft.util.PacketByteBuf-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>write</h4>
+<pre>public&nbsp;void&nbsp;write(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)
+           throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/network/Packet.html#write-net.minecraft.util.PacketByteBuf-">write</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="apply-net.minecraft.network.listener.ClientPlayPacketListener-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>apply</h4>
+<pre>public&nbsp;void&nbsp;apply(<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&nbsp;clientPlayPacketListener)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/network/Packet.html#apply-T-">apply</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getEntityId--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEntityId</h4>
+<pre>@Environment(value=CLIENT)
+public&nbsp;int&nbsp;getEntityId()</pre>
+</li>
+</ul>
+<a name="getPos--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPos</h4>
+<pre>@Environment(value=CLIENT)
+public&nbsp;<a href="../../../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;getPos()</pre>
+</li>
+</ul>
+<a name="getProgress--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_34020</h4>
-<pre>protected abstract&nbsp;<a href="../../../../../../net/minecraft/network/packet/s2c/play/BlockBreakingProgressS2CPacket.html" title="type parameter in BlockBreakingProgressS2CPacket">T</a>&nbsp;method_34020()</pre>
+<h4>getProgress</h4>
+<pre>@Environment(value=CLIENT)
+public&nbsp;int&nbsp;getProgress()</pre>
 </li>
 </ul>
 </li>

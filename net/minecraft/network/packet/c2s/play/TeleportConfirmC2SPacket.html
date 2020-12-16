@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../../net/minecraft/network/packet/c2s/play/SpectatorTeleportC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../net/minecraft/network/packet/c2s/play/UpdateCommandBlockC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../net/minecraft/network/packet/c2s/play/UpdatePlayerAbilitiesC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?net/minecraft/network/packet/c2s/play/TeleportConfirmC2SPacket.html" target="_top">Frames</a></li>
@@ -106,10 +106,15 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a>&gt;</dd>
+</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">TeleportConfirmC2SPacket</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
+implements <a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a>&gt;</pre>
 </li>
 </ul>
 </div>
@@ -129,40 +134,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/play/TeleportConfirmC2SPacket.html#field_33658">field_33658</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/play/TeleportConfirmC2SPacket.html#field_33659">field_33659</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/play/TeleportConfirmC2SPacket.html#field_33660">field_33660</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/play/TeleportConfirmC2SPacket.html#field_33661">field_33661</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/play/TeleportConfirmC2SPacket.html#field_33662">field_33662</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="class in net.minecraft.network.listener">ServerPlayPacketListener</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/play/TeleportConfirmC2SPacket.html#field_33663">field_33663</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/play/TeleportConfirmC2SPacket.html#field_33664">field_33664</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/play/TeleportConfirmC2SPacket.html#field_33665">field_33665</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/play/TeleportConfirmC2SPacket.html#field_33666">field_33666</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/play/TeleportConfirmC2SPacket.html#teleportId">teleportId</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -179,7 +152,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/play/TeleportConfirmC2SPacket.html#TeleportConfirmC2SPacket-net.minecraft.class_5086-">TeleportConfirmC2SPacket</a></span>(<a href="../../../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/play/TeleportConfirmC2SPacket.html#TeleportConfirmC2SPacket--">TeleportConfirmC2SPacket</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/play/TeleportConfirmC2SPacket.html#TeleportConfirmC2SPacket-int-">TeleportConfirmC2SPacket</a></span>(int&nbsp;teleportId)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -198,19 +174,19 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/play/TeleportConfirmC2SPacket.html#method_35109--">method_35109</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/play/TeleportConfirmC2SPacket.html#apply-net.minecraft.network.listener.ServerPlayPacketListener-">apply</a></span>(<a href="../../../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a>&nbsp;serverPlayPacketListener)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>private <a href="../../../../../../net/minecraft/class_5559.html" title="class in net.minecraft">class_5559</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/play/TeleportConfirmC2SPacket.html#method_35110-net.minecraft.class_6183-">method_35110</a></span>(<a href="../../../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183)</code>&nbsp;</td>
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/play/TeleportConfirmC2SPacket.html#getTeleportId--">getTeleportId</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>private boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/play/TeleportConfirmC2SPacket.html#method_35111--">method_35111</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/play/TeleportConfirmC2SPacket.html#read-net.minecraft.util.PacketByteBuf-">read</a></span>(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>private boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/play/TeleportConfirmC2SPacket.html#method_35112--">method_35112</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/play/TeleportConfirmC2SPacket.html#write-net.minecraft.util.PacketByteBuf-">write</a></span>(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -234,85 +210,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_33658">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_33658</h4>
-<pre>private final&nbsp;<a href="../../../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a> field_33658</pre>
-</li>
-</ul>
-<a name="field_33659">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_33659</h4>
-<pre>private&nbsp;boolean field_33659</pre>
-</li>
-</ul>
-<a name="field_33660">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_33660</h4>
-<pre>private&nbsp;int field_33660</pre>
-</li>
-</ul>
-<a name="field_33661">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_33661</h4>
-<pre>private&nbsp;int field_33661</pre>
-</li>
-</ul>
-<a name="field_33662">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_33662</h4>
-<pre>private&nbsp;int field_33662</pre>
-</li>
-</ul>
-<a name="field_33663">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_33663</h4>
-<pre>private&nbsp;<a href="../../../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="class in net.minecraft.network.listener">ServerPlayPacketListener</a> field_33663</pre>
-</li>
-</ul>
-<a name="field_33664">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_33664</h4>
-<pre>private&nbsp;int field_33664</pre>
-</li>
-</ul>
-<a name="field_33665">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_33665</h4>
-<pre>private&nbsp;int field_33665</pre>
-</li>
-</ul>
-<a name="field_33666">
+<a name="teleportId">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_33666</h4>
-<pre>private&nbsp;int field_33666</pre>
+<h4>teleportId</h4>
+<pre>private&nbsp;int teleportId</pre>
 </li>
 </ul>
 </li>
@@ -323,13 +227,23 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="TeleportConfirmC2SPacket-net.minecraft.class_5086-">
+<a name="TeleportConfirmC2SPacket--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>TeleportConfirmC2SPacket</h4>
+<pre>public&nbsp;TeleportConfirmC2SPacket()</pre>
+</li>
+</ul>
+<a name="TeleportConfirmC2SPacket-int-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>TeleportConfirmC2SPacket</h4>
-<pre>public&nbsp;TeleportConfirmC2SPacket(<a href="../../../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086)</pre>
+<pre>@Environment(value=CLIENT)
+public&nbsp;TeleportConfirmC2SPacket(int&nbsp;teleportId)</pre>
 </li>
 </ul>
 </li>
@@ -340,41 +254,58 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_35109--">
+<a name="read-net.minecraft.util.PacketByteBuf-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_35109</h4>
-<pre>public&nbsp;void&nbsp;method_35109()</pre>
+<h4>read</h4>
+<pre>public&nbsp;void&nbsp;read(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)
+          throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/network/Packet.html#read-net.minecraft.util.PacketByteBuf-">read</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a>&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_35111--">
+<a name="write-net.minecraft.util.PacketByteBuf-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_35111</h4>
-<pre>private&nbsp;boolean&nbsp;method_35111()</pre>
+<h4>write</h4>
+<pre>public&nbsp;void&nbsp;write(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)
+           throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/network/Packet.html#write-net.minecraft.util.PacketByteBuf-">write</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a>&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_35112--">
+<a name="apply-net.minecraft.network.listener.ServerPlayPacketListener-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_35112</h4>
-<pre>private&nbsp;boolean&nbsp;method_35112()</pre>
+<h4>apply</h4>
+<pre>public&nbsp;void&nbsp;apply(<a href="../../../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a>&nbsp;serverPlayPacketListener)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/network/Packet.html#apply-T-">apply</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a>&gt;</code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_35110-net.minecraft.class_6183-">
+<a name="getTeleportId--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_35110</h4>
-<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-private&nbsp;<a href="../../../../../../net/minecraft/class_5559.html" title="class in net.minecraft">class_5559</a>&nbsp;method_35110(<a href="../../../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183)</pre>
+<h4>getTeleportId</h4>
+<pre>public&nbsp;int&nbsp;getTeleportId()</pre>
 </li>
 </ul>
 </li>
@@ -405,7 +336,7 @@ private&nbsp;<a href="../../../../../../net/minecraft/class_5559.html" title="cl
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../../net/minecraft/network/packet/c2s/play/SpectatorTeleportC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../net/minecraft/network/packet/c2s/play/UpdateCommandBlockC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../net/minecraft/network/packet/c2s/play/UpdatePlayerAbilitiesC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?net/minecraft/network/packet/c2s/play/TeleportConfirmC2SPacket.html" target="_top">Frames</a></li>

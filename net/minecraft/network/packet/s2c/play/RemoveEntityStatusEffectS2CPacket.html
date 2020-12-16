@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -74,14 +74,14 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
@@ -92,25 +92,79 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">net.minecraft.network.packet.s2c.play</div>
-<h2 title="Interface RemoveEntityStatusEffectS2CPacket" class="title">Interface RemoveEntityStatusEffectS2CPacket</h2>
+<h2 title="Class RemoveEntityStatusEffectS2CPacket" class="title">Class RemoveEntityStatusEffectS2CPacket</h2>
 </div>
 <div class="contentContainer">
+<ul class="inheritance">
+<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>net.minecraft.network.packet.s2c.play.RemoveEntityStatusEffectS2CPacket</li>
+</ul>
+</li>
+</ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
 <dl>
-<dt>All Known Implementing Classes:</dt>
-<dd><a href="../../../../../../net/minecraft/class_6461.html" title="class in net.minecraft">class_6461</a></dd>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&gt;</dd>
 </dl>
 <hr>
 <br>
-<pre>public interface <span class="typeNameLabel">RemoveEntityStatusEffectS2CPacket</span></pre>
+<pre>public class <span class="typeNameLabel">RemoveEntityStatusEffectS2CPacket</span>
+extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
+implements <a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&gt;</pre>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="../../../../../../net/minecraft/entity/effect/StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/RemoveEntityStatusEffectS2CPacket.html#effectType">effectType</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/RemoveEntityStatusEffectS2CPacket.html#entityId">entityId</a></span></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/RemoveEntityStatusEffectS2CPacket.html#RemoveEntityStatusEffectS2CPacket--">RemoveEntityStatusEffectS2CPacket</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/RemoveEntityStatusEffectS2CPacket.html#RemoveEntityStatusEffectS2CPacket-int-net.minecraft.entity.effect.StatusEffect-">RemoveEntityStatusEffectS2CPacket</a></span>(int&nbsp;entityId,
+                                 <a href="../../../../../../net/minecraft/entity/effect/StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a>&nbsp;effectType)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ========== METHOD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.summary">
@@ -118,60 +172,39 @@ var activeTableTab = "activeTableTab";
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntitiesDestroyS2CPacket.html" title="interface in net.minecraft.network.packet.s2c.play">EntitiesDestroyS2CPacket</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/RemoveEntityStatusEffectS2CPacket.html#method_34862--">method_34862</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/RemoveEntityStatusEffectS2CPacket.html#apply-net.minecraft.network.listener.ClientPlayPacketListener-">apply</a></span>(<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&nbsp;clientPlayPacketListener)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/RemoveEntityStatusEffectS2CPacket.html#method_34863-double-">method_34863</a></span>(double&nbsp;double2)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../../net/minecraft/entity/effect/StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/RemoveEntityStatusEffectS2CPacket.html#getEffectType--">getEffectType</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../../net/minecraft/class_6459.html" title="class in net.minecraft">class_6459</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/RemoveEntityStatusEffectS2CPacket.html#method_34864-int-">method_34864</a></span>(int&nbsp;int2)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/RemoveEntityStatusEffectS2CPacket.html#getEntity-net.minecraft.world.World-">getEntity</a></span>(<a href="../../../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../net/minecraft/class_6459.html" title="class in net.minecraft">class_6459</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/RemoveEntityStatusEffectS2CPacket.html#method_34865-java.util.UUID-">method_34865</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;uUID)</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/RemoveEntityStatusEffectS2CPacket.html#read-net.minecraft.util.PacketByteBuf-">read</a></span>(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/RemoveEntityStatusEffectS2CPacket.html#method_34866-net.minecraft.class_6459-">method_34866</a></span>(<a href="../../../../../../net/minecraft/class_6459.html" title="class in net.minecraft">class_6459</a>&nbsp;class_6459)</code>&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/RemoveEntityStatusEffectS2CPacket.html#method_34867--">method_34867</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/RemoveEntityStatusEffectS2CPacket.html#method_34868-java.util.UUID-">method_34868</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;uUID)</code>&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/RemoveEntityStatusEffectS2CPacket.html#method_34869-net.minecraft.class_6459-">method_34869</a></span>(<a href="../../../../../../net/minecraft/class_6459.html" title="class in net.minecraft">class_6459</a>&nbsp;class_6459)</code>&nbsp;</td>
-</tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../../net/minecraft/class_6459.html" title="class in net.minecraft">class_6459</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/RemoveEntityStatusEffectS2CPacket.html#method_34870--">method_34870</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/RemoveEntityStatusEffectS2CPacket.html#method_34871-net.minecraft.class_6459-">method_34871</a></span>(<a href="../../../../../../net/minecraft/class_6459.html" title="class in net.minecraft">class_6459</a>&nbsp;class_6459)</code>&nbsp;</td>
-</tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/RemoveEntityStatusEffectS2CPacket.html#method_34872--">method_34872</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i11" class="rowColor">
-<td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/RemoveEntityStatusEffectS2CPacket.html#method_34873--">method_34873</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/RemoveEntityStatusEffectS2CPacket.html#write-net.minecraft.util.PacketByteBuf-">write</a></span>(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)</code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -180,120 +213,130 @@ var activeTableTab = "activeTableTab";
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="entityId">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>entityId</h4>
+<pre>private&nbsp;int entityId</pre>
+</li>
+</ul>
+<a name="effectType">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>effectType</h4>
+<pre>private&nbsp;<a href="../../../../../../net/minecraft/entity/effect/StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a> effectType</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="RemoveEntityStatusEffectS2CPacket--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>RemoveEntityStatusEffectS2CPacket</h4>
+<pre>public&nbsp;RemoveEntityStatusEffectS2CPacket()</pre>
+</li>
+</ul>
+<a name="RemoveEntityStatusEffectS2CPacket-int-net.minecraft.entity.effect.StatusEffect-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>RemoveEntityStatusEffectS2CPacket</h4>
+<pre>public&nbsp;RemoveEntityStatusEffectS2CPacket(int&nbsp;entityId,
+                                         <a href="../../../../../../net/minecraft/entity/effect/StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a>&nbsp;effectType)</pre>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ============ METHOD DETAIL ========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.detail">
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_34862--">
+<a name="read-net.minecraft.util.PacketByteBuf-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_34862</h4>
-<pre><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntitiesDestroyS2CPacket.html" title="interface in net.minecraft.network.packet.s2c.play">EntitiesDestroyS2CPacket</a>&nbsp;method_34862()</pre>
+<h4>read</h4>
+<pre>public&nbsp;void&nbsp;read(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)
+          throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/network/Packet.html#read-net.minecraft.util.PacketByteBuf-">read</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_34867--">
+<a name="write-net.minecraft.util.PacketByteBuf-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_34867</h4>
-<pre>double&nbsp;method_34867()</pre>
+<h4>write</h4>
+<pre>public&nbsp;void&nbsp;write(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)
+           throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/network/Packet.html#write-net.minecraft.util.PacketByteBuf-">write</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_34863-double-">
+<a name="apply-net.minecraft.network.listener.ClientPlayPacketListener-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_34863</h4>
-<pre>void&nbsp;method_34863(double&nbsp;double2)</pre>
+<h4>apply</h4>
+<pre>public&nbsp;void&nbsp;apply(<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&nbsp;clientPlayPacketListener)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/network/Packet.html#apply-T-">apply</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&gt;</code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_34864-int-">
+<a name="getEntity-net.minecraft.world.World-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_34864</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../../net/minecraft/class_6459.html" title="class in net.minecraft">class_6459</a>&gt;&nbsp;method_34864(int&nbsp;int2)</pre>
-</li>
-</ul>
-<a name="method_34870--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_34870</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../../net/minecraft/class_6459.html" title="class in net.minecraft">class_6459</a>&gt;&nbsp;method_34870()</pre>
-</li>
-</ul>
-<a name="method_34866-net.minecraft.class_6459-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_34866</h4>
-<pre>boolean&nbsp;method_34866(<a href="../../../../../../net/minecraft/class_6459.html" title="class in net.minecraft">class_6459</a>&nbsp;class_6459)</pre>
-</li>
-</ul>
-<a name="method_34865-java.util.UUID-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_34865</h4>
-<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-<a href="../../../../../../net/minecraft/class_6459.html" title="class in net.minecraft">class_6459</a>&nbsp;method_34865(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;uUID)</pre>
-</li>
-</ul>
-<a name="method_34869-net.minecraft.class_6459-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_34869</h4>
-<pre>void&nbsp;method_34869(<a href="../../../../../../net/minecraft/class_6459.html" title="class in net.minecraft">class_6459</a>&nbsp;class_6459)</pre>
-</li>
-</ul>
-<a name="method_34871-net.minecraft.class_6459-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_34871</h4>
-<pre>void&nbsp;method_34871(<a href="../../../../../../net/minecraft/class_6459.html" title="class in net.minecraft">class_6459</a>&nbsp;class_6459)</pre>
-</li>
-</ul>
-<a name="method_34868-java.util.UUID-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_34868</h4>
-<pre>void&nbsp;method_34868(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;uUID)</pre>
-</li>
-</ul>
-<a name="method_34872--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_34872</h4>
+<h4>getEntity</h4>
 <pre>@Environment(value=CLIENT)
-void&nbsp;method_34872()</pre>
+ <a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="../../../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;getEntity(<a href="../../../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world)</pre>
 </li>
 </ul>
-<a name="method_34873--">
+<a name="getEffectType--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_34873</h4>
-<pre>double&nbsp;method_34873()</pre>
+<h4>getEffectType</h4>
+<pre>@Environment(value=CLIENT)
+ <a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="../../../../../../net/minecraft/entity/effect/StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a>&nbsp;getEffectType()</pre>
 </li>
 </ul>
 </li>
@@ -349,14 +392,14 @@ void&nbsp;method_34872()</pre>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>

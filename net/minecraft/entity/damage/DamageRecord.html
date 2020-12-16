@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../net/minecraft/entity/damage/DamageTracker.html" title="class in net.minecraft.entity.damage"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/entity/damage/DamageSource.html" title="class in net.minecraft.entity.damage"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/entity/damage/DamageRecord.html" target="_top">Frames</a></li>
@@ -106,10 +106,6 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../../net/minecraft/block/InventoryProvider.html" title="class in net.minecraft.block">InventoryProvider</a></dd>
-</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">DamageRecord</span>
@@ -133,20 +129,28 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../net/minecraft/util/thread/TaskQueue.html" title="class in net.minecraft.util.thread">TaskQueue</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageRecord.html#field_26493">field_26493</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageRecord.html#damage">damage</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../../net/minecraft/util/Hand.html" title="interface in net.minecraft.util">Hand</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageRecord.html#field_26494">field_26494</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/entity/damage/DamageSource.html" title="class in net.minecraft.entity.damage">DamageSource</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageRecord.html#damageSource">damageSource</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../net/minecraft/util/thread/TaskQueue.html" title="class in net.minecraft.util.thread">TaskQueue</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageRecord.html#field_26495">field_26495</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageRecord.html#entityAge">entityAge</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html?is-external=true" title="class or interface in java.lang">Short</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageRecord.html#field_26496">field_26496</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageRecord.html#entityHealth">entityHealth</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageRecord.html#fallDeathSuffix">fallDeathSuffix</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageRecord.html#fallDistance">fallDistance</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -163,7 +167,12 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageRecord.html#DamageRecord-net.minecraft.util.Hand-">DamageRecord</a></span>(<a href="../../../../net/minecraft/util/Hand.html" title="interface in net.minecraft.util">Hand</a>&nbsp;hand)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageRecord.html#DamageRecord-net.minecraft.entity.damage.DamageSource-int-float-float-java.lang.String-float-">DamageRecord</a></span>(<a href="../../../../net/minecraft/entity/damage/DamageSource.html" title="class in net.minecraft.entity.damage">DamageSource</a>&nbsp;damageSource,
+            int&nbsp;entityAge,
+            float&nbsp;entityOriginalHealth,
+            float&nbsp;damage,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;fallDeathSuffix,
+            float&nbsp;float2)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -181,30 +190,28 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageRecord.html#method_28351--">method_28351</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageRecord.html#getAttackerName--">getAttackerName</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>private void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageRecord.html#method_28352-net.minecraft.util.thread.TaskQueue-">method_28352</a></span>(<a href="../../../../net/minecraft/util/thread/TaskQueue.html" title="class in net.minecraft.util.thread">TaskQueue</a>&nbsp;taskQueue)</code>&nbsp;</td>
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageRecord.html#getDamage--">getDamage</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/util/thread/TaskQueue.html" title="class in net.minecraft.util.thread">TaskQueue</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageRecord.html#method_28353-java.lang.Class-java.lang.String-">method_28353</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="../../../../net/minecraft/util/thread/TaskQueue.html" title="class in net.minecraft.util.thread">TaskQueue</a>&gt;&nbsp;class2,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../net/minecraft/entity/damage/DamageSource.html" title="class in net.minecraft.entity.damage">DamageSource</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageRecord.html#getDamageSource--">getDamageSource</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageRecord.html#method_28354-java.lang.String-">method_28354</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageRecord.html#getFallDeathSuffix--">getFallDeathSuffix</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageRecord.html#method_28355-java.lang.String-net.minecraft.util.thread.TaskQueue-">method_28355</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-            <a href="../../../../net/minecraft/util/thread/TaskQueue.html" title="class in net.minecraft.util.thread">TaskQueue</a>&nbsp;taskQueue)</code>&nbsp;</td>
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageRecord.html#getFallDistance--">getFallDistance</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>private void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageRecord.html#method_28356--">method_28356</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageRecord.html#isAttackerLiving--">isAttackerLiving</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -228,40 +235,58 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_26494">
+<a name="damageSource">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_26494</h4>
-<pre>private final&nbsp;<a href="../../../../net/minecraft/util/Hand.html" title="interface in net.minecraft.util">Hand</a> field_26494</pre>
+<h4>damageSource</h4>
+<pre>private final&nbsp;<a href="../../../../net/minecraft/entity/damage/DamageSource.html" title="class in net.minecraft.entity.damage">DamageSource</a> damageSource</pre>
 </li>
 </ul>
-<a name="field_26493">
+<a name="entityAge">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_26493</h4>
-<pre>protected&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../net/minecraft/util/thread/TaskQueue.html" title="class in net.minecraft.util.thread">TaskQueue</a>&gt; field_26493</pre>
+<h4>entityAge</h4>
+<pre>private final&nbsp;int entityAge</pre>
 </li>
 </ul>
-<a name="field_26495">
+<a name="damage">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_26495</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../net/minecraft/util/thread/TaskQueue.html" title="class in net.minecraft.util.thread">TaskQueue</a>&gt; field_26495</pre>
+<h4>damage</h4>
+<pre>private final&nbsp;float damage</pre>
 </li>
 </ul>
-<a name="field_26496">
+<a name="entityHealth">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>entityHealth</h4>
+<pre>private final&nbsp;float entityHealth</pre>
+</li>
+</ul>
+<a name="fallDeathSuffix">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>fallDeathSuffix</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> fallDeathSuffix</pre>
+</li>
+</ul>
+<a name="fallDistance">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_26496</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html?is-external=true" title="class or interface in java.lang">Short</a>&gt; field_26496</pre>
+<h4>fallDistance</h4>
+<pre>private final&nbsp;float fallDistance</pre>
 </li>
 </ul>
 </li>
@@ -272,13 +297,18 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="DamageRecord-net.minecraft.util.Hand-">
+<a name="DamageRecord-net.minecraft.entity.damage.DamageSource-int-float-float-java.lang.String-float-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DamageRecord</h4>
-<pre>public&nbsp;DamageRecord(<a href="../../../../net/minecraft/util/Hand.html" title="interface in net.minecraft.util">Hand</a>&nbsp;hand)</pre>
+<pre>public&nbsp;DamageRecord(<a href="../../../../net/minecraft/entity/damage/DamageSource.html" title="class in net.minecraft.entity.damage">DamageSource</a>&nbsp;damageSource,
+                    int&nbsp;entityAge,
+                    float&nbsp;entityOriginalHealth,
+                    float&nbsp;damage,
+                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;fallDeathSuffix,
+                    float&nbsp;float2)</pre>
 </li>
 </ul>
 </li>
@@ -289,61 +319,60 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_28353-java.lang.Class-java.lang.String-">
+<a name="getDamageSource--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_28353</h4>
+<h4>getDamageSource</h4>
+<pre>public&nbsp;<a href="../../../../net/minecraft/entity/damage/DamageSource.html" title="class in net.minecraft.entity.damage">DamageSource</a>&nbsp;getDamageSource()</pre>
+</li>
+</ul>
+<a name="getDamage--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDamage</h4>
+<pre>public&nbsp;float&nbsp;getDamage()</pre>
+</li>
+</ul>
+<a name="isAttackerLiving--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isAttackerLiving</h4>
+<pre>public&nbsp;boolean&nbsp;isAttackerLiving()</pre>
+</li>
+</ul>
+<a name="getFallDeathSuffix--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFallDeathSuffix</h4>
 <pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-public&nbsp;<a href="../../../../net/minecraft/util/thread/TaskQueue.html" title="class in net.minecraft.util.thread">TaskQueue</a>&nbsp;method_28353(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="../../../../net/minecraft/util/thread/TaskQueue.html" title="class in net.minecraft.util.thread">TaskQueue</a>&gt;&nbsp;class2,
-                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getFallDeathSuffix()</pre>
 </li>
 </ul>
-<a name="method_28355-java.lang.String-net.minecraft.util.thread.TaskQueue-">
+<a name="getAttackerName--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_28355</h4>
-<pre>public&nbsp;void&nbsp;method_28355(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                         <a href="../../../../net/minecraft/util/thread/TaskQueue.html" title="class in net.minecraft.util.thread">TaskQueue</a>&nbsp;taskQueue)</pre>
+<h4>getAttackerName</h4>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="../../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;getAttackerName()</pre>
 </li>
 </ul>
-<a name="method_28351--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_28351</h4>
-<pre>public&nbsp;void&nbsp;method_28351()</pre>
-</li>
-</ul>
-<a name="method_28352-net.minecraft.util.thread.TaskQueue-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_28352</h4>
-<pre>private&nbsp;void&nbsp;method_28352(<a href="../../../../net/minecraft/util/thread/TaskQueue.html" title="class in net.minecraft.util.thread">TaskQueue</a>&nbsp;taskQueue)</pre>
-</li>
-</ul>
-<a name="method_28356--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_28356</h4>
-<pre>private&nbsp;void&nbsp;method_28356()</pre>
-</li>
-</ul>
-<a name="method_28354-java.lang.String-">
+<a name="getFallDistance--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_28354</h4>
-<pre>public&nbsp;int&nbsp;method_28354(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
+<h4>getFallDistance</h4>
+<pre>public&nbsp;float&nbsp;getFallDistance()</pre>
 </li>
 </ul>
 </li>
@@ -374,7 +403,7 @@ public&nbsp;<a href="../../../../net/minecraft/util/thread/TaskQueue.html" title
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../net/minecraft/entity/damage/DamageTracker.html" title="class in net.minecraft.entity.damage"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/entity/damage/DamageSource.html" title="class in net.minecraft.entity.damage"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/entity/damage/DamageRecord.html" target="_top">Frames</a></li>

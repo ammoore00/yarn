@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../net/minecraft/entity/ItemEntity.html" title="class in net.minecraft.entity"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/entity/MovementType.html" title="interface in net.minecraft.entity"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/entity/LightningEntity.html" title="class in net.minecraft.entity"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/entity/JumpingMount.html" target="_top">Frames</a></li>
@@ -74,14 +74,14 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
-<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
-<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
@@ -92,103 +92,25 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">net.minecraft.entity</div>
-<h2 title="Class JumpingMount" class="title">Class JumpingMount</h2>
+<h2 title="Interface JumpingMount" class="title">Interface JumpingMount</h2>
 </div>
 <div class="contentContainer">
-<ul class="inheritance">
-<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
-<li>
-<ul class="inheritance">
-<li>net.minecraft.entity.JumpingMount</li>
-</ul>
-</li>
-</ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>All Known Implementing Classes:</dt>
+<dd><a href="../../../net/minecraft/entity/passive/AbstractDonkeyEntity.html" title="class in net.minecraft.entity.passive">AbstractDonkeyEntity</a>, <a href="../../../net/minecraft/entity/passive/DonkeyEntity.html" title="class in net.minecraft.entity.passive">DonkeyEntity</a>, <a href="../../../net/minecraft/entity/passive/HorseBaseEntity.html" title="class in net.minecraft.entity.passive">HorseBaseEntity</a>, <a href="../../../net/minecraft/entity/passive/HorseEntity.html" title="class in net.minecraft.entity.passive">HorseEntity</a>, <a href="../../../net/minecraft/entity/passive/LlamaEntity.html" title="class in net.minecraft.entity.passive">LlamaEntity</a>, <a href="../../../net/minecraft/entity/passive/MuleEntity.html" title="class in net.minecraft.entity.passive">MuleEntity</a>, <a href="../../../net/minecraft/entity/mob/SkeletonHorseEntity.html" title="class in net.minecraft.entity.mob">SkeletonHorseEntity</a>, <a href="../../../net/minecraft/entity/mob/ZombieHorseEntity.html" title="class in net.minecraft.entity.mob">ZombieHorseEntity</a></dd>
+</dl>
 <hr>
 <br>
-<pre>@Environment(value=CLIENT)
-public class <span class="typeNameLabel">JumpingMount</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<pre>public interface <span class="typeNameLabel">JumpingMount</span></pre>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- =========== FIELD SUMMARY =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.summary">
-<!--   -->
-</a>
-<h3>Field Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
-<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Field and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private static <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/IntBuffer.html?is-external=true" title="class or interface in java.nio">IntBuffer</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/entity/JumpingMount.html#field_26768">field_26768</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private static <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/FloatBuffer.html?is-external=true" title="class or interface in java.nio">FloatBuffer</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/entity/JumpingMount.html#field_26769">field_26769</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private static <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/FloatBuffer.html?is-external=true" title="class or interface in java.nio">FloatBuffer</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/entity/JumpingMount.html#field_26770">field_26770</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private static <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/FloatBuffer.html?is-external=true" title="class or interface in java.nio">FloatBuffer</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/entity/JumpingMount.html#field_26771">field_26771</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private static <a href="../../../net/minecraft/class_5559.html" title="class in net.minecraft">class_5559</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/entity/JumpingMount.html#field_26772">field_26772</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private static float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/entity/JumpingMount.html#field_26773">field_26773</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private static float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/entity/JumpingMount.html#field_26774">field_26774</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private static float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/entity/JumpingMount.html#field_26775">field_26775</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private static float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/entity/JumpingMount.html#field_26776">field_26776</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private static float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/entity/JumpingMount.html#field_26777">field_26777</a></span></code>&nbsp;</td>
-</tr>
-</table>
-</li>
-</ul>
-<!-- ======== CONSTRUCTOR SUMMARY ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="constructor.summary">
-<!--   -->
-</a>
-<h3>Constructor Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
-<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colOne" scope="col">Constructor and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/entity/JumpingMount.html#JumpingMount--">JumpingMount</a></span>()</code>&nbsp;</td>
-</tr>
-</table>
-</li>
-</ul>
 <!-- ========== METHOD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.summary">
@@ -196,55 +118,28 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/entity/JumpingMount.html#method_28663-net.minecraft.class_4890-boolean-">method_28663</a></span>(<a href="../../../net/minecraft/class_4890.html" title="class in net.minecraft">class_4890</a>&nbsp;class_4890,
-            boolean&nbsp;bool)</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/entity/JumpingMount.html#canJump--">canJump</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>static <a href="../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/entity/JumpingMount.html#method_28664-net.minecraft.class_5086-net.minecraft.command.arguments.ScoreboardSlotArgumentType-float-">method_28664</a></span>(<a href="../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-            <a href="../../../net/minecraft/command/arguments/ScoreboardSlotArgumentType.html" title="class in net.minecraft.command.arguments">ScoreboardSlotArgumentType</a>&nbsp;scoreboardSlotArgumentType,
-            float&nbsp;float2)</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/entity/JumpingMount.html#setJumpStrength-int-">setJumpStrength</a></span>(int&nbsp;strength)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>static <a href="../../../net/minecraft/class_5559.html" title="class in net.minecraft">class_5559</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/entity/JumpingMount.html#method_28665-net.minecraft.command.arguments.ScoreboardSlotArgumentType-double-">method_28665</a></span>(<a href="../../../net/minecraft/command/arguments/ScoreboardSlotArgumentType.html" title="class in net.minecraft.command.arguments">ScoreboardSlotArgumentType</a>&nbsp;scoreboardSlotArgumentType,
-            double&nbsp;double2)</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/entity/JumpingMount.html#startJumping-int-">startJumping</a></span>(int&nbsp;height)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>static float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/entity/JumpingMount.html#method_28666--">method_28666</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>static float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/entity/JumpingMount.html#method_28667--">method_28667</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>static float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/entity/JumpingMount.html#method_28668--">method_28668</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>static float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/entity/JumpingMount.html#method_28669--">method_28669</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>static float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/entity/JumpingMount.html#method_28670--">method_28670</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/entity/JumpingMount.html#stopJumping--">stopJumping</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
-</ul>
 </li>
 </ul>
 </li>
@@ -253,201 +148,47 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ============ FIELD DETAIL =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.detail">
-<!--   -->
-</a>
-<h3>Field Detail</h3>
-<a name="field_26768">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_26768</h4>
-<pre>private static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/IntBuffer.html?is-external=true" title="class or interface in java.nio">IntBuffer</a> field_26768</pre>
-</li>
-</ul>
-<a name="field_26769">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_26769</h4>
-<pre>private static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/FloatBuffer.html?is-external=true" title="class or interface in java.nio">FloatBuffer</a> field_26769</pre>
-</li>
-</ul>
-<a name="field_26770">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_26770</h4>
-<pre>private static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/FloatBuffer.html?is-external=true" title="class or interface in java.nio">FloatBuffer</a> field_26770</pre>
-</li>
-</ul>
-<a name="field_26771">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_26771</h4>
-<pre>private static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/FloatBuffer.html?is-external=true" title="class or interface in java.nio">FloatBuffer</a> field_26771</pre>
-</li>
-</ul>
-<a name="field_26772">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_26772</h4>
-<pre>private static&nbsp;<a href="../../../net/minecraft/class_5559.html" title="class in net.minecraft">class_5559</a> field_26772</pre>
-</li>
-</ul>
-<a name="field_26773">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_26773</h4>
-<pre>private static&nbsp;float field_26773</pre>
-</li>
-</ul>
-<a name="field_26774">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_26774</h4>
-<pre>private static&nbsp;float field_26774</pre>
-</li>
-</ul>
-<a name="field_26775">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_26775</h4>
-<pre>private static&nbsp;float field_26775</pre>
-</li>
-</ul>
-<a name="field_26776">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_26776</h4>
-<pre>private static&nbsp;float field_26776</pre>
-</li>
-</ul>
-<a name="field_26777">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>field_26777</h4>
-<pre>private static&nbsp;float field_26777</pre>
-</li>
-</ul>
-</li>
-</ul>
-<!-- ========= CONSTRUCTOR DETAIL ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="constructor.detail">
-<!--   -->
-</a>
-<h3>Constructor Detail</h3>
-<a name="JumpingMount--">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>JumpingMount</h4>
-<pre>public&nbsp;JumpingMount()</pre>
-</li>
-</ul>
-</li>
-</ul>
 <!-- ============ METHOD DETAIL ========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.detail">
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_28663-net.minecraft.class_4890-boolean-">
+<a name="setJumpStrength-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_28663</h4>
-<pre>public static&nbsp;void&nbsp;method_28663(<a href="../../../net/minecraft/class_4890.html" title="class in net.minecraft">class_4890</a>&nbsp;class_4890,
-                                boolean&nbsp;bool)</pre>
+<h4>setJumpStrength</h4>
+<pre>@Environment(value=CLIENT)
+void&nbsp;setJumpStrength(int&nbsp;strength)</pre>
 </li>
 </ul>
-<a name="method_28665-net.minecraft.command.arguments.ScoreboardSlotArgumentType-double-">
+<a name="canJump--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_28665</h4>
-<pre>public static&nbsp;<a href="../../../net/minecraft/class_5559.html" title="class in net.minecraft">class_5559</a>&nbsp;method_28665(<a href="../../../net/minecraft/command/arguments/ScoreboardSlotArgumentType.html" title="class in net.minecraft.command.arguments">ScoreboardSlotArgumentType</a>&nbsp;scoreboardSlotArgumentType,
-                                      double&nbsp;double2)</pre>
+<h4>canJump</h4>
+<pre>boolean&nbsp;canJump()</pre>
 </li>
 </ul>
-<a name="method_28664-net.minecraft.class_5086-net.minecraft.command.arguments.ScoreboardSlotArgumentType-float-">
+<a name="startJumping-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_28664</h4>
-<pre>public static&nbsp;<a href="../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;method_28664(<a href="../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-                                          <a href="../../../net/minecraft/command/arguments/ScoreboardSlotArgumentType.html" title="class in net.minecraft.command.arguments">ScoreboardSlotArgumentType</a>&nbsp;scoreboardSlotArgumentType,
-                                          float&nbsp;float2)</pre>
+<h4>startJumping</h4>
+<pre>void&nbsp;startJumping(int&nbsp;height)</pre>
 </li>
 </ul>
-<a name="method_28666--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_28666</h4>
-<pre>public static&nbsp;float&nbsp;method_28666()</pre>
-</li>
-</ul>
-<a name="method_28667--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_28667</h4>
-<pre>public static&nbsp;float&nbsp;method_28667()</pre>
-</li>
-</ul>
-<a name="method_28668--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_28668</h4>
-<pre>public static&nbsp;float&nbsp;method_28668()</pre>
-</li>
-</ul>
-<a name="method_28669--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_28669</h4>
-<pre>public static&nbsp;float&nbsp;method_28669()</pre>
-</li>
-</ul>
-<a name="method_28670--">
+<a name="stopJumping--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_28670</h4>
-<pre>public static&nbsp;float&nbsp;method_28670()</pre>
+<h4>stopJumping</h4>
+<pre>void&nbsp;stopJumping()</pre>
 </li>
 </ul>
 </li>
@@ -478,7 +219,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../net/minecraft/entity/ItemEntity.html" title="class in net.minecraft.entity"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/entity/MovementType.html" title="interface in net.minecraft.entity"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/entity/LightningEntity.html" title="class in net.minecraft.entity"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/entity/JumpingMount.html" target="_top">Frames</a></li>
@@ -503,14 +244,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
-<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
-<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>

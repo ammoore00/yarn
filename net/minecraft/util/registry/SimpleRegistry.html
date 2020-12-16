@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -92,14 +92,19 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">net.minecraft.util.registry</div>
-<h2 title="Class SimpleRegistry" class="title">Class SimpleRegistry</h2>
+<h2 title="Class SimpleRegistry" class="title">Class SimpleRegistry&lt;K,V&gt;</h2>
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li>net.minecraft.util.registry.SimpleRegistry</li>
+<li><a href="../../../../net/minecraft/util/registry/Registry.html" title="class in net.minecraft.util.registry">net.minecraft.util.registry.Registry</a>&lt;K,V&gt;</li>
+<li>
+<ul class="inheritance">
+<li>net.minecraft.util.registry.SimpleRegistry&lt;K,V&gt;</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -108,13 +113,16 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../net/minecraft/class_6257.html" title="interface in net.minecraft">class_6257</a>&lt;<a href="../../../../net/minecraft/class_6260.html" title="interface in net.minecraft">class_6260</a>&gt;</dd>
+<dd><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;V&gt;, <a href="../../../../net/minecraft/util/IndexedIterable.html" title="interface in net.minecraft.util">IndexedIterable</a>&lt;K,V&gt;</dd>
+</dl>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="class in net.minecraft.util.registry">DefaultedRegistry</a></dd>
 </dl>
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">SimpleRegistry</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
-implements <a href="../../../../net/minecraft/class_6257.html" title="interface in net.minecraft">class_6257</a>&lt;<a href="../../../../net/minecraft/class_6260.html" title="interface in net.minecraft">class_6260</a>&gt;</pre>
+<pre>public class <span class="typeNameLabel">SimpleRegistry&lt;K,V&gt;</span>
+extends <a href="../../../../net/minecraft/util/registry/Registry.html" title="class in net.minecraft.util.registry">Registry</a>&lt;K,V&gt;</pre>
 </li>
 </ul>
 </div>
@@ -134,14 +142,21 @@ implements <a href="../../../../net/minecraft/class_6257.html" title="interface 
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html#field_31171">field_31171</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">V</a>,<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">K</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html#field_30686">field_30686</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html#field_31172">field_31172</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>protected <a href="../../../../net/minecraft/util/Int2ObjectBiMap.html" title="class in net.minecraft.util">Int2ObjectBiMap</a>&lt;<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">V</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html#indexedEntries">indexedEntries</a></span></code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.util.registry.Registry">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;net.minecraft.util.registry.<a href="../../../../net/minecraft/util/registry/Registry.html" title="class in net.minecraft.util.registry">Registry</a></h3>
+<code><a href="../../../../net/minecraft/util/registry/Registry.html#field_30753">field_30753</a></code></li>
+</ul>
 </li>
 </ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -157,10 +172,6 @@ implements <a href="../../../../net/minecraft/class_6257.html" title="interface 
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html#SimpleRegistry--">SimpleRegistry</a></span>()</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html#SimpleRegistry-net.minecraft.class_4890-net.minecraft.class_6183-">SimpleRegistry</a></span>(<a href="../../../../net/minecraft/class_4890.html" title="class in net.minecraft">class_4890</a>&nbsp;class_4890,
-              <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -178,32 +189,60 @@ implements <a href="../../../../net/minecraft/class_6257.html" title="interface 
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html#method_32354-net.minecraft.class_6233-">method_32354</a></span>(<a href="../../../../net/minecraft/class_6233.html" title="class in net.minecraft">class_6233</a>&nbsp;class_6233)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">V</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html#get-int-">get</a></span>(int&nbsp;int2)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html#method_32355-net.minecraft.class_6260-">method_32355</a></span>(<a href="../../../../net/minecraft/class_6260.html" title="interface in net.minecraft">class_6260</a>&nbsp;class_6260)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">V</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html#get-K-">get</a></span>(<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">K</a>&nbsp;k)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html#method_32356-net.minecraft.class_6233-">method_32356</a></span>(<a href="../../../../net/minecraft/class_6233.html" title="class in net.minecraft">class_6233</a>&nbsp;class_6233)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">K</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html#getId-V-">getId</a></span>(<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">V</a>&nbsp;v)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html#method_32721--">method_32721</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html#getRawId-V-">getRawId</a></span>(<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">V</a>&nbsp;v)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/class_4890.html" title="class in net.minecraft">class_4890</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html#method_32722-net.minecraft.class_5086-">method_32722</a></span>(<a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a>&lt;<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">V</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html#iterator--">iterator</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">K</a>,<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">V</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html#method_32022--">method_32022</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html#method_32023-K-">method_32023</a></span>(<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">K</a>&nbsp;k)</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html#set-int-K-V-">set</a></span>(int&nbsp;int2,
+   <a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">K</a>&nbsp;k,
+   <a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">V</a>&nbsp;v)</code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.util.registry.Registry">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;net.minecraft.util.registry.<a href="../../../../net/minecraft/util/registry/Registry.html" title="class in net.minecraft.util.registry">Registry</a></h3>
+<code><a href="../../../../net/minecraft/util/registry/Registry.html#getRandom-java.util.Random-">getRandom</a>, <a href="../../../../net/minecraft/util/registry/Registry.html#method_32014-K-V-">method_32014</a>, <a href="../../../../net/minecraft/util/registry/Registry.html#method_32015--">method_32015</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
 <code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.lang.Iterable">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a></h3>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true#forEach-java.util.function.Consumer-" title="class or interface in java.lang">forEach</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true#spliterator--" title="class or interface in java.lang">spliterator</a></code></li>
 </ul>
 </li>
 </ul>
@@ -219,22 +258,22 @@ implements <a href="../../../../net/minecraft/class_6257.html" title="interface 
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_31171">
+<a name="indexedEntries">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_31171</h4>
-<pre>private&nbsp;int field_31171</pre>
+<h4>indexedEntries</h4>
+<pre>protected final&nbsp;<a href="../../../../net/minecraft/util/Int2ObjectBiMap.html" title="class in net.minecraft.util">Int2ObjectBiMap</a>&lt;<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">V</a>&gt; indexedEntries</pre>
 </li>
 </ul>
-<a name="field_31172">
+<a name="field_30686">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_31172</h4>
-<pre>private&nbsp;<a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a> field_31172</pre>
+<h4>field_30686</h4>
+<pre>protected final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">V</a>,<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">K</a>&gt; field_30686</pre>
 </li>
 </ul>
 </li>
@@ -248,20 +287,10 @@ implements <a href="../../../../net/minecraft/class_6257.html" title="interface 
 <a name="SimpleRegistry--">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
-<h4>SimpleRegistry</h4>
-<pre>public&nbsp;SimpleRegistry()</pre>
-</li>
-</ul>
-<a name="SimpleRegistry-net.minecraft.class_4890-net.minecraft.class_6183-">
-<!--   -->
-</a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SimpleRegistry</h4>
-<pre>public&nbsp;SimpleRegistry(<a href="../../../../net/minecraft/class_4890.html" title="class in net.minecraft">class_4890</a>&nbsp;class_4890,
-                      <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183)</pre>
+<pre>public&nbsp;SimpleRegistry()</pre>
 </li>
 </ul>
 </li>
@@ -272,69 +301,113 @@ implements <a href="../../../../net/minecraft/class_6257.html" title="interface 
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_32354-net.minecraft.class_6233-">
+<a name="set-int-java.lang.Object-java.lang.Object-">
+<!--   -->
+</a><a name="set-int-K-V-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_32354</h4>
-<pre>public&nbsp;void&nbsp;method_32354(<a href="../../../../net/minecraft/class_6233.html" title="class in net.minecraft">class_6233</a>&nbsp;class_6233)
-                  throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<h4>set</h4>
+<pre>public&nbsp;void&nbsp;set(int&nbsp;int2,
+                <a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">K</a>&nbsp;k,
+                <a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">V</a>&nbsp;v)</pre>
+</li>
+</ul>
+<a name="method_32022--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_32022</h4>
+<pre>protected&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">K</a>,<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">V</a>&gt;&nbsp;method_32022()</pre>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_6257.html#method_32354-net.minecraft.class_6233-">method_32354</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/class_6257.html" title="interface in net.minecraft">class_6257</a>&lt;<a href="../../../../net/minecraft/class_6260.html" title="interface in net.minecraft">class_6260</a>&gt;</code></dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/util/registry/Registry.html#method_32022--">method_32022</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/util/registry/Registry.html" title="class in net.minecraft.util.registry">Registry</a>&lt;<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">K</a>,<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">V</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_32356-net.minecraft.class_6233-">
+<a name="get-java.lang.Object-">
+<!--   -->
+</a><a name="get-K-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_32356</h4>
-<pre>public&nbsp;void&nbsp;method_32356(<a href="../../../../net/minecraft/class_6233.html" title="class in net.minecraft">class_6233</a>&nbsp;class_6233)
-                  throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<h4>get</h4>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">V</a>&nbsp;get(<a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                       <a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">K</a>&nbsp;k)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_6257.html#method_32356-net.minecraft.class_6233-">method_32356</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/class_6257.html" title="interface in net.minecraft">class_6257</a>&lt;<a href="../../../../net/minecraft/class_6260.html" title="interface in net.minecraft">class_6260</a>&gt;</code></dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/util/IndexedIterable.html#get-K-">get</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/util/IndexedIterable.html" title="interface in net.minecraft.util">IndexedIterable</a>&lt;<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">K</a>,<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">V</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/util/registry/Registry.html#get-K-">get</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/util/registry/Registry.html" title="class in net.minecraft.util.registry">Registry</a>&lt;<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">K</a>,<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">V</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_32355-net.minecraft.class_6260-">
+<a name="getId-java.lang.Object-">
+<!--   -->
+</a><a name="getId-V-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_32355</h4>
-<pre>public&nbsp;void&nbsp;method_32355(<a href="../../../../net/minecraft/class_6260.html" title="interface in net.minecraft">class_6260</a>&nbsp;class_6260)</pre>
+<h4>getId</h4>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">K</a>&nbsp;getId(<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">V</a>&nbsp;v)</pre>
+</li>
+</ul>
+<a name="method_32023-java.lang.Object-">
+<!--   -->
+</a><a name="method_32023-K-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_32023</h4>
+<pre>public&nbsp;boolean&nbsp;method_32023(<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">K</a>&nbsp;k)</pre>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_6257.html#method_32355-T-">method_32355</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/class_6257.html" title="interface in net.minecraft">class_6257</a>&lt;<a href="../../../../net/minecraft/class_6260.html" title="interface in net.minecraft">class_6260</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/util/registry/Registry.html#method_32023-K-">method_32023</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/util/registry/Registry.html" title="class in net.minecraft.util.registry">Registry</a>&lt;<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">K</a>,<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">V</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_32722-net.minecraft.class_5086-">
+<a name="getRawId-java.lang.Object-">
+<!--   -->
+</a><a name="getRawId-V-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_32722</h4>
-<pre>@Environment(value=CLIENT)
-public&nbsp;<a href="../../../../net/minecraft/class_4890.html" title="class in net.minecraft">class_4890</a>&nbsp;method_32722(<a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086)</pre>
+<h4>getRawId</h4>
+<pre>public&nbsp;int&nbsp;getRawId(<a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                    <a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">V</a>&nbsp;v)</pre>
 </li>
 </ul>
-<a name="method_32721--">
+<a name="get-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>get</h4>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">V</a>&nbsp;get(int&nbsp;int2)</pre>
+</li>
+</ul>
+<a name="iterator--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_32721</h4>
-<pre>@Environment(value=CLIENT)
-public&nbsp;<a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;method_32721()</pre>
+<h4>iterator</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a>&lt;<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">V</a>&gt;&nbsp;iterator()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true#iterator--" title="class or interface in java.lang">iterator</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">V</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/util/registry/Registry.html#iterator--">iterator</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/util/registry/Registry.html" title="class in net.minecraft.util.registry">Registry</a>&lt;<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">K</a>,<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="type parameter in SimpleRegistry">V</a>&gt;</code></dd>
+</dl>
 </li>
 </ul>
 </li>

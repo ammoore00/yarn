@@ -18,6 +18,12 @@
     catch(err) {
     }
 //-->
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
 </script>
 <noscript>
 <div>JavaScript is disabled on your browser.</div>
@@ -68,15 +74,15 @@
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.net.minecraft.class_5741">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.net.minecraft.class_5741">Method</a></li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.top">
@@ -93,15 +99,10 @@
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../../net/minecraft/class_5749.html" title="class in net.minecraft">net.minecraft.class_5749</a></li>
-<li>
-<ul class="inheritance">
-<li><a href="../../../../../net/minecraft/class_5741.html" title="class in net.minecraft">net.minecraft.class_5741</a></li>
+<li><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal">net.minecraft.entity.ai.goal.Goal</a></li>
 <li>
 <ul class="inheritance">
 <li>net.minecraft.entity.ai.goal.FormCaravanGoal</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -112,9 +113,8 @@
 <li class="blockList">
 <hr>
 <br>
-<pre>@Environment(value=CLIENT)
-public class <span class="typeNameLabel">FormCaravanGoal</span>
-extends <a href="../../../../../net/minecraft/class_5741.html" title="class in net.minecraft">class_5741</a></pre>
+<pre>public class <span class="typeNameLabel">FormCaravanGoal</span>
+extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</a></pre>
 </li>
 </ul>
 </div>
@@ -127,20 +127,25 @@ extends <a href="../../../../../net/minecraft/class_5741.html" title="class in n
 <!--   -->
 </a>
 <h3>Field Summary</h3>
-<ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.class_5741">
-<!--   -->
-</a>
-<h3>Fields inherited from class&nbsp;net.minecraft.<a href="../../../../../net/minecraft/class_5741.html" title="class in net.minecraft">class_5741</a></h3>
-<code><a href="../../../../../net/minecraft/class_5741.html#field_28216">field_28216</a>, <a href="../../../../../net/minecraft/class_5741.html#field_28217">field_28217</a>, <a href="../../../../../net/minecraft/class_5741.html#field_28218">field_28218</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.class_5749">
-<!--   -->
-</a>
-<h3>Fields inherited from class&nbsp;net.minecraft.<a href="../../../../../net/minecraft/class_5749.html" title="class in net.minecraft">class_5749</a></h3>
-<code><a href="../../../../../net/minecraft/class_5749.html#field_28375">field_28375</a>, <a href="../../../../../net/minecraft/class_5749.html#field_28376">field_28376</a>, <a href="../../../../../net/minecraft/class_5749.html#field_28377">field_28377</a>, <a href="../../../../../net/minecraft/class_5749.html#field_28378">field_28378</a>, <a href="../../../../../net/minecraft/class_5749.html#field_28379">field_28379</a>, <a href="../../../../../net/minecraft/class_5749.html#field_28380">field_28380</a></code></li>
-</ul>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FormCaravanGoal.html#counter">counter</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../net/minecraft/entity/passive/LlamaEntity.html" title="class in net.minecraft.entity.passive">LlamaEntity</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FormCaravanGoal.html#llama">llama</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FormCaravanGoal.html#speed">speed</a></span></code>&nbsp;</td>
+</tr>
+</table>
 </li>
 </ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -155,7 +160,8 @@ extends <a href="../../../../../net/minecraft/class_5741.html" title="class in n
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FormCaravanGoal.html#FormCaravanGoal--">FormCaravanGoal</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FormCaravanGoal.html#FormCaravanGoal-net.minecraft.entity.passive.LlamaEntity-double-">FormCaravanGoal</a></span>(<a href="../../../../../net/minecraft/entity/passive/LlamaEntity.html" title="class in net.minecraft.entity.passive">LlamaEntity</a>&nbsp;llama,
+               double&nbsp;speed)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -166,19 +172,40 @@ extends <a href="../../../../../net/minecraft/class_5741.html" title="class in n
 <!--   -->
 </a>
 <h3>Method Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FormCaravanGoal.html#canFollow-net.minecraft.entity.passive.LlamaEntity-int-">canFollow</a></span>(<a href="../../../../../net/minecraft/entity/passive/LlamaEntity.html" title="class in net.minecraft.entity.passive">LlamaEntity</a>&nbsp;llama,
+         int&nbsp;length)</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FormCaravanGoal.html#canStart--">canStart</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FormCaravanGoal.html#shouldContinue--">shouldContinue</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FormCaravanGoal.html#stop--">stop</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FormCaravanGoal.html#tick--">tick</a></span>()</code>&nbsp;</td>
+</tr>
+</table>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.class_5741">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.entity.ai.goal.Goal">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;net.minecraft.<a href="../../../../../net/minecraft/class_5741.html" title="class in net.minecraft">class_5741</a></h3>
-<code><a href="../../../../../net/minecraft/class_5741.html#method_29822--">method_29822</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.class_5749">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;net.minecraft.<a href="../../../../../net/minecraft/class_5749.html" title="class in net.minecraft">class_5749</a></h3>
-<code><a href="../../../../../net/minecraft/class_5749.html#method_29874-float-float-float-float-float-float-net.minecraft.command.arguments.ScoreboardSlotArgumentType-">method_29874</a>, <a href="../../../../../net/minecraft/class_5749.html#method_29875-net.minecraft.class_5749-">method_29875</a>, <a href="../../../../../net/minecraft/class_5749.html#method_29876-net.minecraft.entity.ai.goal.RaidGoal-net.minecraft.entity.ai.goal.RaidGoal-">method_29876</a>, <a href="../../../../../net/minecraft/class_5749.html#method_29877-java.lang.String-">method_29877</a>, <a href="../../../../../net/minecraft/class_5749.html#method_29878-java.lang.String-int-int-">method_29878</a>, <a href="../../../../../net/minecraft/class_5749.html#method_29879-java.util.Random-">method_29879</a>, <a href="../../../../../net/minecraft/class_5749.html#method_29880-net.minecraft.command.arguments.ScoreboardSlotArgumentType-float-float-float-float-float-float-">method_29880</a>, <a href="../../../../../net/minecraft/class_5749.html#method_29881-net.minecraft.command.arguments.PosArgument-float-float-float-">method_29881</a></code></li>
+<h3>Methods inherited from class&nbsp;net.minecraft.entity.ai.goal.<a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</a></h3>
+<code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#canStop--">canStop</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_34938-int-">method_34938</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_34944--">method_34944</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#start--">start</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -195,19 +222,125 @@ extends <a href="../../../../../net/minecraft/class_5741.html" title="class in n
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="llama">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>llama</h4>
+<pre>public&nbsp;<a href="../../../../../net/minecraft/entity/passive/LlamaEntity.html" title="class in net.minecraft.entity.passive">LlamaEntity</a> llama</pre>
+</li>
+</ul>
+<a name="speed">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>speed</h4>
+<pre>private&nbsp;double speed</pre>
+</li>
+</ul>
+<a name="counter">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>counter</h4>
+<pre>private&nbsp;int counter</pre>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="FormCaravanGoal--">
+<a name="FormCaravanGoal-net.minecraft.entity.passive.LlamaEntity-double-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>FormCaravanGoal</h4>
-<pre>public&nbsp;FormCaravanGoal()</pre>
+<pre>public&nbsp;FormCaravanGoal(<a href="../../../../../net/minecraft/entity/passive/LlamaEntity.html" title="class in net.minecraft.entity.passive">LlamaEntity</a>&nbsp;llama,
+                       double&nbsp;speed)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="canStart--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>canStart</h4>
+<pre>public&nbsp;boolean&nbsp;canStart()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#canStart--">canStart</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="shouldContinue--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>shouldContinue</h4>
+<pre>public&nbsp;boolean&nbsp;shouldContinue()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#shouldContinue--">shouldContinue</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="stop--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>stop</h4>
+<pre>public&nbsp;void&nbsp;stop()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#stop--">stop</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="tick--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tick</h4>
+<pre>public&nbsp;void&nbsp;tick()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#tick--">tick</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="canFollow-net.minecraft.entity.passive.LlamaEntity-int-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>canFollow</h4>
+<pre>private&nbsp;boolean&nbsp;canFollow(<a href="../../../../../net/minecraft/entity/passive/LlamaEntity.html" title="class in net.minecraft.entity.passive">LlamaEntity</a>&nbsp;llama,
+                          int&nbsp;length)</pre>
 </li>
 </ul>
 </li>
@@ -263,15 +396,15 @@ extends <a href="../../../../../net/minecraft/class_5741.html" title="class in n
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.net.minecraft.class_5741">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.net.minecraft.class_5741">Method</a></li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.bottom">

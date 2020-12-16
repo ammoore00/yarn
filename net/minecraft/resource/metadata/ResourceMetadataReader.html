@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../net/minecraft/resource/metadata/PackResourceMetadata.html" title="class in net.minecraft.resource.metadata"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/resource/metadata/PackResourceMetadataReader.html" title="class in net.minecraft.resource.metadata"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">
@@ -92,19 +92,25 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">net.minecraft.resource.metadata</div>
-<h2 title="Interface ResourceMetadataReader" class="title">Interface ResourceMetadataReader</h2>
+<h2 title="Interface ResourceMetadataReader" class="title">Interface ResourceMetadataReader&lt;T extends <a href="../../../../net/minecraft/class_6055.html" title="interface in net.minecraft">class_6055</a>&gt;</h2>
 </div>
 <div class="contentContainer">
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
 <dl>
+<dt>All Superinterfaces:</dt>
+<dd><a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonDeserializer.html?is-external=true" title="class or interface in com.google.gson">JsonDeserializer</a>&lt;T&gt;</dd>
+</dl>
+<dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><a href="../../../../net/minecraft/datafixer/fix/BlockEntityKeepPacked.html" title="class in net.minecraft.datafixer.fix">BlockEntityKeepPacked</a>, <a href="../../../../net/minecraft/util/ChunkPosDistanceLevelPropagator.html" title="class in net.minecraft.util">ChunkPosDistanceLevelPropagator</a>, <a href="../../../../net/minecraft/util/ChunkPosDistanceLevelPropagator.class_5141.html" title="class in net.minecraft.util">ChunkPosDistanceLevelPropagator.class_5141</a>, <a href="../../../../net/minecraft/util/ChunkPosDistanceLevelPropagator.class_5142.html" title="class in net.minecraft.util">ChunkPosDistanceLevelPropagator.class_5142</a>, <a href="../../../../net/minecraft/server/world/ChunkTicket.html" title="class in net.minecraft.server.world">ChunkTicket</a>, <a href="../../../../net/minecraft/class_5143.html" title="class in net.minecraft">class_5143</a>, <a href="../../../../net/minecraft/class_5147.html" title="class in net.minecraft">class_5147</a>, <a href="../../../../net/minecraft/class_5154.html" title="class in net.minecraft">class_5154</a>, <a href="../../../../net/minecraft/class_5163.html" title="class in net.minecraft">class_5163</a>, <a href="../../../../net/minecraft/class_5172.html" title="class in net.minecraft">class_5172</a>, <a href="../../../../net/minecraft/class_5181.html" title="class in net.minecraft">class_5181</a>, <a href="../../../../net/minecraft/class_5184.html" title="class in net.minecraft">class_5184</a>, <a href="../../../../net/minecraft/class_5194.html" title="class in net.minecraft">class_5194</a>, <a href="../../../../net/minecraft/class_5207.html" title="class in net.minecraft">class_5207</a>, <a href="../../../../net/minecraft/class_5219.html" title="class in net.minecraft">class_5219</a>, <a href="../../../../net/minecraft/class_5255.html" title="class in net.minecraft">class_5255</a>, <a href="../../../../net/minecraft/class_5266.html" title="class in net.minecraft">class_5266</a>, <a href="../../../../net/minecraft/util/CsvWriter.html" title="class in net.minecraft.util">CsvWriter</a>, <a href="../../../../net/minecraft/resource/DefaultResourcePack.html" title="class in net.minecraft.resource">DefaultResourcePack</a>, <a href="../../../../net/minecraft/resource/DirectoryResourcePack.html" title="class in net.minecraft.resource">DirectoryResourcePack</a>, <a href="../../../../net/minecraft/server/rcon/RconClient.html" title="class in net.minecraft.server.rcon">RconClient</a>, <a href="../../../../net/minecraft/server/rcon/RconServer.html" title="class in net.minecraft.server.rcon">RconServer</a>, <a href="../../../../net/minecraft/resource/ResourcePack.html" title="class in net.minecraft.resource">ResourcePack</a>, <a href="../../../../net/minecraft/server/world/SecondaryServerWorld.html" title="class in net.minecraft.server.world">SecondaryServerWorld</a>, <a href="../../../../net/minecraft/server/network/ServerQueryNetworkHandler.html" title="class in net.minecraft.server.network">ServerQueryNetworkHandler</a>, <a href="../../../../net/minecraft/stat/Stat.html" title="class in net.minecraft.stat">Stat</a>, <a href="../../../../net/minecraft/resource/SynchronousResourceReloadListener.html" title="class in net.minecraft.resource">SynchronousResourceReloadListener</a>, <a href="../../../../net/minecraft/server/WorldGenerationProgressListener.html" title="class in net.minecraft.server">WorldGenerationProgressListener</a>, <a href="../../../../net/minecraft/server/WorldGenerationProgressLogger.html" title="class in net.minecraft.server">WorldGenerationProgressLogger</a>, <a href="../../../../net/minecraft/resource/ZipResourcePack.html" title="class in net.minecraft.resource">ZipResourcePack</a></dd>
+<dd><a href="../../../../net/minecraft/client/resource/metadata/AnimationResourceMetadataReader.html" title="class in net.minecraft.client.resource.metadata">AnimationResourceMetadataReader</a>, <a href="../../../../net/minecraft/class_6054.html" title="class in net.minecraft">class_6054</a>, <a href="../../../../net/minecraft/class_6060.html" title="class in net.minecraft">class_6060</a>, <a href="../../../../net/minecraft/client/resource/metadata/LanguageResourceMetadataReader.html" title="class in net.minecraft.client.resource.metadata">LanguageResourceMetadataReader</a>, <a href="../../../../net/minecraft/resource/metadata/PackResourceMetadataReader.html" title="class in net.minecraft.resource.metadata">PackResourceMetadataReader</a>, <a href="../../../../net/minecraft/client/resource/metadata/TextureResourceMetadataReader.html" title="class in net.minecraft.client.resource.metadata">TextureResourceMetadataReader</a></dd>
 </dl>
 <hr>
 <br>
-<pre>public interface <span class="typeNameLabel">ResourceMetadataReader</span></pre>
+<pre>@Environment(value=CLIENT)
+public interface <span class="typeNameLabel">ResourceMetadataReader&lt;T extends <a href="../../../../net/minecraft/class_6055.html" title="interface in net.minecraft">class_6055</a>&gt;</span>
+extends <a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonDeserializer.html?is-external=true" title="class or interface in com.google.gson">JsonDeserializer</a>&lt;T&gt;</pre>
 </li>
 </ul>
 </div>
@@ -124,11 +130,17 @@ var activeTableTab = "activeTableTab";
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/util/ReusableStream.html" title="class in net.minecraft.util">ReusableStream</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/resource/metadata/ResourceMetadataReader.html#method_26602-net.minecraft.class_5086-int-">method_26602</a></span>(<a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-            int&nbsp;int2)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/resource/metadata/ResourceMetadataReader.html#getKey--">getKey</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.com.google.gson.JsonDeserializer">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.google.gson.<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonDeserializer.html?is-external=true" title="class or interface in com.google.gson">JsonDeserializer</a></h3>
+<code><a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonDeserializer.html?is-external=true#deserialize-com.google.gson.JsonElement-java.lang.reflect.Type-com.google.gson.JsonDeserializationContext-" title="class or interface in com.google.gson">deserialize</a></code></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -143,15 +155,13 @@ var activeTableTab = "activeTableTab";
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_26602-net.minecraft.class_5086-int-">
+<a name="getKey--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_26602</h4>
-<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-<a href="../../../../net/minecraft/util/ReusableStream.html" title="class in net.minecraft.util">ReusableStream</a>&nbsp;method_26602(<a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-                                      int&nbsp;int2)</pre>
+<h4>getKey</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getKey()</pre>
 </li>
 </ul>
 </li>
@@ -181,7 +191,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../net/minecraft/resource/metadata/PackResourceMetadata.html" title="class in net.minecraft.resource.metadata"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/resource/metadata/PackResourceMetadataReader.html" title="class in net.minecraft.resource.metadata"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">

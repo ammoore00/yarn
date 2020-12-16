@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../net/minecraft/entity/damage/DamageTracker.class_5512.html" title="class in net.minecraft.entity.damage"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../net/minecraft/entity/damage/EntityDamageSource.class_5522.html" title="class in net.minecraft.entity.damage"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/entity/damage/DamageTracker.html" title="class in net.minecraft.entity.damage"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/entity/damage/ProjectileDamageSource.html" title="class in net.minecraft.entity.damage"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/entity/damage/EntityDamageSource.html" target="_top">Frames</a></li>
@@ -73,7 +73,7 @@ var activeTableTab = "activeTableTab";
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
@@ -99,42 +99,32 @@ var activeTableTab = "activeTableTab";
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
+<li><a href="../../../../net/minecraft/entity/damage/DamageSource.html" title="class in net.minecraft.entity.damage">net.minecraft.entity.damage.DamageSource</a></li>
+<li>
+<ul class="inheritance">
 <li>net.minecraft.entity.damage.EntityDamageSource</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><a href="../../../../net/minecraft/entity/damage/ProjectileDamageSource.html" title="class in net.minecraft.entity.damage">ProjectileDamageSource</a></dd>
+</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">EntityDamageSource</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+extends <a href="../../../../net/minecraft/entity/damage/DamageSource.html" title="class in net.minecraft.entity.damage">DamageSource</a></pre>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- ======== NESTED CLASS SUMMARY ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="nested.class.summary">
-<!--   -->
-</a>
-<h3>Nested Class Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Nested Class Summary table, listing nested classes, and an explanation">
-<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Class and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>(package private) class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/EntityDamageSource.class_5522.html" title="class in net.minecraft.entity.damage">EntityDamageSource.class_5522</a></span></code>&nbsp;</td>
-</tr>
-</table>
-</li>
-</ul>
 <!-- =========== FIELD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="field.summary">
@@ -148,22 +138,21 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/EntityDamageSource.html#field_26612">field_26612</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/EntityDamageSource.html#field_32918">field_32918</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private static <a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/Gson.html?is-external=true" title="class or interface in com.google.gson">Gson</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/EntityDamageSource.html#field_26613">field_26613</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="https://guava.dev/releases/21.0/api/docs/com/google/common/cache/LoadingCache.html?is-external=true" title="class or interface in com.google.common.cache">LoadingCache</a>&lt;<a href="../../../../net/minecraft/test/FailureLoggingTestCompletionListener.html" title="class in net.minecraft.test">FailureLoggingTestCompletionListener</a>,<a href="../../../../net/minecraft/class_5515.html" title="class in net.minecraft">class_5515</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/EntityDamageSource.html#field_26614">field_26614</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/EntityDamageSource.html#field_26615">field_26615</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>protected <a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/EntityDamageSource.html#source">source</a></span></code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.entity.damage.DamageSource">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;net.minecraft.entity.damage.<a href="../../../../net/minecraft/entity/damage/DamageSource.html" title="class in net.minecraft.entity.damage">DamageSource</a></h3>
+<code><a href="../../../../net/minecraft/entity/damage/DamageSource.html#ANVIL">ANVIL</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#CACTUS">CACTUS</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#CRAMMING">CRAMMING</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#DRAGON_BREATH">DRAGON_BREATH</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#DROWN">DROWN</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#FALL">FALL</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#FALLING_BLOCK">FALLING_BLOCK</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#FIREWORKS">FIREWORKS</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#FLY_INTO_WALL">FLY_INTO_WALL</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#GENERIC">GENERIC</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#HOT_FLOOR">HOT_FLOOR</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#IN_FIRE">IN_FIRE</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#IN_WALL">IN_WALL</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#LAVA">LAVA</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#LIGHTNING_BOLT">LIGHTNING_BOLT</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#MAGIC">MAGIC</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#name">name</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#ON_FIRE">ON_FIRE</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#OUT_OF_WORLD">OUT_OF_WORLD</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#STARVE">STARVE</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#WITHER">WITHER</a></code></li>
+</ul>
 </li>
 </ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -178,7 +167,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/EntityDamageSource.html#EntityDamageSource-java.io.File-">EntityDamageSource</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/EntityDamageSource.html#EntityDamageSource-java.lang.String-net.minecraft.entity.Entity-">EntityDamageSource</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+                  <a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -196,14 +186,37 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/EntityDamageSource.html#method_28401--">method_28401</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/EntityDamageSource.html#getAttacker--">getAttacker</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/class_5515.html" title="class in net.minecraft">class_5515</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/EntityDamageSource.html#method_28403-net.minecraft.test.FailureLoggingTestCompletionListener-">method_28403</a></span>(<a href="../../../../net/minecraft/test/FailureLoggingTestCompletionListener.html" title="class in net.minecraft.test">FailureLoggingTestCompletionListener</a>&nbsp;failureLoggingTestCompletionListener)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/EntityDamageSource.html#getDeathMessage-net.minecraft.entity.LivingEntity-">getDeathMessage</a></span>(<a href="../../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;livingEntity)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../../net/minecraft/util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/EntityDamageSource.html#getPosition--">getPosition</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/EntityDamageSource.html#isScaledWithDifficulty--">isScaledWithDifficulty</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../../net/minecraft/entity/damage/EntityDamageSource.html" title="class in net.minecraft.entity.damage">EntityDamageSource</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/EntityDamageSource.html#method_34282--">method_34282</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/EntityDamageSource.html#method_34283--">method_34283</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.entity.damage.DamageSource">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;net.minecraft.entity.damage.<a href="../../../../net/minecraft/entity/damage/DamageSource.html" title="class in net.minecraft.entity.damage">DamageSource</a></h3>
+<code><a href="../../../../net/minecraft/entity/damage/DamageSource.html#arrow-net.minecraft.entity.projectile.ProjectileEntity-net.minecraft.entity.Entity-">arrow</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#bypassesArmor--">bypassesArmor</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#explosion-net.minecraft.world.explosion.Explosion-">explosion</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#explosion-net.minecraft.entity.LivingEntity-">explosion</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#explosiveProjectile-net.minecraft.entity.projectile.ExplosiveProjectileEntity-net.minecraft.entity.Entity-">explosiveProjectile</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#getExhaustion--">getExhaustion</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#getMagic--">getMagic</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#getName--">getName</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#getSource--">getSource</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#isExplosive--">isExplosive</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#isFire--">isFire</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#isOutOfWorld--">isOutOfWorld</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#isProjectile--">isProjectile</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#isSourceCreativePlayer--">isSourceCreativePlayer</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#isUnblockable--">isUnblockable</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#magic-net.minecraft.entity.Entity-net.minecraft.entity.Entity-">magic</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#mob-net.minecraft.entity.LivingEntity-">mob</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#mobProjectile-net.minecraft.entity.Entity-net.minecraft.entity.LivingEntity-">mobProjectile</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#player-net.minecraft.entity.player.PlayerEntity-">player</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#setBypassesArmor--">setBypassesArmor</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#setExplosive--">setExplosive</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#setFire--">setFire</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#setOutOfWorld--">setOutOfWorld</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#setProjectile--">setProjectile</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#setScaledWithDifficulty--">setScaledWithDifficulty</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#setUnblockable--">setUnblockable</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#setUsesMagic--">setUsesMagic</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#thorns-net.minecraft.entity.Entity-">thorns</a>, <a href="../../../../net/minecraft/entity/damage/DamageSource.html#thrownProjectile-net.minecraft.entity.Entity-net.minecraft.entity.Entity-">thrownProjectile</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -225,40 +238,23 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_26612">
+<a name="source">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_26612</h4>
-<pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a> field_26612</pre>
+<h4>source</h4>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+protected&nbsp;<a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a> source</pre>
 </li>
 </ul>
-<a name="field_26613">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_26613</h4>
-<pre>private static final&nbsp;<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/Gson.html?is-external=true" title="class or interface in com.google.gson">Gson</a> field_26613</pre>
-</li>
-</ul>
-<a name="field_26614">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_26614</h4>
-<pre>private final&nbsp;<a href="https://guava.dev/releases/21.0/api/docs/com/google/common/cache/LoadingCache.html?is-external=true" title="class or interface in com.google.common.cache">LoadingCache</a>&lt;<a href="../../../../net/minecraft/test/FailureLoggingTestCompletionListener.html" title="class in net.minecraft.test">FailureLoggingTestCompletionListener</a>,<a href="../../../../net/minecraft/class_5515.html" title="class in net.minecraft">class_5515</a>&gt; field_26614</pre>
-</li>
-</ul>
-<a name="field_26615">
+<a name="field_32918">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_26615</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a> field_26615</pre>
+<h4>field_32918</h4>
+<pre>private&nbsp;boolean field_32918</pre>
 </li>
 </ul>
 </li>
@@ -269,14 +265,15 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="EntityDamageSource-java.io.File-">
+<a name="EntityDamageSource-java.lang.String-net.minecraft.entity.Entity-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>EntityDamageSource</h4>
-<pre>public&nbsp;EntityDamageSource(<a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-                          <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file)</pre>
+<pre>public&nbsp;EntityDamageSource(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+                          <a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                          <a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</pre>
 </li>
 </ul>
 </li>
@@ -287,22 +284,76 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_28403-net.minecraft.test.FailureLoggingTestCompletionListener-">
+<a name="method_34282--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_28403</h4>
-<pre>public&nbsp;<a href="../../../../net/minecraft/class_5515.html" title="class in net.minecraft">class_5515</a>&nbsp;method_28403(<a href="../../../../net/minecraft/test/FailureLoggingTestCompletionListener.html" title="class in net.minecraft.test">FailureLoggingTestCompletionListener</a>&nbsp;failureLoggingTestCompletionListener)</pre>
+<h4>method_34282</h4>
+<pre>public&nbsp;<a href="../../../../net/minecraft/entity/damage/EntityDamageSource.html" title="class in net.minecraft.entity.damage">EntityDamageSource</a>&nbsp;method_34282()</pre>
 </li>
 </ul>
-<a name="method_28401--">
+<a name="method_34283--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_34283</h4>
+<pre>public&nbsp;boolean&nbsp;method_34283()</pre>
+</li>
+</ul>
+<a name="getAttacker--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAttacker</h4>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;getAttacker()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/entity/damage/DamageSource.html#getAttacker--">getAttacker</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/entity/damage/DamageSource.html" title="class in net.minecraft.entity.damage">DamageSource</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getDeathMessage-net.minecraft.entity.LivingEntity-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDeathMessage</h4>
+<pre>public&nbsp;<a href="../../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;getDeathMessage(<a href="../../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;livingEntity)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/entity/damage/DamageSource.html#getDeathMessage-net.minecraft.entity.LivingEntity-">getDeathMessage</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/entity/damage/DamageSource.html" title="class in net.minecraft.entity.damage">DamageSource</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="isScaledWithDifficulty--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isScaledWithDifficulty</h4>
+<pre>public&nbsp;boolean&nbsp;isScaledWithDifficulty()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/entity/damage/DamageSource.html#isScaledWithDifficulty--">isScaledWithDifficulty</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/entity/damage/DamageSource.html" title="class in net.minecraft.entity.damage">DamageSource</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getPosition--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_28401</h4>
-<pre>public&nbsp;void&nbsp;method_28401()</pre>
+<h4>getPosition</h4>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="../../../../net/minecraft/util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&nbsp;getPosition()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/entity/damage/DamageSource.html#getPosition--">getPosition</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/entity/damage/DamageSource.html" title="class in net.minecraft.entity.damage">DamageSource</a></code></dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -332,8 +383,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../net/minecraft/entity/damage/DamageTracker.class_5512.html" title="class in net.minecraft.entity.damage"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../net/minecraft/entity/damage/EntityDamageSource.class_5522.html" title="class in net.minecraft.entity.damage"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/entity/damage/DamageTracker.html" title="class in net.minecraft.entity.damage"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/entity/damage/ProjectileDamageSource.html" title="class in net.minecraft.entity.damage"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/entity/damage/EntityDamageSource.html" target="_top">Frames</a></li>
@@ -357,7 +408,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>

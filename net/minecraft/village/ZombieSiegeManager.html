@@ -18,6 +18,12 @@
     catch(err) {
     }
 //-->
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
 </script>
 <noscript>
 <div>JavaScript is disabled on your browser.</div>
@@ -42,8 +48,8 @@
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/village/VillagerType.html" title="class in net.minecraft.village"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/village/ZombieSiegeManager.class_5806.html" title="class in net.minecraft.village"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/village/TraderOfferList.html" title="class in net.minecraft.village"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/village/ZombieSiegeManager.html" target="_top">Frames</a></li>
@@ -67,16 +73,16 @@
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.net.minecraft.world.poi.PointOfInterestSet">Field</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.net.minecraft.entity.passive.CatEntity">Method</a></li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.top">
@@ -93,17 +99,7 @@
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../net/minecraft/world/poi/PointOfInterestSet.html" title="class in net.minecraft.world.poi">net.minecraft.world.poi.PointOfInterestSet</a></li>
-<li>
-<ul class="inheritance">
-<li><a href="../../../net/minecraft/entity/passive/CatEntity.html" title="class in net.minecraft.entity.passive">net.minecraft.entity.passive.CatEntity</a></li>
-<li>
-<ul class="inheritance">
 <li>net.minecraft.village.ZombieSiegeManager</li>
-</ul>
-</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -112,54 +108,63 @@
 <li class="blockList">
 <hr>
 <br>
-<pre>@Environment(value=CLIENT)
-public class <span class="typeNameLabel">ZombieSiegeManager</span>
-extends <a href="../../../net/minecraft/entity/passive/CatEntity.html" title="class in net.minecraft.entity.passive">CatEntity</a></pre>
+<pre>public class <span class="typeNameLabel">ZombieSiegeManager</span>
+extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- ======== NESTED CLASS SUMMARY ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="nested.class.summary">
-<!--   -->
-</a>
-<h3>Nested Class Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Nested Class Summary table, listing nested classes, and an explanation">
-<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Class and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/ZombieSiegeManager.class_5806.html" title="class in net.minecraft.village">ZombieSiegeManager.class_5806</a></span></code>&nbsp;</td>
-</tr>
-</table>
-<ul class="blockList">
-<li class="blockList"><a name="nested.classes.inherited.from.class.net.minecraft.entity.passive.CatEntity">
-<!--   -->
-</a>
-<h3>Nested classes/interfaces inherited from class&nbsp;net.minecraft.entity.passive.<a href="../../../net/minecraft/entity/passive/CatEntity.html" title="class in net.minecraft.entity.passive">CatEntity</a></h3>
-<code><a href="../../../net/minecraft/entity/passive/CatEntity.class_5819.html" title="class in net.minecraft.entity.passive">CatEntity.class_5819</a></code></li>
-</ul>
-</li>
-</ul>
 <!-- =========== FIELD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="field.summary">
 <!--   -->
 </a>
 <h3>Field Summary</h3>
-<ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.world.poi.PointOfInterestSet">
-<!--   -->
-</a>
-<h3>Fields inherited from class&nbsp;net.minecraft.world.poi.<a href="../../../net/minecraft/world/poi/PointOfInterestSet.html" title="class in net.minecraft.world.poi">PointOfInterestSet</a></h3>
-<code><a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28734">field_28734</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28735">field_28735</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28736">field_28736</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28737">field_28737</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28738">field_28738</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28739">field_28739</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28740">field_28740</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28741">field_28741</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28742">field_28742</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28743">field_28743</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28744">field_28744</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28747">field_28747</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28748">field_28748</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28749">field_28749</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28750">field_28750</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28751">field_28751</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28752">field_28752</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28753">field_28753</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28754">field_28754</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28755">field_28755</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28756">field_28756</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28757">field_28757</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28758">field_28758</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28759">field_28759</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28760">field_28760</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28761">field_28761</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28762">field_28762</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28763">field_28763</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28764">field_28764</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28765">field_28765</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28766">field_28766</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28767">field_28767</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28768">field_28768</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28769">field_28769</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#field_28770">field_28770</a></code></li>
-</ul>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/ZombieSiegeManager.html#field_33658">field_33658</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/ZombieSiegeManager.html#field_33660">field_33660</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/ZombieSiegeManager.html#field_33661">field_33661</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/ZombieSiegeManager.html#field_33662">field_33662</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="../../../net/minecraft/class_2792.html" title="class in net.minecraft">class_2792</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/ZombieSiegeManager.html#field_33663">field_33663</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/ZombieSiegeManager.html#field_33664">field_33664</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/ZombieSiegeManager.html#field_33665">field_33665</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/ZombieSiegeManager.html#field_33666">field_33666</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/ZombieSiegeManager.html#spawned">spawned</a></span></code>&nbsp;</td>
+</tr>
+</table>
 </li>
 </ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -171,18 +176,10 @@ extends <a href="../../../net/minecraft/entity/passive/CatEntity.html" title="cl
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
 <caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
-<th class="colFirst" scope="col">Modifier</th>
-<th class="colLast" scope="col">Constructor and Description</th>
+<th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected </code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/ZombieSiegeManager.html#ZombieSiegeManager-net.minecraft.class_5086-double-double-double-double-double-double-">ZombieSiegeManager</a></span>(<a href="../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-                  double&nbsp;double2,
-                  double&nbsp;double3,
-                  double&nbsp;double4,
-                  double&nbsp;double5,
-                  double&nbsp;double6,
-                  double&nbsp;double7)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/ZombieSiegeManager.html#ZombieSiegeManager-net.minecraft.world.World-">ZombieSiegeManager</a></span>(<a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -193,26 +190,35 @@ extends <a href="../../../net/minecraft/entity/passive/CatEntity.html" title="cl
 <!--   -->
 </a>
 <h3>Method Summary</h3>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.entity.passive.CatEntity">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;net.minecraft.entity.passive.<a href="../../../net/minecraft/entity/passive/CatEntity.html" title="class in net.minecraft.entity.passive">CatEntity</a></h3>
-<code><a href="../../../net/minecraft/entity/passive/CatEntity.html#method_30070--">method_30070</a>, <a href="../../../net/minecraft/entity/passive/CatEntity.html#method_30077-net.minecraft.class_5842-net.minecraft.command.arguments.ScoreboardSlotArgumentType-float-float-float-float-float-float-">method_30077</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.world.poi.PointOfInterestSet">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;net.minecraft.world.poi.<a href="../../../net/minecraft/world/poi/PointOfInterestSet.html" title="class in net.minecraft.world.poi">PointOfInterestSet</a></h3>
-<code><a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#method_30071-double-double-double-">method_30071</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#method_30072-float-">method_30072</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#method_30073-float-float-">method_30073</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#method_30074-float-float-float-">method_30074</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#method_30075-int-">method_30075</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#method_30076-net.minecraft.entity.ExperienceOrbEntity-">method_30076</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#method_30078-net.minecraft.entity.ai.brain.Activity-">method_30078</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#method_30079--">method_30079</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#method_30080-double-double-double-">method_30080</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#method_30081-int-">method_30081</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#method_30082--">method_30082</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#method_30083-float-">method_30083</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#method_30084--">method_30084</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#method_30085-float-">method_30085</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#method_30086--">method_30086</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#method_30087-float-">method_30087</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#method_30088--">method_30088</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#method_30089--">method_30089</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#method_30090--">method_30090</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#method_30091--">method_30091</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#method_30092--">method_30092</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#method_30093--">method_30093</a>, <a href="../../../net/minecraft/world/poi/PointOfInterestSet.html#toString--">toString</a></code></li>
-</ul>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/ZombieSiegeManager.html#method_35109--">method_35109</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>private <a href="../../../net/minecraft/util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/ZombieSiegeManager.html#method_35110-net.minecraft.util.math.BlockPos-">method_35110</a></span>(<a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/ZombieSiegeManager.html#method_35111--">method_35111</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/ZombieSiegeManager.html#method_35112--">method_35112</a></span>()</code>&nbsp;</td>
+</tr>
+</table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
 </ul>
 </li>
 </ul>
@@ -222,25 +228,153 @@ extends <a href="../../../net/minecraft/entity/passive/CatEntity.html" title="cl
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="field_33658">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>field_33658</h4>
+<pre>private final&nbsp;<a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a> field_33658</pre>
+</li>
+</ul>
+<a name="spawned">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>spawned</h4>
+<pre>private&nbsp;boolean spawned</pre>
+</li>
+</ul>
+<a name="field_33660">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>field_33660</h4>
+<pre>private&nbsp;int field_33660</pre>
+</li>
+</ul>
+<a name="field_33661">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>field_33661</h4>
+<pre>private&nbsp;int field_33661</pre>
+</li>
+</ul>
+<a name="field_33662">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>field_33662</h4>
+<pre>private&nbsp;int field_33662</pre>
+</li>
+</ul>
+<a name="field_33663">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>field_33663</h4>
+<pre>private&nbsp;<a href="../../../net/minecraft/class_2792.html" title="class in net.minecraft">class_2792</a> field_33663</pre>
+</li>
+</ul>
+<a name="field_33664">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>field_33664</h4>
+<pre>private&nbsp;int field_33664</pre>
+</li>
+</ul>
+<a name="field_33665">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>field_33665</h4>
+<pre>private&nbsp;int field_33665</pre>
+</li>
+</ul>
+<a name="field_33666">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>field_33666</h4>
+<pre>private&nbsp;int field_33666</pre>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ZombieSiegeManager-net.minecraft.class_5086-double-double-double-double-double-double-">
+<a name="ZombieSiegeManager-net.minecraft.world.World-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ZombieSiegeManager</h4>
-<pre>protected&nbsp;ZombieSiegeManager(<a href="../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-                             double&nbsp;double2,
-                             double&nbsp;double3,
-                             double&nbsp;double4,
-                             double&nbsp;double5,
-                             double&nbsp;double6,
-                             double&nbsp;double7)</pre>
+<pre>public&nbsp;ZombieSiegeManager(<a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="method_35109--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_35109</h4>
+<pre>public&nbsp;void&nbsp;method_35109()</pre>
+</li>
+</ul>
+<a name="method_35111--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_35111</h4>
+<pre>private&nbsp;boolean&nbsp;method_35111()</pre>
+</li>
+</ul>
+<a name="method_35112--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_35112</h4>
+<pre>private&nbsp;boolean&nbsp;method_35112()</pre>
+</li>
+</ul>
+<a name="method_35110-net.minecraft.util.math.BlockPos-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>method_35110</h4>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+private&nbsp;<a href="../../../net/minecraft/util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&nbsp;method_35110(<a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</pre>
 </li>
 </ul>
 </li>
@@ -270,8 +404,8 @@ extends <a href="../../../net/minecraft/entity/passive/CatEntity.html" title="cl
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/village/VillagerType.html" title="class in net.minecraft.village"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/village/ZombieSiegeManager.class_5806.html" title="class in net.minecraft.village"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/village/TraderOfferList.html" title="class in net.minecraft.village"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/village/ZombieSiegeManager.html" target="_top">Frames</a></li>
@@ -295,16 +429,16 @@ extends <a href="../../../net/minecraft/entity/passive/CatEntity.html" title="cl
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.net.minecraft.world.poi.PointOfInterestSet">Field</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.net.minecraft.entity.passive.CatEntity">Method</a></li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.bottom">

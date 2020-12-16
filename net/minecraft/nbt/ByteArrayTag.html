@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9,"i7":10,"i8":10};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../net/minecraft/nbt/AbstractNumberTag.html" title="class in net.minecraft.nbt"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/nbt/ByteTag.html" title="class in net.minecraft.nbt"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/nbt/ByteArrayTag.html" target="_top">Frames</a></li>
@@ -99,7 +99,12 @@ var activeTableTab = "activeTableTab";
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
+<li><a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">net.minecraft.nbt.Tag</a></li>
+<li>
+<ul class="inheritance">
 <li>net.minecraft.nbt.ByteArrayTag</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -108,9 +113,8 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>@Environment(value=SERVER)
-public class <span class="typeNameLabel">ByteArrayTag</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<pre>public class <span class="typeNameLabel">ByteArrayTag</span>
+extends <a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></pre>
 </li>
 </ul>
 </div>
@@ -130,18 +134,17 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#field_31623">field_31623</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html?is-external=true" title="class or interface in java.util">Properties</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#field_31624">field_31624</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#field_31625">field_31625</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private byte[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#value">value</a></span></code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.nbt.Tag">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;net.minecraft.nbt.<a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></h3>
+<code><a href="../../../net/minecraft/nbt/Tag.html#field_30792">field_30792</a></code></li>
+</ul>
 </li>
 </ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -156,7 +159,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#ByteArrayTag-java.io.File-">ByteArrayTag</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#ByteArrayTag--">ByteArrayTag</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#ByteArrayTag-byte:A-">ByteArrayTag</a></span>(byte[]&nbsp;value)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#ByteArrayTag-java.util.List-">ByteArrayTag</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html?is-external=true" title="class or interface in java.lang">Byte</a>&gt;&nbsp;value)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -168,63 +177,63 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#method_33369--">method_33369</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#copy--">copy</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#method_33370-java.lang.String-">method_33370</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#equals-java.lang.Object-">equals</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;object)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#method_33371-java.lang.String-int-">method_33371</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-            int&nbsp;int2)</code>&nbsp;</td>
+<td class="colFirst"><code>byte[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#getByteArray--">getByteArray</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>long</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#method_33372-java.lang.String-long-">method_33372</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-            long&nbsp;long2)</code>&nbsp;</td>
+<td class="colFirst"><code>byte</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#getType--">getType</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#method_33373-java.lang.String-java.lang.Object-">method_33373</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;object)</code>&nbsp;</td>
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#method_33374-java.lang.String-java.lang.String-">method_33374</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string2)</code>&nbsp;</td>
+<td class="colFirst"><code>(package private) void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#method_32150-java.io.DataInput-int-net.minecraft.nbt.PositionTracker-">method_32150</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataInput.html?is-external=true" title="class or interface in java.io">DataInput</a>&nbsp;dataInput,
+            int&nbsp;int2,
+            <a href="../../../net/minecraft/nbt/PositionTracker.html" title="class in net.minecraft.nbt">PositionTracker</a>&nbsp;positionTracker)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#method_33375-java.lang.String-boolean-">method_33375</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-            boolean&nbsp;bool)</code>&nbsp;</td>
+<td class="colFirst"><code>private static byte[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#toArray-java.util.List-">toArray</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html?is-external=true" title="class or interface in java.lang">Byte</a>&gt;&nbsp;list)</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#method_33376--">method_33376</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#method_33377-java.lang.String-">method_33377</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
-</tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#method_33378--">method_33378</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>(package private) void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#write-java.io.DataOutput-">write</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataOutput.html?is-external=true" title="class or interface in java.io">DataOutput</a>&nbsp;output)</code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.nbt.Tag">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;net.minecraft.nbt.<a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></h3>
+<code><a href="../../../net/minecraft/nbt/Tag.html#asString--">asString</a>, <a href="../../../net/minecraft/nbt/Tag.html#method_32149-byte-">method_32149</a>, <a href="../../../net/minecraft/nbt/Tag.html#method_32153--">method_32153</a>, <a href="../../../net/minecraft/nbt/Tag.html#method_32155-int-">method_32155</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
 </ul>
 </li>
 </ul>
@@ -240,31 +249,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_31623">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31623</h4>
-<pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a> field_31623</pre>
-</li>
-</ul>
-<a name="field_31624">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31624</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html?is-external=true" title="class or interface in java.util">Properties</a> field_31624</pre>
-</li>
-</ul>
-<a name="field_31625">
+<a name="value">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_31625</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a> field_31625</pre>
+<h4>value</h4>
+<pre>private&nbsp;byte[] value</pre>
 </li>
 </ul>
 </li>
@@ -275,13 +266,31 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ByteArrayTag-java.io.File-">
+<a name="ByteArrayTag--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ByteArrayTag</h4>
+<pre>ByteArrayTag()</pre>
+</li>
+</ul>
+<a name="ByteArrayTag-byte:A-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ByteArrayTag</h4>
+<pre>public&nbsp;ByteArrayTag(byte[]&nbsp;value)</pre>
+</li>
+</ul>
+<a name="ByteArrayTag-java.util.List-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ByteArrayTag</h4>
-<pre>public&nbsp;ByteArrayTag(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file)</pre>
+<pre>public&nbsp;ByteArrayTag(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html?is-external=true" title="class or interface in java.lang">Byte</a>&gt;&nbsp;value)</pre>
 </li>
 </ul>
 </li>
@@ -292,99 +301,121 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_33369--">
+<a name="toArray-java.util.List-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_33369</h4>
-<pre>public&nbsp;void&nbsp;method_33369()</pre>
+<h4>toArray</h4>
+<pre>private static&nbsp;byte[]&nbsp;toArray(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html?is-external=true" title="class or interface in java.lang">Byte</a>&gt;&nbsp;list)</pre>
 </li>
 </ul>
-<a name="method_33376--">
+<a name="write-java.io.DataOutput-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_33376</h4>
-<pre>public&nbsp;void&nbsp;method_33376()</pre>
+<h4>write</h4>
+<pre>void&nbsp;write(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataOutput.html?is-external=true" title="class or interface in java.io">DataOutput</a>&nbsp;output)
+    throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../net/minecraft/nbt/Tag.html#write-java.io.DataOutput-">write</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_33378--">
+<a name="method_32150-java.io.DataInput-int-net.minecraft.nbt.PositionTracker-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_33378</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;method_33378()</pre>
+<h4>method_32150</h4>
+<pre>void&nbsp;method_32150(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataInput.html?is-external=true" title="class or interface in java.io">DataInput</a>&nbsp;dataInput,
+                  int&nbsp;int2,
+                  <a href="../../../net/minecraft/nbt/PositionTracker.html" title="class in net.minecraft.nbt">PositionTracker</a>&nbsp;positionTracker)
+           throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../net/minecraft/nbt/Tag.html#method_32150-java.io.DataInput-int-net.minecraft.nbt.PositionTracker-">method_32150</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_33374-java.lang.String-java.lang.String-">
+<a name="getType--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_33374</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;method_33374(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string2)</pre>
+<h4>getType</h4>
+<pre>public&nbsp;byte&nbsp;getType()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../net/minecraft/nbt/Tag.html#getType--">getType</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_33371-java.lang.String-int-">
+<a name="toString--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_33371</h4>
-<pre>public&nbsp;int&nbsp;method_33371(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                        int&nbsp;int2)</pre>
+<h4>toString</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../net/minecraft/nbt/Tag.html#toString--">toString</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_33372-java.lang.String-long-">
+<a name="copy--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_33372</h4>
-<pre>public&nbsp;long&nbsp;method_33372(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                         long&nbsp;long2)</pre>
+<h4>copy</h4>
+<pre>public&nbsp;<a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a>&nbsp;copy()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../net/minecraft/nbt/Tag.html#copy--">copy</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_33375-java.lang.String-boolean-">
+<a name="equals-java.lang.Object-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_33375</h4>
-<pre>public&nbsp;boolean&nbsp;method_33375(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                            boolean&nbsp;bool)</pre>
+<h4>equals</h4>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;object)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../net/minecraft/nbt/Tag.html#equals-java.lang.Object-">equals</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_33373-java.lang.String-java.lang.Object-">
+<a name="hashCode--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_33373</h4>
-<pre>public&nbsp;void&nbsp;method_33373(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;object)</pre>
+<h4>hashCode</h4>
+<pre>public&nbsp;int&nbsp;hashCode()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../net/minecraft/nbt/Tag.html#hashCode--">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_33370-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33370</h4>
-<pre>public&nbsp;boolean&nbsp;method_33370(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
-</li>
-</ul>
-<a name="method_33377-java.lang.String-">
+<a name="getByteArray--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_33377</h4>
-<pre>public&nbsp;void&nbsp;method_33377(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
+<h4>getByteArray</h4>
+<pre>public&nbsp;byte[]&nbsp;getByteArray()</pre>
 </li>
 </ul>
 </li>
@@ -415,7 +446,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../net/minecraft/nbt/AbstractNumberTag.html" title="class in net.minecraft.nbt"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/nbt/ByteTag.html" title="class in net.minecraft.nbt"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/nbt/ByteArrayTag.html" target="_top">Frames</a></li>

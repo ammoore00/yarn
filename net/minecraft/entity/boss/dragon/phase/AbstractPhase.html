@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -108,14 +108,17 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../../../net/minecraft/item/FoodComponents.html" title="interface in net.minecraft.item">FoodComponents</a></dd>
+<dd><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html" title="interface in net.minecraft.entity.boss.dragon.phase">Phase</a></dd>
+</dl>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractSittingPhase.html" title="class in net.minecraft.entity.boss.dragon.phase">AbstractSittingPhase</a>, <a href="../../../../../../net/minecraft/entity/boss/dragon/phase/ChargingPlayerPhase.html" title="class in net.minecraft.entity.boss.dragon.phase">ChargingPlayerPhase</a>, <a href="../../../../../../net/minecraft/entity/boss/dragon/phase/DyingPhase.html" title="class in net.minecraft.entity.boss.dragon.phase">DyingPhase</a>, <a href="../../../../../../net/minecraft/entity/boss/dragon/phase/HoldingPatternPhase.html" title="class in net.minecraft.entity.boss.dragon.phase">HoldingPatternPhase</a>, <a href="../../../../../../net/minecraft/entity/boss/dragon/phase/HoverPhase.html" title="class in net.minecraft.entity.boss.dragon.phase">HoverPhase</a>, <a href="../../../../../../net/minecraft/entity/boss/dragon/phase/LandingApproachPhase.html" title="class in net.minecraft.entity.boss.dragon.phase">LandingApproachPhase</a>, <a href="../../../../../../net/minecraft/entity/boss/dragon/phase/LandingPhase.html" title="class in net.minecraft.entity.boss.dragon.phase">LandingPhase</a>, <a href="../../../../../../net/minecraft/entity/boss/dragon/phase/StrafePlayerPhase.html" title="class in net.minecraft.entity.boss.dragon.phase">StrafePlayerPhase</a>, <a href="../../../../../../net/minecraft/entity/boss/dragon/phase/TakeoffPhase.html" title="class in net.minecraft.entity.boss.dragon.phase">TakeoffPhase</a></dd>
 </dl>
 <hr>
 <br>
-<pre>@Environment(value=CLIENT)
-public class <span class="typeNameLabel">AbstractPhase</span>
+<pre>public abstract class <span class="typeNameLabel">AbstractPhase</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
-implements <a href="../../../../../../net/minecraft/item/FoodComponents.html" title="interface in net.minecraft.item">FoodComponents</a></pre>
+implements <a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html" title="interface in net.minecraft.entity.boss.dragon.phase">Phase</a></pre>
 </li>
 </ul>
 </div>
@@ -135,20 +138,8 @@ implements <a href="../../../../../../net/minecraft/item/FoodComponents.html" ti
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../../../net/minecraft/class_5880.html" title="class in net.minecraft">class_5880</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#field_29267">field_29267</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractSittingPhase.html" title="class in net.minecraft.entity.boss.dragon.phase">AbstractSittingPhase</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#field_29268">field_29268</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../../../net/minecraft/class_5879.html" title="class in net.minecraft">class_5879</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#field_29269">field_29269</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../../../../net/minecraft/class_5881.html" title="class in net.minecraft">class_5881</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#field_29270">field_29270</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>protected <a href="../../../../../../net/minecraft/entity/boss/dragon/EnderDragonEntity.html" title="class in net.minecraft.entity.boss.dragon">EnderDragonEntity</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#dragon">dragon</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -165,8 +156,7 @@ implements <a href="../../../../../../net/minecraft/item/FoodComponents.html" ti
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#AbstractPhase-net.minecraft.class_5880-net.minecraft.entity.attribute.EntityAttributeContainer-">AbstractPhase</a></span>(<a href="../../../../../../net/minecraft/class_5880.html" title="class in net.minecraft">class_5880</a>&nbsp;class_5880,
-             <a href="../../../../../../net/minecraft/entity/attribute/EntityAttributeContainer.html" title="class in net.minecraft.entity.attribute">EntityAttributeContainer</a>&nbsp;entityAttributeContainer)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#AbstractPhase-net.minecraft.entity.boss.dragon.EnderDragonEntity-">AbstractPhase</a></span>(<a href="../../../../../../net/minecraft/entity/boss/dragon/EnderDragonEntity.html" title="class in net.minecraft.entity.boss.dragon">EnderDragonEntity</a>&nbsp;dragon)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -184,39 +174,49 @@ implements <a href="../../../../../../net/minecraft/item/FoodComponents.html" ti
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../net/minecraft/class_5880.html" title="class in net.minecraft">class_5880</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#method_30514--">method_30514</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#beginPhase--">beginPhase</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../net/minecraft/class_6063.html" title="interface in net.minecraft">class_6063</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#method_30515-net.minecraft.datafixer.fix.BiomeFormatFix-">method_30515</a></span>(<a href="../../../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix)</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#clientTick--">clientTick</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#method_30516-net.minecraft.datafixer.fix.BiomeFormatFix-float-">method_30516</a></span>(<a href="../../../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-            float&nbsp;float2)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#crystalDestroyed-net.minecraft.entity.decoration.EnderCrystalEntity-net.minecraft.util.math.BlockPos-net.minecraft.entity.damage.DamageSource-net.minecraft.entity.player.PlayerEntity-">crystalDestroyed</a></span>(<a href="../../../../../../net/minecraft/entity/decoration/EnderCrystalEntity.html" title="class in net.minecraft.entity.decoration">EnderCrystalEntity</a>&nbsp;crystal,
+                <a href="../../../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+                <a href="../../../../../../net/minecraft/entity/damage/DamageSource.html" title="class in net.minecraft.entity.damage">DamageSource</a>&nbsp;source,
+                <a href="../../../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#method_30517-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_6183-net.minecraft.class_5090-net.minecraft.class_5842-">method_30517</a></span>(<a href="../../../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-            <a href="../../../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-            <a href="../../../../../../net/minecraft/class_5090.html" title="interface in net.minecraft">class_5090</a>&nbsp;class_5090,
-            <a href="../../../../../../net/minecraft/class_5842.html" title="class in net.minecraft">class_5842</a>&nbsp;class_5842)</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#endPhase--">endPhase</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#method_30518-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_6183-net.minecraft.entity.ai.brain.Activity-net.minecraft.class_5090-">method_30518</a></span>(<a href="../../../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-            <a href="../../../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-            <a href="../../../../../../net/minecraft/entity/ai/brain/Activity.html" title="class in net.minecraft.entity.ai.brain">Activity</a>&nbsp;activity,
-            <a href="../../../../../../net/minecraft/class_5090.html" title="interface in net.minecraft">class_5090</a>&nbsp;class_5090)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../../net/minecraft/util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#getTarget--">getTarget</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractSittingPhase.html" title="class in net.minecraft.entity.boss.dragon.phase">AbstractSittingPhase</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#method_30519--">method_30519</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#method_24560--">method_24560</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#method_24567--">method_24567</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#method_24569--">method_24569</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#modifyDamageTaken-net.minecraft.entity.boss.dragon.EnderDragonPart-net.minecraft.entity.damage.DamageSource-float-">modifyDamageTaken</a></span>(<a href="../../../../../../net/minecraft/entity/boss/dragon/EnderDragonPart.html" title="class in net.minecraft.entity.boss.dragon">EnderDragonPart</a>&nbsp;enderDragonPart,
+                 <a href="../../../../../../net/minecraft/entity/damage/DamageSource.html" title="class in net.minecraft.entity.damage">DamageSource</a>&nbsp;damageSource,
+                 float&nbsp;float2)</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#method_31459-net.minecraft.container.ContainerType-">method_31459</a></span>(<a href="../../../../../../net/minecraft/container/ContainerType.html" title="interface in net.minecraft.container">ContainerType</a>&nbsp;containerType)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractPhase.html#serverTick--">serverTick</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -225,6 +225,13 @@ implements <a href="../../../../../../net/minecraft/item/FoodComponents.html" ti
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
 <code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.entity.boss.dragon.phase.Phase">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;net.minecraft.entity.boss.dragon.phase.<a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html" title="interface in net.minecraft.entity.boss.dragon.phase">Phase</a></h3>
+<code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html#getType--">getType</a></code></li>
 </ul>
 </li>
 </ul>
@@ -240,40 +247,13 @@ implements <a href="../../../../../../net/minecraft/item/FoodComponents.html" ti
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_29267">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_29267</h4>
-<pre>private final&nbsp;<a href="../../../../../../net/minecraft/class_5880.html" title="class in net.minecraft">class_5880</a> field_29267</pre>
-</li>
-</ul>
-<a name="field_29268">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_29268</h4>
-<pre>private final&nbsp;<a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractSittingPhase.html" title="class in net.minecraft.entity.boss.dragon.phase">AbstractSittingPhase</a> field_29268</pre>
-</li>
-</ul>
-<a name="field_29269">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_29269</h4>
-<pre>private final&nbsp;<a href="../../../../../../net/minecraft/class_5879.html" title="class in net.minecraft">class_5879</a> field_29269</pre>
-</li>
-</ul>
-<a name="field_29270">
+<a name="dragon">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_29270</h4>
-<pre>private final&nbsp;<a href="../../../../../../net/minecraft/class_5881.html" title="class in net.minecraft">class_5881</a> field_29270</pre>
+<h4>dragon</h4>
+<pre>protected final&nbsp;<a href="../../../../../../net/minecraft/entity/boss/dragon/EnderDragonEntity.html" title="class in net.minecraft.entity.boss.dragon">EnderDragonEntity</a> dragon</pre>
 </li>
 </ul>
 </li>
@@ -284,14 +264,13 @@ implements <a href="../../../../../../net/minecraft/item/FoodComponents.html" ti
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="AbstractPhase-net.minecraft.class_5880-net.minecraft.entity.attribute.EntityAttributeContainer-">
+<a name="AbstractPhase-net.minecraft.entity.boss.dragon.EnderDragonEntity-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AbstractPhase</h4>
-<pre>public&nbsp;AbstractPhase(<a href="../../../../../../net/minecraft/class_5880.html" title="class in net.minecraft">class_5880</a>&nbsp;class_5880,
-                     <a href="../../../../../../net/minecraft/entity/attribute/EntityAttributeContainer.html" title="class in net.minecraft.entity.attribute">EntityAttributeContainer</a>&nbsp;entityAttributeContainer)</pre>
+<pre>public&nbsp;AbstractPhase(<a href="../../../../../../net/minecraft/entity/boss/dragon/EnderDragonEntity.html" title="class in net.minecraft.entity.boss.dragon">EnderDragonEntity</a>&nbsp;dragon)</pre>
 </li>
 </ul>
 </li>
@@ -302,77 +281,140 @@ implements <a href="../../../../../../net/minecraft/item/FoodComponents.html" ti
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_30514--">
+<a name="method_24560--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_30514</h4>
-<pre>public&nbsp;<a href="../../../../../../net/minecraft/class_5880.html" title="class in net.minecraft">class_5880</a>&nbsp;method_30514()</pre>
+<h4>method_24560</h4>
+<pre>public&nbsp;boolean&nbsp;method_24560()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html#method_24560--">method_24560</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html" title="interface in net.minecraft.entity.boss.dragon.phase">Phase</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_30518-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_6183-net.minecraft.entity.ai.brain.Activity-net.minecraft.class_5090-">
+<a name="clientTick--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_30518</h4>
-<pre>public&nbsp;void&nbsp;method_30518(<a href="../../../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-                         <a href="../../../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-                         <a href="../../../../../../net/minecraft/entity/ai/brain/Activity.html" title="class in net.minecraft.entity.ai.brain">Activity</a>&nbsp;activity,
-                         <a href="../../../../../../net/minecraft/class_5090.html" title="interface in net.minecraft">class_5090</a>&nbsp;class_5090)</pre>
+<h4>clientTick</h4>
+<pre>public&nbsp;void&nbsp;clientTick()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html#clientTick--">clientTick</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html" title="interface in net.minecraft.entity.boss.dragon.phase">Phase</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_30517-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_6183-net.minecraft.class_5090-net.minecraft.class_5842-">
+<a name="serverTick--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_30517</h4>
-<pre>public&nbsp;boolean&nbsp;method_30517(<a href="../../../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-                            <a href="../../../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-                            <a href="../../../../../../net/minecraft/class_5090.html" title="interface in net.minecraft">class_5090</a>&nbsp;class_5090,
-                            <a href="../../../../../../net/minecraft/class_5842.html" title="class in net.minecraft">class_5842</a>&nbsp;class_5842)</pre>
+<h4>serverTick</h4>
+<pre>public&nbsp;void&nbsp;serverTick()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html#serverTick--">serverTick</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html" title="interface in net.minecraft.entity.boss.dragon.phase">Phase</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_30519--">
+<a name="crystalDestroyed-net.minecraft.entity.decoration.EnderCrystalEntity-net.minecraft.util.math.BlockPos-net.minecraft.entity.damage.DamageSource-net.minecraft.entity.player.PlayerEntity-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_30519</h4>
-<pre>public&nbsp;<a href="../../../../../../net/minecraft/entity/boss/dragon/phase/AbstractSittingPhase.html" title="class in net.minecraft.entity.boss.dragon.phase">AbstractSittingPhase</a>&nbsp;method_30519()</pre>
+<h4>crystalDestroyed</h4>
+<pre>public&nbsp;void&nbsp;crystalDestroyed(<a href="../../../../../../net/minecraft/entity/decoration/EnderCrystalEntity.html" title="class in net.minecraft.entity.decoration">EnderCrystalEntity</a>&nbsp;crystal,
+                             <a href="../../../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+                             <a href="../../../../../../net/minecraft/entity/damage/DamageSource.html" title="class in net.minecraft.entity.damage">DamageSource</a>&nbsp;source,
+                             <a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                             <a href="../../../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html#crystalDestroyed-net.minecraft.entity.decoration.EnderCrystalEntity-net.minecraft.util.math.BlockPos-net.minecraft.entity.damage.DamageSource-net.minecraft.entity.player.PlayerEntity-">crystalDestroyed</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html" title="interface in net.minecraft.entity.boss.dragon.phase">Phase</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_30515-net.minecraft.datafixer.fix.BiomeFormatFix-">
+<a name="beginPhase--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_30515</h4>
-<pre>public&nbsp;<a href="../../../../../../net/minecraft/class_6063.html" title="interface in net.minecraft">class_6063</a>&nbsp;method_30515(<a href="../../../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix)</pre>
+<h4>beginPhase</h4>
+<pre>public&nbsp;void&nbsp;beginPhase()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html#beginPhase--">beginPhase</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html" title="interface in net.minecraft.entity.boss.dragon.phase">Phase</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_30516-net.minecraft.datafixer.fix.BiomeFormatFix-float-">
+<a name="endPhase--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_30516</h4>
-<pre>public&nbsp;void&nbsp;method_30516(<a href="../../../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-                         float&nbsp;float2)</pre>
+<h4>endPhase</h4>
+<pre>public&nbsp;void&nbsp;endPhase()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html#endPhase--">endPhase</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html" title="interface in net.minecraft.entity.boss.dragon.phase">Phase</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_31459-net.minecraft.container.ContainerType-">
+<a name="method_24567--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_24567</h4>
+<pre>public&nbsp;float&nbsp;method_24567()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html#method_24567--">method_24567</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html" title="interface in net.minecraft.entity.boss.dragon.phase">Phase</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getTarget--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTarget</h4>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="../../../../../../net/minecraft/util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&nbsp;getTarget()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html#getTarget--">getTarget</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html" title="interface in net.minecraft.entity.boss.dragon.phase">Phase</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="modifyDamageTaken-net.minecraft.entity.boss.dragon.EnderDragonPart-net.minecraft.entity.damage.DamageSource-float-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>modifyDamageTaken</h4>
+<pre>public&nbsp;float&nbsp;modifyDamageTaken(<a href="../../../../../../net/minecraft/entity/boss/dragon/EnderDragonPart.html" title="class in net.minecraft.entity.boss.dragon">EnderDragonPart</a>&nbsp;enderDragonPart,
+                               <a href="../../../../../../net/minecraft/entity/damage/DamageSource.html" title="class in net.minecraft.entity.damage">DamageSource</a>&nbsp;damageSource,
+                               float&nbsp;float2)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html#modifyDamageTaken-net.minecraft.entity.boss.dragon.EnderDragonPart-net.minecraft.entity.damage.DamageSource-float-">modifyDamageTaken</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html" title="interface in net.minecraft.entity.boss.dragon.phase">Phase</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="method_24569--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_31459</h4>
-<pre>public&nbsp;void&nbsp;method_31459(<a href="../../../../../../net/minecraft/container/ContainerType.html" title="interface in net.minecraft.container">ContainerType</a>&nbsp;containerType)</pre>
+<h4>method_24569</h4>
+<pre>public&nbsp;float&nbsp;method_24569()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../net/minecraft/item/FoodComponents.html#method_31459-net.minecraft.container.ContainerType-">method_31459</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/item/FoodComponents.html" title="interface in net.minecraft.item">FoodComponents</a></code></dd>
+<dd><code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html#method_24569--">method_24569</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/entity/boss/dragon/phase/Phase.html" title="interface in net.minecraft.entity.boss.dragon.phase">Phase</a></code></dd>
 </dl>
 </li>
 </ul>

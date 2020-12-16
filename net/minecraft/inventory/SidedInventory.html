@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/inventory/Inventory.html" title="class in net.minecraft.inventory"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/inventory/InventoryListener.html" title="interface in net.minecraft.inventory"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">
@@ -99,12 +99,17 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <dl>
+<dt>All Superinterfaces:</dt>
+<dd><a href="../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>, <a href="../../../net/minecraft/util/Nameable.html" title="interface in net.minecraft.util">Nameable</a></dd>
+</dl>
+<dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><a href="../../../net/minecraft/inventory/DoubleInventory.html" title="class in net.minecraft.inventory">DoubleInventory</a>, <a href="../../../net/minecraft/inventory/Inventories.html" title="class in net.minecraft.inventory">Inventories</a></dd>
+<dd><a href="../../../net/minecraft/block/entity/BeaconBlockEntity.html" title="class in net.minecraft.block.entity">BeaconBlockEntity</a>, <a href="../../../net/minecraft/block/entity/BrewingStandBlockEntity.html" title="class in net.minecraft.block.entity">BrewingStandBlockEntity</a>, <a href="../../../net/minecraft/block/entity/FurnaceBlockEntity.html" title="class in net.minecraft.block.entity">FurnaceBlockEntity</a>, <a href="../../../net/minecraft/block/entity/ShulkerBoxBlockEntity.html" title="class in net.minecraft.block.entity">ShulkerBoxBlockEntity</a></dd>
 </dl>
 <hr>
 <br>
-<pre>public interface <span class="typeNameLabel">SidedInventory</span></pre>
+<pre>public interface <span class="typeNameLabel">SidedInventory</span>
+extends <a href="../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></pre>
 </li>
 </ul>
 </div>
@@ -124,18 +129,36 @@ var activeTableTab = "activeTableTab";
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/inventory/SidedInventory.html#method_28348-net.minecraft.class_4890-">method_28348</a></span>(<a href="../../../net/minecraft/class_4890.html" title="class in net.minecraft">class_4890</a>&nbsp;class_4890)</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/inventory/SidedInventory.html#canExtractInvStack-int-net.minecraft.item.ItemStack-net.minecraft.util.math.Direction-">canExtractInvStack</a></span>(int&nbsp;slot,
+                  <a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
+                  <a href="../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;dir)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/util/math/AxisCycleDirection.html" title="class in net.minecraft.util.math">AxisCycleDirection</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/inventory/SidedInventory.html#method_28349-net.minecraft.class_4890-">method_28349</a></span>(<a href="../../../net/minecraft/class_4890.html" title="class in net.minecraft">class_4890</a>&nbsp;class_4890)</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/inventory/SidedInventory.html#canInsertInvStack-int-net.minecraft.item.ItemStack-net.minecraft.util.math.Direction-">canInsertInvStack</a></span>(int&nbsp;slot,
+                 <a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
+                 <a href="../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;dir)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/inventory/SidedInventory.html#method_28350--">method_28350</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>int[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/inventory/SidedInventory.html#getInvAvailableSlots-net.minecraft.util.math.Direction-">getInvAvailableSlots</a></span>(<a href="../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;side)</code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.inventory.Inventory">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;net.minecraft.inventory.<a href="../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></h3>
+<code><a href="../../../net/minecraft/inventory/Inventory.html#canPlayerUseInv-net.minecraft.entity.player.PlayerEntity-">canPlayerUseInv</a>, <a href="../../../net/minecraft/inventory/Inventory.html#clear--">clear</a>, <a href="../../../net/minecraft/inventory/Inventory.html#getInvMaxStackAmount--">getInvMaxStackAmount</a>, <a href="../../../net/minecraft/inventory/Inventory.html#getInvSize--">getInvSize</a>, <a href="../../../net/minecraft/inventory/Inventory.html#getInvStack-int-">getInvStack</a>, <a href="../../../net/minecraft/inventory/Inventory.html#isInvEmpty--">isInvEmpty</a>, <a href="../../../net/minecraft/inventory/Inventory.html#isValidInvStack-int-net.minecraft.item.ItemStack-">isValidInvStack</a>, <a href="../../../net/minecraft/inventory/Inventory.html#markDirty--">markDirty</a>, <a href="../../../net/minecraft/inventory/Inventory.html#method_34161-int-int-">method_34161</a>, <a href="../../../net/minecraft/inventory/Inventory.html#method_34164-int-">method_34164</a>, <a href="../../../net/minecraft/inventory/Inventory.html#method_34167--">method_34167</a>, <a href="../../../net/minecraft/inventory/Inventory.html#onInvClose-net.minecraft.entity.player.PlayerEntity-">onInvClose</a>, <a href="../../../net/minecraft/inventory/Inventory.html#onInvOpen-net.minecraft.entity.player.PlayerEntity-">onInvOpen</a>, <a href="../../../net/minecraft/inventory/Inventory.html#removeInvStack-int-">removeInvStack</a>, <a href="../../../net/minecraft/inventory/Inventory.html#setInvStack-int-net.minecraft.item.ItemStack-">setInvStack</a>, <a href="../../../net/minecraft/inventory/Inventory.html#takeInvStack-int-int-">takeInvStack</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.util.Nameable">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;net.minecraft.util.<a href="../../../net/minecraft/util/Nameable.html" title="interface in net.minecraft.util">Nameable</a></h3>
+<code><a href="../../../net/minecraft/util/Nameable.html#getDisplayName--">getDisplayName</a>, <a href="../../../net/minecraft/util/Nameable.html#method_29611--">method_29611</a>, <a href="../../../net/minecraft/util/Nameable.html#method_34200--">method_34200</a></code></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -150,32 +173,35 @@ var activeTableTab = "activeTableTab";
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_28348-net.minecraft.class_4890-">
+<a name="getInvAvailableSlots-net.minecraft.util.math.Direction-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_28348</h4>
-<pre>void&nbsp;method_28348(<a href="../../../net/minecraft/class_4890.html" title="class in net.minecraft">class_4890</a>&nbsp;class_4890)</pre>
+<h4>getInvAvailableSlots</h4>
+<pre>int[]&nbsp;getInvAvailableSlots(<a href="../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;side)</pre>
 </li>
 </ul>
-<a name="method_28349-net.minecraft.class_4890-">
+<a name="canInsertInvStack-int-net.minecraft.item.ItemStack-net.minecraft.util.math.Direction-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_28349</h4>
-<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-<a href="../../../net/minecraft/util/math/AxisCycleDirection.html" title="class in net.minecraft.util.math">AxisCycleDirection</a>&nbsp;method_28349(<a href="../../../net/minecraft/class_4890.html" title="class in net.minecraft">class_4890</a>&nbsp;class_4890)</pre>
+<h4>canInsertInvStack</h4>
+<pre>boolean&nbsp;canInsertInvStack(int&nbsp;slot,
+                          <a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
+                          <a href="../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;dir)</pre>
 </li>
 </ul>
-<a name="method_28350--">
+<a name="canExtractInvStack-int-net.minecraft.item.ItemStack-net.minecraft.util.math.Direction-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_28350</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;method_28350()</pre>
+<h4>canExtractInvStack</h4>
+<pre>boolean&nbsp;canExtractInvStack(int&nbsp;slot,
+                           <a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
+                           <a href="../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;dir)</pre>
 </li>
 </ul>
 </li>
@@ -205,7 +231,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/inventory/Inventory.html" title="class in net.minecraft.inventory"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/inventory/InventoryListener.html" title="interface in net.minecraft.inventory"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">

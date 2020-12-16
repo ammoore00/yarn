@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":9,"i12":9,"i13":10,"i14":10,"i15":9,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":9,"i22":10,"i23":10};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../net/minecraft/entity/effect/InstantStatusEffect.class_5535.html" title="class in net.minecraft.entity.effect"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../net/minecraft/entity/effect/StatusEffect.class_5536.html" title="class in net.minecraft.entity.effect"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/entity/effect/InstantStatusEffect.html" title="class in net.minecraft.entity.effect"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/entity/effect/StatusEffectInstance.html" title="class in net.minecraft.entity.effect"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/entity/effect/StatusEffect.html" target="_top">Frames</a></li>
@@ -73,7 +73,7 @@ var activeTableTab = "activeTableTab";
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
@@ -99,54 +99,27 @@ var activeTableTab = "activeTableTab";
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../net/minecraft/class_5527.html" title="class in net.minecraft">net.minecraft.class_5527</a></li>
-<li>
-<ul class="inheritance">
 <li>net.minecraft.entity.effect.StatusEffect</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><a href="../../../../net/minecraft/entity/effect/AbsorptionStatusEffect.html" title="class in net.minecraft.entity.effect">AbsorptionStatusEffect</a>, <a href="../../../../net/minecraft/entity/effect/DamageModifierStatusEffect.html" title="class in net.minecraft.entity.effect">DamageModifierStatusEffect</a>, <a href="../../../../net/minecraft/entity/effect/HealthBoostStatusEffect.html" title="class in net.minecraft.entity.effect">HealthBoostStatusEffect</a>, <a href="../../../../net/minecraft/entity/effect/InstantStatusEffect.html" title="class in net.minecraft.entity.effect">InstantStatusEffect</a></dd>
+</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">StatusEffect</span>
-extends <a href="../../../../net/minecraft/class_5527.html" title="class in net.minecraft">class_5527</a></pre>
+extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- ======== NESTED CLASS SUMMARY ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="nested.class.summary">
-<!--   -->
-</a>
-<h3>Nested Class Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Nested Class Summary table, listing nested classes, and an explanation">
-<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Class and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.class_5536.html" title="class in net.minecraft.entity.effect">StatusEffect.class_5536</a></span></code>&nbsp;</td>
-</tr>
-</table>
-<ul class="blockList">
-<li class="blockList"><a name="nested.classes.inherited.from.class.net.minecraft.class_5527">
-<!--   -->
-</a>
-<h3>Nested classes/interfaces inherited from class&nbsp;net.minecraft.<a href="../../../../net/minecraft/class_5527.html" title="class in net.minecraft">class_5527</a></h3>
-<code><a href="../../../../net/minecraft/class_5527.class_5528.html" title="class in net.minecraft">class_5527.class_5528</a>&lt;<a href="../../../../net/minecraft/class_5527.class_5528.html" title="type parameter in class_5527.class_5528">T</a> extends <a href="../../../../net/minecraft/class_5527.html" title="class in net.minecraft">class_5527</a>&gt;</code></li>
-</ul>
-</li>
-</ul>
 <!-- =========== FIELD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="field.summary">
@@ -160,12 +133,36 @@ extends <a href="../../../../net/minecraft/class_5527.html" title="class in net.
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#field_26641">field_26641</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../net/minecraft/entity/attribute/EntityAttribute.html" title="interface in net.minecraft.entity.attribute">EntityAttribute</a>,<a href="../../../../net/minecraft/entity/attribute/EntityAttributeModifier.html" title="class in net.minecraft.entity.attribute">EntityAttributeModifier</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#attributeModifiers">attributeModifiers</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../../net/minecraft/entity/damage/ProjectileDamageSource.html" title="class in net.minecraft.entity.damage">ProjectileDamageSource</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#field_26642">field_26642</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#color">color</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="class in net.minecraft.util.registry">SimpleRegistry</a>&lt;<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>,<a href="../../../../net/minecraft/entity/effect/StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#field_32922">field_32922</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#field_32923">field_32923</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#field_32925">field_32925</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#field_32926">field_32926</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#field_32927">field_32927</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#field_32928">field_32928</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -179,11 +176,13 @@ extends <a href="../../../../net/minecraft/class_5527.html" title="class in net.
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
 <caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
-<th class="colOne" scope="col">Constructor and Description</th>
+<th class="colFirst" scope="col">Modifier</th>
+<th class="colLast" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#StatusEffect-net.minecraft.class_5542:A-net.minecraft.entity.damage.ProjectileDamageSource-">StatusEffect</a></span>(<a href="../../../../net/minecraft/class_5542.html" title="interface in net.minecraft">class_5542</a>[]&nbsp;class_5542,
-            <a href="../../../../net/minecraft/entity/damage/ProjectileDamageSource.html" title="class in net.minecraft.entity.damage">ProjectileDamageSource</a>&nbsp;projectileDamageSource)</code>&nbsp;</td>
+<td class="colFirst"><code>protected </code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#StatusEffect-boolean-int-">StatusEffect</a></span>(boolean&nbsp;bool,
+            int&nbsp;color)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -195,25 +194,124 @@ extends <a href="../../../../net/minecraft/class_5527.html" title="class in net.
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/class_5013.html" title="class in net.minecraft">class_5013</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#method_28426-net.minecraft.class_5013-java.util.Random-net.minecraft.class_5517-">method_28426</a></span>(<a href="../../../../net/minecraft/class_5013.html" title="class in net.minecraft">class_5013</a>&nbsp;class_5013,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util">Random</a>&nbsp;random,
-            <a href="../../../../net/minecraft/class_5517.html" title="class in net.minecraft">class_5517</a>&nbsp;class_5517)</code>&nbsp;</td>
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#adjustModifierAmount-int-net.minecraft.entity.attribute.EntityAttributeModifier-">adjustModifierAmount</a></span>(int&nbsp;amplifier,
+                    <a href="../../../../net/minecraft/entity/attribute/EntityAttributeModifier.html" title="class in net.minecraft.entity.attribute">EntityAttributeModifier</a>&nbsp;modifier)</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#applyInstantEffect-net.minecraft.entity.Entity-net.minecraft.entity.Entity-net.minecraft.entity.LivingEntity-int-double-">applyInstantEffect</a></span>(<a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;source,
+                  <a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;attacker,
+                  <a href="../../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;target,
+                  int&nbsp;amplifier,
+                  double&nbsp;proximity)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#applyUpdateEffect-net.minecraft.entity.LivingEntity-int-">applyUpdateEffect</a></span>(<a href="../../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;entity,
+                 int&nbsp;amplifier)</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../net/minecraft/entity/effect/StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#byRawId-int-">byRawId</a></span>(int&nbsp;rawId)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#canApplyUpdateEffect-int-int-">canApplyUpdateEffect</a></span>(int&nbsp;duration,
+                    int&nbsp;amplifier)</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../net/minecraft/entity/attribute/EntityAttribute.html" title="interface in net.minecraft.entity.attribute">EntityAttribute</a>,<a href="../../../../net/minecraft/entity/attribute/EntityAttributeModifier.html" title="class in net.minecraft.entity.attribute">EntityAttributeModifier</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#getAttributeModifiers--">getAttributeModifiers</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#getColor--">getColor</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#isBeneficial--">isBeneficial</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#isInstant--">isInstant</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#method_34284--">method_34284</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../net/minecraft/entity/effect/StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#method_34285-double-">method_34285</a></span>(double&nbsp;double2)</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#method_34289-net.minecraft.entity.effect.StatusEffect-">method_34289</a></span>(<a href="../../../../net/minecraft/entity/effect/StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a>&nbsp;statusEffect)</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#method_34290-net.minecraft.entity.effect.StatusEffectInstance-float-">method_34290</a></span>(<a href="../../../../net/minecraft/entity/effect/StatusEffectInstance.html" title="class in net.minecraft.entity.effect">StatusEffectInstance</a>&nbsp;statusEffectInstance,
+            float&nbsp;float2)</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code><a href="../../../../net/minecraft/entity/effect/StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#method_34294-net.minecraft.entity.attribute.EntityAttribute-java.lang.String-double-int-">method_34294</a></span>(<a href="../../../../net/minecraft/entity/attribute/EntityAttribute.html" title="interface in net.minecraft.entity.attribute">EntityAttribute</a>&nbsp;entityAttribute,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
+            double&nbsp;double2,
+            int&nbsp;int2)</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../net/minecraft/entity/effect/StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#method_34296-int-int-">method_34296</a></span>(int&nbsp;int2,
+            int&nbsp;int3)</code>&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../net/minecraft/entity/effect/StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#method_34297-java.lang.String-">method_34297</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code><a href="../../../../net/minecraft/entity/effect/StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#method_34300-java.lang.String-">method_34300</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+</tr>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#method_34301--">method_34301</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#method_34302--">method_34302</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#method_34305--">method_34305</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i20" class="altColor">
+<td class="colFirst"><code><a href="../../../../net/minecraft/entity/effect/StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#method_34306--">method_34306</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#method_34307--">method_34307</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i22" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#onApplied-net.minecraft.entity.LivingEntity-net.minecraft.entity.attribute.AbstractEntityAttributeContainer-int-">onApplied</a></span>(<a href="../../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;entity,
+         <a href="../../../../net/minecraft/entity/attribute/AbstractEntityAttributeContainer.html" title="class in net.minecraft.entity.attribute">AbstractEntityAttributeContainer</a>&nbsp;attributes,
+         int&nbsp;amplifier)</code>&nbsp;</td>
+</tr>
+<tr id="i23" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/effect/StatusEffect.html#onRemoved-net.minecraft.entity.LivingEntity-net.minecraft.entity.attribute.AbstractEntityAttributeContainer-int-">onRemoved</a></span>(<a href="../../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;entity,
+         <a href="../../../../net/minecraft/entity/attribute/AbstractEntityAttributeContainer.html" title="class in net.minecraft.entity.attribute">AbstractEntityAttributeContainer</a>&nbsp;attributes,
+         int&nbsp;amplifier)</code>&nbsp;</td>
 </tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.class_5527">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;net.minecraft.<a href="../../../../net/minecraft/class_5527.html" title="class in net.minecraft">class_5527</a></h3>
-<code><a href="../../../../net/minecraft/class_5527.html#method_28425--">method_28425</a></code></li>
-</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -235,22 +333,76 @@ extends <a href="../../../../net/minecraft/class_5527.html" title="class in net.
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_26641">
+<a name="field_32922">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_26641</h4>
-<pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a> field_26641</pre>
+<h4>field_32922</h4>
+<pre>public static final&nbsp;<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="class in net.minecraft.util.registry">SimpleRegistry</a>&lt;<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>,<a href="../../../../net/minecraft/entity/effect/StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a>&gt; field_32922</pre>
 </li>
 </ul>
-<a name="field_26642">
+<a name="attributeModifiers">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>attributeModifiers</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../net/minecraft/entity/attribute/EntityAttribute.html" title="interface in net.minecraft.entity.attribute">EntityAttribute</a>,<a href="../../../../net/minecraft/entity/attribute/EntityAttributeModifier.html" title="class in net.minecraft.entity.attribute">EntityAttributeModifier</a>&gt; attributeModifiers</pre>
+</li>
+</ul>
+<a name="field_32923">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>field_32923</h4>
+<pre>private final&nbsp;boolean field_32923</pre>
+</li>
+</ul>
+<a name="color">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>color</h4>
+<pre>private final&nbsp;int color</pre>
+</li>
+</ul>
+<a name="field_32925">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>field_32925</h4>
+<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> field_32925</pre>
+</li>
+</ul>
+<a name="field_32926">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>field_32926</h4>
+<pre>private&nbsp;int field_32926</pre>
+</li>
+</ul>
+<a name="field_32927">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>field_32927</h4>
+<pre>private&nbsp;double field_32927</pre>
+</li>
+</ul>
+<a name="field_32928">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_26642</h4>
-<pre>private final&nbsp;<a href="../../../../net/minecraft/entity/damage/ProjectileDamageSource.html" title="class in net.minecraft.entity.damage">ProjectileDamageSource</a> field_26642</pre>
+<h4>field_32928</h4>
+<pre>private&nbsp;boolean field_32928</pre>
 </li>
 </ul>
 </li>
@@ -261,14 +413,14 @@ extends <a href="../../../../net/minecraft/class_5527.html" title="class in net.
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="StatusEffect-net.minecraft.class_5542:A-net.minecraft.entity.damage.ProjectileDamageSource-">
+<a name="StatusEffect-boolean-int-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>StatusEffect</h4>
-<pre>public&nbsp;StatusEffect(<a href="../../../../net/minecraft/class_5542.html" title="interface in net.minecraft">class_5542</a>[]&nbsp;class_5542,
-                    <a href="../../../../net/minecraft/entity/damage/ProjectileDamageSource.html" title="class in net.minecraft.entity.damage">ProjectileDamageSource</a>&nbsp;projectileDamageSource)</pre>
+<pre>protected&nbsp;StatusEffect(boolean&nbsp;bool,
+                       int&nbsp;color)</pre>
 </li>
 </ul>
 </li>
@@ -279,19 +431,246 @@ extends <a href="../../../../net/minecraft/class_5527.html" title="class in net.
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_28426-net.minecraft.class_5013-java.util.Random-net.minecraft.class_5517-">
+<a name="byRawId-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>byRawId</h4>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public static&nbsp;<a href="../../../../net/minecraft/entity/effect/StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a>&nbsp;byRawId(int&nbsp;rawId)</pre>
+</li>
+</ul>
+<a name="method_34289-net.minecraft.entity.effect.StatusEffect-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_34289</h4>
+<pre>public static&nbsp;int&nbsp;method_34289(<a href="../../../../net/minecraft/entity/effect/StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a>&nbsp;statusEffect)</pre>
+</li>
+</ul>
+<a name="method_34297-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_34297</h4>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public static&nbsp;<a href="../../../../net/minecraft/entity/effect/StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a>&nbsp;method_34297(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
+</li>
+</ul>
+<a name="method_34296-int-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_34296</h4>
+<pre>protected&nbsp;<a href="../../../../net/minecraft/entity/effect/StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a>&nbsp;method_34296(int&nbsp;int2,
+                                    int&nbsp;int3)</pre>
+</li>
+</ul>
+<a name="applyUpdateEffect-net.minecraft.entity.LivingEntity-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>applyUpdateEffect</h4>
+<pre>public&nbsp;void&nbsp;applyUpdateEffect(<a href="../../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;entity,
+                              int&nbsp;amplifier)</pre>
+</li>
+</ul>
+<a name="applyInstantEffect-net.minecraft.entity.Entity-net.minecraft.entity.Entity-net.minecraft.entity.LivingEntity-int-double-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>applyInstantEffect</h4>
+<pre>public&nbsp;void&nbsp;applyInstantEffect(<a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                               <a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;source,
+                               <a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                               <a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;attacker,
+                               <a href="../../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;target,
+                               int&nbsp;amplifier,
+                               double&nbsp;proximity)</pre>
+</li>
+</ul>
+<a name="canApplyUpdateEffect-int-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>canApplyUpdateEffect</h4>
+<pre>public&nbsp;boolean&nbsp;canApplyUpdateEffect(int&nbsp;duration,
+                                    int&nbsp;amplifier)</pre>
+</li>
+</ul>
+<a name="isInstant--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isInstant</h4>
+<pre>public&nbsp;boolean&nbsp;isInstant()</pre>
+</li>
+</ul>
+<a name="method_34300-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_34300</h4>
+<pre>public&nbsp;<a href="../../../../net/minecraft/entity/effect/StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a>&nbsp;method_34300(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
+</li>
+</ul>
+<a name="method_34284--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_34284</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;method_34284()</pre>
+</li>
+</ul>
+<a name="isBeneficial--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isBeneficial</h4>
+<pre>@Environment(value=CLIENT)
+public&nbsp;boolean&nbsp;isBeneficial()</pre>
+</li>
+</ul>
+<a name="method_34301--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_34301</h4>
+<pre>@Environment(value=CLIENT)
+public&nbsp;int&nbsp;method_34301()</pre>
+</li>
+</ul>
+<a name="method_34302--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_34302</h4>
+<pre>@Environment(value=CLIENT)
+public&nbsp;boolean&nbsp;method_34302()</pre>
+</li>
+</ul>
+<a name="method_34290-net.minecraft.entity.effect.StatusEffectInstance-float-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_34290</h4>
+<pre>@Environment(value=CLIENT)
+public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;method_34290(<a href="../../../../net/minecraft/entity/effect/StatusEffectInstance.html" title="class in net.minecraft.entity.effect">StatusEffectInstance</a>&nbsp;statusEffectInstance,
+                                                             float&nbsp;float2)</pre>
+</li>
+</ul>
+<a name="method_34285-double-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_34285</h4>
+<pre>protected&nbsp;<a href="../../../../net/minecraft/entity/effect/StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a>&nbsp;method_34285(double&nbsp;double2)</pre>
+</li>
+</ul>
+<a name="getColor--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getColor</h4>
+<pre>public&nbsp;int&nbsp;getColor()</pre>
+</li>
+</ul>
+<a name="method_34294-net.minecraft.entity.attribute.EntityAttribute-java.lang.String-double-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_34294</h4>
+<pre>public&nbsp;<a href="../../../../net/minecraft/entity/effect/StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a>&nbsp;method_34294(<a href="../../../../net/minecraft/entity/attribute/EntityAttribute.html" title="interface in net.minecraft.entity.attribute">EntityAttribute</a>&nbsp;entityAttribute,
+                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
+                                 double&nbsp;double2,
+                                 int&nbsp;int2)</pre>
+</li>
+</ul>
+<a name="getAttributeModifiers--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAttributeModifiers</h4>
+<pre>@Environment(value=CLIENT)
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../net/minecraft/entity/attribute/EntityAttribute.html" title="interface in net.minecraft.entity.attribute">EntityAttribute</a>,<a href="../../../../net/minecraft/entity/attribute/EntityAttributeModifier.html" title="class in net.minecraft.entity.attribute">EntityAttributeModifier</a>&gt;&nbsp;getAttributeModifiers()</pre>
+</li>
+</ul>
+<a name="onRemoved-net.minecraft.entity.LivingEntity-net.minecraft.entity.attribute.AbstractEntityAttributeContainer-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onRemoved</h4>
+<pre>public&nbsp;void&nbsp;onRemoved(<a href="../../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;entity,
+                      <a href="../../../../net/minecraft/entity/attribute/AbstractEntityAttributeContainer.html" title="class in net.minecraft.entity.attribute">AbstractEntityAttributeContainer</a>&nbsp;attributes,
+                      int&nbsp;amplifier)</pre>
+</li>
+</ul>
+<a name="onApplied-net.minecraft.entity.LivingEntity-net.minecraft.entity.attribute.AbstractEntityAttributeContainer-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onApplied</h4>
+<pre>public&nbsp;void&nbsp;onApplied(<a href="../../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;entity,
+                      <a href="../../../../net/minecraft/entity/attribute/AbstractEntityAttributeContainer.html" title="class in net.minecraft.entity.attribute">AbstractEntityAttributeContainer</a>&nbsp;attributes,
+                      int&nbsp;amplifier)</pre>
+</li>
+</ul>
+<a name="adjustModifierAmount-int-net.minecraft.entity.attribute.EntityAttributeModifier-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>adjustModifierAmount</h4>
+<pre>public&nbsp;double&nbsp;adjustModifierAmount(int&nbsp;amplifier,
+                                   <a href="../../../../net/minecraft/entity/attribute/EntityAttributeModifier.html" title="class in net.minecraft.entity.attribute">EntityAttributeModifier</a>&nbsp;modifier)</pre>
+</li>
+</ul>
+<a name="method_34305--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_34305</h4>
+<pre>@Environment(value=CLIENT)
+public&nbsp;boolean&nbsp;method_34305()</pre>
+</li>
+</ul>
+<a name="method_34306--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_34306</h4>
+<pre>public&nbsp;<a href="../../../../net/minecraft/entity/effect/StatusEffect.html" title="class in net.minecraft.entity.effect">StatusEffect</a>&nbsp;method_34306()</pre>
+</li>
+</ul>
+<a name="method_34307--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_28426</h4>
-<pre>public&nbsp;<a href="../../../../net/minecraft/class_5013.html" title="class in net.minecraft">class_5013</a>&nbsp;method_28426(<a href="../../../../net/minecraft/class_5013.html" title="class in net.minecraft">class_5013</a>&nbsp;class_5013,
-                               <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util">Random</a>&nbsp;random,
-                               <a href="../../../../net/minecraft/class_5517.html" title="class in net.minecraft">class_5517</a>&nbsp;class_5517)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_5527.html#method_28426-net.minecraft.class_5013-java.util.Random-net.minecraft.class_5517-">method_28426</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_5527.html" title="class in net.minecraft">class_5527</a></code></dd>
-</dl>
+<h4>method_34307</h4>
+<pre>public static&nbsp;void&nbsp;method_34307()</pre>
 </li>
 </ul>
 </li>
@@ -321,8 +700,8 @@ extends <a href="../../../../net/minecraft/class_5527.html" title="class in net.
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../net/minecraft/entity/effect/InstantStatusEffect.class_5535.html" title="class in net.minecraft.entity.effect"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../net/minecraft/entity/effect/StatusEffect.class_5536.html" title="class in net.minecraft.entity.effect"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/entity/effect/InstantStatusEffect.html" title="class in net.minecraft.entity.effect"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/entity/effect/StatusEffectInstance.html" title="class in net.minecraft.entity.effect"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/entity/effect/StatusEffect.html" target="_top">Frames</a></li>
@@ -346,7 +725,7 @@ extends <a href="../../../../net/minecraft/class_5527.html" title="class in net.
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>

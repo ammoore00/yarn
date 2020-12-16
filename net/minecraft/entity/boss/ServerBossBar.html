@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":6,"i24":9,"i25":6,"i26":10,"i27":10,"i28":10};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../net/minecraft/entity/boss/CommandBossBar.html" title="class in net.minecraft.entity.boss"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/entity/boss/BossBar.Style.html" title="enum in net.minecraft.entity.boss"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../net/minecraft/entity/boss/WitherEntity.html" title="class in net.minecraft.entity.boss"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -73,7 +73,7 @@ var activeTableTab = "activeTableTab";
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.classes.inherited.from.class.net.minecraft.class_5149">Nested</a>&nbsp;|&nbsp;</li>
+<li><a href="#nested.classes.inherited.from.class.net.minecraft.entity.boss.BossBar">Nested</a>&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
@@ -99,10 +99,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../net/minecraft/class_5149.html" title="class in net.minecraft">net.minecraft.class_5149</a></li>
-<li>
-<ul class="inheritance">
-<li><a href="../../../../net/minecraft/server/network/ServerHandshakeNetworkHandler.html" title="class in net.minecraft.server.network">net.minecraft.server.network.ServerHandshakeNetworkHandler</a></li>
+<li><a href="../../../../net/minecraft/entity/boss/BossBar.html" title="class in net.minecraft.entity.boss">net.minecraft.entity.boss.BossBar</a></li>
 <li>
 <ul class="inheritance">
 <li>net.minecraft.entity.boss.ServerBossBar</li>
@@ -111,19 +108,13 @@ var activeTableTab = "activeTableTab";
 </ul>
 </li>
 </ul>
-</li>
-</ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../../net/minecraft/tag/BlockTags.html" title="class in net.minecraft.tag">BlockTags</a>, <a href="../../../../net/minecraft/client/util/NetworkUtils.html" title="class in net.minecraft.client.util">NetworkUtils</a></dd>
-</dl>
 <hr>
 <br>
-<pre>public abstract class <span class="typeNameLabel">ServerBossBar</span>
-extends <a href="../../../../net/minecraft/server/network/ServerHandshakeNetworkHandler.html" title="class in net.minecraft.server.network">ServerHandshakeNetworkHandler</a></pre>
+<pre>public class <span class="typeNameLabel">ServerBossBar</span>
+extends <a href="../../../../net/minecraft/entity/boss/BossBar.html" title="class in net.minecraft.entity.boss">BossBar</a></pre>
 </li>
 </ul>
 </div>
@@ -137,11 +128,11 @@ extends <a href="../../../../net/minecraft/server/network/ServerHandshakeNetwork
 </a>
 <h3>Nested Class Summary</h3>
 <ul class="blockList">
-<li class="blockList"><a name="nested.classes.inherited.from.class.net.minecraft.class_5149">
+<li class="blockList"><a name="nested.classes.inherited.from.class.net.minecraft.entity.boss.BossBar">
 <!--   -->
 </a>
-<h3>Nested classes/interfaces inherited from class&nbsp;net.minecraft.<a href="../../../../net/minecraft/class_5149.html" title="class in net.minecraft">class_5149</a></h3>
-<code><a href="../../../../net/minecraft/class_5149.class_5150.html" title="enum in net.minecraft">class_5149.class_5150</a></code></li>
+<h3>Nested classes/interfaces inherited from class&nbsp;net.minecraft.entity.boss.<a href="../../../../net/minecraft/entity/boss/BossBar.html" title="class in net.minecraft.entity.boss">BossBar</a></h3>
+<code><a href="../../../../net/minecraft/entity/boss/BossBar.Color.html" title="enum in net.minecraft.entity.boss">BossBar.Color</a>, <a href="../../../../net/minecraft/entity/boss/BossBar.Style.html" title="enum in net.minecraft.entity.boss">BossBar.Style</a></code></li>
 </ul>
 </li>
 </ul>
@@ -158,75 +149,24 @@ extends <a href="../../../../net/minecraft/server/network/ServerHandshakeNetwork
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected static <a href="../../../../net/minecraft/entity/ExperienceOrbEntity.html" title="class in net.minecraft.entity">ExperienceOrbEntity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#field_24233">field_24233</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../net/minecraft/server/network/ServerPlayerEntity.html" title="class in net.minecraft.server.network">ServerPlayerEntity</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#players">players</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected static <a href="../../../../net/minecraft/entity/ExperienceOrbEntity.html" title="class in net.minecraft.entity">ExperienceOrbEntity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#field_24234">field_24234</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected static <a href="../../../../net/minecraft/entity/ExperienceOrbEntity.html" title="class in net.minecraft.entity">ExperienceOrbEntity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#field_24235">field_24235</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected static <a href="../../../../net/minecraft/entity/ExperienceOrbEntity.html" title="class in net.minecraft.entity">ExperienceOrbEntity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#field_24236">field_24236</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected static <a href="../../../../net/minecraft/entity/ExperienceOrbEntity.html" title="class in net.minecraft.entity">ExperienceOrbEntity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#field_24237">field_24237</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected static <a href="../../../../net/minecraft/entity/ExperienceOrbEntity.html" title="class in net.minecraft.entity">ExperienceOrbEntity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#field_24238">field_24238</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../net/minecraft/server/network/ServerPlayerEntity.html" title="class in net.minecraft.server.network">ServerPlayerEntity</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#unmodifiablePlayers">unmodifiablePlayers</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#field_24239">field_24239</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static <a href="../../../../net/minecraft/datafixer/mapping/LegacyDyeItemMapping.html" title="class in net.minecraft.datafixer.mapping">LegacyDyeItemMapping</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#field_24240">field_24240</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected static <a href="../../../../net/minecraft/entity/ExperienceOrbEntity.html" title="class in net.minecraft.entity">ExperienceOrbEntity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#field_24241">field_24241</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected static <a href="../../../../net/minecraft/entity/ExperienceOrbEntity.html" title="class in net.minecraft.entity">ExperienceOrbEntity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#field_24242">field_24242</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected static <a href="../../../../net/minecraft/entity/ExperienceOrbEntity.html" title="class in net.minecraft.entity">ExperienceOrbEntity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#field_24243">field_24243</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected static <a href="../../../../net/minecraft/entity/ExperienceOrbEntity.html" title="class in net.minecraft.entity">ExperienceOrbEntity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#field_24244">field_24244</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected static <a href="../../../../net/minecraft/entity/ExperienceOrbEntity.html" title="class in net.minecraft.entity">ExperienceOrbEntity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#field_24245">field_24245</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected static <a href="../../../../net/minecraft/entity/ExperienceOrbEntity.html" title="class in net.minecraft.entity">ExperienceOrbEntity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#field_24246">field_24246</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#visible">visible</a></span></code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.server.network.ServerHandshakeNetworkHandler">
+<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.entity.boss.BossBar">
 <!--   -->
 </a>
-<h3>Fields inherited from class&nbsp;net.minecraft.server.network.<a href="../../../../net/minecraft/server/network/ServerHandshakeNetworkHandler.html" title="class in net.minecraft.server.network">ServerHandshakeNetworkHandler</a></h3>
-<code><a href="../../../../net/minecraft/server/network/ServerHandshakeNetworkHandler.html#field_24311">field_24311</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.class_5149">
-<!--   -->
-</a>
-<h3>Fields inherited from class&nbsp;net.minecraft.<a href="../../../../net/minecraft/class_5149.html" title="class in net.minecraft">class_5149</a></h3>
-<code><a href="../../../../net/minecraft/class_5149.html#field_23939">field_23939</a>, <a href="../../../../net/minecraft/class_5149.html#field_23944">field_23944</a>, <a href="../../../../net/minecraft/class_5149.html#field_23945">field_23945</a>, <a href="../../../../net/minecraft/class_5149.html#field_23946">field_23946</a>, <a href="../../../../net/minecraft/class_5149.html#field_23947">field_23947</a>, <a href="../../../../net/minecraft/class_5149.html#field_23948">field_23948</a>, <a href="../../../../net/minecraft/class_5149.html#field_23949">field_23949</a>, <a href="../../../../net/minecraft/class_5149.html#field_23950">field_23950</a>, <a href="../../../../net/minecraft/class_5149.html#field_23951">field_23951</a>, <a href="../../../../net/minecraft/class_5149.html#field_23952">field_23952</a>, <a href="../../../../net/minecraft/class_5149.html#field_23953">field_23953</a>, <a href="../../../../net/minecraft/class_5149.html#field_23954">field_23954</a>, <a href="../../../../net/minecraft/class_5149.html#field_23955">field_23955</a>, <a href="../../../../net/minecraft/class_5149.html#field_23956">field_23956</a>, <a href="../../../../net/minecraft/class_5149.html#field_23957">field_23957</a>, <a href="../../../../net/minecraft/class_5149.html#field_23958">field_23958</a>, <a href="../../../../net/minecraft/class_5149.html#field_23959">field_23959</a>, <a href="../../../../net/minecraft/class_5149.html#field_23960">field_23960</a>, <a href="../../../../net/minecraft/class_5149.html#field_23961">field_23961</a>, <a href="../../../../net/minecraft/class_5149.html#field_23962">field_23962</a></code></li>
+<h3>Fields inherited from class&nbsp;net.minecraft.entity.boss.<a href="../../../../net/minecraft/entity/boss/BossBar.html" title="class in net.minecraft.entity.boss">BossBar</a></h3>
+<code><a href="../../../../net/minecraft/entity/boss/BossBar.html#color">color</a>, <a href="../../../../net/minecraft/entity/boss/BossBar.html#darkenSky">darkenSky</a>, <a href="../../../../net/minecraft/entity/boss/BossBar.html#dragonMusic">dragonMusic</a>, <a href="../../../../net/minecraft/entity/boss/BossBar.html#name">name</a>, <a href="../../../../net/minecraft/entity/boss/BossBar.html#percent">percent</a>, <a href="../../../../net/minecraft/entity/boss/BossBar.html#style">style</a>, <a href="../../../../net/minecraft/entity/boss/BossBar.html#thickenFog">thickenFog</a></code></li>
 </ul>
 </li>
 </ul>
@@ -239,12 +179,12 @@ extends <a href="../../../../net/minecraft/server/network/ServerHandshakeNetwork
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
 <caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
-<th class="colFirst" scope="col">Modifier</th>
-<th class="colLast" scope="col">Constructor and Description</th>
+<th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected </code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#ServerBossBar-boolean-">ServerBossBar</a></span>(boolean&nbsp;bool)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#ServerBossBar-net.minecraft.text.Text-net.minecraft.entity.boss.BossBar.Color-net.minecraft.entity.boss.BossBar.Style-">ServerBossBar</a></span>(<a href="../../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;displayName,
+             <a href="../../../../net/minecraft/entity/boss/BossBar.Color.html" title="enum in net.minecraft.entity.boss">BossBar.Color</a>&nbsp;color,
+             <a href="../../../../net/minecraft/entity/boss/BossBar.Style.html" title="enum in net.minecraft.entity.boss">BossBar.Style</a>&nbsp;style)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -256,200 +196,73 @@ extends <a href="../../../../net/minecraft/server/network/ServerHandshakeNetwork
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#method_26360-int-">method_26360</a></span>(int&nbsp;int2)</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#addPlayer-net.minecraft.server.network.ServerPlayerEntity-">addPlayer</a></span>(<a href="../../../../net/minecraft/server/network/ServerPlayerEntity.html" title="class in net.minecraft.server.network">ServerPlayerEntity</a>&nbsp;player)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#method_26369-net.minecraft.class_5086-">method_26369</a></span>(<a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../net/minecraft/server/network/ServerPlayerEntity.html" title="class in net.minecraft.server.network">ServerPlayerEntity</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#getPlayers--">getPlayers</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#method_26371-net.minecraft.class_5086-net.minecraft.class_6183-">method_26371</a></span>(<a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-            <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183)</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#removePlayer-net.minecraft.server.network.ServerPlayerEntity-">removePlayer</a></span>(<a href="../../../../net/minecraft/server/network/ServerPlayerEntity.html" title="class in net.minecraft.server.network">ServerPlayerEntity</a>&nbsp;player)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#method_26378-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_4890-net.minecraft.class_6438-net.minecraft.class_6196-float-float-float-">method_26378</a></span>(<a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-            <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-            <a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-            <a href="../../../../net/minecraft/class_4890.html" title="class in net.minecraft">class_4890</a>&nbsp;class_4890,
-            <a href="../../../../net/minecraft/class_6438.html" title="enum in net.minecraft">class_6438</a>&nbsp;class_6438,
-            <a href="../../../../net/minecraft/class_6196.html" title="enum in net.minecraft">class_6196</a>&nbsp;class_6196,
-            float&nbsp;float2,
-            float&nbsp;float3,
-            float&nbsp;float4)</code>&nbsp;</td>
+<td class="colFirst"><code>private void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#sendPacket-net.minecraft.network.packet.s2c.play.BossBarS2CPacket.Type-">sendPacket</a></span>(<a href="../../../../net/minecraft/network/packet/s2c/play/BossBarS2CPacket.Type.html" title="enum in net.minecraft.network.packet.s2c.play">BossBarS2CPacket.Type</a>&nbsp;type)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#method_26379-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.datafixer.fix.BiomeFormatFix-java.util.Random-">method_26379</a></span>(<a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-            <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-            <a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util">Random</a>&nbsp;random)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#setColor-net.minecraft.entity.boss.BossBar.Color-">setColor</a></span>(<a href="../../../../net/minecraft/entity/boss/BossBar.Color.html" title="enum in net.minecraft.entity.boss">BossBar.Color</a>&nbsp;color)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#method_26380-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.command.arguments.ScoreboardSlotArgumentType-">method_26380</a></span>(<a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-            <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-            <a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-            <a href="../../../../net/minecraft/command/arguments/ScoreboardSlotArgumentType.html" title="class in net.minecraft.command.arguments">ScoreboardSlotArgumentType</a>&nbsp;scoreboardSlotArgumentType)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../net/minecraft/entity/boss/BossBar.html" title="class in net.minecraft.entity.boss">BossBar</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#setDarkenSky-boolean-">setDarkenSky</a></span>(boolean&nbsp;darkenSky)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#method_26382-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.class_6196-float-float-float-int-net.minecraft.command.arguments.PosArgument-">method_26382</a></span>(<a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-            <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-            <a href="../../../../net/minecraft/class_6196.html" title="enum in net.minecraft">class_6196</a>&nbsp;class_6196,
-            float&nbsp;float2,
-            float&nbsp;float3,
-            float&nbsp;float4,
-            int&nbsp;int2,
-            <a href="../../../../net/minecraft/command/arguments/PosArgument.html" title="class in net.minecraft.command.arguments">PosArgument</a>&nbsp;posArgument)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../net/minecraft/entity/boss/BossBar.html" title="class in net.minecraft.entity.boss">BossBar</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#setDragonMusic-boolean-">setDragonMusic</a></span>(boolean&nbsp;dragonMusic)</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/datafixer/fix/BlockStateStructureTemplateFix.html" title="enum in net.minecraft.datafixer.fix">BlockStateStructureTemplateFix</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#method_26387-net.minecraft.class_5090-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_6183-net.minecraft.class_6196-">method_26387</a></span>(<a href="../../../../net/minecraft/class_5090.html" title="interface in net.minecraft">class_5090</a>&nbsp;class_5090,
-            <a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-            <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-            <a href="../../../../net/minecraft/class_6196.html" title="enum in net.minecraft">class_6196</a>&nbsp;class_6196)</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#setName-net.minecraft.text.Text-">setName</a></span>(<a href="../../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;name)</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#method_26396-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.class_5149-net.minecraft.class_6183-">method_26396</a></span>(<a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-            <a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-            <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-            <a href="../../../../net/minecraft/class_5149.html" title="class in net.minecraft">class_5149</a>&nbsp;class_5149,
-            <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_61832)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#setOverlay-net.minecraft.entity.boss.BossBar.Style-">setOverlay</a></span>(<a href="../../../../net/minecraft/entity/boss/BossBar.Style.html" title="enum in net.minecraft.entity.boss">BossBar.Style</a>&nbsp;style)</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/entity/ExperienceOrbEntity.html" title="class in net.minecraft.entity">ExperienceOrbEntity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#method_26400-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5090-net.minecraft.class_6183-">method_26400</a></span>(<a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-            <a href="../../../../net/minecraft/class_5090.html" title="interface in net.minecraft">class_5090</a>&nbsp;class_5090,
-            <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183)</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#setPercent-float-">setPercent</a></span>(float&nbsp;percentage)</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#method_26402-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5206-">method_26402</a></span>(<a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-            <a href="../../../../net/minecraft/class_5206.html" title="enum in net.minecraft">class_5206</a>&nbsp;class_5206)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../net/minecraft/entity/boss/BossBar.html" title="class in net.minecraft.entity.boss">BossBar</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#setThickenFog-boolean-">setThickenFog</a></span>(boolean&nbsp;thickenFog)</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#method_26403-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.server.dedicated.ServerCommandOutput-">method_26403</a></span>(<a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-            <a href="../../../../net/minecraft/server/dedicated/ServerCommandOutput.html" title="enum in net.minecraft.server.dedicated">ServerCommandOutput</a>&nbsp;serverCommandOutput)</code>&nbsp;</td>
-</tr>
-<tr id="i12" class="altColor">
-<td class="colFirst"><code>protected <a href="../../../../net/minecraft/datafixer/fix/ChunkLightRemoveFix.html" title="class in net.minecraft.datafixer.fix">ChunkLightRemoveFix</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#method_26413--">method_26413</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#method_26416-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26416</a></span>(<a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-            <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-            <a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix)</code>&nbsp;</td>
-</tr>
-<tr id="i14" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#method_26418-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.datafixer.fix.BiomeFormatFix-java.util.Random-">method_26418</a></span>(<a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-            <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-            <a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util">Random</a>&nbsp;random)</code>&nbsp;</td>
-</tr>
-<tr id="i15" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#method_26419-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.class_6196-">method_26419</a></span>(<a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-            <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-            <a href="../../../../net/minecraft/class_6196.html" title="enum in net.minecraft">class_6196</a>&nbsp;class_6196)</code>&nbsp;</td>
-</tr>
-<tr id="i16" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#method_26422-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26422</a></span>(<a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix)</code>&nbsp;</td>
-</tr>
-<tr id="i17" class="rowColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/entity/ExperienceOrbEntity.html" title="class in net.minecraft.entity">ExperienceOrbEntity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#method_26424-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5090-net.minecraft.class_6183-">method_26424</a></span>(<a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-            <a href="../../../../net/minecraft/class_5090.html" title="interface in net.minecraft">class_5090</a>&nbsp;class_5090,
-            <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183)</code>&nbsp;</td>
-</tr>
-<tr id="i18" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#method_26425-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5090-net.minecraft.class_6183-net.minecraft.class_6196-">method_26425</a></span>(<a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-            <a href="../../../../net/minecraft/class_5090.html" title="interface in net.minecraft">class_5090</a>&nbsp;class_5090,
-            <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-            <a href="../../../../net/minecraft/class_6196.html" title="enum in net.minecraft">class_6196</a>&nbsp;class_6196)</code>&nbsp;</td>
-</tr>
-<tr id="i19" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#method_26432-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26432</a></span>(<a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix)</code>&nbsp;</td>
-</tr>
-<tr id="i20" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#method_26435-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5090-net.minecraft.class_6183-net.minecraft.class_6196-">method_26435</a></span>(<a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-            <a href="../../../../net/minecraft/class_5090.html" title="interface in net.minecraft">class_5090</a>&nbsp;class_5090,
-            <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-            <a href="../../../../net/minecraft/class_6196.html" title="enum in net.minecraft">class_6196</a>&nbsp;class_6196)</code>&nbsp;</td>
-</tr>
-<tr id="i21" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#method_26444-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26444</a></span>(<a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix)</code>&nbsp;</td>
-</tr>
-<tr id="i22" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#method_26449-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26449</a></span>(<a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix)</code>&nbsp;</td>
-</tr>
-<tr id="i23" class="rowColor">
-<td class="colFirst"><code>protected abstract void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#method_26495-net.minecraft.class_4890-net.minecraft.class_5086-net.minecraft.class_6183-">method_26495</a></span>(<a href="../../../../net/minecraft/class_4890.html" title="class in net.minecraft">class_4890</a>&nbsp;class_4890,
-            <a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-            <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183)</code>&nbsp;</td>
-</tr>
-<tr id="i24" class="altColor">
-<td class="colFirst"><code>protected static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#method_26496-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.class_6196-">method_26496</a></span>(<a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-            <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-            <a href="../../../../net/minecraft/class_6196.html" title="enum in net.minecraft">class_6196</a>&nbsp;class_6196)</code>&nbsp;</td>
-</tr>
-<tr id="i25" class="rowColor">
-<td class="colFirst"><code>protected abstract void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#method_26497-net.minecraft.class_5086-net.minecraft.class_6183-">method_26497</a></span>(<a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-            <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183)</code>&nbsp;</td>
-</tr>
-<tr id="i26" class="altColor">
-<td class="colFirst"><code>private void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#method_26498-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.class_6196-">method_26498</a></span>(<a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-            <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-            <a href="../../../../net/minecraft/class_6196.html" title="enum in net.minecraft">class_6196</a>&nbsp;class_6196)</code>&nbsp;</td>
-</tr>
-<tr id="i27" class="rowColor">
-<td class="colFirst"><code>private void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#method_26499-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5086-net.minecraft.class_6183-">method_26499</a></span>(<a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-            <a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-            <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183)</code>&nbsp;</td>
-</tr>
-<tr id="i28" class="altColor">
-<td class="colFirst"><code>private boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#method_26500-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26500</a></span>(<a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-            <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-            <a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/boss/ServerBossBar.html#setVisible-boolean-">setVisible</a></span>(boolean&nbsp;visible)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.class_5149">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.entity.boss.BossBar">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;net.minecraft.<a href="../../../../net/minecraft/class_5149.html" title="class in net.minecraft">class_5149</a></h3>
-<code><a href="../../../../net/minecraft/class_5149.html#method_26358--">method_26358</a>, <a href="../../../../net/minecraft/class_5149.html#method_26359-float-">method_26359</a>, <a href="../../../../net/minecraft/class_5149.html#method_26362-int-java.util.Random-">method_26362</a>, <a href="../../../../net/minecraft/class_5149.html#method_26364-net.minecraft.class_4982-">method_26364</a>, <a href="../../../../net/minecraft/class_5149.html#method_26365-net.minecraft.class_4982-net.minecraft.class_6207-">method_26365</a>, <a href="../../../../net/minecraft/class_5149.html#method_26366-net.minecraft.class_5009-">method_26366</a>, <a href="../../../../net/minecraft/class_5149.html#method_26367-net.minecraft.class_5013-net.minecraft.class_5086-java.util.List-net.minecraft.server.command.ReplaceItemCommand-">method_26367</a>, <a href="../../../../net/minecraft/class_5149.html#method_26368-net.minecraft.class_5079-">method_26368</a>, <a href="../../../../net/minecraft/class_5149.html#method_26370-net.minecraft.class_5086-net.minecraft.class_4890-net.minecraft.class_6183-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.util.ReusableStream-net.minecraft.class_5013-">method_26370</a>, <a href="../../../../net/minecraft/class_5149.html#method_26372-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.class_4890-">method_26372</a>, <a href="../../../../net/minecraft/class_5149.html#method_26373-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.class_5013-">method_26373</a>, <a href="../../../../net/minecraft/class_5149.html#method_26374-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.class_5079-">method_26374</a>, <a href="../../../../net/minecraft/class_5149.html#method_26375-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26375</a>, <a href="../../../../net/minecraft/class_5149.html#method_26376-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.datafixer.fix.BiomeFormatFix-float-int-">method_26376</a>, <a href="../../../../net/minecraft/class_5149.html#method_26377-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_4890-">method_26377</a>, <a href="../../../../net/minecraft/class_5149.html#method_26381-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.command.arguments.PosArgument-net.minecraft.class_5013-">method_26381</a>, <a href="../../../../net/minecraft/class_5149.html#method_26383-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.command.arguments.ScoreboardSlotArgumentType-">method_26383</a>, <a href="../../../../net/minecraft/class_5149.html#method_26384-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.command.arguments.ScoreboardSlotArgumentType-float-">method_26384</a>, <a href="../../../../net/minecraft/class_5149.html#method_26385-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.command.arguments.ScoreboardSlotArgumentType-net.minecraft.class_5559-">method_26385</a>, <a href="../../../../net/minecraft/class_5149.html#method_26386-net.minecraft.class_5086-net.minecraft.command.arguments.ScoreboardSlotArgumentType-">method_26386</a>, <a href="../../../../net/minecraft/class_5149.html#method_26388-net.minecraft.class_5090-net.minecraft.class_6183-">method_26388</a>, <a href="../../../../net/minecraft/class_5149.html#method_26389-net.minecraft.class_5149-">method_26389</a>, <a href="../../../../net/minecraft/class_5149.html#method_26390-net.minecraft.class_5149-net.minecraft.class_5149-">method_26390</a>, <a href="../../../../net/minecraft/class_5149.html#method_26391-net.minecraft.sound.SoundCategory-">method_26391</a>, <a href="../../../../net/minecraft/class_5149.html#method_26392-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26392</a>, <a href="../../../../net/minecraft/class_5149.html#method_26393-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_4890-net.minecraft.class_5086-net.minecraft.class_6183-">method_26393</a>, <a href="../../../../net/minecraft/class_5149.html#method_26394-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5086-net.minecraft.class_6183-">method_26394</a>, <a href="../../../../net/minecraft/class_5149.html#method_26395-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5086-net.minecraft.class_6183-int-int-">method_26395</a>, <a href="../../../../net/minecraft/class_5149.html#method_26397-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.entity.ExperienceOrbEntity-java.util.List-net.minecraft.command.arguments.ScoreboardSlotArgumentType-boolean-">method_26397</a>, <a href="../../../../net/minecraft/class_5149.html#method_26398-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.class_5559-net.minecraft.class_5559-">method_26398</a>, <a href="../../../../net/minecraft/class_5149.html#method_26399-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5086-net.minecraft.class_6183-java.util.Random-">method_26399</a>, <a href="../../../../net/minecraft/class_5149.html#method_26401-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5090-net.minecraft.class_6183-net.minecraft.class_6196-">method_26401</a>, <a href="../../../../net/minecraft/class_5149.html#method_26404-net.minecraft.datafixer.fix.BiomeFormatFix-java.util.Random-int-">method_26404</a>, <a href="../../../../net/minecraft/class_5149.html#method_26405-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.command.arguments.ScoreboardSlotArgumentType-">method_26405</a>, <a href="../../../../net/minecraft/class_5149.html#method_26406-net.minecraft.datafixer.fix.BiomeFormatFix-boolean-">method_26406</a>, <a href="../../../../net/minecraft/class_5149.html#method_26407-net.minecraft.class_6183-net.minecraft.entity.ExperienceOrbEntity-java.util.List-net.minecraft.entity.ExperienceOrbEntity-">method_26407</a>, <a href="../../../../net/minecraft/class_5149.html#method_26408-net.minecraft.class_6183-net.minecraft.class_5559-net.minecraft.class_5559-net.minecraft.entity.ExperienceOrbEntity-">method_26408</a>, <a href="../../../../net/minecraft/class_5149.html#method_26409-java.util.Random-">method_26409</a>, <a href="../../../../net/minecraft/class_5149.html#method_26410-net.minecraft.command.arguments.ScoreboardSlotArgumentType-">method_26410</a>, <a href="../../../../net/minecraft/class_5149.html#method_26411-boolean-">method_26411</a>, <a href="../../../../net/minecraft/class_5149.html#method_26412-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26412</a>, <a href="../../../../net/minecraft/class_5149.html#method_26414-float-">method_26414</a>, <a href="../../../../net/minecraft/class_5149.html#method_26415-net.minecraft.class_5086-net.minecraft.class_6183-int-">method_26415</a>, <a href="../../../../net/minecraft/class_5149.html#method_26417-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.datafixer.fix.BiomeFormatFix-int-">method_26417</a>, <a href="../../../../net/minecraft/class_5149.html#method_26420-net.minecraft.class_5090-net.minecraft.class_6183-">method_26420</a>, <a href="../../../../net/minecraft/class_5149.html#method_26421-net.minecraft.class_5149-">method_26421</a>, <a href="../../../../net/minecraft/class_5149.html#method_26423-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5086-net.minecraft.class_6183-">method_26423</a>, <a href="../../../../net/minecraft/class_5149.html#method_26426-java.lang.String-">method_26426</a>, <a href="../../../../net/minecraft/class_5149.html#method_26427--">method_26427</a>, <a href="../../../../net/minecraft/class_5149.html#method_26428-float-">method_26428</a>, <a href="../../../../net/minecraft/class_5149.html#method_26429-int-">method_26429</a>, <a href="../../../../net/minecraft/class_5149.html#method_26430-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26430</a>, <a href="../../../../net/minecraft/class_5149.html#method_26431-net.minecraft.class_5149-">method_26431</a>, <a href="../../../../net/minecraft/class_5149.html#method_26433-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5086-net.minecraft.class_6183-">method_26433</a>, <a href="../../../../net/minecraft/class_5149.html#method_26434-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5090-net.minecraft.class_6183-">method_26434</a>, <a href="../../../../net/minecraft/class_5149.html#method_26436-java.lang.String-">method_26436</a>, <a href="../../../../net/minecraft/class_5149.html#method_26437--">method_26437</a>, <a href="../../../../net/minecraft/class_5149.html#method_26438-int-">method_26438</a>, <a href="../../../../net/minecraft/class_5149.html#method_26439-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26439</a>, <a href="../../../../net/minecraft/class_5149.html#method_26440-net.minecraft.class_5149-">method_26440</a>, <a href="../../../../net/minecraft/class_5149.html#method_26441-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26441</a>, <a href="../../../../net/minecraft/class_5149.html#method_26442-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5090-net.minecraft.class_6183-">method_26442</a>, <a href="../../../../net/minecraft/class_5149.html#method_26443-int-">method_26443</a>, <a href="../../../../net/minecraft/class_5149.html#method_26445-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5090-net.minecraft.class_6183-">method_26445</a>, <a href="../../../../net/minecraft/class_5149.html#method_26446--">method_26446</a>, <a href="../../../../net/minecraft/class_5149.html#method_26447-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26447</a>, <a href="../../../../net/minecraft/class_5149.html#method_26448-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5090-net.minecraft.class_6183-">method_26448</a>, <a href="../../../../net/minecraft/class_5149.html#method_26450-net.minecraft.class_5086-net.minecraft.class_6183-">method_26450</a>, <a href="../../../../net/minecraft/class_5149.html#method_26451-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26451</a>, <a href="../../../../net/minecraft/class_5149.html#method_26452--">method_26452</a>, <a href="../../../../net/minecraft/class_5149.html#method_26453-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26453</a>, <a href="../../../../net/minecraft/class_5149.html#method_26454--">method_26454</a>, <a href="../../../../net/minecraft/class_5149.html#method_26455-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26455</a>, <a href="../../../../net/minecraft/class_5149.html#method_26456--">method_26456</a>, <a href="../../../../net/minecraft/class_5149.html#method_26457-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26457</a>, <a href="../../../../net/minecraft/class_5149.html#method_26458--">method_26458</a>, <a href="../../../../net/minecraft/class_5149.html#method_26459-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26459</a>, <a href="../../../../net/minecraft/class_5149.html#method_26460--">method_26460</a>, <a href="../../../../net/minecraft/class_5149.html#method_26461-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26461</a>, <a href="../../../../net/minecraft/class_5149.html#method_26462--">method_26462</a>, <a href="../../../../net/minecraft/class_5149.html#method_26463-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26463</a>, <a href="../../../../net/minecraft/class_5149.html#method_26464--">method_26464</a>, <a href="../../../../net/minecraft/class_5149.html#method_26465-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26465</a>, <a href="../../../../net/minecraft/class_5149.html#method_26466--">method_26466</a>, <a href="../../../../net/minecraft/class_5149.html#method_26467-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26467</a>, <a href="../../../../net/minecraft/class_5149.html#method_26468--">method_26468</a>, <a href="../../../../net/minecraft/class_5149.html#method_26469-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26469</a>, <a href="../../../../net/minecraft/class_5149.html#method_26470--">method_26470</a>, <a href="../../../../net/minecraft/class_5149.html#method_26471-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26471</a>, <a href="../../../../net/minecraft/class_5149.html#method_26472--">method_26472</a>, <a href="../../../../net/minecraft/class_5149.html#method_26473-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26473</a>, <a href="../../../../net/minecraft/class_5149.html#method_26474--">method_26474</a>, <a href="../../../../net/minecraft/class_5149.html#method_26475-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26475</a>, <a href="../../../../net/minecraft/class_5149.html#method_26476--">method_26476</a>, <a href="../../../../net/minecraft/class_5149.html#method_26477-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26477</a>, <a href="../../../../net/minecraft/class_5149.html#method_26478--">method_26478</a>, <a href="../../../../net/minecraft/class_5149.html#method_26479-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26479</a>, <a href="../../../../net/minecraft/class_5149.html#toString--">toString</a></code></li>
+<h3>Methods inherited from class&nbsp;net.minecraft.entity.boss.<a href="../../../../net/minecraft/entity/boss/BossBar.html" title="class in net.minecraft.entity.boss">BossBar</a></h3>
+<code><a href="../../../../net/minecraft/entity/boss/BossBar.html#getColor--">getColor</a>, <a href="../../../../net/minecraft/entity/boss/BossBar.html#getDarkenSky--">getDarkenSky</a>, <a href="../../../../net/minecraft/entity/boss/BossBar.html#getName--">getName</a>, <a href="../../../../net/minecraft/entity/boss/BossBar.html#getOverlay--">getOverlay</a>, <a href="../../../../net/minecraft/entity/boss/BossBar.html#getPercent--">getPercent</a>, <a href="../../../../net/minecraft/entity/boss/BossBar.html#getThickenFog--">getThickenFog</a>, <a href="../../../../net/minecraft/entity/boss/BossBar.html#getUuid--">getUuid</a>, <a href="../../../../net/minecraft/entity/boss/BossBar.html#hasDragonMusic--">hasDragonMusic</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
 </ul>
 </li>
 </ul>
@@ -465,130 +278,31 @@ extends <a href="../../../../net/minecraft/server/network/ServerHandshakeNetwork
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_24240">
+<a name="players">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_24240</h4>
-<pre>public static final&nbsp;<a href="../../../../net/minecraft/datafixer/mapping/LegacyDyeItemMapping.html" title="class in net.minecraft.datafixer.mapping">LegacyDyeItemMapping</a> field_24240</pre>
+<h4>players</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../net/minecraft/server/network/ServerPlayerEntity.html" title="class in net.minecraft.server.network">ServerPlayerEntity</a>&gt; players</pre>
 </li>
 </ul>
-<a name="field_24241">
+<a name="unmodifiablePlayers">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_24241</h4>
-<pre>protected static final&nbsp;<a href="../../../../net/minecraft/entity/ExperienceOrbEntity.html" title="class in net.minecraft.entity">ExperienceOrbEntity</a> field_24241</pre>
+<h4>unmodifiablePlayers</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../net/minecraft/server/network/ServerPlayerEntity.html" title="class in net.minecraft.server.network">ServerPlayerEntity</a>&gt; unmodifiablePlayers</pre>
 </li>
 </ul>
-<a name="field_24242">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_24242</h4>
-<pre>protected static final&nbsp;<a href="../../../../net/minecraft/entity/ExperienceOrbEntity.html" title="class in net.minecraft.entity">ExperienceOrbEntity</a> field_24242</pre>
-</li>
-</ul>
-<a name="field_24243">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_24243</h4>
-<pre>protected static final&nbsp;<a href="../../../../net/minecraft/entity/ExperienceOrbEntity.html" title="class in net.minecraft.entity">ExperienceOrbEntity</a> field_24243</pre>
-</li>
-</ul>
-<a name="field_24244">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_24244</h4>
-<pre>protected static final&nbsp;<a href="../../../../net/minecraft/entity/ExperienceOrbEntity.html" title="class in net.minecraft.entity">ExperienceOrbEntity</a> field_24244</pre>
-</li>
-</ul>
-<a name="field_24245">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_24245</h4>
-<pre>protected static final&nbsp;<a href="../../../../net/minecraft/entity/ExperienceOrbEntity.html" title="class in net.minecraft.entity">ExperienceOrbEntity</a> field_24245</pre>
-</li>
-</ul>
-<a name="field_24246">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_24246</h4>
-<pre>protected static final&nbsp;<a href="../../../../net/minecraft/entity/ExperienceOrbEntity.html" title="class in net.minecraft.entity">ExperienceOrbEntity</a> field_24246</pre>
-</li>
-</ul>
-<a name="field_24233">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_24233</h4>
-<pre>protected static final&nbsp;<a href="../../../../net/minecraft/entity/ExperienceOrbEntity.html" title="class in net.minecraft.entity">ExperienceOrbEntity</a> field_24233</pre>
-</li>
-</ul>
-<a name="field_24234">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_24234</h4>
-<pre>protected static final&nbsp;<a href="../../../../net/minecraft/entity/ExperienceOrbEntity.html" title="class in net.minecraft.entity">ExperienceOrbEntity</a> field_24234</pre>
-</li>
-</ul>
-<a name="field_24235">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_24235</h4>
-<pre>protected static final&nbsp;<a href="../../../../net/minecraft/entity/ExperienceOrbEntity.html" title="class in net.minecraft.entity">ExperienceOrbEntity</a> field_24235</pre>
-</li>
-</ul>
-<a name="field_24236">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_24236</h4>
-<pre>protected static final&nbsp;<a href="../../../../net/minecraft/entity/ExperienceOrbEntity.html" title="class in net.minecraft.entity">ExperienceOrbEntity</a> field_24236</pre>
-</li>
-</ul>
-<a name="field_24237">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_24237</h4>
-<pre>protected static final&nbsp;<a href="../../../../net/minecraft/entity/ExperienceOrbEntity.html" title="class in net.minecraft.entity">ExperienceOrbEntity</a> field_24237</pre>
-</li>
-</ul>
-<a name="field_24238">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_24238</h4>
-<pre>protected static final&nbsp;<a href="../../../../net/minecraft/entity/ExperienceOrbEntity.html" title="class in net.minecraft.entity">ExperienceOrbEntity</a> field_24238</pre>
-</li>
-</ul>
-<a name="field_24239">
+<a name="visible">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_24239</h4>
-<pre>private final&nbsp;boolean field_24239</pre>
+<h4>visible</h4>
+<pre>private&nbsp;boolean visible</pre>
 </li>
 </ul>
 </li>
@@ -599,13 +313,15 @@ extends <a href="../../../../net/minecraft/server/network/ServerHandshakeNetwork
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ServerBossBar-boolean-">
+<a name="ServerBossBar-net.minecraft.text.Text-net.minecraft.entity.boss.BossBar.Color-net.minecraft.entity.boss.BossBar.Style-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ServerBossBar</h4>
-<pre>protected&nbsp;ServerBossBar(boolean&nbsp;bool)</pre>
+<pre>public&nbsp;ServerBossBar(<a href="../../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;displayName,
+                     <a href="../../../../net/minecraft/entity/boss/BossBar.Color.html" title="enum in net.minecraft.entity.boss">BossBar.Color</a>&nbsp;color,
+                     <a href="../../../../net/minecraft/entity/boss/BossBar.Style.html" title="enum in net.minecraft.entity.boss">BossBar.Style</a>&nbsp;style)</pre>
 </li>
 </ul>
 </li>
@@ -616,418 +332,142 @@ extends <a href="../../../../net/minecraft/server/network/ServerHandshakeNetwork
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_26400-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5090-net.minecraft.class_6183-">
+<a name="setPercent-float-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_26400</h4>
-<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-public&nbsp;<a href="../../../../net/minecraft/entity/ExperienceOrbEntity.html" title="class in net.minecraft.entity">ExperienceOrbEntity</a>&nbsp;method_26400(<a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-                                                  <a href="../../../../net/minecraft/class_5090.html" title="interface in net.minecraft">class_5090</a>&nbsp;class_5090,
-                                                  <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183)</pre>
+<h4>setPercent</h4>
+<pre>public&nbsp;void&nbsp;setPercent(float&nbsp;percentage)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_5149.html#method_26400-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5090-net.minecraft.class_6183-">method_26400</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_5149.html" title="class in net.minecraft">class_5149</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/entity/boss/BossBar.html#setPercent-float-">setPercent</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/entity/boss/BossBar.html" title="class in net.minecraft.entity.boss">BossBar</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_26369-net.minecraft.class_5086-">
+<a name="setColor-net.minecraft.entity.boss.BossBar.Color-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_26369</h4>
-<pre>public&nbsp;int&nbsp;method_26369(<a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086)</pre>
+<h4>setColor</h4>
+<pre>@Environment(value=CLIENT)
+public&nbsp;void&nbsp;setColor(<a href="../../../../net/minecraft/entity/boss/BossBar.Color.html" title="enum in net.minecraft.entity.boss">BossBar.Color</a>&nbsp;color)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_5149.html#method_26369-net.minecraft.class_5086-">method_26369</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_5149.html" title="class in net.minecraft">class_5149</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/entity/boss/BossBar.html#setColor-net.minecraft.entity.boss.BossBar.Color-">setColor</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/entity/boss/BossBar.html" title="class in net.minecraft.entity.boss">BossBar</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_26422-net.minecraft.datafixer.fix.BiomeFormatFix-">
+<a name="setOverlay-net.minecraft.entity.boss.BossBar.Style-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_26422</h4>
-<pre>public&nbsp;boolean&nbsp;method_26422(<a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix)</pre>
+<h4>setOverlay</h4>
+<pre>@Environment(value=CLIENT)
+public&nbsp;void&nbsp;setOverlay(<a href="../../../../net/minecraft/entity/boss/BossBar.Style.html" title="enum in net.minecraft.entity.boss">BossBar.Style</a>&nbsp;style)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_5149.html#method_26422-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26422</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_5149.html" title="class in net.minecraft">class_5149</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/entity/boss/BossBar.html#setOverlay-net.minecraft.entity.boss.BossBar.Style-">setOverlay</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/entity/boss/BossBar.html" title="class in net.minecraft.entity.boss">BossBar</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_26432-net.minecraft.datafixer.fix.BiomeFormatFix-">
+<a name="setDarkenSky-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_26432</h4>
-<pre>public&nbsp;boolean&nbsp;method_26432(<a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix)</pre>
+<h4>setDarkenSky</h4>
+<pre>public&nbsp;<a href="../../../../net/minecraft/entity/boss/BossBar.html" title="class in net.minecraft.entity.boss">BossBar</a>&nbsp;setDarkenSky(boolean&nbsp;darkenSky)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_5149.html#method_26432-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26432</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_5149.html" title="class in net.minecraft">class_5149</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/entity/boss/BossBar.html#setDarkenSky-boolean-">setDarkenSky</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/entity/boss/BossBar.html" title="class in net.minecraft.entity.boss">BossBar</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_26419-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.class_6196-">
+<a name="setDragonMusic-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_26419</h4>
-<pre>public&nbsp;boolean&nbsp;method_26419(<a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-                            <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-                            <a href="../../../../net/minecraft/class_6196.html" title="enum in net.minecraft">class_6196</a>&nbsp;class_6196)</pre>
+<h4>setDragonMusic</h4>
+<pre>public&nbsp;<a href="../../../../net/minecraft/entity/boss/BossBar.html" title="class in net.minecraft.entity.boss">BossBar</a>&nbsp;setDragonMusic(boolean&nbsp;dragonMusic)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_5149.html#method_26419-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.class_6196-">method_26419</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_5149.html" title="class in net.minecraft">class_5149</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/entity/boss/BossBar.html#setDragonMusic-boolean-">setDragonMusic</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/entity/boss/BossBar.html" title="class in net.minecraft.entity.boss">BossBar</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_26371-net.minecraft.class_5086-net.minecraft.class_6183-">
+<a name="setThickenFog-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_26371</h4>
-<pre>public&nbsp;boolean&nbsp;method_26371(<a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-                            <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183)</pre>
+<h4>setThickenFog</h4>
+<pre>public&nbsp;<a href="../../../../net/minecraft/entity/boss/BossBar.html" title="class in net.minecraft.entity.boss">BossBar</a>&nbsp;setThickenFog(boolean&nbsp;thickenFog)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_5149.html#method_26371-net.minecraft.class_5086-net.minecraft.class_6183-">method_26371</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_5149.html" title="class in net.minecraft">class_5149</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/entity/boss/BossBar.html#setThickenFog-boolean-">setThickenFog</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/entity/boss/BossBar.html" title="class in net.minecraft.entity.boss">BossBar</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_26496-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.class_6196-">
+<a name="setName-net.minecraft.text.Text-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_26496</h4>
-<pre>protected static&nbsp;boolean&nbsp;method_26496(<a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-                                      <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-                                      <a href="../../../../net/minecraft/class_6196.html" title="enum in net.minecraft">class_6196</a>&nbsp;class_6196)</pre>
-</li>
-</ul>
-<a name="method_26382-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.class_6196-float-float-float-int-net.minecraft.command.arguments.PosArgument-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_26382</h4>
-<pre>public&nbsp;<a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;method_26382(<a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-                                   <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-                                   <a href="../../../../net/minecraft/class_6196.html" title="enum in net.minecraft">class_6196</a>&nbsp;class_6196,
-                                   float&nbsp;float2,
-                                   float&nbsp;float3,
-                                   float&nbsp;float4,
-                                   int&nbsp;int2,
-                                   <a href="../../../../net/minecraft/command/arguments/PosArgument.html" title="class in net.minecraft.command.arguments">PosArgument</a>&nbsp;posArgument)</pre>
+<h4>setName</h4>
+<pre>public&nbsp;void&nbsp;setName(<a href="../../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;name)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_5149.html#method_26382-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.class_6196-float-float-float-int-net.minecraft.command.arguments.PosArgument-">method_26382</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_5149.html" title="class in net.minecraft">class_5149</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/entity/boss/BossBar.html#setName-net.minecraft.text.Text-">setName</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/entity/boss/BossBar.html" title="class in net.minecraft.entity.boss">BossBar</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_26396-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.class_5149-net.minecraft.class_6183-">
+<a name="sendPacket-net.minecraft.network.packet.s2c.play.BossBarS2CPacket.Type-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_26396</h4>
-<pre>public&nbsp;void&nbsp;method_26396(<a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-                         <a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-                         <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-                         <a href="../../../../net/minecraft/class_5149.html" title="class in net.minecraft">class_5149</a>&nbsp;class_5149,
-                         <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_61832)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_5149.html#method_26396-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.class_5149-net.minecraft.class_6183-">method_26396</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_5149.html" title="class in net.minecraft">class_5149</a></code></dd>
-</dl>
+<h4>sendPacket</h4>
+<pre>private&nbsp;void&nbsp;sendPacket(<a href="../../../../net/minecraft/network/packet/s2c/play/BossBarS2CPacket.Type.html" title="enum in net.minecraft.network.packet.s2c.play">BossBarS2CPacket.Type</a>&nbsp;type)</pre>
 </li>
 </ul>
-<a name="method_26500-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.datafixer.fix.BiomeFormatFix-">
+<a name="addPlayer-net.minecraft.server.network.ServerPlayerEntity-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_26500</h4>
-<pre>private&nbsp;boolean&nbsp;method_26500(<a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-                             <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-                             <a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix)</pre>
+<h4>addPlayer</h4>
+<pre>public&nbsp;void&nbsp;addPlayer(<a href="../../../../net/minecraft/server/network/ServerPlayerEntity.html" title="class in net.minecraft.server.network">ServerPlayerEntity</a>&nbsp;player)</pre>
 </li>
 </ul>
-<a name="method_26424-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5090-net.minecraft.class_6183-">
+<a name="removePlayer-net.minecraft.server.network.ServerPlayerEntity-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_26424</h4>
-<pre>public&nbsp;<a href="../../../../net/minecraft/entity/ExperienceOrbEntity.html" title="class in net.minecraft.entity">ExperienceOrbEntity</a>&nbsp;method_26424(<a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-                                        <a href="../../../../net/minecraft/class_5090.html" title="interface in net.minecraft">class_5090</a>&nbsp;class_5090,
-                                        <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_5149.html#method_26424-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5090-net.minecraft.class_6183-">method_26424</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_5149.html" title="class in net.minecraft">class_5149</a></code></dd>
-</dl>
+<h4>removePlayer</h4>
+<pre>public&nbsp;void&nbsp;removePlayer(<a href="../../../../net/minecraft/server/network/ServerPlayerEntity.html" title="class in net.minecraft.server.network">ServerPlayerEntity</a>&nbsp;player)</pre>
 </li>
 </ul>
-<a name="method_26378-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_4890-net.minecraft.class_6438-net.minecraft.class_6196-float-float-float-">
+<a name="setVisible-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_26378</h4>
-<pre>public&nbsp;boolean&nbsp;method_26378(<a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-                            <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-                            <a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-                            <a href="../../../../net/minecraft/class_4890.html" title="class in net.minecraft">class_4890</a>&nbsp;class_4890,
-                            <a href="../../../../net/minecraft/class_6438.html" title="enum in net.minecraft">class_6438</a>&nbsp;class_6438,
-                            <a href="../../../../net/minecraft/class_6196.html" title="enum in net.minecraft">class_6196</a>&nbsp;class_6196,
-                            float&nbsp;float2,
-                            float&nbsp;float3,
-                            float&nbsp;float4)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_5149.html#method_26378-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_4890-net.minecraft.class_6438-net.minecraft.class_6196-float-float-float-">method_26378</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_5149.html" title="class in net.minecraft">class_5149</a></code></dd>
-</dl>
+<h4>setVisible</h4>
+<pre>public&nbsp;void&nbsp;setVisible(boolean&nbsp;visible)</pre>
 </li>
 </ul>
-<a name="method_26495-net.minecraft.class_4890-net.minecraft.class_5086-net.minecraft.class_6183-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_26495</h4>
-<pre>protected abstract&nbsp;void&nbsp;method_26495(<a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-                                     <a href="../../../../net/minecraft/class_4890.html" title="class in net.minecraft">class_4890</a>&nbsp;class_4890,
-                                     <a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-                                     <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183)</pre>
-</li>
-</ul>
-<a name="method_26497-net.minecraft.class_5086-net.minecraft.class_6183-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_26497</h4>
-<pre>protected abstract&nbsp;void&nbsp;method_26497(<a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-                                     <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183)</pre>
-</li>
-</ul>
-<a name="method_26416-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.datafixer.fix.BiomeFormatFix-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_26416</h4>
-<pre>public&nbsp;void&nbsp;method_26416(<a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-                         <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-                         <a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_5149.html#method_26416-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26416</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_5149.html" title="class in net.minecraft">class_5149</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_26425-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5090-net.minecraft.class_6183-net.minecraft.class_6196-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_26425</h4>
-<pre>public&nbsp;int&nbsp;method_26425(<a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-                        <a href="../../../../net/minecraft/class_5090.html" title="interface in net.minecraft">class_5090</a>&nbsp;class_5090,
-                        <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-                        <a href="../../../../net/minecraft/class_6196.html" title="enum in net.minecraft">class_6196</a>&nbsp;class_6196)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_5149.html#method_26425-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5090-net.minecraft.class_6183-net.minecraft.class_6196-">method_26425</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_5149.html" title="class in net.minecraft">class_5149</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_26435-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5090-net.minecraft.class_6183-net.minecraft.class_6196-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_26435</h4>
-<pre>public&nbsp;int&nbsp;method_26435(<a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-                        <a href="../../../../net/minecraft/class_5090.html" title="interface in net.minecraft">class_5090</a>&nbsp;class_5090,
-                        <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-                        <a href="../../../../net/minecraft/class_6196.html" title="enum in net.minecraft">class_6196</a>&nbsp;class_6196)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_5149.html#method_26435-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5090-net.minecraft.class_6183-net.minecraft.class_6196-">method_26435</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_5149.html" title="class in net.minecraft">class_5149</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_26449-net.minecraft.datafixer.fix.BiomeFormatFix-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_26449</h4>
-<pre>public&nbsp;boolean&nbsp;method_26449(<a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_5149.html#method_26449-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26449</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_5149.html" title="class in net.minecraft">class_5149</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_26379-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.datafixer.fix.BiomeFormatFix-java.util.Random-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_26379</h4>
-<pre>public&nbsp;void&nbsp;method_26379(<a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-                         <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-                         <a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-                         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util">Random</a>&nbsp;random)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_5149.html#method_26379-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.datafixer.fix.BiomeFormatFix-java.util.Random-">method_26379</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_5149.html" title="class in net.minecraft">class_5149</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_26418-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.datafixer.fix.BiomeFormatFix-java.util.Random-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_26418</h4>
-<pre>public&nbsp;void&nbsp;method_26418(<a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-                         <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-                         <a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-                         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util">Random</a>&nbsp;random)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_5149.html#method_26418-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.datafixer.fix.BiomeFormatFix-java.util.Random-">method_26418</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_5149.html" title="class in net.minecraft">class_5149</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_26380-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.command.arguments.ScoreboardSlotArgumentType-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_26380</h4>
-<pre>public&nbsp;void&nbsp;method_26380(<a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-                         <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-                         <a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-                         <a href="../../../../net/minecraft/command/arguments/ScoreboardSlotArgumentType.html" title="class in net.minecraft.command.arguments">ScoreboardSlotArgumentType</a>&nbsp;scoreboardSlotArgumentType)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_5149.html#method_26380-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.command.arguments.ScoreboardSlotArgumentType-">method_26380</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_5149.html" title="class in net.minecraft">class_5149</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_26499-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5086-net.minecraft.class_6183-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_26499</h4>
-<pre>private&nbsp;void&nbsp;method_26499(<a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-                          <a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-                          <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183)</pre>
-</li>
-</ul>
-<a name="method_26498-net.minecraft.class_5086-net.minecraft.class_6183-net.minecraft.class_6196-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_26498</h4>
-<pre>private&nbsp;void&nbsp;method_26498(<a href="../../../../net/minecraft/class_5086.html" title="class in net.minecraft">class_5086</a>&nbsp;class_5086,
-                          <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-                          <a href="../../../../net/minecraft/class_6196.html" title="enum in net.minecraft">class_6196</a>&nbsp;class_6196)</pre>
-</li>
-</ul>
-<a name="method_26360-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_26360</h4>
-<pre>public&nbsp;<a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;method_26360(int&nbsp;int2)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_5149.html#method_26360-int-">method_26360</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_5149.html" title="class in net.minecraft">class_5149</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_26444-net.minecraft.datafixer.fix.BiomeFormatFix-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_26444</h4>
-<pre>public&nbsp;int&nbsp;method_26444(<a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_5149.html#method_26444-net.minecraft.datafixer.fix.BiomeFormatFix-">method_26444</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_5149.html" title="class in net.minecraft">class_5149</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_26403-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.server.dedicated.ServerCommandOutput-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_26403</h4>
-<pre>public&nbsp;<a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;method_26403(<a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-                                   <a href="../../../../net/minecraft/server/dedicated/ServerCommandOutput.html" title="enum in net.minecraft.server.dedicated">ServerCommandOutput</a>&nbsp;serverCommandOutput)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_5149.html#method_26403-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.server.dedicated.ServerCommandOutput-">method_26403</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_5149.html" title="class in net.minecraft">class_5149</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_26402-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5206-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_26402</h4>
-<pre>public&nbsp;<a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;method_26402(<a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-                                   <a href="../../../../net/minecraft/class_5206.html" title="enum in net.minecraft">class_5206</a>&nbsp;class_5206)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_5149.html#method_26402-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_5206-">method_26402</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_5149.html" title="class in net.minecraft">class_5149</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_26413--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_26413</h4>
-<pre>protected&nbsp;<a href="../../../../net/minecraft/datafixer/fix/ChunkLightRemoveFix.html" title="class in net.minecraft.datafixer.fix">ChunkLightRemoveFix</a>&nbsp;method_26413()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_5149.html#method_26413--">method_26413</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_5149.html" title="class in net.minecraft">class_5149</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_26387-net.minecraft.class_5090-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_6183-net.minecraft.class_6196-">
+<a name="getPlayers--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_26387</h4>
-<pre>public&nbsp;<a href="../../../../net/minecraft/datafixer/fix/BlockStateStructureTemplateFix.html" title="enum in net.minecraft.datafixer.fix">BlockStateStructureTemplateFix</a>&nbsp;method_26387(<a href="../../../../net/minecraft/class_5090.html" title="interface in net.minecraft">class_5090</a>&nbsp;class_5090,
-                                                   <a href="../../../../net/minecraft/datafixer/fix/BiomeFormatFix.html" title="interface in net.minecraft.datafixer.fix">BiomeFormatFix</a>&nbsp;biomeFormatFix,
-                                                   <a href="../../../../net/minecraft/class_6183.html" title="class in net.minecraft">class_6183</a>&nbsp;class_6183,
-                                                   <a href="../../../../net/minecraft/class_6196.html" title="enum in net.minecraft">class_6196</a>&nbsp;class_6196)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_5149.html#method_26387-net.minecraft.class_5090-net.minecraft.datafixer.fix.BiomeFormatFix-net.minecraft.class_6183-net.minecraft.class_6196-">method_26387</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_5149.html" title="class in net.minecraft">class_5149</a></code></dd>
-</dl>
+<h4>getPlayers</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../net/minecraft/server/network/ServerPlayerEntity.html" title="class in net.minecraft.server.network">ServerPlayerEntity</a>&gt;&nbsp;getPlayers()</pre>
 </li>
 </ul>
 </li>
@@ -1057,7 +497,7 @@ public&nbsp;<a href="../../../../net/minecraft/entity/ExperienceOrbEntity.html" 
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../net/minecraft/entity/boss/CommandBossBar.html" title="class in net.minecraft.entity.boss"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/entity/boss/BossBar.Style.html" title="enum in net.minecraft.entity.boss"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../net/minecraft/entity/boss/WitherEntity.html" title="class in net.minecraft.entity.boss"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -1082,7 +522,7 @@ public&nbsp;<a href="../../../../net/minecraft/entity/ExperienceOrbEntity.html" 
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.classes.inherited.from.class.net.minecraft.class_5149">Nested</a>&nbsp;|&nbsp;</li>
+<li><a href="#nested.classes.inherited.from.class.net.minecraft.entity.boss.BossBar">Nested</a>&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>

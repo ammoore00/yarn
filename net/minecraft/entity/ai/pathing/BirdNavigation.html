@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":9,"i8":10};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html" title="class in net.minecraft.entity.ai.pathing"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/entity/ai/pathing/BirdPathNodeMaker.html" title="class in net.minecraft.entity.ai.pathing"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?net/minecraft/entity/ai/pathing/BirdNavigation.html" target="_top">Frames</a></li>
@@ -74,13 +74,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.net.minecraft.entity.ai.pathing.EntityNavigation">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -99,7 +99,12 @@ var activeTableTab = "activeTableTab";
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
+<li><a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html" title="class in net.minecraft.entity.ai.pathing">net.minecraft.entity.ai.pathing.EntityNavigation</a></li>
+<li>
+<ul class="inheritance">
 <li>net.minecraft.entity.ai.pathing.BirdNavigation</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -108,9 +113,8 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>@Environment(value=CLIENT)
-public class <span class="typeNameLabel">BirdNavigation</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<pre>public class <span class="typeNameLabel">BirdNavigation</span>
+extends <a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html" title="class in net.minecraft.entity.ai.pathing">EntityNavigation</a></pre>
 </li>
 </ul>
 </div>
@@ -123,25 +127,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Field Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
-<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Field and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/pathing/BirdNavigation.html#field_28667">field_28667</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../../../net/minecraft/entity/passive/TameableEntity.html" title="class in net.minecraft.entity.passive">TameableEntity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/pathing/BirdNavigation.html#field_28668">field_28668</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../net/minecraft/class_5770.html" title="class in net.minecraft">class_5770</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/pathing/BirdNavigation.html#field_28669">field_28669</a></span></code>&nbsp;</td>
-</tr>
-</table>
+<ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.entity.ai.pathing.EntityNavigation">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;net.minecraft.entity.ai.pathing.<a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html" title="class in net.minecraft.entity.ai.pathing">EntityNavigation</a></h3>
+<code><a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#currentPath">currentPath</a>, <a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#entity">entity</a>, <a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#nodeMaker">nodeMaker</a>, <a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#nodeReachProximity">nodeReachProximity</a>, <a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#shouldRecalculate">shouldRecalculate</a>, <a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#speed">speed</a>, <a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#tickCount">tickCount</a>, <a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#world">world</a></code></li>
+</ul>
 </li>
 </ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -156,7 +148,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/pathing/BirdNavigation.html#BirdNavigation-net.minecraft.entity.passive.TameableEntity-">BirdNavigation</a></span>(<a href="../../../../../net/minecraft/entity/passive/TameableEntity.html" title="class in net.minecraft.entity.passive">TameableEntity</a>&nbsp;tameableEntity)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/pathing/BirdNavigation.html#BirdNavigation-net.minecraft.entity.mob.MobEntity-net.minecraft.world.World-">BirdNavigation</a></span>(<a href="../../../../../net/minecraft/entity/mob/MobEntity.html" title="class in net.minecraft.entity.mob">MobEntity</a>&nbsp;mobEntity,
+              <a href="../../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -168,50 +161,67 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/pathing/BirdNavigation.html#method_30046--">method_30046</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/pathing/BirdNavigation.html#canPathDirectlyThrough-net.minecraft.util.math.Vec3d-net.minecraft.util.math.Vec3d-int-int-int-">canPathDirectlyThrough</a></span>(<a href="../../../../../net/minecraft/util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&nbsp;origin,
+                      <a href="../../../../../net/minecraft/util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&nbsp;target,
+                      int&nbsp;sizeX,
+                      int&nbsp;sizeY,
+                      int&nbsp;sizeZ)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../net/minecraft/class_5770.html" title="class in net.minecraft">class_5770</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/pathing/BirdNavigation.html#method_30047-int-">method_30047</a></span>(int&nbsp;int2)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../net/minecraft/entity/ai/pathing/Path.html" title="class in net.minecraft.entity.ai.pathing">Path</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/pathing/BirdNavigation.html#findPathTo-net.minecraft.entity.Entity-">findPathTo</a></span>(<a href="../../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/pathing/BirdNavigation.html#method_30048-int-int-">method_30048</a></span>(int&nbsp;int2,
-            int&nbsp;int3)</code>&nbsp;</td>
+<td class="colFirst"><code>protected <a href="../../../../../net/minecraft/util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/pathing/BirdNavigation.html#getPos--">getPos</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/pathing/BirdNavigation.html#method_30049-int-net.minecraft.class_5770-">method_30049</a></span>(int&nbsp;int2,
-            <a href="../../../../../net/minecraft/class_5770.html" title="class in net.minecraft">class_5770</a>&nbsp;class_5770)</code>&nbsp;</td>
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/pathing/BirdNavigation.html#isAtValidPosition--">isAtValidPosition</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/pathing/BirdNavigation.html#method_30050-net.minecraft.class_5770-">method_30050</a></span>(<a href="../../../../../net/minecraft/class_5770.html" title="class in net.minecraft">class_5770</a>&nbsp;class_5770)</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/pathing/BirdNavigation.html#isValidPosition-net.minecraft.util.math.BlockPos-">isValidPosition</a></span>(<a href="../../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/pathing/BirdNavigation.html#method_30051--">method_30051</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/pathing/BirdNavigation.html#method_35012-boolean-">method_35012</a></span>(boolean&nbsp;bool)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/pathing/BirdNavigation.html#method_30052-int-">method_30052</a></span>(int&nbsp;int2)</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/pathing/BirdNavigation.html#method_35013--">method_35013</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/pathing/BirdNavigation.html#method_30053-net.minecraft.class_5770-">method_30053</a></span>(<a href="../../../../../net/minecraft/class_5770.html" title="class in net.minecraft">class_5770</a>&nbsp;class_5770)</code>&nbsp;</td>
+<td class="colFirst"><code>protected <a href="../../../../../net/minecraft/entity/ai/pathing/PathNodeNavigator.html" title="class in net.minecraft.entity.ai.pathing">PathNodeNavigator</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/pathing/BirdNavigation.html#method_35023--">method_35023</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/pathing/BirdNavigation.html#method_30054--">method_30054</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/pathing/BirdNavigation.html#setCanEnterOpenDoors-boolean-">setCanEnterOpenDoors</a></span>(boolean&nbsp;canEnterOpenDoors)</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/pathing/BirdNavigation.html#setCanPathThroughDoors-boolean-">setCanPathThroughDoors</a></span>(boolean&nbsp;canPathThroughDoors)</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/pathing/BirdNavigation.html#tick--">tick</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.entity.ai.pathing.EntityNavigation">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;net.minecraft.entity.ai.pathing.<a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html" title="class in net.minecraft.entity.ai.pathing">EntityNavigation</a></h3>
+<code><a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#findPathTo-net.minecraft.util.math.BlockPos-">findPathTo</a>, <a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#findPathTo-double-double-double-">findPathTo</a>, <a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#getCurrentPath--">getCurrentPath</a>, <a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#getNodeMaker--">getNodeMaker</a>, <a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#isIdle--">isIdle</a>, <a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#isInLiquid--">isInLiquid</a>, <a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#method_35028-net.minecraft.util.math.Vec3d-">method_35028</a>, <a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#method_35037--">method_35037</a>, <a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#method_35041--">method_35041</a>, <a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#method_35042--">method_35042</a>, <a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#method_35046--">method_35046</a>, <a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#recalculatePath--">recalculatePath</a>, <a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#setSpeed-double-">setSpeed</a>, <a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#shouldRecalculatePath--">shouldRecalculatePath</a>, <a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#startMovingAlong-net.minecraft.entity.ai.pathing.Path-double-">startMovingAlong</a>, <a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#startMovingTo-double-double-double-double-">startMovingTo</a>, <a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#startMovingTo-net.minecraft.entity.Entity-double-">startMovingTo</a>, <a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#stop--">stop</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -227,54 +237,20 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ============ FIELD DETAIL =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.detail">
-<!--   -->
-</a>
-<h3>Field Detail</h3>
-<a name="field_28667">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_28667</h4>
-<pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a> field_28667</pre>
-</li>
-</ul>
-<a name="field_28668">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_28668</h4>
-<pre>private final&nbsp;<a href="../../../../../net/minecraft/entity/passive/TameableEntity.html" title="class in net.minecraft.entity.passive">TameableEntity</a> field_28668</pre>
-</li>
-</ul>
-<a name="field_28669">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>field_28669</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../net/minecraft/class_5770.html" title="class in net.minecraft">class_5770</a>&gt; field_28669</pre>
-</li>
-</ul>
-</li>
-</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="BirdNavigation-net.minecraft.entity.passive.TameableEntity-">
+<a name="BirdNavigation-net.minecraft.entity.mob.MobEntity-net.minecraft.world.World-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>BirdNavigation</h4>
-<pre>public&nbsp;BirdNavigation(<a href="../../../../../net/minecraft/entity/passive/TameableEntity.html" title="class in net.minecraft.entity.passive">TameableEntity</a>&nbsp;tameableEntity)</pre>
+<pre>public&nbsp;BirdNavigation(<a href="../../../../../net/minecraft/entity/mob/MobEntity.html" title="class in net.minecraft.entity.mob">MobEntity</a>&nbsp;mobEntity,
+                      <a href="../../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world)</pre>
 </li>
 </ul>
 </li>
@@ -285,87 +261,135 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_30046--">
+<a name="method_35023--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_30046</h4>
-<pre>public&nbsp;void&nbsp;method_30046()</pre>
+<h4>method_35023</h4>
+<pre>protected&nbsp;<a href="../../../../../net/minecraft/entity/ai/pathing/PathNodeNavigator.html" title="class in net.minecraft.entity.ai.pathing">PathNodeNavigator</a>&nbsp;method_35023()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#method_35023--">method_35023</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html" title="class in net.minecraft.entity.ai.pathing">EntityNavigation</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_30051--">
+<a name="isAtValidPosition--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_30051</h4>
-<pre>public&nbsp;void&nbsp;method_30051()</pre>
+<h4>isAtValidPosition</h4>
+<pre>protected&nbsp;boolean&nbsp;isAtValidPosition()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#isAtValidPosition--">isAtValidPosition</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html" title="class in net.minecraft.entity.ai.pathing">EntityNavigation</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_30047-int-">
+<a name="getPos--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_30047</h4>
-<pre>public&nbsp;<a href="../../../../../net/minecraft/class_5770.html" title="class in net.minecraft">class_5770</a>&nbsp;method_30047(int&nbsp;int2)</pre>
+<h4>getPos</h4>
+<pre>protected&nbsp;<a href="../../../../../net/minecraft/util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&nbsp;getPos()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#getPos--">getPos</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html" title="class in net.minecraft.entity.ai.pathing">EntityNavigation</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_30052-int-">
+<a name="findPathTo-net.minecraft.entity.Entity-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_30052</h4>
-<pre>public&nbsp;void&nbsp;method_30052(int&nbsp;int2)</pre>
+<h4>findPathTo</h4>
+<pre>public&nbsp;<a href="../../../../../net/minecraft/entity/ai/pathing/Path.html" title="class in net.minecraft.entity.ai.pathing">Path</a>&nbsp;findPathTo(<a href="../../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#findPathTo-net.minecraft.entity.Entity-">findPathTo</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html" title="class in net.minecraft.entity.ai.pathing">EntityNavigation</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_30050-net.minecraft.class_5770-">
+<a name="tick--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_30050</h4>
-<pre>public&nbsp;void&nbsp;method_30050(<a href="../../../../../net/minecraft/class_5770.html" title="class in net.minecraft">class_5770</a>&nbsp;class_5770)</pre>
+<h4>tick</h4>
+<pre>public&nbsp;void&nbsp;tick()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#tick--">tick</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html" title="class in net.minecraft.entity.ai.pathing">EntityNavigation</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_30054--">
+<a name="canPathDirectlyThrough-net.minecraft.util.math.Vec3d-net.minecraft.util.math.Vec3d-int-int-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_30054</h4>
-<pre>public&nbsp;int&nbsp;method_30054()</pre>
+<h4>canPathDirectlyThrough</h4>
+<pre>protected&nbsp;boolean&nbsp;canPathDirectlyThrough(<a href="../../../../../net/minecraft/util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&nbsp;origin,
+                                         <a href="../../../../../net/minecraft/util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&nbsp;target,
+                                         int&nbsp;sizeX,
+                                         int&nbsp;sizeY,
+                                         int&nbsp;sizeZ)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#canPathDirectlyThrough-net.minecraft.util.math.Vec3d-net.minecraft.util.math.Vec3d-int-int-int-">canPathDirectlyThrough</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html" title="class in net.minecraft.entity.ai.pathing">EntityNavigation</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_30048-int-int-">
+<a name="setCanPathThroughDoors-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_30048</h4>
-<pre>public&nbsp;void&nbsp;method_30048(int&nbsp;int2,
-                         int&nbsp;int3)</pre>
+<h4>setCanPathThroughDoors</h4>
+<pre>public&nbsp;void&nbsp;setCanPathThroughDoors(boolean&nbsp;canPathThroughDoors)</pre>
 </li>
 </ul>
-<a name="method_30049-int-net.minecraft.class_5770-">
+<a name="setCanEnterOpenDoors-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_30049</h4>
-<pre>public&nbsp;void&nbsp;method_30049(int&nbsp;int2,
-                         <a href="../../../../../net/minecraft/class_5770.html" title="class in net.minecraft">class_5770</a>&nbsp;class_5770)</pre>
+<h4>setCanEnterOpenDoors</h4>
+<pre>public&nbsp;void&nbsp;setCanEnterOpenDoors(boolean&nbsp;canEnterOpenDoors)</pre>
 </li>
 </ul>
-<a name="method_30053-net.minecraft.class_5770-">
+<a name="method_35012-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_35012</h4>
+<pre>public&nbsp;void&nbsp;method_35012(boolean&nbsp;bool)</pre>
+</li>
+</ul>
+<a name="method_35013--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_35013</h4>
+<pre>public&nbsp;boolean&nbsp;method_35013()</pre>
+</li>
+</ul>
+<a name="isValidPosition-net.minecraft.util.math.BlockPos-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_30053</h4>
-<pre>public static&nbsp;void&nbsp;method_30053(<a href="../../../../../net/minecraft/class_5770.html" title="class in net.minecraft">class_5770</a>&nbsp;class_5770)</pre>
+<h4>isValidPosition</h4>
+<pre>public&nbsp;boolean&nbsp;isValidPosition(<a href="../../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html#isValidPosition-net.minecraft.util.math.BlockPos-">isValidPosition</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html" title="class in net.minecraft.entity.ai.pathing">EntityNavigation</a></code></dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -396,7 +420,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html" title="class in net.minecraft.entity.ai.pathing"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/entity/ai/pathing/BirdPathNodeMaker.html" title="class in net.minecraft.entity.ai.pathing"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?net/minecraft/entity/ai/pathing/BirdNavigation.html" target="_top">Frames</a></li>
@@ -421,13 +445,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.net.minecraft.entity.ai.pathing.EntityNavigation">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>

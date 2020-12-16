@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../net/minecraft/block/dispenser/FallibleItemDispenserBehavior.html" title="class in net.minecraft.block.dispenser"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/block/dispenser/DispenserBehavior.html" title="interface in net.minecraft.block.dispenser"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../net/minecraft/block/dispenser/ProjectileDispenserBehavior.html" title="class in net.minecraft.block.dispenser"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -74,13 +74,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -108,13 +108,17 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../net/minecraft/class_6257.html" title="interface in net.minecraft">class_6257</a>&lt;<a href="../../../../net/minecraft/class_6260.html" title="interface in net.minecraft">class_6260</a>&gt;</dd>
+<dd><a href="../../../../net/minecraft/block/dispenser/DispenserBehavior.html" title="interface in net.minecraft.block.dispenser">DispenserBehavior</a></dd>
+</dl>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><a href="../../../../net/minecraft/Bootstrap.BoatDispenserBehavior.html" title="class in net.minecraft">Bootstrap.BoatDispenserBehavior</a>, <a href="../../../../net/minecraft/Bootstrap.FallibleItemDispenserBehavior.html" title="class in net.minecraft">Bootstrap.FallibleItemDispenserBehavior</a>, <a href="../../../../net/minecraft/block/dispenser/ProjectileDispenserBehavior.html" title="class in net.minecraft.block.dispenser">ProjectileDispenserBehavior</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">ItemDispenserBehavior</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
-implements <a href="../../../../net/minecraft/class_6257.html" title="interface in net.minecraft">class_6257</a>&lt;<a href="../../../../net/minecraft/class_6260.html" title="interface in net.minecraft">class_6260</a>&gt;</pre>
+implements <a href="../../../../net/minecraft/block/dispenser/DispenserBehavior.html" title="interface in net.minecraft.block.dispenser">DispenserBehavior</a></pre>
 </li>
 </ul>
 </div>
@@ -127,25 +131,13 @@ implements <a href="../../../../net/minecraft/class_6257.html" title="interface 
 <!--   -->
 </a>
 <h3>Field Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
-<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Field and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html#field_31225">field_31225</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../../net/minecraft/class_6448.html" title="enum in net.minecraft">class_6448</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html#field_31226">field_31226</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../net/minecraft/class_5013.html" title="class in net.minecraft">class_5013</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html#field_31227">field_31227</a></span></code>&nbsp;</td>
-</tr>
-</table>
+<ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.block.dispenser.DispenserBehavior">
+<!--   -->
+</a>
+<h3>Fields inherited from interface&nbsp;net.minecraft.block.dispenser.<a href="../../../../net/minecraft/block/dispenser/DispenserBehavior.html" title="interface in net.minecraft.block.dispenser">DispenserBehavior</a></h3>
+<code><a href="../../../../net/minecraft/block/dispenser/DispenserBehavior.html#field_30682">field_30682</a></code></li>
+</ul>
 </li>
 </ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -162,11 +154,6 @@ implements <a href="../../../../net/minecraft/class_6257.html" title="interface 
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html#ItemDispenserBehavior--">ItemDispenserBehavior</a></span>()</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html#ItemDispenserBehavior-int-net.minecraft.class_6448-net.minecraft.class_5013-">ItemDispenserBehavior</a></span>(int&nbsp;int2,
-                     <a href="../../../../net/minecraft/class_6448.html" title="enum in net.minecraft">class_6448</a>&nbsp;class_6448,
-                     <a href="../../../../net/minecraft/class_5013.html" title="class in net.minecraft">class_5013</a>&nbsp;class_5013)</code>&nbsp;</td>
-</tr>
 </table>
 </li>
 </ul>
@@ -177,34 +164,41 @@ implements <a href="../../../../net/minecraft/class_6257.html" title="interface 
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html#method_32354-net.minecraft.class_6233-">method_32354</a></span>(<a href="../../../../net/minecraft/class_6233.html" title="class in net.minecraft">class_6233</a>&nbsp;class_6233)</code>&nbsp;</td>
+<td class="colFirst"><code>protected <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html#dispenseSilently-net.minecraft.util.math.BlockPointer-net.minecraft.item.ItemStack-">dispenseSilently</a></span>(<a href="../../../../net/minecraft/util/math/BlockPointer.html" title="interface in net.minecraft.util.math">BlockPointer</a>&nbsp;pointer,
+                <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html#method_32355-net.minecraft.class_6260-">method_32355</a></span>(<a href="../../../../net/minecraft/class_6260.html" title="interface in net.minecraft">class_6260</a>&nbsp;class_6260)</code>&nbsp;</td>
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html#method_31948-net.minecraft.world.World-net.minecraft.item.ItemStack-int-net.minecraft.util.math.Direction-net.minecraft.util.math.Position-">method_31948</a></span>(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+            <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
+            int&nbsp;int2,
+            <a href="../../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction,
+            <a href="../../../../net/minecraft/util/math/Position.html" title="interface in net.minecraft.util.math">Position</a>&nbsp;position)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html#method_32356-net.minecraft.class_6233-">method_32356</a></span>(<a href="../../../../net/minecraft/class_6233.html" title="class in net.minecraft">class_6233</a>&nbsp;class_6233)</code>&nbsp;</td>
+<td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html#method_31951-net.minecraft.util.math.Direction-">method_31951</a></span>(<a href="../../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/class_5013.html" title="class in net.minecraft">class_5013</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html#method_32786--">method_32786</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html#method_31989-net.minecraft.util.math.BlockPointer-net.minecraft.item.ItemStack-">method_31989</a></span>(<a href="../../../../net/minecraft/util/math/BlockPointer.html" title="interface in net.minecraft.util.math">BlockPointer</a>&nbsp;pointer,
+            <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html#method_32788--">method_32788</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html#playSound-net.minecraft.util.math.BlockPointer-">playSound</a></span>(<a href="../../../../net/minecraft/util/math/BlockPointer.html" title="interface in net.minecraft.util.math">BlockPointer</a>&nbsp;pointer)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/class_6448.html" title="enum in net.minecraft">class_6448</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html#method_32789--">method_32789</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html#spawnParticles-net.minecraft.util.math.BlockPointer-net.minecraft.util.math.Direction-">spawnParticles</a></span>(<a href="../../../../net/minecraft/util/math/BlockPointer.html" title="interface in net.minecraft.util.math">BlockPointer</a>&nbsp;pointer,
+              <a href="../../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;side)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -222,41 +216,6 @@ implements <a href="../../../../net/minecraft/class_6257.html" title="interface 
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ============ FIELD DETAIL =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.detail">
-<!--   -->
-</a>
-<h3>Field Detail</h3>
-<a name="field_31225">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31225</h4>
-<pre>private&nbsp;int field_31225</pre>
-</li>
-</ul>
-<a name="field_31226">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_31226</h4>
-<pre>private&nbsp;<a href="../../../../net/minecraft/class_6448.html" title="enum in net.minecraft">class_6448</a> field_31226</pre>
-</li>
-</ul>
-<a name="field_31227">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>field_31227</h4>
-<pre>private&nbsp;<a href="../../../../net/minecraft/class_5013.html" title="class in net.minecraft">class_5013</a> field_31227</pre>
-</li>
-</ul>
-</li>
-</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
@@ -266,21 +225,10 @@ implements <a href="../../../../net/minecraft/class_6257.html" title="interface 
 <a name="ItemDispenserBehavior--">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
-<h4>ItemDispenserBehavior</h4>
-<pre>public&nbsp;ItemDispenserBehavior()</pre>
-</li>
-</ul>
-<a name="ItemDispenserBehavior-int-net.minecraft.class_6448-net.minecraft.class_5013-">
-<!--   -->
-</a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ItemDispenserBehavior</h4>
-<pre>public&nbsp;ItemDispenserBehavior(int&nbsp;int2,
-                             <a href="../../../../net/minecraft/class_6448.html" title="enum in net.minecraft">class_6448</a>&nbsp;class_6448,
-                             <a href="../../../../net/minecraft/class_5013.html" title="class in net.minecraft">class_5013</a>&nbsp;class_5013)</pre>
+<pre>public&nbsp;ItemDispenserBehavior()</pre>
 </li>
 </ul>
 </li>
@@ -291,79 +239,69 @@ implements <a href="../../../../net/minecraft/class_6257.html" title="interface 
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_32354-net.minecraft.class_6233-">
+<a name="method_31989-net.minecraft.util.math.BlockPointer-net.minecraft.item.ItemStack-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_32354</h4>
-<pre>public&nbsp;void&nbsp;method_32354(<a href="../../../../net/minecraft/class_6233.html" title="class in net.minecraft">class_6233</a>&nbsp;class_6233)
-                  throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<h4>method_31989</h4>
+<pre>public final&nbsp;<a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;method_31989(<a href="../../../../net/minecraft/util/math/BlockPointer.html" title="interface in net.minecraft.util.math">BlockPointer</a>&nbsp;pointer,
+                                    <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_6257.html#method_32354-net.minecraft.class_6233-">method_32354</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/class_6257.html" title="interface in net.minecraft">class_6257</a>&lt;<a href="../../../../net/minecraft/class_6260.html" title="interface in net.minecraft">class_6260</a>&gt;</code></dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/block/dispenser/DispenserBehavior.html#method_31989-net.minecraft.util.math.BlockPointer-net.minecraft.item.ItemStack-">method_31989</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/block/dispenser/DispenserBehavior.html" title="interface in net.minecraft.block.dispenser">DispenserBehavior</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_32356-net.minecraft.class_6233-">
+<a name="dispenseSilently-net.minecraft.util.math.BlockPointer-net.minecraft.item.ItemStack-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_32356</h4>
-<pre>public&nbsp;void&nbsp;method_32356(<a href="../../../../net/minecraft/class_6233.html" title="class in net.minecraft">class_6233</a>&nbsp;class_6233)
-                  throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_6257.html#method_32356-net.minecraft.class_6233-">method_32356</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/class_6257.html" title="interface in net.minecraft">class_6257</a>&lt;<a href="../../../../net/minecraft/class_6260.html" title="interface in net.minecraft">class_6260</a>&gt;</code></dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
-</dl>
+<h4>dispenseSilently</h4>
+<pre>protected&nbsp;<a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;dispenseSilently(<a href="../../../../net/minecraft/util/math/BlockPointer.html" title="interface in net.minecraft.util.math">BlockPointer</a>&nbsp;pointer,
+                                     <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</pre>
 </li>
 </ul>
-<a name="method_32355-net.minecraft.class_6260-">
+<a name="method_31948-net.minecraft.world.World-net.minecraft.item.ItemStack-int-net.minecraft.util.math.Direction-net.minecraft.util.math.Position-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_32355</h4>
-<pre>public&nbsp;void&nbsp;method_32355(<a href="../../../../net/minecraft/class_6260.html" title="interface in net.minecraft">class_6260</a>&nbsp;class_6260)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_6257.html#method_32355-T-">method_32355</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/class_6257.html" title="interface in net.minecraft">class_6257</a>&lt;<a href="../../../../net/minecraft/class_6260.html" title="interface in net.minecraft">class_6260</a>&gt;</code></dd>
-</dl>
+<h4>method_31948</h4>
+<pre>public static&nbsp;void&nbsp;method_31948(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+                                <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
+                                int&nbsp;int2,
+                                <a href="../../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction,
+                                <a href="../../../../net/minecraft/util/math/Position.html" title="interface in net.minecraft.util.math">Position</a>&nbsp;position)</pre>
 </li>
 </ul>
-<a name="method_32786--">
+<a name="playSound-net.minecraft.util.math.BlockPointer-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_32786</h4>
-<pre>@Environment(value=CLIENT)
-public&nbsp;<a href="../../../../net/minecraft/class_5013.html" title="class in net.minecraft">class_5013</a>&nbsp;method_32786()</pre>
+<h4>playSound</h4>
+<pre>protected&nbsp;void&nbsp;playSound(<a href="../../../../net/minecraft/util/math/BlockPointer.html" title="interface in net.minecraft.util.math">BlockPointer</a>&nbsp;pointer)</pre>
 </li>
 </ul>
-<a name="method_32788--">
+<a name="spawnParticles-net.minecraft.util.math.BlockPointer-net.minecraft.util.math.Direction-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_32788</h4>
-<pre>@Environment(value=CLIENT)
-public&nbsp;int&nbsp;method_32788()</pre>
+<h4>spawnParticles</h4>
+<pre>protected&nbsp;void&nbsp;spawnParticles(<a href="../../../../net/minecraft/util/math/BlockPointer.html" title="interface in net.minecraft.util.math">BlockPointer</a>&nbsp;pointer,
+                              <a href="../../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;side)</pre>
 </li>
 </ul>
-<a name="method_32789--">
+<a name="method_31951-net.minecraft.util.math.Direction-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_32789</h4>
-<pre>@Environment(value=CLIENT)
-public&nbsp;<a href="../../../../net/minecraft/class_6448.html" title="enum in net.minecraft">class_6448</a>&nbsp;method_32789()</pre>
+<h4>method_31951</h4>
+<pre>private&nbsp;int&nbsp;method_31951(<a href="../../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction)</pre>
 </li>
 </ul>
 </li>
@@ -393,7 +331,7 @@ public&nbsp;<a href="../../../../net/minecraft/class_6448.html" title="enum in n
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../net/minecraft/block/dispenser/FallibleItemDispenserBehavior.html" title="class in net.minecraft.block.dispenser"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/block/dispenser/DispenserBehavior.html" title="interface in net.minecraft.block.dispenser"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../net/minecraft/block/dispenser/ProjectileDispenserBehavior.html" title="class in net.minecraft.block.dispenser"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -419,13 +357,13 @@ public&nbsp;<a href="../../../../net/minecraft/class_6448.html" title="enum in n
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>

@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -99,12 +99,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">net.minecraft.network.packet.c2s.play.HandSwingC2SPacket</a></li>
-<li>
-<ul class="inheritance">
 <li>net.minecraft.network.packet.c2s.handshake.HandshakeC2SPacket</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -113,12 +108,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../../../net/minecraft/network/listener/ClientLoginPacketListener.html" title="interface in net.minecraft.network.listener">ClientLoginPacketListener</a></dd>
+<dd><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ServerHandshakePacketListener.html" title="interface in net.minecraft.network.listener">ServerHandshakePacketListener</a>&gt;</dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">HandshakeC2SPacket</span>
-extends <a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">HandSwingC2SPacket</a></pre>
+extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
+implements <a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ServerHandshakePacketListener.html" title="interface in net.minecraft.network.listener">ServerHandshakePacketListener</a>&gt;</pre>
 </li>
 </ul>
 </div>
@@ -138,17 +134,22 @@ extends <a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwi
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../../../net/minecraft/class_5559.html" title="class in net.minecraft">class_5559</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/handshake/HandshakeC2SPacket.html#field_22091">field_22091</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/handshake/HandshakeC2SPacket.html#address">address</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="../../../../../../net/minecraft/network/NetworkState.html" title="enum in net.minecraft.network">NetworkState</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/handshake/HandshakeC2SPacket.html#intendedState">intendedState</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/handshake/HandshakeC2SPacket.html#port">port</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/handshake/HandshakeC2SPacket.html#protocolVersion">protocolVersion</a></span></code>&nbsp;</td>
 </tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.network.packet.c2s.play.HandSwingC2SPacket">
-<!--   -->
-</a>
-<h3>Fields inherited from class&nbsp;net.minecraft.network.packet.c2s.play.<a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">HandSwingC2SPacket</a></h3>
-<code><a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html#field_22079">field_22079</a></code></li>
-</ul>
 </li>
 </ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -163,7 +164,12 @@ extends <a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwi
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/handshake/HandshakeC2SPacket.html#HandshakeC2SPacket-net.minecraft.network.packet.c2s.play.UpdateJigsawC2SPacket-">HandshakeC2SPacket</a></span>(<a href="../../../../../../net/minecraft/network/packet/c2s/play/UpdateJigsawC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">UpdateJigsawC2SPacket</a>&nbsp;updateJigsawC2SPacket)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/handshake/HandshakeC2SPacket.html#HandshakeC2SPacket--">HandshakeC2SPacket</a></span>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/handshake/HandshakeC2SPacket.html#HandshakeC2SPacket-java.lang.String-int-net.minecraft.network.NetworkState-">HandshakeC2SPacket</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;address,
+                  int&nbsp;port,
+                  <a href="../../../../../../net/minecraft/network/NetworkState.html" title="enum in net.minecraft.network">NetworkState</a>&nbsp;intendedState)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -182,40 +188,25 @@ extends <a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwi
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/handshake/HandshakeC2SPacket.html#method_24563--">method_24563</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/handshake/HandshakeC2SPacket.html#apply-net.minecraft.network.listener.ServerHandshakePacketListener-">apply</a></span>(<a href="../../../../../../net/minecraft/network/listener/ServerHandshakePacketListener.html" title="interface in net.minecraft.network.listener">ServerHandshakePacketListener</a>&nbsp;serverHandshakePacketListener)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/handshake/HandshakeC2SPacket.html#method_24564--">method_24564</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../../net/minecraft/network/NetworkState.html" title="enum in net.minecraft.network">NetworkState</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/handshake/HandshakeC2SPacket.html#getIntendedState--">getIntendedState</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/handshake/HandshakeC2SPacket.html#method_24565--">method_24565</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/handshake/HandshakeC2SPacket.html#getProtocolVersion--">getProtocolVersion</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/handshake/HandshakeC2SPacket.html#method_24567--">method_24567</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/handshake/HandshakeC2SPacket.html#read-net.minecraft.util.PacketByteBuf-">read</a></span>(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../net/minecraft/class_5559.html" title="class in net.minecraft">class_5559</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/handshake/HandshakeC2SPacket.html#method_24568--">method_24568</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/handshake/HandshakeC2SPacket.html#method_24569--">method_24569</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../net/minecraft/class_4792.html" title="class in net.minecraft">class_4792</a>&lt;<a href="../../../../../../net/minecraft/network/packet/c2s/handshake/HandshakeC2SPacket.html" title="class in net.minecraft.network.packet.c2s.handshake">HandshakeC2SPacket</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/handshake/HandshakeC2SPacket.html#method_24570--">method_24570</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/c2s/handshake/HandshakeC2SPacket.html#write-net.minecraft.util.PacketByteBuf-">write</a></span>(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)</code>&nbsp;</td>
 </tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.network.packet.c2s.play.HandSwingC2SPacket">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;net.minecraft.network.packet.c2s.play.<a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">HandSwingC2SPacket</a></h3>
-<code><a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html#method_24560--">method_24560</a>, <a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html#method_24561-net.minecraft.class_4785-net.minecraft.command.arguments.EntitySummonArgumentType-float-">method_24561</a>, <a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html#method_24562-net.minecraft.class_4786-net.minecraft.class_6183-net.minecraft.command.arguments.EntitySummonArgumentType-net.minecraft.class_4890-">method_24562</a>, <a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html#method_24566--">method_24566</a></code></li>
-</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -237,13 +228,40 @@ extends <a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwi
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_22091">
+<a name="protocolVersion">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>protocolVersion</h4>
+<pre>private&nbsp;int protocolVersion</pre>
+</li>
+</ul>
+<a name="address">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>address</h4>
+<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> address</pre>
+</li>
+</ul>
+<a name="port">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>port</h4>
+<pre>private&nbsp;int port</pre>
+</li>
+</ul>
+<a name="intendedState">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_22091</h4>
-<pre>private&nbsp;<a href="../../../../../../net/minecraft/class_5559.html" title="class in net.minecraft">class_5559</a> field_22091</pre>
+<h4>intendedState</h4>
+<pre>private&nbsp;<a href="../../../../../../net/minecraft/network/NetworkState.html" title="enum in net.minecraft.network">NetworkState</a> intendedState</pre>
 </li>
 </ul>
 </li>
@@ -254,13 +272,25 @@ extends <a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwi
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="HandshakeC2SPacket-net.minecraft.network.packet.c2s.play.UpdateJigsawC2SPacket-">
+<a name="HandshakeC2SPacket--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>HandshakeC2SPacket</h4>
+<pre>public&nbsp;HandshakeC2SPacket()</pre>
+</li>
+</ul>
+<a name="HandshakeC2SPacket-java.lang.String-int-net.minecraft.network.NetworkState-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>HandshakeC2SPacket</h4>
-<pre>public&nbsp;HandshakeC2SPacket(<a href="../../../../../../net/minecraft/network/packet/c2s/play/UpdateJigsawC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">UpdateJigsawC2SPacket</a>&nbsp;updateJigsawC2SPacket)</pre>
+<pre>@Environment(value=CLIENT)
+public&nbsp;HandshakeC2SPacket(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;address,
+                                                     int&nbsp;port,
+                                                     <a href="../../../../../../net/minecraft/network/NetworkState.html" title="enum in net.minecraft.network">NetworkState</a>&nbsp;intendedState)</pre>
 </li>
 </ul>
 </li>
@@ -271,104 +301,67 @@ extends <a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwi
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_24563--">
+<a name="read-net.minecraft.util.PacketByteBuf-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_24563</h4>
-<pre>public&nbsp;void&nbsp;method_24563()</pre>
+<h4>read</h4>
+<pre>public&nbsp;void&nbsp;read(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)
+          throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../net/minecraft/network/listener/ClientLoginPacketListener.html#method_24563--">method_24563</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/listener/ClientLoginPacketListener.html" title="interface in net.minecraft.network.listener">ClientLoginPacketListener</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html#method_24563--">method_24563</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">HandSwingC2SPacket</a></code></dd>
+<dd><code><a href="../../../../../../net/minecraft/network/Packet.html#read-net.minecraft.util.PacketByteBuf-">read</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ServerHandshakePacketListener.html" title="interface in net.minecraft.network.listener">ServerHandshakePacketListener</a>&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_24564--">
+<a name="write-net.minecraft.util.PacketByteBuf-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_24564</h4>
-<pre>public&nbsp;void&nbsp;method_24564()</pre>
+<h4>write</h4>
+<pre>public&nbsp;void&nbsp;write(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)
+           throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../net/minecraft/network/listener/ClientLoginPacketListener.html#method_24564--">method_24564</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/listener/ClientLoginPacketListener.html" title="interface in net.minecraft.network.listener">ClientLoginPacketListener</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html#method_24564--">method_24564</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">HandSwingC2SPacket</a></code></dd>
+<dd><code><a href="../../../../../../net/minecraft/network/Packet.html#write-net.minecraft.util.PacketByteBuf-">write</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ServerHandshakePacketListener.html" title="interface in net.minecraft.network.listener">ServerHandshakePacketListener</a>&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_24567--">
+<a name="apply-net.minecraft.network.listener.ServerHandshakePacketListener-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_24567</h4>
-<pre>public&nbsp;float&nbsp;method_24567()</pre>
+<h4>apply</h4>
+<pre>public&nbsp;void&nbsp;apply(<a href="../../../../../../net/minecraft/network/listener/ServerHandshakePacketListener.html" title="interface in net.minecraft.network.listener">ServerHandshakePacketListener</a>&nbsp;serverHandshakePacketListener)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../net/minecraft/network/listener/ClientLoginPacketListener.html#method_24567--">method_24567</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/listener/ClientLoginPacketListener.html" title="interface in net.minecraft.network.listener">ClientLoginPacketListener</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html#method_24567--">method_24567</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">HandSwingC2SPacket</a></code></dd>
+<dd><code><a href="../../../../../../net/minecraft/network/Packet.html#apply-T-">apply</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ServerHandshakePacketListener.html" title="interface in net.minecraft.network.listener">ServerHandshakePacketListener</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_24569--">
+<a name="getIntendedState--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_24569</h4>
-<pre>public&nbsp;float&nbsp;method_24569()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../net/minecraft/network/listener/ClientLoginPacketListener.html#method_24569--">method_24569</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/listener/ClientLoginPacketListener.html" title="interface in net.minecraft.network.listener">ClientLoginPacketListener</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html#method_24569--">method_24569</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">HandSwingC2SPacket</a></code></dd>
-</dl>
+<h4>getIntendedState</h4>
+<pre>public&nbsp;<a href="../../../../../../net/minecraft/network/NetworkState.html" title="enum in net.minecraft.network">NetworkState</a>&nbsp;getIntendedState()</pre>
 </li>
 </ul>
-<a name="method_24565--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_24565</h4>
-<pre>public&nbsp;void&nbsp;method_24565()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../net/minecraft/network/listener/ClientLoginPacketListener.html#method_24565--">method_24565</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/listener/ClientLoginPacketListener.html" title="interface in net.minecraft.network.listener">ClientLoginPacketListener</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html#method_24565--">method_24565</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">HandSwingC2SPacket</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_24568--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_24568</h4>
-<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-public&nbsp;<a href="../../../../../../net/minecraft/class_5559.html" title="class in net.minecraft">class_5559</a>&nbsp;method_24568()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../net/minecraft/network/listener/ClientLoginPacketListener.html#method_24568--">method_24568</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/listener/ClientLoginPacketListener.html" title="interface in net.minecraft.network.listener">ClientLoginPacketListener</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html#method_24568--">method_24568</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">HandSwingC2SPacket</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_24570--">
+<a name="getProtocolVersion--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_24570</h4>
-<pre>public&nbsp;<a href="../../../../../../net/minecraft/class_4792.html" title="class in net.minecraft">class_4792</a>&lt;<a href="../../../../../../net/minecraft/network/packet/c2s/handshake/HandshakeC2SPacket.html" title="class in net.minecraft.network.packet.c2s.handshake">HandshakeC2SPacket</a>&gt;&nbsp;method_24570()</pre>
+<h4>getProtocolVersion</h4>
+<pre>public&nbsp;int&nbsp;getProtocolVersion()</pre>
 </li>
 </ul>
 </li>

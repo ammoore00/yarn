@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -74,14 +74,14 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
-<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
-<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
@@ -92,72 +92,25 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">net.minecraft.entity.projectile</div>
-<h2 title="Class Projectile" class="title">Class Projectile</h2>
+<h2 title="Interface Projectile" class="title">Interface Projectile</h2>
 </div>
 <div class="contentContainer">
-<ul class="inheritance">
-<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
-<li>
-<ul class="inheritance">
-<li>net.minecraft.entity.projectile.Projectile</li>
-</ul>
-</li>
-</ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
 <dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../net/minecraft/entity/FlyingItemEntity.html" title="interface in net.minecraft.entity">FlyingItemEntity</a>&lt;<a href="../../../../net/minecraft/class_4813.html" title="class in net.minecraft">class_4813</a>&gt;</dd>
+<dt>All Known Implementing Classes:</dt>
+<dd><a href="../../../../net/minecraft/entity/projectile/ArrowEntity.html" title="class in net.minecraft.entity.projectile">ArrowEntity</a>, <a href="../../../../net/minecraft/entity/projectile/LlamaSpitEntity.html" title="class in net.minecraft.entity.projectile">LlamaSpitEntity</a>, <a href="../../../../net/minecraft/entity/projectile/ProjectileEntity.html" title="class in net.minecraft.entity.projectile">ProjectileEntity</a>, <a href="../../../../net/minecraft/entity/thrown/SnowballEntity.html" title="class in net.minecraft.entity.thrown">SnowballEntity</a>, <a href="../../../../net/minecraft/entity/projectile/SpectralArrowEntity.html" title="class in net.minecraft.entity.projectile">SpectralArrowEntity</a>, <a href="../../../../net/minecraft/entity/thrown/ThrownEggEntity.html" title="class in net.minecraft.entity.thrown">ThrownEggEntity</a>, <a href="../../../../net/minecraft/entity/thrown/ThrownEnderpearlEntity.html" title="class in net.minecraft.entity.thrown">ThrownEnderpearlEntity</a>, <a href="../../../../net/minecraft/entity/thrown/ThrownEntity.html" title="class in net.minecraft.entity.thrown">ThrownEntity</a>, <a href="../../../../net/minecraft/entity/thrown/ThrownExperienceBottleEntity.html" title="class in net.minecraft.entity.thrown">ThrownExperienceBottleEntity</a>, <a href="../../../../net/minecraft/entity/thrown/ThrownPotionEntity.html" title="class in net.minecraft.entity.thrown">ThrownPotionEntity</a></dd>
 </dl>
 <hr>
 <br>
-<pre>@Environment(value=CLIENT)
-public class <span class="typeNameLabel">Projectile</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
-implements <a href="../../../../net/minecraft/entity/FlyingItemEntity.html" title="interface in net.minecraft.entity">FlyingItemEntity</a>&lt;<a href="../../../../net/minecraft/class_4813.html" title="class in net.minecraft">class_4813</a>&gt;</pre>
+<pre>public interface <span class="typeNameLabel">Projectile</span></pre>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- =========== FIELD SUMMARY =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.summary">
-<!--   -->
-</a>
-<h3>Field Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
-<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Field and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../net/minecraft/class_5956.html" title="class in net.minecraft">class_5956</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/projectile/Projectile.html#field_29863">field_29863</a></span></code>&nbsp;</td>
-</tr>
-</table>
-</li>
-</ul>
-<!-- ======== CONSTRUCTOR SUMMARY ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="constructor.summary">
-<!--   -->
-</a>
-<h3>Constructor Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
-<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colOne" scope="col">Constructor and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/projectile/Projectile.html#Projectile-net.minecraft.class_5956-">Projectile</a></span>(<a href="../../../../net/minecraft/class_5956.html" title="class in net.minecraft">class_5956</a>&nbsp;class_5956)</code>&nbsp;</td>
-</tr>
-</table>
-</li>
-</ul>
 <!-- ========== METHOD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.summary">
@@ -165,34 +118,20 @@ implements <a href="../../../../net/minecraft/entity/FlyingItemEntity.html" titl
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/projectile/Projectile.html#method_31186--">method_31186</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/projectile/Projectile.html#method_31187-net.minecraft.class_4813-float-float-float-float-float-float-float-">method_31187</a></span>(<a href="../../../../net/minecraft/class_4813.html" title="class in net.minecraft">class_4813</a>&nbsp;class_4813,
-            float&nbsp;float2,
-            float&nbsp;float3,
-            float&nbsp;float4,
-            float&nbsp;float5,
-            float&nbsp;float6,
-            float&nbsp;float7,
-            float&nbsp;float8)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/projectile/Projectile.html#setVelocity-double-double-double-float-float-">setVelocity</a></span>(double&nbsp;x,
+           double&nbsp;y,
+           double&nbsp;z,
+           float&nbsp;speed,
+           float&nbsp;divergence)</code>&nbsp;</td>
 </tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
-</ul>
 </li>
 </ul>
 </li>
@@ -201,77 +140,23 @@ implements <a href="../../../../net/minecraft/entity/FlyingItemEntity.html" titl
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ============ FIELD DETAIL =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.detail">
-<!--   -->
-</a>
-<h3>Field Detail</h3>
-<a name="field_29863">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>field_29863</h4>
-<pre>private final&nbsp;<a href="../../../../net/minecraft/class_5956.html" title="class in net.minecraft">class_5956</a> field_29863</pre>
-</li>
-</ul>
-</li>
-</ul>
-<!-- ========= CONSTRUCTOR DETAIL ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="constructor.detail">
-<!--   -->
-</a>
-<h3>Constructor Detail</h3>
-<a name="Projectile-net.minecraft.class_5956-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>Projectile</h4>
-<pre>public&nbsp;Projectile(<a href="../../../../net/minecraft/class_5956.html" title="class in net.minecraft">class_5956</a>&nbsp;class_5956)</pre>
-</li>
-</ul>
-</li>
-</ul>
 <!-- ============ METHOD DETAIL ========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.detail">
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_31187-net.minecraft.class_4813-float-float-float-float-float-float-float-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_31187</h4>
-<pre>public&nbsp;void&nbsp;method_31187(<a href="../../../../net/minecraft/class_4813.html" title="class in net.minecraft">class_4813</a>&nbsp;class_4813,
-                         float&nbsp;float2,
-                         float&nbsp;float3,
-                         float&nbsp;float4,
-                         float&nbsp;float5,
-                         float&nbsp;float6,
-                         float&nbsp;float7,
-                         float&nbsp;float8)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/entity/FlyingItemEntity.html#method_31187-E-float-float-float-float-float-float-float-">method_31187</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/entity/FlyingItemEntity.html" title="interface in net.minecraft.entity">FlyingItemEntity</a>&lt;<a href="../../../../net/minecraft/class_4813.html" title="class in net.minecraft">class_4813</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_31186--">
+<a name="setVelocity-double-double-double-float-float-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_31186</h4>
-<pre>public&nbsp;boolean&nbsp;method_31186()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/entity/FlyingItemEntity.html#method_31186--">method_31186</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/entity/FlyingItemEntity.html" title="interface in net.minecraft.entity">FlyingItemEntity</a>&lt;<a href="../../../../net/minecraft/class_4813.html" title="class in net.minecraft">class_4813</a>&gt;</code></dd>
-</dl>
+<h4>setVelocity</h4>
+<pre>void&nbsp;setVelocity(double&nbsp;x,
+                 double&nbsp;y,
+                 double&nbsp;z,
+                 float&nbsp;speed,
+                 float&nbsp;divergence)</pre>
 </li>
 </ul>
 </li>
@@ -327,14 +212,14 @@ implements <a href="../../../../net/minecraft/entity/FlyingItemEntity.html" titl
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
-<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
-<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>

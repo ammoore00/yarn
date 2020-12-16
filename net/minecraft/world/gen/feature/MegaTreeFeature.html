@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../net/minecraft/world/gen/feature/MegaPineTreeFeature.html" title="class in net.minecraft.world.gen.feature"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../net/minecraft/world/gen/feature/NetherFortressFeature.html" title="class in net.minecraft.world.gen.feature"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/world/gen/feature/MineshaftFeature.html" title="class in net.minecraft.world.gen.feature"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?net/minecraft/world/gen/feature/MegaTreeFeature.html" target="_top">Frames</a></li>
@@ -99,7 +99,10 @@ var activeTableTab = "activeTableTab";
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../../net/minecraft/network/packet/s2c/play/ScoreboardObjectiveUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">net.minecraft.network.packet.s2c.play.ScoreboardObjectiveUpdateS2CPacket</a></li>
+<li><a href="../../../../../net/minecraft/world/gen/feature/Feature.html" title="class in net.minecraft.world.gen.feature">net.minecraft.world.gen.feature.Feature</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../net/minecraft/world/gen/feature/AbstractTreeFeature.html" title="class in net.minecraft.world.gen.feature">net.minecraft.world.gen.feature.AbstractTreeFeature</a></li>
 <li>
 <ul class="inheritance">
 <li>net.minecraft.world.gen.feature.MegaTreeFeature</li>
@@ -108,13 +111,19 @@ var activeTableTab = "activeTableTab";
 </ul>
 </li>
 </ul>
+</li>
+</ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><a href="../../../../../net/minecraft/world/gen/feature/MegaJungleTreeFeature.html" title="class in net.minecraft.world.gen.feature">MegaJungleTreeFeature</a>, <a href="../../../../../net/minecraft/world/gen/feature/MegaPineTreeFeature.html" title="class in net.minecraft.world.gen.feature">MegaPineTreeFeature</a></dd>
+</dl>
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">MegaTreeFeature</span>
-extends <a href="../../../../../net/minecraft/network/packet/s2c/play/ScoreboardObjectiveUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ScoreboardObjectiveUpdateS2CPacket</a></pre>
+<pre>public abstract class <span class="typeNameLabel">MegaTreeFeature</span>
+extends <a href="../../../../../net/minecraft/world/gen/feature/AbstractTreeFeature.html" title="class in net.minecraft.world.gen.feature">AbstractTreeFeature</a></pre>
 </li>
 </ul>
 </div>
@@ -134,44 +143,20 @@ extends <a href="../../../../../net/minecraft/network/packet/s2c/play/Scoreboard
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../../net/minecraft/command/arguments/LookingPosArgument.html" title="class in net.minecraft.command.arguments">LookingPosArgument</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/gen/feature/MegaTreeFeature.html#field_33512">field_33512</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>protected int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/gen/feature/MegaTreeFeature.html#field_25849">field_25849</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../../../net/minecraft/class_4843.html" title="interface in net.minecraft">class_4843</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/gen/feature/MegaTreeFeature.html#field_33513">field_33513</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>protected <a href="../../../../../net/minecraft/state/State.html" title="interface in net.minecraft.state">State</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/gen/feature/MegaTreeFeature.html#field_25850">field_25850</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../../net/minecraft/command/arguments/PosArgument.html" title="class in net.minecraft.command.arguments">PosArgument</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/gen/feature/MegaTreeFeature.html#field_33514">field_33514</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>protected <a href="../../../../../net/minecraft/state/State.html" title="interface in net.minecraft.state">State</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/gen/feature/MegaTreeFeature.html#field_25851">field_25851</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/gen/feature/MegaTreeFeature.html#field_33515">field_33515</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/gen/feature/MegaTreeFeature.html#field_33516">field_33516</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/gen/feature/MegaTreeFeature.html#field_33517">field_33517</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/gen/feature/MegaTreeFeature.html#field_33518">field_33518</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/gen/feature/MegaTreeFeature.html#field_33519">field_33519</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/gen/feature/MegaTreeFeature.html#field_33520">field_33520</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/gen/feature/MegaTreeFeature.html#field_33521">field_33521</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>protected int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/gen/feature/MegaTreeFeature.html#field_25852">field_25852</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -188,17 +173,11 @@ extends <a href="../../../../../net/minecraft/network/packet/s2c/play/Scoreboard
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/gen/feature/MegaTreeFeature.html#MegaTreeFeature-net.minecraft.class_4843-double-int-float-">MegaTreeFeature</a></span>(<a href="../../../../../net/minecraft/class_4843.html" title="interface in net.minecraft">class_4843</a>&nbsp;class_4843,
-               double&nbsp;double2,
-               int&nbsp;int2,
-               float&nbsp;float2)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/gen/feature/MegaTreeFeature.html#MegaTreeFeature-net.minecraft.class_4843-double-int-int-float-">MegaTreeFeature</a></span>(<a href="../../../../../net/minecraft/class_4843.html" title="interface in net.minecraft">class_4843</a>&nbsp;class_4843,
-               double&nbsp;double2,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/gen/feature/MegaTreeFeature.html#MegaTreeFeature-boolean-int-int-net.minecraft.state.State-net.minecraft.state.State-">MegaTreeFeature</a></span>(boolean&nbsp;bool,
                int&nbsp;int2,
                int&nbsp;int3,
-               float&nbsp;float2)</code>&nbsp;</td>
+               <a href="../../../../../net/minecraft/state/State.html" title="interface in net.minecraft.state">State</a>&nbsp;state,
+               <a href="../../../../../net/minecraft/state/State.html" title="interface in net.minecraft.state">State</a>&nbsp;state2)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -216,28 +195,53 @@ extends <a href="../../../../../net/minecraft/network/packet/s2c/play/Scoreboard
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/gen/feature/MegaTreeFeature.html#method_34937--">method_34937</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/gen/feature/MegaTreeFeature.html#checkTreeFitsAndReplaceGround-net.minecraft.world.World-java.util.Random-net.minecraft.util.math.BlockPos-int-">checkTreeFitsAndReplaceGround</a></span>(<a href="../../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+                             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util">Random</a>&nbsp;random,
+                             <a href="../../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
+                             int&nbsp;int2)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/gen/feature/MegaTreeFeature.html#method_34939--">method_34939</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/gen/feature/MegaTreeFeature.html#doesTreeFit-net.minecraft.world.World-net.minecraft.util.math.BlockPos-int-">doesTreeFit</a></span>(<a href="../../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+           <a href="../../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+           int&nbsp;height)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/gen/feature/MegaTreeFeature.html#method_34941--">method_34941</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/gen/feature/MegaTreeFeature.html#method_27650-net.minecraft.world.World-net.minecraft.util.math.BlockPos-int-">method_27650</a></span>(<a href="../../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+            <a href="../../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
+            int&nbsp;int2)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/gen/feature/MegaTreeFeature.html#method_34942--">method_34942</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/gen/feature/MegaTreeFeature.html#method_27652-net.minecraft.util.math.BlockPos-net.minecraft.world.World-">method_27652</a></span>(<a href="../../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
+            <a href="../../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>protected int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/gen/feature/MegaTreeFeature.html#method_27653-java.util.Random-">method_27653</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util">Random</a>&nbsp;random)</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/gen/feature/MegaTreeFeature.html#method_27654-net.minecraft.world.World-net.minecraft.util.math.BlockPos-int-">method_27654</a></span>(<a href="../../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+            <a href="../../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
+            int&nbsp;int2)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.network.packet.s2c.play.ScoreboardObjectiveUpdateS2CPacket">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.world.gen.feature.AbstractTreeFeature">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;net.minecraft.network.packet.s2c.play.<a href="../../../../../net/minecraft/network/packet/s2c/play/ScoreboardObjectiveUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ScoreboardObjectiveUpdateS2CPacket</a></h3>
-<code><a href="../../../../../net/minecraft/network/packet/s2c/play/ScoreboardObjectiveUpdateS2CPacket.html#method_34938-int-">method_34938</a>, <a href="../../../../../net/minecraft/network/packet/s2c/play/ScoreboardObjectiveUpdateS2CPacket.html#method_34940--">method_34940</a>, <a href="../../../../../net/minecraft/network/packet/s2c/play/ScoreboardObjectiveUpdateS2CPacket.html#method_34943--">method_34943</a>, <a href="../../../../../net/minecraft/network/packet/s2c/play/ScoreboardObjectiveUpdateS2CPacket.html#method_34944--">method_34944</a></code></li>
+<h3>Methods inherited from class&nbsp;net.minecraft.world.gen.feature.<a href="../../../../../net/minecraft/world/gen/feature/AbstractTreeFeature.html" title="class in net.minecraft.world.gen.feature">AbstractTreeFeature</a></h3>
+<code><a href="../../../../../net/minecraft/world/gen/feature/AbstractTreeFeature.html#method_27594-net.minecraft.world.World-net.minecraft.util.math.BlockPos-">method_27594</a>, <a href="../../../../../net/minecraft/world/gen/feature/AbstractTreeFeature.html#method_27595-net.minecraft.world.World-java.util.Random-net.minecraft.util.math.BlockPos-">method_27595</a>, <a href="../../../../../net/minecraft/world/gen/feature/AbstractTreeFeature.html#method_27596-net.minecraft.block.Block-">method_27596</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.world.gen.feature.Feature">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;net.minecraft.world.gen.feature.<a href="../../../../../net/minecraft/world/gen/feature/Feature.html" title="class in net.minecraft.world.gen.feature">Feature</a></h3>
+<code><a href="../../../../../net/minecraft/world/gen/feature/Feature.html#method_27613-net.minecraft.world.World-net.minecraft.util.math.BlockPos-net.minecraft.state.State-">method_27613</a>, <a href="../../../../../net/minecraft/world/gen/feature/Feature.html#method_27614-net.minecraft.world.World-java.util.Random-net.minecraft.util.math.BlockPos-">method_27614</a>, <a href="../../../../../net/minecraft/world/gen/feature/Feature.html#method_27615--">method_27615</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -260,94 +264,40 @@ extends <a href="../../../../../net/minecraft/network/packet/s2c/play/Scoreboard
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_33512">
+<a name="field_25849">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_33512</h4>
-<pre>private final&nbsp;<a href="../../../../../net/minecraft/command/arguments/LookingPosArgument.html" title="class in net.minecraft.command.arguments">LookingPosArgument</a> field_33512</pre>
+<h4>field_25849</h4>
+<pre>protected final&nbsp;int field_25849</pre>
 </li>
 </ul>
-<a name="field_33513">
+<a name="field_25850">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_33513</h4>
-<pre>private final&nbsp;<a href="../../../../../net/minecraft/class_4843.html" title="interface in net.minecraft">class_4843</a> field_33513</pre>
+<h4>field_25850</h4>
+<pre>protected final&nbsp;<a href="../../../../../net/minecraft/state/State.html" title="interface in net.minecraft.state">State</a> field_25850</pre>
 </li>
 </ul>
-<a name="field_33514">
+<a name="field_25851">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_33514</h4>
-<pre>private&nbsp;<a href="../../../../../net/minecraft/command/arguments/PosArgument.html" title="class in net.minecraft.command.arguments">PosArgument</a> field_33514</pre>
+<h4>field_25851</h4>
+<pre>protected final&nbsp;<a href="../../../../../net/minecraft/state/State.html" title="interface in net.minecraft.state">State</a> field_25851</pre>
 </li>
 </ul>
-<a name="field_33515">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_33515</h4>
-<pre>private&nbsp;int field_33515</pre>
-</li>
-</ul>
-<a name="field_33516">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_33516</h4>
-<pre>private final&nbsp;double field_33516</pre>
-</li>
-</ul>
-<a name="field_33517">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_33517</h4>
-<pre>private&nbsp;int field_33517</pre>
-</li>
-</ul>
-<a name="field_33518">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_33518</h4>
-<pre>private final&nbsp;int field_33518</pre>
-</li>
-</ul>
-<a name="field_33519">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_33519</h4>
-<pre>private final&nbsp;int field_33519</pre>
-</li>
-</ul>
-<a name="field_33520">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_33520</h4>
-<pre>private final&nbsp;float field_33520</pre>
-</li>
-</ul>
-<a name="field_33521">
+<a name="field_25852">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_33521</h4>
-<pre>private final&nbsp;float field_33521</pre>
+<h4>field_25852</h4>
+<pre>protected&nbsp;int field_25852</pre>
 </li>
 </ul>
 </li>
@@ -358,29 +308,17 @@ extends <a href="../../../../../net/minecraft/network/packet/s2c/play/Scoreboard
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MegaTreeFeature-net.minecraft.class_4843-double-int-float-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>MegaTreeFeature</h4>
-<pre>public&nbsp;MegaTreeFeature(<a href="../../../../../net/minecraft/class_4843.html" title="interface in net.minecraft">class_4843</a>&nbsp;class_4843,
-                       double&nbsp;double2,
-                       int&nbsp;int2,
-                       float&nbsp;float2)</pre>
-</li>
-</ul>
-<a name="MegaTreeFeature-net.minecraft.class_4843-double-int-int-float-">
+<a name="MegaTreeFeature-boolean-int-int-net.minecraft.state.State-net.minecraft.state.State-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MegaTreeFeature</h4>
-<pre>public&nbsp;MegaTreeFeature(<a href="../../../../../net/minecraft/class_4843.html" title="interface in net.minecraft">class_4843</a>&nbsp;class_4843,
-                       double&nbsp;double2,
+<pre>public&nbsp;MegaTreeFeature(boolean&nbsp;bool,
                        int&nbsp;int2,
                        int&nbsp;int3,
-                       float&nbsp;float2)</pre>
+                       <a href="../../../../../net/minecraft/state/State.html" title="interface in net.minecraft.state">State</a>&nbsp;state,
+                       <a href="../../../../../net/minecraft/state/State.html" title="interface in net.minecraft.state">State</a>&nbsp;state2)</pre>
 </li>
 </ul>
 </li>
@@ -391,56 +329,68 @@ extends <a href="../../../../../net/minecraft/network/packet/s2c/play/Scoreboard
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_34937--">
+<a name="method_27653-java.util.Random-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_34937</h4>
-<pre>public&nbsp;boolean&nbsp;method_34937()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../net/minecraft/network/packet/s2c/play/ScoreboardObjectiveUpdateS2CPacket.html#method_34937--">method_34937</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../net/minecraft/network/packet/s2c/play/ScoreboardObjectiveUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ScoreboardObjectiveUpdateS2CPacket</a></code></dd>
-</dl>
+<h4>method_27653</h4>
+<pre>protected&nbsp;int&nbsp;method_27653(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util">Random</a>&nbsp;random)</pre>
 </li>
 </ul>
-<a name="method_34939--">
+<a name="doesTreeFit-net.minecraft.world.World-net.minecraft.util.math.BlockPos-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_34939</h4>
-<pre>public&nbsp;boolean&nbsp;method_34939()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../net/minecraft/network/packet/s2c/play/ScoreboardObjectiveUpdateS2CPacket.html#method_34939--">method_34939</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../net/minecraft/network/packet/s2c/play/ScoreboardObjectiveUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ScoreboardObjectiveUpdateS2CPacket</a></code></dd>
-</dl>
+<h4>doesTreeFit</h4>
+<pre>private&nbsp;boolean&nbsp;doesTreeFit(<a href="../../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+                            <a href="../../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+                            int&nbsp;height)</pre>
 </li>
 </ul>
-<a name="method_34941--">
+<a name="method_27652-net.minecraft.util.math.BlockPos-net.minecraft.world.World-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_34941</h4>
-<pre>public&nbsp;void&nbsp;method_34941()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../net/minecraft/network/packet/s2c/play/ScoreboardObjectiveUpdateS2CPacket.html#method_34941--">method_34941</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../net/minecraft/network/packet/s2c/play/ScoreboardObjectiveUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ScoreboardObjectiveUpdateS2CPacket</a></code></dd>
-</dl>
+<h4>method_27652</h4>
+<pre>private&nbsp;boolean&nbsp;method_27652(<a href="../../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
+                             <a href="../../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world)</pre>
 </li>
 </ul>
-<a name="method_34942--">
+<a name="checkTreeFitsAndReplaceGround-net.minecraft.world.World-java.util.Random-net.minecraft.util.math.BlockPos-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>checkTreeFitsAndReplaceGround</h4>
+<pre>protected&nbsp;boolean&nbsp;checkTreeFitsAndReplaceGround(<a href="../../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+                                                <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util">Random</a>&nbsp;random,
+                                                <a href="../../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
+                                                int&nbsp;int2)</pre>
+</li>
+</ul>
+<a name="method_27650-net.minecraft.world.World-net.minecraft.util.math.BlockPos-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_27650</h4>
+<pre>protected&nbsp;void&nbsp;method_27650(<a href="../../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+                            <a href="../../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
+                            int&nbsp;int2)</pre>
+</li>
+</ul>
+<a name="method_27654-net.minecraft.world.World-net.minecraft.util.math.BlockPos-int-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_34942</h4>
-<pre>public&nbsp;void&nbsp;method_34942()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../net/minecraft/network/packet/s2c/play/ScoreboardObjectiveUpdateS2CPacket.html#method_34942--">method_34942</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../net/minecraft/network/packet/s2c/play/ScoreboardObjectiveUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ScoreboardObjectiveUpdateS2CPacket</a></code></dd>
-</dl>
+<h4>method_27654</h4>
+<pre>protected&nbsp;void&nbsp;method_27654(<a href="../../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+                            <a href="../../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
+                            int&nbsp;int2)</pre>
 </li>
 </ul>
 </li>
@@ -471,7 +421,7 @@ extends <a href="../../../../../net/minecraft/network/packet/s2c/play/Scoreboard
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../net/minecraft/world/gen/feature/MegaPineTreeFeature.html" title="class in net.minecraft.world.gen.feature"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../net/minecraft/world/gen/feature/NetherFortressFeature.html" title="class in net.minecraft.world.gen.feature"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/world/gen/feature/MineshaftFeature.html" title="class in net.minecraft.world.gen.feature"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?net/minecraft/world/gen/feature/MegaTreeFeature.html" target="_top">Frames</a></li>

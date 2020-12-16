@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":9,"i16":9,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":9,"i25":9,"i26":9,"i27":9,"i28":9,"i29":9,"i30":9,"i31":9,"i32":9,"i33":9,"i34":9,"i35":9,"i36":9,"i37":9,"i38":9};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../../net/minecraft/network/packet/s2c/play/OpenWrittenBookS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../../net/minecraft/network/packet/s2c/play/OpenContainerS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -74,13 +74,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -106,16 +106,56 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&gt;</dd>
+</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">PaintingSpawnS2CPacket</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
+implements <a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&gt;</pre>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="../../../../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#facing">facing</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#field_30971">field_30971</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#id">id</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="../../../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#pos">pos</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#uuid">uuid</a></span></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.summary">
@@ -130,6 +170,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#PaintingSpawnS2CPacket--">PaintingSpawnS2CPacket</a></span>()</code>&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#PaintingSpawnS2CPacket-net.minecraft.entity.decoration.painting.PaintingEntity-">PaintingSpawnS2CPacket</a></span>(<a href="../../../../../../net/minecraft/entity/decoration/painting/PaintingEntity.html" title="class in net.minecraft.entity.decoration.painting">PaintingEntity</a>&nbsp;paintingEntity)</code>&nbsp;</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -140,227 +183,42 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33958-com.google.gson.Gson-java.io.Reader-java.lang.Class-">method_33958</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/Gson.html?is-external=true" title="class or interface in com.google.gson">Gson</a>&nbsp;gson,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Reader.html?is-external=true" title="class or interface in java.io">Reader</a>&nbsp;reader,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;class2)</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#apply-net.minecraft.network.listener.ClientPlayPacketListener-">apply</a></span>(<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&nbsp;clientPlayPacketListener)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33959-com.google.gson.Gson-java.io.Reader-java.lang.Class-boolean-">method_33959</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/Gson.html?is-external=true" title="class or interface in com.google.gson">Gson</a>&nbsp;gson,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Reader.html?is-external=true" title="class or interface in java.io">Reader</a>&nbsp;reader,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;class2,
-            boolean&nbsp;bool)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#getFacing--">getFacing</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33960-com.google.gson.Gson-java.io.Reader-java.lang.reflect.Type-">method_33960</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/Gson.html?is-external=true" title="class or interface in com.google.gson">Gson</a>&nbsp;gson,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Reader.html?is-external=true" title="class or interface in java.io">Reader</a>&nbsp;reader,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</a>&nbsp;type)</code>&nbsp;</td>
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#getId--">getId</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33961-com.google.gson.Gson-java.io.Reader-java.lang.reflect.Type-boolean-">method_33961</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/Gson.html?is-external=true" title="class or interface in com.google.gson">Gson</a>&nbsp;gson,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Reader.html?is-external=true" title="class or interface in java.io">Reader</a>&nbsp;reader,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</a>&nbsp;type,
-            boolean&nbsp;bool)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#getPaintingUuid--">getPaintingUuid</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33962-com.google.gson.Gson-java.lang.String-java.lang.Class-">method_33962</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/Gson.html?is-external=true" title="class or interface in com.google.gson">Gson</a>&nbsp;gson,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;class2)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#getPos--">getPos</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33963-com.google.gson.Gson-java.lang.String-java.lang.Class-boolean-">method_33963</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/Gson.html?is-external=true" title="class or interface in com.google.gson">Gson</a>&nbsp;gson,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;class2,
-            boolean&nbsp;bool)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_32499--">method_32499</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33964-com.google.gson.Gson-java.lang.String-java.lang.reflect.Type-">method_33964</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/Gson.html?is-external=true" title="class or interface in com.google.gson">Gson</a>&nbsp;gson,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</a>&nbsp;type)</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#read-net.minecraft.util.PacketByteBuf-">read</a></span>(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33965-com.google.gson.Gson-java.lang.String-java.lang.reflect.Type-boolean-">method_33965</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/Gson.html?is-external=true" title="class or interface in com.google.gson">Gson</a>&nbsp;gson,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</a>&nbsp;type,
-            boolean&nbsp;bool)</code>&nbsp;</td>
-</tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code>static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33966-com.google.gson.JsonElement-">method_33966</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonElement.html?is-external=true" title="class or interface in com.google.gson">JsonElement</a>&nbsp;jsonElement)</code>&nbsp;</td>
-</tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33967-com.google.gson.JsonElement-java.lang.String-">method_33967</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonElement.html?is-external=true" title="class or interface in com.google.gson">JsonElement</a>&nbsp;jsonElement,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
-</tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33968-com.google.gson.JsonElement-java.lang.String-com.google.gson.JsonDeserializationContext-java.lang.Class-">method_33968</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonElement.html?is-external=true" title="class or interface in com.google.gson">JsonElement</a>&nbsp;jsonElement,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-            <a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonDeserializationContext.html?is-external=true" title="class or interface in com.google.gson">JsonDeserializationContext</a>&nbsp;jsonDeserializationContext,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends T&gt;&nbsp;class2)</code>&nbsp;</td>
-</tr>
-<tr id="i11" class="rowColor">
-<td class="colFirst"><code>static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33969-com.google.gson.JsonObject-java.lang.String-">method_33969</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
-</tr>
-<tr id="i12" class="altColor">
-<td class="colFirst"><code>static float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33970-com.google.gson.JsonObject-java.lang.String-float-">method_33970</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-            float&nbsp;float2)</code>&nbsp;</td>
-</tr>
-<tr id="i13" class="rowColor">
-<td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33971-com.google.gson.JsonObject-java.lang.String-int-">method_33971</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-            int&nbsp;int2)</code>&nbsp;</td>
-</tr>
-<tr id="i14" class="altColor">
-<td class="colFirst"><code>static <a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonArray.html?is-external=true" title="class or interface in com.google.gson">JsonArray</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33972-com.google.gson.JsonObject-java.lang.String-com.google.gson.JsonArray-">method_33972</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-            <a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonArray.html?is-external=true" title="class or interface in com.google.gson">JsonArray</a>&nbsp;jsonArray)</code>&nbsp;</td>
-</tr>
-<tr id="i15" class="rowColor">
-<td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33973-com.google.gson.JsonObject-java.lang.String-com.google.gson.JsonDeserializationContext-java.lang.Class-">method_33973</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-            <a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonDeserializationContext.html?is-external=true" title="class or interface in com.google.gson">JsonDeserializationContext</a>&nbsp;jsonDeserializationContext,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends T&gt;&nbsp;class2)</code>&nbsp;</td>
-</tr>
-<tr id="i16" class="altColor">
-<td class="colFirst"><code>static <a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33974-com.google.gson.JsonObject-java.lang.String-com.google.gson.JsonObject-">method_33974</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-            <a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject2)</code>&nbsp;</td>
-</tr>
-<tr id="i17" class="rowColor">
-<td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33975-com.google.gson.JsonObject-java.lang.String-T-com.google.gson.JsonDeserializationContext-java.lang.Class-">method_33975</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-            T&nbsp;t,
-            <a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonDeserializationContext.html?is-external=true" title="class or interface in com.google.gson">JsonDeserializationContext</a>&nbsp;jsonDeserializationContext,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends T&gt;&nbsp;class2)</code>&nbsp;</td>
-</tr>
-<tr id="i18" class="altColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33976-com.google.gson.JsonObject-java.lang.String-java.lang.String-">method_33976</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string2)</code>&nbsp;</td>
-</tr>
-<tr id="i19" class="rowColor">
-<td class="colFirst"><code>static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33977-com.google.gson.JsonObject-java.lang.String-boolean-">method_33977</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-            boolean&nbsp;bool)</code>&nbsp;</td>
-</tr>
-<tr id="i20" class="altColor">
-<td class="colFirst"><code>static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33978-com.google.gson.JsonElement-">method_33978</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonElement.html?is-external=true" title="class or interface in com.google.gson">JsonElement</a>&nbsp;jsonElement)</code>&nbsp;</td>
-</tr>
-<tr id="i21" class="rowColor">
-<td class="colFirst"><code>static <a href="../../../../../../net/minecraft/class_5009.html" title="class in net.minecraft">class_5009</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33979-com.google.gson.JsonElement-java.lang.String-">method_33979</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonElement.html?is-external=true" title="class or interface in com.google.gson">JsonElement</a>&nbsp;jsonElement,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
-</tr>
-<tr id="i22" class="altColor">
-<td class="colFirst"><code>static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33980-com.google.gson.JsonElement-java.lang.String-">method_33980</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonElement.html?is-external=true" title="class or interface in com.google.gson">JsonElement</a>&nbsp;jsonElement,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
-</tr>
-<tr id="i23" class="rowColor">
-<td class="colFirst"><code>static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33981-com.google.gson.JsonObject-java.lang.String-">method_33981</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
-</tr>
-<tr id="i24" class="altColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33982-com.google.gson.JsonElement-">method_33982</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonElement.html?is-external=true" title="class or interface in com.google.gson">JsonElement</a>&nbsp;jsonElement)</code>&nbsp;</td>
-</tr>
-<tr id="i25" class="rowColor">
-<td class="colFirst"><code>static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33983-com.google.gson.JsonObject-java.lang.String-">method_33983</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
-</tr>
-<tr id="i26" class="altColor">
-<td class="colFirst"><code>static float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33984-com.google.gson.JsonElement-java.lang.String-">method_33984</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonElement.html?is-external=true" title="class or interface in com.google.gson">JsonElement</a>&nbsp;jsonElement,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
-</tr>
-<tr id="i27" class="rowColor">
-<td class="colFirst"><code>static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33985-com.google.gson.JsonObject-java.lang.String-">method_33985</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
-</tr>
-<tr id="i28" class="altColor">
-<td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33986-com.google.gson.JsonElement-java.lang.String-">method_33986</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonElement.html?is-external=true" title="class or interface in com.google.gson">JsonElement</a>&nbsp;jsonElement,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
-</tr>
-<tr id="i29" class="rowColor">
-<td class="colFirst"><code>static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33987-com.google.gson.JsonObject-java.lang.String-">method_33987</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
-</tr>
-<tr id="i30" class="altColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33988-com.google.gson.JsonObject-java.lang.String-">method_33988</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
-</tr>
-<tr id="i31" class="rowColor">
-<td class="colFirst"><code>static <a href="../../../../../../net/minecraft/class_5009.html" title="class in net.minecraft">class_5009</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33989-com.google.gson.JsonObject-java.lang.String-">method_33989</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
-</tr>
-<tr id="i32" class="altColor">
-<td class="colFirst"><code>static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33990-com.google.gson.JsonObject-java.lang.String-">method_33990</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
-</tr>
-<tr id="i33" class="rowColor">
-<td class="colFirst"><code>static float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33991-com.google.gson.JsonObject-java.lang.String-">method_33991</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
-</tr>
-<tr id="i34" class="altColor">
-<td class="colFirst"><code>static <a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33992-com.google.gson.JsonElement-java.lang.String-">method_33992</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonElement.html?is-external=true" title="class or interface in com.google.gson">JsonElement</a>&nbsp;jsonElement,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
-</tr>
-<tr id="i35" class="rowColor">
-<td class="colFirst"><code>static <a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonArray.html?is-external=true" title="class or interface in com.google.gson">JsonArray</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33993-com.google.gson.JsonElement-java.lang.String-">method_33993</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonElement.html?is-external=true" title="class or interface in com.google.gson">JsonElement</a>&nbsp;jsonElement,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
-</tr>
-<tr id="i36" class="altColor">
-<td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33994-com.google.gson.JsonObject-java.lang.String-">method_33994</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
-</tr>
-<tr id="i37" class="rowColor">
-<td class="colFirst"><code>static <a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33995-com.google.gson.JsonObject-java.lang.String-">method_33995</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
-</tr>
-<tr id="i38" class="altColor">
-<td class="colFirst"><code>static <a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonArray.html?is-external=true" title="class or interface in com.google.gson">JsonArray</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#method_33996-com.google.gson.JsonObject-java.lang.String-">method_33996</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html#write-net.minecraft.util.PacketByteBuf-">write</a></span>(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -378,6 +236,59 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="id">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>id</h4>
+<pre>private&nbsp;int id</pre>
+</li>
+</ul>
+<a name="uuid">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>uuid</h4>
+<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a> uuid</pre>
+</li>
+</ul>
+<a name="pos">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>pos</h4>
+<pre>private&nbsp;<a href="../../../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a> pos</pre>
+</li>
+</ul>
+<a name="facing">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>facing</h4>
+<pre>private&nbsp;<a href="../../../../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a> facing</pre>
+</li>
+</ul>
+<a name="field_30971">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>field_30971</h4>
+<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> field_30971</pre>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
@@ -387,10 +298,19 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <a name="PaintingSpawnS2CPacket--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>PaintingSpawnS2CPacket</h4>
 <pre>public&nbsp;PaintingSpawnS2CPacket()</pre>
+</li>
+</ul>
+<a name="PaintingSpawnS2CPacket-net.minecraft.entity.decoration.painting.PaintingEntity-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>PaintingSpawnS2CPacket</h4>
+<pre>public&nbsp;PaintingSpawnS2CPacket(<a href="../../../../../../net/minecraft/entity/decoration/painting/PaintingEntity.html" title="class in net.minecraft.entity.decoration.painting">PaintingEntity</a>&nbsp;paintingEntity)</pre>
 </li>
 </ul>
 </li>
@@ -401,430 +321,99 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_33969-com.google.gson.JsonObject-java.lang.String-">
+<a name="read-net.minecraft.util.PacketByteBuf-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_33969</h4>
-<pre>public static&nbsp;boolean&nbsp;method_33969(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-                                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
+<h4>read</h4>
+<pre>public&nbsp;void&nbsp;read(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)
+          throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/network/Packet.html#read-net.minecraft.util.PacketByteBuf-">read</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_33966-com.google.gson.JsonElement-">
+<a name="write-net.minecraft.util.PacketByteBuf-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_33966</h4>
+<h4>write</h4>
+<pre>public&nbsp;void&nbsp;write(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)
+           throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/network/Packet.html#write-net.minecraft.util.PacketByteBuf-">write</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="apply-net.minecraft.network.listener.ClientPlayPacketListener-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>apply</h4>
+<pre>public&nbsp;void&nbsp;apply(<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&nbsp;clientPlayPacketListener)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/network/Packet.html#apply-T-">apply</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getId--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getId</h4>
 <pre>@Environment(value=CLIENT)
-public static&nbsp;boolean&nbsp;method_33966(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonElement.html?is-external=true" title="class or interface in com.google.gson">JsonElement</a>&nbsp;jsonElement)</pre>
+public&nbsp;int&nbsp;getId()</pre>
 </li>
 </ul>
-<a name="method_33978-com.google.gson.JsonElement-">
+<a name="getPaintingUuid--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_33978</h4>
-<pre>public static&nbsp;boolean&nbsp;method_33978(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonElement.html?is-external=true" title="class or interface in com.google.gson">JsonElement</a>&nbsp;jsonElement)</pre>
-</li>
-</ul>
-<a name="method_33981-com.google.gson.JsonObject-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33981</h4>
+<h4>getPaintingUuid</h4>
 <pre>@Environment(value=CLIENT)
-public static&nbsp;boolean&nbsp;method_33981(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-                                                              <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;getPaintingUuid()</pre>
 </li>
 </ul>
-<a name="method_33983-com.google.gson.JsonObject-java.lang.String-">
+<a name="getPos--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_33983</h4>
-<pre>public static&nbsp;boolean&nbsp;method_33983(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-                                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
+<h4>getPos</h4>
+<pre>@Environment(value=CLIENT)
+public&nbsp;<a href="../../../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;getPos()</pre>
 </li>
 </ul>
-<a name="method_33985-com.google.gson.JsonObject-java.lang.String-">
+<a name="getFacing--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_33985</h4>
-<pre>public static&nbsp;boolean&nbsp;method_33985(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-                                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
+<h4>getFacing</h4>
+<pre>@Environment(value=CLIENT)
+public&nbsp;<a href="../../../../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;getFacing()</pre>
 </li>
 </ul>
-<a name="method_33987-com.google.gson.JsonObject-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33987</h4>
-<pre>public static&nbsp;boolean&nbsp;method_33987(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-                                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
-</li>
-</ul>
-<a name="method_33967-com.google.gson.JsonElement-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33967</h4>
-<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;method_33967(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonElement.html?is-external=true" title="class or interface in com.google.gson">JsonElement</a>&nbsp;jsonElement,
-                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
-</li>
-</ul>
-<a name="method_33988-com.google.gson.JsonObject-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33988</h4>
-<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;method_33988(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
-</li>
-</ul>
-<a name="method_33976-com.google.gson.JsonObject-java.lang.String-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33976</h4>
-<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;method_33976(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string2)</pre>
-</li>
-</ul>
-<a name="method_33979-com.google.gson.JsonElement-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33979</h4>
-<pre>public static&nbsp;<a href="../../../../../../net/minecraft/class_5009.html" title="class in net.minecraft">class_5009</a>&nbsp;method_33979(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonElement.html?is-external=true" title="class or interface in com.google.gson">JsonElement</a>&nbsp;jsonElement,
-                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
-</li>
-</ul>
-<a name="method_33989-com.google.gson.JsonObject-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33989</h4>
-<pre>public static&nbsp;<a href="../../../../../../net/minecraft/class_5009.html" title="class in net.minecraft">class_5009</a>&nbsp;method_33989(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
-</li>
-</ul>
-<a name="method_33980-com.google.gson.JsonElement-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33980</h4>
-<pre>public static&nbsp;boolean&nbsp;method_33980(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonElement.html?is-external=true" title="class or interface in com.google.gson">JsonElement</a>&nbsp;jsonElement,
-                                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
-</li>
-</ul>
-<a name="method_33990-com.google.gson.JsonObject-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33990</h4>
-<pre>public static&nbsp;boolean&nbsp;method_33990(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-                                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
-</li>
-</ul>
-<a name="method_33977-com.google.gson.JsonObject-java.lang.String-boolean-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33977</h4>
-<pre>public static&nbsp;boolean&nbsp;method_33977(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-                                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                                   boolean&nbsp;bool)</pre>
-</li>
-</ul>
-<a name="method_33984-com.google.gson.JsonElement-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33984</h4>
-<pre>public static&nbsp;float&nbsp;method_33984(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonElement.html?is-external=true" title="class or interface in com.google.gson">JsonElement</a>&nbsp;jsonElement,
-                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
-</li>
-</ul>
-<a name="method_33991-com.google.gson.JsonObject-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33991</h4>
-<pre>public static&nbsp;float&nbsp;method_33991(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
-</li>
-</ul>
-<a name="method_33970-com.google.gson.JsonObject-java.lang.String-float-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33970</h4>
-<pre>public static&nbsp;float&nbsp;method_33970(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                                 float&nbsp;float2)</pre>
-</li>
-</ul>
-<a name="method_33986-com.google.gson.JsonElement-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33986</h4>
-<pre>public static&nbsp;int&nbsp;method_33986(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonElement.html?is-external=true" title="class or interface in com.google.gson">JsonElement</a>&nbsp;jsonElement,
-                               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
-</li>
-</ul>
-<a name="method_33994-com.google.gson.JsonObject-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33994</h4>
-<pre>public static&nbsp;int&nbsp;method_33994(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-                               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
-</li>
-</ul>
-<a name="method_33971-com.google.gson.JsonObject-java.lang.String-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33971</h4>
-<pre>public static&nbsp;int&nbsp;method_33971(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-                               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                               int&nbsp;int2)</pre>
-</li>
-</ul>
-<a name="method_33992-com.google.gson.JsonElement-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33992</h4>
-<pre>public static&nbsp;<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;method_33992(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonElement.html?is-external=true" title="class or interface in com.google.gson">JsonElement</a>&nbsp;jsonElement,
-                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
-</li>
-</ul>
-<a name="method_33995-com.google.gson.JsonObject-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33995</h4>
-<pre>public static&nbsp;<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;method_33995(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
-</li>
-</ul>
-<a name="method_33974-com.google.gson.JsonObject-java.lang.String-com.google.gson.JsonObject-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33974</h4>
-<pre>public static&nbsp;<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;method_33974(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                                      <a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject2)</pre>
-</li>
-</ul>
-<a name="method_33993-com.google.gson.JsonElement-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33993</h4>
-<pre>public static&nbsp;<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonArray.html?is-external=true" title="class or interface in com.google.gson">JsonArray</a>&nbsp;method_33993(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonElement.html?is-external=true" title="class or interface in com.google.gson">JsonElement</a>&nbsp;jsonElement,
-                                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
-</li>
-</ul>
-<a name="method_33996-com.google.gson.JsonObject-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33996</h4>
-<pre>public static&nbsp;<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonArray.html?is-external=true" title="class or interface in com.google.gson">JsonArray</a>&nbsp;method_33996(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-                                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
-</li>
-</ul>
-<a name="method_33972-com.google.gson.JsonObject-java.lang.String-com.google.gson.JsonArray-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33972</h4>
-<pre>public static&nbsp;<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonArray.html?is-external=true" title="class or interface in com.google.gson">JsonArray</a>&nbsp;method_33972(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-                                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                                     <a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-                                     <a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonArray.html?is-external=true" title="class or interface in com.google.gson">JsonArray</a>&nbsp;jsonArray)</pre>
-</li>
-</ul>
-<a name="method_33968-com.google.gson.JsonElement-java.lang.String-com.google.gson.JsonDeserializationContext-java.lang.Class-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33968</h4>
-<pre>public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;method_33968(<a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-                                 <a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonElement.html?is-external=true" title="class or interface in com.google.gson">JsonElement</a>&nbsp;jsonElement,
-                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                                 <a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonDeserializationContext.html?is-external=true" title="class or interface in com.google.gson">JsonDeserializationContext</a>&nbsp;jsonDeserializationContext,
-                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends T&gt;&nbsp;class2)</pre>
-</li>
-</ul>
-<a name="method_33973-com.google.gson.JsonObject-java.lang.String-com.google.gson.JsonDeserializationContext-java.lang.Class-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33973</h4>
-<pre>public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;method_33973(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                                 <a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonDeserializationContext.html?is-external=true" title="class or interface in com.google.gson">JsonDeserializationContext</a>&nbsp;jsonDeserializationContext,
-                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends T&gt;&nbsp;class2)</pre>
-</li>
-</ul>
-<a name="method_33975-com.google.gson.JsonObject-java.lang.String-java.lang.Object-com.google.gson.JsonDeserializationContext-java.lang.Class-">
-<!--   -->
-</a><a name="method_33975-com.google.gson.JsonObject-java.lang.String-T-com.google.gson.JsonDeserializationContext-java.lang.Class-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33975</h4>
-<pre>public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;method_33975(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject,
-                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                                 T&nbsp;t,
-                                 <a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonDeserializationContext.html?is-external=true" title="class or interface in com.google.gson">JsonDeserializationContext</a>&nbsp;jsonDeserializationContext,
-                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends T&gt;&nbsp;class2)</pre>
-</li>
-</ul>
-<a name="method_33982-com.google.gson.JsonElement-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33982</h4>
-<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;method_33982(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonElement.html?is-external=true" title="class or interface in com.google.gson">JsonElement</a>&nbsp;jsonElement)</pre>
-</li>
-</ul>
-<a name="method_33959-com.google.gson.Gson-java.io.Reader-java.lang.Class-boolean-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33959</h4>
-<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;method_33959(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/Gson.html?is-external=true" title="class or interface in com.google.gson">Gson</a>&nbsp;gson,
-                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Reader.html?is-external=true" title="class or interface in java.io">Reader</a>&nbsp;reader,
-                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;class2,
-                                           boolean&nbsp;bool)</pre>
-</li>
-</ul>
-<a name="method_33961-com.google.gson.Gson-java.io.Reader-java.lang.reflect.Type-boolean-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33961</h4>
-<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;method_33961(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/Gson.html?is-external=true" title="class or interface in com.google.gson">Gson</a>&nbsp;gson,
-                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Reader.html?is-external=true" title="class or interface in java.io">Reader</a>&nbsp;reader,
-                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</a>&nbsp;type,
-                                           boolean&nbsp;bool)</pre>
-</li>
-</ul>
-<a name="method_33965-com.google.gson.Gson-java.lang.String-java.lang.reflect.Type-boolean-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33965</h4>
-<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;method_33965(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/Gson.html?is-external=true" title="class or interface in com.google.gson">Gson</a>&nbsp;gson,
-                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</a>&nbsp;type,
-                                           boolean&nbsp;bool)</pre>
-</li>
-</ul>
-<a name="method_33963-com.google.gson.Gson-java.lang.String-java.lang.Class-boolean-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33963</h4>
-<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;method_33963(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/Gson.html?is-external=true" title="class or interface in com.google.gson">Gson</a>&nbsp;gson,
-                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;class2,
-                                           boolean&nbsp;bool)</pre>
-</li>
-</ul>
-<a name="method_33960-com.google.gson.Gson-java.io.Reader-java.lang.reflect.Type-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33960</h4>
-<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;method_33960(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/Gson.html?is-external=true" title="class or interface in com.google.gson">Gson</a>&nbsp;gson,
-                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Reader.html?is-external=true" title="class or interface in java.io">Reader</a>&nbsp;reader,
-                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</a>&nbsp;type)</pre>
-</li>
-</ul>
-<a name="method_33964-com.google.gson.Gson-java.lang.String-java.lang.reflect.Type-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33964</h4>
-<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;method_33964(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/Gson.html?is-external=true" title="class or interface in com.google.gson">Gson</a>&nbsp;gson,
-                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</a>&nbsp;type)</pre>
-</li>
-</ul>
-<a name="method_33958-com.google.gson.Gson-java.io.Reader-java.lang.Class-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33958</h4>
-<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;method_33958(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/Gson.html?is-external=true" title="class or interface in com.google.gson">Gson</a>&nbsp;gson,
-                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Reader.html?is-external=true" title="class or interface in java.io">Reader</a>&nbsp;reader,
-                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;class2)</pre>
-</li>
-</ul>
-<a name="method_33962-com.google.gson.Gson-java.lang.String-java.lang.Class-">
+<a name="method_32499--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_33962</h4>
-<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;method_33962(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/Gson.html?is-external=true" title="class or interface in com.google.gson">Gson</a>&nbsp;gson,
-                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;class2)</pre>
+<h4>method_32499</h4>
+<pre>@Environment(value=CLIENT)
+public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;method_32499()</pre>
 </li>
 </ul>
 </li>
@@ -854,7 +443,7 @@ public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;method_33962(<a href="https://www.javad
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../../net/minecraft/network/packet/s2c/play/OpenWrittenBookS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../../net/minecraft/network/packet/s2c/play/OpenContainerS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -880,13 +469,13 @@ public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;method_33962(<a href="https://www.javad
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>

@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../net/minecraft/entity/ai/goal/MoveIntoWaterGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../net/minecraft/entity/ai/goal/MoveToRaidCenterGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/entity/ai/goal/MeleeAttackGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/entity/ai/goal/MoveToTargetPosGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?net/minecraft/entity/ai/goal/MoveThroughVillageGoal.html" target="_top">Frames</a></li>
@@ -74,13 +74,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.net.minecraft.entity.ai.goal.MoveToTargetPosGoal">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -99,15 +99,10 @@ var activeTableTab = "activeTableTab";
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../../net/minecraft/class_5749.html" title="class in net.minecraft">net.minecraft.class_5749</a></li>
-<li>
-<ul class="inheritance">
-<li><a href="../../../../../net/minecraft/entity/ai/goal/MoveToTargetPosGoal.html" title="class in net.minecraft.entity.ai.goal">net.minecraft.entity.ai.goal.MoveToTargetPosGoal</a></li>
+<li><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal">net.minecraft.entity.ai.goal.Goal</a></li>
 <li>
 <ul class="inheritance">
 <li>net.minecraft.entity.ai.goal.MoveThroughVillageGoal</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -118,9 +113,8 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>@Environment(value=CLIENT)
-public class <span class="typeNameLabel">MoveThroughVillageGoal</span>
-extends <a href="../../../../../net/minecraft/entity/ai/goal/MoveToTargetPosGoal.html" title="class in net.minecraft.entity.ai.goal">MoveToTargetPosGoal</a></pre>
+<pre>public class <span class="typeNameLabel">MoveThroughVillageGoal</span>
+extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</a></pre>
 </li>
 </ul>
 </div>
@@ -133,20 +127,37 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/MoveToTargetPosGoal
 <!--   -->
 </a>
 <h3>Field Summary</h3>
-<ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.entity.ai.goal.MoveToTargetPosGoal">
-<!--   -->
-</a>
-<h3>Fields inherited from class&nbsp;net.minecraft.entity.ai.goal.<a href="../../../../../net/minecraft/entity/ai/goal/MoveToTargetPosGoal.html" title="class in net.minecraft.entity.ai.goal">MoveToTargetPosGoal</a></h3>
-<code><a href="../../../../../net/minecraft/entity/ai/goal/MoveToTargetPosGoal.html#field_28418">field_28418</a>, <a href="../../../../../net/minecraft/entity/ai/goal/MoveToTargetPosGoal.html#field_28419">field_28419</a>, <a href="../../../../../net/minecraft/entity/ai/goal/MoveToTargetPosGoal.html#field_28420">field_28420</a>, <a href="../../../../../net/minecraft/entity/ai/goal/MoveToTargetPosGoal.html#field_28421">field_28421</a>, <a href="../../../../../net/minecraft/entity/ai/goal/MoveToTargetPosGoal.html#field_28422">field_28422</a>, <a href="../../../../../net/minecraft/entity/ai/goal/MoveToTargetPosGoal.html#field_28423">field_28423</a>, <a href="../../../../../net/minecraft/entity/ai/goal/MoveToTargetPosGoal.html#field_28424">field_28424</a>, <a href="../../../../../net/minecraft/entity/ai/goal/MoveToTargetPosGoal.html#field_28425">field_28425</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.class_5749">
-<!--   -->
-</a>
-<h3>Fields inherited from class&nbsp;net.minecraft.<a href="../../../../../net/minecraft/class_5749.html" title="class in net.minecraft">class_5749</a></h3>
-<code><a href="../../../../../net/minecraft/class_5749.html#field_28375">field_28375</a>, <a href="../../../../../net/minecraft/class_5749.html#field_28376">field_28376</a>, <a href="../../../../../net/minecraft/class_5749.html#field_28377">field_28377</a>, <a href="../../../../../net/minecraft/class_5749.html#field_28378">field_28378</a>, <a href="../../../../../net/minecraft/class_5749.html#field_28379">field_28379</a>, <a href="../../../../../net/minecraft/class_5749.html#field_28380">field_28380</a></code></li>
-</ul>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="../../../../../net/minecraft/class_4209.html" title="class in net.minecraft">class_4209</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/MoveThroughVillageGoal.html#field_33454">field_33454</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="../../../../../net/minecraft/entity/mob/MobEntityWithAi.html" title="class in net.minecraft.entity.mob">MobEntityWithAi</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/MoveThroughVillageGoal.html#mob">mob</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/MoveThroughVillageGoal.html#requiresNighttime">requiresNighttime</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/MoveThroughVillageGoal.html#speed">speed</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="../../../../../net/minecraft/entity/ai/pathing/Path.html" title="class in net.minecraft.entity.ai.pathing">Path</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/MoveThroughVillageGoal.html#targetPath">targetPath</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../net/minecraft/class_4209.html" title="class in net.minecraft">class_4209</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/MoveThroughVillageGoal.html#visitedTargets">visitedTargets</a></span></code>&nbsp;</td>
+</tr>
+</table>
 </li>
 </ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -161,7 +172,9 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/MoveToTargetPosGoal
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/MoveThroughVillageGoal.html#MoveThroughVillageGoal--">MoveThroughVillageGoal</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/MoveThroughVillageGoal.html#MoveThroughVillageGoal-net.minecraft.entity.mob.MobEntityWithAi-double-boolean-">MoveThroughVillageGoal</a></span>(<a href="../../../../../net/minecraft/entity/mob/MobEntityWithAi.html" title="class in net.minecraft.entity.mob">MobEntityWithAi</a>&nbsp;mob,
+                      double&nbsp;speed,
+                      boolean&nbsp;requiresNighttime)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -179,32 +192,40 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/MoveToTargetPosGoal
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/MoveThroughVillageGoal.html#method_29874-float-float-float-float-float-float-net.minecraft.command.arguments.ScoreboardSlotArgumentType-">method_29874</a></span>(float&nbsp;float2,
-            float&nbsp;float3,
-            float&nbsp;float4,
-            float&nbsp;float5,
-            float&nbsp;float6,
-            float&nbsp;float7,
-            <a href="../../../../../net/minecraft/command/arguments/ScoreboardSlotArgumentType.html" title="class in net.minecraft.command.arguments">ScoreboardSlotArgumentType</a>&nbsp;scoreboardSlotArgumentType)</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/MoveThroughVillageGoal.html#canStart--">canStart</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>private void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/MoveThroughVillageGoal.html#forgetOldTarget--">forgetOldTarget</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>private <a href="../../../../../net/minecraft/class_4209.html" title="class in net.minecraft">class_4209</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/MoveThroughVillageGoal.html#method_34961-net.minecraft.class_2792-">method_34961</a></span>(<a href="../../../../../net/minecraft/class_2792.html" title="class in net.minecraft">class_2792</a>&nbsp;class_2792)</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/MoveThroughVillageGoal.html#shouldContinue--">shouldContinue</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/MoveThroughVillageGoal.html#shouldVisit-net.minecraft.class_4209-">shouldVisit</a></span>(<a href="../../../../../net/minecraft/class_4209.html" title="class in net.minecraft">class_4209</a>&nbsp;pos)</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/MoveThroughVillageGoal.html#method_29880-net.minecraft.command.arguments.ScoreboardSlotArgumentType-float-float-float-float-float-float-">method_29880</a></span>(<a href="../../../../../net/minecraft/command/arguments/ScoreboardSlotArgumentType.html" title="class in net.minecraft.command.arguments">ScoreboardSlotArgumentType</a>&nbsp;scoreboardSlotArgumentType,
-            float&nbsp;float2,
-            float&nbsp;float3,
-            float&nbsp;float4,
-            float&nbsp;float5,
-            float&nbsp;float6,
-            float&nbsp;float7)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/MoveThroughVillageGoal.html#start--">start</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/MoveThroughVillageGoal.html#stop--">stop</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.class_5749">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.entity.ai.goal.Goal">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;net.minecraft.<a href="../../../../../net/minecraft/class_5749.html" title="class in net.minecraft">class_5749</a></h3>
-<code><a href="../../../../../net/minecraft/class_5749.html#method_29875-net.minecraft.class_5749-">method_29875</a>, <a href="../../../../../net/minecraft/class_5749.html#method_29876-net.minecraft.entity.ai.goal.RaidGoal-net.minecraft.entity.ai.goal.RaidGoal-">method_29876</a>, <a href="../../../../../net/minecraft/class_5749.html#method_29877-java.lang.String-">method_29877</a>, <a href="../../../../../net/minecraft/class_5749.html#method_29878-java.lang.String-int-int-">method_29878</a>, <a href="../../../../../net/minecraft/class_5749.html#method_29879-java.util.Random-">method_29879</a>, <a href="../../../../../net/minecraft/class_5749.html#method_29881-net.minecraft.command.arguments.PosArgument-float-float-float-">method_29881</a></code></li>
+<h3>Methods inherited from class&nbsp;net.minecraft.entity.ai.goal.<a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</a></h3>
+<code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#canStop--">canStop</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_34938-int-">method_34938</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_34944--">method_34944</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#tick--">tick</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -221,19 +242,83 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/MoveToTargetPosGoal
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="mob">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mob</h4>
+<pre>private final&nbsp;<a href="../../../../../net/minecraft/entity/mob/MobEntityWithAi.html" title="class in net.minecraft.entity.mob">MobEntityWithAi</a> mob</pre>
+</li>
+</ul>
+<a name="speed">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>speed</h4>
+<pre>private final&nbsp;double speed</pre>
+</li>
+</ul>
+<a name="targetPath">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>targetPath</h4>
+<pre>private&nbsp;<a href="../../../../../net/minecraft/entity/ai/pathing/Path.html" title="class in net.minecraft.entity.ai.pathing">Path</a> targetPath</pre>
+</li>
+</ul>
+<a name="field_33454">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>field_33454</h4>
+<pre>private&nbsp;<a href="../../../../../net/minecraft/class_4209.html" title="class in net.minecraft">class_4209</a> field_33454</pre>
+</li>
+</ul>
+<a name="requiresNighttime">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>requiresNighttime</h4>
+<pre>private final&nbsp;boolean requiresNighttime</pre>
+</li>
+</ul>
+<a name="visitedTargets">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>visitedTargets</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../net/minecraft/class_4209.html" title="class in net.minecraft">class_4209</a>&gt; visitedTargets</pre>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MoveThroughVillageGoal--">
+<a name="MoveThroughVillageGoal-net.minecraft.entity.mob.MobEntityWithAi-double-boolean-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MoveThroughVillageGoal</h4>
-<pre>public&nbsp;MoveThroughVillageGoal()</pre>
+<pre>public&nbsp;MoveThroughVillageGoal(<a href="../../../../../net/minecraft/entity/mob/MobEntityWithAi.html" title="class in net.minecraft.entity.mob">MobEntityWithAi</a>&nbsp;mob,
+                              double&nbsp;speed,
+                              boolean&nbsp;requiresNighttime)</pre>
 </li>
 </ul>
 </li>
@@ -244,42 +329,83 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/MoveToTargetPosGoal
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_29880-net.minecraft.command.arguments.ScoreboardSlotArgumentType-float-float-float-float-float-float-">
+<a name="canStart--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_29880</h4>
-<pre>public&nbsp;void&nbsp;method_29880(<a href="../../../../../net/minecraft/command/arguments/ScoreboardSlotArgumentType.html" title="class in net.minecraft.command.arguments">ScoreboardSlotArgumentType</a>&nbsp;scoreboardSlotArgumentType,
-                         float&nbsp;float2,
-                         float&nbsp;float3,
-                         float&nbsp;float4,
-                         float&nbsp;float5,
-                         float&nbsp;float6,
-                         float&nbsp;float7)</pre>
+<h4>canStart</h4>
+<pre>public&nbsp;boolean&nbsp;canStart()</pre>
 <dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../net/minecraft/entity/ai/goal/MoveToTargetPosGoal.html#method_29880-net.minecraft.command.arguments.ScoreboardSlotArgumentType-float-float-float-float-float-float-">method_29880</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../net/minecraft/entity/ai/goal/MoveToTargetPosGoal.html" title="class in net.minecraft.entity.ai.goal">MoveToTargetPosGoal</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#canStart--">canStart</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_29874-float-float-float-float-float-float-net.minecraft.command.arguments.ScoreboardSlotArgumentType-">
+<a name="shouldContinue--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>shouldContinue</h4>
+<pre>public&nbsp;boolean&nbsp;shouldContinue()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#shouldContinue--">shouldContinue</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="start--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>start</h4>
+<pre>public&nbsp;void&nbsp;start()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#start--">start</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="stop--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>stop</h4>
+<pre>public&nbsp;void&nbsp;stop()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#stop--">stop</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="method_34961-net.minecraft.class_2792-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_34961</h4>
+<pre>private&nbsp;<a href="../../../../../net/minecraft/class_4209.html" title="class in net.minecraft">class_4209</a>&nbsp;method_34961(<a href="../../../../../net/minecraft/class_2792.html" title="class in net.minecraft">class_2792</a>&nbsp;class_2792)</pre>
+</li>
+</ul>
+<a name="shouldVisit-net.minecraft.class_4209-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>shouldVisit</h4>
+<pre>private&nbsp;boolean&nbsp;shouldVisit(<a href="../../../../../net/minecraft/class_4209.html" title="class in net.minecraft">class_4209</a>&nbsp;pos)</pre>
+</li>
+</ul>
+<a name="forgetOldTarget--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_29874</h4>
-<pre>public&nbsp;void&nbsp;method_29874(float&nbsp;float2,
-                         float&nbsp;float3,
-                         float&nbsp;float4,
-                         float&nbsp;float5,
-                         float&nbsp;float6,
-                         float&nbsp;float7,
-                         <a href="../../../../../net/minecraft/command/arguments/ScoreboardSlotArgumentType.html" title="class in net.minecraft.command.arguments">ScoreboardSlotArgumentType</a>&nbsp;scoreboardSlotArgumentType)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../net/minecraft/entity/ai/goal/MoveToTargetPosGoal.html#method_29874-float-float-float-float-float-float-net.minecraft.command.arguments.ScoreboardSlotArgumentType-">method_29874</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../net/minecraft/entity/ai/goal/MoveToTargetPosGoal.html" title="class in net.minecraft.entity.ai.goal">MoveToTargetPosGoal</a></code></dd>
-</dl>
+<h4>forgetOldTarget</h4>
+<pre>private&nbsp;void&nbsp;forgetOldTarget()</pre>
 </li>
 </ul>
 </li>
@@ -309,8 +435,8 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/MoveToTargetPosGoal
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../net/minecraft/entity/ai/goal/MoveIntoWaterGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../net/minecraft/entity/ai/goal/MoveToRaidCenterGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/entity/ai/goal/MeleeAttackGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/entity/ai/goal/MoveToTargetPosGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?net/minecraft/entity/ai/goal/MoveThroughVillageGoal.html" target="_top">Frames</a></li>
@@ -335,13 +461,13 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/MoveToTargetPosGoal
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.net.minecraft.entity.ai.goal.MoveToTargetPosGoal">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
