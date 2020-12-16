@@ -161,16 +161,16 @@ extends <a href="../../../../../../net/minecraft/client/gui/screen/ingame/Contai
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/client/gui/screen/ingame/EnchantingScreen.html#bookModel">bookModel</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../../../../net/minecraft/entity/player/PlayerInventory.html" title="class in net.minecraft.entity.player">PlayerInventory</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/client/gui/screen/ingame/EnchantingScreen.html#field_27853">field_27853</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../../../../net/minecraft/container/EnchantingTableContainer.html" title="class in net.minecraft.container">EnchantingTableContainer</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/client/gui/screen/ingame/EnchantingScreen.html#enchantingContainer">enchantingContainer</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../../../net/minecraft/container/EnchantingTableContainer.html" title="class in net.minecraft.container">EnchantingTableContainer</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/client/gui/screen/ingame/EnchantingScreen.html#field_27855">field_27855</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../../../../net/minecraft/entity/player/PlayerInventory.html" title="class in net.minecraft.entity.player">PlayerInventory</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/client/gui/screen/ingame/EnchantingScreen.html#inventory">inventory</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private <a href="../../../../../../net/minecraft/util/Nameable.html" title="interface in net.minecraft.util">Nameable</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/client/gui/screen/ingame/EnchantingScreen.html#field_27857">field_27857</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/client/gui/screen/ingame/EnchantingScreen.html#name">name</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>float</code></td>
@@ -214,7 +214,7 @@ extends <a href="../../../../../../net/minecraft/client/gui/screen/ingame/Contai
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.client.gui.screen.ingame.<a href="../../../../../../net/minecraft/client/gui/screen/ingame/ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></h3>
-<code><a href="../../../../../../net/minecraft/client/gui/screen/ingame/ContainerScreen.html#BACKGROUND_TEXTURE">BACKGROUND_TEXTURE</a>, <a href="../../../../../../net/minecraft/client/gui/screen/ingame/ContainerScreen.html#containerHeight">containerHeight</a>, <a href="../../../../../../net/minecraft/client/gui/screen/ingame/ContainerScreen.html#containerWidth">containerWidth</a>, <a href="../../../../../../net/minecraft/client/gui/screen/ingame/ContainerScreen.html#cursorDragSlots">cursorDragSlots</a>, <a href="../../../../../../net/minecraft/client/gui/screen/ingame/ContainerScreen.html#field_27746">field_27746</a>, <a href="../../../../../../net/minecraft/client/gui/screen/ingame/ContainerScreen.html#isCursorDragging">isCursorDragging</a>, <a href="../../../../../../net/minecraft/client/gui/screen/ingame/ContainerScreen.html#x">x</a>, <a href="../../../../../../net/minecraft/client/gui/screen/ingame/ContainerScreen.html#y">y</a></code></li>
+<code><a href="../../../../../../net/minecraft/client/gui/screen/ingame/ContainerScreen.html#BACKGROUND_TEXTURE">BACKGROUND_TEXTURE</a>, <a href="../../../../../../net/minecraft/client/gui/screen/ingame/ContainerScreen.html#container">container</a>, <a href="../../../../../../net/minecraft/client/gui/screen/ingame/ContainerScreen.html#containerHeight">containerHeight</a>, <a href="../../../../../../net/minecraft/client/gui/screen/ingame/ContainerScreen.html#containerWidth">containerWidth</a>, <a href="../../../../../../net/minecraft/client/gui/screen/ingame/ContainerScreen.html#cursorDragSlots">cursorDragSlots</a>, <a href="../../../../../../net/minecraft/client/gui/screen/ingame/ContainerScreen.html#isCursorDragging">isCursorDragging</a>, <a href="../../../../../../net/minecraft/client/gui/screen/ingame/ContainerScreen.html#x">x</a>, <a href="../../../../../../net/minecraft/client/gui/screen/ingame/ContainerScreen.html#y">y</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.net.minecraft.client.gui.screen.Screen">
@@ -244,7 +244,7 @@ extends <a href="../../../../../../net/minecraft/client/gui/screen/ingame/Contai
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/client/gui/screen/ingame/EnchantingScreen.html#EnchantingScreen-net.minecraft.entity.player.PlayerInventory-net.minecraft.world.World-net.minecraft.util.Nameable-">EnchantingScreen</a></span>(<a href="../../../../../../net/minecraft/entity/player/PlayerInventory.html" title="class in net.minecraft.entity.player">PlayerInventory</a>&nbsp;playerInventory,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/client/gui/screen/ingame/EnchantingScreen.html#EnchantingScreen-net.minecraft.entity.player.PlayerInventory-net.minecraft.world.World-net.minecraft.util.Nameable-">EnchantingScreen</a></span>(<a href="../../../../../../net/minecraft/entity/player/PlayerInventory.html" title="class in net.minecraft.entity.player">PlayerInventory</a>&nbsp;inventory,
                 <a href="../../../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
                 <a href="../../../../../../net/minecraft/util/Nameable.html" title="interface in net.minecraft.util">Nameable</a>&nbsp;title)</code>&nbsp;</td>
 </tr>
@@ -292,7 +292,7 @@ extends <a href="../../../../../../net/minecraft/client/gui/screen/ingame/Contai
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/client/gui/screen/ingame/EnchantingScreen.html#method_29423--">method_29423</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/client/gui/screen/ingame/EnchantingScreen.html#tick--">tick</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -364,13 +364,13 @@ extends <a href="../../../../../../net/minecraft/client/gui/screen/ingame/Contai
 <pre>private static final&nbsp;<a href="../../../../../../net/minecraft/client/render/entity/model/BookModel.html" title="class in net.minecraft.client.render.entity.model">BookModel</a> bookModel</pre>
 </li>
 </ul>
-<a name="field_27853">
+<a name="inventory">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_27853</h4>
-<pre>private final&nbsp;<a href="../../../../../../net/minecraft/entity/player/PlayerInventory.html" title="class in net.minecraft.entity.player">PlayerInventory</a> field_27853</pre>
+<h4>inventory</h4>
+<pre>private final&nbsp;<a href="../../../../../../net/minecraft/entity/player/PlayerInventory.html" title="class in net.minecraft.entity.player">PlayerInventory</a> inventory</pre>
 </li>
 </ul>
 <a name="random">
@@ -382,13 +382,13 @@ extends <a href="../../../../../../net/minecraft/client/gui/screen/ingame/Contai
 <pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util">Random</a> random</pre>
 </li>
 </ul>
-<a name="field_27855">
+<a name="enchantingContainer">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_27855</h4>
-<pre>private final&nbsp;<a href="../../../../../../net/minecraft/container/EnchantingTableContainer.html" title="class in net.minecraft.container">EnchantingTableContainer</a> field_27855</pre>
+<h4>enchantingContainer</h4>
+<pre>private final&nbsp;<a href="../../../../../../net/minecraft/container/EnchantingTableContainer.html" title="class in net.minecraft.container">EnchantingTableContainer</a> enchantingContainer</pre>
 </li>
 </ul>
 <a name="ticks">
@@ -463,13 +463,13 @@ extends <a href="../../../../../../net/minecraft/client/gui/screen/ingame/Contai
 <pre>private&nbsp;<a href="../../../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a> stack</pre>
 </li>
 </ul>
-<a name="field_27857">
+<a name="name">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_27857</h4>
-<pre>private final&nbsp;<a href="../../../../../../net/minecraft/util/Nameable.html" title="interface in net.minecraft.util">Nameable</a> field_27857</pre>
+<h4>name</h4>
+<pre>private final&nbsp;<a href="../../../../../../net/minecraft/util/Nameable.html" title="interface in net.minecraft.util">Nameable</a> name</pre>
 </li>
 </ul>
 </li>
@@ -486,7 +486,7 @@ extends <a href="../../../../../../net/minecraft/client/gui/screen/ingame/Contai
 <ul class="blockListLast">
 <li class="blockList">
 <h4>EnchantingScreen</h4>
-<pre>public&nbsp;EnchantingScreen(<a href="../../../../../../net/minecraft/entity/player/PlayerInventory.html" title="class in net.minecraft.entity.player">PlayerInventory</a>&nbsp;playerInventory,
+<pre>public&nbsp;EnchantingScreen(<a href="../../../../../../net/minecraft/entity/player/PlayerInventory.html" title="class in net.minecraft.entity.player">PlayerInventory</a>&nbsp;inventory,
                         <a href="../../../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
                         <a href="../../../../../../net/minecraft/util/Nameable.html" title="interface in net.minecraft.util">Nameable</a>&nbsp;title)</pre>
 </li>
@@ -513,16 +513,16 @@ extends <a href="../../../../../../net/minecraft/client/gui/screen/ingame/Contai
 </dl>
 </li>
 </ul>
-<a name="method_29423--">
+<a name="tick--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_29423</h4>
-<pre>public&nbsp;void&nbsp;method_29423()</pre>
+<h4>tick</h4>
+<pre>public&nbsp;void&nbsp;tick()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../net/minecraft/client/gui/screen/ingame/ContainerScreen.html#method_29423--">method_29423</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../net/minecraft/client/gui/screen/ingame/ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></code></dd>
+<dd><code><a href="../../../../../../net/minecraft/client/gui/screen/ingame/ContainerScreen.html#tick--">tick</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../net/minecraft/client/gui/screen/ingame/ContainerScreen.html" title="class in net.minecraft.client.gui.screen.ingame">ContainerScreen</a></code></dd>
 </dl>
 </li>
 </ul>

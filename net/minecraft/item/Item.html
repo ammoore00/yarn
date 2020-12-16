@@ -309,8 +309,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/Item.html#getMiningSpeed-net.minecraft.item.ItemStack-net.minecraft.state.State-">getMiningSpeed</a></span>(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
-              <a href="../../../net/minecraft/state/State.html" title="interface in net.minecraft.state">State</a>&nbsp;state)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/Item.html#getMiningSpeed-net.minecraft.item.ItemStack-net.minecraft.block.BlockState-">getMiningSpeed</a></span>(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
+              <a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState)</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="https://guava.dev/releases/21.0/api/docs/com/google/common/collect/Multimap.html?is-external=true" title="class or interface in com.google.common.collect">Multimap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../net/minecraft/entity/attribute/EntityAttributeModifier.html" title="class in net.minecraft.entity.attribute">EntityAttributeModifier</a>&gt;</code></td>
@@ -378,7 +378,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i28" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/Item.html#isEffectiveOn-net.minecraft.state.State-">isEffectiveOn</a></span>(<a href="../../../net/minecraft/state/State.html" title="interface in net.minecraft.state">State</a>&nbsp;state)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/Item.html#isEffectiveOn-net.minecraft.block.BlockState-">isEffectiveOn</a></span>(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState)</code>&nbsp;</td>
 </tr>
 <tr id="i29" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
@@ -494,9 +494,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i54" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/Item.html#postMine-net.minecraft.item.ItemStack-net.minecraft.world.World-net.minecraft.state.State-net.minecraft.util.math.BlockPos-net.minecraft.entity.LivingEntity-">postMine</a></span>(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/Item.html#postMine-net.minecraft.item.ItemStack-net.minecraft.world.World-net.minecraft.block.BlockState-net.minecraft.util.math.BlockPos-net.minecraft.entity.LivingEntity-">postMine</a></span>(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
         <a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-        <a href="../../../net/minecraft/state/State.html" title="interface in net.minecraft.state">State</a>&nbsp;state,
+        <a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState,
         <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
         <a href="../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;miner)</code>&nbsp;</td>
 </tr>
@@ -840,14 +840,14 @@ public&nbsp;boolean&nbsp;hasPropertyGetters()</pre>
                                float&nbsp;float4)</pre>
 </li>
 </ul>
-<a name="getMiningSpeed-net.minecraft.item.ItemStack-net.minecraft.state.State-">
+<a name="getMiningSpeed-net.minecraft.item.ItemStack-net.minecraft.block.BlockState-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getMiningSpeed</h4>
 <pre>public&nbsp;float&nbsp;getMiningSpeed(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
-                            <a href="../../../net/minecraft/state/State.html" title="interface in net.minecraft.state">State</a>&nbsp;state)</pre>
+                            <a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState)</pre>
 </li>
 </ul>
 <a name="use-net.minecraft.world.World-net.minecraft.entity.player.PlayerEntity-net.minecraft.util.Hand-">
@@ -946,7 +946,7 @@ public&nbsp;boolean&nbsp;hasPropertyGetters()</pre>
                        <a href="../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;attacker)</pre>
 </li>
 </ul>
-<a name="postMine-net.minecraft.item.ItemStack-net.minecraft.world.World-net.minecraft.state.State-net.minecraft.util.math.BlockPos-net.minecraft.entity.LivingEntity-">
+<a name="postMine-net.minecraft.item.ItemStack-net.minecraft.world.World-net.minecraft.block.BlockState-net.minecraft.util.math.BlockPos-net.minecraft.entity.LivingEntity-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -954,18 +954,18 @@ public&nbsp;boolean&nbsp;hasPropertyGetters()</pre>
 <h4>postMine</h4>
 <pre>public&nbsp;boolean&nbsp;postMine(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
                         <a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-                        <a href="../../../net/minecraft/state/State.html" title="interface in net.minecraft.state">State</a>&nbsp;state,
+                        <a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState,
                         <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
                         <a href="../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;miner)</pre>
 </li>
 </ul>
-<a name="isEffectiveOn-net.minecraft.state.State-">
+<a name="isEffectiveOn-net.minecraft.block.BlockState-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>isEffectiveOn</h4>
-<pre>public&nbsp;boolean&nbsp;isEffectiveOn(<a href="../../../net/minecraft/state/State.html" title="interface in net.minecraft.state">State</a>&nbsp;state)</pre>
+<pre>public&nbsp;boolean&nbsp;isEffectiveOn(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState)</pre>
 </li>
 </ul>
 <a name="useOnEntity-net.minecraft.item.ItemStack-net.minecraft.entity.player.PlayerEntity-net.minecraft.entity.LivingEntity-net.minecraft.util.Hand-">
