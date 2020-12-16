@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
+var methods = {"i0":10,"i1":10,"i2":9,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -204,7 +204,7 @@ extends <a href="../../../../../net/minecraft/client/gui/screen/Screen.html" tit
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.client.gui.screen.<a href="../../../../../net/minecraft/client/gui/screen/Screen.html" title="class in net.minecraft.client.gui.screen">Screen</a></h3>
-<code><a href="../../../../../net/minecraft/client/gui/screen/Screen.html#field_27532">field_27532</a>, <a href="../../../../../net/minecraft/client/gui/screen/Screen.html#field_27533">field_27533</a>, <a href="../../../../../net/minecraft/client/gui/screen/Screen.html#field_27534">field_27534</a>, <a href="../../../../../net/minecraft/client/gui/screen/Screen.html#field_27535">field_27535</a>, <a href="../../../../../net/minecraft/client/gui/screen/Screen.html#field_27536">field_27536</a>, <a href="../../../../../net/minecraft/client/gui/screen/Screen.html#field_27537">field_27537</a>, <a href="../../../../../net/minecraft/client/gui/screen/Screen.html#field_27538">field_27538</a>, <a href="../../../../../net/minecraft/client/gui/screen/Screen.html#field_27539">field_27539</a>, <a href="../../../../../net/minecraft/client/gui/screen/Screen.html#field_27540">field_27540</a></code></li>
+<code><a href="../../../../../net/minecraft/client/gui/screen/Screen.html#client">client</a>, <a href="../../../../../net/minecraft/client/gui/screen/Screen.html#field_27534">field_27534</a>, <a href="../../../../../net/minecraft/client/gui/screen/Screen.html#field_27535">field_27535</a>, <a href="../../../../../net/minecraft/client/gui/screen/Screen.html#field_27536">field_27536</a>, <a href="../../../../../net/minecraft/client/gui/screen/Screen.html#field_27537">field_27537</a>, <a href="../../../../../net/minecraft/client/gui/screen/Screen.html#field_27538">field_27538</a>, <a href="../../../../../net/minecraft/client/gui/screen/Screen.html#field_27539">field_27539</a>, <a href="../../../../../net/minecraft/client/gui/screen/Screen.html#field_27540">field_27540</a>, <a href="../../../../../net/minecraft/client/gui/screen/Screen.html#itemRenderer">itemRenderer</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.net.minecraft.client.gui.DrawableHelper">
@@ -246,9 +246,13 @@ extends <a href="../../../../../net/minecraft/client/gui/screen/Screen.html" tit
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/screen/PresetsScreen.html#method_29383--">method_29383</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/screen/PresetsScreen.html#init--">init</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/screen/PresetsScreen.html#method_29383--">method_29383</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>private static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/screen/PresetsScreen.html#method_29385-java.lang.String-net.minecraft.item.Item-int-net.minecraft.world.biome.Biome-java.util.List-net.minecraft.world.gen.chunk.FlatChunkGeneratorLayer:A-">method_29385</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
             <a href="../../../../../net/minecraft/item/Item.html" title="class in net.minecraft.item">Item</a>&nbsp;item,
@@ -257,7 +261,7 @@ extends <a href="../../../../../net/minecraft/client/gui/screen/Screen.html" tit
             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;list,
             <a href="../../../../../net/minecraft/world/gen/chunk/FlatChunkGeneratorLayer.html" title="class in net.minecraft.world.gen.chunk">FlatChunkGeneratorLayer</a>[]&nbsp;flatChunkGeneratorLayer)</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>private static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/screen/PresetsScreen.html#method_29386-java.lang.String-net.minecraft.item.Item-net.minecraft.world.biome.Biome-java.util.List-net.minecraft.world.gen.chunk.FlatChunkGeneratorLayer:A-">method_29386</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
             <a href="../../../../../net/minecraft/item/Item.html" title="class in net.minecraft.item">Item</a>&nbsp;item,
@@ -265,34 +269,30 @@ extends <a href="../../../../../net/minecraft/client/gui/screen/Screen.html" tit
             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;list,
             <a href="../../../../../net/minecraft/world/gen/chunk/FlatChunkGeneratorLayer.html" title="class in net.minecraft.world.gen.chunk">FlatChunkGeneratorLayer</a>[]&nbsp;flatChunkGeneratorLayer)</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>private boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/screen/PresetsScreen.html#method_29393--">method_29393</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/screen/PresetsScreen.html#method_29397-char-int-">method_29397</a></span>(char&nbsp;char2,
             int&nbsp;int2)</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/screen/PresetsScreen.html#method_29399-int-int-float-">method_29399</a></span>(int&nbsp;mouseX,
             int&nbsp;mouseY,
             float&nbsp;delta)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/screen/PresetsScreen.html#method_29400-int-int-int-">method_29400</a></span>(int&nbsp;int2,
             int&nbsp;width,
             int&nbsp;height)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/screen/PresetsScreen.html#method_29405-net.minecraft.client.gui.widget.ButtonWidget-">method_29405</a></span>(<a href="../../../../../net/minecraft/client/gui/widget/ButtonWidget.html" title="class in net.minecraft.client.gui.widget">ButtonWidget</a>&nbsp;buttonWidget)</code>&nbsp;</td>
-</tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/screen/PresetsScreen.html#method_29413--">method_29413</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -439,16 +439,16 @@ extends <a href="../../../../../net/minecraft/client/gui/screen/Screen.html" tit
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_29413--">
+<a name="init--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_29413</h4>
-<pre>public&nbsp;void&nbsp;method_29413()</pre>
+<h4>init</h4>
+<pre>public&nbsp;void&nbsp;init()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../net/minecraft/client/gui/screen/Screen.html#method_29413--">method_29413</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../net/minecraft/client/gui/screen/Screen.html" title="class in net.minecraft.client.gui.screen">Screen</a></code></dd>
+<dd><code><a href="../../../../../net/minecraft/client/gui/screen/Screen.html#init--">init</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../net/minecraft/client/gui/screen/Screen.html" title="class in net.minecraft.client.gui.screen">Screen</a></code></dd>
 </dl>
 </li>
 </ul>
