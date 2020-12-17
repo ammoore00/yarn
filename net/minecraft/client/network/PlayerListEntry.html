@@ -134,14 +134,6 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/network/PlayerListEntry.html#displayName">displayName</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>(package private) <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;com.mojang.authlib.minecraft.MinecraftProfileTexture.Type,<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/network/PlayerListEntry.html#field_28634">field_28634</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private com.mojang.authlib.GameProfile</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/network/PlayerListEntry.html#field_28635">field_28635</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/network/PlayerListEntry.html#field_28639">field_28639</a></span></code>&nbsp;</td>
 </tr>
@@ -174,6 +166,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/network/PlayerListEntry.html#latency">latency</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>private com.mojang.authlib.GameProfile</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/network/PlayerListEntry.html#profile">profile</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>(package private) <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;com.mojang.authlib.minecraft.MinecraftProfileTexture.Type,<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/network/PlayerListEntry.html#textureMap">textureMap</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>private boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/network/PlayerListEntry.html#texturesLoaded">texturesLoaded</a></span></code>&nbsp;</td>
 </tr>
@@ -192,7 +192,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/network/PlayerListEntry.html#PlayerListEntry-com.mojang.authlib.GameProfile-">PlayerListEntry</a></span>(com.mojang.authlib.GameProfile&nbsp;gameProfile)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/network/PlayerListEntry.html#PlayerListEntry-com.mojang.authlib.GameProfile-">PlayerListEntry</a></span>(com.mojang.authlib.GameProfile&nbsp;profile)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/network/PlayerListEntry.html#PlayerListEntry-net.minecraft.network.packet.s2c.play.PlayerListS2CPacket.Entry-">PlayerListEntry</a></span>(<a href="../../../../net/minecraft/network/packet/s2c/play/PlayerListS2CPacket.Entry.html" title="class in net.minecraft.network.packet.s2c.play">PlayerListS2CPacket.Entry</a>&nbsp;playerListPacketEntry)</code>&nbsp;</td>
@@ -330,22 +330,22 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_28635">
+<a name="profile">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_28635</h4>
-<pre>private final&nbsp;com.mojang.authlib.GameProfile field_28635</pre>
+<h4>profile</h4>
+<pre>private final&nbsp;com.mojang.authlib.GameProfile profile</pre>
 </li>
 </ul>
-<a name="field_28634">
+<a name="textureMap">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_28634</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;com.mojang.authlib.minecraft.MinecraftProfileTexture.Type,<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&gt; field_28634</pre>
+<h4>textureMap</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;com.mojang.authlib.minecraft.MinecraftProfileTexture.Type,<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&gt; textureMap</pre>
 </li>
 </ul>
 <a name="gameMode">
@@ -452,7 +452,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>PlayerListEntry</h4>
-<pre>public&nbsp;PlayerListEntry(com.mojang.authlib.GameProfile&nbsp;gameProfile)</pre>
+<pre>public&nbsp;PlayerListEntry(com.mojang.authlib.GameProfile&nbsp;profile)</pre>
 </li>
 </ul>
 <a name="PlayerListEntry-net.minecraft.network.packet.s2c.play.PlayerListS2CPacket.Entry-">
