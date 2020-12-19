@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../net/minecraft/server/world/SecondaryServerWorld.html" title="class in net.minecraft.server.world"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/server/world/ServerWorldManager.html" title="class in net.minecraft.server.world"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/server/world/BlockAction.html" target="_top">Frames</a></li>
@@ -129,16 +129,24 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../net/minecraft/block/Block.html" title="class in net.minecraft.block">Block</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/BlockAction.html#block">block</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>private int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/BlockAction.html#data">data</a></span></code>&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/block/Block.html" title="class in net.minecraft.block">Block</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/BlockAction.html#field_215">field_215</a></span></code>&nbsp;</td>
+</tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/BlockAction.html#pos">pos</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/BlockAction.html#field_9106">field_9106</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/BlockAction.html#field_9107">field_9107</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/BlockAction.html#field_9108">field_9108</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private int</code></td>
@@ -159,10 +167,12 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/BlockAction.html#BlockAction-net.minecraft.util.math.BlockPos-net.minecraft.block.Block-int-int-">BlockAction</a></span>(<a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/BlockAction.html#BlockAction-int-int-int-net.minecraft.block.Block-int-int-">BlockAction</a></span>(int&nbsp;int2,
+           int&nbsp;int3,
+           int&nbsp;int4,
            <a href="../../../../net/minecraft/block/Block.html" title="class in net.minecraft.block">Block</a>&nbsp;block,
-           int&nbsp;type,
-           int&nbsp;data)</code>&nbsp;</td>
+           int&nbsp;int5,
+           int&nbsp;int6)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -181,7 +191,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/BlockAction.html#equals-java.lang.Object-">equals</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/BlockAction.html#equals-java.lang.Object-">equals</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;object)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../net/minecraft/block/Block.html" title="class in net.minecraft.block">Block</a></code></td>
@@ -192,7 +202,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/BlockAction.html#getData--">getData</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a></code></td>
+<td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/BlockAction.html#getPos--">getPos</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
@@ -200,6 +210,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/BlockAction.html#getType--">getType</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/BlockAction.html#method_8457--">method_8457</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/BlockAction.html#method_8458--">method_8458</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/BlockAction.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
@@ -225,22 +243,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="pos">
+<a name="field_9106">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>pos</h4>
-<pre>private final&nbsp;<a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a> pos</pre>
-</li>
-</ul>
-<a name="block">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>block</h4>
-<pre>private final&nbsp;<a href="../../../../net/minecraft/block/Block.html" title="class in net.minecraft.block">Block</a> block</pre>
+<h4>field_9106</h4>
+<pre>private&nbsp;int field_9106</pre>
 </li>
 </ul>
 <a name="type">
@@ -249,16 +258,43 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>type</h4>
-<pre>private final&nbsp;int type</pre>
+<pre>private&nbsp;int type</pre>
 </li>
 </ul>
 <a name="data">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>data</h4>
-<pre>private final&nbsp;int data</pre>
+<pre>private&nbsp;int data</pre>
+</li>
+</ul>
+<a name="field_215">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>field_215</h4>
+<pre>private&nbsp;<a href="../../../../net/minecraft/block/Block.html" title="class in net.minecraft.block">Block</a> field_215</pre>
+</li>
+</ul>
+<a name="field_9107">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>field_9107</h4>
+<pre>private&nbsp;int field_9107</pre>
+</li>
+</ul>
+<a name="field_9108">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>field_9108</h4>
+<pre>private&nbsp;int field_9108</pre>
 </li>
 </ul>
 </li>
@@ -269,16 +305,18 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="BlockAction-net.minecraft.util.math.BlockPos-net.minecraft.block.Block-int-int-">
+<a name="BlockAction-int-int-int-net.minecraft.block.Block-int-int-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>BlockAction</h4>
-<pre>public&nbsp;BlockAction(<a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+<pre>public&nbsp;BlockAction(int&nbsp;int2,
+                   int&nbsp;int3,
+                   int&nbsp;int4,
                    <a href="../../../../net/minecraft/block/Block.html" title="class in net.minecraft.block">Block</a>&nbsp;block,
-                   int&nbsp;type,
-                   int&nbsp;data)</pre>
+                   int&nbsp;int5,
+                   int&nbsp;int6)</pre>
 </li>
 </ul>
 </li>
@@ -295,7 +333,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getPos</h4>
-<pre>public&nbsp;<a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;getPos()</pre>
+<pre>public&nbsp;int&nbsp;getPos()</pre>
 </li>
 </ul>
 <a name="getType--">
@@ -305,6 +343,24 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>getType</h4>
 <pre>public&nbsp;int&nbsp;getType()</pre>
+</li>
+</ul>
+<a name="method_8457--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_8457</h4>
+<pre>public&nbsp;int&nbsp;method_8457()</pre>
+</li>
+</ul>
+<a name="method_8458--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_8458</h4>
+<pre>public&nbsp;int&nbsp;method_8458()</pre>
 </li>
 </ul>
 <a name="getData--">
@@ -331,7 +387,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>equals</h4>
-<pre>public&nbsp;boolean&nbsp;equals(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</pre>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;object)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
@@ -379,7 +435,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../net/minecraft/server/world/SecondaryServerWorld.html" title="class in net.minecraft.server.world"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/server/world/ServerWorldManager.html" title="class in net.minecraft.server.world"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/server/world/BlockAction.html" target="_top">Frames</a></li>
