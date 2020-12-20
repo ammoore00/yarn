@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../net/minecraft/util/registry/MutableRegistry.html" title="class in net.minecraft.util.registry"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/util/registry/Registry.html" title="class in net.minecraft.util.registry"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/util/registry/DefaultedRegistry.html" target="_top">Frames</a></li>
@@ -92,17 +92,22 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">net.minecraft.util.registry</div>
-<h2 title="Class DefaultedRegistry" class="title">Class DefaultedRegistry</h2>
+<h2 title="Class DefaultedRegistry" class="title">Class DefaultedRegistry&lt;K,V&gt;</h2>
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../net/minecraft/util/registry/MutableRegistry.html" title="class in net.minecraft.util.registry">net.minecraft.util.registry.MutableRegistry</a></li>
+<li><a href="../../../../net/minecraft/util/registry/Registry.html" title="class in net.minecraft.util.registry">net.minecraft.util.registry.Registry</a>&lt;K,V&gt;</li>
 <li>
 <ul class="inheritance">
-<li>net.minecraft.util.registry.DefaultedRegistry</li>
+<li><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="class in net.minecraft.util.registry">net.minecraft.util.registry.SimpleRegistry</a>&lt;K,V&gt;</li>
+<li>
+<ul class="inheritance">
+<li>net.minecraft.util.registry.DefaultedRegistry&lt;K,V&gt;</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -113,12 +118,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../net/minecraft/util/registry/Registry.html" title="interface in net.minecraft.util.registry">Registry</a></dd>
+<dd><a href="../../../../com/mojang/datafixers/kinds/K1.html" title="interface in com.mojang.datafixers.kinds">K1</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;V&gt;, <a href="../../../../net/minecraft/util/IndexedIterable.html" title="interface in net.minecraft.util">IndexedIterable</a>&lt;K,V&gt;</dd>
 </dl>
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">DefaultedRegistry</span>
-extends <a href="../../../../net/minecraft/util/registry/MutableRegistry.html" title="class in net.minecraft.util.registry">MutableRegistry</a></pre>
+<pre>public class <span class="typeNameLabel">DefaultedRegistry&lt;K,V&gt;</span>
+extends <a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="class in net.minecraft.util.registry">SimpleRegistry</a>&lt;K,V&gt;</pre>
 </li>
 </ul>
 </div>
@@ -138,16 +143,27 @@ extends <a href="../../../../net/minecraft/util/registry/MutableRegistry.html" t
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html#defaultId">defaultId</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html#defaultValue">defaultValue</a></span></code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.util.registry.MutableRegistry">
+<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.util.registry.SimpleRegistry">
 <!--   -->
 </a>
-<h3>Fields inherited from class&nbsp;net.minecraft.util.registry.<a href="../../../../net/minecraft/util/registry/MutableRegistry.html" title="class in net.minecraft.util.registry">MutableRegistry</a></h3>
-<code><a href="../../../../net/minecraft/util/registry/MutableRegistry.html#map">map</a></code></li>
+<h3>Fields inherited from class&nbsp;net.minecraft.util.registry.<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="class in net.minecraft.util.registry">SimpleRegistry</a></h3>
+<code><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html#field_30686">field_30686</a>, <a href="../../../../net/minecraft/util/registry/SimpleRegistry.html#indexedEntries">indexedEntries</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.util.registry.Registry">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;net.minecraft.util.registry.<a href="../../../../net/minecraft/util/registry/Registry.html" title="class in net.minecraft.util.registry">Registry</a></h3>
+<code><a href="../../../../net/minecraft/util/registry/Registry.html#field_30753">field_30753</a></code></li>
 </ul>
 </li>
 </ul>
@@ -163,7 +179,7 @@ extends <a href="../../../../net/minecraft/util/registry/MutableRegistry.html" t
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html#DefaultedRegistry-java.lang.Object-">DefaultedRegistry</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;defaultValue)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html#DefaultedRegistry-K-">DefaultedRegistry</a></span>(<a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>&nbsp;k)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -181,16 +197,49 @@ extends <a href="../../../../net/minecraft/util/registry/MutableRegistry.html" t
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html#get-java.lang.Object-">get</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;key)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html#get-int-">get</a></span>(int&nbsp;int2)</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html#get-K-">get</a></span>(<a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>&nbsp;k)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html#getId-V-">getId</a></span>(<a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&nbsp;v)</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html#getRandom-java.util.Random-">getRandom</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util">Random</a>&nbsp;random)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html#getRawId-V-">getRawId</a></span>(<a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&nbsp;v)</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html#method_31953--">method_31953</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html#set-int-K-V-">set</a></span>(int&nbsp;int2,
+   <a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>&nbsp;k,
+   <a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&nbsp;v)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.util.registry.MutableRegistry">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.util.registry.SimpleRegistry">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;net.minecraft.util.registry.<a href="../../../../net/minecraft/util/registry/MutableRegistry.html" title="class in net.minecraft.util.registry">MutableRegistry</a></h3>
-<code><a href="../../../../net/minecraft/util/registry/MutableRegistry.html#containsKey-java.lang.Object-">containsKey</a>, <a href="../../../../net/minecraft/util/registry/MutableRegistry.html#createMap--">createMap</a>, <a href="../../../../net/minecraft/util/registry/MutableRegistry.html#keySet--">keySet</a>, <a href="../../../../net/minecraft/util/registry/MutableRegistry.html#put-java.lang.Object-java.lang.Object-">put</a></code></li>
+<h3>Methods inherited from class&nbsp;net.minecraft.util.registry.<a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="class in net.minecraft.util.registry">SimpleRegistry</a></h3>
+<code><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html#iterator--">iterator</a>, <a href="../../../../net/minecraft/util/registry/SimpleRegistry.html#method_32022--">method_32022</a>, <a href="../../../../net/minecraft/util/registry/SimpleRegistry.html#method_32023-K-">method_32023</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.util.registry.Registry">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;net.minecraft.util.registry.<a href="../../../../net/minecraft/util/registry/Registry.html" title="class in net.minecraft.util.registry">Registry</a></h3>
+<code><a href="../../../../net/minecraft/util/registry/Registry.html#method_32014-K-V-">method_32014</a>, <a href="../../../../net/minecraft/util/registry/Registry.html#method_32015--">method_32015</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -198,6 +247,13 @@ extends <a href="../../../../net/minecraft/util/registry/MutableRegistry.html" t
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
 <code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.lang.Iterable">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a></h3>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true#forEach-java.util.function.Consumer-" title="class or interface in java.lang">forEach</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true#spliterator--" title="class or interface in java.lang">spliterator</a></code></li>
 </ul>
 </li>
 </ul>
@@ -213,13 +269,22 @@ extends <a href="../../../../net/minecraft/util/registry/MutableRegistry.html" t
 <!--   -->
 </a>
 <h3>Field Detail</h3>
+<a name="defaultId">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>defaultId</h4>
+<pre>private final&nbsp;<a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a> defaultId</pre>
+</li>
+</ul>
 <a name="defaultValue">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>defaultValue</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> defaultValue</pre>
+<pre>private&nbsp;<a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a> defaultValue</pre>
 </li>
 </ul>
 </li>
@@ -232,11 +297,13 @@ extends <a href="../../../../net/minecraft/util/registry/MutableRegistry.html" t
 <h3>Constructor Detail</h3>
 <a name="DefaultedRegistry-java.lang.Object-">
 <!--   -->
+</a><a name="DefaultedRegistry-K-">
+<!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DefaultedRegistry</h4>
-<pre>public&nbsp;DefaultedRegistry(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;defaultValue)</pre>
+<pre>public&nbsp;DefaultedRegistry(<a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>&nbsp;k)</pre>
 </li>
 </ul>
 </li>
@@ -247,18 +314,107 @@ extends <a href="../../../../net/minecraft/util/registry/MutableRegistry.html" t
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="set-int-java.lang.Object-java.lang.Object-">
+<!--   -->
+</a><a name="set-int-K-V-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>set</h4>
+<pre>public&nbsp;void&nbsp;set(int&nbsp;int2,
+                <a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>&nbsp;k,
+                <a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&nbsp;v)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html#set-int-K-V-">set</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="class in net.minecraft.util.registry">SimpleRegistry</a>&lt;<a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>,<a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="method_31953--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_31953</h4>
+<pre>public&nbsp;void&nbsp;method_31953()</pre>
+</li>
+</ul>
+<a name="getRawId-java.lang.Object-">
+<!--   -->
+</a><a name="getRawId-V-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRawId</h4>
+<pre>public&nbsp;int&nbsp;getRawId(<a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&nbsp;v)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html#getRawId-V-">getRawId</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="class in net.minecraft.util.registry">SimpleRegistry</a>&lt;<a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>,<a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getId-java.lang.Object-">
+<!--   -->
+</a><a name="getId-V-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getId</h4>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>&nbsp;getId(<a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&nbsp;v)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html#getId-V-">getId</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="class in net.minecraft.util.registry">SimpleRegistry</a>&lt;<a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>,<a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
 <a name="get-java.lang.Object-">
+<!--   -->
+</a><a name="get-K-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>get</h4>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&nbsp;get(<a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                      <a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>&nbsp;k)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/util/IndexedIterable.html#get-K-">get</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/util/IndexedIterable.html" title="interface in net.minecraft.util">IndexedIterable</a>&lt;<a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>,<a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html#get-K-">get</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="class in net.minecraft.util.registry">SimpleRegistry</a>&lt;<a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>,<a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="get-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>get</h4>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&nbsp;get(int&nbsp;int2)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html#get-int-">get</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/util/registry/SimpleRegistry.html" title="class in net.minecraft.util.registry">SimpleRegistry</a>&lt;<a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>,<a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getRandom-java.util.Random-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>get</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;get(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;key)</pre>
+<h4>getRandom</h4>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&nbsp;getRandom(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util">Random</a>&nbsp;random)</pre>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/util/registry/Registry.html#get-java.lang.Object-">get</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/util/registry/Registry.html" title="interface in net.minecraft.util.registry">Registry</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/util/registry/MutableRegistry.html#get-java.lang.Object-">get</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/util/registry/MutableRegistry.html" title="class in net.minecraft.util.registry">MutableRegistry</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/util/registry/Registry.html#getRandom-java.util.Random-">getRandom</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/util/registry/Registry.html" title="class in net.minecraft.util.registry">Registry</a>&lt;<a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">K</a>,<a href="../../../../net/minecraft/util/registry/DefaultedRegistry.html" title="type parameter in DefaultedRegistry">V</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -290,7 +446,7 @@ extends <a href="../../../../net/minecraft/util/registry/MutableRegistry.html" t
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../net/minecraft/util/registry/MutableRegistry.html" title="class in net.minecraft.util.registry"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/util/registry/Registry.html" title="class in net.minecraft.util.registry"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/util/registry/DefaultedRegistry.html" target="_top">Frames</a></li>

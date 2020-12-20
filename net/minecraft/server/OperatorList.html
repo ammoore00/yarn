@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../net/minecraft/server/OperatorEntry.html" title="class in net.minecraft.server"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/server/PlayerInstance.html" title="class in net.minecraft.server"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/server/PlayerManager.html" title="class in net.minecraft.server"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/server/OperatorList.html" target="_top">Frames</a></li>
@@ -73,8 +73,8 @@ var activeTableTab = "activeTableTab";
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.net.minecraft.class_2600">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#nested.classes.inherited.from.class.net.minecraft.server.ServerConfigList">Nested</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.net.minecraft.server.ServerConfigList">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
@@ -99,7 +99,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../net/minecraft/class_2600.html" title="class in net.minecraft">net.minecraft.class_2600</a></li>
+<li><a href="../../../net/minecraft/server/ServerConfigList.html" title="class in net.minecraft.server">net.minecraft.server.ServerConfigList</a>&lt;com.mojang.authlib.GameProfile,<a href="../../../net/minecraft/server/OperatorEntry.html" title="class in net.minecraft.server">OperatorEntry</a>&gt;</li>
 <li>
 <ul class="inheritance">
 <li>net.minecraft.server.OperatorList</li>
@@ -114,13 +114,28 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">OperatorList</span>
-extends <a href="../../../net/minecraft/class_2600.html" title="class in net.minecraft">class_2600</a></pre>
+extends <a href="../../../net/minecraft/server/ServerConfigList.html" title="class in net.minecraft.server">ServerConfigList</a>&lt;com.mojang.authlib.GameProfile,<a href="../../../net/minecraft/server/OperatorEntry.html" title="class in net.minecraft.server">OperatorEntry</a>&gt;</pre>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="nested.class.summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="nested.classes.inherited.from.class.net.minecraft.server.ServerConfigList">
+<!--   -->
+</a>
+<h3>Nested classes/interfaces inherited from class&nbsp;net.minecraft.server.<a href="../../../net/minecraft/server/ServerConfigList.html" title="class in net.minecraft.server">ServerConfigList</a></h3>
+<code><a href="../../../net/minecraft/server/ServerConfigList.DeSerializer.html" title="class in net.minecraft.server">ServerConfigList.DeSerializer</a></code></li>
+</ul>
+</li>
+</ul>
 <!-- =========== FIELD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="field.summary">
@@ -128,11 +143,11 @@ extends <a href="../../../net/minecraft/class_2600.html" title="class in net.min
 </a>
 <h3>Field Summary</h3>
 <ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.class_2600">
+<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.server.ServerConfigList">
 <!--   -->
 </a>
-<h3>Fields inherited from class&nbsp;net.minecraft.<a href="../../../net/minecraft/class_2600.html" title="class in net.minecraft">class_2600</a></h3>
-<code><a href="../../../net/minecraft/class_2600.html#field_11320">field_11320</a>, <a href="../../../net/minecraft/class_2600.html#field_11321">field_11321</a></code></li>
+<h3>Fields inherited from class&nbsp;net.minecraft.server.<a href="../../../net/minecraft/server/ServerConfigList.html" title="class in net.minecraft.server">ServerConfigList</a></h3>
+<code><a href="../../../net/minecraft/server/ServerConfigList.html#GSON">GSON</a>, <a href="../../../net/minecraft/server/ServerConfigList.html#LOGGER">LOGGER</a></code></li>
 </ul>
 </li>
 </ul>
@@ -166,7 +181,7 @@ extends <a href="../../../net/minecraft/class_2600.html" title="class in net.min
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>protected <a href="../../../net/minecraft/server/ServerConfigEntry.html" title="class in net.minecraft.server">ServerConfigEntry</a></code></td>
+<td class="colFirst"><code>protected <a href="../../../net/minecraft/server/ServerConfigEntry.html" title="class in net.minecraft.server">ServerConfigEntry</a>&lt;com.mojang.authlib.GameProfile&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/server/OperatorList.html#fromJson-com.google.gson.JsonObject-">fromJson</a></span>(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -174,20 +189,28 @@ extends <a href="../../../net/minecraft/class_2600.html" title="class in net.min
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/server/OperatorList.html#getNames--">getNames</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>com.mojang.authlib.GameProfile</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/server/OperatorList.html#getOperatorPlayer-java.lang.String-">getOperatorPlayer</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;playerName)</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/server/OperatorList.html#isOp-com.mojang.authlib.GameProfile-">isOp</a></span>(com.mojang.authlib.GameProfile&nbsp;gameProfile)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/server/OperatorList.html#method_33753-com.mojang.authlib.GameProfile-">method_33753</a></span>(com.mojang.authlib.GameProfile&nbsp;gameProfile)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>com.mojang.authlib.GameProfile</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/server/OperatorList.html#method_33754-java.lang.String-">method_33754</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/server/OperatorList.html#toString-com.mojang.authlib.GameProfile-">toString</a></span>(com.mojang.authlib.GameProfile&nbsp;gameProfile)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.class_2600">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.server.ServerConfigList">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;net.minecraft.<a href="../../../net/minecraft/class_2600.html" title="class in net.minecraft">class_2600</a></h3>
-<code><a href="../../../net/minecraft/class_2600.html#method_10462-net.minecraft.server.ServerConfigEntry-">method_10462</a>, <a href="../../../net/minecraft/class_2600.html#method_10463-boolean-">method_10463</a>, <a href="../../../net/minecraft/class_2600.html#method_10464--">method_10464</a>, <a href="../../../net/minecraft/class_2600.html#method_10465-java.lang.Object-">method_10465</a>, <a href="../../../net/minecraft/class_2600.html#method_10466--">method_10466</a>, <a href="../../../net/minecraft/class_2600.html#method_10467-java.lang.Object-">method_10467</a>, <a href="../../../net/minecraft/class_2600.html#method_10468--">method_10468</a>, <a href="../../../net/minecraft/class_2600.html#method_10469-java.lang.Object-">method_10469</a>, <a href="../../../net/minecraft/class_2600.html#method_10470--">method_10470</a>, <a href="../../../net/minecraft/class_2600.html#method_10471--">method_10471</a>, <a href="../../../net/minecraft/class_2600.html#method_10472--">method_10472</a>, <a href="../../../net/minecraft/class_2600.html#toString-java.lang.Object-">toString</a></code></li>
+<h3>Methods inherited from class&nbsp;net.minecraft.server.<a href="../../../net/minecraft/server/ServerConfigList.html" title="class in net.minecraft.server">ServerConfigList</a></h3>
+<code><a href="../../../net/minecraft/server/ServerConfigList.html#add-V-">add</a>, <a href="../../../net/minecraft/server/ServerConfigList.html#contains-K-">contains</a>, <a href="../../../net/minecraft/server/ServerConfigList.html#get-K-">get</a>, <a href="../../../net/minecraft/server/ServerConfigList.html#getFile--">getFile</a>, <a href="../../../net/minecraft/server/ServerConfigList.html#isEmpty--">isEmpty</a>, <a href="../../../net/minecraft/server/ServerConfigList.html#isEnabled--">isEnabled</a>, <a href="../../../net/minecraft/server/ServerConfigList.html#load--">load</a>, <a href="../../../net/minecraft/server/ServerConfigList.html#method_33774--">method_33774</a>, <a href="../../../net/minecraft/server/ServerConfigList.html#remove-K-">remove</a>, <a href="../../../net/minecraft/server/ServerConfigList.html#save--">save</a>, <a href="../../../net/minecraft/server/ServerConfigList.html#setEnabled-boolean-">setEnabled</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -233,10 +256,10 @@ extends <a href="../../../net/minecraft/class_2600.html" title="class in net.min
 <ul class="blockList">
 <li class="blockList">
 <h4>fromJson</h4>
-<pre>protected&nbsp;<a href="../../../net/minecraft/server/ServerConfigEntry.html" title="class in net.minecraft.server">ServerConfigEntry</a>&nbsp;fromJson(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject)</pre>
+<pre>protected&nbsp;<a href="../../../net/minecraft/server/ServerConfigEntry.html" title="class in net.minecraft.server">ServerConfigEntry</a>&lt;com.mojang.authlib.GameProfile&gt;&nbsp;fromJson(<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/JsonObject.html?is-external=true" title="class or interface in com.google.gson">JsonObject</a>&nbsp;jsonObject)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../net/minecraft/class_2600.html#fromJson-com.google.gson.JsonObject-">fromJson</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/class_2600.html" title="class in net.minecraft">class_2600</a></code></dd>
+<dd><code><a href="../../../net/minecraft/server/ServerConfigList.html#fromJson-com.google.gson.JsonObject-">fromJson</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/server/ServerConfigList.html" title="class in net.minecraft.server">ServerConfigList</a>&lt;com.mojang.authlib.GameProfile,<a href="../../../net/minecraft/server/OperatorEntry.html" title="class in net.minecraft.server">OperatorEntry</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -249,8 +272,26 @@ extends <a href="../../../net/minecraft/class_2600.html" title="class in net.min
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;getNames()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../net/minecraft/class_2600.html#getNames--">getNames</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/class_2600.html" title="class in net.minecraft">class_2600</a></code></dd>
+<dd><code><a href="../../../net/minecraft/server/ServerConfigList.html#getNames--">getNames</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/server/ServerConfigList.html" title="class in net.minecraft.server">ServerConfigList</a>&lt;com.mojang.authlib.GameProfile,<a href="../../../net/minecraft/server/OperatorEntry.html" title="class in net.minecraft.server">OperatorEntry</a>&gt;</code></dd>
 </dl>
+</li>
+</ul>
+<a name="method_33753-com.mojang.authlib.GameProfile-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_33753</h4>
+<pre>public&nbsp;int&nbsp;method_33753(com.mojang.authlib.GameProfile&nbsp;gameProfile)</pre>
+</li>
+</ul>
+<a name="isOp-com.mojang.authlib.GameProfile-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isOp</h4>
+<pre>public&nbsp;boolean&nbsp;isOp(com.mojang.authlib.GameProfile&nbsp;gameProfile)</pre>
 </li>
 </ul>
 <a name="toString-com.mojang.authlib.GameProfile-">
@@ -260,15 +301,19 @@ extends <a href="../../../net/minecraft/class_2600.html" title="class in net.min
 <li class="blockList">
 <h4>toString</h4>
 <pre>protected&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString(com.mojang.authlib.GameProfile&nbsp;gameProfile)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../net/minecraft/server/ServerConfigList.html#toString-K-">toString</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/server/ServerConfigList.html" title="class in net.minecraft.server">ServerConfigList</a>&lt;com.mojang.authlib.GameProfile,<a href="../../../net/minecraft/server/OperatorEntry.html" title="class in net.minecraft.server">OperatorEntry</a>&gt;</code></dd>
+</dl>
 </li>
 </ul>
-<a name="getOperatorPlayer-java.lang.String-">
+<a name="method_33754-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getOperatorPlayer</h4>
-<pre>public&nbsp;com.mojang.authlib.GameProfile&nbsp;getOperatorPlayer(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;playerName)</pre>
+<h4>method_33754</h4>
+<pre>public&nbsp;com.mojang.authlib.GameProfile&nbsp;method_33754(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
 </li>
 </ul>
 </li>
@@ -299,7 +344,7 @@ extends <a href="../../../net/minecraft/class_2600.html" title="class in net.min
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../net/minecraft/server/OperatorEntry.html" title="class in net.minecraft.server"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/server/PlayerInstance.html" title="class in net.minecraft.server"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/server/PlayerManager.html" title="class in net.minecraft.server"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/server/OperatorList.html" target="_top">Frames</a></li>
@@ -323,8 +368,8 @@ extends <a href="../../../net/minecraft/class_2600.html" title="class in net.min
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.net.minecraft.class_2600">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#nested.classes.inherited.from.class.net.minecraft.server.ServerConfigList">Nested</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.net.minecraft.server.ServerConfigList">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>

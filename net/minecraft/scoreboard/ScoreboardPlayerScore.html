@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -129,24 +129,32 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html?is-external=true" title="class or interface in java.util">Comparator</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html#field_2441">field_2441</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html?is-external=true" title="class or interface in java.util">Comparator</a>&lt;<a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html" title="class in net.minecraft.scoreboard">ScoreboardPlayerScore</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html#field_26713">field_26713</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../net/minecraft/scoreboard/Scoreboard.html" title="class in net.minecraft.scoreboard">Scoreboard</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html#field_2442">field_2442</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html#forceUpdate">forceUpdate</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html#field_2443">field_2443</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html#locked">locked</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>private <a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html#objective">objective</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html#playerName">playerName</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html#score">score</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="../../../net/minecraft/scoreboard/Scoreboard.html" title="class in net.minecraft.scoreboard">Scoreboard</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html#scoreboard">scoreboard</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -164,8 +172,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html#ScoreboardPlayerScore-net.minecraft.scoreboard.Scoreboard-net.minecraft.scoreboard.ScoreboardObjective-java.lang.String-">ScoreboardPlayerScore</a></span>(<a href="../../../net/minecraft/scoreboard/Scoreboard.html" title="class in net.minecraft.scoreboard">Scoreboard</a>&nbsp;scoreboard,
-                     <a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;scoreboardObjective,
-                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+                     <a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective,
+                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;playerName)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -203,18 +211,22 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html#incrementScore-int-">incrementScore</a></span>(int&nbsp;int2)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html#method_2110--">method_2110</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html#isLocked--">isLocked</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html#method_2112-java.util.List-">method_2112</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&nbsp;list)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html#method_28587--">method_28587</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html#method_2114-int-">method_2114</a></span>(int&nbsp;int2)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html#method_28590-int-">method_28590</a></span>(int&nbsp;int2)</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html#setLocked-boolean-">setLocked</a></span>(boolean&nbsp;locked)</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html#setScore-int-">setScore</a></span>(int&nbsp;score)</code>&nbsp;</td>
 </tr>
@@ -240,31 +252,31 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_2441">
+<a name="field_26713">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_2441</h4>
-<pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html?is-external=true" title="class or interface in java.util">Comparator</a> field_2441</pre>
+<h4>field_26713</h4>
+<pre>public static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html?is-external=true" title="class or interface in java.util">Comparator</a>&lt;<a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html" title="class in net.minecraft.scoreboard">ScoreboardPlayerScore</a>&gt; field_26713</pre>
 </li>
 </ul>
-<a name="field_2442">
+<a name="scoreboard">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_2442</h4>
-<pre>private final&nbsp;<a href="../../../net/minecraft/scoreboard/Scoreboard.html" title="class in net.minecraft.scoreboard">Scoreboard</a> field_2442</pre>
+<h4>scoreboard</h4>
+<pre>private final&nbsp;<a href="../../../net/minecraft/scoreboard/Scoreboard.html" title="class in net.minecraft.scoreboard">Scoreboard</a> scoreboard</pre>
 </li>
 </ul>
-<a name="field_2443">
+<a name="objective">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_2443</h4>
-<pre>private final&nbsp;<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a> field_2443</pre>
+<h4>objective</h4>
+<pre>private final&nbsp;<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a> objective</pre>
 </li>
 </ul>
 <a name="playerName">
@@ -279,10 +291,28 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <a name="score">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>score</h4>
 <pre>private&nbsp;int score</pre>
+</li>
+</ul>
+<a name="locked">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>locked</h4>
+<pre>private&nbsp;boolean locked</pre>
+</li>
+</ul>
+<a name="forceUpdate">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>forceUpdate</h4>
+<pre>private&nbsp;boolean forceUpdate</pre>
 </li>
 </ul>
 </li>
@@ -300,8 +330,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>ScoreboardPlayerScore</h4>
 <pre>public&nbsp;ScoreboardPlayerScore(<a href="../../../net/minecraft/scoreboard/Scoreboard.html" title="class in net.minecraft.scoreboard">Scoreboard</a>&nbsp;scoreboard,
-                             <a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;scoreboardObjective,
-                             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
+                             <a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective,
+                             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;playerName)</pre>
 </li>
 </ul>
 </li>
@@ -321,22 +351,22 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>public&nbsp;void&nbsp;incrementScore(int&nbsp;int2)</pre>
 </li>
 </ul>
-<a name="method_2114-int-">
+<a name="method_28590-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_2114</h4>
-<pre>public&nbsp;void&nbsp;method_2114(int&nbsp;int2)</pre>
+<h4>method_28590</h4>
+<pre>public&nbsp;void&nbsp;method_28590(int&nbsp;int2)</pre>
 </li>
 </ul>
-<a name="method_2110--">
+<a name="method_28587--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_2110</h4>
-<pre>public&nbsp;void&nbsp;method_2110()</pre>
+<h4>method_28587</h4>
+<pre>public&nbsp;void&nbsp;method_28587()</pre>
 </li>
 </ul>
 <a name="getScore--">
@@ -384,13 +414,22 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>public&nbsp;<a href="../../../net/minecraft/scoreboard/Scoreboard.html" title="class in net.minecraft.scoreboard">Scoreboard</a>&nbsp;getScoreboard()</pre>
 </li>
 </ul>
-<a name="method_2112-java.util.List-">
+<a name="isLocked--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isLocked</h4>
+<pre>public&nbsp;boolean&nbsp;isLocked()</pre>
+</li>
+</ul>
+<a name="setLocked-boolean-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_2112</h4>
-<pre>public&nbsp;void&nbsp;method_2112(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&nbsp;list)</pre>
+<h4>setLocked</h4>
+<pre>public&nbsp;void&nbsp;setLocked(boolean&nbsp;locked)</pre>
 </li>
 </ul>
 </li>

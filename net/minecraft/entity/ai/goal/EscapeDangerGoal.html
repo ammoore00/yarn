@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -111,6 +111,10 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><a href="../../../../../net/minecraft/entity/passive/PolarBearEntity.PolarBearEscapeDangerGoal.html" title="class in net.minecraft.entity.passive">PolarBearEntity.PolarBearEscapeDangerGoal</a>, <a href="../../../../../net/minecraft/entity/passive/RabbitEntity.EscapeDangerGoal.html" title="class in net.minecraft.entity.passive">RabbitEntity.EscapeDangerGoal</a></dd>
+</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">EscapeDangerGoal</span>
@@ -134,24 +138,24 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../../net/minecraft/class_2634.html" title="class in net.minecraft">class_2634</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/EscapeDangerGoal.html#field_7730">field_7730</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>protected <a href="../../../../../net/minecraft/entity/mob/MobEntityWithAi.html" title="class in net.minecraft.entity.mob">MobEntityWithAi</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/EscapeDangerGoal.html#mob">mob</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/EscapeDangerGoal.html#field_7731">field_7731</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/EscapeDangerGoal.html#field_7732">field_7732</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/EscapeDangerGoal.html#field_7733">field_7733</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private double</code></td>
+<td class="colFirst"><code>protected double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/EscapeDangerGoal.html#speed">speed</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/EscapeDangerGoal.html#targetX">targetX</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/EscapeDangerGoal.html#targetY">targetY</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/EscapeDangerGoal.html#targetZ">targetZ</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -168,8 +172,8 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/EscapeDangerGoal.html#EscapeDangerGoal-net.minecraft.class_2634-double-">EscapeDangerGoal</a></span>(<a href="../../../../../net/minecraft/class_2634.html" title="class in net.minecraft">class_2634</a>&nbsp;class_2634,
-                double&nbsp;double2)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/EscapeDangerGoal.html#EscapeDangerGoal-net.minecraft.entity.mob.MobEntityWithAi-double-">EscapeDangerGoal</a></span>(<a href="../../../../../net/minecraft/entity/mob/MobEntityWithAi.html" title="class in net.minecraft.entity.mob">MobEntityWithAi</a>&nbsp;mob,
+                double&nbsp;speed)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -191,10 +195,21 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/EscapeDangerGoal.html#canStart--">canStart</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/EscapeDangerGoal.html#findTarget--">findTarget</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>private <a href="../../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/EscapeDangerGoal.html#method_34966-net.minecraft.world.World-net.minecraft.entity.Entity-int-int-">method_34966</a></span>(<a href="../../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+            <a href="../../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
+            int&nbsp;int2,
+            int&nbsp;int3)</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/EscapeDangerGoal.html#shouldContinue--">shouldContinue</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/EscapeDangerGoal.html#start--">start</a></span>()</code>&nbsp;</td>
 </tr>
@@ -204,7 +219,7 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.entity.ai.goal.<a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</a></h3>
-<code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_7363-int-">method_7363</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_7368--">method_7368</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_7369--">method_7369</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#stop--">stop</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#tick--">tick</a></code></li>
+<code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#canStop--">canStop</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_34938-int-">method_34938</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_34944--">method_34944</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#stop--">stop</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#tick--">tick</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -227,13 +242,13 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_7730">
+<a name="mob">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7730</h4>
-<pre>private&nbsp;<a href="../../../../../net/minecraft/class_2634.html" title="class in net.minecraft">class_2634</a> field_7730</pre>
+<h4>mob</h4>
+<pre>protected final&nbsp;<a href="../../../../../net/minecraft/entity/mob/MobEntityWithAi.html" title="class in net.minecraft.entity.mob">MobEntityWithAi</a> mob</pre>
 </li>
 </ul>
 <a name="speed">
@@ -242,34 +257,34 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <ul class="blockList">
 <li class="blockList">
 <h4>speed</h4>
-<pre>private&nbsp;double speed</pre>
+<pre>protected&nbsp;double speed</pre>
 </li>
 </ul>
-<a name="field_7731">
+<a name="targetX">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7731</h4>
-<pre>private&nbsp;double field_7731</pre>
+<h4>targetX</h4>
+<pre>protected&nbsp;double targetX</pre>
 </li>
 </ul>
-<a name="field_7732">
+<a name="targetY">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7732</h4>
-<pre>private&nbsp;double field_7732</pre>
+<h4>targetY</h4>
+<pre>protected&nbsp;double targetY</pre>
 </li>
 </ul>
-<a name="field_7733">
+<a name="targetZ">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_7733</h4>
-<pre>private&nbsp;double field_7733</pre>
+<h4>targetZ</h4>
+<pre>protected&nbsp;double targetZ</pre>
 </li>
 </ul>
 </li>
@@ -280,14 +295,14 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="EscapeDangerGoal-net.minecraft.class_2634-double-">
+<a name="EscapeDangerGoal-net.minecraft.entity.mob.MobEntityWithAi-double-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>EscapeDangerGoal</h4>
-<pre>public&nbsp;EscapeDangerGoal(<a href="../../../../../net/minecraft/class_2634.html" title="class in net.minecraft">class_2634</a>&nbsp;class_2634,
-                        double&nbsp;double2)</pre>
+<pre>public&nbsp;EscapeDangerGoal(<a href="../../../../../net/minecraft/entity/mob/MobEntityWithAi.html" title="class in net.minecraft.entity.mob">MobEntityWithAi</a>&nbsp;mob,
+                        double&nbsp;speed)</pre>
 </li>
 </ul>
 </li>
@@ -311,6 +326,15 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 </dl>
 </li>
 </ul>
+<a name="findTarget--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>findTarget</h4>
+<pre>protected&nbsp;boolean&nbsp;findTarget()</pre>
+</li>
+</ul>
 <a name="start--">
 <!--   -->
 </a>
@@ -327,7 +351,7 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <a name="shouldContinue--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>shouldContinue</h4>
 <pre>public&nbsp;boolean&nbsp;shouldContinue()</pre>
@@ -335,6 +359,19 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#shouldContinue--">shouldContinue</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</a></code></dd>
 </dl>
+</li>
+</ul>
+<a name="method_34966-net.minecraft.world.World-net.minecraft.entity.Entity-int-int-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>method_34966</h4>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+private&nbsp;<a href="../../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;method_34966(<a href="../../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+                                        <a href="../../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
+                                        int&nbsp;int2,
+                                        int&nbsp;int3)</pre>
 </li>
 </ul>
 </li>

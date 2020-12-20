@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10};
+var methods = {"i0":10,"i1":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../../net/minecraft/client/render/entity/model/BiPedModel.html" title="class in net.minecraft.client.render.entity.model"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../../net/minecraft/client/render/entity/model/BipedEntityModel.ArmPose.html" title="enum in net.minecraft.client.render.entity.model"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../../net/minecraft/client/render/entity/model/BoatEntityModel.html" title="class in net.minecraft.client.render.entity.model"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -99,7 +99,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../../../net/minecraft/client/render/entity/model/EntityModel.html" title="class in net.minecraft.client.render.entity.model">net.minecraft.client.render.entity.model.EntityModel</a></li>
+<li><a href="../../../../../../net/minecraft/client/model/Model.html" title="class in net.minecraft.client.model">net.minecraft.client.model.Model</a></li>
 <li>
 <ul class="inheritance">
 <li>net.minecraft.client.render.entity.model.BlazeEntityModel</li>
@@ -115,7 +115,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>@Environment(value=CLIENT)
 public class <span class="typeNameLabel">BlazeEntityModel</span>
-extends <a href="../../../../../../net/minecraft/client/render/entity/model/EntityModel.html" title="class in net.minecraft.client.render.entity.model">EntityModel</a></pre>
+extends <a href="../../../../../../net/minecraft/client/model/Model.html" title="class in net.minecraft.client.model">Model</a></pre>
 </li>
 </ul>
 </div>
@@ -135,20 +135,20 @@ extends <a href="../../../../../../net/minecraft/client/render/entity/model/Enti
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../../../net/minecraft/client/model/ModelPart.html" title="class in net.minecraft.client.model">ModelPart</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/client/render/entity/model/BlazeEntityModel.html#field_3701">field_3701</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../../../../net/minecraft/client/model/ModelPart.html" title="class in net.minecraft.client.model">ModelPart</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/client/render/entity/model/BlazeEntityModel.html#head">head</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../../../../net/minecraft/client/model/ModelPart.html" title="class in net.minecraft.client.model">ModelPart</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/client/render/entity/model/BlazeEntityModel.html#field_3702">field_3702</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../../../../net/minecraft/client/model/ModelPart.html" title="class in net.minecraft.client.model">ModelPart</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/client/render/entity/model/BlazeEntityModel.html#rods">rods</a></span></code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.client.render.entity.model.EntityModel">
+<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.client.model.Model">
 <!--   -->
 </a>
-<h3>Fields inherited from class&nbsp;net.minecraft.client.render.entity.model.<a href="../../../../../../net/minecraft/client/render/entity/model/EntityModel.html" title="class in net.minecraft.client.render.entity.model">EntityModel</a></h3>
-<code><a href="../../../../../../net/minecraft/client/render/entity/model/EntityModel.html#field_10183">field_10183</a>, <a href="../../../../../../net/minecraft/client/render/entity/model/EntityModel.html#field_3797">field_3797</a>, <a href="../../../../../../net/minecraft/client/render/entity/model/EntityModel.html#field_3798">field_3798</a>, <a href="../../../../../../net/minecraft/client/render/entity/model/EntityModel.html#field_3799">field_3799</a>, <a href="../../../../../../net/minecraft/client/render/entity/model/EntityModel.html#textureHeight">textureHeight</a>, <a href="../../../../../../net/minecraft/client/render/entity/model/EntityModel.html#textureWidth">textureWidth</a></code></li>
+<h3>Fields inherited from class&nbsp;net.minecraft.client.model.<a href="../../../../../../net/minecraft/client/model/Model.html" title="class in net.minecraft.client.model">Model</a></h3>
+<code><a href="../../../../../../net/minecraft/client/model/Model.html#field_28375">field_28375</a>, <a href="../../../../../../net/minecraft/client/model/Model.html#field_28376">field_28376</a>, <a href="../../../../../../net/minecraft/client/model/Model.html#field_28377">field_28377</a>, <a href="../../../../../../net/minecraft/client/model/Model.html#field_28378">field_28378</a>, <a href="../../../../../../net/minecraft/client/model/Model.html#textureHeight">textureHeight</a>, <a href="../../../../../../net/minecraft/client/model/Model.html#textureWidth">textureWidth</a></code></li>
 </ul>
 </li>
 </ul>
@@ -182,8 +182,14 @@ extends <a href="../../../../../../net/minecraft/client/render/entity/model/Enti
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/client/render/entity/model/BlazeEntityModel.html#method_9272--">method_9272</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/client/render/entity/model/BlazeEntityModel.html#method_29874-float-float-float-float-float-float-net.minecraft.entity.Entity-">method_29874</a></span>(float&nbsp;float2,
+            float&nbsp;float3,
+            float&nbsp;float4,
+            float&nbsp;float5,
+            float&nbsp;float6,
+            float&nbsp;float7,
+            <a href="../../../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -191,27 +197,17 @@ extends <a href="../../../../../../net/minecraft/client/render/entity/model/Enti
       float&nbsp;float2,
       float&nbsp;float3,
       float&nbsp;float4,
-      float&nbsp;float5,
-      float&nbsp;float6,
-      float&nbsp;float7)</code>&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/client/render/entity/model/BlazeEntityModel.html#setAngles-float-float-float-float-float-float-net.minecraft.entity.Entity-">setAngles</a></span>(float&nbsp;float2,
-         float&nbsp;float3,
-         float&nbsp;float4,
-         float&nbsp;float5,
-         float&nbsp;float6,
-         float&nbsp;float7,
-         <a href="../../../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</code>&nbsp;</td>
+      float&nbsp;red,
+      float&nbsp;green,
+      float&nbsp;blue)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.client.render.entity.model.EntityModel">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.client.model.Model">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;net.minecraft.client.render.entity.model.<a href="../../../../../../net/minecraft/client/render/entity/model/EntityModel.html" title="class in net.minecraft.client.render.entity.model">EntityModel</a></h3>
-<code><a href="../../../../../../net/minecraft/client/render/entity/model/EntityModel.html#method_3055-java.lang.String-">method_3055</a>, <a href="../../../../../../net/minecraft/client/render/entity/model/EntityModel.html#method_3056-java.lang.String-int-int-">method_3056</a>, <a href="../../../../../../net/minecraft/client/render/entity/model/EntityModel.html#method_3057-java.util.Random-">method_3057</a>, <a href="../../../../../../net/minecraft/client/render/entity/model/EntityModel.html#method_3059-net.minecraft.entity.LivingEntity-float-float-float-">method_3059</a></code></li>
+<h3>Methods inherited from class&nbsp;net.minecraft.client.model.<a href="../../../../../../net/minecraft/client/model/Model.html" title="class in net.minecraft.client.model">Model</a></h3>
+<code><a href="../../../../../../net/minecraft/client/model/Model.html#method_29875-net.minecraft.client.model.Model-">method_29875</a>, <a href="../../../../../../net/minecraft/client/model/Model.html#method_29876-net.minecraft.client.model.ModelPart-net.minecraft.client.model.ModelPart-">method_29876</a>, <a href="../../../../../../net/minecraft/client/model/Model.html#method_29877-java.lang.String-">method_29877</a>, <a href="../../../../../../net/minecraft/client/model/Model.html#method_29878-java.lang.String-int-int-">method_29878</a>, <a href="../../../../../../net/minecraft/client/model/Model.html#method_29879-java.util.Random-">method_29879</a>, <a href="../../../../../../net/minecraft/client/model/Model.html#method_29881-net.minecraft.entity.LivingEntity-float-float-float-">method_29881</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -234,22 +230,22 @@ extends <a href="../../../../../../net/minecraft/client/render/entity/model/Enti
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_3701">
+<a name="rods">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_3701</h4>
-<pre>private&nbsp;<a href="../../../../../../net/minecraft/client/model/ModelPart.html" title="class in net.minecraft.client.model">ModelPart</a>[] field_3701</pre>
+<h4>rods</h4>
+<pre>private final&nbsp;<a href="../../../../../../net/minecraft/client/model/ModelPart.html" title="class in net.minecraft.client.model">ModelPart</a>[] rods</pre>
 </li>
 </ul>
-<a name="field_3702">
+<a name="head">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_3702</h4>
-<pre>private&nbsp;<a href="../../../../../../net/minecraft/client/model/ModelPart.html" title="class in net.minecraft.client.model">ModelPart</a> field_3702</pre>
+<h4>head</h4>
+<pre>private final&nbsp;<a href="../../../../../../net/minecraft/client/model/ModelPart.html" title="class in net.minecraft.client.model">ModelPart</a> head</pre>
 </li>
 </ul>
 </li>
@@ -277,15 +273,6 @@ extends <a href="../../../../../../net/minecraft/client/render/entity/model/Enti
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_9272--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_9272</h4>
-<pre>public&nbsp;int&nbsp;method_9272()</pre>
-</li>
-</ul>
 <a name="render-net.minecraft.entity.Entity-float-float-float-float-float-float-">
 <!--   -->
 </a>
@@ -296,31 +283,31 @@ extends <a href="../../../../../../net/minecraft/client/render/entity/model/Enti
                    float&nbsp;float2,
                    float&nbsp;float3,
                    float&nbsp;float4,
-                   float&nbsp;float5,
-                   float&nbsp;float6,
-                   float&nbsp;float7)</pre>
+                   float&nbsp;red,
+                   float&nbsp;green,
+                   float&nbsp;blue)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../net/minecraft/client/render/entity/model/EntityModel.html#render-net.minecraft.entity.Entity-float-float-float-float-float-float-">render</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../net/minecraft/client/render/entity/model/EntityModel.html" title="class in net.minecraft.client.render.entity.model">EntityModel</a></code></dd>
+<dd><code><a href="../../../../../../net/minecraft/client/model/Model.html#render-net.minecraft.entity.Entity-float-float-float-float-float-float-">render</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../net/minecraft/client/model/Model.html" title="class in net.minecraft.client.model">Model</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="setAngles-float-float-float-float-float-float-net.minecraft.entity.Entity-">
+<a name="method_29874-float-float-float-float-float-float-net.minecraft.entity.Entity-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>setAngles</h4>
-<pre>public&nbsp;void&nbsp;setAngles(float&nbsp;float2,
-                      float&nbsp;float3,
-                      float&nbsp;float4,
-                      float&nbsp;float5,
-                      float&nbsp;float6,
-                      float&nbsp;float7,
-                      <a href="../../../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</pre>
+<h4>method_29874</h4>
+<pre>public&nbsp;void&nbsp;method_29874(float&nbsp;float2,
+                         float&nbsp;float3,
+                         float&nbsp;float4,
+                         float&nbsp;float5,
+                         float&nbsp;float6,
+                         float&nbsp;float7,
+                         <a href="../../../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../../../net/minecraft/client/render/entity/model/EntityModel.html#setAngles-float-float-float-float-float-float-net.minecraft.entity.Entity-">setAngles</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../net/minecraft/client/render/entity/model/EntityModel.html" title="class in net.minecraft.client.render.entity.model">EntityModel</a></code></dd>
+<dd><code><a href="../../../../../../net/minecraft/client/model/Model.html#method_29874-float-float-float-float-float-float-net.minecraft.entity.Entity-">method_29874</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../net/minecraft/client/model/Model.html" title="class in net.minecraft.client.model">Model</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -351,7 +338,7 @@ extends <a href="../../../../../../net/minecraft/client/render/entity/model/Enti
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../../net/minecraft/client/render/entity/model/BiPedModel.html" title="class in net.minecraft.client.render.entity.model"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../../net/minecraft/client/render/entity/model/BipedEntityModel.ArmPose.html" title="enum in net.minecraft.client.render.entity.model"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../../net/minecraft/client/render/entity/model/BoatEntityModel.html" title="class in net.minecraft.client.render.entity.model"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

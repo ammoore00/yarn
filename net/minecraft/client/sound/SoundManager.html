@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../net/minecraft/client/sound/SoundInstance.html" title="interface in net.minecraft.client.sound"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../net/minecraft/client/sound/SoundRegistry.html" title="class in net.minecraft.client.sound"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/client/sound/SoundInstance.AttenuationType.html" title="enum in net.minecraft.client.sound"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/client/sound/SoundSystem.html" title="class in net.minecraft.client.sound"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/client/sound/SoundManager.html" target="_top">Frames</a></li>
@@ -108,14 +108,14 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../net/minecraft/resource/ResourceReloadListener.html" title="interface in net.minecraft.resource">ResourceReloadListener</a>, <a href="../../../../net/minecraft/util/Tickable.html" title="interface in net.minecraft.util">Tickable</a></dd>
+<dd><a href="../../../../net/minecraft/class_4176.html" title="interface in net.minecraft">class_4176</a>, <a href="../../../../net/minecraft/util/Tickable.html" title="interface in net.minecraft.util">Tickable</a></dd>
 </dl>
 <hr>
 <br>
 <pre>@Environment(value=CLIENT)
 public class <span class="typeNameLabel">SoundManager</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
-implements <a href="../../../../net/minecraft/resource/ResourceReloadListener.html" title="interface in net.minecraft.resource">ResourceReloadListener</a>, <a href="../../../../net/minecraft/util/Tickable.html" title="interface in net.minecraft.util">Tickable</a></pre>
+implements <a href="../../../../net/minecraft/class_4176.html" title="interface in net.minecraft">class_4176</a>, <a href="../../../../net/minecraft/util/Tickable.html" title="interface in net.minecraft.util">Tickable</a></pre>
 </li>
 </ul>
 </div>
@@ -135,16 +135,16 @@ implements <a href="../../../../net/minecraft/resource/ResourceReloadListener.ht
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private static <a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/Gson.html?is-external=true" title="class or interface in com.google.gson">Gson</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#field_10777">field_10777</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/class_6110.html" title="class in net.minecraft">class_6110</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#field_30466">field_30466</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/ParameterizedType.html?is-external=true" title="class or interface in java.lang.reflect">ParameterizedType</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#field_10778">field_10778</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#field_30468">field_30468</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../net/minecraft/client/sound/SoundRegistry.html" title="class in net.minecraft.client.sound">SoundRegistry</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#loadedSounds">loadedSounds</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private static <a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/Gson.html?is-external=true" title="class or interface in com.google.gson">Gson</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#GSON">GSON</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a></code></td>
@@ -155,12 +155,12 @@ implements <a href="../../../../net/minecraft/resource/ResourceReloadListener.ht
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#MISSING_SOUND">MISSING_SOUND</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#resourceManager">resourceManager</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code>private <a href="../../../../net/minecraft/client/sound/SoundSystem.html" title="class in net.minecraft.client.sound">SoundSystem</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#soundSystem">soundSystem</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/ParameterizedType.html?is-external=true" title="class or interface in java.lang.reflect">ParameterizedType</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#TYPE">TYPE</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -177,8 +177,8 @@ implements <a href="../../../../net/minecraft/resource/ResourceReloadListener.ht
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#SoundManager-net.minecraft.resource.ResourceManager-net.minecraft.class_2277-">SoundManager</a></span>(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager,
-            <a href="../../../../net/minecraft/class_2277.html" title="class in net.minecraft">class_2277</a>&nbsp;options)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#SoundManager-net.minecraft.resource.ResourceManager-net.minecraft.client.options.GameOptions-">SoundManager</a></span>(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager,
+            <a href="../../../../net/minecraft/client/options/GameOptions.html" title="class in net.minecraft.client.options">GameOptions</a>&nbsp;gameOptions)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -197,66 +197,84 @@ implements <a href="../../../../net/minecraft/resource/ResourceReloadListener.ht
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#close--">close</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#apply-net.minecraft.resource.ResourceManager-">apply</a></span>(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/client/sound/WeightedSoundSet.html" title="class in net.minecraft.client.sound">WeightedSoundSet</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#get-net.minecraft.util.Identifier-">get</a></span>(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;id)</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#close--">close</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#isPlaying-net.minecraft.client.sound.SoundInstance-">isPlaying</a></span>(<a href="../../../../net/minecraft/client/sound/SoundInstance.html" title="interface in net.minecraft.client.sound">SoundInstance</a>&nbsp;instance)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../net/minecraft/client/sound/WeightedSoundSet.html" title="class in net.minecraft.client.sound">WeightedSoundSet</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#get-net.minecraft.util.Identifier-">get</a></span>(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#method_4611-net.minecraft.class_2674-float-">method_4611</a></span>(<a href="../../../../net/minecraft/class_2674.html" title="class in net.minecraft">class_2674</a>&nbsp;class_2674,
-           float&nbsp;float2)</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#isPlaying-net.minecraft.client.sound.SoundInstance-">isPlaying</a></span>(<a href="../../../../net/minecraft/client/sound/SoundInstance.html" title="interface in net.minecraft.client.sound">SoundInstance</a>&nbsp;soundInstance)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/client/sound/WeightedSoundSet.html" title="class in net.minecraft.client.sound">WeightedSoundSet</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#method_4612-net.minecraft.client.sound.SoundCategory:A-">method_4612</a></span>(<a href="../../../../net/minecraft/client/sound/SoundCategory.html" title="enum in net.minecraft.client.sound">SoundCategory</a>[]&nbsp;soundCategory)</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#method_31726-net.minecraft.entity.player.PlayerEntity-float-">method_31726</a></span>(<a href="../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity,
+            float&nbsp;float2)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#method_31727-net.minecraft.client.sound.Sound-net.minecraft.util.Identifier-">method_31727</a></span>(<a href="../../../../net/minecraft/client/sound/Sound.html" title="class in net.minecraft.client.sound">Sound</a>&nbsp;sound,
+            <a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier)</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>private void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#method_31735-net.minecraft.util.Identifier-net.minecraft.client.sound.SoundEntry-">method_31735</a></span>(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier,
+            <a href="../../../../net/minecraft/client/sound/SoundEntry.html" title="class in net.minecraft.client.sound">SoundEntry</a>&nbsp;soundEntry)</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#pauseAll--">pauseAll</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#play-net.minecraft.client.sound.SoundInstance-">play</a></span>(<a href="../../../../net/minecraft/client/sound/SoundInstance.html" title="interface in net.minecraft.client.sound">SoundInstance</a>&nbsp;sound)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#play-net.minecraft.client.sound.SoundInstance-int-">play</a></span>(<a href="../../../../net/minecraft/client/sound/SoundInstance.html" title="interface in net.minecraft.client.sound">SoundInstance</a>&nbsp;sound,
     int&nbsp;delay)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code>private void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#register-net.minecraft.util.Identifier-net.minecraft.client.sound.SoundEntry-">register</a></span>(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;id,
-        <a href="../../../../net/minecraft/client/sound/SoundEntry.html" title="class in net.minecraft.client.sound">SoundEntry</a>&nbsp;entry)</code>&nbsp;</td>
-</tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#reload-net.minecraft.resource.ResourceManager-">reload</a></span>(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager)</code>&nbsp;</td>
-</tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#resumeAll--">resumeAll</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../net/minecraft/client/sound/SoundEntry.html" title="class in net.minecraft.client.sound">SoundEntry</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#readSounds-java.io.InputStream-">readSounds</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;inputStream)</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#stop-net.minecraft.client.sound.SoundInstance-">stop</a></span>(<a href="../../../../net/minecraft/client/sound/SoundInstance.html" title="interface in net.minecraft.client.sound">SoundInstance</a>&nbsp;instance)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#registerListener-net.minecraft.client.sound.ListenerSoundInstance-">registerListener</a></span>(<a href="../../../../net/minecraft/client/sound/ListenerSoundInstance.html" title="interface in net.minecraft.client.sound">ListenerSoundInstance</a>&nbsp;listenerSoundInstance)</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#stopAll--">stopAll</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#resumeAll--">resumeAll</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#tick--">tick</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#stop-net.minecraft.client.sound.SoundInstance-">stop</a></span>(<a href="../../../../net/minecraft/client/sound/SoundInstance.html" title="interface in net.minecraft.client.sound">SoundInstance</a>&nbsp;soundInstance)</code>&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#updateSoundVolume-net.minecraft.client.sound.SoundCategory-float-">updateSoundVolume</a></span>(<a href="../../../../net/minecraft/client/sound/SoundCategory.html" title="enum in net.minecraft.client.sound">SoundCategory</a>&nbsp;category,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#stopAll--">stopAll</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#stopSounds-java.lang.String-net.minecraft.sound.SoundCategory-">stopSounds</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
+          <a href="../../../../net/minecraft/sound/SoundCategory.html" title="enum in net.minecraft.sound">SoundCategory</a>&nbsp;soundCategory)</code>&nbsp;</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#tick--">tick</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#unregisterListener-net.minecraft.client.sound.ListenerSoundInstance-">unregisterListener</a></span>(<a href="../../../../net/minecraft/client/sound/ListenerSoundInstance.html" title="interface in net.minecraft.client.sound">ListenerSoundInstance</a>&nbsp;listenerSoundInstance)</code>&nbsp;</td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/SoundManager.html#updateSoundVolume-net.minecraft.sound.SoundCategory-float-">updateSoundVolume</a></span>(<a href="../../../../net/minecraft/sound/SoundCategory.html" title="enum in net.minecraft.sound">SoundCategory</a>&nbsp;category,
                  float&nbsp;volume)</code>&nbsp;</td>
 </tr>
 </table>
@@ -281,33 +299,6 @@ implements <a href="../../../../net/minecraft/resource/ResourceReloadListener.ht
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="LOGGER">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>LOGGER</h4>
-<pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a> LOGGER</pre>
-</li>
-</ul>
-<a name="field_10777">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_10777</h4>
-<pre>private static final&nbsp;<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/Gson.html?is-external=true" title="class or interface in com.google.gson">Gson</a> field_10777</pre>
-</li>
-</ul>
-<a name="field_10778">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_10778</h4>
-<pre>private static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/ParameterizedType.html?is-external=true" title="class or interface in java.lang.reflect">ParameterizedType</a> field_10778</pre>
-</li>
-</ul>
 <a name="MISSING_SOUND">
 <!--   -->
 </a>
@@ -317,13 +308,40 @@ implements <a href="../../../../net/minecraft/resource/ResourceReloadListener.ht
 <pre>public static final&nbsp;<a href="../../../../net/minecraft/client/sound/Sound.html" title="class in net.minecraft.client.sound">Sound</a> MISSING_SOUND</pre>
 </li>
 </ul>
-<a name="loadedSounds">
+<a name="LOGGER">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>loadedSounds</h4>
-<pre>private final&nbsp;<a href="../../../../net/minecraft/client/sound/SoundRegistry.html" title="class in net.minecraft.client.sound">SoundRegistry</a> loadedSounds</pre>
+<h4>LOGGER</h4>
+<pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a> LOGGER</pre>
+</li>
+</ul>
+<a name="GSON">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GSON</h4>
+<pre>private static final&nbsp;<a href="https://www.javadoc.io/doc/com.google.code.gson/gson/2.8.0/com/google/gson/Gson.html?is-external=true" title="class or interface in com.google.gson">Gson</a> GSON</pre>
+</li>
+</ul>
+<a name="TYPE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>TYPE</h4>
+<pre>private static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/ParameterizedType.html?is-external=true" title="class or interface in java.lang.reflect">ParameterizedType</a> TYPE</pre>
+</li>
+</ul>
+<a name="field_30466">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>field_30466</h4>
+<pre>private final&nbsp;<a href="../../../../net/minecraft/class_6110.html" title="class in net.minecraft">class_6110</a> field_30466</pre>
 </li>
 </ul>
 <a name="soundSystem">
@@ -335,13 +353,13 @@ implements <a href="../../../../net/minecraft/resource/ResourceReloadListener.ht
 <pre>private final&nbsp;<a href="../../../../net/minecraft/client/sound/SoundSystem.html" title="class in net.minecraft.client.sound">SoundSystem</a> soundSystem</pre>
 </li>
 </ul>
-<a name="resourceManager">
+<a name="field_30468">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>resourceManager</h4>
-<pre>private final&nbsp;<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a> resourceManager</pre>
+<h4>field_30468</h4>
+<pre>private final&nbsp;<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a> field_30468</pre>
 </li>
 </ul>
 </li>
@@ -352,14 +370,14 @@ implements <a href="../../../../net/minecraft/resource/ResourceReloadListener.ht
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="SoundManager-net.minecraft.resource.ResourceManager-net.minecraft.class_2277-">
+<a name="SoundManager-net.minecraft.resource.ResourceManager-net.minecraft.client.options.GameOptions-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SoundManager</h4>
 <pre>public&nbsp;SoundManager(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager,
-                    <a href="../../../../net/minecraft/class_2277.html" title="class in net.minecraft">class_2277</a>&nbsp;options)</pre>
+                    <a href="../../../../net/minecraft/client/options/GameOptions.html" title="class in net.minecraft.client.options">GameOptions</a>&nbsp;gameOptions)</pre>
 </li>
 </ul>
 </li>
@@ -370,27 +388,47 @@ implements <a href="../../../../net/minecraft/resource/ResourceReloadListener.ht
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="reload-net.minecraft.resource.ResourceManager-">
+<a name="apply-net.minecraft.resource.ResourceManager-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>reload</h4>
-<pre>public&nbsp;void&nbsp;reload(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager)</pre>
+<h4>apply</h4>
+<pre>public&nbsp;void&nbsp;apply(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/resource/ResourceReloadListener.html#reload-net.minecraft.resource.ResourceManager-">reload</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/resource/ResourceReloadListener.html" title="interface in net.minecraft.resource">ResourceReloadListener</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/class_4176.html#apply-net.minecraft.resource.ResourceManager-">apply</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/class_4176.html" title="interface in net.minecraft">class_4176</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="register-net.minecraft.util.Identifier-net.minecraft.client.sound.SoundEntry-">
+<a name="readSounds-java.io.InputStream-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>register</h4>
-<pre>private&nbsp;void&nbsp;register(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;id,
-                      <a href="../../../../net/minecraft/client/sound/SoundEntry.html" title="class in net.minecraft.client.sound">SoundEntry</a>&nbsp;entry)</pre>
+<h4>readSounds</h4>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+protected&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../net/minecraft/client/sound/SoundEntry.html" title="class in net.minecraft.client.sound">SoundEntry</a>&gt;&nbsp;readSounds(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;inputStream)</pre>
+</li>
+</ul>
+<a name="method_31735-net.minecraft.util.Identifier-net.minecraft.client.sound.SoundEntry-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_31735</h4>
+<pre>private&nbsp;void&nbsp;method_31735(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier,
+                          <a href="../../../../net/minecraft/client/sound/SoundEntry.html" title="class in net.minecraft.client.sound">SoundEntry</a>&nbsp;soundEntry)</pre>
+</li>
+</ul>
+<a name="method_31727-net.minecraft.client.sound.Sound-net.minecraft.util.Identifier-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_31727</h4>
+<pre>private&nbsp;boolean&nbsp;method_31727(<a href="../../../../net/minecraft/client/sound/Sound.html" title="class in net.minecraft.client.sound">Sound</a>&nbsp;sound,
+                             <a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier)</pre>
 </li>
 </ul>
 <a name="get-net.minecraft.util.Identifier-">
@@ -399,7 +437,8 @@ implements <a href="../../../../net/minecraft/resource/ResourceReloadListener.ht
 <ul class="blockList">
 <li class="blockList">
 <h4>get</h4>
-<pre>public&nbsp;<a href="../../../../net/minecraft/client/sound/WeightedSoundSet.html" title="class in net.minecraft.client.sound">WeightedSoundSet</a>&nbsp;get(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;id)</pre>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="../../../../net/minecraft/client/sound/WeightedSoundSet.html" title="class in net.minecraft.client.sound">WeightedSoundSet</a>&nbsp;get(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier)</pre>
 </li>
 </ul>
 <a name="play-net.minecraft.client.sound.SoundInstance-">
@@ -421,14 +460,14 @@ implements <a href="../../../../net/minecraft/resource/ResourceReloadListener.ht
                  int&nbsp;delay)</pre>
 </li>
 </ul>
-<a name="method_4611-net.minecraft.class_2674-float-">
+<a name="method_31726-net.minecraft.entity.player.PlayerEntity-float-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_4611</h4>
-<pre>public&nbsp;void&nbsp;method_4611(<a href="../../../../net/minecraft/class_2674.html" title="class in net.minecraft">class_2674</a>&nbsp;class_2674,
-                        float&nbsp;float2)</pre>
+<h4>method_31726</h4>
+<pre>public&nbsp;void&nbsp;method_31726(<a href="../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity,
+                         float&nbsp;float2)</pre>
 </li>
 </ul>
 <a name="pauseAll--">
@@ -480,13 +519,13 @@ implements <a href="../../../../net/minecraft/resource/ResourceReloadListener.ht
 <pre>public&nbsp;void&nbsp;resumeAll()</pre>
 </li>
 </ul>
-<a name="updateSoundVolume-net.minecraft.client.sound.SoundCategory-float-">
+<a name="updateSoundVolume-net.minecraft.sound.SoundCategory-float-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>updateSoundVolume</h4>
-<pre>public&nbsp;void&nbsp;updateSoundVolume(<a href="../../../../net/minecraft/client/sound/SoundCategory.html" title="enum in net.minecraft.client.sound">SoundCategory</a>&nbsp;category,
+<pre>public&nbsp;void&nbsp;updateSoundVolume(<a href="../../../../net/minecraft/sound/SoundCategory.html" title="enum in net.minecraft.sound">SoundCategory</a>&nbsp;category,
                               float&nbsp;volume)</pre>
 </li>
 </ul>
@@ -496,25 +535,44 @@ implements <a href="../../../../net/minecraft/resource/ResourceReloadListener.ht
 <ul class="blockList">
 <li class="blockList">
 <h4>stop</h4>
-<pre>public&nbsp;void&nbsp;stop(<a href="../../../../net/minecraft/client/sound/SoundInstance.html" title="interface in net.minecraft.client.sound">SoundInstance</a>&nbsp;instance)</pre>
-</li>
-</ul>
-<a name="method_4612-net.minecraft.client.sound.SoundCategory:A-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_4612</h4>
-<pre>public&nbsp;<a href="../../../../net/minecraft/client/sound/WeightedSoundSet.html" title="class in net.minecraft.client.sound">WeightedSoundSet</a>&nbsp;method_4612(<a href="../../../../net/minecraft/client/sound/SoundCategory.html" title="enum in net.minecraft.client.sound">SoundCategory</a>[]&nbsp;soundCategory)</pre>
+<pre>public&nbsp;void&nbsp;stop(<a href="../../../../net/minecraft/client/sound/SoundInstance.html" title="interface in net.minecraft.client.sound">SoundInstance</a>&nbsp;soundInstance)</pre>
 </li>
 </ul>
 <a name="isPlaying-net.minecraft.client.sound.SoundInstance-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>isPlaying</h4>
-<pre>public&nbsp;boolean&nbsp;isPlaying(<a href="../../../../net/minecraft/client/sound/SoundInstance.html" title="interface in net.minecraft.client.sound">SoundInstance</a>&nbsp;instance)</pre>
+<pre>public&nbsp;boolean&nbsp;isPlaying(<a href="../../../../net/minecraft/client/sound/SoundInstance.html" title="interface in net.minecraft.client.sound">SoundInstance</a>&nbsp;soundInstance)</pre>
+</li>
+</ul>
+<a name="registerListener-net.minecraft.client.sound.ListenerSoundInstance-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>registerListener</h4>
+<pre>public&nbsp;void&nbsp;registerListener(<a href="../../../../net/minecraft/client/sound/ListenerSoundInstance.html" title="interface in net.minecraft.client.sound">ListenerSoundInstance</a>&nbsp;listenerSoundInstance)</pre>
+</li>
+</ul>
+<a name="unregisterListener-net.minecraft.client.sound.ListenerSoundInstance-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>unregisterListener</h4>
+<pre>public&nbsp;void&nbsp;unregisterListener(<a href="../../../../net/minecraft/client/sound/ListenerSoundInstance.html" title="interface in net.minecraft.client.sound">ListenerSoundInstance</a>&nbsp;listenerSoundInstance)</pre>
+</li>
+</ul>
+<a name="stopSounds-java.lang.String-net.minecraft.sound.SoundCategory-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>stopSounds</h4>
+<pre>public&nbsp;void&nbsp;stopSounds(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
+                       <a href="../../../../net/minecraft/sound/SoundCategory.html" title="enum in net.minecraft.sound">SoundCategory</a>&nbsp;soundCategory)</pre>
 </li>
 </ul>
 </li>
@@ -544,8 +602,8 @@ implements <a href="../../../../net/minecraft/resource/ResourceReloadListener.ht
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../net/minecraft/client/sound/SoundInstance.html" title="interface in net.minecraft.client.sound"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../net/minecraft/client/sound/SoundRegistry.html" title="class in net.minecraft.client.sound"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/client/sound/SoundInstance.AttenuationType.html" title="enum in net.minecraft.client.sound"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/client/sound/SoundSystem.html" title="class in net.minecraft.client.sound"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/client/sound/SoundManager.html" target="_top">Frames</a></li>

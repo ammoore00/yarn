@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -129,35 +129,27 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#field_229">field_229</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#affectedBlocks">affectedBlocks</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#field_233">field_233</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>,<a href="../../../../net/minecraft/util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#affectedPlayers">affectedPlayers</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#field_9112">field_9112</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#createFire">createFire</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#field_9113">field_9113</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#entity">entity</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#field_9114">field_9114</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#field_23520">field_23520</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#field_9115">field_9115</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#field_9116">field_9116</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>float</code></td>
+<td class="colFirst"><code>private float</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#power">power</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -165,15 +157,19 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#random">random</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#x">x</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#world">world</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#y">y</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#x">x</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>double</code></td>
+<td class="colFirst"><code>private double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#y">y</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#z">z</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -191,12 +187,34 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#Explosion-net.minecraft.world.World-net.minecraft.entity.Entity-double-double-double-float-">Explosion</a></span>(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#Explosion-net.minecraft.world.World-net.minecraft.entity.Entity-double-double-double-float-boolean-boolean-">Explosion</a></span>(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
          <a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
-         double&nbsp;double2,
-         double&nbsp;double3,
-         double&nbsp;double4,
-         float&nbsp;float2)</code>&nbsp;</td>
+         double&nbsp;x,
+         double&nbsp;y,
+         double&nbsp;z,
+         float&nbsp;power,
+         boolean&nbsp;createFire,
+         boolean&nbsp;bool)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#Explosion-net.minecraft.world.World-net.minecraft.entity.Entity-double-double-double-float-boolean-boolean-java.util.List-">Explosion</a></span>(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+         <a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
+         double&nbsp;x,
+         double&nbsp;y,
+         double&nbsp;z,
+         float&nbsp;power,
+         boolean&nbsp;createFire,
+         boolean&nbsp;bool,
+         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&gt;&nbsp;affectedBlocks)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#Explosion-net.minecraft.world.World-net.minecraft.entity.Entity-double-double-double-float-java.util.List-">Explosion</a></span>(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+         <a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
+         double&nbsp;x,
+         double&nbsp;y,
+         double&nbsp;z,
+         float&nbsp;power,
+         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&gt;&nbsp;affectedBlocks)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -215,19 +233,27 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#affectWorld-boolean-">affectWorld</a></span>(boolean&nbsp;bool)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#clearAffectedBlocks--">clearAffectedBlocks</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#collectBlocksAndDamageEntities--">collectBlocksAndDamageEntities</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#getAffectedBlocks--">getAffectedBlocks</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a></code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>,<a href="../../../../net/minecraft/util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#getAffectedPlayers--">getAffectedPlayers</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#method_208--">method_208</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#getCausingEntity--">getCausingEntity</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#method_25898--">method_25898</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/explosion/Explosion.html#method_25899-boolean-">method_25899</a></span>(boolean&nbsp;bool)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -251,31 +277,22 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_9112">
+<a name="createFire">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_9112</h4>
-<pre>public&nbsp;boolean field_9112</pre>
+<h4>createFire</h4>
+<pre>private final&nbsp;boolean createFire</pre>
 </li>
 </ul>
-<a name="field_9113">
+<a name="field_23520">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_9113</h4>
-<pre>public&nbsp;boolean field_9113</pre>
-</li>
-</ul>
-<a name="field_9115">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_9115</h4>
-<pre>private&nbsp;int field_9115</pre>
+<h4>field_23520</h4>
+<pre>private final&nbsp;boolean field_23520</pre>
 </li>
 </ul>
 <a name="random">
@@ -284,16 +301,16 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>random</h4>
-<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util">Random</a> random</pre>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util">Random</a> random</pre>
 </li>
 </ul>
-<a name="field_229">
+<a name="world">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_229</h4>
-<pre>private&nbsp;<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a> field_229</pre>
+<h4>world</h4>
+<pre>private final&nbsp;<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a> world</pre>
 </li>
 </ul>
 <a name="x">
@@ -302,7 +319,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>x</h4>
-<pre>public&nbsp;double x</pre>
+<pre>private final&nbsp;double x</pre>
 </li>
 </ul>
 <a name="y">
@@ -311,7 +328,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>y</h4>
-<pre>public&nbsp;double y</pre>
+<pre>private final&nbsp;double y</pre>
 </li>
 </ul>
 <a name="z">
@@ -320,16 +337,16 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>z</h4>
-<pre>public&nbsp;double z</pre>
+<pre>private final&nbsp;double z</pre>
 </li>
 </ul>
-<a name="field_233">
+<a name="entity">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_233</h4>
-<pre>public&nbsp;<a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a> field_233</pre>
+<h4>entity</h4>
+<pre>private final&nbsp;<a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a> entity</pre>
 </li>
 </ul>
 <a name="power">
@@ -338,25 +355,25 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>power</h4>
-<pre>public&nbsp;float power</pre>
+<pre>private final&nbsp;float power</pre>
 </li>
 </ul>
-<a name="field_9114">
+<a name="affectedBlocks">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_9114</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a> field_9114</pre>
+<h4>affectedBlocks</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&gt; affectedBlocks</pre>
 </li>
 </ul>
-<a name="field_9116">
+<a name="affectedPlayers">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_9116</h4>
-<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a> field_9116</pre>
+<h4>affectedPlayers</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>,<a href="../../../../net/minecraft/util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&gt; affectedPlayers</pre>
 </li>
 </ul>
 </li>
@@ -367,7 +384,41 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="Explosion-net.minecraft.world.World-net.minecraft.entity.Entity-double-double-double-float-">
+<a name="Explosion-net.minecraft.world.World-net.minecraft.entity.Entity-double-double-double-float-java.util.List-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Explosion</h4>
+<pre>@Environment(value=CLIENT)
+public&nbsp;Explosion(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+                                            <a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
+                                            double&nbsp;x,
+                                            double&nbsp;y,
+                                            double&nbsp;z,
+                                            float&nbsp;power,
+                                            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&gt;&nbsp;affectedBlocks)</pre>
+</li>
+</ul>
+<a name="Explosion-net.minecraft.world.World-net.minecraft.entity.Entity-double-double-double-float-boolean-boolean-java.util.List-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Explosion</h4>
+<pre>@Environment(value=CLIENT)
+public&nbsp;Explosion(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+                                            <a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
+                                            double&nbsp;x,
+                                            double&nbsp;y,
+                                            double&nbsp;z,
+                                            float&nbsp;power,
+                                            boolean&nbsp;createFire,
+                                            boolean&nbsp;bool,
+                                            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&gt;&nbsp;affectedBlocks)</pre>
+</li>
+</ul>
+<a name="Explosion-net.minecraft.world.World-net.minecraft.entity.Entity-double-double-double-float-boolean-boolean-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -375,10 +426,12 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>Explosion</h4>
 <pre>public&nbsp;Explosion(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
                  <a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
-                 double&nbsp;double2,
-                 double&nbsp;double3,
-                 double&nbsp;double4,
-                 float&nbsp;float2)</pre>
+                 double&nbsp;x,
+                 double&nbsp;y,
+                 double&nbsp;z,
+                 float&nbsp;power,
+                 boolean&nbsp;createFire,
+                 boolean&nbsp;bool)</pre>
 </li>
 </ul>
 </li>
@@ -389,22 +442,22 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="collectBlocksAndDamageEntities--">
+<a name="method_25898--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>collectBlocksAndDamageEntities</h4>
-<pre>public&nbsp;void&nbsp;collectBlocksAndDamageEntities()</pre>
+<h4>method_25898</h4>
+<pre>public&nbsp;void&nbsp;method_25898()</pre>
 </li>
 </ul>
-<a name="affectWorld-boolean-">
+<a name="method_25899-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>affectWorld</h4>
-<pre>public&nbsp;void&nbsp;affectWorld(boolean&nbsp;bool)</pre>
+<h4>method_25899</h4>
+<pre>public&nbsp;void&nbsp;method_25899(boolean&nbsp;bool)</pre>
 </li>
 </ul>
 <a name="getAffectedPlayers--">
@@ -413,16 +466,35 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getAffectedPlayers</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&nbsp;getAffectedPlayers()</pre>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>,<a href="../../../../net/minecraft/util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&gt;&nbsp;getAffectedPlayers()</pre>
 </li>
 </ul>
-<a name="method_208--">
+<a name="getCausingEntity--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCausingEntity</h4>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="../../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;getCausingEntity()</pre>
+</li>
+</ul>
+<a name="clearAffectedBlocks--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clearAffectedBlocks</h4>
+<pre>public&nbsp;void&nbsp;clearAffectedBlocks()</pre>
+</li>
+</ul>
+<a name="getAffectedBlocks--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_208</h4>
-<pre>public&nbsp;<a href="../../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;method_208()</pre>
+<h4>getAffectedBlocks</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&gt;&nbsp;getAffectedBlocks()</pre>
 </li>
 </ul>
 </li>

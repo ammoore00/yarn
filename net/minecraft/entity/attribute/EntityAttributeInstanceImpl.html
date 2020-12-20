@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstance.html" title="interface in net.minecraft.entity.attribute"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../net/minecraft/entity/attribute/EntityAttributes.html" title="class in net.minecraft.entity.attribute"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/entity/attribute/EntityAttributeModifier.html" title="class in net.minecraft.entity.attribute"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html" target="_top">Frames</a></li>
@@ -134,31 +134,31 @@ implements <a href="../../../../net/minecraft/entity/attribute/EntityAttributeIn
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/entity/attribute/EntityAttribute.html" title="interface in net.minecraft.entity.attribute">EntityAttribute</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html#attribute">attribute</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>private double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html#baseValue">baseValue</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html#cachedValue">cachedValue</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../net/minecraft/class_2635.html" title="class in net.minecraft">class_2635</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html#field_7559">field_7559</a></span></code>&nbsp;</td>
-</tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../../net/minecraft/entity/attribute/EntityAttribute.html" title="interface in net.minecraft.entity.attribute">EntityAttribute</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html#field_7560">field_7560</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/entity/attribute/AbstractEntityAttributeContainer.html" title="class in net.minecraft.entity.attribute">AbstractEntityAttributeContainer</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html#container">container</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html#field_7561">field_7561</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../net/minecraft/entity/attribute/EntityAttributeModifier.html" title="class in net.minecraft.entity.attribute">EntityAttributeModifier</a>&gt;&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html#field_33292">field_33292</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a></code></td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../net/minecraft/entity/attribute/EntityAttributeModifier.html" title="class in net.minecraft.entity.attribute">EntityAttributeModifier</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html#modifiersByName">modifiersByName</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a></code></td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>,<a href="../../../../net/minecraft/entity/attribute/EntityAttributeModifier.html" title="class in net.minecraft.entity.attribute">EntityAttributeModifier</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html#modifiersByUuid">modifiersByUuid</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -180,8 +180,8 @@ implements <a href="../../../../net/minecraft/entity/attribute/EntityAttributeIn
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html#EntityAttributeInstanceImpl-net.minecraft.class_2635-net.minecraft.entity.attribute.EntityAttribute-">EntityAttributeInstanceImpl</a></span>(<a href="../../../../net/minecraft/class_2635.html" title="class in net.minecraft">class_2635</a>&nbsp;class_2635,
-                           <a href="../../../../net/minecraft/entity/attribute/EntityAttribute.html" title="interface in net.minecraft.entity.attribute">EntityAttribute</a>&nbsp;entityAttribute)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html#EntityAttributeInstanceImpl-net.minecraft.entity.attribute.AbstractEntityAttributeContainer-net.minecraft.entity.attribute.EntityAttribute-">EntityAttributeInstanceImpl</a></span>(<a href="../../../../net/minecraft/entity/attribute/AbstractEntityAttributeContainer.html" title="class in net.minecraft.entity.attribute">AbstractEntityAttributeContainer</a>&nbsp;container,
+                           <a href="../../../../net/minecraft/entity/attribute/EntityAttribute.html" title="interface in net.minecraft.entity.attribute">EntityAttribute</a>&nbsp;attribute)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -200,7 +200,7 @@ implements <a href="../../../../net/minecraft/entity/attribute/EntityAttributeIn
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html#addModifier-net.minecraft.entity.attribute.AttributeModifier-">addModifier</a></span>(<a href="../../../../net/minecraft/entity/attribute/AttributeModifier.html" title="class in net.minecraft.entity.attribute">AttributeModifier</a>&nbsp;modifier)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html#addModifier-net.minecraft.entity.attribute.EntityAttributeModifier-">addModifier</a></span>(<a href="../../../../net/minecraft/entity/attribute/EntityAttributeModifier.html" title="class in net.minecraft.entity.attribute">EntityAttributeModifier</a>&nbsp;modifier)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -215,34 +215,46 @@ implements <a href="../../../../net/minecraft/entity/attribute/EntityAttributeIn
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html#getAttribute--">getAttribute</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html#getAttributeModifiers--">getAttributeModifiers</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html#getBaseValue--">getBaseValue</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/entity/attribute/AttributeModifier.html" title="class in net.minecraft.entity.attribute">AttributeModifier</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html#getByUuid-java.util.UUID-">getByUuid</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;id)</code>&nbsp;</td>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="../../../../net/minecraft/entity/attribute/EntityAttributeModifier.html" title="class in net.minecraft.entity.attribute">EntityAttributeModifier</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html#getModifier-java.util.UUID-">getModifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;uuid)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html#getValue--">getValue</a></span>()</code>&nbsp;</td>
 </tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html#hasModifier-net.minecraft.entity.attribute.EntityAttributeModifier-">hasModifier</a></span>(<a href="../../../../net/minecraft/entity/attribute/EntityAttributeModifier.html" title="class in net.minecraft.entity.attribute">EntityAttributeModifier</a>&nbsp;modifier)</code>&nbsp;</td>
+</tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code>private void</code></td>
+<td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html#invalidateCache--">invalidateCache</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html#method_10641-int-">method_10641</a></span>(int&nbsp;int2)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../net/minecraft/entity/attribute/EntityAttributeModifier.html" title="class in net.minecraft.entity.attribute">EntityAttributeModifier</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html#method_34864-int-">method_34864</a></span>(int&nbsp;int2)</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html#method_7303-net.minecraft.entity.attribute.AttributeModifier-">method_7303</a></span>(<a href="../../../../net/minecraft/entity/attribute/AttributeModifier.html" title="class in net.minecraft.entity.attribute">AttributeModifier</a>&nbsp;attributeModifier)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../net/minecraft/entity/attribute/EntityAttributeModifier.html" title="class in net.minecraft.entity.attribute">EntityAttributeModifier</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html#method_34870--">method_34870</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../net/minecraft/entity/attribute/EntityAttributeModifier.html" title="class in net.minecraft.entity.attribute">EntityAttributeModifier</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html#method_34889-int-">method_34889</a></span>(int&nbsp;int2)</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html#removeModifier-net.minecraft.entity.attribute.EntityAttributeModifier-">removeModifier</a></span>(<a href="../../../../net/minecraft/entity/attribute/EntityAttributeModifier.html" title="class in net.minecraft.entity.attribute">EntityAttributeModifier</a>&nbsp;modifier)</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html#removeModifier-java.util.UUID-">removeModifier</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;uuid)</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html#setBaseValue-double-">setBaseValue</a></span>(double&nbsp;baseValue)</code>&nbsp;</td>
 </tr>
@@ -268,31 +280,31 @@ implements <a href="../../../../net/minecraft/entity/attribute/EntityAttributeIn
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_7559">
+<a name="container">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7559</h4>
-<pre>private final&nbsp;<a href="../../../../net/minecraft/class_2635.html" title="class in net.minecraft">class_2635</a> field_7559</pre>
+<h4>container</h4>
+<pre>private final&nbsp;<a href="../../../../net/minecraft/entity/attribute/AbstractEntityAttributeContainer.html" title="class in net.minecraft.entity.attribute">AbstractEntityAttributeContainer</a> container</pre>
 </li>
 </ul>
-<a name="field_7560">
+<a name="attribute">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7560</h4>
-<pre>private final&nbsp;<a href="../../../../net/minecraft/entity/attribute/EntityAttribute.html" title="interface in net.minecraft.entity.attribute">EntityAttribute</a> field_7560</pre>
+<h4>attribute</h4>
+<pre>private final&nbsp;<a href="../../../../net/minecraft/entity/attribute/EntityAttribute.html" title="interface in net.minecraft.entity.attribute">EntityAttribute</a> attribute</pre>
 </li>
 </ul>
-<a name="field_7561">
+<a name="field_33292">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7561</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a> field_7561</pre>
+<h4>field_33292</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../net/minecraft/entity/attribute/EntityAttributeModifier.html" title="class in net.minecraft.entity.attribute">EntityAttributeModifier</a>&gt;&gt; field_33292</pre>
 </li>
 </ul>
 <a name="modifiersByName">
@@ -301,7 +313,7 @@ implements <a href="../../../../net/minecraft/entity/attribute/EntityAttributeIn
 <ul class="blockList">
 <li class="blockList">
 <h4>modifiersByName</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a> modifiersByName</pre>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../net/minecraft/entity/attribute/EntityAttributeModifier.html" title="class in net.minecraft.entity.attribute">EntityAttributeModifier</a>&gt;&gt; modifiersByName</pre>
 </li>
 </ul>
 <a name="modifiersByUuid">
@@ -310,7 +322,7 @@ implements <a href="../../../../net/minecraft/entity/attribute/EntityAttributeIn
 <ul class="blockList">
 <li class="blockList">
 <h4>modifiersByUuid</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a> modifiersByUuid</pre>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>,<a href="../../../../net/minecraft/entity/attribute/EntityAttributeModifier.html" title="class in net.minecraft.entity.attribute">EntityAttributeModifier</a>&gt; modifiersByUuid</pre>
 </li>
 </ul>
 <a name="baseValue">
@@ -348,14 +360,14 @@ implements <a href="../../../../net/minecraft/entity/attribute/EntityAttributeIn
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="EntityAttributeInstanceImpl-net.minecraft.class_2635-net.minecraft.entity.attribute.EntityAttribute-">
+<a name="EntityAttributeInstanceImpl-net.minecraft.entity.attribute.AbstractEntityAttributeContainer-net.minecraft.entity.attribute.EntityAttribute-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>EntityAttributeInstanceImpl</h4>
-<pre>public&nbsp;EntityAttributeInstanceImpl(<a href="../../../../net/minecraft/class_2635.html" title="class in net.minecraft">class_2635</a>&nbsp;class_2635,
-                                   <a href="../../../../net/minecraft/entity/attribute/EntityAttribute.html" title="interface in net.minecraft.entity.attribute">EntityAttribute</a>&nbsp;entityAttribute)</pre>
+<pre>public&nbsp;EntityAttributeInstanceImpl(<a href="../../../../net/minecraft/entity/attribute/AbstractEntityAttributeContainer.html" title="class in net.minecraft.entity.attribute">AbstractEntityAttributeContainer</a>&nbsp;container,
+                                   <a href="../../../../net/minecraft/entity/attribute/EntityAttribute.html" title="interface in net.minecraft.entity.attribute">EntityAttribute</a>&nbsp;attribute)</pre>
 </li>
 </ul>
 </li>
@@ -405,51 +417,69 @@ implements <a href="../../../../net/minecraft/entity/attribute/EntityAttributeIn
 </dl>
 </li>
 </ul>
-<a name="method_10641-int-">
+<a name="method_34864-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_10641</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&nbsp;method_10641(int&nbsp;int2)</pre>
-</li>
-</ul>
-<a name="getAttributeModifiers--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getAttributeModifiers</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&nbsp;getAttributeModifiers()</pre>
+<h4>method_34864</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../net/minecraft/entity/attribute/EntityAttributeModifier.html" title="class in net.minecraft.entity.attribute">EntityAttributeModifier</a>&gt;&nbsp;method_34864(int&nbsp;int2)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstance.html#getAttributeModifiers--">getAttributeModifiers</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstance.html" title="interface in net.minecraft.entity.attribute">EntityAttributeInstance</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstance.html#method_34864-int-">method_34864</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstance.html" title="interface in net.minecraft.entity.attribute">EntityAttributeInstance</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="getByUuid-java.util.UUID-">
+<a name="method_34870--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getByUuid</h4>
-<pre>public&nbsp;<a href="../../../../net/minecraft/entity/attribute/AttributeModifier.html" title="class in net.minecraft.entity.attribute">AttributeModifier</a>&nbsp;getByUuid(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;id)</pre>
+<h4>method_34870</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../net/minecraft/entity/attribute/EntityAttributeModifier.html" title="class in net.minecraft.entity.attribute">EntityAttributeModifier</a>&gt;&nbsp;method_34870()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstance.html#getByUuid-java.util.UUID-">getByUuid</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstance.html" title="interface in net.minecraft.entity.attribute">EntityAttributeInstance</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstance.html#method_34870--">method_34870</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstance.html" title="interface in net.minecraft.entity.attribute">EntityAttributeInstance</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="addModifier-net.minecraft.entity.attribute.AttributeModifier-">
+<a name="getModifier-java.util.UUID-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getModifier</h4>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="../../../../net/minecraft/entity/attribute/EntityAttributeModifier.html" title="class in net.minecraft.entity.attribute">EntityAttributeModifier</a>&nbsp;getModifier(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;uuid)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstance.html#getModifier-java.util.UUID-">getModifier</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstance.html" title="interface in net.minecraft.entity.attribute">EntityAttributeInstance</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="hasModifier-net.minecraft.entity.attribute.EntityAttributeModifier-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hasModifier</h4>
+<pre>public&nbsp;boolean&nbsp;hasModifier(<a href="../../../../net/minecraft/entity/attribute/EntityAttributeModifier.html" title="class in net.minecraft.entity.attribute">EntityAttributeModifier</a>&nbsp;modifier)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstance.html#hasModifier-net.minecraft.entity.attribute.EntityAttributeModifier-">hasModifier</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstance.html" title="interface in net.minecraft.entity.attribute">EntityAttributeInstance</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="addModifier-net.minecraft.entity.attribute.EntityAttributeModifier-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>addModifier</h4>
-<pre>public&nbsp;void&nbsp;addModifier(<a href="../../../../net/minecraft/entity/attribute/AttributeModifier.html" title="class in net.minecraft.entity.attribute">AttributeModifier</a>&nbsp;modifier)</pre>
+<pre>public&nbsp;void&nbsp;addModifier(<a href="../../../../net/minecraft/entity/attribute/EntityAttributeModifier.html" title="class in net.minecraft.entity.attribute">EntityAttributeModifier</a>&nbsp;modifier)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstance.html#addModifier-net.minecraft.entity.attribute.AttributeModifier-">addModifier</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstance.html" title="interface in net.minecraft.entity.attribute">EntityAttributeInstance</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstance.html#addModifier-net.minecraft.entity.attribute.EntityAttributeModifier-">addModifier</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstance.html" title="interface in net.minecraft.entity.attribute">EntityAttributeInstance</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -459,19 +489,32 @@ implements <a href="../../../../net/minecraft/entity/attribute/EntityAttributeIn
 <ul class="blockList">
 <li class="blockList">
 <h4>invalidateCache</h4>
-<pre>private&nbsp;void&nbsp;invalidateCache()</pre>
+<pre>protected&nbsp;void&nbsp;invalidateCache()</pre>
 </li>
 </ul>
-<a name="method_7303-net.minecraft.entity.attribute.AttributeModifier-">
+<a name="removeModifier-net.minecraft.entity.attribute.EntityAttributeModifier-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_7303</h4>
-<pre>public&nbsp;void&nbsp;method_7303(<a href="../../../../net/minecraft/entity/attribute/AttributeModifier.html" title="class in net.minecraft.entity.attribute">AttributeModifier</a>&nbsp;attributeModifier)</pre>
+<h4>removeModifier</h4>
+<pre>public&nbsp;void&nbsp;removeModifier(<a href="../../../../net/minecraft/entity/attribute/EntityAttributeModifier.html" title="class in net.minecraft.entity.attribute">EntityAttributeModifier</a>&nbsp;modifier)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstance.html#method_7303-net.minecraft.entity.attribute.AttributeModifier-">method_7303</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstance.html" title="interface in net.minecraft.entity.attribute">EntityAttributeInstance</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstance.html#removeModifier-net.minecraft.entity.attribute.EntityAttributeModifier-">removeModifier</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstance.html" title="interface in net.minecraft.entity.attribute">EntityAttributeInstance</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="removeModifier-java.util.UUID-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeModifier</h4>
+<pre>public&nbsp;void&nbsp;removeModifier(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</a>&nbsp;uuid)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstance.html#removeModifier-java.util.UUID-">removeModifier</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstance.html" title="interface in net.minecraft.entity.attribute">EntityAttributeInstance</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -505,10 +548,19 @@ public&nbsp;void&nbsp;clearModifiers()</pre>
 <a name="computeValue--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>computeValue</h4>
 <pre>private&nbsp;double&nbsp;computeValue()</pre>
+</li>
+</ul>
+<a name="method_34889-int-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>method_34889</h4>
+<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../net/minecraft/entity/attribute/EntityAttributeModifier.html" title="class in net.minecraft.entity.attribute">EntityAttributeModifier</a>&gt;&nbsp;method_34889(int&nbsp;int2)</pre>
 </li>
 </ul>
 </li>
@@ -539,7 +591,7 @@ public&nbsp;void&nbsp;clearModifiers()</pre>
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../net/minecraft/entity/attribute/EntityAttributeInstance.html" title="interface in net.minecraft.entity.attribute"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../net/minecraft/entity/attribute/EntityAttributes.html" title="class in net.minecraft.entity.attribute"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/entity/attribute/EntityAttributeModifier.html" title="class in net.minecraft.entity.attribute"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/entity/attribute/EntityAttributeInstanceImpl.html" target="_top">Frames</a></li>

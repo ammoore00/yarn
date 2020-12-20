@@ -105,7 +105,7 @@ var activeTableTab = "activeTableTab";
 <li>io.netty.channel.ChannelOutboundHandlerAdapter</li>
 <li>
 <ul class="inheritance">
-<li>io.netty.handler.codec.MessageToByteEncoder</li>
+<li>io.netty.handler.codec.MessageToByteEncoder&lt;io.netty.buffer.ByteBuf&gt;</li>
 <li>
 <ul class="inheritance">
 <li>net.minecraft.network.encryption.PacketEncryptor</li>
@@ -128,7 +128,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">PacketEncryptor</span>
-extends io.netty.handler.codec.MessageToByteEncoder</pre>
+extends io.netty.handler.codec.MessageToByteEncoder&lt;io.netty.buffer.ByteBuf&gt;</pre>
 </li>
 </ul>
 </div>
@@ -164,7 +164,7 @@ extends io.netty.handler.codec.MessageToByteEncoder</pre>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private <a href="../../../../net/minecraft/network/encryption/PacketEncryptionManager.html" title="class in net.minecraft.network.encryption">PacketEncryptionManager</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/network/encryption/PacketEncryptor.html#field_5946">field_5946</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/network/encryption/PacketEncryptor.html#manager">manager</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -210,7 +210,7 @@ extends io.netty.handler.codec.MessageToByteEncoder</pre>
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;io.netty.handler.codec.MessageToByteEncoder</h3>
-<code>acceptOutboundMessage, encode, write</code></li>
+<code>acceptOutboundMessage, allocateBuffer, isPreferDirect, write</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.io.netty.channel.ChannelOutboundHandlerAdapter">
@@ -224,7 +224,7 @@ extends io.netty.handler.codec.MessageToByteEncoder</pre>
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;io.netty.channel.ChannelHandlerAdapter</h3>
-<code>exceptionCaught, handlerAdded, handlerRemoved, isSharable</code></li>
+<code>ensureNotSharable, exceptionCaught, handlerAdded, handlerRemoved, isSharable</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -254,13 +254,13 @@ extends io.netty.handler.codec.MessageToByteEncoder</pre>
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_5946">
+<a name="manager">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_5946</h4>
-<pre>private final&nbsp;<a href="../../../../net/minecraft/network/encryption/PacketEncryptionManager.html" title="class in net.minecraft.network.encryption">PacketEncryptionManager</a> field_5946</pre>
+<h4>manager</h4>
+<pre>private final&nbsp;<a href="../../../../net/minecraft/network/encryption/PacketEncryptionManager.html" title="class in net.minecraft.network.encryption">PacketEncryptionManager</a> manager</pre>
 </li>
 </ul>
 </li>
@@ -296,7 +296,14 @@ extends io.netty.handler.codec.MessageToByteEncoder</pre>
 <h4>encode</h4>
 <pre>protected&nbsp;void&nbsp;encode(io.netty.channel.ChannelHandlerContext&nbsp;channelHandlerContext,
                       io.netty.buffer.ByteBuf&nbsp;byteBuf,
-                      io.netty.buffer.ByteBuf&nbsp;byteBuf2)</pre>
+                      io.netty.buffer.ByteBuf&nbsp;byteBuf2)
+               throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>encode</code>&nbsp;in class&nbsp;<code>io.netty.handler.codec.MessageToByteEncoder&lt;io.netty.buffer.ByteBuf&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd>
+</dl>
 </li>
 </ul>
 </li>

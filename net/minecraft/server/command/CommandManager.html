@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10};
+var methods = {"i0":10,"i1":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../net/minecraft/server/command/ClearCommand.html" title="class in net.minecraft.server.command"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../net/minecraft/server/command/CommandRegistry.html" title="class in net.minecraft.server.command"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/server/command/CloneCommand.class_5925.html" title="class in net.minecraft.server.command"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/server/command/DebugCommand.html" title="class in net.minecraft.server.command"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/server/command/CommandManager.html" target="_top">Frames</a></li>
@@ -74,13 +74,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -99,7 +99,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../net/minecraft/server/command/CommandRegistry.html" title="class in net.minecraft.server.command">net.minecraft.server.command.CommandRegistry</a></li>
+<li><a href="../../../../net/minecraft/class_2002.html" title="class in net.minecraft">net.minecraft.class_2002</a></li>
 <li>
 <ul class="inheritance">
 <li>net.minecraft.server.command.CommandManager</li>
@@ -113,19 +113,42 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../net/minecraft/command/CommandProvider.html" title="interface in net.minecraft.command">CommandProvider</a>, <a href="../../../../net/minecraft/server/command/CommandRegistryProvider.html" title="interface in net.minecraft.server.command">CommandRegistryProvider</a></dd>
+<dd><a href="../../../../net/minecraft/class_1996.html" title="interface in net.minecraft">class_1996</a>, <a href="../../../../net/minecraft/class_5629.html" title="interface in net.minecraft">class_5629</a></dd>
+</dl>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><a href="../../../../net/minecraft/server/command/IntegratedCommandManager.html" title="class in net.minecraft.server.command">IntegratedCommandManager</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">CommandManager</span>
-extends <a href="../../../../net/minecraft/server/command/CommandRegistry.html" title="class in net.minecraft.server.command">CommandRegistry</a>
-implements <a href="../../../../net/minecraft/command/CommandProvider.html" title="interface in net.minecraft.command">CommandProvider</a></pre>
+extends <a href="../../../../net/minecraft/class_2002.html" title="class in net.minecraft">class_2002</a>
+implements <a href="../../../../net/minecraft/class_1996.html" title="interface in net.minecraft">class_1996</a></pre>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/command/CommandManager.html#field_30595">field_30595</a></span></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.summary">
@@ -138,7 +161,7 @@ implements <a href="../../../../net/minecraft/command/CommandProvider.html" titl
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/command/CommandManager.html#CommandManager--">CommandManager</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/command/CommandManager.html#CommandManager-net.minecraft.server.MinecraftServer-">CommandManager</a></span>(<a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a>&nbsp;minecraftServer)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -157,19 +180,23 @@ implements <a href="../../../../net/minecraft/command/CommandProvider.html" titl
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/command/CommandManager.html#run-net.minecraft.command.CommandSource-net.minecraft.command.Command-int-java.lang.String-java.lang.Object:A-">run</a></span>(<a href="../../../../net/minecraft/command/CommandSource.html" title="interface in net.minecraft.command">CommandSource</a>&nbsp;sender,
-   <a href="../../../../net/minecraft/command/Command.html" title="interface in net.minecraft.command">Command</a>&nbsp;command,
-   int&nbsp;permissionLevel,
-   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;label,
-   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>[]&nbsp;args)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/command/CommandManager.html#method_28513-net.minecraft.class_2010-net.minecraft.class_5607-int-java.lang.String-java.lang.Object:A-">method_28513</a></span>(<a href="../../../../net/minecraft/class_2010.html" title="interface in net.minecraft">class_2010</a>&nbsp;class_2010,
+            <a href="../../../../net/minecraft/class_5607.html" title="interface in net.minecraft">class_5607</a>&nbsp;class_5607,
+            int&nbsp;int2,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>[]&nbsp;object)</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/command/CommandManager.html#method_29055--">method_29055</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.server.command.CommandRegistry">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.class_2002">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;net.minecraft.server.command.<a href="../../../../net/minecraft/server/command/CommandRegistry.html" title="class in net.minecraft.server.command">CommandRegistry</a></h3>
-<code><a href="../../../../net/minecraft/server/command/CommandRegistry.html#execute-net.minecraft.command.CommandSource-java.lang.String-">execute</a>, <a href="../../../../net/minecraft/server/command/CommandRegistry.html#getCommandMap--">getCommandMap</a>, <a href="../../../../net/minecraft/server/command/CommandRegistry.html#method_5983-net.minecraft.command.CommandSource-">method_5983</a>, <a href="../../../../net/minecraft/server/command/CommandRegistry.html#method_8400-net.minecraft.command.CommandSource-java.lang.String-">method_8400</a>, <a href="../../../../net/minecraft/server/command/CommandRegistry.html#registerCommand-net.minecraft.command.Command-">registerCommand</a></code></li>
+<h3>Methods inherited from class&nbsp;net.minecraft.<a href="../../../../net/minecraft/class_2002.html" title="class in net.minecraft">class_2002</a></h3>
+<code><a href="../../../../net/minecraft/class_2002.html#method_29056-net.minecraft.class_5607-">method_29056</a>, <a href="../../../../net/minecraft/class_2002.html#method_29058-net.minecraft.class_2010-java.lang.String:A-net.minecraft.class_5607-java.lang.String-">method_29058</a>, <a href="../../../../net/minecraft/class_2002.html#method_29373-net.minecraft.class_2010-">method_29373</a>, <a href="../../../../net/minecraft/class_2002.html#method_29374-net.minecraft.class_2010-java.lang.String-">method_29374</a>, <a href="../../../../net/minecraft/class_2002.html#method_29375-net.minecraft.class_2010-java.lang.String-net.minecraft.util.math.BlockPos-">method_29375</a>, <a href="../../../../net/minecraft/class_2002.html#method_29376--">method_29376</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -186,19 +213,36 @@ implements <a href="../../../../net/minecraft/command/CommandProvider.html" titl
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="field_30595">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>field_30595</h4>
+<pre>private final&nbsp;<a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a> field_30595</pre>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="CommandManager--">
+<a name="CommandManager-net.minecraft.server.MinecraftServer-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>CommandManager</h4>
-<pre>public&nbsp;CommandManager()</pre>
+<pre>public&nbsp;CommandManager(<a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a>&nbsp;minecraftServer)</pre>
 </li>
 </ul>
 </li>
@@ -209,20 +253,33 @@ implements <a href="../../../../net/minecraft/command/CommandProvider.html" titl
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="run-net.minecraft.command.CommandSource-net.minecraft.command.Command-int-java.lang.String-java.lang.Object:A-">
+<a name="method_28513-net.minecraft.class_2010-net.minecraft.class_5607-int-java.lang.String-java.lang.Object:A-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_28513</h4>
+<pre>public&nbsp;void&nbsp;method_28513(<a href="../../../../net/minecraft/class_2010.html" title="interface in net.minecraft">class_2010</a>&nbsp;class_2010,
+                         <a href="../../../../net/minecraft/class_5607.html" title="interface in net.minecraft">class_5607</a>&nbsp;class_5607,
+                         int&nbsp;int2,
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>[]&nbsp;object)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/class_1996.html#method_28513-net.minecraft.class_2010-net.minecraft.class_5607-int-java.lang.String-java.lang.Object:A-">method_28513</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/class_1996.html" title="interface in net.minecraft">class_1996</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="method_29055--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>run</h4>
-<pre>public&nbsp;void&nbsp;run(<a href="../../../../net/minecraft/command/CommandSource.html" title="interface in net.minecraft.command">CommandSource</a>&nbsp;sender,
-                <a href="../../../../net/minecraft/command/Command.html" title="interface in net.minecraft.command">Command</a>&nbsp;command,
-                int&nbsp;permissionLevel,
-                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;label,
-                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>[]&nbsp;args)</pre>
+<h4>method_29055</h4>
+<pre>protected&nbsp;<a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a>&nbsp;method_29055()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/command/CommandProvider.html#run-net.minecraft.command.CommandSource-net.minecraft.command.Command-int-java.lang.String-java.lang.Object:A-">run</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/command/CommandProvider.html" title="interface in net.minecraft.command">CommandProvider</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/class_2002.html#method_29055--">method_29055</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_2002.html" title="class in net.minecraft">class_2002</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -253,8 +310,8 @@ implements <a href="../../../../net/minecraft/command/CommandProvider.html" titl
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../net/minecraft/server/command/ClearCommand.html" title="class in net.minecraft.server.command"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../net/minecraft/server/command/CommandRegistry.html" title="class in net.minecraft.server.command"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/server/command/CloneCommand.class_5925.html" title="class in net.minecraft.server.command"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/server/command/DebugCommand.html" title="class in net.minecraft.server.command"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/server/command/CommandManager.html" target="_top">Frames</a></li>
@@ -279,13 +336,13 @@ implements <a href="../../../../net/minecraft/command/CommandProvider.html" titl
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
