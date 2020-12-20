@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -147,18 +147,22 @@ extends <a href="../../../../net/minecraft/server/MinecraftServer.html" title="c
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/integrated/IntegratedServer.html#field_10761">field_10761</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/integrated/IntegratedServer.html#LOGGER">LOGGER</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/class_2915.html" title="interface in net.minecraft">class_2915</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/integrated/IntegratedServer.html#field_12601">field_12601</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/class_2801.html" title="class in net.minecraft">class_2801</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/integrated/IntegratedServer.html#field_12602">field_12602</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>private boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/integrated/IntegratedServer.html#paused">paused</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private <a href="../../../../net/minecraft/server/LanServerPinger.html" title="class in net.minecraft.server">LanServerPinger</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/integrated/IntegratedServer.html#pinger">pinger</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/integrated/IntegratedServer.html#published">published</a></span></code>&nbsp;</td>
 </tr>
@@ -168,7 +172,7 @@ extends <a href="../../../../net/minecraft/server/MinecraftServer.html" title="c
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.server.<a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></h3>
-<code><a href="../../../../net/minecraft/server/MinecraftServer.html#field_11271">field_11271</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#field_11272">field_11272</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#field_11273">field_11273</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#field_11274">field_11274</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#field_7084">field_7084</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#progress">progress</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#progressType">progressType</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#worlds">worlds</a></code></li>
+<code><a href="../../../../net/minecraft/server/MinecraftServer.html#field_11274">field_11274</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#field_13170">field_13170</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#field_13171">field_13171</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#field_13172">field_13172</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#field_13173">field_13173</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#field_7084">field_7084</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#profiler">profiler</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#progress">progress</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#progressType">progressType</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#proxy">proxy</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#worlds">worlds</a></code></li>
 </ul>
 </li>
 </ul>
@@ -213,7 +217,7 @@ extends <a href="../../../../net/minecraft/server/MinecraftServer.html" title="c
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/integrated/IntegratedServer.html#areCommandBlocksEnabled--">areCommandBlocksEnabled</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/world/Difficulty.html" title="enum in net.minecraft.world">Difficulty</a></code></td>
+<td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/integrated/IntegratedServer.html#getDefaultDifficulty--">getDefaultDifficulty</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -245,31 +249,39 @@ extends <a href="../../../../net/minecraft/server/MinecraftServer.html" title="c
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/integrated/IntegratedServer.html#isSnooperEnabled--">isSnooperEnabled</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/integrated/IntegratedServer.html#method_6437-net.minecraft.world.GameMode-boolean-">method_6437</a></span>(<a href="../../../../net/minecraft/world/GameMode.html" title="enum in net.minecraft.world">GameMode</a>&nbsp;gameMode,
-           boolean&nbsp;bool)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../net/minecraft/class_2915.html" title="interface in net.minecraft">class_2915</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/integrated/IntegratedServer.html#method_11957--">method_11957</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="../../../../net/minecraft/class_2801.html" title="class in net.minecraft">class_2801</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/integrated/IntegratedServer.html#method_11960--">method_11960</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/integrated/IntegratedServer.html#method_6437-net.minecraft.world.GameMode-boolean-">method_6437</a></span>(<a href="../../../../net/minecraft/world/GameMode.html" title="enum in net.minecraft.world">GameMode</a>&nbsp;gamemode,
+           boolean&nbsp;bool)</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../../net/minecraft/util/crash/CrashReport.html" title="class in net.minecraft.util.crash">CrashReport</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/integrated/IntegratedServer.html#populateCrashReport-net.minecraft.util.crash.CrashReport-">populateCrashReport</a></span>(<a href="../../../../net/minecraft/util/crash/CrashReport.html" title="class in net.minecraft.util.crash">CrashReport</a>&nbsp;report)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/integrated/IntegratedServer.html#setCrashReport-net.minecraft.util.crash.CrashReport-">setCrashReport</a></span>(<a href="../../../../net/minecraft/util/crash/CrashReport.html" title="class in net.minecraft.util.crash">CrashReport</a>&nbsp;report)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/integrated/IntegratedServer.html#setDefaultGameMode-net.minecraft.world.GameMode-">setDefaultGameMode</a></span>(<a href="../../../../net/minecraft/world/GameMode.html" title="enum in net.minecraft.world">GameMode</a>&nbsp;gamemode)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/integrated/IntegratedServer.html#setupServer--">setupServer</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/integrated/IntegratedServer.html#setupWorld--">setupWorld</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/integrated/IntegratedServer.html#setupWorld-java.lang.String-java.lang.String-long-net.minecraft.world.level.LevelGeneratorType-java.lang.String-">setupWorld</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;world,
           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
@@ -277,19 +289,15 @@ extends <a href="../../../../net/minecraft/server/MinecraftServer.html" title="c
           <a href="../../../../net/minecraft/world/level/LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a>&nbsp;generatorType,
           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string2)</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/integrated/IntegratedServer.html#shouldBroadcastRconToOps--">shouldBroadcastRconToOps</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/integrated/IntegratedServer.html#shouldGenerateStructures--">shouldGenerateStructures</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/integrated/IntegratedServer.html#stopRunning--">stopRunning</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/integrated/IntegratedServer.html#stopServer--">stopServer</a></span>()</code>&nbsp;</td>
 </tr>
@@ -299,7 +307,7 @@ extends <a href="../../../../net/minecraft/server/MinecraftServer.html" title="c
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.server.<a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></h3>
-<code><a href="../../../../net/minecraft/server/MinecraftServer.html#addSnooper-net.minecraft.util.snooper.Snooper-">addSnooper</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#addTickable-net.minecraft.util.Tickable-">addTickable</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#canUseCommand-int-java.lang.String-">canUseCommand</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#enableProfiler--">enableProfiler</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#executeRconCommand-java.lang.String-">executeRconCommand</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#exit--">exit</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#forcePlayerSampleUpdate--">forcePlayerSampleUpdate</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getBlockPos--">getBlockPos</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getCommandManager--">getCommandManager</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getCurrentPlayerCount--">getCurrentPlayerCount</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getFile-java.lang.String-">getFile</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getGameProfileRepo--">getGameProfileRepo</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getIp--">getIp</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getKeyPair--">getKeyPair</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getLevelName--">getLevelName</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getMaxPlayerCount--">getMaxPlayerCount</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getMotd--">getMotd</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getName--">getName</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getNetworkIo--">getNetworkIo</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getPlayerIdleTimeout--">getPlayerIdleTimeout</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getPlayerManager--">getPlayerManager</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getPlayerNames--">getPlayerNames</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getPlugins--">getPlugins</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getPort--">getPort</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getProfiles--">getProfiles</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getProxy--">getProxy</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getResourcePackUrl--">getResourcePackUrl</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getSaveStorage--">getSaveStorage</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getServer--">getServer</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getServerIp--">getServerIp</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getServerMetadata--">getServerMetadata</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getServerModName--">getServerModName</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getServerMotd--">getServerMotd</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getServerName--">getServerName</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getServerOperation--">getServerOperation</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getServerPort--">getServerPort</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getSessionService--">getSessionService</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getSnooper--">getSnooper</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getSpawnProtectionRadius--">getSpawnProtectionRadius</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getTicks--">getTicks</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getTimeMillis--">getTimeMillis</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getTranslationKey--">getTranslationKey</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getUserCache--">getUserCache</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getUserName--">getUserName</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getVersion--">getVersion</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getWorld--">getWorld</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getWorld-int-">getWorld</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getWorldHeight--">getWorldHeight</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#hasGui--">hasGui</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#info-java.lang.String-">info</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isDebuggingEnabled--">isDebuggingEnabled</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isDemo--">isDemo</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isFlightEnabled--">isFlightEnabled</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isLoading--">isLoading</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isMonsterSpawningEnabled--">isMonsterSpawningEnabled</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isNetherAllowed--">isNetherAllowed</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isOnlineMode--">isOnlineMode</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isPvpEnabled--">isPvpEnabled</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isRunning--">isRunning</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isSinglePlayer--">isSinglePlayer</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isSpawnProtected-net.minecraft.world.World-int-int-int-net.minecraft.entity.player.PlayerEntity-">isSpawnProtected</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isStopped--">isStopped</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#log-java.lang.String-">log</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#logError-java.lang.String-">logError</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#logProgress-java.lang.String-int-">logProgress</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#main-java.lang.String:A-">main</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#method_10400-net.minecraft.command.CommandSource-java.lang.String-">method_10400</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#method_10401-net.minecraft.world.Difficulty-">method_10401</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#method_10402-java.lang.String-">method_10402</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#method_10403--">method_10403</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#method_6466--">method_6466</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#method_6521--">method_6521</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#prepareWorlds--">prepareWorlds</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#run--">run</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#saveWorlds-boolean-">saveWorlds</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#sendMessage-net.minecraft.text.Text-">sendMessage</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setDemo-boolean-">setDemo</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setFlightEnabled-boolean-">setFlightEnabled</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setForceGameMode-boolean-">setForceGameMode</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setForceWorldUpgrade-boolean-">setForceWorldUpgrade</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setKeyPair-java.security.KeyPair-">setKeyPair</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setLevelName-java.lang.String-">setLevelName</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setMotd-java.lang.String-">setMotd</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setOnlineMode-boolean-">setOnlineMode</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setPlayerIdleTimeout-int-">setPlayerIdleTimeout</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setPlayerManager-net.minecraft.class_2599-">setPlayerManager</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setPvpEnabled-boolean-">setPvpEnabled</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setServerIp-java.lang.String-">setServerIp</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setServerName-java.lang.String-">setServerName</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setServerOperation-java.lang.String-">setServerOperation</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setServerPort-int-">setServerPort</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setSpawnAnimals-boolean-">setSpawnAnimals</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setSpawnNpcs-boolean-">setSpawnNpcs</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setUserName-java.lang.String-">setUserName</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setWorldHeight-int-">setWorldHeight</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#shouldAnnouncePlayerAchievements--">shouldAnnouncePlayerAchievements</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#shouldForceGameMode--">shouldForceGameMode</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#shouldSpawnAnimals--">shouldSpawnAnimals</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#shouldSpawnNpcs--">shouldSpawnNpcs</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#shutdown--">shutdown</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#upgradeWorld-java.lang.String-">upgradeWorld</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#warn-java.lang.String-">warn</a></code></li>
+<code><a href="../../../../net/minecraft/server/MinecraftServer.html#addSnooper-net.minecraft.util.snooper.Snooper-">addSnooper</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#addTickable-net.minecraft.util.Tickable-">addTickable</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#canUseCommand-int-java.lang.String-">canUseCommand</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#enableProfiler--">enableProfiler</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#executeRconCommand-java.lang.String-">executeRconCommand</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#exit--">exit</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getBlockPos--">getBlockPos</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getCommandManager--">getCommandManager</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getCurrentPlayerCount--">getCurrentPlayerCount</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getFile-java.lang.String-">getFile</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getIp--">getIp</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getKeyPair--">getKeyPair</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getLevelName--">getLevelName</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getMaxPlayerCount--">getMaxPlayerCount</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getMotd--">getMotd</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getPlayerIdleTimeout--">getPlayerIdleTimeout</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getPlayerManager--">getPlayerManager</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getPlayerNames--">getPlayerNames</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getPlugins--">getPlugins</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getPort--">getPort</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getProxy--">getProxy</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getResourcePackUrl--">getResourcePackUrl</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getSaveStorage--">getSaveStorage</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getServer--">getServer</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getServerIp--">getServerIp</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getServerModName--">getServerModName</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getServerMotd--">getServerMotd</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getServerName--">getServerName</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getServerOperation--">getServerOperation</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getServerPort--">getServerPort</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getSnooper--">getSnooper</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getSpawnProtectionRadius--">getSpawnProtectionRadius</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getTicks--">getTicks</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getTimeMillis--">getTimeMillis</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getTranslationKey--">getTranslationKey</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getUserName--">getUserName</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getVersion--">getVersion</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getWorld--">getWorld</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getWorld-int-">getWorld</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getWorldHeight--">getWorldHeight</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#hasGui--">hasGui</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#info-java.lang.String-">info</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isDebuggingEnabled--">isDebuggingEnabled</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isDemo--">isDemo</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isFlightEnabled--">isFlightEnabled</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isLoading--">isLoading</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isMonsterSpawningEnabled--">isMonsterSpawningEnabled</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isNetherAllowed--">isNetherAllowed</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isOnlineMode--">isOnlineMode</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isPvpEnabled--">isPvpEnabled</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isRunning--">isRunning</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isSinglePlayer--">isSinglePlayer</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isSpawnProtected-net.minecraft.world.World-int-int-int-net.minecraft.entity.player.PlayerEntity-">isSpawnProtected</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isStopped--">isStopped</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#log-java.lang.String-">log</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#logError-java.lang.String-">logError</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#logProgress-java.lang.String-int-">logProgress</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#main-java.lang.String:A-">main</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#method_10400-net.minecraft.command.CommandSource-java.lang.String-">method_10400</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#method_10402-java.lang.String-">method_10402</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#method_10403--">method_10403</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#method_11959--">method_11959</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#method_11962-int-">method_11962</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#method_6466--">method_6466</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#method_6521--">method_6521</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#prepareWorlds--">prepareWorlds</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#run--">run</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#saveWorlds-boolean-">saveWorlds</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#sendMessage-net.minecraft.class_2828-">sendMessage</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setDemo-boolean-">setDemo</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setFlightEnabled-boolean-">setFlightEnabled</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setForceGameMode-boolean-">setForceGameMode</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setForceWorldUpgrade-boolean-">setForceWorldUpgrade</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setKeyPair-java.security.KeyPair-">setKeyPair</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setLevelName-java.lang.String-">setLevelName</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setMotd-java.lang.String-">setMotd</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setOnlineMode-boolean-">setOnlineMode</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setPlayerIdleTimeout-int-">setPlayerIdleTimeout</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setPlayerManager-net.minecraft.server.PlayerManager-">setPlayerManager</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setPvpEnabled-boolean-">setPvpEnabled</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setServerIp-java.lang.String-">setServerIp</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setServerName-java.lang.String-">setServerName</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setServerOperation-java.lang.String-">setServerOperation</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setServerPort-int-">setServerPort</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setSpawnAnimals-boolean-">setSpawnAnimals</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setSpawnNpcs-boolean-">setSpawnNpcs</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setUserName-java.lang.String-">setUserName</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setWorldHeight-int-">setWorldHeight</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#shouldForceGameMode--">shouldForceGameMode</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#shouldSpawnAnimals--">shouldSpawnAnimals</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#shouldSpawnNpcs--">shouldSpawnNpcs</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#shutdown--">shutdown</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#upgradeWorld-java.lang.String-">upgradeWorld</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#warn-java.lang.String-">warn</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -322,15 +330,6 @@ extends <a href="../../../../net/minecraft/server/MinecraftServer.html" title="c
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="LOGGER">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>LOGGER</h4>
-<pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a> LOGGER</pre>
-</li>
-</ul>
 <a name="field_10760">
 <!--   -->
 </a>
@@ -347,6 +346,24 @@ extends <a href="../../../../net/minecraft/server/MinecraftServer.html" title="c
 <li class="blockList">
 <h4>field_10761</h4>
 <pre>private final&nbsp;<a href="../../../../net/minecraft/world/level/LevelInfo.html" title="class in net.minecraft.world.level">LevelInfo</a> field_10761</pre>
+</li>
+</ul>
+<a name="field_12601">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>field_12601</h4>
+<pre>private final&nbsp;<a href="../../../../net/minecraft/class_2915.html" title="interface in net.minecraft">class_2915</a> field_12601</pre>
+</li>
+</ul>
+<a name="field_12602">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>field_12602</h4>
+<pre>private&nbsp;<a href="../../../../net/minecraft/class_2801.html" title="class in net.minecraft">class_2801</a> field_12602</pre>
 </li>
 </ul>
 <a name="paused">
@@ -479,7 +496,7 @@ extends <a href="../../../../net/minecraft/server/MinecraftServer.html" title="c
 <ul class="blockList">
 <li class="blockList">
 <h4>getDefaultDifficulty</h4>
-<pre>public&nbsp;<a href="../../../../net/minecraft/world/Difficulty.html" title="enum in net.minecraft.world">Difficulty</a>&nbsp;getDefaultDifficulty()</pre>
+<pre>public&nbsp;int&nbsp;getDefaultDifficulty()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../net/minecraft/server/MinecraftServer.html#getDefaultDifficulty--">getDefaultDifficulty</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
@@ -496,19 +513,6 @@ extends <a href="../../../../net/minecraft/server/MinecraftServer.html" title="c
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../net/minecraft/server/MinecraftServer.html#isHardcore--">isHardcore</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="shouldBroadcastRconToOps--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>shouldBroadcastRconToOps</h4>
-<pre>public&nbsp;boolean&nbsp;shouldBroadcastRconToOps()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/server/MinecraftServer.html#shouldBroadcastRconToOps--">shouldBroadcastRconToOps</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -535,6 +539,19 @@ extends <a href="../../../../net/minecraft/server/MinecraftServer.html" title="c
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../net/minecraft/server/MinecraftServer.html#isDedicated--">isDedicated</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="method_11960--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_11960</h4>
+<pre>public&nbsp;<a href="../../../../net/minecraft/class_2801.html" title="class in net.minecraft">class_2801</a>&nbsp;method_11960()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/server/MinecraftServer.html#method_11960--">method_11960</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -600,11 +617,26 @@ extends <a href="../../../../net/minecraft/server/MinecraftServer.html" title="c
 <ul class="blockList">
 <li class="blockList">
 <h4>method_6437</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;method_6437(<a href="../../../../net/minecraft/world/GameMode.html" title="enum in net.minecraft.world">GameMode</a>&nbsp;gameMode,
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;method_6437(<a href="../../../../net/minecraft/world/GameMode.html" title="enum in net.minecraft.world">GameMode</a>&nbsp;gamemode,
                           boolean&nbsp;bool)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../net/minecraft/server/MinecraftServer.html#method_6437-net.minecraft.world.GameMode-boolean-">method_6437</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="method_11957--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_11957</h4>
+<pre>public&nbsp;<a href="../../../../net/minecraft/class_2915.html" title="interface in net.minecraft">class_2915</a>&nbsp;method_11957()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/util/snooper/Snoopable.html#method_11957--">method_11957</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/util/snooper/Snoopable.html" title="interface in net.minecraft.util.snooper">Snoopable</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/server/MinecraftServer.html#method_11957--">method_11957</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
 </dl>
 </li>
 </ul>

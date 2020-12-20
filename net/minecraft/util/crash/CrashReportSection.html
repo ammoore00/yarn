@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":9,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":9,"i9":10,"i10":10};
+var methods = {"i0":10,"i1":10,"i2":9,"i3":9,"i4":10,"i5":10,"i6":10,"i7":9,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -189,12 +189,12 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/crash/CrashReportSection.html#addBlockData-net.minecraft.util.crash.CrashReportSection-int-int-int-net.minecraft.block.Block-int-">addBlockData</a></span>(<a href="../../../../net/minecraft/util/crash/CrashReportSection.html" title="class in net.minecraft.util.crash">CrashReportSection</a>&nbsp;section,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/crash/CrashReportSection.html#addBlockData-net.minecraft.util.crash.CrashReportSection-int-int-int-int-int-">addBlockData</a></span>(<a href="../../../../net/minecraft/util/crash/CrashReportSection.html" title="class in net.minecraft.util.crash">CrashReportSection</a>&nbsp;section,
             int&nbsp;int2,
             int&nbsp;int3,
             int&nbsp;int4,
-            <a href="../../../../net/minecraft/block/Block.html" title="class in net.minecraft.block">Block</a>&nbsp;block,
-            int&nbsp;int5)</code>&nbsp;</td>
+            int&nbsp;int5,
+            int&nbsp;int6)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
@@ -212,25 +212,21 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/crash/CrashReportSection.html#addStackTrace-java.lang.StringBuilder-">addStackTrace</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang">StringBuilder</a>&nbsp;stringBuilder)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StackTraceElement.html?is-external=true" title="class or interface in java.lang">StackTraceElement</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/crash/CrashReportSection.html#getStackTrace--">getStackTrace</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/crash/CrashReportSection.html#initStackTrace-int-">initStackTrace</a></span>(int&nbsp;ignoredCallCount)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/crash/CrashReportSection.html#method_10330-int-int-int-">method_10330</a></span>(int&nbsp;int2,
             int&nbsp;int3,
             int&nbsp;int4)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/crash/CrashReportSection.html#method_4851-java.lang.StackTraceElement-java.lang.StackTraceElement-">method_4851</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StackTraceElement.html?is-external=true" title="class or interface in java.lang">StackTraceElement</a>&nbsp;stackTraceElement,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StackTraceElement.html?is-external=true" title="class or interface in java.lang">StackTraceElement</a>&nbsp;stackTraceElement2)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/util/crash/CrashReportSection.html#trimStackTraceEnd-int-">trimStackTraceEnd</a></span>(int&nbsp;callCount)</code>&nbsp;</td>
 </tr>
@@ -408,16 +404,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/
 <pre>public&nbsp;void&nbsp;addStackTrace(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html?is-external=true" title="class or interface in java.lang">StringBuilder</a>&nbsp;stringBuilder)</pre>
 </li>
 </ul>
-<a name="getStackTrace--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getStackTrace</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/StackTraceElement.html?is-external=true" title="class or interface in java.lang">StackTraceElement</a>[]&nbsp;getStackTrace()</pre>
-</li>
-</ul>
-<a name="addBlockData-net.minecraft.util.crash.CrashReportSection-int-int-int-net.minecraft.block.Block-int-">
+<a name="addBlockData-net.minecraft.util.crash.CrashReportSection-int-int-int-int-int-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -427,8 +414,8 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/
                                 int&nbsp;int2,
                                 int&nbsp;int3,
                                 int&nbsp;int4,
-                                <a href="../../../../net/minecraft/block/Block.html" title="class in net.minecraft.block">Block</a>&nbsp;block,
-                                int&nbsp;int5)</pre>
+                                int&nbsp;int5,
+                                int&nbsp;int6)</pre>
 </li>
 </ul>
 </li>

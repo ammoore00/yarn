@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -167,7 +167,7 @@ extends <a href="../../../net/minecraft/stat/Stat.html" title="class in net.mine
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.stat.<a href="../../../net/minecraft/stat/Stat.html" title="class in net.minecraft.stat">Stat</a></h3>
-<code><a href="../../../net/minecraft/stat/Stat.html#DAMAGE_PROVIDER">DAMAGE_PROVIDER</a>, <a href="../../../net/minecraft/stat/Stat.html#DISTANCE_PROVIDER">DISTANCE_PROVIDER</a>, <a href="../../../net/minecraft/stat/Stat.html#INTEGER_PROVIDER">INTEGER_PROVIDER</a>, <a href="../../../net/minecraft/stat/Stat.html#localOnly">localOnly</a>, <a href="../../../net/minecraft/stat/Stat.html#name">name</a>, <a href="../../../net/minecraft/stat/Stat.html#TIME_PROVIDER">TIME_PROVIDER</a></code></li>
+<code><a href="../../../net/minecraft/stat/Stat.html#DAMAGE_PROVIDER">DAMAGE_PROVIDER</a>, <a href="../../../net/minecraft/stat/Stat.html#DISTANCE_PROVIDER">DISTANCE_PROVIDER</a>, <a href="../../../net/minecraft/stat/Stat.html#field_13132">field_13132</a>, <a href="../../../net/minecraft/stat/Stat.html#field_13134">field_13134</a>, <a href="../../../net/minecraft/stat/Stat.html#INTEGER_PROVIDER">INTEGER_PROVIDER</a>, <a href="../../../net/minecraft/stat/Stat.html#localOnly">localOnly</a>, <a href="../../../net/minecraft/stat/Stat.html#TIME_PROVIDER">TIME_PROVIDER</a></code></li>
 </ul>
 </li>
 </ul>
@@ -183,7 +183,7 @@ extends <a href="../../../net/minecraft/stat/Stat.html" title="class in net.mine
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/achievement/Achievement.html#Achievement-java.lang.String-java.lang.String-int-int-net.minecraft.block.Block-net.minecraft.achievement.Achievement-">Achievement</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;statName,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/achievement/Achievement.html#Achievement-int-java.lang.String-int-int-net.minecraft.block.Block-net.minecraft.achievement.Achievement-">Achievement</a></span>(int&nbsp;int2,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;achievementName,
            int&nbsp;column,
            int&nbsp;row,
@@ -191,7 +191,7 @@ extends <a href="../../../net/minecraft/stat/Stat.html" title="class in net.mine
            <a href="../../../net/minecraft/achievement/Achievement.html" title="class in net.minecraft.achievement">Achievement</a>&nbsp;parent)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/achievement/Achievement.html#Achievement-java.lang.String-java.lang.String-int-int-net.minecraft.item.Item-net.minecraft.achievement.Achievement-">Achievement</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;statName,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/achievement/Achievement.html#Achievement-int-java.lang.String-int-int-net.minecraft.item.Item-net.minecraft.achievement.Achievement-">Achievement</a></span>(int&nbsp;int2,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;achievementName,
            int&nbsp;column,
            int&nbsp;row,
@@ -199,7 +199,7 @@ extends <a href="../../../net/minecraft/stat/Stat.html" title="class in net.mine
            <a href="../../../net/minecraft/achievement/Achievement.html" title="class in net.minecraft.achievement">Achievement</a>&nbsp;parent)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/achievement/Achievement.html#Achievement-java.lang.String-java.lang.String-int-int-net.minecraft.item.ItemStack-net.minecraft.achievement.Achievement-">Achievement</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;statName,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/achievement/Achievement.html#Achievement-int-java.lang.String-int-int-net.minecraft.item.ItemStack-net.minecraft.achievement.Achievement-">Achievement</a></span>(int&nbsp;int2,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;achievementName,
            int&nbsp;column,
            int&nbsp;row,
@@ -230,30 +230,22 @@ extends <a href="../../../net/minecraft/stat/Stat.html" title="class in net.mine
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/achievement/Achievement.html#getDescription--">getDescription</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/achievement/Achievement.html#getText--">getText</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/achievement/Achievement.html#isAchievement--">isAchievement</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/achievement/Achievement.html#isChallenge--">isChallenge</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../net/minecraft/achievement/Achievement.html" title="class in net.minecraft.achievement">Achievement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/achievement/Achievement.html#setAsChallenge--">setAsChallenge</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/achievement/Achievement.html" title="class in net.minecraft.achievement">Achievement</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/achievement/Achievement.html#setJsonElementProvider-java.lang.Class-">setJsonElementProvider</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;class2)</code>&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../net/minecraft/achievement/Achievement.html" title="class in net.minecraft.achievement">Achievement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/achievement/Achievement.html#setLocalOnly--">setLocalOnly</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../net/minecraft/achievement/Achievement.html" title="class in net.minecraft.achievement">Achievement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/achievement/Achievement.html#setStatFormatter-net.minecraft.stat.StatFormatter-">setStatFormatter</a></span>(<a href="../../../net/minecraft/stat/StatFormatter.html" title="interface in net.minecraft.stat">StatFormatter</a>&nbsp;statFormatter)</code>&nbsp;</td>
 </tr>
@@ -263,14 +255,14 @@ extends <a href="../../../net/minecraft/stat/Stat.html" title="class in net.mine
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.stat.<a href="../../../net/minecraft/stat/Stat.html" title="class in net.minecraft.stat">Stat</a></h3>
-<code><a href="../../../net/minecraft/stat/Stat.html#equals-java.lang.Object-">equals</a>, <a href="../../../net/minecraft/stat/Stat.html#getCriterion--">getCriterion</a>, <a href="../../../net/minecraft/stat/Stat.html#getJsonElementProvider--">getJsonElementProvider</a>, <a href="../../../net/minecraft/stat/Stat.html#hashCode--">hashCode</a>, <a href="../../../net/minecraft/stat/Stat.html#method_6357-int-">method_6357</a>, <a href="../../../net/minecraft/stat/Stat.html#method_6363--">method_6363</a>, <a href="../../../net/minecraft/stat/Stat.html#toString--">toString</a></code></li>
+<code><a href="../../../net/minecraft/stat/Stat.html#method_11921-int-">method_11921</a>, <a href="../../../net/minecraft/stat/Stat.html#method_11922--">method_11922</a>, <a href="../../../net/minecraft/stat/Stat.html#toString--">toString</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
 </ul>
 </li>
 </ul>
@@ -358,13 +350,13 @@ private&nbsp;<a href="../../../net/minecraft/stat/StatFormatter.html" title="int
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="Achievement-java.lang.String-java.lang.String-int-int-net.minecraft.item.Item-net.minecraft.achievement.Achievement-">
+<a name="Achievement-int-java.lang.String-int-int-net.minecraft.item.Item-net.minecraft.achievement.Achievement-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>Achievement</h4>
-<pre>public&nbsp;Achievement(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;statName,
+<pre>public&nbsp;Achievement(int&nbsp;int2,
                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;achievementName,
                    int&nbsp;column,
                    int&nbsp;row,
@@ -372,13 +364,13 @@ private&nbsp;<a href="../../../net/minecraft/stat/StatFormatter.html" title="int
                    <a href="../../../net/minecraft/achievement/Achievement.html" title="class in net.minecraft.achievement">Achievement</a>&nbsp;parent)</pre>
 </li>
 </ul>
-<a name="Achievement-java.lang.String-java.lang.String-int-int-net.minecraft.block.Block-net.minecraft.achievement.Achievement-">
+<a name="Achievement-int-java.lang.String-int-int-net.minecraft.block.Block-net.minecraft.achievement.Achievement-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>Achievement</h4>
-<pre>public&nbsp;Achievement(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;statName,
+<pre>public&nbsp;Achievement(int&nbsp;int2,
                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;achievementName,
                    int&nbsp;column,
                    int&nbsp;row,
@@ -386,13 +378,13 @@ private&nbsp;<a href="../../../net/minecraft/stat/StatFormatter.html" title="int
                    <a href="../../../net/minecraft/achievement/Achievement.html" title="class in net.minecraft.achievement">Achievement</a>&nbsp;parent)</pre>
 </li>
 </ul>
-<a name="Achievement-java.lang.String-java.lang.String-int-int-net.minecraft.item.ItemStack-net.minecraft.achievement.Achievement-">
+<a name="Achievement-int-java.lang.String-int-int-net.minecraft.item.ItemStack-net.minecraft.achievement.Achievement-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>Achievement</h4>
-<pre>public&nbsp;Achievement(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;statName,
+<pre>public&nbsp;Achievement(int&nbsp;int2,
                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;achievementName,
                    int&nbsp;column,
                    int&nbsp;row,
@@ -449,36 +441,11 @@ private&nbsp;<a href="../../../net/minecraft/stat/StatFormatter.html" title="int
 <ul class="blockList">
 <li class="blockList">
 <h4>isAchievement</h4>
-<pre>public&nbsp;boolean&nbsp;isAchievement()</pre>
+<pre>@Environment(value=CLIENT)
+public&nbsp;boolean&nbsp;isAchievement()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../net/minecraft/stat/Stat.html#isAchievement--">isAchievement</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/stat/Stat.html" title="class in net.minecraft.stat">Stat</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="getText--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getText</h4>
-<pre>public&nbsp;<a href="../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;getText()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../net/minecraft/stat/Stat.html#getText--">getText</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/stat/Stat.html" title="class in net.minecraft.stat">Stat</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="setJsonElementProvider-java.lang.Class-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>setJsonElementProvider</h4>
-<pre>public&nbsp;<a href="../../../net/minecraft/achievement/Achievement.html" title="class in net.minecraft.achievement">Achievement</a>&nbsp;setJsonElementProvider(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;class2)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../net/minecraft/stat/Stat.html#setJsonElementProvider-java.lang.Class-">setJsonElementProvider</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/stat/Stat.html" title="class in net.minecraft.stat">Stat</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -508,7 +475,8 @@ public&nbsp;<a href="../../../net/minecraft/achievement/Achievement.html" title=
 <ul class="blockListLast">
 <li class="blockList">
 <h4>isChallenge</h4>
-<pre>public&nbsp;boolean&nbsp;isChallenge()</pre>
+<pre>@Environment(value=CLIENT)
+public&nbsp;boolean&nbsp;isChallenge()</pre>
 </li>
 </ul>
 </li>

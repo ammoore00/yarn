@@ -116,8 +116,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>@Environment(value=SERVER)
-public abstract class <span class="typeNameLabel">RconBase</span>
+<pre>public abstract class <span class="typeNameLabel">RconBase</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
 implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang">Runnable</a></pre>
 </li>
@@ -139,28 +138,20 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconBase.html#description">description</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconBase.html#field_11328">field_11328</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconBase.html#field_11329">field_11329</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html?is-external=true" title="class or interface in java.lang">Thread</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconBase.html#field_13094">field_13094</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconBase.html#field_6850">field_6850</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicInteger.html?is-external=true" title="class or interface in java.util.concurrent.atomic">AtomicInteger</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconBase.html#field_6853">field_6853</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html?is-external=true" title="class or interface in java.lang">Thread</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconBase.html#rconThread">rconThread</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
@@ -182,13 +173,10 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
 <caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
-<th class="colFirst" scope="col">Modifier</th>
-<th class="colLast" scope="col">Constructor and Description</th>
+<th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected </code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconBase.html#RconBase-net.minecraft.server.dedicated.DedicatedServerAccess-java.lang.String-">RconBase</a></span>(<a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html" title="interface in net.minecraft.server.dedicated">DedicatedServerAccess</a>&nbsp;server,
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;description)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconBase.html#RconBase-net.minecraft.server.dedicated.DedicatedServerAccess-">RconBase</a></span>(<a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html" title="interface in net.minecraft.server.dedicated">DedicatedServerAccess</a>&nbsp;server)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -288,15 +276,6 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_6853">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_6853</h4>
-<pre>private static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicInteger.html?is-external=true" title="class or interface in java.util.concurrent.atomic">AtomicInteger</a> field_6853</pre>
-</li>
-</ul>
 <a name="running">
 <!--   -->
 </a>
@@ -315,22 +294,13 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable
 <pre>protected&nbsp;<a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html" title="interface in net.minecraft.server.dedicated">DedicatedServerAccess</a> server</pre>
 </li>
 </ul>
-<a name="description">
+<a name="field_13094">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>description</h4>
-<pre>protected final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> description</pre>
-</li>
-</ul>
-<a name="rconThread">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>rconThread</h4>
-<pre>protected&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html?is-external=true" title="class or interface in java.lang">Thread</a> rconThread</pre>
+<h4>field_13094</h4>
+<pre>protected&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html?is-external=true" title="class or interface in java.lang">Thread</a> field_13094</pre>
 </li>
 </ul>
 <a name="field_6850">
@@ -368,14 +338,13 @@ implements <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="RconBase-net.minecraft.server.dedicated.DedicatedServerAccess-java.lang.String-">
+<a name="RconBase-net.minecraft.server.dedicated.DedicatedServerAccess-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>RconBase</h4>
-<pre>protected&nbsp;RconBase(<a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html" title="interface in net.minecraft.server.dedicated">DedicatedServerAccess</a>&nbsp;server,
-                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;description)</pre>
+<pre>RconBase(<a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html" title="interface in net.minecraft.server.dedicated">DedicatedServerAccess</a>&nbsp;server)</pre>
 </li>
 </ul>
 </li>

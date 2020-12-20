@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":9,"i3":9,"i4":6,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":9,"i1":6,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../net/minecraft/world/biome/layer/EdgeLayer.html" title="class in net.minecraft.world.biome.layer"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/world/biome/layer/AddRiverLayer.html" title="class in net.minecraft.world.biome.layer"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../net/minecraft/world/biome/layer/MushroomIslandLayer.html" title="class in net.minecraft.world.biome.layer"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -108,7 +108,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../../../net/minecraft/world/biome/layer/AddHillsLayer.html" title="class in net.minecraft.world.biome.layer">AddHillsLayer</a>, <a href="../../../../../net/minecraft/world/biome/layer/AddRiverLayer.html" title="class in net.minecraft.world.biome.layer">AddRiverLayer</a>, <a href="../../../../../net/minecraft/class_594.html" title="class in net.minecraft">class_594</a>, <a href="../../../../../net/minecraft/class_597.html" title="class in net.minecraft">class_597</a>, <a href="../../../../../net/minecraft/class_599.html" title="class in net.minecraft">class_599</a>, <a href="../../../../../net/minecraft/class_605.html" title="class in net.minecraft">class_605</a>, <a href="../../../../../net/minecraft/class_607.html" title="class in net.minecraft">class_607</a>, <a href="../../../../../net/minecraft/class_609.html" title="class in net.minecraft">class_609</a>, <a href="../../../../../net/minecraft/class_610.html" title="class in net.minecraft">class_610</a>, <a href="../../../../../net/minecraft/class_612.html" title="class in net.minecraft">class_612</a>, <a href="../../../../../net/minecraft/class_613.html" title="class in net.minecraft">class_613</a>, <a href="../../../../../net/minecraft/class_614.html" title="class in net.minecraft">class_614</a>, <a href="../../../../../net/minecraft/class_615.html" title="class in net.minecraft">class_615</a>, <a href="../../../../../net/minecraft/class_616.html" title="class in net.minecraft">class_616</a>, <a href="../../../../../net/minecraft/world/biome/layer/EdgeLayer.html" title="class in net.minecraft.world.biome.layer">EdgeLayer</a>, <a href="../../../../../net/minecraft/world/biome/layer/MushroomIslandLayer.html" title="class in net.minecraft.world.biome.layer">MushroomIslandLayer</a>, <a href="../../../../../net/minecraft/world/biome/layer/SetBaseBiomesLayer.html" title="class in net.minecraft.world.biome.layer">SetBaseBiomesLayer</a>, <a href="../../../../../net/minecraft/world/biome/layer/XBiomeLayer.html" title="class in net.minecraft.world.biome.layer">XBiomeLayer</a></dd>
+<dd><a href="../../../../../net/minecraft/world/biome/layer/AddRiverLayer.html" title="class in net.minecraft.world.biome.layer">AddRiverLayer</a>, <a href="../../../../../net/minecraft/class_2688.html" title="class in net.minecraft">class_2688</a>, <a href="../../../../../net/minecraft/class_2689.html" title="class in net.minecraft">class_2689</a>, <a href="../../../../../net/minecraft/class_594.html" title="class in net.minecraft">class_594</a>, <a href="../../../../../net/minecraft/class_597.html" title="class in net.minecraft">class_597</a>, <a href="../../../../../net/minecraft/class_599.html" title="class in net.minecraft">class_599</a>, <a href="../../../../../net/minecraft/class_605.html" title="class in net.minecraft">class_605</a>, <a href="../../../../../net/minecraft/class_607.html" title="class in net.minecraft">class_607</a>, <a href="../../../../../net/minecraft/class_609.html" title="class in net.minecraft">class_609</a>, <a href="../../../../../net/minecraft/class_610.html" title="class in net.minecraft">class_610</a>, <a href="../../../../../net/minecraft/class_612.html" title="class in net.minecraft">class_612</a>, <a href="../../../../../net/minecraft/class_614.html" title="class in net.minecraft">class_614</a>, <a href="../../../../../net/minecraft/class_615.html" title="class in net.minecraft">class_615</a>, <a href="../../../../../net/minecraft/world/biome/layer/MushroomIslandLayer.html" title="class in net.minecraft.world.biome.layer">MushroomIslandLayer</a>, <a href="../../../../../net/minecraft/world/biome/layer/SetBaseBiomesLayer.html" title="class in net.minecraft.world.biome.layer">SetBaseBiomesLayer</a></dd>
 </dl>
 <hr>
 <br>
@@ -137,7 +137,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/biome/layer/Layer.html#field_2272">field_2272</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected long</code></td>
+<td class="colFirst"><code>private long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/biome/layer/Layer.html#field_2273">field_2273</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -181,47 +181,27 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>protected static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/biome/layer/Layer.html#compareBiomes-int-int-">compareBiomes</a></span>(int&nbsp;biomeAId,
-             int&nbsp;biomeBId)</code>&nbsp;</td>
-</tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code>protected int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/biome/layer/Layer.html#getRandomBiome-int:A-">getRandomBiome</a></span>(int[]&nbsp;args)</code>&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../net/minecraft/world/biome/layer/Layer.html" title="class in net.minecraft.world.biome.layer">Layer</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/biome/layer/Layer.html#init-long-net.minecraft.world.level.LevelGeneratorType-">init</a></span>(long&nbsp;seed,
     <a href="../../../../../net/minecraft/world/level/LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a>&nbsp;type)</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>protected static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/biome/layer/Layer.html#isOcean-int-">isOcean</a></span>(int&nbsp;biomeId)</code>&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>abstract int[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/biome/layer/Layer.html#method_1829-int-int-int-int-">method_1829</a></span>(int&nbsp;int2,
            int&nbsp;int3,
            int&nbsp;int4,
            int&nbsp;int5)</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/biome/layer/Layer.html#method_1830-long-">method_1830</a></span>(long&nbsp;long2)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/biome/layer/Layer.html#method_1831-long-long-">method_1831</a></span>(long&nbsp;long2,
            long&nbsp;long3)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>protected int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/biome/layer/Layer.html#method_1835-int-int-int-int-">method_1835</a></span>(int&nbsp;int2,
-           int&nbsp;int3,
-           int&nbsp;int4,
-           int&nbsp;int5)</code>&nbsp;</td>
-</tr>
-<tr id="i8" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>protected int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/biome/layer/Layer.html#nextInt-int-">nextInt</a></span>(int&nbsp;int2)</code>&nbsp;</td>
 </tr>
@@ -280,7 +260,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockListLast">
 <li class="blockList">
 <h4>field_2273</h4>
-<pre>protected&nbsp;long field_2273</pre>
+<pre>private&nbsp;long field_2273</pre>
 </li>
 </ul>
 </li>
@@ -349,53 +329,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <a name="method_1829-int-int-int-int-">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>method_1829</h4>
 <pre>public abstract&nbsp;int[]&nbsp;method_1829(int&nbsp;int2,
                                   int&nbsp;int3,
                                   int&nbsp;int4,
                                   int&nbsp;int5)</pre>
-</li>
-</ul>
-<a name="compareBiomes-int-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>compareBiomes</h4>
-<pre>protected static&nbsp;boolean&nbsp;compareBiomes(int&nbsp;biomeAId,
-                                       int&nbsp;biomeBId)</pre>
-</li>
-</ul>
-<a name="isOcean-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>isOcean</h4>
-<pre>protected static&nbsp;boolean&nbsp;isOcean(int&nbsp;biomeId)</pre>
-</li>
-</ul>
-<a name="getRandomBiome-int:A-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getRandomBiome</h4>
-<pre>protected&nbsp;int&nbsp;getRandomBiome(int[]&nbsp;args)</pre>
-</li>
-</ul>
-<a name="method_1835-int-int-int-int-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>method_1835</h4>
-<pre>protected&nbsp;int&nbsp;method_1835(int&nbsp;int2,
-                          int&nbsp;int3,
-                          int&nbsp;int4,
-                          int&nbsp;int5)</pre>
 </li>
 </ul>
 </li>
@@ -425,7 +365,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../net/minecraft/world/biome/layer/EdgeLayer.html" title="class in net.minecraft.world.biome.layer"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/world/biome/layer/AddRiverLayer.html" title="class in net.minecraft.world.biome.layer"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../net/minecraft/world/biome/layer/MushroomIslandLayer.html" title="class in net.minecraft.world.biome.layer"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

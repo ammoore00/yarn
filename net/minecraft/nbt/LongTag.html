@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../net/minecraft/nbt/ListTag.html" title="class in net.minecraft.nbt"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/nbt/NbtException.html" title="class in net.minecraft.nbt"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/nbt/NbtIo.html" title="class in net.minecraft.nbt"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/nbt/LongTag.html" target="_top">Frames</a></li>
@@ -102,12 +102,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">net.minecraft.nbt.Tag</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../net/minecraft/nbt/NumberTag.html" title="class in net.minecraft.nbt">net.minecraft.nbt.NumberTag</a></li>
-<li>
-<ul class="inheritance">
 <li>net.minecraft.nbt.LongTag</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -119,7 +114,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">LongTag</span>
-extends <a href="../../../net/minecraft/nbt/NumberTag.html" title="class in net.minecraft.nbt">NumberTag</a></pre>
+extends <a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></pre>
 </li>
 </ul>
 </div>
@@ -139,7 +134,7 @@ extends <a href="../../../net/minecraft/nbt/NumberTag.html" title="class in net.
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private long</code></td>
+<td class="colFirst"><code>long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/LongTag.html#value">value</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -164,10 +159,11 @@ extends <a href="../../../net/minecraft/nbt/NumberTag.html" title="class in net.
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/LongTag.html#LongTag--">LongTag</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/LongTag.html#LongTag-java.lang.String-">LongTag</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;type)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/LongTag.html#LongTag-long-">LongTag</a></span>(long&nbsp;value)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/LongTag.html#LongTag-java.lang.String-long-">LongTag</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
+       long&nbsp;long2)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -194,47 +190,22 @@ extends <a href="../../../net/minecraft/nbt/NumberTag.html" title="class in net.
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>byte</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/LongTag.html#getByte--">getByte</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/LongTag.html#getDouble--">getDouble</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/LongTag.html#getFloat--">getFloat</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/LongTag.html#getInt--">getInt</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>long</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/LongTag.html#getLong--">getLong</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>short</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/LongTag.html#getShort--">getShort</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code>byte</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/LongTag.html#getType--">getType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/LongTag.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>(package private) void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/LongTag.html#read-java.io.DataInput-int-net.minecraft.nbt.PositionTracker-">read</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataInput.html?is-external=true" title="class or interface in java.io">DataInput</a>&nbsp;input,
-    int&nbsp;depth,
-    <a href="../../../net/minecraft/nbt/PositionTracker.html" title="class in net.minecraft.nbt">PositionTracker</a>&nbsp;tracker)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/LongTag.html#read-java.io.DataInput-int-">read</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataInput.html?is-external=true" title="class or interface in java.io">DataInput</a>&nbsp;input,
+    int&nbsp;depth)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/LongTag.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>(package private) void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/LongTag.html#write-java.io.DataOutput-">write</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataOutput.html?is-external=true" title="class or interface in java.io">DataOutput</a>&nbsp;output)</code>&nbsp;</td>
 </tr>
@@ -244,7 +215,7 @@ extends <a href="../../../net/minecraft/nbt/NumberTag.html" title="class in net.
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.nbt.<a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></h3>
-<code><a href="../../../net/minecraft/nbt/Tag.html#asString--">asString</a>, <a href="../../../net/minecraft/nbt/Tag.html#createByTypeId-byte-">createByTypeId</a></code></li>
+<code><a href="../../../net/minecraft/nbt/Tag.html#createByTypeId-byte-java.lang.String-">createByTypeId</a>, <a href="../../../net/minecraft/nbt/Tag.html#getString--">getString</a>, <a href="../../../net/minecraft/nbt/Tag.html#getTypeById-byte-">getTypeById</a>, <a href="../../../net/minecraft/nbt/Tag.html#method_11647-net.minecraft.nbt.Tag-java.io.DataOutput-">method_11647</a>, <a href="../../../net/minecraft/nbt/Tag.html#method_11648-java.io.DataInput-">method_11648</a>, <a href="../../../net/minecraft/nbt/Tag.html#method_11649-java.io.DataInput-int-">method_11649</a>, <a href="../../../net/minecraft/nbt/Tag.html#setType-java.lang.String-">setType</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -273,7 +244,7 @@ extends <a href="../../../net/minecraft/nbt/NumberTag.html" title="class in net.
 <ul class="blockListLast">
 <li class="blockList">
 <h4>value</h4>
-<pre>private&nbsp;long value</pre>
+<pre>public&nbsp;long value</pre>
 </li>
 </ul>
 </li>
@@ -284,22 +255,23 @@ extends <a href="../../../net/minecraft/nbt/NumberTag.html" title="class in net.
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="LongTag--">
+<a name="LongTag-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>LongTag</h4>
-<pre>LongTag()</pre>
+<pre>public&nbsp;LongTag(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;type)</pre>
 </li>
 </ul>
-<a name="LongTag-long-">
+<a name="LongTag-java.lang.String-long-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>LongTag</h4>
-<pre>public&nbsp;LongTag(long&nbsp;value)</pre>
+<pre>public&nbsp;LongTag(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
+               long&nbsp;long2)</pre>
 </li>
 </ul>
 </li>
@@ -323,18 +295,17 @@ extends <a href="../../../net/minecraft/nbt/NumberTag.html" title="class in net.
 </dl>
 </li>
 </ul>
-<a name="read-java.io.DataInput-int-net.minecraft.nbt.PositionTracker-">
+<a name="read-java.io.DataInput-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>read</h4>
 <pre>void&nbsp;read(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataInput.html?is-external=true" title="class or interface in java.io">DataInput</a>&nbsp;input,
-          int&nbsp;depth,
-          <a href="../../../net/minecraft/nbt/PositionTracker.html" title="class in net.minecraft.nbt">PositionTracker</a>&nbsp;tracker)</pre>
+          int&nbsp;depth)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/nbt/Tag.html#read-java.io.DataInput-int-net.minecraft.nbt.PositionTracker-">read</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></code></dd>
+<dd><code><a href="../../../net/minecraft/nbt/Tag.html#read-java.io.DataInput-int-">read</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -359,8 +330,8 @@ extends <a href="../../../net/minecraft/nbt/NumberTag.html" title="class in net.
 <h4>toString</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/nbt/Tag.html#toString--">toString</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -393,91 +364,13 @@ extends <a href="../../../net/minecraft/nbt/NumberTag.html" title="class in net.
 <a name="hashCode--">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>hashCode</h4>
 <pre>public&nbsp;int&nbsp;hashCode()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../net/minecraft/nbt/Tag.html#hashCode--">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="getLong--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getLong</h4>
-<pre>public&nbsp;long&nbsp;getLong()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/nbt/NumberTag.html#getLong--">getLong</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/nbt/NumberTag.html" title="class in net.minecraft.nbt">NumberTag</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="getInt--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getInt</h4>
-<pre>public&nbsp;int&nbsp;getInt()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/nbt/NumberTag.html#getInt--">getInt</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/nbt/NumberTag.html" title="class in net.minecraft.nbt">NumberTag</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="getShort--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getShort</h4>
-<pre>public&nbsp;short&nbsp;getShort()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/nbt/NumberTag.html#getShort--">getShort</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/nbt/NumberTag.html" title="class in net.minecraft.nbt">NumberTag</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="getByte--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getByte</h4>
-<pre>public&nbsp;byte&nbsp;getByte()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/nbt/NumberTag.html#getByte--">getByte</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/nbt/NumberTag.html" title="class in net.minecraft.nbt">NumberTag</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="getDouble--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getDouble</h4>
-<pre>public&nbsp;double&nbsp;getDouble()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/nbt/NumberTag.html#getDouble--">getDouble</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/nbt/NumberTag.html" title="class in net.minecraft.nbt">NumberTag</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="getFloat--">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>getFloat</h4>
-<pre>public&nbsp;float&nbsp;getFloat()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/nbt/NumberTag.html#getFloat--">getFloat</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/nbt/NumberTag.html" title="class in net.minecraft.nbt">NumberTag</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -509,7 +402,7 @@ extends <a href="../../../net/minecraft/nbt/NumberTag.html" title="class in net.
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../net/minecraft/nbt/ListTag.html" title="class in net.minecraft.nbt"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/nbt/NbtException.html" title="class in net.minecraft.nbt"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/nbt/NbtIo.html" title="class in net.minecraft.nbt"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/nbt/LongTag.html" target="_top">Frames</a></li>

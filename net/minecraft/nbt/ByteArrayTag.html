@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -134,7 +134,7 @@ extends <a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecr
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private byte[]</code></td>
+<td class="colFirst"><code>byte[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#value">value</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -159,10 +159,11 @@ extends <a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecr
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#ByteArrayTag--">ByteArrayTag</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#ByteArrayTag-java.lang.String-">ByteArrayTag</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;type)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#ByteArrayTag-byte:A-">ByteArrayTag</a></span>(byte[]&nbsp;value)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#ByteArrayTag-java.lang.String-byte:A-">ByteArrayTag</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
+            byte[]&nbsp;byte2)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -188,28 +189,23 @@ extends <a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecr
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#equals-java.lang.Object-">equals</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;other)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>byte[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#getArray--">getArray</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i3" class="rowColor">
 <td class="colFirst"><code>byte</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#getType--">getType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>(package private) void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#read-java.io.DataInput-int-net.minecraft.nbt.PositionTracker-">read</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataInput.html?is-external=true" title="class or interface in java.io">DataInput</a>&nbsp;input,
-    int&nbsp;depth,
-    <a href="../../../net/minecraft/nbt/PositionTracker.html" title="class in net.minecraft.nbt">PositionTracker</a>&nbsp;tracker)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#read-java.io.DataInput-int-">read</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataInput.html?is-external=true" title="class or interface in java.io">DataInput</a>&nbsp;input,
+    int&nbsp;depth)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>(package private) void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/ByteArrayTag.html#write-java.io.DataOutput-">write</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataOutput.html?is-external=true" title="class or interface in java.io">DataOutput</a>&nbsp;output)</code>&nbsp;</td>
 </tr>
@@ -219,7 +215,7 @@ extends <a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecr
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.nbt.<a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></h3>
-<code><a href="../../../net/minecraft/nbt/Tag.html#asString--">asString</a>, <a href="../../../net/minecraft/nbt/Tag.html#createByTypeId-byte-">createByTypeId</a></code></li>
+<code><a href="../../../net/minecraft/nbt/Tag.html#createByTypeId-byte-java.lang.String-">createByTypeId</a>, <a href="../../../net/minecraft/nbt/Tag.html#getString--">getString</a>, <a href="../../../net/minecraft/nbt/Tag.html#getTypeById-byte-">getTypeById</a>, <a href="../../../net/minecraft/nbt/Tag.html#method_11647-net.minecraft.nbt.Tag-java.io.DataOutput-">method_11647</a>, <a href="../../../net/minecraft/nbt/Tag.html#method_11648-java.io.DataInput-">method_11648</a>, <a href="../../../net/minecraft/nbt/Tag.html#method_11649-java.io.DataInput-int-">method_11649</a>, <a href="../../../net/minecraft/nbt/Tag.html#setType-java.lang.String-">setType</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -248,7 +244,7 @@ extends <a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecr
 <ul class="blockListLast">
 <li class="blockList">
 <h4>value</h4>
-<pre>private&nbsp;byte[] value</pre>
+<pre>public&nbsp;byte[] value</pre>
 </li>
 </ul>
 </li>
@@ -259,22 +255,23 @@ extends <a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecr
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ByteArrayTag--">
+<a name="ByteArrayTag-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>ByteArrayTag</h4>
-<pre>ByteArrayTag()</pre>
+<pre>public&nbsp;ByteArrayTag(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;type)</pre>
 </li>
 </ul>
-<a name="ByteArrayTag-byte:A-">
+<a name="ByteArrayTag-java.lang.String-byte:A-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ByteArrayTag</h4>
-<pre>public&nbsp;ByteArrayTag(byte[]&nbsp;value)</pre>
+<pre>public&nbsp;ByteArrayTag(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
+                    byte[]&nbsp;byte2)</pre>
 </li>
 </ul>
 </li>
@@ -298,18 +295,17 @@ extends <a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecr
 </dl>
 </li>
 </ul>
-<a name="read-java.io.DataInput-int-net.minecraft.nbt.PositionTracker-">
+<a name="read-java.io.DataInput-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>read</h4>
 <pre>void&nbsp;read(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataInput.html?is-external=true" title="class or interface in java.io">DataInput</a>&nbsp;input,
-          int&nbsp;depth,
-          <a href="../../../net/minecraft/nbt/PositionTracker.html" title="class in net.minecraft.nbt">PositionTracker</a>&nbsp;tracker)</pre>
+          int&nbsp;depth)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/nbt/Tag.html#read-java.io.DataInput-int-net.minecraft.nbt.PositionTracker-">read</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></code></dd>
+<dd><code><a href="../../../net/minecraft/nbt/Tag.html#read-java.io.DataInput-int-">read</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -334,8 +330,8 @@ extends <a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecr
 <h4>toString</h4>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/nbt/Tag.html#toString--">toString</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -368,7 +364,7 @@ extends <a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecr
 <a name="hashCode--">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>hashCode</h4>
 <pre>public&nbsp;int&nbsp;hashCode()</pre>
@@ -376,15 +372,6 @@ extends <a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecr
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../net/minecraft/nbt/Tag.html#hashCode--">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></code></dd>
 </dl>
-</li>
-</ul>
-<a name="getArray--">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>getArray</h4>
-<pre>public&nbsp;byte[]&nbsp;getArray()</pre>
 </li>
 </ul>
 </li>
