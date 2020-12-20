@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/village/SimpleTrader.html" title="class in net.minecraft.village"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/village/Trader.html" title="interface in net.minecraft.village"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li>Prev&nbsp;Class</li>
+<li><a href="../../../net/minecraft/village/TraderInventory.html" title="class in net.minecraft.village"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/village/TradeOffer.html" target="_top">Frames</a></li>
@@ -129,26 +129,22 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#field_23478">field_23478</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#field_23479">field_23479</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#field_23480">field_23480</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#field_23482">field_23482</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#rewardingPlayerExperience">rewardingPlayerExperience</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#maxUses">maxUses</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>private <a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#result">result</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#stack1">stack1</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#stack2">stack2</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>private int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#uses">uses</a></span></code>&nbsp;</td>
 </tr>
@@ -167,27 +163,20 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#TradeOffer-net.minecraft.nbt.CompoundTag-">TradeOffer</a></span>(<a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#TradeOffer-net.minecraft.nbt.CompoundTag-">TradeOffer</a></span>(<a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;nbt)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#TradeOffer-net.minecraft.item.ItemStack-net.minecraft.item.Item-">TradeOffer</a></span>(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
-          <a href="../../../net/minecraft/item/Item.html" title="class in net.minecraft.item">Item</a>&nbsp;item)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#TradeOffer-net.minecraft.item.ItemStack-net.minecraft.item.Item-">TradeOffer</a></span>(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack1,
+          <a href="../../../net/minecraft/item/Item.html" title="class in net.minecraft.item">Item</a>&nbsp;result)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#TradeOffer-net.minecraft.item.ItemStack-net.minecraft.item.ItemStack-">TradeOffer</a></span>(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
-          <a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack2)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#TradeOffer-net.minecraft.item.ItemStack-net.minecraft.item.ItemStack-">TradeOffer</a></span>(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack1,
+          <a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;result)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#TradeOffer-net.minecraft.item.ItemStack-net.minecraft.item.ItemStack-net.minecraft.item.ItemStack-">TradeOffer</a></span>(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
           <a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack2,
           <a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack3)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#TradeOffer-net.minecraft.item.ItemStack-net.minecraft.item.ItemStack-net.minecraft.item.ItemStack-int-int-">TradeOffer</a></span>(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
-          <a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack2,
-          <a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack3,
-          int&nbsp;int2,
-          int&nbsp;int3)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -209,50 +198,46 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#clearUses--">clearUses</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#getMaxUses--">getMaxUses</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#getFirstStack--">getFirstStack</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#getUses--">getUses</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#getResult--">getResult</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#increaseSpecialPrice-int-">increaseSpecialPrice</a></span>(int&nbsp;int2)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#getSecondStack--">getSecondStack</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#isDisabled--">isDisabled</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#hasSecondStack--">hasSecondStack</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#method_25834--">method_25834</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#increaseSpecialPrice-int-">increaseSpecialPrice</a></span>(int&nbsp;uses)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#method_25836-net.minecraft.nbt.CompoundTag-">method_25836</a></span>(<a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#isDisabled--">isDisabled</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#method_25837--">method_25837</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#method_8450-net.minecraft.village.TradeOffer-">method_8450</a></span>(<a href="../../../net/minecraft/village/TradeOffer.html" title="class in net.minecraft.village">TradeOffer</a>&nbsp;tradeOffer)</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#method_25838--">method_25838</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#method_8451-net.minecraft.village.TradeOffer-">method_8451</a></span>(<a href="../../../net/minecraft/village/TradeOffer.html" title="class in net.minecraft.village">TradeOffer</a>&nbsp;tradeOffer)</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#method_25839--">method_25839</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#readNbt-net.minecraft.nbt.CompoundTag-">readNbt</a></span>(<a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;nbt)</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#shouldRewardPlayerExperience--">shouldRewardPlayerExperience</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#toTag--">toTag</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/village/TradeOffer.html#use--">use</a></span>()</code>&nbsp;</td>
 </tr>
@@ -278,31 +263,31 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_23478">
+<a name="stack1">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_23478</h4>
-<pre>private&nbsp;<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a> field_23478</pre>
+<h4>stack1</h4>
+<pre>private&nbsp;<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a> stack1</pre>
 </li>
 </ul>
-<a name="field_23479">
+<a name="stack2">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_23479</h4>
-<pre>private&nbsp;<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a> field_23479</pre>
+<h4>stack2</h4>
+<pre>private&nbsp;<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a> stack2</pre>
 </li>
 </ul>
-<a name="field_23480">
+<a name="result">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_23480</h4>
-<pre>private&nbsp;<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a> field_23480</pre>
+<h4>result</h4>
+<pre>private&nbsp;<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a> result</pre>
 </li>
 </ul>
 <a name="uses">
@@ -314,22 +299,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>private&nbsp;int uses</pre>
 </li>
 </ul>
-<a name="field_23482">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_23482</h4>
-<pre>private&nbsp;int field_23482</pre>
-</li>
-</ul>
-<a name="rewardingPlayerExperience">
+<a name="maxUses">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>rewardingPlayerExperience</h4>
-<pre>private&nbsp;boolean rewardingPlayerExperience</pre>
+<h4>maxUses</h4>
+<pre>private&nbsp;int maxUses</pre>
 </li>
 </ul>
 </li>
@@ -346,7 +322,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>TradeOffer</h4>
-<pre>public&nbsp;TradeOffer(<a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</pre>
+<pre>public&nbsp;TradeOffer(<a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;nbt)</pre>
 </li>
 </ul>
 <a name="TradeOffer-net.minecraft.item.ItemStack-net.minecraft.item.ItemStack-net.minecraft.item.ItemStack-">
@@ -360,27 +336,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
                   <a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack3)</pre>
 </li>
 </ul>
-<a name="TradeOffer-net.minecraft.item.ItemStack-net.minecraft.item.ItemStack-net.minecraft.item.ItemStack-int-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>TradeOffer</h4>
-<pre>public&nbsp;TradeOffer(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
-                  <a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack2,
-                  <a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack3,
-                  int&nbsp;int2,
-                  int&nbsp;int3)</pre>
-</li>
-</ul>
 <a name="TradeOffer-net.minecraft.item.ItemStack-net.minecraft.item.ItemStack-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>TradeOffer</h4>
-<pre>public&nbsp;TradeOffer(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
-                  <a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack2)</pre>
+<pre>public&nbsp;TradeOffer(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack1,
+                  <a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;result)</pre>
 </li>
 </ul>
 <a name="TradeOffer-net.minecraft.item.ItemStack-net.minecraft.item.Item-">
@@ -389,8 +352,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockListLast">
 <li class="blockList">
 <h4>TradeOffer</h4>
-<pre>public&nbsp;TradeOffer(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
-                  <a href="../../../net/minecraft/item/Item.html" title="class in net.minecraft.item">Item</a>&nbsp;item)</pre>
+<pre>public&nbsp;TradeOffer(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack1,
+                  <a href="../../../net/minecraft/item/Item.html" title="class in net.minecraft.item">Item</a>&nbsp;result)</pre>
 </li>
 </ul>
 </li>
@@ -401,58 +364,58 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_25834--">
+<a name="getFirstStack--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_25834</h4>
-<pre>public&nbsp;<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;method_25834()</pre>
+<h4>getFirstStack</h4>
+<pre>public&nbsp;<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;getFirstStack()</pre>
 </li>
 </ul>
-<a name="method_25837--">
+<a name="getSecondStack--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_25837</h4>
-<pre>public&nbsp;<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;method_25837()</pre>
+<h4>getSecondStack</h4>
+<pre>public&nbsp;<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;getSecondStack()</pre>
 </li>
 </ul>
-<a name="method_25838--">
+<a name="hasSecondStack--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_25838</h4>
-<pre>public&nbsp;boolean&nbsp;method_25838()</pre>
+<h4>hasSecondStack</h4>
+<pre>public&nbsp;boolean&nbsp;hasSecondStack()</pre>
 </li>
 </ul>
-<a name="method_25839--">
+<a name="getResult--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_25839</h4>
-<pre>public&nbsp;<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;method_25839()</pre>
+<h4>getResult</h4>
+<pre>public&nbsp;<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;getResult()</pre>
 </li>
 </ul>
-<a name="getUses--">
+<a name="method_8450-net.minecraft.village.TradeOffer-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getUses</h4>
-<pre>public&nbsp;int&nbsp;getUses()</pre>
+<h4>method_8450</h4>
+<pre>public&nbsp;boolean&nbsp;method_8450(<a href="../../../net/minecraft/village/TradeOffer.html" title="class in net.minecraft.village">TradeOffer</a>&nbsp;tradeOffer)</pre>
 </li>
 </ul>
-<a name="getMaxUses--">
+<a name="method_8451-net.minecraft.village.TradeOffer-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getMaxUses</h4>
-<pre>public&nbsp;int&nbsp;getMaxUses()</pre>
+<h4>method_8451</h4>
+<pre>public&nbsp;boolean&nbsp;method_8451(<a href="../../../net/minecraft/village/TradeOffer.html" title="class in net.minecraft.village">TradeOffer</a>&nbsp;tradeOffer)</pre>
 </li>
 </ul>
 <a name="use--">
@@ -470,7 +433,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>increaseSpecialPrice</h4>
-<pre>public&nbsp;void&nbsp;increaseSpecialPrice(int&nbsp;int2)</pre>
+<pre>public&nbsp;void&nbsp;increaseSpecialPrice(int&nbsp;uses)</pre>
 </li>
 </ul>
 <a name="isDisabled--">
@@ -492,22 +455,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 public&nbsp;void&nbsp;clearUses()</pre>
 </li>
 </ul>
-<a name="shouldRewardPlayerExperience--">
+<a name="readNbt-net.minecraft.nbt.CompoundTag-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>shouldRewardPlayerExperience</h4>
-<pre>public&nbsp;boolean&nbsp;shouldRewardPlayerExperience()</pre>
-</li>
-</ul>
-<a name="method_25836-net.minecraft.nbt.CompoundTag-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_25836</h4>
-<pre>public&nbsp;void&nbsp;method_25836(<a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</pre>
+<h4>readNbt</h4>
+<pre>public&nbsp;void&nbsp;readNbt(<a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;nbt)</pre>
 </li>
 </ul>
 <a name="toTag--">
@@ -546,8 +500,8 @@ public&nbsp;void&nbsp;clearUses()</pre>
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/village/SimpleTrader.html" title="class in net.minecraft.village"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/village/Trader.html" title="interface in net.minecraft.village"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li>Prev&nbsp;Class</li>
+<li><a href="../../../net/minecraft/village/TraderInventory.html" title="class in net.minecraft.village"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/village/TradeOffer.html" target="_top">Frames</a></li>

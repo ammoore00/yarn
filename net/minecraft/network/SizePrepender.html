@@ -105,7 +105,7 @@ var activeTableTab = "activeTableTab";
 <li>io.netty.channel.ChannelOutboundHandlerAdapter</li>
 <li>
 <ul class="inheritance">
-<li>io.netty.handler.codec.MessageToByteEncoder&lt;io.netty.buffer.ByteBuf&gt;</li>
+<li>io.netty.handler.codec.MessageToByteEncoder</li>
 <li>
 <ul class="inheritance">
 <li>net.minecraft.network.SizePrepender</li>
@@ -127,9 +127,8 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>@ChannelHandler.Sharable
-public class <span class="typeNameLabel">SizePrepender</span>
-extends io.netty.handler.codec.MessageToByteEncoder&lt;io.netty.buffer.ByteBuf&gt;</pre>
+<pre>public class <span class="typeNameLabel">SizePrepender</span>
+extends io.netty.handler.codec.MessageToByteEncoder</pre>
 </li>
 </ul>
 </div>
@@ -192,7 +191,7 @@ extends io.netty.handler.codec.MessageToByteEncoder&lt;io.netty.buffer.ByteBuf&g
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;io.netty.handler.codec.MessageToByteEncoder</h3>
-<code>acceptOutboundMessage, allocateBuffer, isPreferDirect, write</code></li>
+<code>acceptOutboundMessage, encode, write</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.io.netty.channel.ChannelOutboundHandlerAdapter">
@@ -206,7 +205,7 @@ extends io.netty.handler.codec.MessageToByteEncoder&lt;io.netty.buffer.ByteBuf&g
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;io.netty.channel.ChannelHandlerAdapter</h3>
-<code>ensureNotSharable, exceptionCaught, handlerAdded, handlerRemoved, isSharable</code></li>
+<code>exceptionCaught, handlerAdded, handlerRemoved, isSharable</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -261,14 +260,7 @@ extends io.netty.handler.codec.MessageToByteEncoder&lt;io.netty.buffer.ByteBuf&g
 <h4>encode</h4>
 <pre>protected&nbsp;void&nbsp;encode(io.netty.channel.ChannelHandlerContext&nbsp;channelHandlerContext,
                       io.netty.buffer.ByteBuf&nbsp;byteBuf,
-                      io.netty.buffer.ByteBuf&nbsp;byteBuf2)
-               throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code>encode</code>&nbsp;in class&nbsp;<code>io.netty.handler.codec.MessageToByteEncoder&lt;io.netty.buffer.ByteBuf&gt;</code></dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd>
-</dl>
+                      io.netty.buffer.ByteBuf&nbsp;byteBuf2)</pre>
 </li>
 </ul>
 </li>

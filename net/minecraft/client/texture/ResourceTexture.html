@@ -113,7 +113,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../net/minecraft/class_4170.html" title="interface in net.minecraft">class_4170</a></dd>
+<dd><a href="../../../../net/minecraft/client/texture/Texture.html" title="interface in net.minecraft.client.texture">Texture</a></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -143,12 +143,12 @@ extends <a href="../../../../net/minecraft/client/texture/AbstractTexture.html" 
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/ResourceTexture.html#field_30016">field_30016</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>protected <a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/ResourceTexture.html#field_5090">field_5090</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected <a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/ResourceTexture.html#location">location</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/ResourceTexture.html#LOGGER">LOGGER</a></span></code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -156,7 +156,7 @@ extends <a href="../../../../net/minecraft/client/texture/AbstractTexture.html" 
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.client.texture.<a href="../../../../net/minecraft/client/texture/AbstractTexture.html" title="class in net.minecraft.client.texture">AbstractTexture</a></h3>
-<code><a href="../../../../net/minecraft/client/texture/AbstractTexture.html#field_29991">field_29991</a>, <a href="../../../../net/minecraft/client/texture/AbstractTexture.html#field_29992">field_29992</a>, <a href="../../../../net/minecraft/client/texture/AbstractTexture.html#field_29993">field_29993</a>, <a href="../../../../net/minecraft/client/texture/AbstractTexture.html#field_29994">field_29994</a>, <a href="../../../../net/minecraft/client/texture/AbstractTexture.html#glId">glId</a></code></li>
+<code><a href="../../../../net/minecraft/client/texture/AbstractTexture.html#glId">glId</a></code></li>
 </ul>
 </li>
 </ul>
@@ -172,7 +172,7 @@ extends <a href="../../../../net/minecraft/client/texture/AbstractTexture.html" 
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/ResourceTexture.html#ResourceTexture-net.minecraft.util.Identifier-">ResourceTexture</a></span>(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;location)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/ResourceTexture.html#ResourceTexture-net.minecraft.util.Identifier-">ResourceTexture</a></span>(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -191,7 +191,7 @@ extends <a href="../../../../net/minecraft/client/texture/AbstractTexture.html" 
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/ResourceTexture.html#load-net.minecraft.resource.ResourceManager-">load</a></span>(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/ResourceTexture.html#load-net.minecraft.resource.ResourceManager-">load</a></span>(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;manager)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -199,7 +199,7 @@ extends <a href="../../../../net/minecraft/client/texture/AbstractTexture.html" 
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.client.texture.<a href="../../../../net/minecraft/client/texture/AbstractTexture.html" title="class in net.minecraft.client.texture">AbstractTexture</a></h3>
-<code><a href="../../../../net/minecraft/client/texture/AbstractTexture.html#method_31277-boolean-boolean-">method_31277</a>, <a href="../../../../net/minecraft/client/texture/AbstractTexture.html#method_31278--">method_31278</a>, <a href="../../../../net/minecraft/client/texture/AbstractTexture.html#method_31364--">method_31364</a>, <a href="../../../../net/minecraft/client/texture/AbstractTexture.html#method_31366--">method_31366</a>, <a href="../../../../net/minecraft/client/texture/AbstractTexture.html#method_31367-boolean-boolean-">method_31367</a></code></li>
+<code><a href="../../../../net/minecraft/client/texture/AbstractTexture.html#clearGlId--">clearGlId</a>, <a href="../../../../net/minecraft/client/texture/AbstractTexture.html#getGlId--">getGlId</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -222,22 +222,22 @@ extends <a href="../../../../net/minecraft/client/texture/AbstractTexture.html" 
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_30016">
+<a name="LOGGER">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_30016</h4>
-<pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a> field_30016</pre>
+<h4>LOGGER</h4>
+<pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a> LOGGER</pre>
 </li>
 </ul>
-<a name="location">
+<a name="field_5090">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>location</h4>
-<pre>protected final&nbsp;<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a> location</pre>
+<h4>field_5090</h4>
+<pre>protected final&nbsp;<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a> field_5090</pre>
 </li>
 </ul>
 </li>
@@ -254,7 +254,7 @@ extends <a href="../../../../net/minecraft/client/texture/AbstractTexture.html" 
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ResourceTexture</h4>
-<pre>public&nbsp;ResourceTexture(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;location)</pre>
+<pre>public&nbsp;ResourceTexture(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier)</pre>
 </li>
 </ul>
 </li>
@@ -271,12 +271,7 @@ extends <a href="../../../../net/minecraft/client/texture/AbstractTexture.html" 
 <ul class="blockListLast">
 <li class="blockList">
 <h4>load</h4>
-<pre>public&nbsp;void&nbsp;load(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager)
-          throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
-</dl>
+<pre>public&nbsp;void&nbsp;load(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;manager)</pre>
 </li>
 </ul>
 </li>

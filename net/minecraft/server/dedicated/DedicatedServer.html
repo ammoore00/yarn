@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../net/minecraft/server/dedicated/DedicatedPlayerManager.html" title="class in net.minecraft.server.dedicated"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../net/minecraft/server/dedicated/DedicatedServerWatchdog.html" title="class in net.minecraft.server.dedicated"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html" title="interface in net.minecraft.server.dedicated"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/server/dedicated/DedicatedServer.html" target="_top">Frames</a></li>
@@ -74,14 +74,14 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
@@ -92,26 +92,116 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">net.minecraft.server.dedicated</div>
-<h2 title="Interface DedicatedServer" class="title">Interface DedicatedServer</h2>
+<h2 title="Class DedicatedServer" class="title">Class DedicatedServer</h2>
 </div>
 <div class="contentContainer">
+<ul class="inheritance">
+<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">net.minecraft.server.MinecraftServer</a></li>
+<li>
+<ul class="inheritance">
+<li>net.minecraft.server.dedicated.DedicatedServer</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
 <dl>
-<dt>All Known Implementing Classes:</dt>
-<dd><a href="../../../../net/minecraft/server/dedicated/MinecraftDedicatedServer.html" title="class in net.minecraft.server.dedicated">MinecraftDedicatedServer</a></dd>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang">Runnable</a>, <a href="../../../../net/minecraft/command/CommandSource.html" title="interface in net.minecraft.command">CommandSource</a>, <a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html" title="interface in net.minecraft.server.dedicated">DedicatedServerAccess</a>, <a href="../../../../net/minecraft/util/snooper/Snoopable.html" title="interface in net.minecraft.util.snooper">Snoopable</a></dd>
 </dl>
 <hr>
 <br>
 <pre>@Environment(value=SERVER)
-public interface <span class="typeNameLabel">DedicatedServer</span></pre>
+public class <span class="typeNameLabel">DedicatedServer</span>
+extends <a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a>
+implements <a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html" title="interface in net.minecraft.server.dedicated">DedicatedServerAccess</a></pre>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/server/dedicated/AbstractPropertiesHandler.html" title="class in net.minecraft.server.dedicated">AbstractPropertiesHandler</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#abstractPropertiesHandler">abstractPropertiesHandler</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/server/dedicated/EulaReader.html" title="class in net.minecraft.server.dedicated">EulaReader</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#eulaReader">eulaReader</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#field_11206">field_11206</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/class_2087.html" title="enum in net.minecraft">class_2087</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#field_11207">field_11207</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#hasGui">hasGui</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#LOGGER">LOGGER</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/server/rcon/QueryResponseHandler.html" title="class in net.minecraft.server.rcon">QueryResponseHandler</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#queryResponseHandler">queryResponseHandler</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/server/rcon/RconServer.html" title="class in net.minecraft.server.rcon">RconServer</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#rconServer">rconServer</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#shouldGenerateStructures">shouldGenerateStructures</a></span></code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.server.MinecraftServer">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;net.minecraft.server.<a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></h3>
+<code><a href="../../../../net/minecraft/server/MinecraftServer.html#field_11271">field_11271</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#field_11272">field_11272</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#field_11273">field_11273</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#field_11274">field_11274</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#field_7084">field_7084</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#progress">progress</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#progressType">progressType</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#worlds">worlds</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#DedicatedServer-java.io.File-">DedicatedServer</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ========== METHOD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.summary">
@@ -119,95 +209,183 @@ public interface <span class="typeNameLabel">DedicatedServer</span></pre>
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#executeRconCommand-java.lang.String-">executeRconCommand</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#addSnooperInfo-net.minecraft.util.snooper.Snooper-">addSnooperInfo</a></span>(<a href="../../../../net/minecraft/util/snooper/Snooper.html" title="class in net.minecraft.util.snooper">Snooper</a>&nbsp;snooper)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#getCurrentPlayerCount--">getCurrentPlayerCount</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#areCommandBlocksEnabled--">areCommandBlocksEnabled</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#getHostname--">getHostname</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#convertData--">convertData</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#getLevelName--">getLevelName</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#createGui--">createGui</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#getMaxPlayerCount--">getMaxPlayerCount</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#enqueueCommand-java.lang.String-net.minecraft.command.CommandSource-">enqueueCommand</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+              <a href="../../../../net/minecraft/command/CommandSource.html" title="interface in net.minecraft.command">CommandSource</a>&nbsp;source)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#getMotd--">getMotd</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#executeQueuedCommands--">executeQueuedCommands</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#getPlayerNames--">getPlayerNames</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#exit--">exit</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#getPlugins--">getPlugins</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#getBooleanOrDefault-java.lang.String-boolean-">getBooleanOrDefault</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+                   boolean&nbsp;bool)</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#getPort--">getPort</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../net/minecraft/world/Difficulty.html" title="enum in net.minecraft.world">Difficulty</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#getDefaultDifficulty--">getDefaultDifficulty</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#getVersion--">getVersion</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../net/minecraft/class_2087.html" title="enum in net.minecraft">class_2087</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#getDefaultGameMode--">getDefaultGameMode</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#info-java.lang.String-">info</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#getIntOrDefault-java.lang.String-int-">getIntOrDefault</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+               int&nbsp;int2)</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#isDebuggingEnabled--">isDebuggingEnabled</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#getOpPermissionLevel--">getOpPermissionLevel</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#log-java.lang.String-">log</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#getOrDefault-java.lang.String-java.lang.String-">getOrDefault</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#logError-java.lang.String-">logError</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../net/minecraft/server/dedicated/DedicatedPlayerManager.html" title="class in net.minecraft.server.dedicated">DedicatedPlayerManager</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#getPlayerManager--">getPlayerManager</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#method_33352--">method_33352</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#getPropertiesFilePath--">getPropertiesFilePath</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#method_33353-java.lang.String-int-">method_33353</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-            int&nbsp;int2)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#getSpawnProtectionRadius--">getSpawnProtectionRadius</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i16" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#method_33354-java.lang.String-java.lang.Object-">method_33354</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;object)</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#hasGui--">hasGui</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i17" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#method_33355-java.lang.String-java.lang.String-">method_33355</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string2)</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#isDedicated--">isDedicated</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i18" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#method_33357--">method_33357</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#isHardcore--">isHardcore</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i19" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#isMonsterSpawningEnabled--">isMonsterSpawningEnabled</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i20" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#isNetherAllowed--">isNetherAllowed</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#isSnooperEnabled--">isSnooperEnabled</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i22" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#isSpawnProtected-net.minecraft.world.World-int-int-int-net.minecraft.class_2674-">isSpawnProtected</a></span>(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+                int&nbsp;int2,
+                int&nbsp;int3,
+                int&nbsp;int4,
+                <a href="../../../../net/minecraft/class_2674.html" title="class in net.minecraft">class_2674</a>&nbsp;class_2674)</code>&nbsp;</td>
+</tr>
+<tr id="i23" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#method_6437-net.minecraft.class_2087-boolean-">method_6437</a></span>(<a href="../../../../net/minecraft/class_2087.html" title="enum in net.minecraft">class_2087</a>&nbsp;class_2087,
+           boolean&nbsp;bool)</code>&nbsp;</td>
+</tr>
+<tr id="i24" class="altColor">
+<td class="colFirst"><code><a href="../../../../net/minecraft/util/crash/CrashReport.html" title="class in net.minecraft.util.crash">CrashReport</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#populateCrashReport-net.minecraft.util.crash.CrashReport-">populateCrashReport</a></span>(<a href="../../../../net/minecraft/util/crash/CrashReport.html" title="class in net.minecraft.util.crash">CrashReport</a>&nbsp;report)</code>&nbsp;</td>
+</tr>
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#warn-java.lang.String-">warn</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#saveAbstractPropertiesHandler--">saveAbstractPropertiesHandler</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i26" class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#setCrashReport-net.minecraft.util.crash.CrashReport-">setCrashReport</a></span>(<a href="../../../../net/minecraft/util/crash/CrashReport.html" title="class in net.minecraft.util.crash">CrashReport</a>&nbsp;report)</code>&nbsp;</td>
+</tr>
+<tr id="i27" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#setPlayerIdleTimeout-int-">setPlayerIdleTimeout</a></span>(int&nbsp;playerIdleTimeout)</code>&nbsp;</td>
+</tr>
+<tr id="i28" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#setProperty-java.lang.String-java.lang.Object-">setProperty</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;object)</code>&nbsp;</td>
+</tr>
+<tr id="i29" class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#setupServer--">setupServer</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i30" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#shouldAnnouncePlayerAchievements--">shouldAnnouncePlayerAchievements</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i31" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#shouldBroadcastRconToOps--">shouldBroadcastRconToOps</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i32" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#shouldGenerateStructures--">shouldGenerateStructures</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i33" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#shutdown--">shutdown</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i34" class="altColor">
+<td class="colFirst"><code>private void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html#sleepFiveSeconds--">sleepFiveSeconds</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.server.MinecraftServer">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;net.minecraft.server.<a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></h3>
+<code><a href="../../../../net/minecraft/server/MinecraftServer.html#addSnooper-net.minecraft.util.snooper.Snooper-">addSnooper</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#addTickable-net.minecraft.util.Tickable-">addTickable</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#canUseCommand-int-java.lang.String-">canUseCommand</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#enableProfiler--">enableProfiler</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#executeRconCommand-java.lang.String-">executeRconCommand</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#forcePlayerSampleUpdate--">forcePlayerSampleUpdate</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getBlockPos--">getBlockPos</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getCommandManager--">getCommandManager</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getCurrentPlayerCount--">getCurrentPlayerCount</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getFile-java.lang.String-">getFile</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getGameProfileRepo--">getGameProfileRepo</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getIp--">getIp</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getKeyPair--">getKeyPair</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getLevelName--">getLevelName</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getMaxPlayerCount--">getMaxPlayerCount</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getMotd--">getMotd</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getName--">getName</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getNetworkIo--">getNetworkIo</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getPlayerIdleTimeout--">getPlayerIdleTimeout</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getPlayerNames--">getPlayerNames</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getPlugins--">getPlugins</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getPort--">getPort</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getProfiles--">getProfiles</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getProxy--">getProxy</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getResourcePackUrl--">getResourcePackUrl</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getRunDirectory--">getRunDirectory</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getSaveStorage--">getSaveStorage</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getServer--">getServer</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getServerIp--">getServerIp</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getServerMetadata--">getServerMetadata</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getServerModName--">getServerModName</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getServerMotd--">getServerMotd</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getServerName--">getServerName</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getServerOperation--">getServerOperation</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getServerPort--">getServerPort</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getSessionService--">getSessionService</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getSnooper--">getSnooper</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getTicks--">getTicks</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getTimeMillis--">getTimeMillis</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getTranslationKey--">getTranslationKey</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getUserCache--">getUserCache</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getUserName--">getUserName</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getVersion--">getVersion</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getWorld--">getWorld</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getWorld-int-">getWorld</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#getWorldHeight--">getWorldHeight</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#info-java.lang.String-">info</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isDebuggingEnabled--">isDebuggingEnabled</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isDemo--">isDemo</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isFlightEnabled--">isFlightEnabled</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isLoading--">isLoading</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isOnlineMode--">isOnlineMode</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isPvpEnabled--">isPvpEnabled</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isRunning--">isRunning</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isSinglePlayer--">isSinglePlayer</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#isStopped--">isStopped</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#log-java.lang.String-">log</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#logError-java.lang.String-">logError</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#logProgress-java.lang.String-int-">logProgress</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#main-java.lang.String:A-">main</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#method_10400-net.minecraft.command.CommandSource-java.lang.String-">method_10400</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#method_10401-net.minecraft.world.Difficulty-">method_10401</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#method_10402-java.lang.String-">method_10402</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#method_10403--">method_10403</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#method_6466--">method_6466</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#method_6521--">method_6521</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#prepareWorlds--">prepareWorlds</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#run--">run</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#saveWorlds-boolean-">saveWorlds</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#sendMessage-net.minecraft.text.Text-">sendMessage</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setDefaultGameMode-net.minecraft.class_2087-">setDefaultGameMode</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setDemo-boolean-">setDemo</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setFlightEnabled-boolean-">setFlightEnabled</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setForceGameMode-boolean-">setForceGameMode</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setForceWorldUpgrade-boolean-">setForceWorldUpgrade</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setKeyPair-java.security.KeyPair-">setKeyPair</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setLevelName-java.lang.String-">setLevelName</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setMotd-java.lang.String-">setMotd</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setOnlineMode-boolean-">setOnlineMode</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setPlayerManager-net.minecraft.class_2599-">setPlayerManager</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setPvpEnabled-boolean-">setPvpEnabled</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setServerIp-java.lang.String-">setServerIp</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setServerName-java.lang.String-">setServerName</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setServerOperation-java.lang.String-">setServerOperation</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setServerPort-int-">setServerPort</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setSpawnAnimals-boolean-">setSpawnAnimals</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setSpawnNpcs-boolean-">setSpawnNpcs</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setupWorld--">setupWorld</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setupWorld-java.lang.String-java.lang.String-long-net.minecraft.world.level.LevelGeneratorType-java.lang.String-">setupWorld</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setUserName-java.lang.String-">setUserName</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#setWorldHeight-int-">setWorldHeight</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#shouldForceGameMode--">shouldForceGameMode</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#shouldSpawnAnimals--">shouldSpawnAnimals</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#shouldSpawnNpcs--">shouldSpawnNpcs</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#stopRunning--">stopRunning</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#stopServer--">stopServer</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#upgradeWorld-java.lang.String-">upgradeWorld</a>, <a href="../../../../net/minecraft/server/MinecraftServer.html#warn-java.lang.String-">warn</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.server.dedicated.DedicatedServerAccess">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;net.minecraft.server.dedicated.<a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html" title="interface in net.minecraft.server.dedicated">DedicatedServerAccess</a></h3>
+<code><a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html#executeRconCommand-java.lang.String-">executeRconCommand</a>, <a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html#getCurrentPlayerCount--">getCurrentPlayerCount</a>, <a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html#getIp--">getIp</a>, <a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html#getLevelName--">getLevelName</a>, <a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html#getMaxPlayerCount--">getMaxPlayerCount</a>, <a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html#getMotd--">getMotd</a>, <a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html#getPlayerNames--">getPlayerNames</a>, <a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html#getPlugins--">getPlugins</a>, <a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html#getPort--">getPort</a>, <a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html#getVersion--">getVersion</a>, <a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html#info-java.lang.String-">info</a>, <a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html#isDebuggingEnabled--">isDebuggingEnabled</a>, <a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html#log-java.lang.String-">log</a>, <a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html#logError-java.lang.String-">logError</a>, <a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html#warn-java.lang.String-">warn</a></code></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -216,193 +394,561 @@ public interface <span class="typeNameLabel">DedicatedServer</span></pre>
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="LOGGER">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>LOGGER</h4>
+<pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a> LOGGER</pre>
+</li>
+</ul>
+<a name="field_11206">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>field_11206</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a> field_11206</pre>
+</li>
+</ul>
+<a name="queryResponseHandler">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>queryResponseHandler</h4>
+<pre>private&nbsp;<a href="../../../../net/minecraft/server/rcon/QueryResponseHandler.html" title="class in net.minecraft.server.rcon">QueryResponseHandler</a> queryResponseHandler</pre>
+</li>
+</ul>
+<a name="rconServer">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>rconServer</h4>
+<pre>private&nbsp;<a href="../../../../net/minecraft/server/rcon/RconServer.html" title="class in net.minecraft.server.rcon">RconServer</a> rconServer</pre>
+</li>
+</ul>
+<a name="abstractPropertiesHandler">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>abstractPropertiesHandler</h4>
+<pre>private&nbsp;<a href="../../../../net/minecraft/server/dedicated/AbstractPropertiesHandler.html" title="class in net.minecraft.server.dedicated">AbstractPropertiesHandler</a> abstractPropertiesHandler</pre>
+</li>
+</ul>
+<a name="eulaReader">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>eulaReader</h4>
+<pre>private&nbsp;<a href="../../../../net/minecraft/server/dedicated/EulaReader.html" title="class in net.minecraft.server.dedicated">EulaReader</a> eulaReader</pre>
+</li>
+</ul>
+<a name="shouldGenerateStructures">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>shouldGenerateStructures</h4>
+<pre>private&nbsp;boolean shouldGenerateStructures</pre>
+</li>
+</ul>
+<a name="field_11207">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>field_11207</h4>
+<pre>private&nbsp;<a href="../../../../net/minecraft/class_2087.html" title="enum in net.minecraft">class_2087</a> field_11207</pre>
+</li>
+</ul>
+<a name="hasGui">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>hasGui</h4>
+<pre>private&nbsp;boolean hasGui</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="DedicatedServer-java.io.File-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>DedicatedServer</h4>
+<pre>public&nbsp;DedicatedServer(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file)</pre>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ============ METHOD DETAIL ========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.detail">
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_33353-java.lang.String-int-">
+<a name="setupServer--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_33353</h4>
-<pre>int&nbsp;method_33353(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                 int&nbsp;int2)</pre>
+<h4>setupServer</h4>
+<pre>protected&nbsp;boolean&nbsp;setupServer()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/server/MinecraftServer.html#setupServer--">setupServer</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_33355-java.lang.String-java.lang.String-">
+<a name="shouldGenerateStructures--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_33355</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;method_33355(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string2)</pre>
+<h4>shouldGenerateStructures</h4>
+<pre>public&nbsp;boolean&nbsp;shouldGenerateStructures()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/server/MinecraftServer.html#shouldGenerateStructures--">shouldGenerateStructures</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_33354-java.lang.String-java.lang.Object-">
+<a name="getDefaultGameMode--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_33354</h4>
-<pre>void&nbsp;method_33354(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;object)</pre>
+<h4>getDefaultGameMode</h4>
+<pre>public&nbsp;<a href="../../../../net/minecraft/class_2087.html" title="enum in net.minecraft">class_2087</a>&nbsp;getDefaultGameMode()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/server/MinecraftServer.html#getDefaultGameMode--">getDefaultGameMode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_33352--">
+<a name="getDefaultDifficulty--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_33352</h4>
-<pre>void&nbsp;method_33352()</pre>
+<h4>getDefaultDifficulty</h4>
+<pre>public&nbsp;<a href="../../../../net/minecraft/world/Difficulty.html" title="enum in net.minecraft.world">Difficulty</a>&nbsp;getDefaultDifficulty()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/server/MinecraftServer.html#getDefaultDifficulty--">getDefaultDifficulty</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_33357--">
+<a name="isHardcore--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_33357</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;method_33357()</pre>
+<h4>isHardcore</h4>
+<pre>public&nbsp;boolean&nbsp;isHardcore()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/server/MinecraftServer.html#isHardcore--">isHardcore</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="getHostname--">
+<a name="setCrashReport-net.minecraft.util.crash.CrashReport-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getHostname</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getHostname()</pre>
+<h4>setCrashReport</h4>
+<pre>protected&nbsp;void&nbsp;setCrashReport(<a href="../../../../net/minecraft/util/crash/CrashReport.html" title="class in net.minecraft.util.crash">CrashReport</a>&nbsp;report)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/server/MinecraftServer.html#setCrashReport-net.minecraft.util.crash.CrashReport-">setCrashReport</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="getPort--">
+<a name="populateCrashReport-net.minecraft.util.crash.CrashReport-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getPort</h4>
-<pre>int&nbsp;getPort()</pre>
+<h4>populateCrashReport</h4>
+<pre>public&nbsp;<a href="../../../../net/minecraft/util/crash/CrashReport.html" title="class in net.minecraft.util.crash">CrashReport</a>&nbsp;populateCrashReport(<a href="../../../../net/minecraft/util/crash/CrashReport.html" title="class in net.minecraft.util.crash">CrashReport</a>&nbsp;report)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/server/MinecraftServer.html#populateCrashReport-net.minecraft.util.crash.CrashReport-">populateCrashReport</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="getMotd--">
+<a name="exit--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getMotd</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getMotd()</pre>
+<h4>exit</h4>
+<pre>protected&nbsp;void&nbsp;exit()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/server/MinecraftServer.html#exit--">exit</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="getVersion--">
+<a name="shutdown--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getVersion</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getVersion()</pre>
+<h4>shutdown</h4>
+<pre>protected&nbsp;void&nbsp;shutdown()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/server/MinecraftServer.html#shutdown--">shutdown</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="getCurrentPlayerCount--">
+<a name="isNetherAllowed--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getCurrentPlayerCount</h4>
-<pre>int&nbsp;getCurrentPlayerCount()</pre>
+<h4>isNetherAllowed</h4>
+<pre>public&nbsp;boolean&nbsp;isNetherAllowed()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/server/MinecraftServer.html#isNetherAllowed--">isNetherAllowed</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="getMaxPlayerCount--">
+<a name="isMonsterSpawningEnabled--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getMaxPlayerCount</h4>
-<pre>int&nbsp;getMaxPlayerCount()</pre>
+<h4>isMonsterSpawningEnabled</h4>
+<pre>public&nbsp;boolean&nbsp;isMonsterSpawningEnabled()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/server/MinecraftServer.html#isMonsterSpawningEnabled--">isMonsterSpawningEnabled</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="getPlayerNames--">
+<a name="addSnooperInfo-net.minecraft.util.snooper.Snooper-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getPlayerNames</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;getPlayerNames()</pre>
+<h4>addSnooperInfo</h4>
+<pre>public&nbsp;void&nbsp;addSnooperInfo(<a href="../../../../net/minecraft/util/snooper/Snooper.html" title="class in net.minecraft.util.snooper">Snooper</a>&nbsp;snooper)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/util/snooper/Snoopable.html#addSnooperInfo-net.minecraft.util.snooper.Snooper-">addSnooperInfo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/util/snooper/Snoopable.html" title="interface in net.minecraft.util.snooper">Snoopable</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/server/MinecraftServer.html#addSnooperInfo-net.minecraft.util.snooper.Snooper-">addSnooperInfo</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="getLevelName--">
+<a name="isSnooperEnabled--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getLevelName</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getLevelName()</pre>
+<h4>isSnooperEnabled</h4>
+<pre>public&nbsp;boolean&nbsp;isSnooperEnabled()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/util/snooper/Snoopable.html#isSnooperEnabled--">isSnooperEnabled</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/util/snooper/Snoopable.html" title="interface in net.minecraft.util.snooper">Snoopable</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/server/MinecraftServer.html#isSnooperEnabled--">isSnooperEnabled</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="getPlugins--">
+<a name="enqueueCommand-java.lang.String-net.minecraft.command.CommandSource-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getPlugins</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getPlugins()</pre>
+<h4>enqueueCommand</h4>
+<pre>public&nbsp;void&nbsp;enqueueCommand(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+                           <a href="../../../../net/minecraft/command/CommandSource.html" title="interface in net.minecraft.command">CommandSource</a>&nbsp;source)</pre>
 </li>
 </ul>
-<a name="executeRconCommand-java.lang.String-">
+<a name="executeQueuedCommands--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>executeRconCommand</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;executeRconCommand(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
+<h4>executeQueuedCommands</h4>
+<pre>public&nbsp;void&nbsp;executeQueuedCommands()</pre>
 </li>
 </ul>
-<a name="isDebuggingEnabled--">
+<a name="isDedicated--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>isDebuggingEnabled</h4>
-<pre>boolean&nbsp;isDebuggingEnabled()</pre>
+<h4>isDedicated</h4>
+<pre>public&nbsp;boolean&nbsp;isDedicated()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/server/MinecraftServer.html#isDedicated--">isDedicated</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="info-java.lang.String-">
+<a name="getPlayerManager--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>info</h4>
-<pre>void&nbsp;info(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
+<h4>getPlayerManager</h4>
+<pre>public&nbsp;<a href="../../../../net/minecraft/server/dedicated/DedicatedPlayerManager.html" title="class in net.minecraft.server.dedicated">DedicatedPlayerManager</a>&nbsp;getPlayerManager()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/server/MinecraftServer.html#getPlayerManager--">getPlayerManager</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="warn-java.lang.String-">
+<a name="getIntOrDefault-java.lang.String-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>warn</h4>
-<pre>void&nbsp;warn(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
+<h4>getIntOrDefault</h4>
+<pre>public&nbsp;int&nbsp;getIntOrDefault(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+                           int&nbsp;int2)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html#getIntOrDefault-java.lang.String-int-">getIntOrDefault</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html" title="interface in net.minecraft.server.dedicated">DedicatedServerAccess</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="logError-java.lang.String-">
+<a name="getOrDefault-java.lang.String-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>logError</h4>
-<pre>void&nbsp;logError(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
+<h4>getOrDefault</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getOrDefault(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+                           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html#getOrDefault-java.lang.String-java.lang.String-">getOrDefault</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html" title="interface in net.minecraft.server.dedicated">DedicatedServerAccess</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="log-java.lang.String-">
+<a name="getBooleanOrDefault-java.lang.String-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getBooleanOrDefault</h4>
+<pre>public&nbsp;boolean&nbsp;getBooleanOrDefault(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+                                   boolean&nbsp;bool)</pre>
+</li>
+</ul>
+<a name="setProperty-java.lang.String-java.lang.Object-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setProperty</h4>
+<pre>public&nbsp;void&nbsp;setProperty(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;object)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html#setProperty-java.lang.String-java.lang.Object-">setProperty</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html" title="interface in net.minecraft.server.dedicated">DedicatedServerAccess</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="saveAbstractPropertiesHandler--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>saveAbstractPropertiesHandler</h4>
+<pre>public&nbsp;void&nbsp;saveAbstractPropertiesHandler()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html#saveAbstractPropertiesHandler--">saveAbstractPropertiesHandler</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html" title="interface in net.minecraft.server.dedicated">DedicatedServerAccess</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getPropertiesFilePath--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPropertiesFilePath</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getPropertiesFilePath()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html#getPropertiesFilePath--">getPropertiesFilePath</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html" title="interface in net.minecraft.server.dedicated">DedicatedServerAccess</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="createGui--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createGui</h4>
+<pre>public&nbsp;void&nbsp;createGui()</pre>
+</li>
+</ul>
+<a name="hasGui--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hasGui</h4>
+<pre>public&nbsp;boolean&nbsp;hasGui()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/server/MinecraftServer.html#hasGui--">hasGui</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="method_6437-net.minecraft.class_2087-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_6437</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;method_6437(<a href="../../../../net/minecraft/class_2087.html" title="enum in net.minecraft">class_2087</a>&nbsp;class_2087,
+                          boolean&nbsp;bool)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/server/MinecraftServer.html#method_6437-net.minecraft.class_2087-boolean-">method_6437</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="areCommandBlocksEnabled--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>areCommandBlocksEnabled</h4>
+<pre>public&nbsp;boolean&nbsp;areCommandBlocksEnabled()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/server/MinecraftServer.html#areCommandBlocksEnabled--">areCommandBlocksEnabled</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getSpawnProtectionRadius--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSpawnProtectionRadius</h4>
+<pre>public&nbsp;int&nbsp;getSpawnProtectionRadius()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/server/MinecraftServer.html#getSpawnProtectionRadius--">getSpawnProtectionRadius</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="isSpawnProtected-net.minecraft.world.World-int-int-int-net.minecraft.class_2674-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isSpawnProtected</h4>
+<pre>public&nbsp;boolean&nbsp;isSpawnProtected(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+                                int&nbsp;int2,
+                                int&nbsp;int3,
+                                int&nbsp;int4,
+                                <a href="../../../../net/minecraft/class_2674.html" title="class in net.minecraft">class_2674</a>&nbsp;class_2674)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/server/MinecraftServer.html#isSpawnProtected-net.minecraft.world.World-int-int-int-net.minecraft.class_2674-">isSpawnProtected</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getOpPermissionLevel--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOpPermissionLevel</h4>
+<pre>public&nbsp;int&nbsp;getOpPermissionLevel()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/server/MinecraftServer.html#getOpPermissionLevel--">getOpPermissionLevel</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setPlayerIdleTimeout-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setPlayerIdleTimeout</h4>
+<pre>public&nbsp;void&nbsp;setPlayerIdleTimeout(int&nbsp;playerIdleTimeout)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/server/MinecraftServer.html#setPlayerIdleTimeout-int-">setPlayerIdleTimeout</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="shouldBroadcastRconToOps--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>shouldBroadcastRconToOps</h4>
+<pre>public&nbsp;boolean&nbsp;shouldBroadcastRconToOps()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/server/MinecraftServer.html#shouldBroadcastRconToOps--">shouldBroadcastRconToOps</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="shouldAnnouncePlayerAchievements--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>shouldAnnouncePlayerAchievements</h4>
+<pre>public&nbsp;boolean&nbsp;shouldAnnouncePlayerAchievements()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/server/MinecraftServer.html#shouldAnnouncePlayerAchievements--">shouldAnnouncePlayerAchievements</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="convertData--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>convertData</h4>
+<pre>protected&nbsp;boolean&nbsp;convertData()</pre>
+</li>
+</ul>
+<a name="sleepFiveSeconds--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>log</h4>
-<pre>void&nbsp;log(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
+<h4>sleepFiveSeconds</h4>
+<pre>private&nbsp;void&nbsp;sleepFiveSeconds()</pre>
 </li>
 </ul>
 </li>
@@ -433,7 +979,7 @@ public interface <span class="typeNameLabel">DedicatedServer</span></pre>
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../net/minecraft/server/dedicated/DedicatedPlayerManager.html" title="class in net.minecraft.server.dedicated"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../net/minecraft/server/dedicated/DedicatedServerWatchdog.html" title="class in net.minecraft.server.dedicated"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html" title="interface in net.minecraft.server.dedicated"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/server/dedicated/DedicatedServer.html" target="_top">Frames</a></li>
@@ -458,14 +1004,14 @@ public interface <span class="typeNameLabel">DedicatedServer</span></pre>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>

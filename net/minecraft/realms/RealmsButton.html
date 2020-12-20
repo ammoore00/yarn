@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/realms/RealmsBufferBuilder.html" title="class in net.minecraft.realms"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/realms/RealmsButtonProxy.html" title="class in net.minecraft.realms"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/realms/RealmsBridge.html" title="class in net.minecraft.realms"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/realms/RealmsConnect.html" title="class in net.minecraft.realms"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/realms/RealmsButton.html" target="_top">Frames</a></li>
@@ -134,12 +134,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../net/minecraft/realms/RealmsButtonProxy.html" title="class in net.minecraft.realms">RealmsButtonProxy</a></code></td>
+<td class="colFirst"><code>private <a href="../../../net/minecraft/client/gui/widget/DelegatingRealmsButtonWidget.html" title="class in net.minecraft.client.gui.widget">DelegatingRealmsButtonWidget</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/realms/RealmsButton.html#proxy">proxy</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected static <a href="../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/realms/RealmsButton.html#WIDGETS_LOCATION">WIDGETS_LOCATION</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -224,11 +220,11 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/realms/RealmsButton.html#method_33172--">method_33172</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/realms/RealmsButton.html#method_6410--">method_6410</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/realms/RealmsButton.html#method_33173--">method_33173</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/realms/RealmsButton.html#method_6411--">method_6411</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -241,9 +237,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/realms/RealmsButton.html#render-int-int-float-">render</a></span>(int&nbsp;int2,
-      int&nbsp;int3,
-      float&nbsp;float2)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/realms/RealmsButton.html#render-int-int-">render</a></span>(int&nbsp;int2,
+      int&nbsp;int3)</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -272,22 +267,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="WIDGETS_LOCATION">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>WIDGETS_LOCATION</h4>
-<pre>protected static final&nbsp;<a href="../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a> WIDGETS_LOCATION</pre>
-</li>
-</ul>
 <a name="proxy">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>proxy</h4>
-<pre>private final&nbsp;<a href="../../../net/minecraft/realms/RealmsButtonProxy.html" title="class in net.minecraft.realms">RealmsButtonProxy</a> proxy</pre>
+<pre>private&nbsp;<a href="../../../net/minecraft/client/gui/widget/DelegatingRealmsButtonWidget.html" title="class in net.minecraft.client.gui.widget">DelegatingRealmsButtonWidget</a> proxy</pre>
 </li>
 </ul>
 </li>
@@ -341,13 +327,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>public&nbsp;<a href="../../../net/minecraft/client/gui/widget/ButtonWidget.html" title="class in net.minecraft.client.gui.widget">ButtonWidget</a>&nbsp;getProxy()</pre>
 </li>
 </ul>
-<a name="method_33172--">
+<a name="method_6410--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_33172</h4>
-<pre>public&nbsp;int&nbsp;method_33172()</pre>
+<h4>method_6410</h4>
+<pre>public&nbsp;int&nbsp;method_6410()</pre>
 </li>
 </ul>
 <a name="active--">
@@ -395,24 +381,23 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>public&nbsp;int&nbsp;getHeight()</pre>
 </li>
 </ul>
-<a name="method_33173--">
+<a name="method_6411--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_33173</h4>
-<pre>public&nbsp;int&nbsp;method_33173()</pre>
+<h4>method_6411</h4>
+<pre>public&nbsp;int&nbsp;method_6411()</pre>
 </li>
 </ul>
-<a name="render-int-int-float-">
+<a name="render-int-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>render</h4>
 <pre>public&nbsp;void&nbsp;render(int&nbsp;int2,
-                   int&nbsp;int3,
-                   float&nbsp;float2)</pre>
+                   int&nbsp;int3)</pre>
 </li>
 </ul>
 <a name="clicked-int-int-">
@@ -495,8 +480,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/realms/RealmsBufferBuilder.html" title="class in net.minecraft.realms"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/realms/RealmsButtonProxy.html" title="class in net.minecraft.realms"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/realms/RealmsBridge.html" title="class in net.minecraft.realms"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/realms/RealmsConnect.html" title="class in net.minecraft.realms"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/realms/RealmsButton.html" target="_top">Frames</a></li>
