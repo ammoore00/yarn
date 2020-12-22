@@ -117,7 +117,8 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">RconServer</span>
+<pre>@Environment(value=SERVER)
+public class <span class="typeNameLabel">RconServer</span>
 extends <a href="../../../../net/minecraft/server/rcon/RconBase.html" title="class in net.minecraft.server.rcon">RconBase</a></pre>
 </li>
 </ul>
@@ -138,16 +139,16 @@ extends <a href="../../../../net/minecraft/server/rcon/RconBase.html" title="cla
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconServer.html#field_11341">field_11341</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/net/SocketAddress.html?is-external=true" title="class or interface in java.net">SocketAddress</a>,<a href="../../../../net/minecraft/server/rcon/RconClient.html" title="class in net.minecraft.server.rcon">RconClient</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconServer.html#clients">clients</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconServer.html#field_6882">field_6882</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconServer.html#field_32023">field_32023</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconServer.html#field_6885">field_6885</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconServer.html#field_32026">field_32026</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
@@ -167,7 +168,7 @@ extends <a href="../../../../net/minecraft/server/rcon/RconBase.html" title="cla
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.server.rcon.<a href="../../../../net/minecraft/server/rcon/RconBase.html" title="class in net.minecraft.server.rcon">RconBase</a></h3>
-<code><a href="../../../../net/minecraft/server/rcon/RconBase.html#field_11328">field_11328</a>, <a href="../../../../net/minecraft/server/rcon/RconBase.html#field_11329">field_11329</a>, <a href="../../../../net/minecraft/server/rcon/RconBase.html#field_13094">field_13094</a>, <a href="../../../../net/minecraft/server/rcon/RconBase.html#field_6850">field_6850</a>, <a href="../../../../net/minecraft/server/rcon/RconBase.html#running">running</a>, <a href="../../../../net/minecraft/server/rcon/RconBase.html#server">server</a></code></li>
+<code><a href="../../../../net/minecraft/server/rcon/RconBase.html#description">description</a>, <a href="../../../../net/minecraft/server/rcon/RconBase.html#field_31990">field_31990</a>, <a href="../../../../net/minecraft/server/rcon/RconBase.html#field_31991">field_31991</a>, <a href="../../../../net/minecraft/server/rcon/RconBase.html#running">running</a>, <a href="../../../../net/minecraft/server/rcon/RconBase.html#server">server</a>, <a href="../../../../net/minecraft/server/rcon/RconBase.html#serverSockets">serverSockets</a>, <a href="../../../../net/minecraft/server/rcon/RconBase.html#sockets">sockets</a></code></li>
 </ul>
 </li>
 </ul>
@@ -183,7 +184,7 @@ extends <a href="../../../../net/minecraft/server/rcon/RconBase.html" title="cla
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconServer.html#RconServer-net.minecraft.server.dedicated.DedicatedServerAccess-">RconServer</a></span>(<a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html" title="interface in net.minecraft.server.dedicated">DedicatedServerAccess</a>&nbsp;server)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconServer.html#RconServer-net.minecraft.server.dedicated.DedicatedServer-">RconServer</a></span>(<a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html" title="interface in net.minecraft.server.dedicated">DedicatedServer</a>&nbsp;dedicatedServer)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -202,7 +203,7 @@ extends <a href="../../../../net/minecraft/server/rcon/RconBase.html" title="cla
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>private void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconServer.html#method_10477--">method_10477</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconServer.html#cleanClientList--">cleanClientList</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>private void</code></td>
@@ -254,13 +255,13 @@ extends <a href="../../../../net/minecraft/server/rcon/RconBase.html" title="cla
 <pre>private&nbsp;int port</pre>
 </li>
 </ul>
-<a name="field_6882">
+<a name="field_32023">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6882</h4>
-<pre>private&nbsp;int field_6882</pre>
+<h4>field_32023</h4>
+<pre>private final&nbsp;int field_32023</pre>
 </li>
 </ul>
 <a name="hostname">
@@ -281,22 +282,22 @@ extends <a href="../../../../net/minecraft/server/rcon/RconBase.html" title="cla
 <pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/net/ServerSocket.html?is-external=true" title="class or interface in java.net">ServerSocket</a> listener</pre>
 </li>
 </ul>
-<a name="field_6885">
+<a name="field_32026">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6885</h4>
-<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> field_6885</pre>
+<h4>field_32026</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> field_32026</pre>
 </li>
 </ul>
-<a name="field_11341">
+<a name="clients">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_11341</h4>
-<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a> field_11341</pre>
+<h4>clients</h4>
+<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/net/SocketAddress.html?is-external=true" title="class or interface in java.net">SocketAddress</a>,<a href="../../../../net/minecraft/server/rcon/RconClient.html" title="class in net.minecraft.server.rcon">RconClient</a>&gt; clients</pre>
 </li>
 </ul>
 </li>
@@ -307,13 +308,13 @@ extends <a href="../../../../net/minecraft/server/rcon/RconBase.html" title="cla
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="RconServer-net.minecraft.server.dedicated.DedicatedServerAccess-">
+<a name="RconServer-net.minecraft.server.dedicated.DedicatedServer-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>RconServer</h4>
-<pre>public&nbsp;RconServer(<a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html" title="interface in net.minecraft.server.dedicated">DedicatedServerAccess</a>&nbsp;server)</pre>
+<pre>public&nbsp;RconServer(<a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html" title="interface in net.minecraft.server.dedicated">DedicatedServer</a>&nbsp;dedicatedServer)</pre>
 </li>
 </ul>
 </li>
@@ -324,13 +325,13 @@ extends <a href="../../../../net/minecraft/server/rcon/RconBase.html" title="cla
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_10477--">
+<a name="cleanClientList--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_10477</h4>
-<pre>private&nbsp;void&nbsp;method_10477()</pre>
+<h4>cleanClientList</h4>
+<pre>private&nbsp;void&nbsp;cleanClientList()</pre>
 </li>
 </ul>
 <a name="removeStoppedClients--">

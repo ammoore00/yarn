@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":10,"i2":6,"i3":6,"i4":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":10,"i7":6,"i8":6,"i9":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../net/minecraft/scoreboard/GenericScoreboardCriteria.html" title="class in net.minecraft.scoreboard"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/scoreboard/AbstractTeam.CollisionRule.html" title="enum in net.minecraft.scoreboard"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/scoreboard/AbstractTeam.html" target="_top">Frames</a></li>
@@ -73,7 +73,7 @@ var activeTableTab = "activeTableTab";
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
@@ -120,6 +120,29 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="nested.class.summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Nested Class Summary table, listing nested classes, and an explanation">
+<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/AbstractTeam.CollisionRule.html" title="enum in net.minecraft.scoreboard">AbstractTeam.CollisionRule</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/AbstractTeam.VisibilityRule.html" title="enum in net.minecraft.scoreboard">AbstractTeam.VisibilityRule</a></span></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.summary">
@@ -150,22 +173,42 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/AbstractTeam.html#getName--">getName</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>abstract <a href="../../../net/minecraft/scoreboard/AbstractTeam.CollisionRule.html" title="enum in net.minecraft.scoreboard">AbstractTeam.CollisionRule</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/AbstractTeam.html#getCollisionRule--">getCollisionRule</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/AbstractTeam.html#isEqual-net.minecraft.scoreboard.AbstractTeam-">isEqual</a></span>(<a href="../../../net/minecraft/scoreboard/AbstractTeam.html" title="class in net.minecraft.scoreboard">AbstractTeam</a>&nbsp;team)</code>&nbsp;</td>
+<td class="colFirst"><code>abstract <a href="../../../net/minecraft/util/Formatting.html" title="enum in net.minecraft.util">Formatting</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/AbstractTeam.html#getColor--">getColor</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>abstract boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/AbstractTeam.html#isFriendlyFireAllowed--">isFriendlyFireAllowed</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>abstract <a href="../../../net/minecraft/scoreboard/AbstractTeam.VisibilityRule.html" title="enum in net.minecraft.scoreboard">AbstractTeam.VisibilityRule</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/AbstractTeam.html#getDeathMessageVisibilityRule--">getDeathMessageVisibilityRule</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/AbstractTeam.html#method_2171-java.lang.String-">method_2171</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/AbstractTeam.html#getName--">getName</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>abstract <a href="../../../net/minecraft/scoreboard/AbstractTeam.VisibilityRule.html" title="enum in net.minecraft.scoreboard">AbstractTeam.VisibilityRule</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/AbstractTeam.html#getNameTagVisibilityRule--">getNameTagVisibilityRule</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/AbstractTeam.html#getPlayerList--">getPlayerList</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/AbstractTeam.html#isEqual-net.minecraft.scoreboard.AbstractTeam-">isEqual</a></span>(<a href="../../../net/minecraft/scoreboard/AbstractTeam.html" title="class in net.minecraft.scoreboard">AbstractTeam</a>&nbsp;abstractTeam)</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>abstract boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/AbstractTeam.html#isFriendlyFireAllowed--">isFriendlyFireAllowed</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/AbstractTeam.html#method_28647-java.lang.String-">method_28647</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>abstract boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/AbstractTeam.html#shouldShowFriendlyInvisibles--">shouldShowFriendlyInvisibles</a></span>()</code>&nbsp;</td>
 </tr>
@@ -214,7 +257,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>isEqual</h4>
-<pre>public&nbsp;boolean&nbsp;isEqual(<a href="../../../net/minecraft/scoreboard/AbstractTeam.html" title="class in net.minecraft.scoreboard">AbstractTeam</a>&nbsp;team)</pre>
+<pre>public&nbsp;boolean&nbsp;isEqual(<a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                       <a href="../../../net/minecraft/scoreboard/AbstractTeam.html" title="class in net.minecraft.scoreboard">AbstractTeam</a>&nbsp;abstractTeam)</pre>
 </li>
 </ul>
 <a name="getName--">
@@ -226,13 +270,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getName()</pre>
 </li>
 </ul>
-<a name="method_2171-java.lang.String-">
+<a name="method_28647-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_2171</h4>
-<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;method_2171(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
+<h4>method_28647</h4>
+<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;method_28647(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
 </li>
 </ul>
 <a name="shouldShowFriendlyInvisibles--">
@@ -248,10 +292,56 @@ public abstract&nbsp;boolean&nbsp;shouldShowFriendlyInvisibles()</pre>
 <a name="isFriendlyFireAllowed--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>isFriendlyFireAllowed</h4>
 <pre>public abstract&nbsp;boolean&nbsp;isFriendlyFireAllowed()</pre>
+</li>
+</ul>
+<a name="getNameTagVisibilityRule--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNameTagVisibilityRule</h4>
+<pre>@Environment(value=CLIENT)
+public abstract&nbsp;<a href="../../../net/minecraft/scoreboard/AbstractTeam.VisibilityRule.html" title="enum in net.minecraft.scoreboard">AbstractTeam.VisibilityRule</a>&nbsp;getNameTagVisibilityRule()</pre>
+</li>
+</ul>
+<a name="getColor--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getColor</h4>
+<pre>public abstract&nbsp;<a href="../../../net/minecraft/util/Formatting.html" title="enum in net.minecraft.util">Formatting</a>&nbsp;getColor()</pre>
+</li>
+</ul>
+<a name="getPlayerList--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPlayerList</h4>
+<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getPlayerList()</pre>
+</li>
+</ul>
+<a name="getDeathMessageVisibilityRule--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDeathMessageVisibilityRule</h4>
+<pre>public abstract&nbsp;<a href="../../../net/minecraft/scoreboard/AbstractTeam.VisibilityRule.html" title="enum in net.minecraft.scoreboard">AbstractTeam.VisibilityRule</a>&nbsp;getDeathMessageVisibilityRule()</pre>
+</li>
+</ul>
+<a name="getCollisionRule--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getCollisionRule</h4>
+<pre>public abstract&nbsp;<a href="../../../net/minecraft/scoreboard/AbstractTeam.CollisionRule.html" title="enum in net.minecraft.scoreboard">AbstractTeam.CollisionRule</a>&nbsp;getCollisionRule()</pre>
 </li>
 </ul>
 </li>
@@ -282,7 +372,7 @@ public abstract&nbsp;boolean&nbsp;shouldShowFriendlyInvisibles()</pre>
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../net/minecraft/scoreboard/GenericScoreboardCriteria.html" title="class in net.minecraft.scoreboard"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/scoreboard/AbstractTeam.CollisionRule.html" title="enum in net.minecraft.scoreboard"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/scoreboard/AbstractTeam.html" target="_top">Frames</a></li>
@@ -306,7 +396,7 @@ public abstract&nbsp;boolean&nbsp;shouldShowFriendlyInvisibles()</pre>
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>

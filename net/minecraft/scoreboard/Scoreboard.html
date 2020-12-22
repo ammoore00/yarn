@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":9,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":9,"i6":9,"i7":9,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/scoreboard/HealthScoreboardCriteria.html" title="class in net.minecraft.scoreboard"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/scoreboard/AbstractTeam.VisibilityRule.html" title="enum in net.minecraft.scoreboard"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/scoreboard/ScoreboardCriterion.html" title="class in net.minecraft.scoreboard"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/scoreboard/Scoreboard.html" target="_top">Frames</a></li>
@@ -133,28 +133,32 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#field_9825">field_9825</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#displaySlotNames">displaySlotNames</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#field_9826">field_9826</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#objectives">objectives</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#field_9827">field_9827</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#field_9828">field_9828</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#field_9829">field_9829</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../net/minecraft/class_1313.html" title="interface in net.minecraft">class_1313</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&gt;&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#objectivesByCriterion">objectivesByCriterion</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private <a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#objectivesArray">objectivesArray</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#objectiveSlots">objectiveSlots</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>,<a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html" title="class in net.minecraft.scoreboard">ScoreboardPlayerScore</a>&gt;&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#playerObjectives">playerObjectives</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../net/minecraft/scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#teams">teams</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../net/minecraft/scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#teamsByPlayer">teamsByPlayer</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -189,135 +193,154 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#addTeam-java.lang.String-">addTeam</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#addObjective-java.lang.String-net.minecraft.class_1313-">addObjective</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+            <a href="../../../net/minecraft/class_1313.html" title="interface in net.minecraft">class_1313</a>&nbsp;class_1313)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#clearPlayerTeam-java.lang.String-">clearPlayerTeam</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#addPlayerToTeam-java.lang.String-java.lang.String-">addPlayerToTeam</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;playerName,
+               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#getAllPlayerScores-net.minecraft.scoreboard.ScoreboardObjective-">getAllPlayerScores</a></span>(<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../net/minecraft/scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#addTeam-java.lang.String-">addTeam</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#clearPlayerTeam-java.lang.String-">clearPlayerTeam</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html" title="class in net.minecraft.scoreboard">ScoreboardPlayerScore</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#getAllPlayerScores-net.minecraft.scoreboard.ScoreboardObjective-">getAllPlayerScores</a></span>(<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#getDisplaySlotId-java.lang.String-">getDisplaySlotId</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;slotName)</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#getNullableObjective-java.lang.String-">getNullableObjective</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>&nbsp;</td>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#getDisplaySlotName-int-">getDisplaySlotName</a></span>(int&nbsp;slotId)</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#getDisplaySlotNames--">getDisplaySlotNames</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#getKnownPlayers--">getKnownPlayers</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#getObjectiveForSlot-int-">getObjectiveForSlot</a></span>(int&nbsp;int2)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i10" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#getObjectives--">getObjectives</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>,<a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html" title="class in net.minecraft.scoreboard">ScoreboardPlayerScore</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#getPlayerObjectives-java.lang.String-">getPlayerObjectives</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code><a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html" title="class in net.minecraft.scoreboard">ScoreboardPlayerScore</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#getPlayerScore-java.lang.String-net.minecraft.scoreboard.ScoreboardObjective-">getPlayerScore</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;player,
+              <a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../net/minecraft/scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#getPlayerTeam-java.lang.String-">getPlayerTeam</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../net/minecraft/scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#getTeam-java.lang.String-">getTeam</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#getTeams--">getTeams</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#method_11052-java.lang.String-net.minecraft.scoreboard.Team-">method_11052</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-            <a href="../../../net/minecraft/scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a>&nbsp;team)</code>&nbsp;</td>
-</tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#method_2131-java.lang.String-net.minecraft.class_2256-">method_2131</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-           <a href="../../../net/minecraft/class_2256.html" title="interface in net.minecraft">class_2256</a>&nbsp;class_2256)</code>&nbsp;</td>
-</tr>
-<tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#method_2148--">method_2148</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i12" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#method_9125-net.minecraft.class_2256-">method_9125</a></span>(<a href="../../../net/minecraft/class_2256.html" title="interface in net.minecraft">class_2256</a>&nbsp;class_2256)</code>&nbsp;</td>
-</tr>
-<tr id="i13" class="rowColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html" title="class in net.minecraft.scoreboard">ScoreboardPlayerScore</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#method_9126-java.lang.String-net.minecraft.scoreboard.ScoreboardObjective-">method_9126</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-           <a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;scoreboardObjective)</code>&nbsp;</td>
-</tr>
-<tr id="i14" class="altColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#method_9127-int-">method_9127</a></span>(int&nbsp;int2)</code>&nbsp;</td>
-</tr>
 <tr id="i15" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#method_9128--">method_9128</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#getTeamNames--">getTeamNames</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i16" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#method_9129-java.lang.String-">method_9129</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../net/minecraft/scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#getTeams--">getTeams</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i17" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#method_9130--">method_9130</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#method_28603-net.minecraft.class_1313-">method_28603</a></span>(<a href="../../../net/minecraft/class_1313.html" title="interface in net.minecraft">class_1313</a>&nbsp;class_1313)</code>&nbsp;</td>
 </tr>
 <tr id="i18" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#method_9131-java.lang.String-">method_9131</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#method_28613-java.lang.String-">method_28613</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
 </tr>
 <tr id="i19" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#method_9132--">method_9132</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html" title="class in net.minecraft.scoreboard">ScoreboardPlayerScore</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#method_28624--">method_28624</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i20" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#playerHasObjective-java.lang.String-net.minecraft.scoreboard.ScoreboardObjective-">playerHasObjective</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;playerName,
+                  <a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</code>&nbsp;</td>
+</tr>
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#removeObjective-net.minecraft.scoreboard.ScoreboardObjective-">removeObjective</a></span>(<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#removePlayerFromTeam-java.lang.String-net.minecraft.scoreboard.Team-">removePlayerFromTeam</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;playerName,
                     <a href="../../../net/minecraft/scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a>&nbsp;team)</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#removeTeam-net.minecraft.scoreboard.Team-">removeTeam</a></span>(<a href="../../../net/minecraft/scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a>&nbsp;team)</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#resetEntityScore-net.minecraft.entity.Entity-">resetEntityScore</a></span>(<a href="../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</code>&nbsp;</td>
+</tr>
+<tr id="i25" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#resetPlayerScore-java.lang.String-net.minecraft.scoreboard.ScoreboardObjective-">resetPlayerScore</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;playerName,
+                <a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</code>&nbsp;</td>
+</tr>
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#setObjectiveSlot-int-net.minecraft.scoreboard.ScoreboardObjective-">setObjectiveSlot</a></span>(int&nbsp;slot,
                 <a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#updateExistingObjective-net.minecraft.scoreboard.ScoreboardObjective-">updateExistingObjective</a></span>(<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</code>&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#updateObjective-net.minecraft.scoreboard.ScoreboardObjective-">updateObjective</a></span>(<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</code>&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#updatePlayerScore-java.lang.String-">updatePlayerScore</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;playerName)</code>&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i30" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#updatePlayerScore-java.lang.String-net.minecraft.scoreboard.ScoreboardObjective-">updatePlayerScore</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;playerName,
+                 <a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</code>&nbsp;</td>
+</tr>
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#updateRemovedObjective-net.minecraft.scoreboard.ScoreboardObjective-">updateRemovedObjective</a></span>(<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</code>&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#updateRemovedTeam-net.minecraft.scoreboard.Team-">updateRemovedTeam</a></span>(<a href="../../../net/minecraft/scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a>&nbsp;team)</code>&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#updateScore-net.minecraft.scoreboard.ScoreboardPlayerScore-">updateScore</a></span>(<a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html" title="class in net.minecraft.scoreboard">ScoreboardPlayerScore</a>&nbsp;score)</code>&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#updateScoreboardTeam-net.minecraft.scoreboard.Team-">updateScoreboardTeam</a></span>(<a href="../../../net/minecraft/scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a>&nbsp;team)</code>&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/Scoreboard.html#updateScoreboardTeamAndPlayers-net.minecraft.scoreboard.Team-">updateScoreboardTeamAndPlayers</a></span>(<a href="../../../net/minecraft/scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a>&nbsp;team)</code>&nbsp;</td>
 </tr>
@@ -343,58 +366,67 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_9825">
+<a name="displaySlotNames">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_9825</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a> field_9825</pre>
+<h4>displaySlotNames</h4>
+<pre>private static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[] displaySlotNames</pre>
 </li>
 </ul>
-<a name="field_9826">
+<a name="objectives">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_9826</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a> field_9826</pre>
+<h4>objectives</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&gt; objectives</pre>
 </li>
 </ul>
-<a name="field_9827">
+<a name="objectivesByCriterion">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_9827</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a> field_9827</pre>
+<h4>objectivesByCriterion</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../net/minecraft/class_1313.html" title="interface in net.minecraft">class_1313</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&gt;&gt; objectivesByCriterion</pre>
 </li>
 </ul>
-<a name="objectivesArray">
+<a name="playerObjectives">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>objectivesArray</h4>
-<pre>private final&nbsp;<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>[] objectivesArray</pre>
+<h4>playerObjectives</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>,<a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html" title="class in net.minecraft.scoreboard">ScoreboardPlayerScore</a>&gt;&gt; playerObjectives</pre>
 </li>
 </ul>
-<a name="field_9828">
+<a name="objectiveSlots">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_9828</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a> field_9828</pre>
+<h4>objectiveSlots</h4>
+<pre>private final&nbsp;<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>[] objectiveSlots</pre>
 </li>
 </ul>
-<a name="field_9829">
+<a name="teams">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>teams</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../net/minecraft/scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a>&gt; teams</pre>
+</li>
+</ul>
+<a name="teamsByPlayer">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_9829</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a> field_9829</pre>
+<h4>teamsByPlayer</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../net/minecraft/scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a>&gt; teamsByPlayer</pre>
 </li>
 </ul>
 </li>
@@ -422,42 +454,53 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getNullableObjective-java.lang.String-">
+<a name="method_28613-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getNullableObjective</h4>
-<pre>public&nbsp;<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;getNullableObjective(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
+<h4>method_28613</h4>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;method_28613(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
 </li>
 </ul>
-<a name="method_2131-java.lang.String-net.minecraft.class_2256-">
+<a name="addObjective-java.lang.String-net.minecraft.class_1313-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_2131</h4>
-<pre>public&nbsp;<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;method_2131(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                                       <a href="../../../net/minecraft/class_2256.html" title="interface in net.minecraft">class_2256</a>&nbsp;class_2256)</pre>
+<h4>addObjective</h4>
+<pre>public&nbsp;<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;addObjective(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+                                        <a href="../../../net/minecraft/class_1313.html" title="interface in net.minecraft">class_1313</a>&nbsp;class_1313)</pre>
 </li>
 </ul>
-<a name="method_9125-net.minecraft.class_2256-">
+<a name="method_28603-net.minecraft.class_1313-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_9125</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&nbsp;method_9125(<a href="../../../net/minecraft/class_2256.html" title="interface in net.minecraft">class_2256</a>&nbsp;class_2256)</pre>
+<h4>method_28603</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&gt;&nbsp;method_28603(<a href="../../../net/minecraft/class_1313.html" title="interface in net.minecraft">class_1313</a>&nbsp;class_1313)</pre>
 </li>
 </ul>
-<a name="method_9126-java.lang.String-net.minecraft.scoreboard.ScoreboardObjective-">
+<a name="playerHasObjective-java.lang.String-net.minecraft.scoreboard.ScoreboardObjective-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_9126</h4>
-<pre>public&nbsp;<a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html" title="class in net.minecraft.scoreboard">ScoreboardPlayerScore</a>&nbsp;method_9126(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                                         <a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;scoreboardObjective)</pre>
+<h4>playerHasObjective</h4>
+<pre>public&nbsp;boolean&nbsp;playerHasObjective(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;playerName,
+                                  <a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</pre>
+</li>
+</ul>
+<a name="getPlayerScore-java.lang.String-net.minecraft.scoreboard.ScoreboardObjective-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPlayerScore</h4>
+<pre>public&nbsp;<a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html" title="class in net.minecraft.scoreboard">ScoreboardPlayerScore</a>&nbsp;getPlayerScore(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;player,
+                                            <a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</pre>
 </li>
 </ul>
 <a name="getAllPlayerScores-net.minecraft.scoreboard.ScoreboardObjective-">
@@ -466,52 +509,53 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getAllPlayerScores</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&nbsp;getAllPlayerScores(<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</pre>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html" title="class in net.minecraft.scoreboard">ScoreboardPlayerScore</a>&gt;&nbsp;getAllPlayerScores(<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</pre>
 </li>
 </ul>
-<a name="method_9128--">
+<a name="getObjectives--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_9128</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&nbsp;method_9128()</pre>
+<h4>getObjectives</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&gt;&nbsp;getObjectives()</pre>
 </li>
 </ul>
-<a name="method_9130--">
+<a name="getKnownPlayers--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_9130</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&nbsp;method_9130()</pre>
+<h4>getKnownPlayers</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getKnownPlayers()</pre>
 </li>
 </ul>
-<a name="method_9129-java.lang.String-">
+<a name="resetPlayerScore-java.lang.String-net.minecraft.scoreboard.ScoreboardObjective-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_9129</h4>
-<pre>public&nbsp;void&nbsp;method_9129(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
+<h4>resetPlayerScore</h4>
+<pre>public&nbsp;void&nbsp;resetPlayerScore(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;playerName,
+                             <a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</pre>
 </li>
 </ul>
-<a name="method_2148--">
+<a name="method_28624--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_2148</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&nbsp;method_2148()</pre>
+<h4>method_28624</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html" title="class in net.minecraft.scoreboard">ScoreboardPlayerScore</a>&gt;&nbsp;method_28624()</pre>
 </li>
 </ul>
-<a name="method_9131-java.lang.String-">
+<a name="getPlayerObjectives-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_9131</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&nbsp;method_9131(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
+<h4>getPlayerObjectives</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>,<a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html" title="class in net.minecraft.scoreboard">ScoreboardPlayerScore</a>&gt;&nbsp;getPlayerObjectives(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
 </li>
 </ul>
 <a name="removeObjective-net.minecraft.scoreboard.ScoreboardObjective-">
@@ -539,7 +583,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getObjectiveForSlot</h4>
-<pre>public&nbsp;<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;getObjectiveForSlot(int&nbsp;int2)</pre>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;getObjectiveForSlot(int&nbsp;int2)</pre>
 </li>
 </ul>
 <a name="getTeam-java.lang.String-">
@@ -569,14 +614,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>public&nbsp;void&nbsp;removeTeam(<a href="../../../net/minecraft/scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a>&nbsp;team)</pre>
 </li>
 </ul>
-<a name="method_11052-java.lang.String-net.minecraft.scoreboard.Team-">
+<a name="addPlayerToTeam-java.lang.String-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_11052</h4>
-<pre>public&nbsp;void&nbsp;method_11052(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                         <a href="../../../net/minecraft/scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a>&nbsp;team)</pre>
+<h4>addPlayerToTeam</h4>
+<pre>public&nbsp;boolean&nbsp;addPlayerToTeam(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;playerName,
+                               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
 </li>
 </ul>
 <a name="clearPlayerTeam-java.lang.String-">
@@ -598,13 +643,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
                                  <a href="../../../net/minecraft/scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a>&nbsp;team)</pre>
 </li>
 </ul>
-<a name="method_9132--">
+<a name="getTeamNames--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_9132</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&nbsp;method_9132()</pre>
+<h4>getTeamNames</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getTeamNames()</pre>
 </li>
 </ul>
 <a name="getTeams--">
@@ -613,7 +658,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getTeams</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&nbsp;getTeams()</pre>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../net/minecraft/scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a>&gt;&nbsp;getTeams()</pre>
 </li>
 </ul>
 <a name="getPlayerTeam-java.lang.String-">
@@ -622,7 +667,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getPlayerTeam</h4>
-<pre>public&nbsp;<a href="../../../net/minecraft/scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a>&nbsp;getPlayerTeam(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="../../../net/minecraft/scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a>&nbsp;getPlayerTeam(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
 </li>
 </ul>
 <a name="updateObjective-net.minecraft.scoreboard.ScoreboardObjective-">
@@ -670,6 +716,16 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>public&nbsp;void&nbsp;updatePlayerScore(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;playerName)</pre>
 </li>
 </ul>
+<a name="updatePlayerScore-java.lang.String-net.minecraft.scoreboard.ScoreboardObjective-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>updatePlayerScore</h4>
+<pre>public&nbsp;void&nbsp;updatePlayerScore(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;playerName,
+                              <a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</pre>
+</li>
+</ul>
 <a name="updateScoreboardTeamAndPlayers-net.minecraft.scoreboard.Team-">
 <!--   -->
 </a>
@@ -697,22 +753,40 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>public&nbsp;void&nbsp;updateRemovedTeam(<a href="../../../net/minecraft/scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a>&nbsp;team)</pre>
 </li>
 </ul>
-<a name="method_9127-int-">
+<a name="getDisplaySlotName-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_9127</h4>
-<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;method_9127(int&nbsp;int2)</pre>
+<h4>getDisplaySlotName</h4>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getDisplaySlotName(int&nbsp;slotId)</pre>
 </li>
 </ul>
 <a name="getDisplaySlotId-java.lang.String-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getDisplaySlotId</h4>
 <pre>public static&nbsp;int&nbsp;getDisplaySlotId(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;slotName)</pre>
+</li>
+</ul>
+<a name="getDisplaySlotNames--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDisplaySlotNames</h4>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;getDisplaySlotNames()</pre>
+</li>
+</ul>
+<a name="resetEntityScore-net.minecraft.entity.Entity-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>resetEntityScore</h4>
+<pre>public&nbsp;void&nbsp;resetEntityScore(<a href="../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</pre>
 </li>
 </ul>
 </li>
@@ -742,8 +816,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/scoreboard/HealthScoreboardCriteria.html" title="class in net.minecraft.scoreboard"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/scoreboard/AbstractTeam.VisibilityRule.html" title="enum in net.minecraft.scoreboard"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/scoreboard/ScoreboardCriterion.html" title="class in net.minecraft.scoreboard"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/scoreboard/Scoreboard.html" target="_top">Frames</a></li>

@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../net/minecraft/entity/ai/goal/FollowGolemGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../net/minecraft/entity/ai/goal/FormCaravanGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/entity/ai/goal/FollowOwnerGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/entity/ai/goal/FollowTargetGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?net/minecraft/entity/ai/goal/FollowParentGoal.html" target="_top">Frames</a></li>
@@ -134,16 +134,16 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>(package private) <a href="../../../../../net/minecraft/entity/passive/AnimalEntity.html" title="class in net.minecraft.entity.passive">AnimalEntity</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FollowParentGoal.html#animal">animal</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>private int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FollowParentGoal.html#delay">delay</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><code>(package private) <a href="../../../../../net/minecraft/entity/passive/AnimalEntity.html" title="class in net.minecraft.entity.passive">AnimalEntity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FollowParentGoal.html#field_7645">field_7645</a></span></code>&nbsp;</td>
-</tr>
 <tr class="altColor">
 <td class="colFirst"><code>(package private) <a href="../../../../../net/minecraft/entity/passive/AnimalEntity.html" title="class in net.minecraft.entity.passive">AnimalEntity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FollowParentGoal.html#field_7646">field_7646</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FollowParentGoal.html#parent">parent</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>(package private) double</code></td>
@@ -164,8 +164,8 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FollowParentGoal.html#FollowParentGoal-net.minecraft.entity.passive.AnimalEntity-double-">FollowParentGoal</a></span>(<a href="../../../../../net/minecraft/entity/passive/AnimalEntity.html" title="class in net.minecraft.entity.passive">AnimalEntity</a>&nbsp;animalEntity,
-                double&nbsp;double2)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FollowParentGoal.html#FollowParentGoal-net.minecraft.entity.passive.AnimalEntity-double-">FollowParentGoal</a></span>(<a href="../../../../../net/minecraft/entity/passive/AnimalEntity.html" title="class in net.minecraft.entity.passive">AnimalEntity</a>&nbsp;animal,
+                double&nbsp;speed)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -208,7 +208,7 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.entity.ai.goal.<a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</a></h3>
-<code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_7363-int-">method_7363</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_7368--">method_7368</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_7369--">method_7369</a></code></li>
+<code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#canStop--">canStop</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_34938-int-">method_34938</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_34944--">method_34944</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -231,22 +231,22 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_7645">
+<a name="animal">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7645</h4>
-<pre><a href="../../../../../net/minecraft/entity/passive/AnimalEntity.html" title="class in net.minecraft.entity.passive">AnimalEntity</a> field_7645</pre>
+<h4>animal</h4>
+<pre><a href="../../../../../net/minecraft/entity/passive/AnimalEntity.html" title="class in net.minecraft.entity.passive">AnimalEntity</a> animal</pre>
 </li>
 </ul>
-<a name="field_7646">
+<a name="parent">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7646</h4>
-<pre><a href="../../../../../net/minecraft/entity/passive/AnimalEntity.html" title="class in net.minecraft.entity.passive">AnimalEntity</a> field_7646</pre>
+<h4>parent</h4>
+<pre><a href="../../../../../net/minecraft/entity/passive/AnimalEntity.html" title="class in net.minecraft.entity.passive">AnimalEntity</a> parent</pre>
 </li>
 </ul>
 <a name="speed">
@@ -281,8 +281,8 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <ul class="blockListLast">
 <li class="blockList">
 <h4>FollowParentGoal</h4>
-<pre>public&nbsp;FollowParentGoal(<a href="../../../../../net/minecraft/entity/passive/AnimalEntity.html" title="class in net.minecraft.entity.passive">AnimalEntity</a>&nbsp;animalEntity,
-                        double&nbsp;double2)</pre>
+<pre>public&nbsp;FollowParentGoal(<a href="../../../../../net/minecraft/entity/passive/AnimalEntity.html" title="class in net.minecraft.entity.passive">AnimalEntity</a>&nbsp;animal,
+                        double&nbsp;speed)</pre>
 </li>
 </ul>
 </li>
@@ -385,8 +385,8 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../net/minecraft/entity/ai/goal/FollowGolemGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../net/minecraft/entity/ai/goal/FormCaravanGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/entity/ai/goal/FollowOwnerGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/entity/ai/goal/FollowTargetGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?net/minecraft/entity/ai/goal/FollowParentGoal.html" target="_top">Frames</a></li>

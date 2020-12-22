@@ -117,7 +117,8 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">RconClient</span>
+<pre>@Environment(value=SERVER)
+public class <span class="typeNameLabel">RconClient</span>
 extends <a href="../../../../net/minecraft/server/rcon/RconBase.html" title="class in net.minecraft.server.rcon">RconBase</a></pre>
 </li>
 </ul>
@@ -142,14 +143,18 @@ extends <a href="../../../../net/minecraft/server/rcon/RconBase.html" title="cla
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconClient.html#authenticated">authenticated</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconClient.html#field_32021">field_32021</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconClient.html#LOGGER">LOGGER</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>private byte[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconClient.html#packetBuffer">packetBuffer</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconClient.html#password">password</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/net/Socket.html?is-external=true" title="class or interface in java.net">Socket</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconClient.html#socket">socket</a></span></code>&nbsp;</td>
 </tr>
@@ -159,7 +164,7 @@ extends <a href="../../../../net/minecraft/server/rcon/RconBase.html" title="cla
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.server.rcon.<a href="../../../../net/minecraft/server/rcon/RconBase.html" title="class in net.minecraft.server.rcon">RconBase</a></h3>
-<code><a href="../../../../net/minecraft/server/rcon/RconBase.html#field_11328">field_11328</a>, <a href="../../../../net/minecraft/server/rcon/RconBase.html#field_11329">field_11329</a>, <a href="../../../../net/minecraft/server/rcon/RconBase.html#field_13094">field_13094</a>, <a href="../../../../net/minecraft/server/rcon/RconBase.html#field_6850">field_6850</a>, <a href="../../../../net/minecraft/server/rcon/RconBase.html#running">running</a>, <a href="../../../../net/minecraft/server/rcon/RconBase.html#server">server</a></code></li>
+<code><a href="../../../../net/minecraft/server/rcon/RconBase.html#description">description</a>, <a href="../../../../net/minecraft/server/rcon/RconBase.html#field_31990">field_31990</a>, <a href="../../../../net/minecraft/server/rcon/RconBase.html#field_31991">field_31991</a>, <a href="../../../../net/minecraft/server/rcon/RconBase.html#running">running</a>, <a href="../../../../net/minecraft/server/rcon/RconBase.html#server">server</a>, <a href="../../../../net/minecraft/server/rcon/RconBase.html#serverSockets">serverSockets</a>, <a href="../../../../net/minecraft/server/rcon/RconBase.html#sockets">sockets</a></code></li>
 </ul>
 </li>
 </ul>
@@ -175,7 +180,7 @@ extends <a href="../../../../net/minecraft/server/rcon/RconBase.html" title="cla
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconClient.html#RconClient-net.minecraft.server.dedicated.DedicatedServerAccess-java.net.Socket-">RconClient</a></span>(<a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html" title="interface in net.minecraft.server.dedicated">DedicatedServerAccess</a>&nbsp;dedicatedServerAccess,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconClient.html#RconClient-net.minecraft.server.dedicated.DedicatedServer-java.net.Socket-">RconClient</a></span>(<a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html" title="interface in net.minecraft.server.dedicated">DedicatedServer</a>&nbsp;dedicatedServer,
           <a href="https://docs.oracle.com/javase/8/docs/api/java/net/Socket.html?is-external=true" title="class or interface in java.net">Socket</a>&nbsp;socket)</code>&nbsp;</td>
 </tr>
 </table>
@@ -199,18 +204,18 @@ extends <a href="../../../../net/minecraft/server/rcon/RconBase.html" title="cla
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>private void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconClient.html#method_6332-int-int-java.lang.String-">method_6332</a></span>(int&nbsp;int2,
-           int&nbsp;int3,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconClient.html#method_33828-int-int-java.lang.String-">method_33828</a></span>(int&nbsp;int2,
+            int&nbsp;int3,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>private void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconClient.html#method_6333-int-java.lang.String-">method_6333</a></span>(int&nbsp;int2,
-           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconClient.html#method_33829-int-java.lang.String-">method_33829</a></span>(int&nbsp;int2,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>private void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconClient.html#method_6334--">method_6334</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/rcon/RconClient.html#method_33830--">method_33830</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -245,6 +250,15 @@ extends <a href="../../../../net/minecraft/server/rcon/RconBase.html" title="cla
 <!--   -->
 </a>
 <h3>Field Detail</h3>
+<a name="LOGGER">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>LOGGER</h4>
+<pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a> LOGGER</pre>
+</li>
+</ul>
 <a name="authenticated">
 <!--   -->
 </a>
@@ -269,16 +283,16 @@ extends <a href="../../../../net/minecraft/server/rcon/RconBase.html" title="cla
 <ul class="blockList">
 <li class="blockList">
 <h4>packetBuffer</h4>
-<pre>private&nbsp;byte[] packetBuffer</pre>
+<pre>private final&nbsp;byte[] packetBuffer</pre>
 </li>
 </ul>
-<a name="password">
+<a name="field_32021">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>password</h4>
-<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> password</pre>
+<h4>field_32021</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> field_32021</pre>
 </li>
 </ul>
 </li>
@@ -289,13 +303,13 @@ extends <a href="../../../../net/minecraft/server/rcon/RconBase.html" title="cla
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="RconClient-net.minecraft.server.dedicated.DedicatedServerAccess-java.net.Socket-">
+<a name="RconClient-net.minecraft.server.dedicated.DedicatedServer-java.net.Socket-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>RconClient</h4>
-<pre>RconClient(<a href="../../../../net/minecraft/server/dedicated/DedicatedServerAccess.html" title="interface in net.minecraft.server.dedicated">DedicatedServerAccess</a>&nbsp;dedicatedServerAccess,
+<pre>RconClient(<a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html" title="interface in net.minecraft.server.dedicated">DedicatedServer</a>&nbsp;dedicatedServer,
            <a href="https://docs.oracle.com/javase/8/docs/api/java/net/Socket.html?is-external=true" title="class or interface in java.net">Socket</a>&nbsp;socket)</pre>
 </li>
 </ul>
@@ -316,34 +330,49 @@ extends <a href="../../../../net/minecraft/server/rcon/RconBase.html" title="cla
 <pre>public&nbsp;void&nbsp;run()</pre>
 </li>
 </ul>
-<a name="method_6332-int-int-java.lang.String-">
+<a name="method_33828-int-int-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_6332</h4>
-<pre>private&nbsp;void&nbsp;method_6332(int&nbsp;int2,
-                         int&nbsp;int3,
-                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
+<h4>method_33828</h4>
+<pre>private&nbsp;void&nbsp;method_33828(int&nbsp;int2,
+                          int&nbsp;int3,
+                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)
+                   throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_6334--">
+<a name="method_33830--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_6334</h4>
-<pre>private&nbsp;void&nbsp;method_6334()</pre>
+<h4>method_33830</h4>
+<pre>private&nbsp;void&nbsp;method_33830()
+                   throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_6333-int-java.lang.String-">
+<a name="method_33829-int-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_6333</h4>
-<pre>private&nbsp;void&nbsp;method_6333(int&nbsp;int2,
-                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
+<h4>method_33829</h4>
+<pre>private&nbsp;void&nbsp;method_33829(int&nbsp;int2,
+                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)
+                   throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="close--">

@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -108,7 +108,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../net/minecraft/resource/Resource.html" title="interface in net.minecraft.resource">Resource</a></dd>
+<dd><a href="https://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io">Closeable</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true" title="class or interface in java.lang">AutoCloseable</a>, <a href="../../../net/minecraft/resource/Resource.html" title="interface in net.minecraft.resource">Resource</a></dd>
 </dl>
 <hr>
 <br>
@@ -135,16 +135,16 @@ implements <a href="../../../net/minecraft/resource/Resource.html" title="interf
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ResourceImpl.html#field_5268">field_5268</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../net/minecraft/class_6055.html" title="interface in net.minecraft">class_6055</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ResourceImpl.html#field_30194">field_30194</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ResourceImpl.html#field_5270">field_5270</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../net/minecraft/class_6057.html" title="class in net.minecraft">class_6057</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ResourceImpl.html#field_30199">field_30199</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../net/minecraft/util/MetadataSerializer.html" title="class in net.minecraft.util">MetadataSerializer</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ResourceImpl.html#field_5273">field_5273</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ResourceImpl.html#id">id</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a></code></td>
@@ -159,6 +159,10 @@ implements <a href="../../../net/minecraft/resource/Resource.html" title="interf
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ResourceImpl.html#metaInputStream">metaInputStream</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ResourceImpl.html#packName">packName</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>private boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ResourceImpl.html#readMetadata">readMetadata</a></span></code>&nbsp;</td>
 </tr>
@@ -177,10 +181,11 @@ implements <a href="../../../net/minecraft/resource/Resource.html" title="interf
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ResourceImpl.html#ResourceImpl-net.minecraft.util.Identifier-java.io.InputStream-java.io.InputStream-net.minecraft.util.MetadataSerializer-">ResourceImpl</a></span>(<a href="../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ResourceImpl.html#ResourceImpl-java.lang.String-net.minecraft.util.Identifier-java.io.InputStream-java.io.InputStream-net.minecraft.class_6057-">ResourceImpl</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;packName,
+            <a href="../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;id,
             <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;inputStream,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;inputStream2,
-            <a href="../../../net/minecraft/util/MetadataSerializer.html" title="class in net.minecraft.util">MetadataSerializer</a>&nbsp;metadataSerializer)</code>&nbsp;</td>
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;metaInputStream,
+            <a href="../../../net/minecraft/class_6057.html" title="class in net.minecraft">class_6057</a>&nbsp;class_6057)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -198,24 +203,36 @@ implements <a href="../../../net/minecraft/resource/Resource.html" title="interf
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ResourceImpl.html#equals-java.lang.Object-">equals</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;object)</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ResourceImpl.html#close--">close</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ResourceImpl.html#equals-java.lang.Object-">equals</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ResourceImpl.html#getId--">getId</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ResourceImpl.html#getInputStream--">getInputStream</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ResourceImpl.html#getResourcePackName--">getResourcePackName</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ResourceImpl.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/client/resource/ResourceMetadataProvider.html" title="interface in net.minecraft.client.resource">ResourceMetadataProvider</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ResourceImpl.html#method_4359-java.lang.String-">method_4359</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>&lt;T extends <a href="../../../net/minecraft/class_6055.html" title="interface in net.minecraft">class_6055</a>&gt;<br>T</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ResourceImpl.html#method_31452-java.lang.String-">method_31452</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ResourceImpl.html#method_4361--">method_4361</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ResourceImpl.html#method_31454--">method_31454</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -239,22 +256,31 @@ implements <a href="../../../net/minecraft/resource/Resource.html" title="interf
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_5268">
+<a name="field_30194">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_5268</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a> field_5268</pre>
+<h4>field_30194</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../net/minecraft/class_6055.html" title="interface in net.minecraft">class_6055</a>&gt; field_30194</pre>
 </li>
 </ul>
-<a name="field_5270">
+<a name="packName">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_5270</h4>
-<pre>private final&nbsp;<a href="../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a> field_5270</pre>
+<h4>packName</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> packName</pre>
+</li>
+</ul>
+<a name="id">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>id</h4>
+<pre>private final&nbsp;<a href="../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a> id</pre>
 </li>
 </ul>
 <a name="inputStream">
@@ -275,13 +301,13 @@ implements <a href="../../../net/minecraft/resource/Resource.html" title="interf
 <pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a> metaInputStream</pre>
 </li>
 </ul>
-<a name="field_5273">
+<a name="field_30199">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_5273</h4>
-<pre>private final&nbsp;<a href="../../../net/minecraft/util/MetadataSerializer.html" title="class in net.minecraft.util">MetadataSerializer</a> field_5273</pre>
+<h4>field_30199</h4>
+<pre>private final&nbsp;<a href="../../../net/minecraft/class_6057.html" title="class in net.minecraft">class_6057</a> field_30199</pre>
 </li>
 </ul>
 <a name="readMetadata">
@@ -310,16 +336,17 @@ implements <a href="../../../net/minecraft/resource/Resource.html" title="interf
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="ResourceImpl-net.minecraft.util.Identifier-java.io.InputStream-java.io.InputStream-net.minecraft.util.MetadataSerializer-">
+<a name="ResourceImpl-java.lang.String-net.minecraft.util.Identifier-java.io.InputStream-java.io.InputStream-net.minecraft.class_6057-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ResourceImpl</h4>
-<pre>public&nbsp;ResourceImpl(<a href="../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier,
+<pre>public&nbsp;ResourceImpl(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;packName,
+                    <a href="../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;id,
                     <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;inputStream,
-                    <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;inputStream2,
-                    <a href="../../../net/minecraft/util/MetadataSerializer.html" title="class in net.minecraft.util">MetadataSerializer</a>&nbsp;metadataSerializer)</pre>
+                    <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;metaInputStream,
+                    <a href="../../../net/minecraft/class_6057.html" title="class in net.minecraft">class_6057</a>&nbsp;class_6057)</pre>
 </li>
 </ul>
 </li>
@@ -330,6 +357,19 @@ implements <a href="../../../net/minecraft/resource/Resource.html" title="interf
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="getId--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getId</h4>
+<pre>public&nbsp;<a href="../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;getId()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../net/minecraft/resource/Resource.html#getId--">getId</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/resource/Resource.html" title="interface in net.minecraft.resource">Resource</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="getInputStream--">
 <!--   -->
 </a>
@@ -343,29 +383,43 @@ implements <a href="../../../net/minecraft/resource/Resource.html" title="interf
 </dl>
 </li>
 </ul>
-<a name="method_4361--">
+<a name="method_31454--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_4361</h4>
-<pre>public&nbsp;boolean&nbsp;method_4361()</pre>
+<h4>method_31454</h4>
+<pre>public&nbsp;boolean&nbsp;method_31454()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/resource/Resource.html#method_4361--">method_4361</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/resource/Resource.html" title="interface in net.minecraft.resource">Resource</a></code></dd>
+<dd><code><a href="../../../net/minecraft/resource/Resource.html#method_31454--">method_31454</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/resource/Resource.html" title="interface in net.minecraft.resource">Resource</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_4359-java.lang.String-">
+<a name="method_31452-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_4359</h4>
-<pre>public&nbsp;<a href="../../../net/minecraft/client/resource/ResourceMetadataProvider.html" title="interface in net.minecraft.client.resource">ResourceMetadataProvider</a>&nbsp;method_4359(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
+<h4>method_31452</h4>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;&lt;T extends <a href="../../../net/minecraft/class_6055.html" title="interface in net.minecraft">class_6055</a>&gt;&nbsp;T&nbsp;method_31452(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/resource/Resource.html#method_4359-java.lang.String-">method_4359</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/resource/Resource.html" title="interface in net.minecraft.resource">Resource</a></code></dd>
+<dd><code><a href="../../../net/minecraft/resource/Resource.html#method_31452-java.lang.String-">method_31452</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/resource/Resource.html" title="interface in net.minecraft.resource">Resource</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getResourcePackName--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getResourcePackName</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getResourcePackName()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../net/minecraft/resource/Resource.html#getResourcePackName--">getResourcePackName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/resource/Resource.html" title="interface in net.minecraft.resource">Resource</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -375,7 +429,7 @@ implements <a href="../../../net/minecraft/resource/Resource.html" title="interf
 <ul class="blockList">
 <li class="blockList">
 <h4>equals</h4>
-<pre>public&nbsp;boolean&nbsp;equals(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;object)</pre>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
@@ -385,13 +439,31 @@ implements <a href="../../../net/minecraft/resource/Resource.html" title="interf
 <a name="hashCode--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>hashCode</h4>
 <pre>public&nbsp;int&nbsp;hashCode()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="close--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>close</h4>
+<pre>public&nbsp;void&nbsp;close()
+           throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html?is-external=true#close--" title="class or interface in java.io">close</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io">Closeable</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true#close--" title="class or interface in java.lang">close</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html?is-external=true" title="class or interface in java.lang">AutoCloseable</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
 </dl>
 </li>
 </ul>

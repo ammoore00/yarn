@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -130,7 +130,15 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageTracker.html#ageOnLastAttacked">ageOnLastAttacked</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageTracker.html#ageOnLastDamage">ageOnLastDamage</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageTracker.html#ageOnLastUpdate">ageOnLastUpdate</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private <a href="../../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a></code></td>
@@ -141,12 +149,12 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageTracker.html#fallDeathSuffix">fallDeathSuffix</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageTracker.html#field_11387">field_11387</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code>private boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageTracker.html#hasDamage">hasDamage</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../net/minecraft/entity/damage/DamageRecord.html" title="class in net.minecraft.entity.damage">DamageRecord</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageTracker.html#recentDamage">recentDamage</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private boolean</code></td>
@@ -189,34 +197,42 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageTracker.html#clearFallDeathSuffix--">clearFallDeathSuffix</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageTracker.html#getBiggestAttacker--">getBiggestAttacker</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>private <a href="../../../../net/minecraft/entity/damage/DamageRecord.html" title="class in net.minecraft.entity.damage">DamageRecord</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageTracker.html#getBiggestFall--">getBiggestFall</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/class_2828.html" title="class in net.minecraft">class_2828</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageTracker.html#getDeathMessage--">getDeathMessage</a></span>()</code>&nbsp;</td>
-</tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageTracker.html#getFallDeathSuffix-net.minecraft.entity.damage.DamageRecord-">getFallDeathSuffix</a></span>(<a href="../../../../net/minecraft/entity/damage/DamageRecord.html" title="class in net.minecraft.entity.damage">DamageRecord</a>&nbsp;damageRecord)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageTracker.html#getDeathMessage--">getDeathMessage</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageTracker.html#getLastAttacker--">getLastAttacker</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageTracker.html#getEntity--">getEntity</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>private void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageTracker.html#method_11958--">method_11958</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageTracker.html#getFallDeathSuffix-net.minecraft.entity.damage.DamageRecord-">getFallDeathSuffix</a></span>(<a href="../../../../net/minecraft/entity/damage/DamageRecord.html" title="class in net.minecraft.entity.damage">DamageRecord</a>&nbsp;damageRecord)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageTracker.html#getTimeSinceLastAttack--">getTimeSinceLastAttack</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageTracker.html#onDamage-net.minecraft.entity.damage.DamageSource-float-float-">onDamage</a></span>(<a href="../../../../net/minecraft/entity/damage/DamageSource.html" title="class in net.minecraft.entity.damage">DamageSource</a>&nbsp;damageSource,
         float&nbsp;originalHealth,
         float&nbsp;float2)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageTracker.html#setFallDeathSuffix--">setFallDeathSuffix</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/damage/DamageTracker.html#update--">update</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -240,13 +256,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_11387">
+<a name="recentDamage">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_11387</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a> field_11387</pre>
+<h4>recentDamage</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../net/minecraft/entity/damage/DamageRecord.html" title="class in net.minecraft.entity.damage">DamageRecord</a>&gt; recentDamage</pre>
 </li>
 </ul>
 <a name="entity">
@@ -265,6 +281,24 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>ageOnLastDamage</h4>
 <pre>private&nbsp;int ageOnLastDamage</pre>
+</li>
+</ul>
+<a name="ageOnLastAttacked">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ageOnLastAttacked</h4>
+<pre>private&nbsp;int ageOnLastAttacked</pre>
+</li>
+</ul>
+<a name="ageOnLastUpdate">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ageOnLastUpdate</h4>
+<pre>private&nbsp;int ageOnLastUpdate</pre>
 </li>
 </ul>
 <a name="recentlyAttacked">
@@ -345,16 +379,17 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getDeathMessage</h4>
-<pre>public&nbsp;<a href="../../../../net/minecraft/class_2828.html" title="class in net.minecraft">class_2828</a>&nbsp;getDeathMessage()</pre>
+<pre>public&nbsp;<a href="../../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;getDeathMessage()</pre>
 </li>
 </ul>
-<a name="getLastAttacker--">
+<a name="getBiggestAttacker--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getLastAttacker</h4>
-<pre>public&nbsp;<a href="../../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;getLastAttacker()</pre>
+<h4>getBiggestAttacker</h4>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="../../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;getBiggestAttacker()</pre>
 </li>
 </ul>
 <a name="getBiggestFall--">
@@ -363,7 +398,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getBiggestFall</h4>
-<pre>private&nbsp;<a href="../../../../net/minecraft/entity/damage/DamageRecord.html" title="class in net.minecraft.entity.damage">DamageRecord</a>&nbsp;getBiggestFall()</pre>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+private&nbsp;<a href="../../../../net/minecraft/entity/damage/DamageRecord.html" title="class in net.minecraft.entity.damage">DamageRecord</a>&nbsp;getBiggestFall()</pre>
 </li>
 </ul>
 <a name="getFallDeathSuffix-net.minecraft.entity.damage.DamageRecord-">
@@ -375,6 +411,15 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getFallDeathSuffix(<a href="../../../../net/minecraft/entity/damage/DamageRecord.html" title="class in net.minecraft.entity.damage">DamageRecord</a>&nbsp;damageRecord)</pre>
 </li>
 </ul>
+<a name="getTimeSinceLastAttack--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTimeSinceLastAttack</h4>
+<pre>public&nbsp;int&nbsp;getTimeSinceLastAttack()</pre>
+</li>
+</ul>
 <a name="clearFallDeathSuffix--">
 <!--   -->
 </a>
@@ -384,13 +429,22 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>private&nbsp;void&nbsp;clearFallDeathSuffix()</pre>
 </li>
 </ul>
-<a name="method_11958--">
+<a name="update--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>update</h4>
+<pre>public&nbsp;void&nbsp;update()</pre>
+</li>
+</ul>
+<a name="getEntity--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_11958</h4>
-<pre>private&nbsp;void&nbsp;method_11958()</pre>
+<h4>getEntity</h4>
+<pre>public&nbsp;<a href="../../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;getEntity()</pre>
 </li>
 </ul>
 </li>

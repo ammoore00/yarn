@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":9,"i9":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":9,"i11":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/world/EmptySaveHandler.html" title="class in net.minecraft.world"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/world/GameRuleDispatcher.html" title="class in net.minecraft.world"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/world/Difficulty.html" title="enum in net.minecraft.world"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/world/GameRules.html" title="class in net.minecraft.world"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/world/GameMode.html" target="_top">Frames</a></li>
@@ -146,6 +146,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?i
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/GameMode.html#NOT_SET">NOT_SET</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/GameMode.html#SPECTATOR">SPECTATOR</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/GameMode.html#SURVIVAL">SURVIVAL</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -164,10 +167,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?i
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>(package private) <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/GameMode.html#field_23549">field_23549</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>(package private) int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/GameMode.html#id">id</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>(package private) <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/GameMode.html#name">name</a></span></code>&nbsp;</td>
 </tr>
@@ -187,28 +194,30 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?i
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/GameMode.html#getAbilities-net.minecraft.entity.player.PlayerAbilities-">getAbilities</a></span>(<a href="../../../net/minecraft/entity/player/PlayerAbilities.html" title="class in net.minecraft.entity.player">PlayerAbilities</a>&nbsp;abilities)</code>&nbsp;</td>
+<td class="colFirst"><code>static <a href="../../../net/minecraft/world/GameMode.html" title="enum in net.minecraft.world">GameMode</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/GameMode.html#byId-int-">byId</a></span>(int&nbsp;id)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../net/minecraft/world/GameMode.html" title="enum in net.minecraft.world">GameMode</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/GameMode.html#getGamemodeById-int-">getGamemodeById</a></span>(int&nbsp;id)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/GameMode.html#byId-int-net.minecraft.world.GameMode-">byId</a></span>(int&nbsp;id,
+    <a href="../../../net/minecraft/world/GameMode.html" title="enum in net.minecraft.world">GameMode</a>&nbsp;defaultMode)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>static <a href="../../../net/minecraft/world/GameMode.html" title="enum in net.minecraft.world">GameMode</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/GameMode.html#getGamemodeByName-java.lang.String-">getGamemodeByName</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/GameMode.html#byName-java.lang.String-">byName</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../net/minecraft/world/GameMode.html" title="enum in net.minecraft.world">GameMode</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/GameMode.html#byName-java.lang.String-net.minecraft.world.GameMode-">byName</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+      <a href="../../../net/minecraft/world/GameMode.html" title="enum in net.minecraft.world">GameMode</a>&nbsp;defaultMode)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/GameMode.html#getId--">getId</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/GameMode.html#getName--">getName</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/GameMode.html#isAdventure--">isAdventure</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
@@ -216,15 +225,23 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html?i
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/GameMode.html#isSurvival--">isSurvival</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/GameMode.html#isSurvivalLike--">isSurvivalLike</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/GameMode.html#setAbilitites-net.minecraft.entity.player.PlayerAbilities-">setAbilitites</a></span>(<a href="../../../net/minecraft/entity/player/PlayerAbilities.html" title="class in net.minecraft.entity.player">PlayerAbilities</a>&nbsp;abilities)</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/GameMode.html#shouldLimitWorldModification--">shouldLimitWorldModification</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>static <a href="../../../net/minecraft/world/GameMode.html" title="enum in net.minecraft.world">GameMode</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/GameMode.html#valueOf-java.lang.String-">valueOf</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
 <div class="block">Returns the enum constant of this type with the specified name.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../net/minecraft/world/GameMode.html" title="enum in net.minecraft.world">GameMode</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/GameMode.html#values--">values</a></span>()</code>
 <div class="block">Returns an array containing the constants of this enum type, in
@@ -290,10 +307,19 @@ the order they are declared.</div>
 <a name="ADVENTURE">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>ADVENTURE</h4>
 <pre>public static final&nbsp;<a href="../../../net/minecraft/world/GameMode.html" title="enum in net.minecraft.world">GameMode</a> ADVENTURE</pre>
+</li>
+</ul>
+<a name="SPECTATOR">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>SPECTATOR</h4>
+<pre>public static final&nbsp;<a href="../../../net/minecraft/world/GameMode.html" title="enum in net.minecraft.world">GameMode</a> SPECTATOR</pre>
 </li>
 </ul>
 </li>
@@ -316,10 +342,19 @@ the order they are declared.</div>
 <a name="name">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>name</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> name</pre>
+</li>
+</ul>
+<a name="field_23549">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>field_23549</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> field_23549</pre>
 </li>
 </ul>
 </li>
@@ -390,22 +425,22 @@ not permitted.)</div>
 <pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getName()</pre>
 </li>
 </ul>
-<a name="getAbilities-net.minecraft.entity.player.PlayerAbilities-">
+<a name="setAbilitites-net.minecraft.entity.player.PlayerAbilities-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getAbilities</h4>
-<pre>public&nbsp;void&nbsp;getAbilities(<a href="../../../net/minecraft/entity/player/PlayerAbilities.html" title="class in net.minecraft.entity.player">PlayerAbilities</a>&nbsp;abilities)</pre>
+<h4>setAbilitites</h4>
+<pre>public&nbsp;void&nbsp;setAbilitites(<a href="../../../net/minecraft/entity/player/PlayerAbilities.html" title="class in net.minecraft.entity.player">PlayerAbilities</a>&nbsp;abilities)</pre>
 </li>
 </ul>
-<a name="isAdventure--">
+<a name="shouldLimitWorldModification--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>isAdventure</h4>
-<pre>public&nbsp;boolean&nbsp;isAdventure()</pre>
+<h4>shouldLimitWorldModification</h4>
+<pre>public&nbsp;boolean&nbsp;shouldLimitWorldModification()</pre>
 </li>
 </ul>
 <a name="isCreative--">
@@ -417,33 +452,52 @@ not permitted.)</div>
 <pre>public&nbsp;boolean&nbsp;isCreative()</pre>
 </li>
 </ul>
-<a name="isSurvival--">
+<a name="isSurvivalLike--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>isSurvival</h4>
+<h4>isSurvivalLike</h4>
+<pre>public&nbsp;boolean&nbsp;isSurvivalLike()</pre>
+</li>
+</ul>
+<a name="byId-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>byId</h4>
+<pre>public static&nbsp;<a href="../../../net/minecraft/world/GameMode.html" title="enum in net.minecraft.world">GameMode</a>&nbsp;byId(int&nbsp;id)</pre>
+</li>
+</ul>
+<a name="byId-int-net.minecraft.world.GameMode-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>byId</h4>
+<pre>public static&nbsp;<a href="../../../net/minecraft/world/GameMode.html" title="enum in net.minecraft.world">GameMode</a>&nbsp;byId(int&nbsp;id,
+                            <a href="../../../net/minecraft/world/GameMode.html" title="enum in net.minecraft.world">GameMode</a>&nbsp;defaultMode)</pre>
+</li>
+</ul>
+<a name="byName-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>byName</h4>
 <pre>@Environment(value=CLIENT)
-public&nbsp;boolean&nbsp;isSurvival()</pre>
+public static&nbsp;<a href="../../../net/minecraft/world/GameMode.html" title="enum in net.minecraft.world">GameMode</a>&nbsp;byName(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
 </li>
 </ul>
-<a name="getGamemodeById-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getGamemodeById</h4>
-<pre>public static&nbsp;<a href="../../../net/minecraft/world/GameMode.html" title="enum in net.minecraft.world">GameMode</a>&nbsp;getGamemodeById(int&nbsp;id)</pre>
-</li>
-</ul>
-<a name="getGamemodeByName-java.lang.String-">
+<a name="byName-java.lang.String-net.minecraft.world.GameMode-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getGamemodeByName</h4>
-<pre>@Environment(value=CLIENT)
-public static&nbsp;<a href="../../../net/minecraft/world/GameMode.html" title="enum in net.minecraft.world">GameMode</a>&nbsp;getGamemodeByName(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
+<h4>byName</h4>
+<pre>public static&nbsp;<a href="../../../net/minecraft/world/GameMode.html" title="enum in net.minecraft.world">GameMode</a>&nbsp;byName(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+                              <a href="../../../net/minecraft/world/GameMode.html" title="enum in net.minecraft.world">GameMode</a>&nbsp;defaultMode)</pre>
 </li>
 </ul>
 </li>
@@ -473,8 +527,8 @@ public static&nbsp;<a href="../../../net/minecraft/world/GameMode.html" title="e
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/world/EmptySaveHandler.html" title="class in net.minecraft.world"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/world/GameRuleDispatcher.html" title="class in net.minecraft.world"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/world/Difficulty.html" title="enum in net.minecraft.world"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/world/GameRules.html" title="class in net.minecraft.world"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/world/GameMode.html" target="_top">Frames</a></li>

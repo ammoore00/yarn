@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/scoreboard/ScoreboardState.html" title="class in net.minecraft.scoreboard"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/scoreboard/ScoreboardSynchronizer.html" title="class in net.minecraft.scoreboard"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../net/minecraft/scoreboard/Team.html" title="class in net.minecraft.scoreboard"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -134,16 +134,16 @@ extends <a href="../../../net/minecraft/scoreboard/Scoreboard.html" title="class
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html#field_11205">field_11205</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html#objectives">objectives</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private <a href="../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html#server">server</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../net/minecraft/scoreboard/ScoreboardState.html" title="class in net.minecraft.scoreboard">ScoreboardState</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html#state">state</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang">Runnable</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html#updateListeners">updateListeners</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -178,29 +178,29 @@ extends <a href="../../../net/minecraft/scoreboard/Scoreboard.html" title="class
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html#addPlayerToTeam-java.lang.String-java.lang.String-">addPlayerToTeam</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;playerName,
+               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html#addScoreboardObjective-net.minecraft.scoreboard.ScoreboardObjective-">addScoreboardObjective</a></span>(<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</code>&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html#getSlot-net.minecraft.scoreboard.ScoreboardObjective-">getSlot</a></span>(<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</code>&nbsp;</td>
-</tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html#markDirtyIfNull--">markDirtyIfNull</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html#addUpdateListener-java.lang.Runnable-">addUpdateListener</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang">Runnable</a>&nbsp;listener)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html#method_10353-net.minecraft.scoreboard.ScoreboardObjective-">method_10353</a></span>(<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;scoreboardObjective)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;?&gt;&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html#createChangePackets-net.minecraft.scoreboard.ScoreboardObjective-">createChangePackets</a></span>(<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html#method_10354-net.minecraft.scoreboard.ScoreboardObjective-">method_10354</a></span>(<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;scoreboardObjective)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;?&gt;&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html#createRemovePackets-net.minecraft.scoreboard.ScoreboardObjective-">createRemovePackets</a></span>(<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html#method_11052-java.lang.String-net.minecraft.scoreboard.Team-">method_11052</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-            <a href="../../../net/minecraft/scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a>&nbsp;team)</code>&nbsp;</td>
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html#getSlot-net.minecraft.scoreboard.ScoreboardObjective-">getSlot</a></span>(<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -212,13 +212,13 @@ extends <a href="../../../net/minecraft/scoreboard/Scoreboard.html" title="class
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html#removeScoreboardObjective-net.minecraft.scoreboard.ScoreboardObjective-">removeScoreboardObjective</a></span>(<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html#setObjectiveSlot-int-net.minecraft.scoreboard.ScoreboardObjective-">setObjectiveSlot</a></span>(int&nbsp;slot,
-                <a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</code>&nbsp;</td>
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html#runUpdateListeners--">runUpdateListeners</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html#setScoreboardState-net.minecraft.scoreboard.ScoreboardState-">setScoreboardState</a></span>(<a href="../../../net/minecraft/scoreboard/ScoreboardState.html" title="class in net.minecraft.scoreboard">ScoreboardState</a>&nbsp;state)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html#setObjectiveSlot-int-net.minecraft.scoreboard.ScoreboardObjective-">setObjectiveSlot</a></span>(int&nbsp;slot,
+                <a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -234,21 +234,26 @@ extends <a href="../../../net/minecraft/scoreboard/Scoreboard.html" title="class
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html#updateRemovedObjective-net.minecraft.scoreboard.ScoreboardObjective-">updateRemovedObjective</a></span>(<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html#updatePlayerScore-java.lang.String-net.minecraft.scoreboard.ScoreboardObjective-">updatePlayerScore</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;playerName,
+                 <a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</code>&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html#updateRemovedTeam-net.minecraft.scoreboard.Team-">updateRemovedTeam</a></span>(<a href="../../../net/minecraft/scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a>&nbsp;team)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html#updateRemovedObjective-net.minecraft.scoreboard.ScoreboardObjective-">updateRemovedObjective</a></span>(<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</code>&nbsp;</td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html#updateScore-net.minecraft.scoreboard.ScoreboardPlayerScore-">updateScore</a></span>(<a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html" title="class in net.minecraft.scoreboard">ScoreboardPlayerScore</a>&nbsp;score)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html#updateRemovedTeam-net.minecraft.scoreboard.Team-">updateRemovedTeam</a></span>(<a href="../../../net/minecraft/scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a>&nbsp;team)</code>&nbsp;</td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html#updateScoreboardTeam-net.minecraft.scoreboard.Team-">updateScoreboardTeam</a></span>(<a href="../../../net/minecraft/scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a>&nbsp;team)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html#updateScore-net.minecraft.scoreboard.ScoreboardPlayerScore-">updateScore</a></span>(<a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html" title="class in net.minecraft.scoreboard">ScoreboardPlayerScore</a>&nbsp;score)</code>&nbsp;</td>
 </tr>
 <tr id="i17" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html#updateScoreboardTeam-net.minecraft.scoreboard.Team-">updateScoreboardTeam</a></span>(<a href="../../../net/minecraft/scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a>&nbsp;team)</code>&nbsp;</td>
+</tr>
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html#updateScoreboardTeamAndPlayers-net.minecraft.scoreboard.Team-">updateScoreboardTeamAndPlayers</a></span>(<a href="../../../net/minecraft/scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a>&nbsp;team)</code>&nbsp;</td>
 </tr>
@@ -258,7 +263,7 @@ extends <a href="../../../net/minecraft/scoreboard/Scoreboard.html" title="class
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.scoreboard.<a href="../../../net/minecraft/scoreboard/Scoreboard.html" title="class in net.minecraft.scoreboard">Scoreboard</a></h3>
-<code><a href="../../../net/minecraft/scoreboard/Scoreboard.html#addTeam-java.lang.String-">addTeam</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#clearPlayerTeam-java.lang.String-">clearPlayerTeam</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#getAllPlayerScores-net.minecraft.scoreboard.ScoreboardObjective-">getAllPlayerScores</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#getDisplaySlotId-java.lang.String-">getDisplaySlotId</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#getNullableObjective-java.lang.String-">getNullableObjective</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#getObjectiveForSlot-int-">getObjectiveForSlot</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#getPlayerTeam-java.lang.String-">getPlayerTeam</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#getTeam-java.lang.String-">getTeam</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#getTeams--">getTeams</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#method_2131-java.lang.String-net.minecraft.class_2256-">method_2131</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#method_2148--">method_2148</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#method_9125-net.minecraft.class_2256-">method_9125</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#method_9126-java.lang.String-net.minecraft.scoreboard.ScoreboardObjective-">method_9126</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#method_9127-int-">method_9127</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#method_9128--">method_9128</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#method_9129-java.lang.String-">method_9129</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#method_9130--">method_9130</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#method_9131-java.lang.String-">method_9131</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#method_9132--">method_9132</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#removeObjective-net.minecraft.scoreboard.ScoreboardObjective-">removeObjective</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#removeTeam-net.minecraft.scoreboard.Team-">removeTeam</a></code></li>
+<code><a href="../../../net/minecraft/scoreboard/Scoreboard.html#addObjective-java.lang.String-net.minecraft.class_1313-">addObjective</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#addTeam-java.lang.String-">addTeam</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#clearPlayerTeam-java.lang.String-">clearPlayerTeam</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#getAllPlayerScores-net.minecraft.scoreboard.ScoreboardObjective-">getAllPlayerScores</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#getDisplaySlotId-java.lang.String-">getDisplaySlotId</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#getDisplaySlotName-int-">getDisplaySlotName</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#getDisplaySlotNames--">getDisplaySlotNames</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#getKnownPlayers--">getKnownPlayers</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#getObjectiveForSlot-int-">getObjectiveForSlot</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#getObjectives--">getObjectives</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#getPlayerObjectives-java.lang.String-">getPlayerObjectives</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#getPlayerScore-java.lang.String-net.minecraft.scoreboard.ScoreboardObjective-">getPlayerScore</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#getPlayerTeam-java.lang.String-">getPlayerTeam</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#getTeam-java.lang.String-">getTeam</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#getTeamNames--">getTeamNames</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#getTeams--">getTeams</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#method_28603-net.minecraft.class_1313-">method_28603</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#method_28613-java.lang.String-">method_28613</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#method_28624--">method_28624</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#playerHasObjective-java.lang.String-net.minecraft.scoreboard.ScoreboardObjective-">playerHasObjective</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#removeObjective-net.minecraft.scoreboard.ScoreboardObjective-">removeObjective</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#removeTeam-net.minecraft.scoreboard.Team-">removeTeam</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#resetEntityScore-net.minecraft.entity.Entity-">resetEntityScore</a>, <a href="../../../net/minecraft/scoreboard/Scoreboard.html#resetPlayerScore-java.lang.String-net.minecraft.scoreboard.ScoreboardObjective-">resetPlayerScore</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -290,22 +295,22 @@ extends <a href="../../../net/minecraft/scoreboard/Scoreboard.html" title="class
 <pre>private final&nbsp;<a href="../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a> server</pre>
 </li>
 </ul>
-<a name="field_11205">
+<a name="objectives">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_11205</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a> field_11205</pre>
+<h4>objectives</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&gt; objectives</pre>
 </li>
 </ul>
-<a name="state">
+<a name="updateListeners">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>state</h4>
-<pre>private&nbsp;<a href="../../../net/minecraft/scoreboard/ScoreboardState.html" title="class in net.minecraft.scoreboard">ScoreboardState</a> state</pre>
+<h4>updateListeners</h4>
+<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang">Runnable</a>[] updateListeners</pre>
 </li>
 </ul>
 </li>
@@ -359,6 +364,20 @@ extends <a href="../../../net/minecraft/scoreboard/Scoreboard.html" title="class
 </dl>
 </li>
 </ul>
+<a name="updatePlayerScore-java.lang.String-net.minecraft.scoreboard.ScoreboardObjective-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>updatePlayerScore</h4>
+<pre>public&nbsp;void&nbsp;updatePlayerScore(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;playerName,
+                              <a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../net/minecraft/scoreboard/Scoreboard.html#updatePlayerScore-java.lang.String-net.minecraft.scoreboard.ScoreboardObjective-">updatePlayerScore</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/scoreboard/Scoreboard.html" title="class in net.minecraft.scoreboard">Scoreboard</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="setObjectiveSlot-int-net.minecraft.scoreboard.ScoreboardObjective-">
 <!--   -->
 </a>
@@ -373,17 +392,17 @@ extends <a href="../../../net/minecraft/scoreboard/Scoreboard.html" title="class
 </dl>
 </li>
 </ul>
-<a name="method_11052-java.lang.String-net.minecraft.scoreboard.Team-">
+<a name="addPlayerToTeam-java.lang.String-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_11052</h4>
-<pre>public&nbsp;void&nbsp;method_11052(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                         <a href="../../../net/minecraft/scoreboard/Team.html" title="class in net.minecraft.scoreboard">Team</a>&nbsp;team)</pre>
+<h4>addPlayerToTeam</h4>
+<pre>public&nbsp;boolean&nbsp;addPlayerToTeam(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;playerName,
+                               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../net/minecraft/scoreboard/Scoreboard.html#method_11052-java.lang.String-net.minecraft.scoreboard.Team-">method_11052</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/scoreboard/Scoreboard.html" title="class in net.minecraft.scoreboard">Scoreboard</a></code></dd>
+<dd><code><a href="../../../net/minecraft/scoreboard/Scoreboard.html#addPlayerToTeam-java.lang.String-java.lang.String-">addPlayerToTeam</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/scoreboard/Scoreboard.html" title="class in net.minecraft.scoreboard">Scoreboard</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -479,31 +498,31 @@ extends <a href="../../../net/minecraft/scoreboard/Scoreboard.html" title="class
 </dl>
 </li>
 </ul>
-<a name="setScoreboardState-net.minecraft.scoreboard.ScoreboardState-">
+<a name="addUpdateListener-java.lang.Runnable-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setScoreboardState</h4>
-<pre>public&nbsp;void&nbsp;setScoreboardState(<a href="../../../net/minecraft/scoreboard/ScoreboardState.html" title="class in net.minecraft.scoreboard">ScoreboardState</a>&nbsp;state)</pre>
+<h4>addUpdateListener</h4>
+<pre>public&nbsp;void&nbsp;addUpdateListener(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html?is-external=true" title="class or interface in java.lang">Runnable</a>&nbsp;listener)</pre>
 </li>
 </ul>
-<a name="markDirtyIfNull--">
+<a name="runUpdateListeners--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>markDirtyIfNull</h4>
-<pre>protected&nbsp;void&nbsp;markDirtyIfNull()</pre>
+<h4>runUpdateListeners</h4>
+<pre>protected&nbsp;void&nbsp;runUpdateListeners()</pre>
 </li>
 </ul>
-<a name="method_10353-net.minecraft.scoreboard.ScoreboardObjective-">
+<a name="createChangePackets-net.minecraft.scoreboard.ScoreboardObjective-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_10353</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&nbsp;method_10353(<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;scoreboardObjective)</pre>
+<h4>createChangePackets</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;?&gt;&gt;&nbsp;createChangePackets(<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</pre>
 </li>
 </ul>
 <a name="addScoreboardObjective-net.minecraft.scoreboard.ScoreboardObjective-">
@@ -515,13 +534,13 @@ extends <a href="../../../net/minecraft/scoreboard/Scoreboard.html" title="class
 <pre>public&nbsp;void&nbsp;addScoreboardObjective(<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</pre>
 </li>
 </ul>
-<a name="method_10354-net.minecraft.scoreboard.ScoreboardObjective-">
+<a name="createRemovePackets-net.minecraft.scoreboard.ScoreboardObjective-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_10354</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&nbsp;method_10354(<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;scoreboardObjective)</pre>
+<h4>createRemovePackets</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;?&gt;&gt;&nbsp;createRemovePackets(<a href="../../../net/minecraft/scoreboard/ScoreboardObjective.html" title="class in net.minecraft.scoreboard">ScoreboardObjective</a>&nbsp;objective)</pre>
 </li>
 </ul>
 <a name="removeScoreboardObjective-net.minecraft.scoreboard.ScoreboardObjective-">
@@ -569,7 +588,7 @@ extends <a href="../../../net/minecraft/scoreboard/Scoreboard.html" title="class
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/scoreboard/ScoreboardState.html" title="class in net.minecraft.scoreboard"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/scoreboard/ScoreboardSynchronizer.html" title="class in net.minecraft.scoreboard"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../net/minecraft/scoreboard/Team.html" title="class in net.minecraft.scoreboard"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

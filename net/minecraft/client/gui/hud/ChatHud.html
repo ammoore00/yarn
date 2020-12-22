@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":9,"i6":10,"i7":10,"i8":10,"i9":10,"i10":9,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":9,"i12":10,"i13":9,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li>Prev&nbsp;Class</li>
-<li>Next&nbsp;Class</li>
+<li><a href="../../../../../net/minecraft/client/gui/hud/BossBarHud.html" title="class in net.minecraft.client.gui.hud"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/client/gui/hud/ChatHudLine.html" title="class in net.minecraft.client.gui.hud"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?net/minecraft/client/gui/hud/ChatHud.html" target="_top">Frames</a></li>
@@ -139,24 +139,28 @@ extends <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html" ti
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#client">client</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#field_10038">field_10038</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#field_10039">field_10039</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#field_10040">field_10040</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code>private boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#hasUnreadNewMessages">hasUnreadNewMessages</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#LOGGER">LOGGER</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#messageHistory">messageHistory</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../net/minecraft/client/gui/hud/ChatHudLine.html" title="class in net.minecraft.client.gui.hud">ChatHudLine</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#messages">messages</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#scrolledLines">scrolledLines</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../net/minecraft/client/gui/hud/ChatHudLine.html" title="class in net.minecraft.client.gui.hud">ChatHudLine</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#visibleMessages">visibleMessages</a></span></code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -164,7 +168,7 @@ extends <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html" ti
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.client.gui.<a href="../../../../../net/minecraft/client/gui/DrawableHelper.html" title="class in net.minecraft.client.gui">DrawableHelper</a></h3>
-<code><a href="../../../../../net/minecraft/client/gui/DrawableHelper.html#BACKGROUND_TEXTURE">BACKGROUND_TEXTURE</a>, <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html#GUI_ICONS_TEXTURE">GUI_ICONS_TEXTURE</a>, <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html#STATS_ICON_TEXTURE">STATS_ICON_TEXTURE</a>, <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html#zOffset">zOffset</a></code></li>
+<code><a href="../../../../../net/minecraft/client/gui/DrawableHelper.html#field_27157">field_27157</a>, <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html#field_27158">field_27158</a>, <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html#field_27159">field_27159</a>, <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html#field_27160">field_27160</a></code></li>
 </ul>
 </li>
 </ul>
@@ -199,37 +203,39 @@ extends <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html" ti
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#addMessage-java.lang.String-int-">addMessage</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-          int&nbsp;int2)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#addMessage-net.minecraft.text.Text-">addMessage</a></span>(<a href="../../../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;message)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#addToMessageHistory-java.lang.String-">addToMessageHistory</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#addMessage-net.minecraft.text.Text-int-">addMessage</a></span>(<a href="../../../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;message,
+          int&nbsp;messageId)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#clear--">clear</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>private void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#addMessage-net.minecraft.text.Text-int-int-boolean-">addMessage</a></span>(<a href="../../../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;message,
+          int&nbsp;messageId,
+          int&nbsp;timestamp,
+          boolean&nbsp;bool)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#addToMessageHistory-java.lang.String-">addToMessageHistory</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#clear-boolean-">clear</a></span>(boolean&nbsp;clearHistory)</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>float</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#getChatScale--">getChatScale</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#getHeight--">getHeight</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#getHeight-float-">getHeight</a></span>(float&nbsp;chatHeight)</code>&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#getMessageHistory--">getMessageHistory</a></span>()</code>&nbsp;</td>
-</tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../net/minecraft/class_2722.html" title="class in net.minecraft">class_2722</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#getTextAt-int-int-">getTextAt</a></span>(int&nbsp;x,
-         int&nbsp;y)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#getMessageHistory--">getMessageHistory</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>int</code></td>
@@ -240,28 +246,25 @@ extends <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html" ti
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#getWidth--">getWidth</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code>static int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#getWidth-float-">getWidth</a></span>(float&nbsp;chatWidth)</code>&nbsp;</td>
-</tr>
-<tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#isChatFocused--">isChatFocused</a></span>()</code>&nbsp;</td>
 </tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#method_29071-float-">method_29071</a></span>(float&nbsp;float2)</code>&nbsp;</td>
+</tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#method_11088-java.lang.String-">method_11088</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#method_29073-int-int-">method_29073</a></span>(int&nbsp;int2,
+            int&nbsp;int3)</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#method_11089-java.lang.String-java.lang.Object:A-">method_11089</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>[]&nbsp;object)</code>&nbsp;</td>
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#method_29080-float-">method_29080</a></span>(float&nbsp;float2)</code>&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
-<td class="colFirst"><code>private void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#method_9205-java.lang.String-int-int-boolean-">method_9205</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-           int&nbsp;int2,
-           int&nbsp;int3,
-           boolean&nbsp;bool)</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#method_29081-int-">method_29081</a></span>(int&nbsp;int2)</code>&nbsp;</td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -279,17 +282,13 @@ extends <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html" ti
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#resetScroll--">resetScroll</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/gui/hud/ChatHud.html#scroll-int-">scroll</a></span>(int&nbsp;lines)</code>&nbsp;</td>
-</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.net.minecraft.client.gui.DrawableHelper">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.client.gui.<a href="../../../../../net/minecraft/client/gui/DrawableHelper.html" title="class in net.minecraft.client.gui">DrawableHelper</a></h3>
-<code><a href="../../../../../net/minecraft/client/gui/DrawableHelper.html#drawCenteredString-net.minecraft.client.font.TextRenderer-java.lang.String-int-int-int-">drawCenteredString</a>, <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html#drawSprite-int-int-oshi.hardware.Processor-int-int-">drawSprite</a>, <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html#drawTexture-int-int-int-int-int-int-">drawTexture</a>, <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html#drawWithShadow-net.minecraft.client.font.TextRenderer-java.lang.String-int-int-int-">drawWithShadow</a>, <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html#fill-int-int-int-int-int-">fill</a>, <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html#fillGradient-int-int-int-int-int-int-">fillGradient</a>, <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html#method_11099-int-int-int-int-">method_11099</a>, <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html#method_11100-int-int-int-int-">method_11100</a></code></li>
+<code><a href="../../../../../net/minecraft/client/gui/DrawableHelper.html#method_29014-float-float-int-int-int-int-">method_29014</a>, <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html#method_29015-int-int-float-float-int-int-float-float-">method_29015</a>, <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html#method_29016-int-int-float-float-int-int-int-int-float-float-">method_29016</a>, <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html#method_29017-int-int-int-int-">method_29017</a>, <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html#method_29018-int-int-int-int-int-">method_29018</a>, <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html#method_29019-int-int-int-int-int-int-">method_29019</a>, <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html#method_29020-int-int-net.minecraft.client.texture.Sprite-int-int-">method_29020</a>, <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html#method_29021-net.minecraft.client.font.TextRenderer-java.lang.String-int-int-int-">method_29021</a>, <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html#method_29022-int-int-int-int-">method_29022</a>, <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html#method_29023-int-int-int-int-int-int-">method_29023</a>, <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html#method_29024-net.minecraft.client.font.TextRenderer-java.lang.String-int-int-int-">method_29024</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -312,6 +311,15 @@ extends <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html" ti
 <!--   -->
 </a>
 <h3>Field Detail</h3>
+<a name="LOGGER">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>LOGGER</h4>
+<pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a> LOGGER</pre>
+</li>
+</ul>
 <a name="client">
 <!--   -->
 </a>
@@ -321,31 +329,31 @@ extends <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html" ti
 <pre>private final&nbsp;<a href="../../../../../net/minecraft/client/MinecraftClient.html" title="class in net.minecraft.client">MinecraftClient</a> client</pre>
 </li>
 </ul>
-<a name="field_10038">
+<a name="messageHistory">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_10038</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a> field_10038</pre>
+<h4>messageHistory</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt; messageHistory</pre>
 </li>
 </ul>
-<a name="field_10039">
+<a name="messages">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_10039</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a> field_10039</pre>
+<h4>messages</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../net/minecraft/client/gui/hud/ChatHudLine.html" title="class in net.minecraft.client.gui.hud">ChatHudLine</a>&gt; messages</pre>
 </li>
 </ul>
-<a name="field_10040">
+<a name="visibleMessages">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_10040</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a> field_10040</pre>
+<h4>visibleMessages</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../net/minecraft/client/gui/hud/ChatHudLine.html" title="class in net.minecraft.client.gui.hud">ChatHudLine</a>&gt; visibleMessages</pre>
 </li>
 </ul>
 <a name="scrolledLines">
@@ -400,44 +408,44 @@ extends <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html" ti
 <pre>public&nbsp;void&nbsp;render(int&nbsp;ticks)</pre>
 </li>
 </ul>
-<a name="clear--">
+<a name="clear-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>clear</h4>
-<pre>public&nbsp;void&nbsp;clear()</pre>
+<pre>public&nbsp;void&nbsp;clear(boolean&nbsp;clearHistory)</pre>
 </li>
 </ul>
-<a name="method_11088-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_11088</h4>
-<pre>public&nbsp;void&nbsp;method_11088(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
-</li>
-</ul>
-<a name="addMessage-java.lang.String-int-">
+<a name="addMessage-net.minecraft.text.Text-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>addMessage</h4>
-<pre>public&nbsp;void&nbsp;addMessage(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                       int&nbsp;int2)</pre>
+<pre>public&nbsp;void&nbsp;addMessage(<a href="../../../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;message)</pre>
 </li>
 </ul>
-<a name="method_9205-java.lang.String-int-int-boolean-">
+<a name="addMessage-net.minecraft.text.Text-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_9205</h4>
-<pre>private&nbsp;void&nbsp;method_9205(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                         int&nbsp;int2,
-                         int&nbsp;int3,
-                         boolean&nbsp;bool)</pre>
+<h4>addMessage</h4>
+<pre>public&nbsp;void&nbsp;addMessage(<a href="../../../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;message,
+                       int&nbsp;messageId)</pre>
+</li>
+</ul>
+<a name="addMessage-net.minecraft.text.Text-int-int-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addMessage</h4>
+<pre>private&nbsp;void&nbsp;addMessage(<a href="../../../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;message,
+                        int&nbsp;messageId,
+                        int&nbsp;timestamp,
+                        boolean&nbsp;bool)</pre>
 </li>
 </ul>
 <a name="reset--">
@@ -455,7 +463,7 @@ extends <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>getMessageHistory</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&nbsp;getMessageHistory()</pre>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getMessageHistory()</pre>
 </li>
 </ul>
 <a name="addToMessageHistory-java.lang.String-">
@@ -476,33 +484,24 @@ extends <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html" ti
 <pre>public&nbsp;void&nbsp;resetScroll()</pre>
 </li>
 </ul>
-<a name="scroll-int-">
+<a name="method_29081-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>scroll</h4>
-<pre>public&nbsp;void&nbsp;scroll(int&nbsp;lines)</pre>
+<h4>method_29081</h4>
+<pre>public&nbsp;void&nbsp;method_29081(int&nbsp;int2)</pre>
 </li>
 </ul>
-<a name="getTextAt-int-int-">
+<a name="method_29073-int-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getTextAt</h4>
-<pre>public&nbsp;<a href="../../../../../net/minecraft/class_2722.html" title="class in net.minecraft">class_2722</a>&nbsp;getTextAt(int&nbsp;x,
-                            int&nbsp;y)</pre>
-</li>
-</ul>
-<a name="method_11089-java.lang.String-java.lang.Object:A-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_11089</h4>
-<pre>public&nbsp;void&nbsp;method_11089(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>[]&nbsp;object)</pre>
+<h4>method_29073</h4>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="../../../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;method_29073(int&nbsp;int2,
+                                   int&nbsp;int3)</pre>
 </li>
 </ul>
 <a name="isChatFocused--">
@@ -550,22 +549,22 @@ extends <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html" ti
 <pre>public&nbsp;float&nbsp;getChatScale()</pre>
 </li>
 </ul>
-<a name="getWidth-float-">
+<a name="method_29071-float-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getWidth</h4>
-<pre>public static final&nbsp;int&nbsp;getWidth(float&nbsp;chatWidth)</pre>
+<h4>method_29071</h4>
+<pre>public static&nbsp;int&nbsp;method_29071(float&nbsp;float2)</pre>
 </li>
 </ul>
-<a name="getHeight-float-">
+<a name="method_29080-float-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getHeight</h4>
-<pre>public static final&nbsp;int&nbsp;getHeight(float&nbsp;chatHeight)</pre>
+<h4>method_29080</h4>
+<pre>public static&nbsp;int&nbsp;method_29080(float&nbsp;float2)</pre>
 </li>
 </ul>
 <a name="getVisibleLineCount--">
@@ -604,8 +603,8 @@ extends <a href="../../../../../net/minecraft/client/gui/DrawableHelper.html" ti
 </div>
 <div class="subNav">
 <ul class="navList">
-<li>Prev&nbsp;Class</li>
-<li>Next&nbsp;Class</li>
+<li><a href="../../../../../net/minecraft/client/gui/hud/BossBarHud.html" title="class in net.minecraft.client.gui.hud"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/client/gui/hud/ChatHudLine.html" title="class in net.minecraft.client.gui.hud"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?net/minecraft/client/gui/hud/ChatHud.html" target="_top">Frames</a></li>
