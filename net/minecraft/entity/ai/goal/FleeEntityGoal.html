@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../net/minecraft/entity/ai/goal/EscapeSunlightGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../net/minecraft/entity/ai/goal/FlyOntoTreeGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/entity/ai/goal/FollowGolemGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?net/minecraft/entity/ai/goal/FleeEntityGoal.html" target="_top">Frames</a></li>
@@ -92,7 +92,7 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">net.minecraft.entity.ai.goal</div>
-<h2 title="Class FleeEntityGoal" class="title">Class FleeEntityGoal&lt;T extends <a href="../../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&gt;</h2>
+<h2 title="Class FleeEntityGoal" class="title">Class FleeEntityGoal</h2>
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
@@ -102,7 +102,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal">net.minecraft.entity.ai.goal.Goal</a></li>
 <li>
 <ul class="inheritance">
-<li>net.minecraft.entity.ai.goal.FleeEntityGoal&lt;T&gt;</li>
+<li>net.minecraft.entity.ai.goal.FleeEntityGoal</li>
 </ul>
 </li>
 </ul>
@@ -111,13 +111,9 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../../../net/minecraft/entity/passive/RabbitEntity.FleeGoal.html" title="class in net.minecraft.entity.passive">RabbitEntity.FleeGoal</a>, <a href="../../../../../net/minecraft/entity/passive/WolfEntity.AvoidLlamaGoal.html" title="class in net.minecraft.entity.passive">WolfEntity.AvoidLlamaGoal</a></dd>
-</dl>
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">FleeEntityGoal&lt;T extends <a href="../../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&gt;</span>
+<pre>public class <span class="typeNameLabel">FleeEntityGoal</span>
 extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</a></pre>
 </li>
 </ul>
@@ -138,28 +134,20 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="../../../../../net/minecraft/entity/ai/goal/FleeEntityGoal.html" title="type parameter in FleeEntityGoal">T</a>&gt;</code></td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FleeEntityGoal.html#classToFleeFrom">classToFleeFrom</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>private float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FleeEntityGoal.html#distance">distance</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>private double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FleeEntityGoal.html#fastSpeed">fastSpeed</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../../../net/minecraft/entity/ai/goal/FleeEntityGoal.html" title="type parameter in FleeEntityGoal">T</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FleeEntityGoal.html#field_33329">field_33329</a></span></code>&nbsp;</td>
-</tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="https://guava.dev/releases/21.0/api/docs/com/google/common/base/Predicate.html?is-external=true" title="class or interface in com.google.common.base">Predicate</a>&lt;<a href="../../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FleeEntityGoal.html#field_33330">field_33330</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="https://guava.dev/releases/21.0/api/docs/com/google/common/base/Predicate.html?is-external=true" title="class or interface in com.google.common.base">Predicate</a>&lt;? super <a href="../../../../../net/minecraft/entity/ai/goal/FleeEntityGoal.html" title="type parameter in FleeEntityGoal">T</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FleeEntityGoal.html#field_33337">field_33337</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FleeEntityGoal.html#fleeDistance">fleeDistance</a></span></code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../net/minecraft/class_2625.html" title="interface in net.minecraft">class_2625</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FleeEntityGoal.html#field_11525">field_11525</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private <a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html" title="class in net.minecraft.entity.ai.pathing">EntityNavigation</a></code></td>
@@ -170,12 +158,16 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FleeEntityGoal.html#fleePath">fleePath</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../../../net/minecraft/entity/mob/MobEntityWithAi.html" title="class in net.minecraft.entity.mob">MobEntityWithAi</a></code></td>
+<td class="colFirst"><code>private <a href="../../../../../net/minecraft/entity/mob/PathAwareEntity.html" title="class in net.minecraft.entity.mob">PathAwareEntity</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FleeEntityGoal.html#mob">mob</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FleeEntityGoal.html#slowSpeed">slowSpeed</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="../../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FleeEntityGoal.html#targetEntity">targetEntity</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -192,19 +184,11 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FleeEntityGoal.html#FleeEntityGoal-net.minecraft.entity.mob.MobEntityWithAi-java.lang.Class-float-double-double-">FleeEntityGoal</a></span>(<a href="../../../../../net/minecraft/entity/mob/MobEntityWithAi.html" title="class in net.minecraft.entity.mob">MobEntityWithAi</a>&nbsp;mobEntityWithAi,
-              <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="../../../../../net/minecraft/entity/ai/goal/FleeEntityGoal.html" title="type parameter in FleeEntityGoal">T</a>&gt;&nbsp;class2,
-              float&nbsp;float2,
-              double&nbsp;double2,
-              double&nbsp;double3)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FleeEntityGoal.html#FleeEntityGoal-net.minecraft.entity.mob.MobEntityWithAi-java.lang.Class-com.google.common.base.Predicate-float-double-double-">FleeEntityGoal</a></span>(<a href="../../../../../net/minecraft/entity/mob/MobEntityWithAi.html" title="class in net.minecraft.entity.mob">MobEntityWithAi</a>&nbsp;mobEntityWithAi,
-              <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="../../../../../net/minecraft/entity/ai/goal/FleeEntityGoal.html" title="type parameter in FleeEntityGoal">T</a>&gt;&nbsp;class2,
-              <a href="https://guava.dev/releases/21.0/api/docs/com/google/common/base/Predicate.html?is-external=true" title="class or interface in com.google.common.base">Predicate</a>&lt;? super <a href="../../../../../net/minecraft/entity/ai/goal/FleeEntityGoal.html" title="type parameter in FleeEntityGoal">T</a>&gt;&nbsp;predicate,
-              float&nbsp;float2,
-              double&nbsp;double2,
-              double&nbsp;double3)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/FleeEntityGoal.html#FleeEntityGoal-net.minecraft.entity.mob.PathAwareEntity-java.lang.Class-float-double-double-">FleeEntityGoal</a></span>(<a href="../../../../../net/minecraft/entity/mob/PathAwareEntity.html" title="class in net.minecraft.entity.mob">PathAwareEntity</a>&nbsp;mob,
+              <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;classToFleeFrom,
+              float&nbsp;distance,
+              double&nbsp;slowSpeed,
+              double&nbsp;fastSpeed)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -247,7 +231,7 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.entity.ai.goal.<a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</a></h3>
-<code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#canStop--">canStop</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_34938-int-">method_34938</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_34944--">method_34944</a></code></li>
+<code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#canStop--">canStop</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#getControls--">getControls</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#setControls-int-">setControls</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -270,13 +254,13 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_33330">
+<a name="field_11525">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_33330</h4>
-<pre>private final&nbsp;<a href="https://guava.dev/releases/21.0/api/docs/com/google/common/base/Predicate.html?is-external=true" title="class or interface in com.google.common.base">Predicate</a>&lt;<a href="../../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&gt; field_33330</pre>
+<h4>field_11525</h4>
+<pre>public final&nbsp;<a href="../../../../../net/minecraft/class_2625.html" title="interface in net.minecraft">class_2625</a> field_11525</pre>
 </li>
 </ul>
 <a name="mob">
@@ -285,7 +269,7 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <ul class="blockList">
 <li class="blockList">
 <h4>mob</h4>
-<pre>protected&nbsp;<a href="../../../../../net/minecraft/entity/mob/MobEntityWithAi.html" title="class in net.minecraft.entity.mob">MobEntityWithAi</a> mob</pre>
+<pre>private&nbsp;<a href="../../../../../net/minecraft/entity/mob/PathAwareEntity.html" title="class in net.minecraft.entity.mob">PathAwareEntity</a> mob</pre>
 </li>
 </ul>
 <a name="slowSpeed">
@@ -294,7 +278,7 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <ul class="blockList">
 <li class="blockList">
 <h4>slowSpeed</h4>
-<pre>private final&nbsp;double slowSpeed</pre>
+<pre>private&nbsp;double slowSpeed</pre>
 </li>
 </ul>
 <a name="fastSpeed">
@@ -303,25 +287,25 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <ul class="blockList">
 <li class="blockList">
 <h4>fastSpeed</h4>
-<pre>private final&nbsp;double fastSpeed</pre>
+<pre>private&nbsp;double fastSpeed</pre>
 </li>
 </ul>
-<a name="field_33329">
+<a name="targetEntity">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_33329</h4>
-<pre>protected&nbsp;<a href="../../../../../net/minecraft/entity/ai/goal/FleeEntityGoal.html" title="type parameter in FleeEntityGoal">T</a> extends <a href="../../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a> field_33329</pre>
+<h4>targetEntity</h4>
+<pre>private&nbsp;<a href="../../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a> targetEntity</pre>
 </li>
 </ul>
-<a name="fleeDistance">
+<a name="distance">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>fleeDistance</h4>
-<pre>private final&nbsp;float fleeDistance</pre>
+<h4>distance</h4>
+<pre>private&nbsp;float distance</pre>
 </li>
 </ul>
 <a name="fleePath">
@@ -339,25 +323,16 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <ul class="blockList">
 <li class="blockList">
 <h4>fleeingEntityNavigation</h4>
-<pre>private final&nbsp;<a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html" title="class in net.minecraft.entity.ai.pathing">EntityNavigation</a> fleeingEntityNavigation</pre>
+<pre>private&nbsp;<a href="../../../../../net/minecraft/entity/ai/pathing/EntityNavigation.html" title="class in net.minecraft.entity.ai.pathing">EntityNavigation</a> fleeingEntityNavigation</pre>
 </li>
 </ul>
 <a name="classToFleeFrom">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
-<h4>classToFleeFrom</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="../../../../../net/minecraft/entity/ai/goal/FleeEntityGoal.html" title="type parameter in FleeEntityGoal">T</a> extends <a href="../../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&gt; classToFleeFrom</pre>
-</li>
-</ul>
-<a name="field_33337">
-<!--   -->
-</a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_33337</h4>
-<pre>private final&nbsp;<a href="https://guava.dev/releases/21.0/api/docs/com/google/common/base/Predicate.html?is-external=true" title="class or interface in com.google.common.base">Predicate</a>&lt;? super <a href="../../../../../net/minecraft/entity/ai/goal/FleeEntityGoal.html" title="type parameter in FleeEntityGoal">T</a> extends <a href="../../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&gt; field_33337</pre>
+<h4>classToFleeFrom</h4>
+<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a> classToFleeFrom</pre>
 </li>
 </ul>
 </li>
@@ -368,31 +343,17 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="FleeEntityGoal-net.minecraft.entity.mob.MobEntityWithAi-java.lang.Class-float-double-double-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>FleeEntityGoal</h4>
-<pre>public&nbsp;FleeEntityGoal(<a href="../../../../../net/minecraft/entity/mob/MobEntityWithAi.html" title="class in net.minecraft.entity.mob">MobEntityWithAi</a>&nbsp;mobEntityWithAi,
-                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="../../../../../net/minecraft/entity/ai/goal/FleeEntityGoal.html" title="type parameter in FleeEntityGoal">T</a>&gt;&nbsp;class2,
-                      float&nbsp;float2,
-                      double&nbsp;double2,
-                      double&nbsp;double3)</pre>
-</li>
-</ul>
-<a name="FleeEntityGoal-net.minecraft.entity.mob.MobEntityWithAi-java.lang.Class-com.google.common.base.Predicate-float-double-double-">
+<a name="FleeEntityGoal-net.minecraft.entity.mob.PathAwareEntity-java.lang.Class-float-double-double-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>FleeEntityGoal</h4>
-<pre>public&nbsp;FleeEntityGoal(<a href="../../../../../net/minecraft/entity/mob/MobEntityWithAi.html" title="class in net.minecraft.entity.mob">MobEntityWithAi</a>&nbsp;mobEntityWithAi,
-                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="../../../../../net/minecraft/entity/ai/goal/FleeEntityGoal.html" title="type parameter in FleeEntityGoal">T</a>&gt;&nbsp;class2,
-                      <a href="https://guava.dev/releases/21.0/api/docs/com/google/common/base/Predicate.html?is-external=true" title="class or interface in com.google.common.base">Predicate</a>&lt;? super <a href="../../../../../net/minecraft/entity/ai/goal/FleeEntityGoal.html" title="type parameter in FleeEntityGoal">T</a>&gt;&nbsp;predicate,
-                      float&nbsp;float2,
-                      double&nbsp;double2,
-                      double&nbsp;double3)</pre>
+<pre>public&nbsp;FleeEntityGoal(<a href="../../../../../net/minecraft/entity/mob/PathAwareEntity.html" title="class in net.minecraft.entity.mob">PathAwareEntity</a>&nbsp;mob,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;classToFleeFrom,
+                      float&nbsp;distance,
+                      double&nbsp;slowSpeed,
+                      double&nbsp;fastSpeed)</pre>
 </li>
 </ul>
 </li>
@@ -496,7 +457,7 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../net/minecraft/entity/ai/goal/EscapeSunlightGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../net/minecraft/entity/ai/goal/FlyOntoTreeGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/entity/ai/goal/FollowGolemGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?net/minecraft/entity/ai/goal/FleeEntityGoal.html" target="_top">Frames</a></li>

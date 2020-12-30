@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":9,"i10":10,"i11":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -137,12 +137,12 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/level/LevelInfo.html#commands">commands</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/level/LevelInfo.html#field_23609">field_23609</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>private <a href="../../../../net/minecraft/world/GameMode.html" title="enum in net.minecraft.world">GameMode</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/level/LevelInfo.html#gameMode">gameMode</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/level/LevelInfo.html#generatorOptions">generatorOptions</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private <a href="../../../../net/minecraft/world/level/LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a></code></td>
@@ -178,11 +178,11 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/level/LevelInfo.html#LevelInfo-net.minecraft.world.level.LevelProperties-">LevelInfo</a></span>(<a href="../../../../net/minecraft/world/level/LevelProperties.html" title="class in net.minecraft.world.level">LevelProperties</a>&nbsp;levelProperties)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/level/LevelInfo.html#LevelInfo-long-net.minecraft.world.GameMode-boolean-boolean-net.minecraft.world.level.LevelGeneratorType-">LevelInfo</a></span>(long&nbsp;long2,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/level/LevelInfo.html#LevelInfo-long-net.minecraft.world.GameMode-boolean-boolean-net.minecraft.world.level.LevelGeneratorType-">LevelInfo</a></span>(long&nbsp;seed,
          <a href="../../../../net/minecraft/world/GameMode.html" title="enum in net.minecraft.world">GameMode</a>&nbsp;gameMode,
-         boolean&nbsp;bool,
-         boolean&nbsp;bool2,
-         <a href="../../../../net/minecraft/world/level/LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a>&nbsp;levelGeneratorType)</code>&nbsp;</td>
+         boolean&nbsp;structures,
+         boolean&nbsp;hardcore,
+         <a href="../../../../net/minecraft/world/level/LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a>&nbsp;generatorType)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -212,40 +212,40 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/level/LevelInfo.html#getGameMode--">getGameMode</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../net/minecraft/world/GameMode.html" title="enum in net.minecraft.world">GameMode</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/level/LevelInfo.html#getGameModeById-int-">getGameModeById</a></span>(int&nbsp;id)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/level/LevelInfo.html#getGeneratorOptions--">getGeneratorOptions</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../net/minecraft/world/level/LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/level/LevelInfo.html#getGeneratorType--">getGeneratorType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/level/LevelInfo.html#getSeed--">getSeed</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/level/LevelInfo.html#hasBonusChest--">hasBonusChest</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/level/LevelInfo.html#hasStructures--">hasStructures</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/level/LevelInfo.html#isHardcore--">isHardcore</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>static <a href="../../../../net/minecraft/world/GameMode.html" title="enum in net.minecraft.world">GameMode</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/level/LevelInfo.html#method_26175-int-">method_26175</a></span>(int&nbsp;int2)</code>&nbsp;</td>
-</tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../../net/minecraft/world/level/LevelInfo.html" title="class in net.minecraft.world.level">LevelInfo</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/level/LevelInfo.html#method_26176-java.lang.String-">method_26176</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/level/LevelInfo.html#setBonusChest--">setBonusChest</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../../net/minecraft/world/level/LevelInfo.html" title="class in net.minecraft.world.level">LevelInfo</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/level/LevelInfo.html#setBonusChest--">setBonusChest</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/level/LevelInfo.html#setGeneratorOptions-java.lang.String-">setGeneratorOptions</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;generatorOptions)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -332,13 +332,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>private&nbsp;boolean bonusChest</pre>
 </li>
 </ul>
-<a name="field_23609">
+<a name="generatorOptions">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_23609</h4>
-<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> field_23609</pre>
+<h4>generatorOptions</h4>
+<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> generatorOptions</pre>
 </li>
 </ul>
 </li>
@@ -355,11 +355,11 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>LevelInfo</h4>
-<pre>public&nbsp;LevelInfo(long&nbsp;long2,
+<pre>public&nbsp;LevelInfo(long&nbsp;seed,
                  <a href="../../../../net/minecraft/world/GameMode.html" title="enum in net.minecraft.world">GameMode</a>&nbsp;gameMode,
-                 boolean&nbsp;bool,
-                 boolean&nbsp;bool2,
-                 <a href="../../../../net/minecraft/world/level/LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a>&nbsp;levelGeneratorType)</pre>
+                 boolean&nbsp;structures,
+                 boolean&nbsp;hardcore,
+                 <a href="../../../../net/minecraft/world/level/LevelGeneratorType.html" title="class in net.minecraft.world.level">LevelGeneratorType</a>&nbsp;generatorType)</pre>
 </li>
 </ul>
 <a name="LevelInfo-net.minecraft.world.level.LevelProperties-">
@@ -398,13 +398,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 public&nbsp;<a href="../../../../net/minecraft/world/level/LevelInfo.html" title="class in net.minecraft.world.level">LevelInfo</a>&nbsp;enableCommands()</pre>
 </li>
 </ul>
-<a name="method_26176-java.lang.String-">
+<a name="setGeneratorOptions-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_26176</h4>
-<pre>public&nbsp;<a href="../../../../net/minecraft/world/level/LevelInfo.html" title="class in net.minecraft.world.level">LevelInfo</a>&nbsp;method_26176(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
+<h4>setGeneratorOptions</h4>
+<pre>public&nbsp;<a href="../../../../net/minecraft/world/level/LevelInfo.html" title="class in net.minecraft.world.level">LevelInfo</a>&nbsp;setGeneratorOptions(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;generatorOptions)</pre>
 </li>
 </ul>
 <a name="hasBonusChest--">
@@ -470,13 +470,13 @@ public&nbsp;<a href="../../../../net/minecraft/world/level/LevelInfo.html" title
 <pre>public&nbsp;boolean&nbsp;allowCommands()</pre>
 </li>
 </ul>
-<a name="method_26175-int-">
+<a name="getGameModeById-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_26175</h4>
-<pre>public static&nbsp;<a href="../../../../net/minecraft/world/GameMode.html" title="enum in net.minecraft.world">GameMode</a>&nbsp;method_26175(int&nbsp;int2)</pre>
+<h4>getGameModeById</h4>
+<pre>public static&nbsp;<a href="../../../../net/minecraft/world/GameMode.html" title="enum in net.minecraft.world">GameMode</a>&nbsp;getGameModeById(int&nbsp;id)</pre>
 </li>
 </ul>
 <a name="getGeneratorOptions--">

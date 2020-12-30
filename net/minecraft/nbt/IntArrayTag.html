@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9,"i7":10,"i8":10};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -143,7 +143,7 @@ extends <a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecr
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.nbt.<a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></h3>
-<code><a href="../../../net/minecraft/nbt/Tag.html#field_30792">field_30792</a></code></li>
+<code><a href="../../../net/minecraft/nbt/Tag.html#TYPES">TYPES</a></code></li>
 </ul>
 </li>
 </ul>
@@ -164,9 +164,6 @@ extends <a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecr
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/IntArrayTag.html#IntArrayTag-int:A-">IntArrayTag</a></span>(int[]&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/IntArrayTag.html#IntArrayTag-java.util.List-">IntArrayTag</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;value)</code>&nbsp;</td>
-</tr>
 </table>
 </li>
 </ul>
@@ -177,18 +174,18 @@ extends <a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecr
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/nbt/IntArrayTag.html" title="class in net.minecraft.nbt">IntArrayTag</a></code></td>
+<td class="colFirst"><code><a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/IntArrayTag.html#copy--">copy</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/IntArrayTag.html#equals-java.lang.Object-">equals</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;object)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/IntArrayTag.html#equals-java.lang.Object-">equals</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;other)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>int[]</code></td>
@@ -204,19 +201,15 @@ extends <a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecr
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>(package private) void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/IntArrayTag.html#method_32150-java.io.DataInput-int-net.minecraft.nbt.PositionTracker-">method_32150</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataInput.html?is-external=true" title="class or interface in java.io">DataInput</a>&nbsp;dataInput,
-            int&nbsp;int2,
-            <a href="../../../net/minecraft/nbt/PositionTracker.html" title="class in net.minecraft.nbt">PositionTracker</a>&nbsp;positionTracker)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/IntArrayTag.html#read-java.io.DataInput-int-net.minecraft.nbt.PositionTracker-">read</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataInput.html?is-external=true" title="class or interface in java.io">DataInput</a>&nbsp;input,
+    int&nbsp;depth,
+    <a href="../../../net/minecraft/nbt/PositionTracker.html" title="class in net.minecraft.nbt">PositionTracker</a>&nbsp;tracker)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>private static int[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/IntArrayTag.html#toArray-java.util.List-">toArray</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;list)</code>&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/IntArrayTag.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>(package private) void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/nbt/IntArrayTag.html#write-java.io.DataOutput-">write</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataOutput.html?is-external=true" title="class or interface in java.io">DataOutput</a>&nbsp;output)</code>&nbsp;</td>
 </tr>
@@ -226,7 +219,7 @@ extends <a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecr
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.nbt.<a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></h3>
-<code><a href="../../../net/minecraft/nbt/Tag.html#asString--">asString</a>, <a href="../../../net/minecraft/nbt/Tag.html#isEmpty--">isEmpty</a>, <a href="../../../net/minecraft/nbt/Tag.html#method_32149-byte-">method_32149</a>, <a href="../../../net/minecraft/nbt/Tag.html#method_32155-int-">method_32155</a></code></li>
+<code><a href="../../../net/minecraft/nbt/Tag.html#asString--">asString</a>, <a href="../../../net/minecraft/nbt/Tag.html#createByTypeId-byte-">createByTypeId</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -278,19 +271,10 @@ extends <a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecr
 <a name="IntArrayTag-int:A-">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
-<h4>IntArrayTag</h4>
-<pre>public&nbsp;IntArrayTag(int[]&nbsp;value)</pre>
-</li>
-</ul>
-<a name="IntArrayTag-java.util.List-">
-<!--   -->
-</a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>IntArrayTag</h4>
-<pre>public&nbsp;IntArrayTag(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;value)</pre>
+<pre>public&nbsp;IntArrayTag(int[]&nbsp;value)</pre>
 </li>
 </ul>
 </li>
@@ -301,46 +285,31 @@ extends <a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecr
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="toArray-java.util.List-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>toArray</h4>
-<pre>private static&nbsp;int[]&nbsp;toArray(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;list)</pre>
-</li>
-</ul>
 <a name="write-java.io.DataOutput-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>write</h4>
-<pre>void&nbsp;write(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataOutput.html?is-external=true" title="class or interface in java.io">DataOutput</a>&nbsp;output)
-    throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<pre>void&nbsp;write(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataOutput.html?is-external=true" title="class or interface in java.io">DataOutput</a>&nbsp;output)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../net/minecraft/nbt/Tag.html#write-java.io.DataOutput-">write</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></code></dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_32150-java.io.DataInput-int-net.minecraft.nbt.PositionTracker-">
+<a name="read-java.io.DataInput-int-net.minecraft.nbt.PositionTracker-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_32150</h4>
-<pre>void&nbsp;method_32150(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataInput.html?is-external=true" title="class or interface in java.io">DataInput</a>&nbsp;dataInput,
-                  int&nbsp;int2,
-                  <a href="../../../net/minecraft/nbt/PositionTracker.html" title="class in net.minecraft.nbt">PositionTracker</a>&nbsp;positionTracker)
-           throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<h4>read</h4>
+<pre>void&nbsp;read(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataInput.html?is-external=true" title="class or interface in java.io">DataInput</a>&nbsp;input,
+          int&nbsp;depth,
+          <a href="../../../net/minecraft/nbt/PositionTracker.html" title="class in net.minecraft.nbt">PositionTracker</a>&nbsp;tracker)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/nbt/Tag.html#method_32150-java.io.DataInput-int-net.minecraft.nbt.PositionTracker-">method_32150</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></code></dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code><a href="../../../net/minecraft/nbt/Tag.html#read-java.io.DataInput-int-net.minecraft.nbt.PositionTracker-">read</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -376,7 +345,7 @@ extends <a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecr
 <ul class="blockList">
 <li class="blockList">
 <h4>copy</h4>
-<pre>public&nbsp;<a href="../../../net/minecraft/nbt/IntArrayTag.html" title="class in net.minecraft.nbt">IntArrayTag</a>&nbsp;copy()</pre>
+<pre>public&nbsp;<a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a>&nbsp;copy()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../net/minecraft/nbt/Tag.html#copy--">copy</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></code></dd>
@@ -389,7 +358,7 @@ extends <a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecr
 <ul class="blockList">
 <li class="blockList">
 <h4>equals</h4>
-<pre>public&nbsp;boolean&nbsp;equals(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;object)</pre>
+<pre>public&nbsp;boolean&nbsp;equals(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;other)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../net/minecraft/nbt/Tag.html#equals-java.lang.Object-">equals</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/nbt/Tag.html" title="class in net.minecraft.nbt">Tag</a></code></dd>

@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html" title="class in net.minecraft.scoreboard"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/scoreboard/ScoreboardSynchronizer.html" title="class in net.minecraft.scoreboard"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html" title="class in net.minecraft.scoreboard"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/scoreboard/ScoreboardState.html" target="_top">Frames</a></li>
@@ -134,16 +134,16 @@ extends <a href="../../../net/minecraft/world/PersistentState.html" title="class
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardState.html#LOGGER">LOGGER</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../net/minecraft/scoreboard/Scoreboard.html" title="class in net.minecraft.scoreboard">Scoreboard</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardState.html#field_2456">field_2456</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../net/minecraft/scoreboard/Scoreboard.html" title="class in net.minecraft.scoreboard">Scoreboard</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardState.html#scoreboard">scoreboard</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardState.html#field_2457">field_2457</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardState.html#tag">tag</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardState.html#LOGGER">LOGGER</a></span></code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -151,7 +151,7 @@ extends <a href="../../../net/minecraft/world/PersistentState.html" title="class
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.world.<a href="../../../net/minecraft/world/PersistentState.html" title="class in net.minecraft.world">PersistentState</a></h3>
-<code><a href="../../../net/minecraft/world/PersistentState.html#field_26379">field_26379</a></code></li>
+<code><a href="../../../net/minecraft/world/PersistentState.html#id">id</a></code></li>
 </ul>
 </li>
 </ul>
@@ -170,7 +170,7 @@ extends <a href="../../../net/minecraft/world/PersistentState.html" title="class
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardState.html#ScoreboardState--">ScoreboardState</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardState.html#ScoreboardState-java.lang.String-">ScoreboardState</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardState.html#ScoreboardState-java.lang.String-">ScoreboardState</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -206,15 +206,15 @@ extends <a href="../../../net/minecraft/world/PersistentState.html" title="class
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardState.html#method_28639-net.minecraft.nbt.ListTag-">method_28639</a></span>(<a href="../../../net/minecraft/nbt/ListTag.html" title="class in net.minecraft.nbt">ListTag</a>&nbsp;listTag)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardState.html#method_2163-net.minecraft.nbt.ListTag-">method_2163</a></span>(<a href="../../../net/minecraft/nbt/ListTag.html" title="class in net.minecraft.nbt">ListTag</a>&nbsp;listTag)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardState.html#method_28641-net.minecraft.nbt.ListTag-">method_28641</a></span>(<a href="../../../net/minecraft/nbt/ListTag.html" title="class in net.minecraft.nbt">ListTag</a>&nbsp;listTag)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardState.html#method_2165-net.minecraft.nbt.ListTag-">method_2165</a></span>(<a href="../../../net/minecraft/nbt/ListTag.html" title="class in net.minecraft.nbt">ListTag</a>&nbsp;listTag)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>protected <a href="../../../net/minecraft/nbt/ListTag.html" title="class in net.minecraft.nbt">ListTag</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardState.html#method_28643--">method_28643</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardState.html#method_2167--">method_2167</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../net/minecraft/nbt/ListTag.html" title="class in net.minecraft.nbt">ListTag</a></code></td>
@@ -233,7 +233,7 @@ extends <a href="../../../net/minecraft/world/PersistentState.html" title="class
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardState.html#setScoreboard-net.minecraft.scoreboard.Scoreboard-">setScoreboard</a></span>(<a href="../../../net/minecraft/scoreboard/Scoreboard.html" title="class in net.minecraft.scoreboard">Scoreboard</a>&nbsp;scoreboard)</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a></code></td>
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/scoreboard/ScoreboardState.html#toTag-net.minecraft.nbt.CompoundTag-">toTag</a></span>(<a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</code>&nbsp;</td>
 </tr>
 </table>
@@ -274,22 +274,22 @@ extends <a href="../../../net/minecraft/world/PersistentState.html" title="class
 <pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a> LOGGER</pre>
 </li>
 </ul>
-<a name="scoreboard">
+<a name="field_2456">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>scoreboard</h4>
-<pre>private&nbsp;<a href="../../../net/minecraft/scoreboard/Scoreboard.html" title="class in net.minecraft.scoreboard">Scoreboard</a> scoreboard</pre>
+<h4>field_2456</h4>
+<pre>private&nbsp;<a href="../../../net/minecraft/scoreboard/Scoreboard.html" title="class in net.minecraft.scoreboard">Scoreboard</a> field_2456</pre>
 </li>
 </ul>
-<a name="tag">
+<a name="field_2457">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>tag</h4>
-<pre>private&nbsp;<a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a> tag</pre>
+<h4>field_2457</h4>
+<pre>private&nbsp;<a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a> field_2457</pre>
 </li>
 </ul>
 </li>
@@ -315,7 +315,7 @@ extends <a href="../../../net/minecraft/world/PersistentState.html" title="class
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ScoreboardState</h4>
-<pre>public&nbsp;ScoreboardState(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
+<pre>public&nbsp;ScoreboardState(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id)</pre>
 </li>
 </ul>
 </li>
@@ -376,22 +376,22 @@ extends <a href="../../../net/minecraft/world/PersistentState.html" title="class
 <pre>protected&nbsp;void&nbsp;deserializeDisplaySlots(<a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</pre>
 </li>
 </ul>
-<a name="method_28639-net.minecraft.nbt.ListTag-">
+<a name="method_2163-net.minecraft.nbt.ListTag-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_28639</h4>
-<pre>protected&nbsp;void&nbsp;method_28639(<a href="../../../net/minecraft/nbt/ListTag.html" title="class in net.minecraft.nbt">ListTag</a>&nbsp;listTag)</pre>
+<h4>method_2163</h4>
+<pre>protected&nbsp;void&nbsp;method_2163(<a href="../../../net/minecraft/nbt/ListTag.html" title="class in net.minecraft.nbt">ListTag</a>&nbsp;listTag)</pre>
 </li>
 </ul>
-<a name="method_28641-net.minecraft.nbt.ListTag-">
+<a name="method_2165-net.minecraft.nbt.ListTag-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_28641</h4>
-<pre>protected&nbsp;void&nbsp;method_28641(<a href="../../../net/minecraft/nbt/ListTag.html" title="class in net.minecraft.nbt">ListTag</a>&nbsp;listTag)</pre>
+<h4>method_2165</h4>
+<pre>protected&nbsp;void&nbsp;method_2165(<a href="../../../net/minecraft/nbt/ListTag.html" title="class in net.minecraft.nbt">ListTag</a>&nbsp;listTag)</pre>
 </li>
 </ul>
 <a name="toTag-net.minecraft.nbt.CompoundTag-">
@@ -400,7 +400,7 @@ extends <a href="../../../net/minecraft/world/PersistentState.html" title="class
 <ul class="blockList">
 <li class="blockList">
 <h4>toTag</h4>
-<pre>public&nbsp;<a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;toTag(<a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</pre>
+<pre>public&nbsp;void&nbsp;toTag(<a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../net/minecraft/world/PersistentState.html#toTag-net.minecraft.nbt.CompoundTag-">toTag</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/world/PersistentState.html" title="class in net.minecraft.world">PersistentState</a></code></dd>
@@ -434,13 +434,13 @@ extends <a href="../../../net/minecraft/world/PersistentState.html" title="class
 <pre>protected&nbsp;<a href="../../../net/minecraft/nbt/ListTag.html" title="class in net.minecraft.nbt">ListTag</a>&nbsp;serializeObjectives()</pre>
 </li>
 </ul>
-<a name="method_28643--">
+<a name="method_2167--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_28643</h4>
-<pre>protected&nbsp;<a href="../../../net/minecraft/nbt/ListTag.html" title="class in net.minecraft.nbt">ListTag</a>&nbsp;method_28643()</pre>
+<h4>method_2167</h4>
+<pre>protected&nbsp;<a href="../../../net/minecraft/nbt/ListTag.html" title="class in net.minecraft.nbt">ListTag</a>&nbsp;method_2167()</pre>
 </li>
 </ul>
 </li>
@@ -471,7 +471,7 @@ extends <a href="../../../net/minecraft/world/PersistentState.html" title="class
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../net/minecraft/scoreboard/ScoreboardPlayerScore.html" title="class in net.minecraft.scoreboard"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/scoreboard/ScoreboardSynchronizer.html" title="class in net.minecraft.scoreboard"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/scoreboard/ServerScoreboard.html" title="class in net.minecraft.scoreboard"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/scoreboard/ScoreboardState.html" target="_top">Frames</a></li>

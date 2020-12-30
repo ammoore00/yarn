@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../net/minecraft/entity/player/ItemCooldownManager.html" title="class in net.minecraft.entity.player"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/entity/player/PlayerAbilities.html" title="class in net.minecraft.entity.player"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/entity/player/HungerManager.html" target="_top">Frames</a></li>
@@ -202,27 +202,31 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/player/HungerManager.html#getSaturationLevel--">getSaturationLevel</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/player/HungerManager.html#incrementStat-net.minecraft.item.FoodItem-net.minecraft.item.ItemStack-">incrementStat</a></span>(<a href="../../../../net/minecraft/item/FoodItem.html" title="class in net.minecraft.item">FoodItem</a>&nbsp;foodItem,
+             <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/player/HungerManager.html#isNotFull--">isNotFull</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/player/HungerManager.html#method_25280-net.minecraft.item.FoodItem-net.minecraft.item.ItemStack-">method_25280</a></span>(<a href="../../../../net/minecraft/item/FoodItem.html" title="class in net.minecraft.item">FoodItem</a>&nbsp;foodItem,
-            <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</code>&nbsp;</td>
-</tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/player/HungerManager.html#serialize-net.minecraft.nbt.CompoundTag-">serialize</a></span>(<a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</code>&nbsp;</td>
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/player/HungerManager.html#method_8088--">method_8088</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/player/HungerManager.html#setFoodLevel-int-">setFoodLevel</a></span>(int&nbsp;foodLevel)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/player/HungerManager.html#serialize-net.minecraft.nbt.CompoundTag-">serialize</a></span>(<a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/player/HungerManager.html#setSaturationLevelClient-float-">setSaturationLevelClient</a></span>(float&nbsp;saturationLevel)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/player/HungerManager.html#setFoodLevel-int-">setFoodLevel</a></span>(int&nbsp;foodLevel)</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/player/HungerManager.html#setSaturationLevelClient-float-">setSaturationLevelClient</a></span>(float&nbsp;saturationLevel)</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/player/HungerManager.html#update-net.minecraft.entity.player.PlayerEntity-">update</a></span>(<a href="../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</code>&nbsp;</td>
 </tr>
@@ -328,14 +332,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
                 float&nbsp;float2)</pre>
 </li>
 </ul>
-<a name="method_25280-net.minecraft.item.FoodItem-net.minecraft.item.ItemStack-">
+<a name="incrementStat-net.minecraft.item.FoodItem-net.minecraft.item.ItemStack-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_25280</h4>
-<pre>public&nbsp;void&nbsp;method_25280(<a href="../../../../net/minecraft/item/FoodItem.html" title="class in net.minecraft.item">FoodItem</a>&nbsp;foodItem,
-                         <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</pre>
+<h4>incrementStat</h4>
+<pre>public&nbsp;void&nbsp;incrementStat(<a href="../../../../net/minecraft/item/FoodItem.html" title="class in net.minecraft.item">FoodItem</a>&nbsp;foodItem,
+                          <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack)</pre>
 </li>
 </ul>
 <a name="update-net.minecraft.entity.player.PlayerEntity-">
@@ -374,6 +378,16 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>public&nbsp;int&nbsp;getFoodLevel()</pre>
 </li>
 </ul>
+<a name="method_8088--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_8088</h4>
+<pre>@Environment(value=CLIENT)
+public&nbsp;int&nbsp;method_8088()</pre>
+</li>
+</ul>
 <a name="isNotFull--">
 <!--   -->
 </a>
@@ -407,7 +421,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>setFoodLevel</h4>
-<pre>public&nbsp;void&nbsp;setFoodLevel(int&nbsp;foodLevel)</pre>
+<pre>@Environment(value=CLIENT)
+public&nbsp;void&nbsp;setFoodLevel(int&nbsp;foodLevel)</pre>
 </li>
 </ul>
 <a name="setSaturationLevelClient-float-">
@@ -448,7 +463,7 @@ public&nbsp;void&nbsp;setSaturationLevelClient(float&nbsp;saturationLevel)</pre>
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../net/minecraft/entity/player/ItemCooldownManager.html" title="class in net.minecraft.entity.player"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/entity/player/PlayerAbilities.html" title="class in net.minecraft.entity.player"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/entity/player/HungerManager.html" target="_top">Frames</a></li>

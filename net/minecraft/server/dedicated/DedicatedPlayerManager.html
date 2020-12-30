@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li>Prev&nbsp;Class</li>
-<li><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html" title="interface in net.minecraft.server.dedicated"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/server/dedicated/AbstractPropertiesHandler.html" title="class in net.minecraft.server.dedicated"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html" title="class in net.minecraft.server.dedicated"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/server/dedicated/DedicatedPlayerManager.html" target="_top">Frames</a></li>
@@ -144,7 +144,7 @@ extends <a href="../../../../net/minecraft/server/PlayerManager.html" title="cla
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.server.<a href="../../../../net/minecraft/server/PlayerManager.html" title="class in net.minecraft.server">PlayerManager</a></h3>
-<code><a href="../../../../net/minecraft/server/PlayerManager.html#BANNED_IPS_FILE">BANNED_IPS_FILE</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#BANNED_PLAYERS_FILE">BANNED_PLAYERS_FILE</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#maxPlayers">maxPlayers</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#OPERATORS_FILE">OPERATORS_FILE</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#WHITELIST_FILE">WHITELIST_FILE</a></code></li>
+<code><a href="../../../../net/minecraft/server/PlayerManager.html#field_11300">field_11300</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#field_11301">field_11301</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#field_11302">field_11302</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#field_11303">field_11303</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#field_11305">field_11305</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#players">players</a></code></li>
 </ul>
 </li>
 </ul>
@@ -160,7 +160,7 @@ extends <a href="../../../../net/minecraft/server/PlayerManager.html" title="cla
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedPlayerManager.html#DedicatedPlayerManager-net.minecraft.server.dedicated.MinecraftDedicatedServer-">DedicatedPlayerManager</a></span>(<a href="../../../../net/minecraft/server/dedicated/MinecraftDedicatedServer.html" title="class in net.minecraft.server.dedicated">MinecraftDedicatedServer</a>&nbsp;minecraftDedicatedServer)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedPlayerManager.html#DedicatedPlayerManager-net.minecraft.server.dedicated.DedicatedServer-">DedicatedPlayerManager</a></span>(<a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html" title="class in net.minecraft.server.dedicated">DedicatedServer</a>&nbsp;server)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -178,72 +178,68 @@ extends <a href="../../../../net/minecraft/server/PlayerManager.html" title="cla
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedPlayerManager.html#addToOperators-com.mojang.authlib.GameProfile-">addToOperators</a></span>(com.mojang.authlib.GameProfile&nbsp;gameProfile)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html" title="class in net.minecraft.server.dedicated">DedicatedServer</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedPlayerManager.html#getServer--">getServer</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedPlayerManager.html#canBypassPlayerLimit-com.mojang.authlib.GameProfile-">canBypassPlayerLimit</a></span>(com.mojang.authlib.GameProfile&nbsp;gameProfile)</code>&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/server/dedicated/MinecraftDedicatedServer.html" title="class in net.minecraft.server.dedicated">MinecraftDedicatedServer</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedPlayerManager.html#getServer--">getServer</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedPlayerManager.html#isWhitelisted-com.mojang.authlib.GameProfile-">isWhitelisted</a></span>(com.mojang.authlib.GameProfile&nbsp;gameProfile)</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedPlayerManager.html#loadIpBanList--">loadIpBanList</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedPlayerManager.html#loadOpList--">loadOpList</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedPlayerManager.html#loadUserBanList--">loadUserBanList</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedPlayerManager.html#loadWhitelist--">loadWhitelist</a></span>()</code>&nbsp;</td>
 </tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedPlayerManager.html#method_10413-com.mojang.authlib.GameProfile-">method_10413</a></span>(com.mojang.authlib.GameProfile&nbsp;gameProfile)</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedPlayerManager.html#method_10432-com.mojang.authlib.GameProfile-">method_10432</a></span>(com.mojang.authlib.GameProfile&nbsp;gameProfile)</code>&nbsp;</td>
+</tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedPlayerManager.html#method_33720-com.mojang.authlib.GameProfile-">method_33720</a></span>(com.mojang.authlib.GameProfile&nbsp;gameProfile)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedPlayerManager.html#method_10436-com.mojang.authlib.GameProfile-">method_10436</a></span>(com.mojang.authlib.GameProfile&nbsp;gameProfile)</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedPlayerManager.html#method_33724-com.mojang.authlib.GameProfile-">method_33724</a></span>(com.mojang.authlib.GameProfile&nbsp;gameProfile)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedPlayerManager.html#method_10440-com.mojang.authlib.GameProfile-">method_10440</a></span>(com.mojang.authlib.GameProfile&nbsp;gameProfile)</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedPlayerManager.html#reloadWhitelist--">reloadWhitelist</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedPlayerManager.html#removeFromOperators-com.mojang.authlib.GameProfile-">removeFromOperators</a></span>(com.mojang.authlib.GameProfile&nbsp;gameProfile)</code>&nbsp;</td>
-</tr>
-<tr id="i12" class="altColor">
 <td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedPlayerManager.html#saveIpBanList--">saveIpBanList</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedPlayerManager.html#saveOpList--">saveOpList</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedPlayerManager.html#saveUserBanList--">saveUserBanList</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedPlayerManager.html#saveWhitelist--">saveWhitelist</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedPlayerManager.html#setWhitelistEnabled-boolean-">setWhitelistEnabled</a></span>(boolean&nbsp;whitelistEnabled)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/dedicated/DedicatedPlayerManager.html#setWhitelistEnabled-boolean-">setWhitelistEnabled</a></span>(boolean&nbsp;bool)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -251,7 +247,7 @@ extends <a href="../../../../net/minecraft/server/PlayerManager.html" title="cla
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.server.<a href="../../../../net/minecraft/server/PlayerManager.html" title="class in net.minecraft.server">PlayerManager</a></h3>
-<code><a href="../../../../net/minecraft/server/PlayerManager.html#broadcastChatMessage-net.minecraft.text.Text-boolean-">broadcastChatMessage</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#checkCanJoin-java.net.SocketAddress-com.mojang.authlib.GameProfile-">checkCanJoin</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#createPlayer-com.mojang.authlib.GameProfile-">createPlayer</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#createStatHandler-net.minecraft.entity.player.PlayerEntity-">createStatHandler</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#disconnectAllPlayers--">disconnectAllPlayers</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#getAdvancementTracker-net.minecraft.server.network.ServerPlayerEntity-">getAdvancementTracker</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#getCurrentPlayerCount--">getCurrentPlayerCount</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#getIpBanList--">getIpBanList</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#getMaxPlayerCount--">getMaxPlayerCount</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#getOpList--">getOpList</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#getOpNames--">getOpNames</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#getPlayer-java.lang.String-">getPlayer</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#getPlayer-java.util.UUID-">getPlayer</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#getPlayerList--">getPlayerList</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#getPlayerNames--">getPlayerNames</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#getPlayersByIp-java.lang.String-">getPlayersByIp</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#getUserBanList--">getUserBanList</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#getUserData--">getUserData</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#getViewDistance--">getViewDistance</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#getWhitelist--">getWhitelist</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#getWhitelistedNames--">getWhitelistedNames</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#isOperator-com.mojang.authlib.GameProfile-">isOperator</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#isWhitelistEnabled--">isWhitelistEnabled</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#loadPlayerData-net.minecraft.server.network.ServerPlayerEntity-">loadPlayerData</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_33691-net.minecraft.entity.player.PlayerEntity-double-double-double-double-int-net.minecraft.network.Packet-">method_33691</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_33699-net.minecraft.network.Packet-int-">method_33699</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_33705-net.minecraft.server.network.ServerPlayerEntity-int-">method_33705</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_33707-net.minecraft.server.network.ServerPlayerEntity-net.minecraft.server.world.ServerWorld-">method_33707</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_33709-net.minecraft.entity.Entity-int-net.minecraft.server.world.ServerWorld-net.minecraft.server.world.ServerWorld-">method_33709</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_33711-net.minecraft.server.world.ServerWorld:A-">method_33711</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_33718-boolean-">method_33718</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_33721-net.minecraft.server.network.ServerPlayerEntity-">method_33721</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_33723--">method_33723</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_33725-net.minecraft.server.network.ServerPlayerEntity-">method_33725</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_33732--">method_33732</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_33734-net.minecraft.server.network.ServerPlayerEntity-">method_33734</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_33746--">method_33746</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#onDataPacksReloaded--">onDataPacksReloaded</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#onPlayerConnect-net.minecraft.network.ClientConnection-net.minecraft.server.network.ServerPlayerEntity-">onPlayerConnect</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#remove-net.minecraft.server.network.ServerPlayerEntity-">remove</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#respawnPlayer-net.minecraft.server.network.ServerPlayerEntity-int-boolean-">respawnPlayer</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#saveAllPlayerData--">saveAllPlayerData</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#savePlayerData-net.minecraft.server.network.ServerPlayerEntity-">savePlayerData</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#sendCommandTree-net.minecraft.server.network.ServerPlayerEntity-">sendCommandTree</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#sendScoreboard-net.minecraft.scoreboard.ServerScoreboard-net.minecraft.server.network.ServerPlayerEntity-">sendScoreboard</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#sendToAll-net.minecraft.network.Packet-">sendToAll</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#sendToAll-net.minecraft.text.Text-">sendToAll</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#sendToOtherTeams-net.minecraft.entity.player.PlayerEntity-net.minecraft.text.Text-">sendToOtherTeams</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#sendToTeam-net.minecraft.entity.player.PlayerEntity-net.minecraft.text.Text-">sendToTeam</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#sendWorldInfo-net.minecraft.server.network.ServerPlayerEntity-net.minecraft.server.world.ServerWorld-">sendWorldInfo</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#setCheatsAllowed-boolean-">setCheatsAllowed</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#setGameMode-net.minecraft.world.GameMode-">setGameMode</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#setViewDistance-int-">setViewDistance</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#updatePlayerLatency--">updatePlayerLatency</a></code></li>
+<code><a href="../../../../net/minecraft/server/PlayerManager.html#broadcastChatMessage-net.minecraft.text.Text-boolean-">broadcastChatMessage</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#checkCanJoin-java.net.SocketAddress-com.mojang.authlib.GameProfile-">checkCanJoin</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#getUserData--">getUserData</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#loadPlayerData-net.minecraft.server.network.ServerPlayerEntity-">loadPlayerData</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10410-double-double-double-double-int-net.minecraft.network.Packet-">method_10410</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10411-int-">method_10411</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10412-net.minecraft.world.GameMode-">method_10412</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10415-net.minecraft.text.Text-">method_10415</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10418-net.minecraft.network.Packet-int-">method_10418</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10419-java.lang.String-">method_10419</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10420-net.minecraft.scoreboard.ServerScoreboard-net.minecraft.server.network.ServerPlayerEntity-">method_10420</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10422-net.minecraft.server.network.ServerPlayerEntity-int-">method_10422</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10424-net.minecraft.server.network.ServerPlayerEntity-net.minecraft.server.world.ServerWorld-">method_10424</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10426-net.minecraft.util.math.BlockPos-int-int-int-int-int-int-java.util.Map-java.lang.String-java.lang.String-net.minecraft.world.World-">method_10426</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10427-net.minecraft.entity.Entity-int-net.minecraft.server.world.ServerWorld-net.minecraft.server.world.ServerWorld-">method_10427</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10428-net.minecraft.entity.player.PlayerEntity-">method_10428</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10431-net.minecraft.server.world.ServerWorld:A-">method_10431</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10433-java.lang.String-">method_10433</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10435-boolean-">method_10435</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10437-net.minecraft.server.network.ServerPlayerEntity-">method_10437</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10438-boolean-">method_10438</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10439--">method_10439</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10441-net.minecraft.server.network.ServerPlayerEntity-">method_10441</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10442--">method_10442</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10444--">method_10444</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10445-com.mojang.authlib.GameProfile-">method_10445</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10446-net.minecraft.server.network.ServerPlayerEntity-">method_10446</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10447--">method_10447</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10448-com.mojang.authlib.GameProfile-">method_10448</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10449--">method_10449</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10450--">method_10450</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10451--">method_10451</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10452--">method_10452</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10453--">method_10453</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10454--">method_10454</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10455--">method_10455</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10456--">method_10456</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10457--">method_10457</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10458--">method_10458</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10459--">method_10459</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10460--">method_10460</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#method_10461--">method_10461</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#onPlayerConnect-net.minecraft.network.ClientConnection-net.minecraft.server.network.ServerPlayerEntity-">onPlayerConnect</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#remove-net.minecraft.server.network.ServerPlayerEntity-">remove</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#respawnPlayer-net.minecraft.server.network.ServerPlayerEntity-int-boolean-">respawnPlayer</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#savePlayerData-net.minecraft.server.network.ServerPlayerEntity-">savePlayerData</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#sendToAll-net.minecraft.network.Packet-">sendToAll</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#sendToAround-net.minecraft.entity.player.PlayerEntity-double-double-double-double-int-net.minecraft.network.Packet-">sendToAround</a>, <a href="../../../../net/minecraft/server/PlayerManager.html#sendWorldInfo-net.minecraft.server.network.ServerPlayerEntity-net.minecraft.server.world.ServerWorld-">sendWorldInfo</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -291,13 +287,13 @@ extends <a href="../../../../net/minecraft/server/PlayerManager.html" title="cla
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="DedicatedPlayerManager-net.minecraft.server.dedicated.MinecraftDedicatedServer-">
+<a name="DedicatedPlayerManager-net.minecraft.server.dedicated.DedicatedServer-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DedicatedPlayerManager</h4>
-<pre>public&nbsp;DedicatedPlayerManager(<a href="../../../../net/minecraft/server/dedicated/MinecraftDedicatedServer.html" title="class in net.minecraft.server.dedicated">MinecraftDedicatedServer</a>&nbsp;minecraftDedicatedServer)</pre>
+<pre>public&nbsp;DedicatedPlayerManager(<a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html" title="class in net.minecraft.server.dedicated">DedicatedServer</a>&nbsp;server)</pre>
 </li>
 </ul>
 </li>
@@ -314,62 +310,62 @@ extends <a href="../../../../net/minecraft/server/PlayerManager.html" title="cla
 <ul class="blockList">
 <li class="blockList">
 <h4>setWhitelistEnabled</h4>
-<pre>public&nbsp;void&nbsp;setWhitelistEnabled(boolean&nbsp;whitelistEnabled)</pre>
+<pre>public&nbsp;void&nbsp;setWhitelistEnabled(boolean&nbsp;bool)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../net/minecraft/server/PlayerManager.html#setWhitelistEnabled-boolean-">setWhitelistEnabled</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/PlayerManager.html" title="class in net.minecraft.server">PlayerManager</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="addToOperators-com.mojang.authlib.GameProfile-">
+<a name="method_10413-com.mojang.authlib.GameProfile-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>addToOperators</h4>
-<pre>public&nbsp;void&nbsp;addToOperators(com.mojang.authlib.GameProfile&nbsp;gameProfile)</pre>
+<h4>method_10413</h4>
+<pre>public&nbsp;void&nbsp;method_10413(com.mojang.authlib.GameProfile&nbsp;gameProfile)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/server/PlayerManager.html#addToOperators-com.mojang.authlib.GameProfile-">addToOperators</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/PlayerManager.html" title="class in net.minecraft.server">PlayerManager</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/server/PlayerManager.html#method_10413-com.mojang.authlib.GameProfile-">method_10413</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/PlayerManager.html" title="class in net.minecraft.server">PlayerManager</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="removeFromOperators-com.mojang.authlib.GameProfile-">
+<a name="method_10432-com.mojang.authlib.GameProfile-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>removeFromOperators</h4>
-<pre>public&nbsp;void&nbsp;removeFromOperators(com.mojang.authlib.GameProfile&nbsp;gameProfile)</pre>
+<h4>method_10432</h4>
+<pre>public&nbsp;void&nbsp;method_10432(com.mojang.authlib.GameProfile&nbsp;gameProfile)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/server/PlayerManager.html#removeFromOperators-com.mojang.authlib.GameProfile-">removeFromOperators</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/PlayerManager.html" title="class in net.minecraft.server">PlayerManager</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/server/PlayerManager.html#method_10432-com.mojang.authlib.GameProfile-">method_10432</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/PlayerManager.html" title="class in net.minecraft.server">PlayerManager</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_33720-com.mojang.authlib.GameProfile-">
+<a name="method_10436-com.mojang.authlib.GameProfile-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_33720</h4>
-<pre>public&nbsp;void&nbsp;method_33720(com.mojang.authlib.GameProfile&nbsp;gameProfile)</pre>
+<h4>method_10436</h4>
+<pre>public&nbsp;void&nbsp;method_10436(com.mojang.authlib.GameProfile&nbsp;gameProfile)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/server/PlayerManager.html#method_33720-com.mojang.authlib.GameProfile-">method_33720</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/PlayerManager.html" title="class in net.minecraft.server">PlayerManager</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/server/PlayerManager.html#method_10436-com.mojang.authlib.GameProfile-">method_10436</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/PlayerManager.html" title="class in net.minecraft.server">PlayerManager</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_33724-com.mojang.authlib.GameProfile-">
+<a name="method_10440-com.mojang.authlib.GameProfile-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_33724</h4>
-<pre>public&nbsp;void&nbsp;method_33724(com.mojang.authlib.GameProfile&nbsp;gameProfile)</pre>
+<h4>method_10440</h4>
+<pre>public&nbsp;void&nbsp;method_10440(com.mojang.authlib.GameProfile&nbsp;gameProfile)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/server/PlayerManager.html#method_33724-com.mojang.authlib.GameProfile-">method_33724</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/PlayerManager.html" title="class in net.minecraft.server">PlayerManager</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/server/PlayerManager.html#method_10440-com.mojang.authlib.GameProfile-">method_10440</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/PlayerManager.html" title="class in net.minecraft.server">PlayerManager</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -474,26 +470,13 @@ extends <a href="../../../../net/minecraft/server/PlayerManager.html" title="cla
 <a name="getServer--">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>getServer</h4>
-<pre>public&nbsp;<a href="../../../../net/minecraft/server/dedicated/MinecraftDedicatedServer.html" title="class in net.minecraft.server.dedicated">MinecraftDedicatedServer</a>&nbsp;getServer()</pre>
+<pre>public&nbsp;<a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html" title="class in net.minecraft.server.dedicated">DedicatedServer</a>&nbsp;getServer()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../net/minecraft/server/PlayerManager.html#getServer--">getServer</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/PlayerManager.html" title="class in net.minecraft.server">PlayerManager</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="canBypassPlayerLimit-com.mojang.authlib.GameProfile-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>canBypassPlayerLimit</h4>
-<pre>public&nbsp;boolean&nbsp;canBypassPlayerLimit(com.mojang.authlib.GameProfile&nbsp;gameProfile)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/server/PlayerManager.html#canBypassPlayerLimit-com.mojang.authlib.GameProfile-">canBypassPlayerLimit</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/server/PlayerManager.html" title="class in net.minecraft.server">PlayerManager</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -524,8 +507,8 @@ extends <a href="../../../../net/minecraft/server/PlayerManager.html" title="cla
 </div>
 <div class="subNav">
 <ul class="navList">
-<li>Prev&nbsp;Class</li>
-<li><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html" title="interface in net.minecraft.server.dedicated"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/server/dedicated/AbstractPropertiesHandler.html" title="class in net.minecraft.server.dedicated"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/server/dedicated/DedicatedServer.html" title="class in net.minecraft.server.dedicated"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/server/dedicated/DedicatedPlayerManager.html" target="_top">Frames</a></li>

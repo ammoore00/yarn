@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../net/minecraft/entity/attribute/AbstractEntityAttributeContainer.html" title="class in net.minecraft.entity.attribute"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/entity/attribute/AttributeModifier.html" title="class in net.minecraft.entity.attribute"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/entity/attribute/AbstractEntityAttribute.html" target="_top">Frames</a></li>
@@ -146,10 +146,6 @@ implements <a href="../../../../net/minecraft/entity/attribute/EntityAttribute.h
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/AbstractEntityAttribute.html#id">id</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../net/minecraft/entity/attribute/EntityAttribute.html" title="interface in net.minecraft.entity.attribute">EntityAttribute</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/AbstractEntityAttribute.html#parent">parent</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>private boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/AbstractEntityAttribute.html#tracked">tracked</a></span></code>&nbsp;</td>
 </tr>
@@ -170,9 +166,8 @@ implements <a href="../../../../net/minecraft/entity/attribute/EntityAttribute.h
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected </code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/AbstractEntityAttribute.html#AbstractEntityAttribute-net.minecraft.entity.attribute.EntityAttribute-java.lang.String-double-">AbstractEntityAttribute</a></span>(<a href="../../../../net/minecraft/entity/attribute/EntityAttribute.html" title="interface in net.minecraft.entity.attribute">EntityAttribute</a>&nbsp;parent,
-                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id,
-                       double&nbsp;defaultValue)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/AbstractEntityAttribute.html#AbstractEntityAttribute-java.lang.String-double-">AbstractEntityAttribute</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
+                       double&nbsp;double2)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -190,30 +185,22 @@ implements <a href="../../../../net/minecraft/entity/attribute/EntityAttribute.h
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/AbstractEntityAttribute.html#equals-java.lang.Object-">equals</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>&nbsp;</td>
-</tr>
-<tr id="i1" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/AbstractEntityAttribute.html#getDefaultValue--">getDefaultValue</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/AbstractEntityAttribute.html#getId--">getId</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/entity/attribute/EntityAttribute.html" title="interface in net.minecraft.entity.attribute">EntityAttribute</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/AbstractEntityAttribute.html#getParent--">getParent</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/AbstractEntityAttribute.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/AbstractEntityAttribute.html#isTracked--">isTracked</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../net/minecraft/entity/attribute/AbstractEntityAttribute.html" title="class in net.minecraft.entity.attribute">AbstractEntityAttribute</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/attribute/AbstractEntityAttribute.html#setTracked-boolean-">setTracked</a></span>(boolean&nbsp;tracked)</code>&nbsp;</td>
 </tr>
@@ -223,7 +210,7 @@ implements <a href="../../../../net/minecraft/entity/attribute/EntityAttribute.h
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.net.minecraft.entity.attribute.EntityAttribute">
@@ -246,15 +233,6 @@ implements <a href="../../../../net/minecraft/entity/attribute/EntityAttribute.h
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="parent">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>parent</h4>
-<pre>private final&nbsp;<a href="../../../../net/minecraft/entity/attribute/EntityAttribute.html" title="interface in net.minecraft.entity.attribute">EntityAttribute</a> parent</pre>
-</li>
-</ul>
 <a name="id">
 <!--   -->
 </a>
@@ -290,16 +268,14 @@ implements <a href="../../../../net/minecraft/entity/attribute/EntityAttribute.h
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="AbstractEntityAttribute-net.minecraft.entity.attribute.EntityAttribute-java.lang.String-double-">
+<a name="AbstractEntityAttribute-java.lang.String-double-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AbstractEntityAttribute</h4>
-<pre>protected&nbsp;AbstractEntityAttribute(<a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-                                  <a href="../../../../net/minecraft/entity/attribute/EntityAttribute.html" title="interface in net.minecraft.entity.attribute">EntityAttribute</a>&nbsp;parent,
-                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id,
-                                  double&nbsp;defaultValue)</pre>
+<pre>protected&nbsp;AbstractEntityAttribute(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
+                                  double&nbsp;double2)</pre>
 </li>
 </ul>
 </li>
@@ -358,43 +334,16 @@ implements <a href="../../../../net/minecraft/entity/attribute/EntityAttribute.h
 <pre>public&nbsp;<a href="../../../../net/minecraft/entity/attribute/AbstractEntityAttribute.html" title="class in net.minecraft.entity.attribute">AbstractEntityAttribute</a>&nbsp;setTracked(boolean&nbsp;tracked)</pre>
 </li>
 </ul>
-<a name="getParent--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getParent</h4>
-<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-public&nbsp;<a href="../../../../net/minecraft/entity/attribute/EntityAttribute.html" title="interface in net.minecraft.entity.attribute">EntityAttribute</a>&nbsp;getParent()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/entity/attribute/EntityAttribute.html#getParent--">getParent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/entity/attribute/EntityAttribute.html" title="interface in net.minecraft.entity.attribute">EntityAttribute</a></code></dd>
-</dl>
-</li>
-</ul>
 <a name="hashCode--">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>hashCode</h4>
 <pre>public&nbsp;int&nbsp;hashCode()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="equals-java.lang.Object-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>equals</h4>
-<pre>public&nbsp;boolean&nbsp;equals(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -426,7 +375,7 @@ public&nbsp;<a href="../../../../net/minecraft/entity/attribute/EntityAttribute.
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../net/minecraft/entity/attribute/AbstractEntityAttributeContainer.html" title="class in net.minecraft.entity.attribute"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/entity/attribute/AttributeModifier.html" title="class in net.minecraft.entity.attribute"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/entity/attribute/AbstractEntityAttribute.html" target="_top">Frames</a></li>

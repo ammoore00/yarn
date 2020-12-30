@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/item/SplashPotionItem.html" title="class in net.minecraft.item"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/item/TippedArrowItem.html" title="class in net.minecraft.item"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/item/StoneSlabItem.html" title="class in net.minecraft.item"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/item/ToolItem.html" title="class in net.minecraft.item"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/item/SwordItem.html" target="_top">Frames</a></li>
@@ -73,7 +73,7 @@ var activeTableTab = "activeTableTab";
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.classes.inherited.from.class.net.minecraft.item.Item">Nested</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
@@ -121,21 +121,6 @@ extends <a href="../../../net/minecraft/item/Item.html" title="class in net.mine
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- ======== NESTED CLASS SUMMARY ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="nested.class.summary">
-<!--   -->
-</a>
-<h3>Nested Class Summary</h3>
-<ul class="blockList">
-<li class="blockList"><a name="nested.classes.inherited.from.class.net.minecraft.item.Item">
-<!--   -->
-</a>
-<h3>Nested classes/interfaces inherited from class&nbsp;net.minecraft.item.<a href="../../../net/minecraft/item/Item.html" title="class in net.minecraft.item">Item</a></h3>
-<code><a href="../../../net/minecraft/item/Item.ToolMaterials.html" title="enum in net.minecraft.item">Item.ToolMaterials</a></code></li>
-</ul>
-</li>
-</ul>
 <!-- =========== FIELD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="field.summary">
@@ -150,11 +135,11 @@ extends <a href="../../../net/minecraft/item/Item.html" title="class in net.mine
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/SwordItem.html#attackDamage">attackDamage</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/SwordItem.html#attackMultiplier">attackMultiplier</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../net/minecraft/item/Item.ToolMaterials.html" title="enum in net.minecraft.item">Item.ToolMaterials</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/SwordItem.html#field_23299">field_23299</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../net/minecraft/item/ToolMaterialType.html" title="enum in net.minecraft.item">ToolMaterialType</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/SwordItem.html#material">material</a></span></code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -162,7 +147,7 @@ extends <a href="../../../net/minecraft/item/Item.html" title="class in net.mine
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.item.<a href="../../../net/minecraft/item/Item.html" title="class in net.minecraft.item">Item</a></h3>
-<code><a href="../../../net/minecraft/item/Item.html#ATTACK_DAMAGE_MODIFIER_ID">ATTACK_DAMAGE_MODIFIER_ID</a>, <a href="../../../net/minecraft/item/Item.html#ATTACK_SPEED_MODIFIER_ID">ATTACK_SPEED_MODIFIER_ID</a>, <a href="../../../net/minecraft/item/Item.html#hasVariants">hasVariants</a>, <a href="../../../net/minecraft/item/Item.html#is3D">is3D</a>, <a href="../../../net/minecraft/item/Item.html#maxCount">maxCount</a>, <a href="../../../net/minecraft/item/Item.html#RANDOM">RANDOM</a>, <a href="../../../net/minecraft/item/Item.html#REGISTRY">REGISTRY</a></code></li>
+<code><a href="../../../net/minecraft/item/Item.html#ATTACK_DAMAGE_MODIFIER_UUID">ATTACK_DAMAGE_MODIFIER_UUID</a>, <a href="../../../net/minecraft/item/Item.html#damageable">damageable</a>, <a href="../../../net/minecraft/item/Item.html#field_8885">field_8885</a>, <a href="../../../net/minecraft/item/Item.html#field_8886">field_8886</a>, <a href="../../../net/minecraft/item/Item.html#handheld">handheld</a>, <a href="../../../net/minecraft/item/Item.html#maxCount">maxCount</a>, <a href="../../../net/minecraft/item/Item.html#RANDOM">RANDOM</a>, <a href="../../../net/minecraft/item/Item.html#REGISTRY">REGISTRY</a></code></li>
 </ul>
 </li>
 </ul>
@@ -178,7 +163,7 @@ extends <a href="../../../net/minecraft/item/Item.html" title="class in net.mine
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/SwordItem.html#SwordItem-net.minecraft.item.Item.ToolMaterials-">SwordItem</a></span>(<a href="../../../net/minecraft/item/Item.ToolMaterials.html" title="enum in net.minecraft.item">Item.ToolMaterials</a>&nbsp;toolMaterials)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/SwordItem.html#SwordItem-net.minecraft.item.ToolMaterialType-">SwordItem</a></span>(<a href="../../../net/minecraft/item/ToolMaterialType.html" title="enum in net.minecraft.item">ToolMaterialType</a>&nbsp;material)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -198,50 +183,76 @@ extends <a href="../../../net/minecraft/item/Item.html" title="class in net.mine
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/SwordItem.html#canRepair-net.minecraft.item.ItemStack-net.minecraft.item.ItemStack-">canRepair</a></span>(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
-         <a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;ingredient)</code>&nbsp;</td>
+         <a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;ingredient)</code>
+<div class="block">Returns whether the item can be repaired via an anvil or crafting table.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/SwordItem.html#getEnchantability--">getEnchantability</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/SwordItem.html#getAttackDamage--">getAttackDamage</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/SwordItem.html#getMiningSpeedMultiplier-net.minecraft.item.ItemStack-net.minecraft.block.BlockState-">getMiningSpeedMultiplier</a></span>(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
-                        <a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://guava.dev/releases/21.0/api/docs/com/google/common/collect/Multimap.html?is-external=true" title="class or interface in com.google.common.collect">Multimap</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/SwordItem.html#getAttributeModifierMap--">getAttributeModifierMap</a></span>()</code>
+<div class="block">Returns a map containing entity attributes that are modified by the item</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="https://guava.dev/releases/21.0/api/docs/com/google/common/collect/Multimap.html?is-external=true" title="class or interface in com.google.common.collect">Multimap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../net/minecraft/entity/attribute/EntityAttributeModifier.html" title="class in net.minecraft.entity.attribute">EntityAttributeModifier</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/SwordItem.html#getModifiers-net.minecraft.entity.EquipmentSlot-">getModifiers</a></span>(<a href="../../../net/minecraft/entity/EquipmentSlot.html" title="enum in net.minecraft.entity">EquipmentSlot</a>&nbsp;slot)</code>&nbsp;</td>
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/SwordItem.html#getEnchantability--">getEnchantability</a></span>()</code>
+<div class="block">Returns the enchantability of an Item.</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/SwordItem.html#is3D--">is3D</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/SwordItem.html#getMaxUseTime-net.minecraft.item.ItemStack-">getMaxUseTime</a></span>(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/SwordItem.html#isEffectiveOn-net.minecraft.block.BlockState-">isEffectiveOn</a></span>(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state)</code>&nbsp;</td>
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/SwordItem.html#getMiningSpeedMultiplier-net.minecraft.item.ItemStack-net.minecraft.block.Block-">getMiningSpeedMultiplier</a></span>(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
+                        <a href="../../../net/minecraft/block/Block.html" title="class in net.minecraft.block">Block</a>&nbsp;block)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/SwordItem.html#method_25650--">method_25650</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/SwordItem.html#getToolMaterial--">getToolMaterial</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/SwordItem.html#method_25651--">method_25651</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../net/minecraft/util/UseAction.html" title="enum in net.minecraft.util">UseAction</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/SwordItem.html#getUseAction-net.minecraft.item.ItemStack-">getUseAction</a></span>(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</code>
+<div class="block">Returns the UseAction for an item when the item is used.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/SwordItem.html#postHit-net.minecraft.item.ItemStack-net.minecraft.entity.LivingEntity-net.minecraft.entity.LivingEntity-">postHit</a></span>(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
-       <a href="../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;target,
-       <a href="../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;attacker)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/SwordItem.html#isEffectiveOn-net.minecraft.block.Block-">isEffectiveOn</a></span>(<a href="../../../net/minecraft/block/Block.html" title="class in net.minecraft.block">Block</a>&nbsp;block)</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/SwordItem.html#postMine-net.minecraft.item.ItemStack-net.minecraft.world.World-net.minecraft.block.BlockState-net.minecraft.util.math.BlockPos-net.minecraft.entity.LivingEntity-">postMine</a></span>(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
-        <a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-        <a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
-        <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
-        <a href="../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;miner)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/SwordItem.html#isHandheld--">isHandheld</a></span>()</code>
+<div class="block">Returns whether the item is supposed to look as handheld.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/SwordItem.html#onBlockBroken-net.minecraft.item.ItemStack-net.minecraft.world.World-net.minecraft.block.Block-int-int-int-net.minecraft.entity.LivingEntity-">onBlockBroken</a></span>(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
+             <a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+             <a href="../../../net/minecraft/block/Block.html" title="class in net.minecraft.block">Block</a>&nbsp;block,
+             int&nbsp;int2,
+             int&nbsp;int3,
+             int&nbsp;int4,
+             <a href="../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;livingEntity)</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/SwordItem.html#onEntityHit-net.minecraft.item.ItemStack-net.minecraft.entity.LivingEntity-net.minecraft.entity.LivingEntity-">onEntityHit</a></span>(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
+           <a href="../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;entity1,
+           <a href="../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;entity2)</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code><a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/item/SwordItem.html#onStartUse-net.minecraft.item.ItemStack-net.minecraft.world.World-net.minecraft.entity.player.PlayerEntity-">onStartUse</a></span>(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
+          <a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+          <a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -249,7 +260,7 @@ extends <a href="../../../net/minecraft/item/Item.html" title="class in net.mine
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.item.<a href="../../../net/minecraft/item/Item.html" title="class in net.minecraft.item">Item</a></h3>
-<code><a href="../../../net/minecraft/item/Item.html#addModelPredicateProvider-net.minecraft.util.Identifier-net.minecraft.client.item.ModelPredicateProvider-">addModelPredicateProvider</a>, <a href="../../../net/minecraft/item/Item.html#appendStacks-net.minecraft.item.ItemGroup-net.minecraft.util.DefaultedList-">appendStacks</a>, <a href="../../../net/minecraft/item/Item.html#appendTooltip-net.minecraft.item.ItemStack-net.minecraft.world.World-java.util.List-net.minecraft.client.item.TooltipContext-">appendTooltip</a>, <a href="../../../net/minecraft/item/Item.html#byRawId-int-">byRawId</a>, <a href="../../../net/minecraft/item/Item.html#canModify--">canModify</a>, <a href="../../../net/minecraft/item/Item.html#finishUsing-net.minecraft.item.ItemStack-net.minecraft.world.World-net.minecraft.entity.LivingEntity-">finishUsing</a>, <a href="../../../net/minecraft/item/Item.html#fromBlock-net.minecraft.block.Block-">fromBlock</a>, <a href="../../../net/minecraft/item/Item.html#get-java.lang.String-">get</a>, <a href="../../../net/minecraft/item/Item.html#getGroup--">getGroup</a>, <a href="../../../net/minecraft/item/Item.html#getMaxCount--">getMaxCount</a>, <a href="../../../net/minecraft/item/Item.html#getMaxDamage--">getMaxDamage</a>, <a href="../../../net/minecraft/item/Item.html#getMaxUseTime-net.minecraft.item.ItemStack-">getMaxUseTime</a>, <a href="../../../net/minecraft/item/Item.html#getMetadata-int-">getMetadata</a>, <a href="../../../net/minecraft/item/Item.html#getModelPredicateProvider-net.minecraft.util.Identifier-">getModelPredicateProvider</a>, <a href="../../../net/minecraft/item/Item.html#getName-net.minecraft.item.ItemStack-">getName</a>, <a href="../../../net/minecraft/item/Item.html#getRarity-net.minecraft.item.ItemStack-">getRarity</a>, <a href="../../../net/minecraft/item/Item.html#getRawId-net.minecraft.item.Item-">getRawId</a>, <a href="../../../net/minecraft/item/Item.html#getRecipeRemainder--">getRecipeRemainder</a>, <a href="../../../net/minecraft/item/Item.html#getStackForRender--">getStackForRender</a>, <a href="../../../net/minecraft/item/Item.html#getTranslationKey--">getTranslationKey</a>, <a href="../../../net/minecraft/item/Item.html#getTranslationKey-net.minecraft.item.ItemStack-">getTranslationKey</a>, <a href="../../../net/minecraft/item/Item.html#getUseAction-net.minecraft.item.ItemStack-">getUseAction</a>, <a href="../../../net/minecraft/item/Item.html#group-net.minecraft.item.ItemGroup-">group</a>, <a href="../../../net/minecraft/item/Item.html#hadModelPredicateProvider--">hadModelPredicateProvider</a>, <a href="../../../net/minecraft/item/Item.html#hasGlint-net.minecraft.item.ItemStack-">hasGlint</a>, <a href="../../../net/minecraft/item/Item.html#hasRecipeRemainder--">hasRecipeRemainder</a>, <a href="../../../net/minecraft/item/Item.html#hasVariants--">hasVariants</a>, <a href="../../../net/minecraft/item/Item.html#inventoryTick-net.minecraft.item.ItemStack-net.minecraft.world.World-net.minecraft.entity.Entity-int-boolean-">inventoryTick</a>, <a href="../../../net/minecraft/item/Item.html#isDamageable--">isDamageable</a>, <a href="../../../net/minecraft/item/Item.html#isEnchantable-net.minecraft.item.ItemStack-">isEnchantable</a>, <a href="../../../net/minecraft/item/Item.html#isIn-net.minecraft.item.ItemGroup-">isIn</a>, <a href="../../../net/minecraft/item/Item.html#isNetworkSynced--">isNetworkSynced</a>, <a href="../../../net/minecraft/item/Item.html#maxCount-int-">maxCount</a>, <a href="../../../net/minecraft/item/Item.html#maxDamage-int-">maxDamage</a>, <a href="../../../net/minecraft/item/Item.html#method_25526-net.minecraft.item.ItemStack-">method_25526</a>, <a href="../../../net/minecraft/item/Item.html#onCraft-net.minecraft.item.ItemStack-net.minecraft.world.World-net.minecraft.entity.player.PlayerEntity-">onCraft</a>, <a href="../../../net/minecraft/item/Item.html#onStoppedUsing-net.minecraft.item.ItemStack-net.minecraft.world.World-net.minecraft.entity.LivingEntity-int-">onStoppedUsing</a>, <a href="../../../net/minecraft/item/Item.html#postProcessTag-net.minecraft.nbt.CompoundTag-">postProcessTag</a>, <a href="../../../net/minecraft/item/Item.html#rayTrace-net.minecraft.world.World-net.minecraft.entity.player.PlayerEntity-boolean-">rayTrace</a>, <a href="../../../net/minecraft/item/Item.html#recipeRemainder-net.minecraft.item.Item-">recipeRemainder</a>, <a href="../../../net/minecraft/item/Item.html#register--">register</a>, <a href="../../../net/minecraft/item/Item.html#register-net.minecraft.block.Block-net.minecraft.item.Item-">register</a>, <a href="../../../net/minecraft/item/Item.html#requiresRenderRotation--">requiresRenderRotation</a>, <a href="../../../net/minecraft/item/Item.html#setHasVariants-boolean-">setHasVariants</a>, <a href="../../../net/minecraft/item/Item.html#setTranslationKey-java.lang.String-">setTranslationKey</a>, <a href="../../../net/minecraft/item/Item.html#shouldRender3D--">shouldRender3D</a>, <a href="../../../net/minecraft/item/Item.html#shouldSyncTagToClient--">shouldSyncTagToClient</a>, <a href="../../../net/minecraft/item/Item.html#use-net.minecraft.world.World-net.minecraft.entity.player.PlayerEntity-net.minecraft.util.Hand-">use</a>, <a href="../../../net/minecraft/item/Item.html#useOnBlock-net.minecraft.entity.player.PlayerEntity-net.minecraft.world.World-net.minecraft.util.math.BlockPos-net.minecraft.util.Hand-net.minecraft.util.math.Direction-float-float-float-">useOnBlock</a>, <a href="../../../net/minecraft/item/Item.html#useOnEntity-net.minecraft.item.ItemStack-net.minecraft.entity.player.PlayerEntity-net.minecraft.entity.LivingEntity-net.minecraft.util.Hand-">useOnEntity</a></code></li>
+<code><a href="../../../net/minecraft/item/Item.html#appendItemStacks-net.minecraft.item.Item-net.minecraft.item.group.ItemGroup-java.util.List-">appendItemStacks</a>, <a href="../../../net/minecraft/item/Item.html#appendTooltip-net.minecraft.item.ItemStack-net.minecraft.entity.player.PlayerEntity-java.util.List-boolean-">appendTooltip</a>, <a href="../../../net/minecraft/item/Item.html#byBlock-net.minecraft.block.Block-">byBlock</a>, <a href="../../../net/minecraft/item/Item.html#byRawId-int-">byRawId</a>, <a href="../../../net/minecraft/item/Item.html#canUseOnEntity-net.minecraft.item.ItemStack-net.minecraft.entity.player.PlayerEntity-net.minecraft.entity.LivingEntity-">canUseOnEntity</a>, <a href="../../../net/minecraft/item/Item.html#getDisplayColor-net.minecraft.item.ItemStack-int-">getDisplayColor</a>, <a href="../../../net/minecraft/item/Item.html#getDisplayName-net.minecraft.item.ItemStack-">getDisplayName</a>, <a href="../../../net/minecraft/item/Item.html#getItemGroup--">getItemGroup</a>, <a href="../../../net/minecraft/item/Item.html#getItemstackTranslatedName-net.minecraft.item.ItemStack-">getItemstackTranslatedName</a>, <a href="../../../net/minecraft/item/Item.html#getMaxCount--">getMaxCount</a>, <a href="../../../net/minecraft/item/Item.html#getMaxDamage--">getMaxDamage</a>, <a href="../../../net/minecraft/item/Item.html#getMeta-int-">getMeta</a>, <a href="../../../net/minecraft/item/Item.html#getRarity-net.minecraft.item.ItemStack-">getRarity</a>, <a href="../../../net/minecraft/item/Item.html#getRawId-net.minecraft.item.Item-">getRawId</a>, <a href="../../../net/minecraft/item/Item.html#getRecipeRemainder--">getRecipeRemainder</a>, <a href="../../../net/minecraft/item/Item.html#getStatusEffectString-net.minecraft.item.ItemStack-">getStatusEffectString</a>, <a href="../../../net/minecraft/item/Item.html#getTranslationKey--">getTranslationKey</a>, <a href="../../../net/minecraft/item/Item.html#getTranslationKey-net.minecraft.item.ItemStack-">getTranslationKey</a>, <a href="../../../net/minecraft/item/Item.html#hasEnchantmentGlint-net.minecraft.item.ItemStack-">hasEnchantmentGlint</a>, <a href="../../../net/minecraft/item/Item.html#hasStatusEffectString-net.minecraft.item.ItemStack-">hasStatusEffectString</a>, <a href="../../../net/minecraft/item/Item.html#hasSubTypes--">hasSubTypes</a>, <a href="../../../net/minecraft/item/Item.html#inventoryTick-net.minecraft.item.ItemStack-net.minecraft.world.World-net.minecraft.entity.Entity-int-boolean-">inventoryTick</a>, <a href="../../../net/minecraft/item/Item.html#isDamageable--">isDamageable</a>, <a href="../../../net/minecraft/item/Item.html#isEnchantable-net.minecraft.item.ItemStack-">isEnchantable</a>, <a href="../../../net/minecraft/item/Item.html#isFood--">isFood</a>, <a href="../../../net/minecraft/item/Item.html#isNetworkSynced--">isNetworkSynced</a>, <a href="../../../net/minecraft/item/Item.html#isUnbreakable--">isUnbreakable</a>, <a href="../../../net/minecraft/item/Item.html#method_8424-int-int-">method_8424</a>, <a href="../../../net/minecraft/item/Item.html#method_8426-net.minecraft.class_2617-">method_8426</a>, <a href="../../../net/minecraft/item/Item.html#method_8427--">method_8427</a>, <a href="../../../net/minecraft/item/Item.html#method_8428-int-">method_8428</a>, <a href="../../../net/minecraft/item/Item.html#method_8429--">method_8429</a>, <a href="../../../net/minecraft/item/Item.html#method_8430-java.lang.String-">method_8430</a>, <a href="../../../net/minecraft/item/Item.html#method_8431-net.minecraft.item.ItemStack-">method_8431</a>, <a href="../../../net/minecraft/item/Item.html#method_8432-net.minecraft.item.ItemStack-">method_8432</a>, <a href="../../../net/minecraft/item/Item.html#method_8433--">method_8433</a>, <a href="../../../net/minecraft/item/Item.html#onCraft-net.minecraft.item.ItemStack-net.minecraft.world.World-net.minecraft.entity.player.PlayerEntity-">onCraft</a>, <a href="../../../net/minecraft/item/Item.html#onFinishUse-net.minecraft.item.ItemStack-net.minecraft.world.World-net.minecraft.entity.player.PlayerEntity-">onFinishUse</a>, <a href="../../../net/minecraft/item/Item.html#onHit-net.minecraft.world.World-net.minecraft.entity.player.PlayerEntity-boolean-">onHit</a>, <a href="../../../net/minecraft/item/Item.html#onUseStopped-net.minecraft.item.ItemStack-net.minecraft.world.World-net.minecraft.entity.player.PlayerEntity-int-">onUseStopped</a>, <a href="../../../net/minecraft/item/Item.html#setHandheld--">setHandheld</a>, <a href="../../../net/minecraft/item/Item.html#setItemGroup-net.minecraft.item.group.ItemGroup-">setItemGroup</a>, <a href="../../../net/minecraft/item/Item.html#setMaxCount-int-">setMaxCount</a>, <a href="../../../net/minecraft/item/Item.html#setMaxDamage-int-">setMaxDamage</a>, <a href="../../../net/minecraft/item/Item.html#setRecipeRemainder-net.minecraft.item.Item-">setRecipeRemainder</a>, <a href="../../../net/minecraft/item/Item.html#setStatusEffectString-java.lang.String-">setStatusEffectString</a>, <a href="../../../net/minecraft/item/Item.html#setTranslationKey-java.lang.String-">setTranslationKey</a>, <a href="../../../net/minecraft/item/Item.html#setUnbreakable-boolean-">setUnbreakable</a>, <a href="../../../net/minecraft/item/Item.html#setup--">setup</a>, <a href="../../../net/minecraft/item/Item.html#shouldRotate--">shouldRotate</a>, <a href="../../../net/minecraft/item/Item.html#shouldSyncTagToClient--">shouldSyncTagToClient</a>, <a href="../../../net/minecraft/item/Item.html#use-net.minecraft.item.ItemStack-net.minecraft.entity.player.PlayerEntity-net.minecraft.world.World-int-int-int-int-float-float-float-">use</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -272,22 +283,22 @@ extends <a href="../../../net/minecraft/item/Item.html" title="class in net.mine
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="attackDamage">
+<a name="attackMultiplier">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>attackDamage</h4>
-<pre>private final&nbsp;float attackDamage</pre>
+<h4>attackMultiplier</h4>
+<pre>private&nbsp;float attackMultiplier</pre>
 </li>
 </ul>
-<a name="field_23299">
+<a name="material">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_23299</h4>
-<pre>private final&nbsp;<a href="../../../net/minecraft/item/Item.ToolMaterials.html" title="enum in net.minecraft.item">Item.ToolMaterials</a> field_23299</pre>
+<h4>material</h4>
+<pre>private final&nbsp;<a href="../../../net/minecraft/item/ToolMaterialType.html" title="enum in net.minecraft.item">ToolMaterialType</a> material</pre>
 </li>
 </ul>
 </li>
@@ -298,13 +309,13 @@ extends <a href="../../../net/minecraft/item/Item.html" title="class in net.mine
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="SwordItem-net.minecraft.item.Item.ToolMaterials-">
+<a name="SwordItem-net.minecraft.item.ToolMaterialType-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SwordItem</h4>
-<pre>public&nbsp;SwordItem(<a href="../../../net/minecraft/item/Item.ToolMaterials.html" title="enum in net.minecraft.item">Item.ToolMaterials</a>&nbsp;toolMaterials)</pre>
+<pre>public&nbsp;SwordItem(<a href="../../../net/minecraft/item/ToolMaterialType.html" title="enum in net.minecraft.item">ToolMaterialType</a>&nbsp;material)</pre>
 </li>
 </ul>
 </li>
@@ -315,85 +326,136 @@ extends <a href="../../../net/minecraft/item/Item.html" title="class in net.mine
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_25650--">
+<a name="getAttackDamage--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_25650</h4>
-<pre>public&nbsp;float&nbsp;method_25650()</pre>
+<h4>getAttackDamage</h4>
+<pre>public&nbsp;float&nbsp;getAttackDamage()</pre>
 </li>
 </ul>
-<a name="getMiningSpeedMultiplier-net.minecraft.item.ItemStack-net.minecraft.block.BlockState-">
+<a name="getMiningSpeedMultiplier-net.minecraft.item.ItemStack-net.minecraft.block.Block-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getMiningSpeedMultiplier</h4>
 <pre>public&nbsp;float&nbsp;getMiningSpeedMultiplier(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
-                                      <a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state)</pre>
+                                      <a href="../../../net/minecraft/block/Block.html" title="class in net.minecraft.block">Block</a>&nbsp;block)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../net/minecraft/item/Item.html#getMiningSpeedMultiplier-net.minecraft.item.ItemStack-net.minecraft.block.BlockState-">getMiningSpeedMultiplier</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/item/Item.html" title="class in net.minecraft.item">Item</a></code></dd>
+<dd><code><a href="../../../net/minecraft/item/Item.html#getMiningSpeedMultiplier-net.minecraft.item.ItemStack-net.minecraft.block.Block-">getMiningSpeedMultiplier</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/item/Item.html" title="class in net.minecraft.item">Item</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="postHit-net.minecraft.item.ItemStack-net.minecraft.entity.LivingEntity-net.minecraft.entity.LivingEntity-">
+<a name="onEntityHit-net.minecraft.item.ItemStack-net.minecraft.entity.LivingEntity-net.minecraft.entity.LivingEntity-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>postHit</h4>
-<pre>public&nbsp;boolean&nbsp;postHit(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
-                       <a href="../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;target,
-                       <a href="../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;attacker)</pre>
+<h4>onEntityHit</h4>
+<pre>public&nbsp;boolean&nbsp;onEntityHit(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
+                           <a href="../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;entity1,
+                           <a href="../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;entity2)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../net/minecraft/item/Item.html#postHit-net.minecraft.item.ItemStack-net.minecraft.entity.LivingEntity-net.minecraft.entity.LivingEntity-">postHit</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/item/Item.html" title="class in net.minecraft.item">Item</a></code></dd>
+<dd><code><a href="../../../net/minecraft/item/Item.html#onEntityHit-net.minecraft.item.ItemStack-net.minecraft.entity.LivingEntity-net.minecraft.entity.LivingEntity-">onEntityHit</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/item/Item.html" title="class in net.minecraft.item">Item</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="postMine-net.minecraft.item.ItemStack-net.minecraft.world.World-net.minecraft.block.BlockState-net.minecraft.util.math.BlockPos-net.minecraft.entity.LivingEntity-">
+<a name="onBlockBroken-net.minecraft.item.ItemStack-net.minecraft.world.World-net.minecraft.block.Block-int-int-int-net.minecraft.entity.LivingEntity-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>postMine</h4>
-<pre>public&nbsp;boolean&nbsp;postMine(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
-                        <a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-                        <a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
-                        <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
-                        <a href="../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;miner)</pre>
+<h4>onBlockBroken</h4>
+<pre>public&nbsp;boolean&nbsp;onBlockBroken(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
+                             <a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+                             <a href="../../../net/minecraft/block/Block.html" title="class in net.minecraft.block">Block</a>&nbsp;block,
+                             int&nbsp;int2,
+                             int&nbsp;int3,
+                             int&nbsp;int4,
+                             <a href="../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>&nbsp;livingEntity)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../net/minecraft/item/Item.html#postMine-net.minecraft.item.ItemStack-net.minecraft.world.World-net.minecraft.block.BlockState-net.minecraft.util.math.BlockPos-net.minecraft.entity.LivingEntity-">postMine</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/item/Item.html" title="class in net.minecraft.item">Item</a></code></dd>
+<dd><code><a href="../../../net/minecraft/item/Item.html#onBlockBroken-net.minecraft.item.ItemStack-net.minecraft.world.World-net.minecraft.block.Block-int-int-int-net.minecraft.entity.LivingEntity-">onBlockBroken</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/item/Item.html" title="class in net.minecraft.item">Item</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="is3D--">
+<a name="isHandheld--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>is3D</h4>
+<h4>isHandheld</h4>
 <pre>@Environment(value=CLIENT)
-public&nbsp;boolean&nbsp;is3D()</pre>
+public&nbsp;boolean&nbsp;isHandheld()</pre>
+<div class="block">Returns whether the item is supposed to look as handheld.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../net/minecraft/item/Item.html#is3D--">is3D</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/item/Item.html" title="class in net.minecraft.item">Item</a></code></dd>
+<dd><code><a href="../../../net/minecraft/item/Item.html#isHandheld--">isHandheld</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/item/Item.html" title="class in net.minecraft.item">Item</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="isEffectiveOn-net.minecraft.block.BlockState-">
+<a name="getUseAction-net.minecraft.item.ItemStack-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getUseAction</h4>
+<pre>public&nbsp;<a href="../../../net/minecraft/util/UseAction.html" title="enum in net.minecraft.util">UseAction</a>&nbsp;getUseAction(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</pre>
+<div class="block">Returns the UseAction for an item when the item is used.
+ Used by food, potions, bows, etc.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../net/minecraft/item/Item.html#getUseAction-net.minecraft.item.ItemStack-">getUseAction</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/item/Item.html" title="class in net.minecraft.item">Item</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>stack</code> - The ItemStack that was used</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../net/minecraft/item/BowItem.html" title="class in net.minecraft.item"><code>BowItem</code></a>, 
+<a href="../../../net/minecraft/item/PotionItem.html" title="class in net.minecraft.item"><code>PotionItem</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="getMaxUseTime-net.minecraft.item.ItemStack-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMaxUseTime</h4>
+<pre>public&nbsp;int&nbsp;getMaxUseTime(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../net/minecraft/item/Item.html#getMaxUseTime-net.minecraft.item.ItemStack-">getMaxUseTime</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/item/Item.html" title="class in net.minecraft.item">Item</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="onStartUse-net.minecraft.item.ItemStack-net.minecraft.world.World-net.minecraft.entity.player.PlayerEntity-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onStartUse</h4>
+<pre>public&nbsp;<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;onStartUse(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
+                            <a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+                            <a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../net/minecraft/item/Item.html#onStartUse-net.minecraft.item.ItemStack-net.minecraft.world.World-net.minecraft.entity.player.PlayerEntity-">onStartUse</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/item/Item.html" title="class in net.minecraft.item">Item</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="isEffectiveOn-net.minecraft.block.Block-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>isEffectiveOn</h4>
-<pre>public&nbsp;boolean&nbsp;isEffectiveOn(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state)</pre>
+<pre>public&nbsp;boolean&nbsp;isEffectiveOn(<a href="../../../net/minecraft/block/Block.html" title="class in net.minecraft.block">Block</a>&nbsp;block)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../net/minecraft/item/Item.html#isEffectiveOn-net.minecraft.block.BlockState-">isEffectiveOn</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/item/Item.html" title="class in net.minecraft.item">Item</a></code></dd>
+<dd><code><a href="../../../net/minecraft/item/Item.html#isEffectiveOn-net.minecraft.block.Block-">isEffectiveOn</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/item/Item.html" title="class in net.minecraft.item">Item</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -404,19 +466,26 @@ public&nbsp;boolean&nbsp;is3D()</pre>
 <li class="blockList">
 <h4>getEnchantability</h4>
 <pre>public&nbsp;int&nbsp;getEnchantability()</pre>
+<div class="block">Returns the enchantability of an Item.
+ Used by tools and armor</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../net/minecraft/item/Item.html#getEnchantability--">getEnchantability</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/item/Item.html" title="class in net.minecraft.item">Item</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Enchantability</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../net/minecraft/item/ToolItem.html" title="class in net.minecraft.item"><code>ToolItem</code></a>, 
+<a href="../../../net/minecraft/item/ArmorItem.html" title="class in net.minecraft.item"><code>ArmorItem</code></a></dd>
 </dl>
 </li>
 </ul>
-<a name="method_25651--">
+<a name="getToolMaterial--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_25651</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;method_25651()</pre>
+<h4>getToolMaterial</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getToolMaterial()</pre>
 </li>
 </ul>
 <a name="canRepair-net.minecraft.item.ItemStack-net.minecraft.item.ItemStack-">
@@ -427,22 +496,24 @@ public&nbsp;boolean&nbsp;is3D()</pre>
 <h4>canRepair</h4>
 <pre>public&nbsp;boolean&nbsp;canRepair(<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
                          <a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;ingredient)</pre>
+<div class="block">Returns whether the item can be repaired via an anvil or crafting table.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../net/minecraft/item/Item.html#canRepair-net.minecraft.item.ItemStack-net.minecraft.item.ItemStack-">canRepair</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/item/Item.html" title="class in net.minecraft.item">Item</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="getModifiers-net.minecraft.entity.EquipmentSlot-">
+<a name="getAttributeModifierMap--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getModifiers</h4>
-<pre>public&nbsp;<a href="https://guava.dev/releases/21.0/api/docs/com/google/common/collect/Multimap.html?is-external=true" title="class or interface in com.google.common.collect">Multimap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../net/minecraft/entity/attribute/EntityAttributeModifier.html" title="class in net.minecraft.entity.attribute">EntityAttributeModifier</a>&gt;&nbsp;getModifiers(<a href="../../../net/minecraft/entity/EquipmentSlot.html" title="enum in net.minecraft.entity">EquipmentSlot</a>&nbsp;slot)</pre>
+<h4>getAttributeModifierMap</h4>
+<pre>public&nbsp;<a href="https://guava.dev/releases/21.0/api/docs/com/google/common/collect/Multimap.html?is-external=true" title="class or interface in com.google.common.collect">Multimap</a>&nbsp;getAttributeModifierMap()</pre>
+<div class="block">Returns a map containing entity attributes that are modified by the item</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../net/minecraft/item/Item.html#getModifiers-net.minecraft.entity.EquipmentSlot-">getModifiers</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/item/Item.html" title="class in net.minecraft.item">Item</a></code></dd>
+<dd><code><a href="../../../net/minecraft/item/Item.html#getAttributeModifierMap--">getAttributeModifierMap</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/item/Item.html" title="class in net.minecraft.item">Item</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -473,8 +544,8 @@ public&nbsp;boolean&nbsp;is3D()</pre>
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/item/SplashPotionItem.html" title="class in net.minecraft.item"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/item/TippedArrowItem.html" title="class in net.minecraft.item"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/item/StoneSlabItem.html" title="class in net.minecraft.item"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/item/ToolItem.html" title="class in net.minecraft.item"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/item/SwordItem.html" target="_top">Frames</a></li>
@@ -498,7 +569,7 @@ public&nbsp;boolean&nbsp;is3D()</pre>
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.classes.inherited.from.class.net.minecraft.item.Item">Nested</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>

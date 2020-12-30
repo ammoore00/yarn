@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li>Next&nbsp;Class</li>
+<li><a href="../../../net/minecraft/world/WorldEventListener.html" title="interface in net.minecraft.world"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/world/WorldView.html" title="interface in net.minecraft.world"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/world/WorldSaveHandler.html" target="_top">Frames</a></li>
@@ -108,17 +108,17 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../net/minecraft/class_1268.html" title="interface in net.minecraft">class_1268</a>, <a href="../../../net/minecraft/world/PlayerSaveHandler.html" title="interface in net.minecraft.world">PlayerSaveHandler</a></dd>
+<dd><a href="../../../net/minecraft/world/PlayerDataHandler.html" title="interface in net.minecraft.world">PlayerDataHandler</a>, <a href="../../../net/minecraft/world/SaveHandler.html" title="interface in net.minecraft.world">SaveHandler</a></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../net/minecraft/class_1258.html" title="class in net.minecraft">class_1258</a></dd>
+<dd><a href="../../../net/minecraft/class_629.html" title="class in net.minecraft">class_629</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">WorldSaveHandler</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
-implements <a href="../../../net/minecraft/class_1268.html" title="interface in net.minecraft">class_1268</a>, <a href="../../../net/minecraft/world/PlayerSaveHandler.html" title="interface in net.minecraft.world">PlayerSaveHandler</a></pre>
+implements <a href="../../../net/minecraft/world/SaveHandler.html" title="interface in net.minecraft.world">SaveHandler</a>, <a href="../../../net/minecraft/world/PlayerDataHandler.html" title="interface in net.minecraft.world">PlayerDataHandler</a></pre>
 </li>
 </ul>
 </div>
@@ -138,16 +138,8 @@ implements <a href="../../../net/minecraft/class_1268.html" title="interface in 
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../net/minecraft/class_2656.html" title="class in net.minecraft">class_2656</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#dataFixer">dataFixer</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#field_26425">field_26425</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../net/minecraft/structure/StructureManager.html" title="class in net.minecraft.structure">StructureManager</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#field_26428">field_26428</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#data">data</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a></code></td>
@@ -155,15 +147,15 @@ implements <a href="../../../net/minecraft/class_1268.html" title="interface in 
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#playerDataDir">playerDataDir</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#playerdataFolder">playerdataFolder</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private long</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#saveStartTime">saveStartTime</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#startTime">startTime</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#worldDir">worldDir</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#worldFolder">worldFolder</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
@@ -184,10 +176,9 @@ implements <a href="../../../net/minecraft/class_1268.html" title="interface in 
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#WorldSaveHandler-java.io.File-java.lang.String-boolean-net.minecraft.class_2656-">WorldSaveHandler</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;worldsDirectory,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#WorldSaveHandler-java.io.File-java.lang.String-boolean-">WorldSaveHandler</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;savesFolder,
                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;worldName,
-                boolean&nbsp;bool,
-                <a href="../../../net/minecraft/class_2656.html" title="class in net.minecraft">class_2656</a>&nbsp;dataFixer)</code>&nbsp;</td>
+                boolean&nbsp;createPlayerDataDir)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -205,57 +196,57 @@ implements <a href="../../../net/minecraft/class_1268.html" title="interface in 
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#loadPlayerData-net.minecraft.entity.player.PlayerEntity-">loadPlayerData</a></span>(<a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../net/minecraft/world/chunk/ChunkWriter.html" title="interface in net.minecraft.world.chunk">ChunkWriter</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#getChunkWriter-net.minecraft.world.dimension.Dimension-">getChunkWriter</a></span>(<a href="../../../net/minecraft/world/dimension/Dimension.html" title="class in net.minecraft.world.dimension">Dimension</a>&nbsp;dim)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#method_28313--">method_28313</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#getDataFile-java.lang.String-">getDataFile</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;fileName)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/class_5318.html" title="interface in net.minecraft">class_5318</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#method_28314-net.minecraft.world.dimension.Dimension-">method_28314</a></span>(<a href="../../../net/minecraft/world/dimension/Dimension.html" title="class in net.minecraft.world.dimension">Dimension</a>&nbsp;dimension)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../net/minecraft/world/PlayerDataHandler.html" title="interface in net.minecraft.world">PlayerDataHandler</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#getInstance--">getInstance</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#method_28315-net.minecraft.world.level.LevelProperties-">method_28315</a></span>(<a href="../../../net/minecraft/world/level/LevelProperties.html" title="class in net.minecraft.world.level">LevelProperties</a>&nbsp;levelProperties)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../net/minecraft/world/level/LevelProperties.html" title="class in net.minecraft.world.level">LevelProperties</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#getLevelProperties--">getLevelProperties</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#method_28316-net.minecraft.world.level.LevelProperties-net.minecraft.nbt.CompoundTag-">method_28316</a></span>(<a href="../../../net/minecraft/world/level/LevelProperties.html" title="class in net.minecraft.world.level">LevelProperties</a>&nbsp;levelProperties,
-            <a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#getPlayerData-net.minecraft.entity.player.PlayerEntity-">getPlayerData</a></span>(<a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#method_28317-java.lang.String-">method_28317</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#getSavedPlayerIds--">getSavedPlayerIds</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#method_28318--">method_28318</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#getWorldFolder--">getWorldFolder</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#method_28319--">method_28319</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#getWorldName--">getWorldName</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/world/level/LevelProperties.html" title="class in net.minecraft.world.level">LevelProperties</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#method_28320--">method_28320</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#method_2009--">method_2009</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/world/PlayerSaveHandler.html" title="interface in net.minecraft.world">PlayerSaveHandler</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#method_28321--">method_28321</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#method_2012-net.minecraft.world.level.LevelProperties-net.minecraft.nbt.CompoundTag-">method_2012</a></span>(<a href="../../../net/minecraft/world/level/LevelProperties.html" title="class in net.minecraft.world.level">LevelProperties</a>&nbsp;properties,
+           <a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;nbt)</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/structure/StructureManager.html" title="class in net.minecraft.structure">StructureManager</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#method_28322--">method_28322</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#readSessionLock--">readSessionLock</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#method_28350--">method_28350</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#saveLevelProperties-net.minecraft.world.level.LevelProperties-">saveLevelProperties</a></span>(<a href="../../../net/minecraft/world/level/LevelProperties.html" title="class in net.minecraft.world.level">LevelProperties</a>&nbsp;levelProperties)</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#savePlayerData-net.minecraft.entity.player.PlayerEntity-">savePlayerData</a></span>(<a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/WorldSaveHandler.html#savePlayerData-net.minecraft.entity.player.PlayerEntity-">savePlayerData</a></span>(<a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>private void</code></td>
@@ -292,67 +283,49 @@ implements <a href="../../../net/minecraft/class_1268.html" title="interface in 
 <pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a> LOGGER</pre>
 </li>
 </ul>
-<a name="worldDir">
+<a name="worldFolder">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>worldDir</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a> worldDir</pre>
+<h4>worldFolder</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a> worldFolder</pre>
 </li>
 </ul>
-<a name="playerDataDir">
+<a name="playerdataFolder">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>playerDataDir</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a> playerDataDir</pre>
+<h4>playerdataFolder</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a> playerdataFolder</pre>
 </li>
 </ul>
-<a name="field_26425">
+<a name="data">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_26425</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a> field_26425</pre>
+<h4>data</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a> data</pre>
 </li>
 </ul>
-<a name="saveStartTime">
+<a name="startTime">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>saveStartTime</h4>
-<pre>private final&nbsp;long saveStartTime</pre>
+<h4>startTime</h4>
+<pre>private final&nbsp;long startTime</pre>
 </li>
 </ul>
 <a name="worldName">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>worldName</h4>
 <pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> worldName</pre>
-</li>
-</ul>
-<a name="field_26428">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_26428</h4>
-<pre>private final&nbsp;<a href="../../../net/minecraft/structure/StructureManager.html" title="class in net.minecraft.structure">StructureManager</a> field_26428</pre>
-</li>
-</ul>
-<a name="dataFixer">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>dataFixer</h4>
-<pre>protected final&nbsp;<a href="../../../net/minecraft/class_2656.html" title="class in net.minecraft">class_2656</a> dataFixer</pre>
 </li>
 </ul>
 </li>
@@ -363,16 +336,15 @@ implements <a href="../../../net/minecraft/class_1268.html" title="interface in 
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="WorldSaveHandler-java.io.File-java.lang.String-boolean-net.minecraft.class_2656-">
+<a name="WorldSaveHandler-java.io.File-java.lang.String-boolean-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>WorldSaveHandler</h4>
-<pre>public&nbsp;WorldSaveHandler(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;worldsDirectory,
+<pre>public&nbsp;WorldSaveHandler(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;savesFolder,
                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;worldName,
-                        boolean&nbsp;bool,
-                        <a href="../../../net/minecraft/class_2656.html" title="class in net.minecraft">class_2656</a>&nbsp;dataFixer)</pre>
+                        boolean&nbsp;createPlayerDataDir)</pre>
 </li>
 </ul>
 </li>
@@ -392,87 +364,82 @@ implements <a href="../../../net/minecraft/class_1268.html" title="interface in 
 <pre>private&nbsp;void&nbsp;writeSessionLock()</pre>
 </li>
 </ul>
-<a name="method_28318--">
+<a name="getWorldFolder--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_28318</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;method_28318()</pre>
+<h4>getWorldFolder</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;getWorldFolder()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/class_1268.html#method_28318--">method_28318</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/class_1268.html" title="interface in net.minecraft">class_1268</a></code></dd>
+<dd><code><a href="../../../net/minecraft/world/SaveHandler.html#getWorldFolder--">getWorldFolder</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/world/SaveHandler.html" title="interface in net.minecraft.world">SaveHandler</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_28319--">
+<a name="readSessionLock--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_28319</h4>
-<pre>public&nbsp;void&nbsp;method_28319()
-                  throws <a href="../../../net/minecraft/world/SessionLockException.html" title="class in net.minecraft.world">SessionLockException</a></pre>
+<h4>readSessionLock</h4>
+<pre>public&nbsp;void&nbsp;readSessionLock()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/class_1268.html#method_28319--">method_28319</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/class_1268.html" title="interface in net.minecraft">class_1268</a></code></dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../../../net/minecraft/world/SessionLockException.html" title="class in net.minecraft.world">SessionLockException</a></code></dd>
+<dd><code><a href="../../../net/minecraft/world/SaveHandler.html#readSessionLock--">readSessionLock</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/world/SaveHandler.html" title="interface in net.minecraft.world">SaveHandler</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_28314-net.minecraft.world.dimension.Dimension-">
+<a name="getChunkWriter-net.minecraft.world.dimension.Dimension-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_28314</h4>
-<pre>public&nbsp;<a href="../../../net/minecraft/class_5318.html" title="interface in net.minecraft">class_5318</a>&nbsp;method_28314(<a href="../../../net/minecraft/world/dimension/Dimension.html" title="class in net.minecraft.world.dimension">Dimension</a>&nbsp;dimension)</pre>
+<h4>getChunkWriter</h4>
+<pre>public&nbsp;<a href="../../../net/minecraft/world/chunk/ChunkWriter.html" title="interface in net.minecraft.world.chunk">ChunkWriter</a>&nbsp;getChunkWriter(<a href="../../../net/minecraft/world/dimension/Dimension.html" title="class in net.minecraft.world.dimension">Dimension</a>&nbsp;dim)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/class_1268.html#method_28314-net.minecraft.world.dimension.Dimension-">method_28314</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/class_1268.html" title="interface in net.minecraft">class_1268</a></code></dd>
+<dd><code><a href="../../../net/minecraft/world/SaveHandler.html#getChunkWriter-net.minecraft.world.dimension.Dimension-">getChunkWriter</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/world/SaveHandler.html" title="interface in net.minecraft.world">SaveHandler</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_28320--">
+<a name="getLevelProperties--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_28320</h4>
-<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-public&nbsp;<a href="../../../net/minecraft/world/level/LevelProperties.html" title="class in net.minecraft.world.level">LevelProperties</a>&nbsp;method_28320()</pre>
+<h4>getLevelProperties</h4>
+<pre>public&nbsp;<a href="../../../net/minecraft/world/level/LevelProperties.html" title="class in net.minecraft.world.level">LevelProperties</a>&nbsp;getLevelProperties()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/class_1268.html#method_28320--">method_28320</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/class_1268.html" title="interface in net.minecraft">class_1268</a></code></dd>
+<dd><code><a href="../../../net/minecraft/world/SaveHandler.html#getLevelProperties--">getLevelProperties</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/world/SaveHandler.html" title="interface in net.minecraft.world">SaveHandler</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_28316-net.minecraft.world.level.LevelProperties-net.minecraft.nbt.CompoundTag-">
+<a name="method_2012-net.minecraft.world.level.LevelProperties-net.minecraft.nbt.CompoundTag-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_28316</h4>
-<pre>public&nbsp;void&nbsp;method_28316(<a href="../../../net/minecraft/world/level/LevelProperties.html" title="class in net.minecraft.world.level">LevelProperties</a>&nbsp;levelProperties,
-                         <a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-                         <a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</pre>
+<h4>method_2012</h4>
+<pre>public&nbsp;void&nbsp;method_2012(<a href="../../../net/minecraft/world/level/LevelProperties.html" title="class in net.minecraft.world.level">LevelProperties</a>&nbsp;properties,
+                        <a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;nbt)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/class_1268.html#method_28316-net.minecraft.world.level.LevelProperties-net.minecraft.nbt.CompoundTag-">method_28316</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/class_1268.html" title="interface in net.minecraft">class_1268</a></code></dd>
+<dd><code><a href="../../../net/minecraft/world/SaveHandler.html#method_2012-net.minecraft.world.level.LevelProperties-net.minecraft.nbt.CompoundTag-">method_2012</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/world/SaveHandler.html" title="interface in net.minecraft.world">SaveHandler</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_28315-net.minecraft.world.level.LevelProperties-">
+<a name="saveLevelProperties-net.minecraft.world.level.LevelProperties-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_28315</h4>
-<pre>public&nbsp;void&nbsp;method_28315(<a href="../../../net/minecraft/world/level/LevelProperties.html" title="class in net.minecraft.world.level">LevelProperties</a>&nbsp;levelProperties)</pre>
+<h4>saveLevelProperties</h4>
+<pre>public&nbsp;void&nbsp;saveLevelProperties(<a href="../../../net/minecraft/world/level/LevelProperties.html" title="class in net.minecraft.world.level">LevelProperties</a>&nbsp;levelProperties)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/class_1268.html#method_28315-net.minecraft.world.level.LevelProperties-">method_28315</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/class_1268.html" title="interface in net.minecraft">class_1268</a></code></dd>
+<dd><code><a href="../../../net/minecraft/world/SaveHandler.html#saveLevelProperties-net.minecraft.world.level.LevelProperties-">saveLevelProperties</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/world/SaveHandler.html" title="interface in net.minecraft.world">SaveHandler</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -482,89 +449,88 @@ public&nbsp;<a href="../../../net/minecraft/world/level/LevelProperties.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>savePlayerData</h4>
-<pre>public&nbsp;void&nbsp;savePlayerData(<a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</pre>
+<pre>public&nbsp;void&nbsp;savePlayerData(<a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/world/PlayerSaveHandler.html#savePlayerData-net.minecraft.entity.player.PlayerEntity-">savePlayerData</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/world/PlayerSaveHandler.html" title="interface in net.minecraft.world">PlayerSaveHandler</a></code></dd>
+<dd><code><a href="../../../net/minecraft/world/PlayerDataHandler.html#savePlayerData-net.minecraft.entity.player.PlayerEntity-">savePlayerData</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/world/PlayerDataHandler.html" title="interface in net.minecraft.world">PlayerDataHandler</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="loadPlayerData-net.minecraft.entity.player.PlayerEntity-">
+<a name="getPlayerData-net.minecraft.entity.player.PlayerEntity-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>loadPlayerData</h4>
-<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-public&nbsp;<a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;loadPlayerData(<a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</pre>
+<h4>getPlayerData</h4>
+<pre>public&nbsp;<a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;getPlayerData(<a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/world/PlayerSaveHandler.html#loadPlayerData-net.minecraft.entity.player.PlayerEntity-">loadPlayerData</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/world/PlayerSaveHandler.html" title="interface in net.minecraft.world">PlayerSaveHandler</a></code></dd>
+<dd><code><a href="../../../net/minecraft/world/PlayerDataHandler.html#getPlayerData-net.minecraft.entity.player.PlayerEntity-">getPlayerData</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/world/PlayerDataHandler.html" title="interface in net.minecraft.world">PlayerDataHandler</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_28321--">
+<a name="getInstance--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_28321</h4>
-<pre>public&nbsp;<a href="../../../net/minecraft/world/PlayerSaveHandler.html" title="interface in net.minecraft.world">PlayerSaveHandler</a>&nbsp;method_28321()</pre>
+<h4>getInstance</h4>
+<pre>public&nbsp;<a href="../../../net/minecraft/world/PlayerDataHandler.html" title="interface in net.minecraft.world">PlayerDataHandler</a>&nbsp;getInstance()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/class_1268.html#method_28321--">method_28321</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/class_1268.html" title="interface in net.minecraft">class_1268</a></code></dd>
+<dd><code><a href="../../../net/minecraft/world/SaveHandler.html#getInstance--">getInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/world/SaveHandler.html" title="interface in net.minecraft.world">SaveHandler</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_28350--">
+<a name="getSavedPlayerIds--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_28350</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;method_28350()</pre>
+<h4>getSavedPlayerIds</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;getSavedPlayerIds()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/world/PlayerSaveHandler.html#method_28350--">method_28350</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/world/PlayerSaveHandler.html" title="interface in net.minecraft.world">PlayerSaveHandler</a></code></dd>
+<dd><code><a href="../../../net/minecraft/world/PlayerDataHandler.html#getSavedPlayerIds--">getSavedPlayerIds</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/world/PlayerDataHandler.html" title="interface in net.minecraft.world">PlayerDataHandler</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_28313--">
+<a name="method_2009--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_28313</h4>
-<pre>public&nbsp;void&nbsp;method_28313()</pre>
+<h4>method_2009</h4>
+<pre>public&nbsp;void&nbsp;method_2009()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/class_1268.html#method_28313--">method_28313</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/class_1268.html" title="interface in net.minecraft">class_1268</a></code></dd>
+<dd><code><a href="../../../net/minecraft/world/SaveHandler.html#method_2009--">method_2009</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/world/SaveHandler.html" title="interface in net.minecraft.world">SaveHandler</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_28317-java.lang.String-">
+<a name="getDataFile-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_28317</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;method_28317(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
+<h4>getDataFile</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;getDataFile(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;fileName)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/class_1268.html#method_28317-java.lang.String-">method_28317</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/class_1268.html" title="interface in net.minecraft">class_1268</a></code></dd>
+<dd><code><a href="../../../net/minecraft/world/SaveHandler.html#getDataFile-java.lang.String-">getDataFile</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/world/SaveHandler.html" title="interface in net.minecraft.world">SaveHandler</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_28322--">
+<a name="getWorldName--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_28322</h4>
-<pre>public&nbsp;<a href="../../../net/minecraft/structure/StructureManager.html" title="class in net.minecraft.structure">StructureManager</a>&nbsp;method_28322()</pre>
+<h4>getWorldName</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getWorldName()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/class_1268.html#method_28322--">method_28322</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/class_1268.html" title="interface in net.minecraft">class_1268</a></code></dd>
+<dd><code><a href="../../../net/minecraft/world/SaveHandler.html#getWorldName--">getWorldName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/world/SaveHandler.html" title="interface in net.minecraft.world">SaveHandler</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -595,8 +561,8 @@ public&nbsp;<a href="../../../net/minecraft/nbt/CompoundTag.html" title="class i
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li>Next&nbsp;Class</li>
+<li><a href="../../../net/minecraft/world/WorldEventListener.html" title="interface in net.minecraft.world"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/world/WorldView.html" title="interface in net.minecraft.world"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/world/WorldSaveHandler.html" target="_top">Frames</a></li>

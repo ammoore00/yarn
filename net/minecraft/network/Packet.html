@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var methods = {"i0":6,"i1":10,"i2":10,"i3":9,"i4":6,"i5":9,"i6":10,"i7":6,"i8":9};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/network/OffThreadException.html" title="class in net.minecraft.network"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/network/PacketDeflater.html" title="class in net.minecraft.network"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/network/NetworkState.html" title="enum in net.minecraft.network"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/network/PacketWrapper.html" title="class in net.minecraft.network"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/network/Packet.html" target="_top">Frames</a></li>
@@ -74,14 +74,14 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
@@ -92,25 +92,70 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">net.minecraft.network</div>
-<h2 title="Interface Packet" class="title">Interface Packet&lt;T extends <a href="../../../net/minecraft/network/listener/PacketListener.html" title="interface in net.minecraft.network.listener">PacketListener</a>&gt;</h2>
+<h2 title="Class Packet" class="title">Class Packet</h2>
 </div>
 <div class="contentContainer">
+<ul class="inheritance">
+<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>net.minecraft.network.Packet</li>
+</ul>
+</li>
+</ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
 <dl>
-<dt>All Known Implementing Classes:</dt>
-<dd><a href="../../../net/minecraft/network/packet/c2s/play/AdvancementTabC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">AdvancementTabC2SPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/AdvancementUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">AdvancementUpdateS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/BlockActionS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">BlockActionS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/BlockBreakingProgressS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">BlockBreakingProgressS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/BlockEntityUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">BlockEntityUpdateS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/BlockUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">BlockUpdateS2CPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/BoatPaddleStateC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">BoatPaddleStateC2SPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/BossBarS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">BossBarS2CPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/ButtonClickC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ButtonClickC2SPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/ChatMessageC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ChatMessageC2SPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/ChatMessageS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ChatMessageS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/ChunkDataS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ChunkDataS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/ChunkDeltaUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ChunkDeltaUpdateS2CPacket</a>, <a href="../../../net/minecraft/class_2370.html" title="class in net.minecraft">class_2370</a>, <a href="../../../net/minecraft/class_6277.html" title="class in net.minecraft">class_6277</a>, <a href="../../../net/minecraft/class_6330.html" title="class in net.minecraft">class_6330</a>, <a href="../../../net/minecraft/network/packet/c2s/play/ClickWindowC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ClickWindowC2SPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/ClientCommandC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ClientCommandC2SPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/ClientSettingsC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ClientSettingsC2SPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/ClientStatusC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ClientStatusC2SPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/CloseContainerS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">CloseContainerS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/CombatEventS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">CombatEventS2CPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/ConfirmGuiActionC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ConfirmGuiActionC2SPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/ConfirmGuiActionS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ConfirmGuiActionS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/ContainerPropertyUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ContainerPropertyUpdateS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/ContainerSlotUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ContainerSlotUpdateS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/CooldownUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">CooldownUpdateS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/CraftFailedResponseS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">CraftFailedResponseS2CPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/CraftRequestC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">CraftRequestC2SPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/CreativeInventoryActionC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">CreativeInventoryActionC2SPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/CustomPayloadC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">CustomPayloadC2SPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/CustomPayloadS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">CustomPayloadS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/DifficultyS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">DifficultyS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/DisconnectS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">DisconnectS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/EntitiesDestroyS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">EntitiesDestroyS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/EntityAnimationS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">EntityAnimationS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/EntityAttachS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">EntityAttachS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/EntityAttributesS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">EntityAttributesS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/EntityEquipmentUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">EntityEquipmentUpdateS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/EntityPassengersSetS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">EntityPassengersSetS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">EntityPositionS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/EntityS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">EntityS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/EntityS2CPacket.MoveRelative.html" title="class in net.minecraft.network.packet.s2c.play">EntityS2CPacket.MoveRelative</a>, <a href="../../../net/minecraft/network/packet/s2c/play/EntityS2CPacket.Rotate.html" title="class in net.minecraft.network.packet.s2c.play">EntityS2CPacket.Rotate</a>, <a href="../../../net/minecraft/network/packet/s2c/play/EntityS2CPacket.RotateAndMoveRelative.html" title="class in net.minecraft.network.packet.s2c.play">EntityS2CPacket.RotateAndMoveRelative</a>, <a href="../../../net/minecraft/network/packet/s2c/play/EntitySetHeadYawS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">EntitySetHeadYawS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/EntitySpawnGlobalS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">EntitySpawnGlobalS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/EntitySpawnS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">EntitySpawnS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/EntityStatusEffectS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">EntityStatusEffectS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/EntityStatusS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">EntityStatusS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/EntityTrackerUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">EntityTrackerUpdateS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/EntityVelocityUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">EntityVelocityUpdateS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/ExperienceBarUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ExperienceBarUpdateS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/ExperienceOrbSpawnS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ExperienceOrbSpawnS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/ExplosionS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ExplosionS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/GameJoinS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">GameJoinS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/GameStateChangeS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">GameStateChangeS2CPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/GuiCloseC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">GuiCloseC2SPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/handshake/HandshakeC2SPacket.html" title="class in net.minecraft.network.packet.c2s.handshake">HandshakeC2SPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">HandSwingC2SPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/HealthUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">HealthUpdateS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/HeldItemChangeS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">HeldItemChangeS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/InventoryS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">InventoryS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/ItemPickupAnimationS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ItemPickupAnimationS2CPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/KeepAliveC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">KeepAliveC2SPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/KeepAliveS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">KeepAliveS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/login/LoginCompressionS2CPacket.html" title="class in net.minecraft.network.packet.s2c.login">LoginCompressionS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/login/LoginDisconnectS2CPacket.html" title="class in net.minecraft.network.packet.s2c.login">LoginDisconnectS2CPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/login/LoginHelloC2SPacket.html" title="class in net.minecraft.network.packet.c2s.login">LoginHelloC2SPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/login/LoginHelloS2CPacket.html" title="class in net.minecraft.network.packet.s2c.login">LoginHelloS2CPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/login/LoginKeyC2SPacket.html" title="class in net.minecraft.network.packet.c2s.login">LoginKeyC2SPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/login/LoginSuccessS2CPacket.html" title="class in net.minecraft.network.packet.s2c.login">LoginSuccessS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/MapUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">MapUpdateS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/MobSpawnS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">MobSpawnS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/OpenContainerS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">OpenContainerS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">PaintingSpawnS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ParticleS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/PlayerAbilitiesS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">PlayerAbilitiesS2CPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/PlayerActionC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">PlayerActionC2SPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/PlayerInputC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">PlayerInputC2SPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/PlayerInteractBlockC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">PlayerInteractBlockC2SPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/PlayerInteractEntityC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">PlayerInteractEntityC2SPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/PlayerInteractItemC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">PlayerInteractItemC2SPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/PlayerListHeaderS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">PlayerListHeaderS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/PlayerListS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">PlayerListS2CPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">PlayerMoveC2SPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket.Both.html" title="class in net.minecraft.network.packet.c2s.play">PlayerMoveC2SPacket.Both</a>, <a href="../../../net/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket.LookOnly.html" title="class in net.minecraft.network.packet.c2s.play">PlayerMoveC2SPacket.LookOnly</a>, <a href="../../../net/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket.PositionOnly.html" title="class in net.minecraft.network.packet.c2s.play">PlayerMoveC2SPacket.PositionOnly</a>, <a href="../../../net/minecraft/network/packet/s2c/play/PlayerPositionLookS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">PlayerPositionLookS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/PlayerRespawnS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">PlayerRespawnS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/PlayerSpawnPositionS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">PlayerSpawnPositionS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/PlayerSpawnS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">PlayerSpawnS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/PlaySoundIdS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">PlaySoundIdS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/PlaySoundS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">PlaySoundS2CPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/query/QueryPingC2SPacket.html" title="class in net.minecraft.network.packet.c2s.query">QueryPingC2SPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/query/QueryPongS2CPacket.html" title="class in net.minecraft.network.packet.s2c.query">QueryPongS2CPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/query/QueryRequestC2SPacket.html" title="class in net.minecraft.network.packet.c2s.query">QueryRequestC2SPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/query/QueryResponseS2CPacket.html" title="class in net.minecraft.network.packet.s2c.query">QueryResponseS2CPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/RecipeBookDataC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">RecipeBookDataC2SPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/RemoveEntityStatusEffectS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">RemoveEntityStatusEffectS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/ResourcePackSendS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ResourcePackSendS2CPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/ResourcePackStatusC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ResourcePackStatusC2SPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/ScoreboardDisplayS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ScoreboardDisplayS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/ScoreboardObjectiveUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ScoreboardObjectiveUpdateS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/ScoreboardPlayerUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ScoreboardPlayerUpdateS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/SelectAdvancementTabS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">SelectAdvancementTabS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/SetCameraEntityS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">SetCameraEntityS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/SignEditorOpenS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">SignEditorOpenS2CPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/SpectatorTeleportC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">SpectatorTeleportC2SPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/StatisticsS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">StatisticsS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/TeamS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">TeamS2CPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/TeleportConfirmC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">TeleportConfirmC2SPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/TitleS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">TitleS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/UnloadChunkS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">UnloadChunkS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/UnlockRecipesS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">UnlockRecipesS2CPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/UpdatePlayerAbilitiesC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">UpdatePlayerAbilitiesC2SPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/UpdateSelectedSlotC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">UpdateSelectedSlotC2SPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/UpdateSignC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">UpdateSignC2SPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/VehicleMoveC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">VehicleMoveC2SPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/VehicleMoveS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">VehicleMoveS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/WorldBorderS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">WorldBorderS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/WorldEventS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">WorldEventS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/WorldTimeUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">WorldTimeUpdateS2CPacket</a></dd>
+<dt>Direct Known Subclasses:</dt>
+<dd><a href="../../../net/minecraft/network/packet/s2c/play/BlockBreakingProgressS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">BlockBreakingProgressS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/BlockEntityUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">BlockEntityUpdateS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/BlockEventS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">BlockEventS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/BlockUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">BlockUpdateS2CPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/ButtonClickC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ButtonClickC2SPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/ChatMessageC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ChatMessageC2SPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/ChunkDeltaUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ChunkDeltaUpdateS2CPacket</a>, <a href="../../../net/minecraft/class_2437.html" title="class in net.minecraft">class_2437</a>, <a href="../../../net/minecraft/class_2460.html" title="class in net.minecraft">class_2460</a>, <a href="../../../net/minecraft/class_2461.html" title="class in net.minecraft">class_2461</a>, <a href="../../../net/minecraft/class_2473.html" title="class in net.minecraft">class_2473</a>, <a href="../../../net/minecraft/class_2513.html" title="class in net.minecraft">class_2513</a>, <a href="../../../net/minecraft/class_2514.html" title="class in net.minecraft">class_2514</a>, <a href="../../../net/minecraft/class_2515.html" title="class in net.minecraft">class_2515</a>, <a href="../../../net/minecraft/class_2516.html" title="class in net.minecraft">class_2516</a>, <a href="../../../net/minecraft/class_2517.html" title="class in net.minecraft">class_2517</a>, <a href="../../../net/minecraft/class_2518.html" title="class in net.minecraft">class_2518</a>, <a href="../../../net/minecraft/class_2519.html" title="class in net.minecraft">class_2519</a>, <a href="../../../net/minecraft/class_2522.html" title="class in net.minecraft">class_2522</a>, <a href="../../../net/minecraft/class_2523.html" title="class in net.minecraft">class_2523</a>, <a href="../../../net/minecraft/class_2524.html" title="class in net.minecraft">class_2524</a>, <a href="../../../net/minecraft/class_2525.html" title="class in net.minecraft">class_2525</a>, <a href="../../../net/minecraft/class_2531.html" title="class in net.minecraft">class_2531</a>, <a href="../../../net/minecraft/class_2532.html" title="class in net.minecraft">class_2532</a>, <a href="../../../net/minecraft/network/packet/c2s/play/ClickSlotC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ClickSlotC2SPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/ClientStatusC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ClientStatusC2SPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/CloseHandledScreenC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">CloseHandledScreenC2SPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/CloseScreenS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">CloseScreenS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/CommandCompletionsS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">CommandCompletionsS2CPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/ConfirmActionC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ConfirmActionC2SPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/ConfirmScreenActionS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ConfirmScreenActionS2CPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/CustomPayloadC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">CustomPayloadC2SPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/CustomPayloadS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">CustomPayloadS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/DisconnectS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">DisconnectS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/EntitiesDestroyS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">EntitiesDestroyS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/EntityAnimationS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">EntityAnimationS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/EntityAttachS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">EntityAttachS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/EntityAttributesS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">EntityAttributesS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/EntityEquipmentUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">EntityEquipmentUpdateS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">EntityPositionS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/EntityS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">EntityS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/EntitySetHeadYawS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">EntitySetHeadYawS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/EntitySpawnS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">EntitySpawnS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/EntityStatusEffectS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">EntityStatusEffectS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/EntityStatusS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">EntityStatusS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/EntityTrackerUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">EntityTrackerUpdateS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/EntityVelocityUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">EntityVelocityUpdateS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/ExperienceBarUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ExperienceBarUpdateS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/ExperienceOrbSpawnS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ExperienceOrbSpawnS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/ExplosionS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ExplosionS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/GameJoinS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">GameJoinS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/GameMessageS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">GameMessageS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/GameStateChangeS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">GameStateChangeS2CPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/handshake/HandshakeC2SPacket.html" title="class in net.minecraft.network.packet.c2s.handshake">HandshakeC2SPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">HandSwingC2SPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/HealthUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">HealthUpdateS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/HeldItemChangeS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">HeldItemChangeS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/InventoryS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">InventoryS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/ItemPickupAnimationS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ItemPickupAnimationS2CPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/KeepAliveC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">KeepAliveC2SPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/KeepAliveS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">KeepAliveS2CPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/login/LoginHelloC2SPacket.html" title="class in net.minecraft.network.packet.c2s.login">LoginHelloC2SPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/login/LoginHelloS2CPacket.html" title="class in net.minecraft.network.packet.s2c.login">LoginHelloS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/login/LoginSuccessS2CPacket.html" title="class in net.minecraft.network.packet.s2c.login">LoginSuccessS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/MapUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">MapUpdateS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/MobSpawnS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">MobSpawnS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/OpenScreenS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">OpenScreenS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/PaintingSpawnS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">PaintingSpawnS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/ParticleS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ParticleS2CPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/PlayerAbilitiesC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">PlayerAbilitiesC2SPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/PlayerAbilitiesS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">PlayerAbilitiesS2CPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/PlayerInteractEntityC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">PlayerInteractEntityC2SPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">PlayerMoveC2SPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/PlayerOptionsC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">PlayerOptionsC2SPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/PlayerPositionLookS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">PlayerPositionLookS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/PlayerRespawnS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">PlayerRespawnS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/PlayerSleepS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">PlayerSleepS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/PlayerSpawnPositionS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">PlayerSpawnPositionS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/PlayerSpawnS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">PlayerSpawnS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/PlaySoundIdS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">PlaySoundIdS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/RemoveEntityStatusEffectS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">RemoveEntityStatusEffectS2CPacket</a>, <a href="../../../net/minecraft/network/packet/c2s/play/RequestCommandCompletionsC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">RequestCommandCompletionsC2SPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/ScoreboardDisplayS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ScoreboardDisplayS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/ScoreboardObjectiveUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ScoreboardObjectiveUpdateS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/ScoreboardPlayerUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ScoreboardPlayerUpdateS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/ScreenHandlerPropertyUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ScreenHandlerPropertyUpdateS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/ScreenHandlerSlotUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">ScreenHandlerSlotUpdateS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/SignBlockEntityUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">SignBlockEntityUpdateS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/SignEditorOpenS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">SignEditorOpenS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/StatisticsS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">StatisticsS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/TeamS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">TeamS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/WorldEventS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">WorldEventS2CPacket</a>, <a href="../../../net/minecraft/network/packet/s2c/play/WorldTimeUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">WorldTimeUpdateS2CPacket</a></dd>
 </dl>
 <hr>
 <br>
-<pre>public interface <span class="typeNameLabel">Packet&lt;T extends <a href="../../../net/minecraft/network/listener/PacketListener.html" title="interface in net.minecraft.network.listener">PacketListener</a>&gt;</span></pre>
+<pre>public abstract class <span class="typeNameLabel">Packet</span>
+extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/Packet.html#LOGGER">LOGGER</a></span></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/Packet.html#Packet--">Packet</a></span>()</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ========== METHOD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.summary">
@@ -118,24 +163,57 @@ var activeTableTab = "activeTableTab";
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/Packet.html#apply-T-">apply</a></span>(<a href="../../../net/minecraft/network/Packet.html" title="type parameter in Packet">T</a>&nbsp;listener)</code>&nbsp;</td>
+<td class="colFirst"><code>abstract void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/Packet.html#apply-net.minecraft.network.listener.PacketListener-">apply</a></span>(<a href="../../../net/minecraft/network/listener/PacketListener.html" title="interface in net.minecraft.network.listener">PacketListener</a>&nbsp;packetListener)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/Packet.html#read-net.minecraft.util.PacketByteBuf-">read</a></span>(<a href="../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/Packet.html#asString--">asString</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>void</code></td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/Packet.html#method_9894--">method_9894</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../net/minecraft/network/Packet.html" title="class in net.minecraft.network">Packet</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/Packet.html#method_9895-com.google.common.collect.BiMap-int-">method_9895</a></span>(<a href="https://guava.dev/releases/21.0/api/docs/com/google/common/collect/BiMap.html?is-external=true" title="class or interface in com.google.common.collect">BiMap</a>&nbsp;biMap,
+           int&nbsp;int2)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>abstract void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/Packet.html#read-net.minecraft.util.PacketByteBuf-">read</a></span>(<a href="../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>static byte[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/Packet.html#readLengthPrefixedByteArray-io.netty.buffer.ByteBuf-">readLengthPrefixedByteArray</a></span>(io.netty.buffer.ByteBuf&nbsp;byteBuf)</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/Packet.html#toString--">toString</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/Packet.html#write-net.minecraft.util.PacketByteBuf-">write</a></span>(<a href="../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)</code>&nbsp;</td>
 </tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/Packet.html#writeLengthPrefixedByteArray-io.netty.buffer.ByteBuf-byte:A-">writeLengthPrefixedByteArray</a></span>(io.netty.buffer.ByteBuf&nbsp;byteBuf,
+                            byte[]&nbsp;byte2)</code>&nbsp;</td>
+</tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -144,24 +222,82 @@ var activeTableTab = "activeTableTab";
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="LOGGER">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>LOGGER</h4>
+<pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a> LOGGER</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="Packet--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>Packet</h4>
+<pre>public&nbsp;Packet()</pre>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ============ METHOD DETAIL ========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.detail">
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="method_9895-com.google.common.collect.BiMap-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_9895</h4>
+<pre>public static&nbsp;<a href="../../../net/minecraft/network/Packet.html" title="class in net.minecraft.network">Packet</a>&nbsp;method_9895(<a href="https://guava.dev/releases/21.0/api/docs/com/google/common/collect/BiMap.html?is-external=true" title="class or interface in com.google.common.collect">BiMap</a>&nbsp;biMap,
+                                 int&nbsp;int2)</pre>
+</li>
+</ul>
+<a name="writeLengthPrefixedByteArray-io.netty.buffer.ByteBuf-byte:A-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>writeLengthPrefixedByteArray</h4>
+<pre>public static&nbsp;void&nbsp;writeLengthPrefixedByteArray(io.netty.buffer.ByteBuf&nbsp;byteBuf,
+                                                byte[]&nbsp;byte2)</pre>
+</li>
+</ul>
+<a name="readLengthPrefixedByteArray-io.netty.buffer.ByteBuf-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readLengthPrefixedByteArray</h4>
+<pre>public static&nbsp;byte[]&nbsp;readLengthPrefixedByteArray(io.netty.buffer.ByteBuf&nbsp;byteBuf)</pre>
+</li>
+</ul>
 <a name="read-net.minecraft.util.PacketByteBuf-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>read</h4>
-<pre>void&nbsp;read(<a href="../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)
-   throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
-</dl>
+<pre>public abstract&nbsp;void&nbsp;read(<a href="../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)</pre>
 </li>
 </ul>
 <a name="write-net.minecraft.util.PacketByteBuf-">
@@ -170,23 +306,47 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>write</h4>
-<pre>void&nbsp;write(<a href="../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)
-    throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
-</dl>
+<pre>public abstract&nbsp;void&nbsp;write(<a href="../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)</pre>
 </li>
 </ul>
 <a name="apply-net.minecraft.network.listener.PacketListener-">
 <!--   -->
-</a><a name="apply-T-">
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>apply</h4>
+<pre>public abstract&nbsp;void&nbsp;apply(<a href="../../../net/minecraft/network/listener/PacketListener.html" title="interface in net.minecraft.network.listener">PacketListener</a>&nbsp;packetListener)</pre>
+</li>
+</ul>
+<a name="method_9894--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_9894</h4>
+<pre>public&nbsp;boolean&nbsp;method_9894()</pre>
+</li>
+</ul>
+<a name="toString--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toString</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="asString--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>apply</h4>
-<pre>void&nbsp;apply(<a href="../../../net/minecraft/network/Packet.html" title="type parameter in Packet">T</a>&nbsp;listener)</pre>
+<h4>asString</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;asString()</pre>
 </li>
 </ul>
 </li>
@@ -216,8 +376,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/network/OffThreadException.html" title="class in net.minecraft.network"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/network/PacketDeflater.html" title="class in net.minecraft.network"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/network/NetworkState.html" title="enum in net.minecraft.network"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/network/PacketWrapper.html" title="class in net.minecraft.network"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/network/Packet.html" target="_top">Frames</a></li>
@@ -242,14 +402,14 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>

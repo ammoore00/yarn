@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6};
+var methods = {"i0":6,"i1":6,"i2":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -100,11 +100,11 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Known Subinterfaces:</dt>
-<dd><a href="../../../../net/minecraft/network/listener/ClientLoginPacketListener.html" title="interface in net.minecraft.network.listener">ClientLoginPacketListener</a>, <a href="../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>, <a href="../../../../net/minecraft/network/listener/ClientQueryPacketListener.html" title="interface in net.minecraft.network.listener">ClientQueryPacketListener</a>, <a href="../../../../net/minecraft/network/listener/ServerHandshakePacketListener.html" title="interface in net.minecraft.network.listener">ServerHandshakePacketListener</a>, <a href="../../../../net/minecraft/network/listener/ServerLoginPacketListener.html" title="interface in net.minecraft.network.listener">ServerLoginPacketListener</a>, <a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a>, <a href="../../../../net/minecraft/network/listener/ServerQueryPacketListener.html" title="interface in net.minecraft.network.listener">ServerQueryPacketListener</a></dd>
+<dd><a href="../../../../net/minecraft/class_2530.html" title="interface in net.minecraft">class_2530</a>, <a href="../../../../net/minecraft/network/listener/ClientLoginPacketListener.html" title="interface in net.minecraft.network.listener">ClientLoginPacketListener</a>, <a href="../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>, <a href="../../../../net/minecraft/network/listener/ClientQueryPacketListener.html" title="interface in net.minecraft.network.listener">ClientQueryPacketListener</a>, <a href="../../../../net/minecraft/network/listener/ServerHandshakePacketListener.html" title="interface in net.minecraft.network.listener">ServerHandshakePacketListener</a>, <a href="../../../../net/minecraft/network/listener/ServerLoginPacketListener.html" title="interface in net.minecraft.network.listener">ServerLoginPacketListener</a>, <a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></dd>
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><a href="../../../../net/minecraft/client/network/ClientLoginNetworkHandler.html" title="class in net.minecraft.client.network">ClientLoginNetworkHandler</a>, <a href="../../../../net/minecraft/client/network/ClientPlayNetworkHandler.html" title="class in net.minecraft.client.network">ClientPlayNetworkHandler</a>, <a href="../../../../net/minecraft/server/network/IntegratedServerHandshakeNetworkHandler.html" title="class in net.minecraft.server.network">IntegratedServerHandshakeNetworkHandler</a>, <a href="../../../../net/minecraft/server/network/ServerHandshakeNetworkHandler.html" title="class in net.minecraft.server.network">ServerHandshakeNetworkHandler</a>, <a href="../../../../net/minecraft/server/network/ServerLoginNetworkHandler.html" title="class in net.minecraft.server.network">ServerLoginNetworkHandler</a>, <a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html" title="class in net.minecraft.server.network">ServerPlayNetworkHandler</a>, <a href="../../../../net/minecraft/server/network/ServerQueryNetworkHandler.html" title="class in net.minecraft.server.network">ServerQueryNetworkHandler</a></dd>
+<dd><a href="../../../../net/minecraft/class_2312.html" title="class in net.minecraft">class_2312</a>, <a href="../../../../net/minecraft/class_2326.html" title="class in net.minecraft">class_2326</a>, <a href="../../../../net/minecraft/class_2406.html" title="class in net.minecraft">class_2406</a>, <a href="../../../../net/minecraft/class_2575.html" title="class in net.minecraft">class_2575</a>, <a href="../../../../net/minecraft/class_2585.html" title="class in net.minecraft">class_2585</a>, <a href="../../../../net/minecraft/class_2588.html" title="class in net.minecraft">class_2588</a>, <a href="../../../../net/minecraft/client/network/ClientPlayNetworkHandler.html" title="class in net.minecraft.client.network">ClientPlayNetworkHandler</a>, <a href="../../../../net/minecraft/server/network/ServerLoginNetworkHandler.html" title="class in net.minecraft.server.network">ServerLoginNetworkHandler</a>, <a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html" title="class in net.minecraft.server.network">ServerPlayNetworkHandler</a></dd>
 </dl>
 <hr>
 <br>
@@ -129,7 +129,16 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/network/listener/PacketListener.html#method_9888-net.minecraft.network.NetworkState-net.minecraft.network.NetworkState-">method_9888</a></span>(<a href="../../../../net/minecraft/network/NetworkState.html" title="enum in net.minecraft.network">NetworkState</a>&nbsp;networkState,
+           <a href="../../../../net/minecraft/network/NetworkState.html" title="enum in net.minecraft.network">NetworkState</a>&nbsp;networkState2)</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/network/listener/PacketListener.html#onDisconnected-net.minecraft.text.Text-">onDisconnected</a></span>(<a href="../../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;reason)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/network/listener/PacketListener.html#tickConnection--">tickConnection</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -149,10 +158,29 @@ var activeTableTab = "activeTableTab";
 <a name="onDisconnected-net.minecraft.text.Text-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>onDisconnected</h4>
 <pre>void&nbsp;onDisconnected(<a href="../../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;reason)</pre>
+</li>
+</ul>
+<a name="method_9888-net.minecraft.network.NetworkState-net.minecraft.network.NetworkState-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_9888</h4>
+<pre>void&nbsp;method_9888(<a href="../../../../net/minecraft/network/NetworkState.html" title="enum in net.minecraft.network">NetworkState</a>&nbsp;networkState,
+                 <a href="../../../../net/minecraft/network/NetworkState.html" title="enum in net.minecraft.network">NetworkState</a>&nbsp;networkState2)</pre>
+</li>
+</ul>
+<a name="tickConnection--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>tickConnection</h4>
+<pre>void&nbsp;tickConnection()</pre>
 </li>
 </ul>
 </li>

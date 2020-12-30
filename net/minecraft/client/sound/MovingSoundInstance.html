@@ -117,7 +117,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../../net/minecraft/client/sound/ElytraSoundInstance.html" title="class in net.minecraft.client.sound">ElytraSoundInstance</a>, <a href="../../../../net/minecraft/client/sound/GuardianAttackSoundInstance.html" title="class in net.minecraft.client.sound">GuardianAttackSoundInstance</a>, <a href="../../../../net/minecraft/client/sound/MinecartSoundInstance.html" title="class in net.minecraft.client.sound">MinecartSoundInstance</a>, <a href="../../../../net/minecraft/client/sound/RidingMinecartSoundInstance.html" title="class in net.minecraft.client.sound">RidingMinecartSoundInstance</a></dd>
+<dd><a href="../../../../net/minecraft/client/sound/MinecartMovingSoundInstance.html" title="class in net.minecraft.client.sound">MinecartMovingSoundInstance</a>, <a href="../../../../net/minecraft/client/sound/MinecartSoundInstance.html" title="class in net.minecraft.client.sound">MinecartSoundInstance</a></dd>
 </dl>
 <hr>
 <br>
@@ -131,21 +131,6 @@ implements <a href="../../../../net/minecraft/client/sound/TickableSoundInstance
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- ======== NESTED CLASS SUMMARY ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="nested.class.summary">
-<!--   -->
-</a>
-<h3>Nested Class Summary</h3>
-<ul class="blockList">
-<li class="blockList"><a name="nested.classes.inherited.from.class.net.minecraft.client.sound.SoundInstance">
-<!--   -->
-</a>
-<h3>Nested classes/interfaces inherited from interface&nbsp;net.minecraft.client.sound.<a href="../../../../net/minecraft/client/sound/SoundInstance.html" title="interface in net.minecraft.client.sound">SoundInstance</a></h3>
-<code><a href="../../../../net/minecraft/client/sound/SoundInstance.AttenuationType.html" title="enum in net.minecraft.client.sound">SoundInstance.AttenuationType</a></code></li>
-</ul>
-</li>
-</ul>
 <!-- =========== FIELD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="field.summary">
@@ -168,7 +153,7 @@ implements <a href="../../../../net/minecraft/client/sound/TickableSoundInstance
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.client.sound.<a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html" title="class in net.minecraft.client.sound">AbstractSoundInstance</a></h3>
-<code><a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#attenuationType">attenuationType</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#category">category</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#id">id</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#pitch">pitch</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#repeat">repeat</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#repeatDelay">repeatDelay</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#sound">sound</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#volume">volume</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#x">x</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#y">y</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#z">z</a></code></li>
+<code><a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#attenuationType">attenuationType</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#identifier">identifier</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#pitch">pitch</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#repeat">repeat</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#repeatDelay">repeatDelay</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#volume">volume</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#x">x</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#y">y</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#z">z</a></code></li>
 </ul>
 </li>
 </ul>
@@ -186,8 +171,7 @@ implements <a href="../../../../net/minecraft/client/sound/TickableSoundInstance
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected </code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/MovingSoundInstance.html#MovingSoundInstance-net.minecraft.sound.SoundEvent-net.minecraft.sound.SoundCategory-">MovingSoundInstance</a></span>(<a href="../../../../net/minecraft/sound/SoundEvent.html" title="class in net.minecraft.sound">SoundEvent</a>&nbsp;sound,
-                   <a href="../../../../net/minecraft/sound/SoundCategory.html" title="enum in net.minecraft.sound">SoundCategory</a>&nbsp;category)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/MovingSoundInstance.html#MovingSoundInstance-net.minecraft.util.Identifier-">MovingSoundInstance</a></span>(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -214,7 +198,7 @@ implements <a href="../../../../net/minecraft/client/sound/TickableSoundInstance
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.client.sound.<a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html" title="class in net.minecraft.client.sound">AbstractSoundInstance</a></h3>
-<code><a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getAttenuationType--">getAttenuationType</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getCategory--">getCategory</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getId--">getId</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getPitch--">getPitch</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getRepeatDelay--">getRepeatDelay</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getSound--">getSound</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getSoundSet-net.minecraft.client.sound.SoundManager-">getSoundSet</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getVolume--">getVolume</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getX--">getX</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getY--">getY</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getZ--">getZ</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#isRepeatable--">isRepeatable</a></code></li>
+<code><a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getAttenuationType--">getAttenuationType</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getIdentifier--">getIdentifier</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getPitch--">getPitch</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getRepeatDelay--">getRepeatDelay</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getVolume--">getVolume</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getX--">getX</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getY--">getY</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getZ--">getZ</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#isRepeatable--">isRepeatable</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -228,7 +212,7 @@ implements <a href="../../../../net/minecraft/client/sound/TickableSoundInstance
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;net.minecraft.client.sound.<a href="../../../../net/minecraft/client/sound/SoundInstance.html" title="interface in net.minecraft.client.sound">SoundInstance</a></h3>
-<code><a href="../../../../net/minecraft/client/sound/SoundInstance.html#getAttenuationType--">getAttenuationType</a>, <a href="../../../../net/minecraft/client/sound/SoundInstance.html#getCategory--">getCategory</a>, <a href="../../../../net/minecraft/client/sound/SoundInstance.html#getId--">getId</a>, <a href="../../../../net/minecraft/client/sound/SoundInstance.html#getPitch--">getPitch</a>, <a href="../../../../net/minecraft/client/sound/SoundInstance.html#getRepeatDelay--">getRepeatDelay</a>, <a href="../../../../net/minecraft/client/sound/SoundInstance.html#getSound--">getSound</a>, <a href="../../../../net/minecraft/client/sound/SoundInstance.html#getSoundSet-net.minecraft.client.sound.SoundManager-">getSoundSet</a>, <a href="../../../../net/minecraft/client/sound/SoundInstance.html#getVolume--">getVolume</a>, <a href="../../../../net/minecraft/client/sound/SoundInstance.html#getX--">getX</a>, <a href="../../../../net/minecraft/client/sound/SoundInstance.html#getY--">getY</a>, <a href="../../../../net/minecraft/client/sound/SoundInstance.html#getZ--">getZ</a>, <a href="../../../../net/minecraft/client/sound/SoundInstance.html#isRepeatable--">isRepeatable</a></code></li>
+<code><a href="../../../../net/minecraft/client/sound/SoundInstance.html#getAttenuationType--">getAttenuationType</a>, <a href="../../../../net/minecraft/client/sound/SoundInstance.html#getIdentifier--">getIdentifier</a>, <a href="../../../../net/minecraft/client/sound/SoundInstance.html#getPitch--">getPitch</a>, <a href="../../../../net/minecraft/client/sound/SoundInstance.html#getRepeatDelay--">getRepeatDelay</a>, <a href="../../../../net/minecraft/client/sound/SoundInstance.html#getVolume--">getVolume</a>, <a href="../../../../net/minecraft/client/sound/SoundInstance.html#getX--">getX</a>, <a href="../../../../net/minecraft/client/sound/SoundInstance.html#getY--">getY</a>, <a href="../../../../net/minecraft/client/sound/SoundInstance.html#getZ--">getZ</a>, <a href="../../../../net/minecraft/client/sound/SoundInstance.html#isRepeatable--">isRepeatable</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.net.minecraft.util.Tickable">
@@ -268,14 +252,13 @@ implements <a href="../../../../net/minecraft/client/sound/TickableSoundInstance
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="MovingSoundInstance-net.minecraft.sound.SoundEvent-net.minecraft.sound.SoundCategory-">
+<a name="MovingSoundInstance-net.minecraft.util.Identifier-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MovingSoundInstance</h4>
-<pre>protected&nbsp;MovingSoundInstance(<a href="../../../../net/minecraft/sound/SoundEvent.html" title="class in net.minecraft.sound">SoundEvent</a>&nbsp;sound,
-                              <a href="../../../../net/minecraft/sound/SoundCategory.html" title="enum in net.minecraft.sound">SoundCategory</a>&nbsp;category)</pre>
+<pre>protected&nbsp;MovingSoundInstance(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier)</pre>
 </li>
 </ul>
 </li>

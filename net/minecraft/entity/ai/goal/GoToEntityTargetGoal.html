@@ -134,20 +134,20 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>private <a href="../../../../../net/minecraft/entity/mob/PathAwareEntity.html" title="class in net.minecraft.entity.mob">PathAwareEntity</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/GoToEntityTargetGoal.html#field_7712">field_7712</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="../../../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/GoToEntityTargetGoal.html#field_7713">field_7713</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>private float</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/GoToEntityTargetGoal.html#maxDistance">maxDistance</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../../../net/minecraft/entity/mob/MobEntityWithAi.html" title="class in net.minecraft.entity.mob">MobEntityWithAi</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/GoToEntityTargetGoal.html#mob">mob</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code>private double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/GoToEntityTargetGoal.html#speed">speed</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/GoToEntityTargetGoal.html#target">target</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private double</code></td>
@@ -176,9 +176,9 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/GoToEntityTargetGoal.html#GoToEntityTargetGoal-net.minecraft.entity.mob.MobEntityWithAi-double-float-">GoToEntityTargetGoal</a></span>(<a href="../../../../../net/minecraft/entity/mob/MobEntityWithAi.html" title="class in net.minecraft.entity.mob">MobEntityWithAi</a>&nbsp;mob,
-                    double&nbsp;speed,
-                    float&nbsp;maxDistance)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/GoToEntityTargetGoal.html#GoToEntityTargetGoal-net.minecraft.entity.mob.PathAwareEntity-double-float-">GoToEntityTargetGoal</a></span>(<a href="../../../../../net/minecraft/entity/mob/PathAwareEntity.html" title="class in net.minecraft.entity.mob">PathAwareEntity</a>&nbsp;pathAwareEntity,
+                    double&nbsp;double2,
+                    float&nbsp;float2)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -217,7 +217,7 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.entity.ai.goal.<a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</a></h3>
-<code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#canStop--">canStop</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_34938-int-">method_34938</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_34944--">method_34944</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#tick--">tick</a></code></li>
+<code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#canStop--">canStop</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#getControls--">getControls</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#setControls-int-">setControls</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#tick--">tick</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -240,22 +240,22 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="mob">
+<a name="field_7712">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>mob</h4>
-<pre>private final&nbsp;<a href="../../../../../net/minecraft/entity/mob/MobEntityWithAi.html" title="class in net.minecraft.entity.mob">MobEntityWithAi</a> mob</pre>
+<h4>field_7712</h4>
+<pre>private&nbsp;<a href="../../../../../net/minecraft/entity/mob/PathAwareEntity.html" title="class in net.minecraft.entity.mob">PathAwareEntity</a> field_7712</pre>
 </li>
 </ul>
-<a name="target">
+<a name="field_7713">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>target</h4>
-<pre>private&nbsp;<a href="../../../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a> target</pre>
+<h4>field_7713</h4>
+<pre>private&nbsp;<a href="../../../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a> field_7713</pre>
 </li>
 </ul>
 <a name="x">
@@ -291,7 +291,7 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <ul class="blockList">
 <li class="blockList">
 <h4>speed</h4>
-<pre>private final&nbsp;double speed</pre>
+<pre>private&nbsp;double speed</pre>
 </li>
 </ul>
 <a name="maxDistance">
@@ -300,7 +300,7 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <ul class="blockListLast">
 <li class="blockList">
 <h4>maxDistance</h4>
-<pre>private final&nbsp;float maxDistance</pre>
+<pre>private&nbsp;float maxDistance</pre>
 </li>
 </ul>
 </li>
@@ -311,15 +311,15 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="GoToEntityTargetGoal-net.minecraft.entity.mob.MobEntityWithAi-double-float-">
+<a name="GoToEntityTargetGoal-net.minecraft.entity.mob.PathAwareEntity-double-float-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>GoToEntityTargetGoal</h4>
-<pre>public&nbsp;GoToEntityTargetGoal(<a href="../../../../../net/minecraft/entity/mob/MobEntityWithAi.html" title="class in net.minecraft.entity.mob">MobEntityWithAi</a>&nbsp;mob,
-                            double&nbsp;speed,
-                            float&nbsp;maxDistance)</pre>
+<pre>public&nbsp;GoToEntityTargetGoal(<a href="../../../../../net/minecraft/entity/mob/PathAwareEntity.html" title="class in net.minecraft.entity.mob">PathAwareEntity</a>&nbsp;pathAwareEntity,
+                            double&nbsp;double2,
+                            float&nbsp;float2)</pre>
 </li>
 </ul>
 </li>

@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9};
+var methods = {"i0":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/util/UserCache.JsonConverter.html" title="class in net.minecraft.util"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/util/Util.OperatingSystem.html" title="enum in net.minecraft.util"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/util/UserCache.html" title="class in net.minecraft.util"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/util/WeightedPicker.html" title="class in net.minecraft.util"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/util/Util.html" target="_top">Frames</a></li>
@@ -73,7 +73,7 @@ var activeTableTab = "activeTableTab";
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
@@ -108,7 +108,8 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">Util</span>
+<pre>@Environment(value=CLIENT)
+public class <span class="typeNameLabel">Util</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
 </li>
 </ul>
@@ -116,25 +117,6 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- ======== NESTED CLASS SUMMARY ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="nested.class.summary">
-<!--   -->
-</a>
-<h3>Nested Class Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Nested Class Summary table, listing nested classes, and an explanation">
-<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Class and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/util/Util.OperatingSystem.html" title="enum in net.minecraft.util">Util.OperatingSystem</a></span></code>&nbsp;</td>
-</tr>
-</table>
-</li>
-</ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.summary">
@@ -165,16 +147,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static &lt;V&gt;&nbsp;V</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/util/Util.html#executeTask-java.util.concurrent.FutureTask-org.apache.logging.log4j.Logger-">executeTask</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/FutureTask.html?is-external=true" title="class or interface in java.util.concurrent">FutureTask</a>&lt;V&gt;&nbsp;task,
-           <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a>&nbsp;logger)</code>&nbsp;</td>
-</tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/util/Util.html#getLast-java.util.List-">getLast</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;T&gt;&nbsp;list)</code>&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>static <a href="../../../net/minecraft/util/Util.OperatingSystem.html" title="enum in net.minecraft.util">Util.OperatingSystem</a></code></td>
+<td class="colFirst"><code>static <a href="../../../net/minecraft/client/os/OperatingSystem.html" title="enum in net.minecraft.client.os">OperatingSystem</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/util/Util.html#getOperatingSystem--">getOperatingSystem</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
@@ -219,31 +192,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <a name="getOperatingSystem--">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getOperatingSystem</h4>
-<pre>@Environment(value=CLIENT)
-public static&nbsp;<a href="../../../net/minecraft/util/Util.OperatingSystem.html" title="enum in net.minecraft.util">Util.OperatingSystem</a>&nbsp;getOperatingSystem()</pre>
-</li>
-</ul>
-<a name="executeTask-java.util.concurrent.FutureTask-org.apache.logging.log4j.Logger-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>executeTask</h4>
-<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-public static&nbsp;&lt;V&gt;&nbsp;V&nbsp;executeTask(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/FutureTask.html?is-external=true" title="class or interface in java.util.concurrent">FutureTask</a>&lt;V&gt;&nbsp;task,
-                                          <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a>&nbsp;logger)</pre>
-</li>
-</ul>
-<a name="getLast-java.util.List-">
-<!--   -->
-</a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getLast</h4>
-<pre>public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;getLast(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;T&gt;&nbsp;list)</pre>
+<h4>getOperatingSystem</h4>
+<pre>public static&nbsp;<a href="../../../net/minecraft/client/os/OperatingSystem.html" title="enum in net.minecraft.client.os">OperatingSystem</a>&nbsp;getOperatingSystem()</pre>
 </li>
 </ul>
 </li>
@@ -273,8 +225,8 @@ public static&nbsp;&lt;V&gt;&nbsp;V&nbsp;executeTask(<a href="https://docs.oracl
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/util/UserCache.JsonConverter.html" title="class in net.minecraft.util"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/util/Util.OperatingSystem.html" title="enum in net.minecraft.util"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/util/UserCache.html" title="class in net.minecraft.util"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/util/WeightedPicker.html" title="class in net.minecraft.util"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/util/Util.html" target="_top">Frames</a></li>
@@ -298,7 +250,7 @@ public static&nbsp;&lt;V&gt;&nbsp;V&nbsp;executeTask(<a href="https://docs.oracl
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>

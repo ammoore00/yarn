@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":9,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":9,"i14":10,"i15":10,"i16":9,"i17":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":9,"i15":9,"i16":10,"i17":10,"i18":10,"i19":9,"i20":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li>Prev&nbsp;Class</li>
-<li><a href="../../../../net/minecraft/entity/data/DataTracker.Entry.html" title="class in net.minecraft.entity.data"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/entity/data/DataEntry.html" title="class in net.minecraft.entity.data"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/entity/data/Trader.html" title="interface in net.minecraft.entity.data"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/entity/data/DataTracker.html" target="_top">Frames</a></li>
@@ -73,7 +73,7 @@ var activeTableTab = "activeTableTab";
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
@@ -116,25 +116,6 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- ======== NESTED CLASS SUMMARY ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="nested.class.summary">
-<!--   -->
-</a>
-<h3>Nested Class Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Nested Class Summary table, listing nested classes, and an explanation">
-<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Class and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>static class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.Entry.html" title="class in net.minecraft.entity.data">DataTracker.Entry</a>&lt;<a href="../../../../net/minecraft/entity/data/DataTracker.Entry.html" title="type parameter in DataTracker.Entry">T</a>&gt;</span></code>&nbsp;</td>
-</tr>
-</table>
-</li>
-</ul>
 <!-- =========== FIELD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="field.summary">
@@ -156,24 +137,20 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#empty">empty</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>,<a href="../../../../net/minecraft/entity/data/DataTracker.Entry.html" title="class in net.minecraft.entity.data">DataTracker.Entry</a>&lt;?&gt;&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#entries">entries</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#entity">entity</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">HashMap</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#field_11518">field_11518</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#field_11519">field_11519</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/ReadWriteLock.html?is-external=true" title="class or interface in java.util.concurrent.locks">ReadWriteLock</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#lock">lock</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#LOGGER">LOGGER</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&gt;,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#trackedEntities">trackedEntities</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#trackedEntity">trackedEntity</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -208,83 +185,93 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>private &lt;T&gt;&nbsp;void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#addTrackedData-net.minecraft.class_4519-T-">addTrackedData</a></span>(<a href="../../../../net/minecraft/class_4519.html" title="class in net.minecraft">class_4519</a>&lt;T&gt;&nbsp;class_4519,
-              T&nbsp;t)</code>&nbsp;</td>
-</tr>
-<tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#clearDirty--">clearDirty</a></span>()</code>&nbsp;</td>
 </tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/entity/data/DataEntry.html" title="class in net.minecraft.entity.data">DataEntry</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#get-int-">get</a></span>(int&nbsp;id)</code>&nbsp;</td>
+</tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../net/minecraft/entity/data/DataTracker.Entry.html" title="class in net.minecraft.entity.data">DataTracker.Entry</a>&lt;?&gt;&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#deserializePacket-net.minecraft.util.PacketByteBuf-">deserializePacket</a></span>(<a href="../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;packetByteBuf)</code>&nbsp;</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#entriesToPacket-java.util.List-net.minecraft.util.PacketByteBuf-">entriesToPacket</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../net/minecraft/entity/data/DataTracker.Entry.html" title="class in net.minecraft.entity.data">DataTracker.Entry</a>&lt;?&gt;&gt;&nbsp;list,
-               <a href="../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;packetByteBuf)</code>&nbsp;</td>
-</tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>&lt;T&gt;&nbsp;T</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#get-net.minecraft.class_4519-">get</a></span>(<a href="../../../../net/minecraft/class_4519.html" title="class in net.minecraft">class_4519</a>&lt;T&gt;&nbsp;class_4519)</code>&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../net/minecraft/entity/data/DataTracker.Entry.html" title="class in net.minecraft.entity.data">DataTracker.Entry</a>&lt;?&gt;&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#getAllEntries--">getAllEntries</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../net/minecraft/entity/data/DataTracker.Entry.html" title="class in net.minecraft.entity.data">DataTracker.Entry</a>&lt;?&gt;&gt;</code></td>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>byte</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#getByte-int-">getByte</a></span>(int&nbsp;id)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#getDirtyEntries--">getDirtyEntries</a></span>()</code>&nbsp;</td>
 </tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#getFloat-int-">getFloat</a></span>(int&nbsp;id)</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#getInt-int-">getInt</a></span>(int&nbsp;id)</code>&nbsp;</td>
+</tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>private &lt;T&gt;&nbsp;<a href="../../../../net/minecraft/entity/data/DataTracker.Entry.html" title="class in net.minecraft.entity.data">DataTracker.Entry</a>&lt;T&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#getEntry-net.minecraft.class_4519-">getEntry</a></span>(<a href="../../../../net/minecraft/class_4519.html" title="class in net.minecraft">class_4519</a>&lt;T&gt;&nbsp;class_4519)</code>&nbsp;</td>
+<td class="colFirst"><code>short</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#getShort-int-">getShort</a></span>(int&nbsp;id)</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#getStack-int-">getStack</a></span>(int&nbsp;id)</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#getString-int-">getString</a></span>(int&nbsp;id)</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#isDirty--">isDirty</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#isEmpty--">isEmpty</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#method_33141-net.minecraft.util.PacketByteBuf-">method_33141</a></span>(<a href="../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;packetByteBuf)</code>&nbsp;</td>
-</tr>
-<tr id="i11" class="rowColor">
-<td class="colFirst"><code>protected &lt;T&gt;&nbsp;void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#method_33148-net.minecraft.entity.data.DataTracker.Entry-net.minecraft.entity.data.DataTracker.Entry-">method_33148</a></span>(<a href="../../../../net/minecraft/entity/data/DataTracker.Entry.html" title="class in net.minecraft.entity.data">DataTracker.Entry</a>&lt;T&gt;&nbsp;entry,
-            <a href="../../../../net/minecraft/entity/data/DataTracker.Entry.html" title="class in net.minecraft.entity.data">DataTracker.Entry</a>&lt;?&gt;&nbsp;entry2)</code>&nbsp;</td>
-</tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code>&lt;T&gt;&nbsp;void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#method_33151-net.minecraft.class_4519-">method_33151</a></span>(<a href="../../../../net/minecraft/class_4519.html" title="class in net.minecraft">class_4519</a>&lt;T&gt;&nbsp;class_4519)</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#markDirty-int-">markDirty</a></span>(int&nbsp;id)</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="../../../../net/minecraft/class_4519.html" title="class in net.minecraft">class_4519</a>&lt;T&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#registerData-java.lang.Class-net.minecraft.entity.data.TrackedDataHandler-">registerData</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&gt;&nbsp;entityClass,
-            <a href="../../../../net/minecraft/entity/data/TrackedDataHandler.html" title="interface in net.minecraft.entity.data">TrackedDataHandler</a>&lt;T&gt;&nbsp;dataHandler)</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#method_7251-int-int-">method_7251</a></span>(int&nbsp;int2,
+           int&nbsp;int3)</code>&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
-<td class="colFirst"><code>&lt;T&gt;&nbsp;void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#set-net.minecraft.class_4519-T-">set</a></span>(<a href="../../../../net/minecraft/class_4519.html" title="class in net.minecraft">class_4519</a>&lt;T&gt;&nbsp;key,
-   T&nbsp;t)</code>&nbsp;</td>
+<td class="colFirst"><code>private static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#method_7254-net.minecraft.util.PacketByteBuf-net.minecraft.entity.data.DataEntry-">method_7254</a></span>(<a href="../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;packetByteBuf,
+           <a href="../../../../net/minecraft/entity/data/DataEntry.html" title="class in net.minecraft.entity.data">DataEntry</a>&nbsp;dataEntry)</code>&nbsp;</td>
 </tr>
 <tr id="i15" class="rowColor">
-<td class="colFirst"><code>&lt;T&gt;&nbsp;void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#startTracking-net.minecraft.class_4519-T-">startTracking</a></span>(<a href="../../../../net/minecraft/class_4519.html" title="class in net.minecraft">class_4519</a>&lt;T&gt;&nbsp;key,
-             T&nbsp;initialValue)</code>&nbsp;</td>
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#read-net.minecraft.util.PacketByteBuf-">read</a></span>(<a href="../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;packetByteBuf)</code>&nbsp;</td>
 </tr>
 <tr id="i16" class="altColor">
-<td class="colFirst"><code>private static &lt;T&gt;&nbsp;void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#writeEntryToPacket-net.minecraft.util.PacketByteBuf-net.minecraft.entity.data.DataTracker.Entry-">writeEntryToPacket</a></span>(<a href="../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;packetByteBuf,
-                  <a href="../../../../net/minecraft/entity/data/DataTracker.Entry.html" title="class in net.minecraft.entity.data">DataTracker.Entry</a>&lt;T&gt;&nbsp;entry)</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#setProperty-int-java.lang.Object-">setProperty</a></span>(int&nbsp;id,
+           <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#writeUpdatedEntries-java.util.List-">writeUpdatedEntries</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../net/minecraft/entity/data/DataTracker.Entry.html" title="class in net.minecraft.entity.data">DataTracker.Entry</a>&lt;?&gt;&gt;&nbsp;list)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#track-int-java.lang.Object-">track</a></span>(int&nbsp;id,
+     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;object)</code>&nbsp;</td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#write-net.minecraft.util.PacketByteBuf-">write</a></span>(<a href="../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;packetByteBuf)</code>&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#writeData-java.util.List-net.minecraft.util.PacketByteBuf-">writeData</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&nbsp;entries,
+         <a href="../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;data)</code>&nbsp;</td>
+</tr>
+<tr id="i20" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/data/DataTracker.html#writeUpdatedEntries-java.util.List-">writeUpdatedEntries</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&nbsp;list)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -308,49 +295,22 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="LOGGER">
+<a name="field_11518">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>LOGGER</h4>
-<pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a> LOGGER</pre>
+<h4>field_11518</h4>
+<pre>private static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">HashMap</a> field_11518</pre>
 </li>
 </ul>
-<a name="trackedEntities">
+<a name="entity">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>trackedEntities</h4>
-<pre>private static final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&gt;,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt; trackedEntities</pre>
-</li>
-</ul>
-<a name="trackedEntity">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>trackedEntity</h4>
-<pre>private final&nbsp;<a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a> trackedEntity</pre>
-</li>
-</ul>
-<a name="entries">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>entries</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>,<a href="../../../../net/minecraft/entity/data/DataTracker.Entry.html" title="class in net.minecraft.entity.data">DataTracker.Entry</a>&lt;?&gt;&gt; entries</pre>
-</li>
-</ul>
-<a name="lock">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>lock</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/ReadWriteLock.html?is-external=true" title="class or interface in java.util.concurrent.locks">ReadWriteLock</a> lock</pre>
+<h4>entity</h4>
+<pre>private final&nbsp;<a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a> entity</pre>
 </li>
 </ul>
 <a name="empty">
@@ -362,13 +322,31 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>private&nbsp;boolean empty</pre>
 </li>
 </ul>
+<a name="field_11519">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>field_11519</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a> field_11519</pre>
+</li>
+</ul>
 <a name="dirty">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>dirty</h4>
+<pre>private&nbsp;boolean dirty</pre>
+</li>
+</ul>
+<a name="lock">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>dirty</h4>
-<pre>private&nbsp;boolean dirty</pre>
+<h4>lock</h4>
+<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/ReadWriteLock.html?is-external=true" title="class or interface in java.util.concurrent.locks">ReadWriteLock</a> lock</pre>
 </li>
 </ul>
 </li>
@@ -396,77 +374,106 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="registerData-java.lang.Class-net.minecraft.entity.data.TrackedDataHandler-">
+<a name="track-int-java.lang.Object-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>registerData</h4>
-<pre>public static&nbsp;&lt;T&gt;&nbsp;<a href="../../../../net/minecraft/class_4519.html" title="class in net.minecraft">class_4519</a>&lt;T&gt;&nbsp;registerData(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends <a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&gt;&nbsp;entityClass,
-                                             <a href="../../../../net/minecraft/entity/data/TrackedDataHandler.html" title="interface in net.minecraft.entity.data">TrackedDataHandler</a>&lt;T&gt;&nbsp;dataHandler)</pre>
+<h4>track</h4>
+<pre>public&nbsp;void&nbsp;track(int&nbsp;id,
+                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;object)</pre>
 </li>
 </ul>
-<a name="startTracking-net.minecraft.class_4519-java.lang.Object-">
-<!--   -->
-</a><a name="startTracking-net.minecraft.class_4519-T-">
+<a name="method_7251-int-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>startTracking</h4>
-<pre>public&nbsp;&lt;T&gt;&nbsp;void&nbsp;startTracking(<a href="../../../../net/minecraft/class_4519.html" title="class in net.minecraft">class_4519</a>&lt;T&gt;&nbsp;key,
-                              T&nbsp;initialValue)</pre>
+<h4>method_7251</h4>
+<pre>public&nbsp;void&nbsp;method_7251(int&nbsp;int2,
+                        int&nbsp;int3)</pre>
 </li>
 </ul>
-<a name="addTrackedData-net.minecraft.class_4519-java.lang.Object-">
-<!--   -->
-</a><a name="addTrackedData-net.minecraft.class_4519-T-">
+<a name="getByte-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>addTrackedData</h4>
-<pre>private&nbsp;&lt;T&gt;&nbsp;void&nbsp;addTrackedData(<a href="../../../../net/minecraft/class_4519.html" title="class in net.minecraft">class_4519</a>&lt;T&gt;&nbsp;class_4519,
-                                T&nbsp;t)</pre>
+<h4>getByte</h4>
+<pre>public&nbsp;byte&nbsp;getByte(int&nbsp;id)</pre>
 </li>
 </ul>
-<a name="getEntry-net.minecraft.class_4519-">
+<a name="getShort-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getEntry</h4>
-<pre>private&nbsp;&lt;T&gt;&nbsp;<a href="../../../../net/minecraft/entity/data/DataTracker.Entry.html" title="class in net.minecraft.entity.data">DataTracker.Entry</a>&lt;T&gt;&nbsp;getEntry(<a href="../../../../net/minecraft/class_4519.html" title="class in net.minecraft">class_4519</a>&lt;T&gt;&nbsp;class_4519)</pre>
+<h4>getShort</h4>
+<pre>public&nbsp;short&nbsp;getShort(int&nbsp;id)</pre>
 </li>
 </ul>
-<a name="get-net.minecraft.class_4519-">
+<a name="getInt-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getInt</h4>
+<pre>public&nbsp;int&nbsp;getInt(int&nbsp;id)</pre>
+</li>
+</ul>
+<a name="getFloat-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFloat</h4>
+<pre>public&nbsp;float&nbsp;getFloat(int&nbsp;id)</pre>
+</li>
+</ul>
+<a name="getString-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getString</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getString(int&nbsp;id)</pre>
+</li>
+</ul>
+<a name="getStack-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStack</h4>
+<pre>public&nbsp;<a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;getStack(int&nbsp;id)</pre>
+</li>
+</ul>
+<a name="get-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>get</h4>
-<pre>public&nbsp;&lt;T&gt;&nbsp;T&nbsp;get(<a href="../../../../net/minecraft/class_4519.html" title="class in net.minecraft">class_4519</a>&lt;T&gt;&nbsp;class_4519)</pre>
+<pre>private&nbsp;<a href="../../../../net/minecraft/entity/data/DataEntry.html" title="class in net.minecraft.entity.data">DataEntry</a>&nbsp;get(int&nbsp;id)</pre>
 </li>
 </ul>
-<a name="set-net.minecraft.class_4519-java.lang.Object-">
-<!--   -->
-</a><a name="set-net.minecraft.class_4519-T-">
+<a name="setProperty-int-java.lang.Object-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>set</h4>
-<pre>public&nbsp;&lt;T&gt;&nbsp;void&nbsp;set(<a href="../../../../net/minecraft/class_4519.html" title="class in net.minecraft">class_4519</a>&lt;T&gt;&nbsp;key,
-                    T&nbsp;t)</pre>
+<h4>setProperty</h4>
+<pre>public&nbsp;void&nbsp;setProperty(int&nbsp;id,
+                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</pre>
 </li>
 </ul>
-<a name="method_33151-net.minecraft.class_4519-">
+<a name="markDirty-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_33151</h4>
-<pre>public&nbsp;&lt;T&gt;&nbsp;void&nbsp;method_33151(<a href="../../../../net/minecraft/class_4519.html" title="class in net.minecraft">class_4519</a>&lt;T&gt;&nbsp;class_4519)</pre>
+<h4>markDirty</h4>
+<pre>public&nbsp;void&nbsp;markDirty(int&nbsp;id)</pre>
 </li>
 </ul>
 <a name="isDirty--">
@@ -478,14 +485,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>public&nbsp;boolean&nbsp;isDirty()</pre>
 </li>
 </ul>
-<a name="entriesToPacket-java.util.List-net.minecraft.util.PacketByteBuf-">
+<a name="writeData-java.util.List-net.minecraft.util.PacketByteBuf-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>entriesToPacket</h4>
-<pre>public static&nbsp;void&nbsp;entriesToPacket(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../net/minecraft/entity/data/DataTracker.Entry.html" title="class in net.minecraft.entity.data">DataTracker.Entry</a>&lt;?&gt;&gt;&nbsp;list,
-                                   <a href="../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;packetByteBuf)</pre>
+<h4>writeData</h4>
+<pre>public static&nbsp;void&nbsp;writeData(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&nbsp;entries,
+                             <a href="../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;data)</pre>
 </li>
 </ul>
 <a name="getDirtyEntries--">
@@ -494,22 +501,16 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>getDirtyEntries</h4>
-<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../net/minecraft/entity/data/DataTracker.Entry.html" title="class in net.minecraft.entity.data">DataTracker.Entry</a>&lt;?&gt;&gt;&nbsp;getDirtyEntries()</pre>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&nbsp;getDirtyEntries()</pre>
 </li>
 </ul>
-<a name="method_33141-net.minecraft.util.PacketByteBuf-">
+<a name="write-net.minecraft.util.PacketByteBuf-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_33141</h4>
-<pre>public&nbsp;void&nbsp;method_33141(<a href="../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;packetByteBuf)
-                  throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
-<dl>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
-</dl>
+<h4>write</h4>
+<pre>public&nbsp;void&nbsp;write(<a href="../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;packetByteBuf)</pre>
 </li>
 </ul>
 <a name="getAllEntries--">
@@ -518,28 +519,26 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.ht
 <ul class="blockList">
 <li class="blockList">
 <h4>getAllEntries</h4>
-<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../net/minecraft/entity/data/DataTracker.Entry.html" title="class in net.minecraft.entity.data">DataTracker.Entry</a>&lt;?&gt;&gt;&nbsp;getAllEntries()</pre>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&nbsp;getAllEntries()</pre>
 </li>
 </ul>
-<a name="writeEntryToPacket-net.minecraft.util.PacketByteBuf-net.minecraft.entity.data.DataTracker.Entry-">
+<a name="method_7254-net.minecraft.util.PacketByteBuf-net.minecraft.entity.data.DataEntry-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>writeEntryToPacket</h4>
-<pre>private static&nbsp;&lt;T&gt;&nbsp;void&nbsp;writeEntryToPacket(<a href="../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;packetByteBuf,
-                                           <a href="../../../../net/minecraft/entity/data/DataTracker.Entry.html" title="class in net.minecraft.entity.data">DataTracker.Entry</a>&lt;T&gt;&nbsp;entry)</pre>
+<h4>method_7254</h4>
+<pre>private static&nbsp;void&nbsp;method_7254(<a href="../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;packetByteBuf,
+                                <a href="../../../../net/minecraft/entity/data/DataEntry.html" title="class in net.minecraft.entity.data">DataEntry</a>&nbsp;dataEntry)</pre>
 </li>
 </ul>
-<a name="deserializePacket-net.minecraft.util.PacketByteBuf-">
+<a name="read-net.minecraft.util.PacketByteBuf-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>deserializePacket</h4>
-<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../net/minecraft/entity/data/DataTracker.Entry.html" title="class in net.minecraft.entity.data">DataTracker.Entry</a>&lt;?&gt;&gt;&nbsp;deserializePacket(<a href="../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;packetByteBuf)</pre>
+<h4>read</h4>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&nbsp;read(<a href="../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;packetByteBuf)</pre>
 </li>
 </ul>
 <a name="writeUpdatedEntries-java.util.List-">
@@ -549,18 +548,7 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
 <li class="blockList">
 <h4>writeUpdatedEntries</h4>
 <pre>@Environment(value=CLIENT)
-public&nbsp;void&nbsp;writeUpdatedEntries(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../net/minecraft/entity/data/DataTracker.Entry.html" title="class in net.minecraft.entity.data">DataTracker.Entry</a>&lt;?&gt;&gt;&nbsp;list)</pre>
-</li>
-</ul>
-<a name="method_33148-net.minecraft.entity.data.DataTracker.Entry-net.minecraft.entity.data.DataTracker.Entry-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_33148</h4>
-<pre>@Environment(value=CLIENT)
-protected&nbsp;&lt;T&gt;&nbsp;void&nbsp;method_33148(<a href="../../../../net/minecraft/entity/data/DataTracker.Entry.html" title="class in net.minecraft.entity.data">DataTracker.Entry</a>&lt;T&gt;&nbsp;entry,
-                                                           <a href="../../../../net/minecraft/entity/data/DataTracker.Entry.html" title="class in net.minecraft.entity.data">DataTracker.Entry</a>&lt;?&gt;&nbsp;entry2)</pre>
+public&nbsp;void&nbsp;writeUpdatedEntries(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&nbsp;list)</pre>
 </li>
 </ul>
 <a name="isEmpty--">
@@ -608,8 +596,8 @@ protected&nbsp;&lt;T&gt;&nbsp;void&nbsp;method_33148(<a href="../../../../net/mi
 </div>
 <div class="subNav">
 <ul class="navList">
-<li>Prev&nbsp;Class</li>
-<li><a href="../../../../net/minecraft/entity/data/DataTracker.Entry.html" title="class in net.minecraft.entity.data"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/entity/data/DataEntry.html" title="class in net.minecraft.entity.data"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/entity/data/Trader.html" title="interface in net.minecraft.entity.data"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/entity/data/DataTracker.html" target="_top">Frames</a></li>
@@ -633,7 +621,7 @@ protected&nbsp;&lt;T&gt;&nbsp;void&nbsp;method_33148(<a href="../../../../net/mi
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
