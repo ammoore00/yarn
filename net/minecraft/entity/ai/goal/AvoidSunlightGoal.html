@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../net/minecraft/entity/ai/goal/AttackGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../net/minecraft/entity/ai/goal/BreakDoorGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/entity/ai/goal/AttackWithOwnerGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/entity/ai/goal/BowAttackGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?net/minecraft/entity/ai/goal/AvoidSunlightGoal.html" target="_top">Frames</a></li>
@@ -135,7 +135,7 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private <a href="../../../../../net/minecraft/entity/mob/PathAwareEntity.html" title="class in net.minecraft.entity.mob">PathAwareEntity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/AvoidSunlightGoal.html#field_7761">field_7761</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/AvoidSunlightGoal.html#mob">mob</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -152,7 +152,7 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/AvoidSunlightGoal.html#AvoidSunlightGoal-net.minecraft.entity.mob.PathAwareEntity-">AvoidSunlightGoal</a></span>(<a href="../../../../../net/minecraft/entity/mob/PathAwareEntity.html" title="class in net.minecraft.entity.mob">PathAwareEntity</a>&nbsp;pathAwareEntity)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/AvoidSunlightGoal.html#AvoidSunlightGoal-net.minecraft.entity.mob.PathAwareEntity-">AvoidSunlightGoal</a></span>(<a href="../../../../../net/minecraft/entity/mob/PathAwareEntity.html" title="class in net.minecraft.entity.mob">PathAwareEntity</a>&nbsp;mob)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -187,7 +187,7 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.entity.ai.goal.<a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</a></h3>
-<code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#canStop--">canStop</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#getControls--">getControls</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#setControls-int-">setControls</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#shouldContinue--">shouldContinue</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#tick--">tick</a></code></li>
+<code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#canStop--">canStop</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_34938-int-">method_34938</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_34944--">method_34944</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#shouldContinue--">shouldContinue</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#tick--">tick</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -210,13 +210,13 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_7761">
+<a name="mob">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_7761</h4>
-<pre>private&nbsp;<a href="../../../../../net/minecraft/entity/mob/PathAwareEntity.html" title="class in net.minecraft.entity.mob">PathAwareEntity</a> field_7761</pre>
+<h4>mob</h4>
+<pre>private final&nbsp;<a href="../../../../../net/minecraft/entity/mob/PathAwareEntity.html" title="class in net.minecraft.entity.mob">PathAwareEntity</a> mob</pre>
 </li>
 </ul>
 </li>
@@ -233,7 +233,7 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AvoidSunlightGoal</h4>
-<pre>public&nbsp;AvoidSunlightGoal(<a href="../../../../../net/minecraft/entity/mob/PathAwareEntity.html" title="class in net.minecraft.entity.mob">PathAwareEntity</a>&nbsp;pathAwareEntity)</pre>
+<pre>public&nbsp;AvoidSunlightGoal(<a href="../../../../../net/minecraft/entity/mob/PathAwareEntity.html" title="class in net.minecraft.entity.mob">PathAwareEntity</a>&nbsp;mob)</pre>
 </li>
 </ul>
 </li>
@@ -310,8 +310,8 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../net/minecraft/entity/ai/goal/AttackGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../net/minecraft/entity/ai/goal/BreakDoorGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/entity/ai/goal/AttackWithOwnerGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/entity/ai/goal/BowAttackGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?net/minecraft/entity/ai/goal/AvoidSunlightGoal.html" target="_top">Frames</a></li>

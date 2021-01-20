@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10};
+var methods = {"i0":10,"i1":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../net/minecraft/client/sound/MovingSoundInstance.html" title="class in net.minecraft.client.sound"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../net/minecraft/client/sound/PositionedSoundInstance.html" title="class in net.minecraft.client.sound"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/client/sound/MusicTracker.MusicType.html" title="enum in net.minecraft.client.sound"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/client/sound/MusicTracker.html" target="_top">Frames</a></li>
@@ -73,7 +73,7 @@ var activeTableTab = "activeTableTab";
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
@@ -122,6 +122,25 @@ implements <a href="../../../../net/minecraft/util/Tickable.html" title="interfa
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="nested.class.summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Nested Class Summary table, listing nested classes, and an explanation">
+<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/MusicTracker.MusicType.html" title="enum in net.minecraft.client.sound">MusicTracker.MusicType</a></span></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- =========== FIELD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="field.summary">
@@ -135,12 +154,12 @@ implements <a href="../../../../net/minecraft/util/Tickable.html" title="interfa
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../net/minecraft/client/sound/SoundInstance.html" title="interface in net.minecraft.client.sound">SoundInstance</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/MusicTracker.html#field_10765">field_10765</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/client/MinecraftClient.html" title="class in net.minecraft.client">MinecraftClient</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/MusicTracker.html#client">client</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../../net/minecraft/client/MinecraftClient.html" title="class in net.minecraft.client">MinecraftClient</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/MusicTracker.html#field_5472">field_5472</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/client/sound/SoundInstance.html" title="interface in net.minecraft.client.sound">SoundInstance</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/MusicTracker.html#current">current</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util">Random</a></code></td>
@@ -165,7 +184,7 @@ implements <a href="../../../../net/minecraft/util/Tickable.html" title="interfa
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/MusicTracker.html#MusicTracker-net.minecraft.client.MinecraftClient-">MusicTracker</a></span>(<a href="../../../../net/minecraft/client/MinecraftClient.html" title="class in net.minecraft.client">MinecraftClient</a>&nbsp;minecraftClient)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/MusicTracker.html#MusicTracker-net.minecraft.client.MinecraftClient-">MusicTracker</a></span>(<a href="../../../../net/minecraft/client/MinecraftClient.html" title="class in net.minecraft.client">MinecraftClient</a>&nbsp;client)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -183,6 +202,10 @@ implements <a href="../../../../net/minecraft/util/Tickable.html" title="interfa
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/MusicTracker.html#play-net.minecraft.client.sound.MusicTracker.MusicType-">play</a></span>(<a href="../../../../net/minecraft/client/sound/MusicTracker.MusicType.html" title="enum in net.minecraft.client.sound">MusicTracker.MusicType</a>&nbsp;musicType)</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/MusicTracker.html#tick--">tick</a></span>()</code>&nbsp;</td>
 </tr>
@@ -217,22 +240,22 @@ implements <a href="../../../../net/minecraft/util/Tickable.html" title="interfa
 <pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util">Random</a> random</pre>
 </li>
 </ul>
-<a name="field_5472">
+<a name="client">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_5472</h4>
-<pre>private final&nbsp;<a href="../../../../net/minecraft/client/MinecraftClient.html" title="class in net.minecraft.client">MinecraftClient</a> field_5472</pre>
+<h4>client</h4>
+<pre>private final&nbsp;<a href="../../../../net/minecraft/client/MinecraftClient.html" title="class in net.minecraft.client">MinecraftClient</a> client</pre>
 </li>
 </ul>
-<a name="field_10765">
+<a name="current">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_10765</h4>
-<pre>private&nbsp;<a href="../../../../net/minecraft/client/sound/SoundInstance.html" title="interface in net.minecraft.client.sound">SoundInstance</a> field_10765</pre>
+<h4>current</h4>
+<pre>private&nbsp;<a href="../../../../net/minecraft/client/sound/SoundInstance.html" title="interface in net.minecraft.client.sound">SoundInstance</a> current</pre>
 </li>
 </ul>
 <a name="timeUntilNextSong">
@@ -258,7 +281,7 @@ implements <a href="../../../../net/minecraft/util/Tickable.html" title="interfa
 <ul class="blockListLast">
 <li class="blockList">
 <h4>MusicTracker</h4>
-<pre>public&nbsp;MusicTracker(<a href="../../../../net/minecraft/client/MinecraftClient.html" title="class in net.minecraft.client">MinecraftClient</a>&nbsp;minecraftClient)</pre>
+<pre>public&nbsp;MusicTracker(<a href="../../../../net/minecraft/client/MinecraftClient.html" title="class in net.minecraft.client">MinecraftClient</a>&nbsp;client)</pre>
 </li>
 </ul>
 </li>
@@ -272,7 +295,7 @@ implements <a href="../../../../net/minecraft/util/Tickable.html" title="interfa
 <a name="tick--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>tick</h4>
 <pre>public&nbsp;void&nbsp;tick()</pre>
@@ -280,6 +303,15 @@ implements <a href="../../../../net/minecraft/util/Tickable.html" title="interfa
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../net/minecraft/util/Tickable.html#tick--">tick</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/util/Tickable.html" title="interface in net.minecraft.util">Tickable</a></code></dd>
 </dl>
+</li>
+</ul>
+<a name="play-net.minecraft.client.sound.MusicTracker.MusicType-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>play</h4>
+<pre>public&nbsp;void&nbsp;play(<a href="../../../../net/minecraft/client/sound/MusicTracker.MusicType.html" title="enum in net.minecraft.client.sound">MusicTracker.MusicType</a>&nbsp;musicType)</pre>
 </li>
 </ul>
 </li>
@@ -310,7 +342,7 @@ implements <a href="../../../../net/minecraft/util/Tickable.html" title="interfa
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../net/minecraft/client/sound/MovingSoundInstance.html" title="class in net.minecraft.client.sound"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../net/minecraft/client/sound/PositionedSoundInstance.html" title="class in net.minecraft.client.sound"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/client/sound/MusicTracker.MusicType.html" title="enum in net.minecraft.client.sound"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/client/sound/MusicTracker.html" target="_top">Frames</a></li>
@@ -334,7 +366,7 @@ implements <a href="../../../../net/minecraft/util/Tickable.html" title="interfa
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested.class.summary">Nested</a>&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>

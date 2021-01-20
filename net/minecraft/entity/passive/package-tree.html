@@ -80,28 +80,28 @@
 <ul>
 <li type="circle">java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><span class="typeNameLink">Object</span></a>
 <ul>
-<li type="circle">net.minecraft.entity.<a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity"><span class="typeNameLink">Entity</span></a>
+<li type="circle">net.minecraft.entity.<a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity"><span class="typeNameLink">Entity</span></a> (implements net.minecraft.command.<a href="../../../../net/minecraft/command/CommandSource.html" title="interface in net.minecraft.command">CommandSource</a>)
 <ul>
 <li type="circle">net.minecraft.entity.<a href="../../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity"><span class="typeNameLink">LivingEntity</span></a>
 <ul>
 <li type="circle">net.minecraft.entity.mob.<a href="../../../../net/minecraft/entity/mob/MobEntity.html" title="class in net.minecraft.entity.mob"><span class="typeNameLink">MobEntity</span></a>
 <ul>
-<li type="circle">net.minecraft.entity.mob.<a href="../../../../net/minecraft/entity/mob/AmbientEntity.html" title="class in net.minecraft.entity.mob"><span class="typeNameLink">AmbientEntity</span></a> (implements net.minecraft.entity.<a href="../../../../net/minecraft/entity/EntityCategoryProvider.html" title="interface in net.minecraft.entity">EntityCategoryProvider</a>)
+<li type="circle">net.minecraft.entity.mob.<a href="../../../../net/minecraft/entity/mob/AmbientEntity.html" title="class in net.minecraft.entity.mob"><span class="typeNameLink">AmbientEntity</span></a> (implements net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/Animal.html" title="interface in net.minecraft.entity.passive">Animal</a>)
 <ul>
 <li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/BatEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">BatEntity</span></a></li>
 </ul>
 </li>
 <li type="circle">net.minecraft.entity.mob.<a href="../../../../net/minecraft/entity/mob/PathAwareEntity.html" title="class in net.minecraft.entity.mob"><span class="typeNameLink">PathAwareEntity</span></a>
 <ul>
-<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/GolemEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">GolemEntity</span></a> (implements net.minecraft.entity.<a href="../../../../net/minecraft/entity/EntityCategoryProvider.html" title="interface in net.minecraft.entity">EntityCategoryProvider</a>)
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/GolemEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">GolemEntity</span></a> (implements net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/Animal.html" title="interface in net.minecraft.entity.passive">Animal</a>)
 <ul>
 <li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/IronGolemEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">IronGolemEntity</span></a></li>
-<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/SnowGolemEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">SnowGolemEntity</span></a> (implements net.minecraft.entity.<a href="../../../../net/minecraft/entity/RangedAttackMob.html" title="interface in net.minecraft.entity">RangedAttackMob</a>)</li>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/SnowGolemEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">SnowGolemEntity</span></a> (implements net.minecraft.entity.ai.<a href="../../../../net/minecraft/entity/ai/RangedAttackMob.html" title="interface in net.minecraft.entity.ai">RangedAttackMob</a>)</li>
 </ul>
 </li>
 <li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/PassiveEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">PassiveEntity</span></a>
 <ul>
-<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/AnimalEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">AnimalEntity</span></a> (implements net.minecraft.entity.<a href="../../../../net/minecraft/entity/EntityCategoryProvider.html" title="interface in net.minecraft.entity">EntityCategoryProvider</a>)
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/AnimalEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">AnimalEntity</span></a> (implements net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/Animal.html" title="interface in net.minecraft.entity.passive">Animal</a>)
 <ul>
 <li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/ChickenEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">ChickenEntity</span></a></li>
 <li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/CowEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">CowEntity</span></a>
@@ -109,21 +109,41 @@
 <li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/MooshroomEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">MooshroomEntity</span></a></li>
 </ul>
 </li>
-<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/HorseBaseEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">HorseBaseEntity</span></a> (implements net.minecraft.inventory.<a href="../../../../net/minecraft/inventory/BasicInventoryListener.html" title="interface in net.minecraft.inventory">BasicInventoryListener</a>)</li>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/HorseBaseEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">HorseBaseEntity</span></a> (implements net.minecraft.inventory.<a href="../../../../net/minecraft/inventory/InventoryListener.html" title="interface in net.minecraft.inventory">InventoryListener</a>, net.minecraft.entity.<a href="../../../../net/minecraft/entity/JumpingMount.html" title="interface in net.minecraft.entity">JumpingMount</a>)
+<ul>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/AbstractDonkeyEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">AbstractDonkeyEntity</span></a>
+<ul>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/DonkeyEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">DonkeyEntity</span></a></li>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/LlamaEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">LlamaEntity</span></a> (implements net.minecraft.entity.ai.<a href="../../../../net/minecraft/entity/ai/RangedAttackMob.html" title="interface in net.minecraft.entity.ai">RangedAttackMob</a>)</li>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/MuleEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">MuleEntity</span></a></li>
+</ul>
+</li>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/HorseEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">HorseEntity</span></a></li>
+</ul>
+</li>
 <li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/PigEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">PigEntity</span></a></li>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/PolarBearEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">PolarBearEntity</span></a></li>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/RabbitEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">RabbitEntity</span></a></li>
 <li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/SheepEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">SheepEntity</span></a></li>
-<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/TameableEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">TameableEntity</span></a> (implements net.minecraft.entity.<a href="../../../../net/minecraft/entity/Tameable.html" title="interface in net.minecraft.entity">Tameable</a>)
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/TameableEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">TameableEntity</span></a> (implements net.minecraft.entity.<a href="../../../../net/minecraft/entity/EntityWithOwner.html" title="interface in net.minecraft.entity">EntityWithOwner</a>)
 <ul>
 <li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/OcelotEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">OcelotEntity</span></a></li>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/TameableShoulderEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">TameableShoulderEntity</span></a>
+<ul>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/ParrotEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">ParrotEntity</span></a> (implements net.minecraft.entity.<a href="../../../../net/minecraft/entity/Flutterer.html" title="interface in net.minecraft.entity">Flutterer</a>)</li>
+</ul>
+</li>
 <li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/WolfEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">WolfEntity</span></a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/VillagerEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">VillagerEntity</span></a> (implements net.minecraft.entity.<a href="../../../../net/minecraft/entity/Tradable.html" title="interface in net.minecraft.entity">Tradable</a>, net.minecraft.entity.data.<a href="../../../../net/minecraft/entity/data/Trader.html" title="interface in net.minecraft.entity.data">Trader</a>)</li>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/VillagerEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">VillagerEntity</span></a> (implements net.minecraft.entity.<a href="../../../../net/minecraft/entity/Npc.html" title="interface in net.minecraft.entity">Npc</a>, net.minecraft.village.<a href="../../../../net/minecraft/village/Trader.html" title="interface in net.minecraft.village">Trader</a>)</li>
 </ul>
 </li>
-<li type="circle">net.minecraft.entity.mob.<a href="../../../../net/minecraft/entity/mob/WaterCreatureEntity.html" title="class in net.minecraft.entity.mob"><span class="typeNameLink">WaterCreatureEntity</span></a> (implements net.minecraft.entity.<a href="../../../../net/minecraft/entity/EntityCategoryProvider.html" title="interface in net.minecraft.entity">EntityCategoryProvider</a>)
+</ul>
+</li>
+<li type="circle">net.minecraft.entity.mob.<a href="../../../../net/minecraft/entity/mob/WaterCreatureEntity.html" title="class in net.minecraft.entity.mob"><span class="typeNameLink">WaterCreatureEntity</span></a> (implements net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/Animal.html" title="interface in net.minecraft.entity.passive">Animal</a>)
 <ul>
 <li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/SquidEntity.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">SquidEntity</span></a></li>
 </ul>
@@ -134,10 +154,82 @@
 </li>
 </ul>
 </li>
+<li type="circle">net.minecraft.entity.ai.goal.<a href="../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Goal</span></a>
+<ul>
+<li type="circle">net.minecraft.entity.ai.goal.<a href="../../../../net/minecraft/entity/ai/goal/EscapeDangerGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">EscapeDangerGoal</span></a>
+<ul>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/PolarBearEntity.PolarBearEscapeDangerGoal.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">PolarBearEntity.PolarBearEscapeDangerGoal</span></a></li>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/RabbitEntity.EscapeDangerGoal.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">RabbitEntity.EscapeDangerGoal</span></a></li>
+</ul>
+</li>
+<li type="circle">net.minecraft.entity.ai.goal.<a href="../../../../net/minecraft/entity/ai/goal/FleeEntityGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">FleeEntityGoal</span></a>&lt;T&gt;
+<ul>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/RabbitEntity.FleeGoal.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">RabbitEntity.FleeGoal</span></a>&lt;T&gt;</li>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/WolfEntity.AvoidLlamaGoal.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">WolfEntity.AvoidLlamaGoal</span></a>&lt;T&gt;</li>
+</ul>
+</li>
+<li type="circle">net.minecraft.entity.ai.goal.<a href="../../../../net/minecraft/entity/ai/goal/MeleeAttackGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">MeleeAttackGoal</span></a>
+<ul>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/PolarBearEntity.AttackGoal.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">PolarBearEntity.AttackGoal</span></a></li>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/RabbitEntity.RabbitAttackGoal.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">RabbitEntity.RabbitAttackGoal</span></a></li>
+</ul>
+</li>
+<li type="circle">net.minecraft.entity.ai.goal.<a href="../../../../net/minecraft/entity/ai/goal/MoveToTargetPosGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">MoveToTargetPosGoal</span></a>
+<ul>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/RabbitEntity.EatCarrotCropGoal.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">RabbitEntity.EatCarrotCropGoal</span></a></li>
+</ul>
+</li>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/SquidEntity.SwimGoal.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">SquidEntity.SwimGoal</span></a></li>
+<li type="circle">net.minecraft.entity.ai.goal.<a href="../../../../net/minecraft/entity/ai/goal/TrackTargetGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">TrackTargetGoal</span></a>
+<ul>
+<li type="circle">net.minecraft.entity.ai.goal.<a href="../../../../net/minecraft/entity/ai/goal/FollowTargetGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">FollowTargetGoal</span></a>&lt;T&gt;
+<ul>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/LlamaEntity.ChaseWolvesGoal.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">LlamaEntity.ChaseWolvesGoal</span></a></li>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/PolarBearEntity.FollowPlayersGoal.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">PolarBearEntity.FollowPlayersGoal</span></a></li>
+</ul>
+</li>
+<li type="circle">net.minecraft.entity.ai.goal.<a href="../../../../net/minecraft/entity/ai/goal/RevengeGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">RevengeGoal</span></a>
+<ul>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/LlamaEntity.SpitRevengeGoal.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">LlamaEntity.SpitRevengeGoal</span></a></li>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/PolarBearEntity.PolarBearRevengeGoal.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">PolarBearEntity.PolarBearRevengeGoal</span></a></li>
 </ul>
 </li>
 </ul>
 </li>
+</ul>
+</li>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/HorseEntity.EntityData.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">HorseEntity.EntityData</span></a> (implements net.minecraft.entity.<a href="../../../../net/minecraft/entity/EntityData.html" title="interface in net.minecraft.entity">EntityData</a>)</li>
+<li type="circle">net.minecraft.entity.ai.control.<a href="../../../../net/minecraft/entity/ai/control/JumpControl.html" title="class in net.minecraft.entity.ai.control"><span class="typeNameLink">JumpControl</span></a>
+<ul>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/RabbitEntity.RabbitJumpControl.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">RabbitEntity.RabbitJumpControl</span></a></li>
+</ul>
+</li>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/LlamaEntity.EntityData.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">LlamaEntity.EntityData</span></a> (implements net.minecraft.entity.<a href="../../../../net/minecraft/entity/EntityData.html" title="interface in net.minecraft.entity">EntityData</a>)</li>
+<li type="circle">net.minecraft.entity.ai.control.<a href="../../../../net/minecraft/entity/ai/control/MoveControl.html" title="class in net.minecraft.entity.ai.control"><span class="typeNameLink">MoveControl</span></a>
+<ul>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/RabbitEntity.RabbitMoveControl.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">RabbitEntity.RabbitMoveControl</span></a></li>
+</ul>
+</li>
+<li type="circle">net.minecraft.util.<a href="../../../../net/minecraft/util/Pair.html" title="class in net.minecraft.util"><span class="typeNameLink">Pair</span></a>&lt;A,B&gt;
+<ul>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/VillagerEntity.class_4885.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">VillagerEntity.class_4885</span></a></li>
+</ul>
+</li>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/PolarBearEntity.PolarBearEntityData.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">PolarBearEntity.PolarBearEntityData</span></a> (implements net.minecraft.entity.<a href="../../../../net/minecraft/entity/EntityData.html" title="interface in net.minecraft.entity">EntityData</a>)</li>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/RabbitEntity.RabbitEntityData.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">RabbitEntity.RabbitEntityData</span></a> (implements net.minecraft.entity.<a href="../../../../net/minecraft/entity/EntityData.html" title="interface in net.minecraft.entity">EntityData</a>)</li>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/VillagerEntity.BuyForOneEmeraldFactory.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">VillagerEntity.BuyForOneEmeraldFactory</span></a> (implements net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/VillagerEntity.Factory.html" title="interface in net.minecraft.entity.passive">VillagerEntity.Factory</a>)</li>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/VillagerEntity.EnchantBookFactory.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">VillagerEntity.EnchantBookFactory</span></a> (implements net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/VillagerEntity.Factory.html" title="interface in net.minecraft.entity.passive">VillagerEntity.Factory</a>)</li>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/VillagerEntity.ProcessItemFactory.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">VillagerEntity.ProcessItemFactory</span></a> (implements net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/VillagerEntity.Factory.html" title="interface in net.minecraft.entity.passive">VillagerEntity.Factory</a>)</li>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/VillagerEntity.SellEnchantedToolFactory.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">VillagerEntity.SellEnchantedToolFactory</span></a> (implements net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/VillagerEntity.Factory.html" title="interface in net.minecraft.entity.passive">VillagerEntity.Factory</a>)</li>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/VillagerEntity.SellItemFactory.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">VillagerEntity.SellItemFactory</span></a> (implements net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/VillagerEntity.Factory.html" title="interface in net.minecraft.entity.passive">VillagerEntity.Factory</a>)</li>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/VillagerEntity.SellMapFactory.html" title="class in net.minecraft.entity.passive"><span class="typeNameLink">VillagerEntity.SellMapFactory</span></a> (implements net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/VillagerEntity.Factory.html" title="interface in net.minecraft.entity.passive">VillagerEntity.Factory</a>)</li>
+</ul>
+</li>
+</ul>
+<h2 title="Interface Hierarchy">Interface Hierarchy</h2>
+<ul>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/Animal.html" title="interface in net.minecraft.entity.passive"><span class="typeNameLink">Animal</span></a></li>
+<li type="circle">net.minecraft.entity.passive.<a href="../../../../net/minecraft/entity/passive/VillagerEntity.Factory.html" title="interface in net.minecraft.entity.passive"><span class="typeNameLink">VillagerEntity.Factory</span></a></li>
 </ul>
 </div>
 <!-- ======= START OF BOTTOM NAVBAR ====== -->

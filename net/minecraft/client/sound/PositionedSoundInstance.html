@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../net/minecraft/client/sound/MusicTracker.html" title="class in net.minecraft.client.sound"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../net/minecraft/client/sound/Sound.html" title="class in net.minecraft.client.sound"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/client/sound/MusicTracker.MusicType.html" title="enum in net.minecraft.client.sound"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/client/sound/RidingMinecartSoundInstance.html" title="class in net.minecraft.client.sound"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/client/sound/PositionedSoundInstance.html" target="_top">Frames</a></li>
@@ -126,6 +126,21 @@ extends <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.ht
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="nested.class.summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="nested.classes.inherited.from.class.net.minecraft.client.sound.SoundInstance">
+<!--   -->
+</a>
+<h3>Nested classes/interfaces inherited from interface&nbsp;net.minecraft.client.sound.<a href="../../../../net/minecraft/client/sound/SoundInstance.html" title="interface in net.minecraft.client.sound">SoundInstance</a></h3>
+<code><a href="../../../../net/minecraft/client/sound/SoundInstance.AttenuationType.html" title="enum in net.minecraft.client.sound">SoundInstance.AttenuationType</a></code></li>
+</ul>
+</li>
+</ul>
 <!-- =========== FIELD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="field.summary">
@@ -137,7 +152,7 @@ extends <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.ht
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.client.sound.<a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html" title="class in net.minecraft.client.sound">AbstractSoundInstance</a></h3>
-<code><a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#attenuationType">attenuationType</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#identifier">identifier</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#pitch">pitch</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#repeat">repeat</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#repeatDelay">repeatDelay</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#volume">volume</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#x">x</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#y">y</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#z">z</a></code></li>
+<code><a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#attenuationType">attenuationType</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#category">category</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#id">id</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#pitch">pitch</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#repeat">repeat</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#repeatDelay">repeatDelay</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#sound">sound</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#volume">volume</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#x">x</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#y">y</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#z">z</a></code></li>
 </ul>
 </li>
 </ul>
@@ -154,25 +169,48 @@ extends <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.ht
 <th class="colLast" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private </code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/PositionedSoundInstance.html#PositionedSoundInstance-net.minecraft.util.Identifier-float-float-boolean-int-net.minecraft.class_2388-float-float-float-">PositionedSoundInstance</a></span>(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier,
-                       float&nbsp;float2,
-                       float&nbsp;float3,
-                       boolean&nbsp;bool,
-                       int&nbsp;int2,
-                       <a href="../../../../net/minecraft/class_2388.html" title="enum in net.minecraft">class_2388</a>&nbsp;class_2388,
-                       float&nbsp;float4,
-                       float&nbsp;float5,
-                       float&nbsp;float6)</code>&nbsp;</td>
+<td class="colFirst"><code>&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/PositionedSoundInstance.html#PositionedSoundInstance-net.minecraft.util.Identifier-net.minecraft.sound.SoundCategory-float-float-boolean-int-net.minecraft.client.sound.SoundInstance.AttenuationType-float-float-float-">PositionedSoundInstance</a></span>(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;id,
+                       <a href="../../../../net/minecraft/sound/SoundCategory.html" title="enum in net.minecraft.sound">SoundCategory</a>&nbsp;category,
+                       float&nbsp;volume,
+                       float&nbsp;pitch,
+                       boolean&nbsp;repeat,
+                       int&nbsp;repeatDelay,
+                       <a href="../../../../net/minecraft/client/sound/SoundInstance.AttenuationType.html" title="enum in net.minecraft.client.sound">SoundInstance.AttenuationType</a>&nbsp;attenuationType,
+                       float&nbsp;x,
+                       float&nbsp;y,
+                       float&nbsp;z)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/PositionedSoundInstance.html#PositionedSoundInstance-net.minecraft.util.Identifier-float-float-float-float-float-">PositionedSoundInstance</a></span>(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier,
-                       float&nbsp;float2,
-                       float&nbsp;float3,
-                       float&nbsp;float4,
-                       float&nbsp;float5,
-                       float&nbsp;float6)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/PositionedSoundInstance.html#PositionedSoundInstance-net.minecraft.sound.SoundEvent-net.minecraft.sound.SoundCategory-float-float-net.minecraft.util.math.BlockPos-">PositionedSoundInstance</a></span>(<a href="../../../../net/minecraft/sound/SoundEvent.html" title="class in net.minecraft.sound">SoundEvent</a>&nbsp;sound,
+                       <a href="../../../../net/minecraft/sound/SoundCategory.html" title="enum in net.minecraft.sound">SoundCategory</a>&nbsp;category,
+                       float&nbsp;volume,
+                       float&nbsp;pitch,
+                       <a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private </code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/PositionedSoundInstance.html#PositionedSoundInstance-net.minecraft.sound.SoundEvent-net.minecraft.sound.SoundCategory-float-float-boolean-int-net.minecraft.client.sound.SoundInstance.AttenuationType-float-float-float-">PositionedSoundInstance</a></span>(<a href="../../../../net/minecraft/sound/SoundEvent.html" title="class in net.minecraft.sound">SoundEvent</a>&nbsp;sound,
+                       <a href="../../../../net/minecraft/sound/SoundCategory.html" title="enum in net.minecraft.sound">SoundCategory</a>&nbsp;category,
+                       float&nbsp;volume,
+                       float&nbsp;pitch,
+                       boolean&nbsp;repeat,
+                       int&nbsp;repeatDelay,
+                       <a href="../../../../net/minecraft/client/sound/SoundInstance.AttenuationType.html" title="enum in net.minecraft.client.sound">SoundInstance.AttenuationType</a>&nbsp;attenuationType,
+                       float&nbsp;x,
+                       float&nbsp;y,
+                       float&nbsp;z)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/PositionedSoundInstance.html#PositionedSoundInstance-net.minecraft.sound.SoundEvent-net.minecraft.sound.SoundCategory-float-float-float-float-float-">PositionedSoundInstance</a></span>(<a href="../../../../net/minecraft/sound/SoundEvent.html" title="class in net.minecraft.sound">SoundEvent</a>&nbsp;sound,
+                       <a href="../../../../net/minecraft/sound/SoundCategory.html" title="enum in net.minecraft.sound">SoundCategory</a>&nbsp;category,
+                       float&nbsp;volume,
+                       float&nbsp;pitch,
+                       float&nbsp;x,
+                       float&nbsp;y,
+                       float&nbsp;z)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -191,19 +229,25 @@ extends <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.ht
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../net/minecraft/client/sound/PositionedSoundInstance.html" title="class in net.minecraft.client.sound">PositionedSoundInstance</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/PositionedSoundInstance.html#master-net.minecraft.util.Identifier-float-">master</a></span>(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier,
-      float&nbsp;float2)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/PositionedSoundInstance.html#master-net.minecraft.sound.SoundEvent-float-">master</a></span>(<a href="../../../../net/minecraft/sound/SoundEvent.html" title="class in net.minecraft.sound">SoundEvent</a>&nbsp;sound,
+      float&nbsp;volume)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../net/minecraft/client/sound/PositionedSoundInstance.html" title="class in net.minecraft.client.sound">PositionedSoundInstance</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/PositionedSoundInstance.html#method_4512-net.minecraft.util.Identifier-">method_4512</a></span>(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/PositionedSoundInstance.html#master-net.minecraft.sound.SoundEvent-float-float-">master</a></span>(<a href="../../../../net/minecraft/sound/SoundEvent.html" title="class in net.minecraft.sound">SoundEvent</a>&nbsp;sound,
+      float&nbsp;volume,
+      float&nbsp;pitch)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../net/minecraft/client/sound/PositionedSoundInstance.html" title="class in net.minecraft.client.sound">PositionedSoundInstance</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/PositionedSoundInstance.html#method_4514-net.minecraft.util.Identifier-float-float-float-">method_4514</a></span>(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier,
-           float&nbsp;float2,
-           float&nbsp;float3,
-           float&nbsp;float4)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/PositionedSoundInstance.html#music-net.minecraft.sound.SoundEvent-">music</a></span>(<a href="../../../../net/minecraft/sound/SoundEvent.html" title="class in net.minecraft.sound">SoundEvent</a>&nbsp;sound)</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../net/minecraft/client/sound/PositionedSoundInstance.html" title="class in net.minecraft.client.sound">PositionedSoundInstance</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/sound/PositionedSoundInstance.html#record-net.minecraft.sound.SoundEvent-float-float-float-">record</a></span>(<a href="../../../../net/minecraft/sound/SoundEvent.html" title="class in net.minecraft.sound">SoundEvent</a>&nbsp;sound,
+      float&nbsp;x,
+      float&nbsp;y,
+      float&nbsp;z)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -211,7 +255,7 @@ extends <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.ht
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.client.sound.<a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html" title="class in net.minecraft.client.sound">AbstractSoundInstance</a></h3>
-<code><a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getAttenuationType--">getAttenuationType</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getIdentifier--">getIdentifier</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getPitch--">getPitch</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getRepeatDelay--">getRepeatDelay</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getVolume--">getVolume</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getX--">getX</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getY--">getY</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getZ--">getZ</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#isRepeatable--">isRepeatable</a></code></li>
+<code><a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getAttenuationType--">getAttenuationType</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getCategory--">getCategory</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getId--">getId</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getPitch--">getPitch</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getRepeatDelay--">getRepeatDelay</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getSound--">getSound</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getSoundSet-net.minecraft.client.sound.SoundManager-">getSoundSet</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getVolume--">getVolume</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getX--">getX</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getY--">getY</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#getZ--">getZ</a>, <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.html#isRepeatable--">isRepeatable</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -234,35 +278,68 @@ extends <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.ht
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="PositionedSoundInstance-net.minecraft.util.Identifier-float-float-float-float-float-">
+<a name="PositionedSoundInstance-net.minecraft.sound.SoundEvent-net.minecraft.sound.SoundCategory-float-float-net.minecraft.util.math.BlockPos-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>PositionedSoundInstance</h4>
-<pre>public&nbsp;PositionedSoundInstance(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier,
-                               float&nbsp;float2,
-                               float&nbsp;float3,
-                               float&nbsp;float4,
-                               float&nbsp;float5,
-                               float&nbsp;float6)</pre>
+<pre>public&nbsp;PositionedSoundInstance(<a href="../../../../net/minecraft/sound/SoundEvent.html" title="class in net.minecraft.sound">SoundEvent</a>&nbsp;sound,
+                               <a href="../../../../net/minecraft/sound/SoundCategory.html" title="enum in net.minecraft.sound">SoundCategory</a>&nbsp;category,
+                               float&nbsp;volume,
+                               float&nbsp;pitch,
+                               <a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</pre>
 </li>
 </ul>
-<a name="PositionedSoundInstance-net.minecraft.util.Identifier-float-float-boolean-int-net.minecraft.class_2388-float-float-float-">
+<a name="PositionedSoundInstance-net.minecraft.sound.SoundEvent-net.minecraft.sound.SoundCategory-float-float-float-float-float-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PositionedSoundInstance</h4>
+<pre>public&nbsp;PositionedSoundInstance(<a href="../../../../net/minecraft/sound/SoundEvent.html" title="class in net.minecraft.sound">SoundEvent</a>&nbsp;sound,
+                               <a href="../../../../net/minecraft/sound/SoundCategory.html" title="enum in net.minecraft.sound">SoundCategory</a>&nbsp;category,
+                               float&nbsp;volume,
+                               float&nbsp;pitch,
+                               float&nbsp;x,
+                               float&nbsp;y,
+                               float&nbsp;z)</pre>
+</li>
+</ul>
+<a name="PositionedSoundInstance-net.minecraft.sound.SoundEvent-net.minecraft.sound.SoundCategory-float-float-boolean-int-net.minecraft.client.sound.SoundInstance.AttenuationType-float-float-float-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PositionedSoundInstance</h4>
+<pre>private&nbsp;PositionedSoundInstance(<a href="../../../../net/minecraft/sound/SoundEvent.html" title="class in net.minecraft.sound">SoundEvent</a>&nbsp;sound,
+                                <a href="../../../../net/minecraft/sound/SoundCategory.html" title="enum in net.minecraft.sound">SoundCategory</a>&nbsp;category,
+                                float&nbsp;volume,
+                                float&nbsp;pitch,
+                                boolean&nbsp;repeat,
+                                int&nbsp;repeatDelay,
+                                <a href="../../../../net/minecraft/client/sound/SoundInstance.AttenuationType.html" title="enum in net.minecraft.client.sound">SoundInstance.AttenuationType</a>&nbsp;attenuationType,
+                                float&nbsp;x,
+                                float&nbsp;y,
+                                float&nbsp;z)</pre>
+</li>
+</ul>
+<a name="PositionedSoundInstance-net.minecraft.util.Identifier-net.minecraft.sound.SoundCategory-float-float-boolean-int-net.minecraft.client.sound.SoundInstance.AttenuationType-float-float-float-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>PositionedSoundInstance</h4>
-<pre>private&nbsp;PositionedSoundInstance(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier,
-                                float&nbsp;float2,
-                                float&nbsp;float3,
-                                boolean&nbsp;bool,
-                                int&nbsp;int2,
-                                <a href="../../../../net/minecraft/class_2388.html" title="enum in net.minecraft">class_2388</a>&nbsp;class_2388,
-                                float&nbsp;float4,
-                                float&nbsp;float5,
-                                float&nbsp;float6)</pre>
+<pre>public&nbsp;PositionedSoundInstance(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;id,
+                               <a href="../../../../net/minecraft/sound/SoundCategory.html" title="enum in net.minecraft.sound">SoundCategory</a>&nbsp;category,
+                               float&nbsp;volume,
+                               float&nbsp;pitch,
+                               boolean&nbsp;repeat,
+                               int&nbsp;repeatDelay,
+                               <a href="../../../../net/minecraft/client/sound/SoundInstance.AttenuationType.html" title="enum in net.minecraft.client.sound">SoundInstance.AttenuationType</a>&nbsp;attenuationType,
+                               float&nbsp;x,
+                               float&nbsp;y,
+                               float&nbsp;z)</pre>
 </li>
 </ul>
 </li>
@@ -273,35 +350,46 @@ extends <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.ht
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="master-net.minecraft.util.Identifier-float-">
+<a name="master-net.minecraft.sound.SoundEvent-float-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>master</h4>
-<pre>public static&nbsp;<a href="../../../../net/minecraft/client/sound/PositionedSoundInstance.html" title="class in net.minecraft.client.sound">PositionedSoundInstance</a>&nbsp;master(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier,
-                                             float&nbsp;float2)</pre>
+<pre>public static&nbsp;<a href="../../../../net/minecraft/client/sound/PositionedSoundInstance.html" title="class in net.minecraft.client.sound">PositionedSoundInstance</a>&nbsp;master(<a href="../../../../net/minecraft/sound/SoundEvent.html" title="class in net.minecraft.sound">SoundEvent</a>&nbsp;sound,
+                                             float&nbsp;volume)</pre>
 </li>
 </ul>
-<a name="method_4512-net.minecraft.util.Identifier-">
+<a name="master-net.minecraft.sound.SoundEvent-float-float-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_4512</h4>
-<pre>public static&nbsp;<a href="../../../../net/minecraft/client/sound/PositionedSoundInstance.html" title="class in net.minecraft.client.sound">PositionedSoundInstance</a>&nbsp;method_4512(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier)</pre>
+<h4>master</h4>
+<pre>public static&nbsp;<a href="../../../../net/minecraft/client/sound/PositionedSoundInstance.html" title="class in net.minecraft.client.sound">PositionedSoundInstance</a>&nbsp;master(<a href="../../../../net/minecraft/sound/SoundEvent.html" title="class in net.minecraft.sound">SoundEvent</a>&nbsp;sound,
+                                             float&nbsp;volume,
+                                             float&nbsp;pitch)</pre>
 </li>
 </ul>
-<a name="method_4514-net.minecraft.util.Identifier-float-float-float-">
+<a name="music-net.minecraft.sound.SoundEvent-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>music</h4>
+<pre>public static&nbsp;<a href="../../../../net/minecraft/client/sound/PositionedSoundInstance.html" title="class in net.minecraft.client.sound">PositionedSoundInstance</a>&nbsp;music(<a href="../../../../net/minecraft/sound/SoundEvent.html" title="class in net.minecraft.sound">SoundEvent</a>&nbsp;sound)</pre>
+</li>
+</ul>
+<a name="record-net.minecraft.sound.SoundEvent-float-float-float-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_4514</h4>
-<pre>public static&nbsp;<a href="../../../../net/minecraft/client/sound/PositionedSoundInstance.html" title="class in net.minecraft.client.sound">PositionedSoundInstance</a>&nbsp;method_4514(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier,
-                                                  float&nbsp;float2,
-                                                  float&nbsp;float3,
-                                                  float&nbsp;float4)</pre>
+<h4>record</h4>
+<pre>public static&nbsp;<a href="../../../../net/minecraft/client/sound/PositionedSoundInstance.html" title="class in net.minecraft.client.sound">PositionedSoundInstance</a>&nbsp;record(<a href="../../../../net/minecraft/sound/SoundEvent.html" title="class in net.minecraft.sound">SoundEvent</a>&nbsp;sound,
+                                             float&nbsp;x,
+                                             float&nbsp;y,
+                                             float&nbsp;z)</pre>
 </li>
 </ul>
 </li>
@@ -331,8 +419,8 @@ extends <a href="../../../../net/minecraft/client/sound/AbstractSoundInstance.ht
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../net/minecraft/client/sound/MusicTracker.html" title="class in net.minecraft.client.sound"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../net/minecraft/client/sound/Sound.html" title="class in net.minecraft.client.sound"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/client/sound/MusicTracker.MusicType.html" title="enum in net.minecraft.client.sound"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/client/sound/RidingMinecartSoundInstance.html" title="class in net.minecraft.client.sound"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/client/sound/PositionedSoundInstance.html" target="_top">Frames</a></li>

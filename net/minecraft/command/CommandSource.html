@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var methods = {"i0":6,"i1":18,"i2":18,"i3":18,"i4":6,"i5":6,"i6":18,"i7":6,"i8":18,"i9":18,"i10":18};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/command/CommandProvider.html" title="interface in net.minecraft.command"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/command/IncorrectUsageException.html" title="class in net.minecraft.command"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li>Prev&nbsp;Class</li>
+<li><a href="../../../net/minecraft/command/CommandStats.html" title="class in net.minecraft.command"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/command/CommandSource.html" target="_top">Frames</a></li>
@@ -100,7 +100,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><a href="../../../net/minecraft/client/network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>, <a href="../../../net/minecraft/class_2322.html" title="class in net.minecraft">class_2322</a>, <a href="../../../net/minecraft/class_2335.html" title="class in net.minecraft">class_2335</a>, <a href="../../../net/minecraft/world/CommandBlockExecutor.html" title="class in net.minecraft.world">CommandBlockExecutor</a>, <a href="../../../net/minecraft/entity/vehicle/CommandBlockMinecartCommandExecutor.html" title="class in net.minecraft.entity.vehicle">CommandBlockMinecartCommandExecutor</a>, <a href="../../../net/minecraft/server/command/Console.html" title="class in net.minecraft.server.command">Console</a>, <a href="../../../net/minecraft/server/dedicated/DedicatedServer.html" title="class in net.minecraft.server.dedicated">DedicatedServer</a>, <a href="../../../net/minecraft/server/integrated/IntegratedServer.html" title="class in net.minecraft.server.integrated">IntegratedServer</a>, <a href="../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a>, <a href="../../../net/minecraft/client/network/OtherClientPlayerEntity.html" title="class in net.minecraft.client.network">OtherClientPlayerEntity</a>, <a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>, <a href="../../../net/minecraft/server/network/ServerPlayerEntity.html" title="class in net.minecraft.server.network">ServerPlayerEntity</a>, <a href="../../../net/minecraft/client/render/VertexBufferUploader.html" title="class in net.minecraft.client.render">VertexBufferUploader</a></dd>
+<dd><a href="../../../net/minecraft/client/network/AbstractClientPlayerEntity.html" title="class in net.minecraft.client.network">AbstractClientPlayerEntity</a>, <a href="../../../net/minecraft/entity/decoration/AbstractDecorationEntity.html" title="class in net.minecraft.entity.decoration">AbstractDecorationEntity</a>, <a href="../../../net/minecraft/entity/passive/AbstractDonkeyEntity.html" title="class in net.minecraft.entity.passive">AbstractDonkeyEntity</a>, <a href="../../../net/minecraft/entity/AbstractLightningEntity.html" title="class in net.minecraft.entity">AbstractLightningEntity</a>, <a href="../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html" title="class in net.minecraft.entity.vehicle">AbstractMinecartEntity</a>, <a href="../../../net/minecraft/entity/mob/AbstractSkeletonEntity.html" title="class in net.minecraft.entity.mob">AbstractSkeletonEntity</a>, <a href="../../../net/minecraft/entity/mob/AmbientEntity.html" title="class in net.minecraft.entity.mob">AmbientEntity</a>, <a href="../../../net/minecraft/entity/passive/AnimalEntity.html" title="class in net.minecraft.entity.passive">AnimalEntity</a>, <a href="../../../net/minecraft/entity/AreaEffectCloudEntity.html" title="class in net.minecraft.entity">AreaEffectCloudEntity</a>, <a href="../../../net/minecraft/entity/decoration/ArmorStandEntity.html" title="class in net.minecraft.entity.decoration">ArmorStandEntity</a>, <a href="../../../net/minecraft/entity/projectile/ArrowEntity.html" title="class in net.minecraft.entity.projectile">ArrowEntity</a>, <a href="../../../net/minecraft/entity/passive/BatEntity.html" title="class in net.minecraft.entity.passive">BatEntity</a>, <a href="../../../net/minecraft/entity/mob/BlazeEntity.html" title="class in net.minecraft.entity.mob">BlazeEntity</a>, <a href="../../../net/minecraft/entity/vehicle/BoatEntity.html" title="class in net.minecraft.entity.vehicle">BoatEntity</a>, <a href="../../../net/minecraft/entity/mob/CaveSpiderEntity.html" title="class in net.minecraft.entity.mob">CaveSpiderEntity</a>, <a href="../../../net/minecraft/entity/vehicle/ChestMinecartEntity.html" title="class in net.minecraft.entity.vehicle">ChestMinecartEntity</a>, <a href="../../../net/minecraft/entity/passive/ChickenEntity.html" title="class in net.minecraft.entity.passive">ChickenEntity</a>, <a href="../../../net/minecraft/class_5713.html" title="class in net.minecraft">class_5713</a>, <a href="../../../net/minecraft/client/network/ClientPlayerEntity.html" title="class in net.minecraft.client.network">ClientPlayerEntity</a>, <a href="../../../net/minecraft/world/CommandBlockExecutor.html" title="class in net.minecraft.world">CommandBlockExecutor</a>, <a href="../../../net/minecraft/entity/vehicle/CommandBlockMinecartEntity.html" title="class in net.minecraft.entity.vehicle">CommandBlockMinecartEntity</a>, <a href="../../../net/minecraft/entity/vehicle/CommandBlockMinecartEntity.CommandExecutor.html" title="class in net.minecraft.entity.vehicle">CommandBlockMinecartEntity.CommandExecutor</a>, <a href="../../../net/minecraft/entity/passive/CowEntity.html" title="class in net.minecraft.entity.passive">CowEntity</a>, <a href="../../../net/minecraft/entity/mob/CreeperEntity.html" title="class in net.minecraft.entity.mob">CreeperEntity</a>, <a href="../../../net/minecraft/entity/passive/DonkeyEntity.html" title="class in net.minecraft.entity.passive">DonkeyEntity</a>, <a href="../../../net/minecraft/entity/projectile/DragonFireballEntity.html" title="class in net.minecraft.entity.projectile">DragonFireballEntity</a>, <a href="../../../net/minecraft/entity/projectile/thrown/EggEntity.html" title="class in net.minecraft.entity.projectile.thrown">EggEntity</a>, <a href="../../../net/minecraft/entity/mob/ElderGuardianEntity.html" title="class in net.minecraft.entity.mob">ElderGuardianEntity</a>, <a href="../../../net/minecraft/entity/decoration/EndCrystalEntity.html" title="class in net.minecraft.entity.decoration">EndCrystalEntity</a>, <a href="../../../net/minecraft/entity/boss/dragon/EnderDragonEntity.html" title="class in net.minecraft.entity.boss.dragon">EnderDragonEntity</a>, <a href="../../../net/minecraft/entity/boss/dragon/EnderDragonPart.html" title="class in net.minecraft.entity.boss.dragon">EnderDragonPart</a>, <a href="../../../net/minecraft/entity/mob/EndermanEntity.html" title="class in net.minecraft.entity.mob">EndermanEntity</a>, <a href="../../../net/minecraft/entity/mob/EndermiteEntity.html" title="class in net.minecraft.entity.mob">EndermiteEntity</a>, <a href="../../../net/minecraft/entity/projectile/thrown/EnderPearlEntity.html" title="class in net.minecraft.entity.projectile.thrown">EnderPearlEntity</a>, <a href="../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>, <a href="../../../net/minecraft/entity/mob/EvokerEntity.html" title="class in net.minecraft.entity.mob">EvokerEntity</a>, <a href="../../../net/minecraft/entity/mob/EvokerFangsEntity.html" title="class in net.minecraft.entity.mob">EvokerFangsEntity</a>, <a href="../../../net/minecraft/entity/projectile/thrown/ExperienceBottleEntity.html" title="class in net.minecraft.entity.projectile.thrown">ExperienceBottleEntity</a>, <a href="../../../net/minecraft/entity/ExperienceOrbEntity.html" title="class in net.minecraft.entity">ExperienceOrbEntity</a>, <a href="../../../net/minecraft/entity/projectile/ExplosiveProjectileEntity.html" title="class in net.minecraft.entity.projectile">ExplosiveProjectileEntity</a>, <a href="../../../net/minecraft/entity/EyeOfEnderEntity.html" title="class in net.minecraft.entity">EyeOfEnderEntity</a>, <a href="../../../net/minecraft/entity/FallingBlockEntity.html" title="class in net.minecraft.entity">FallingBlockEntity</a>, <a href="../../../net/minecraft/entity/projectile/FireballEntity.html" title="class in net.minecraft.entity.projectile">FireballEntity</a>, <a href="../../../net/minecraft/entity/projectile/FireworkRocketEntity.html" title="class in net.minecraft.entity.projectile">FireworkRocketEntity</a>, <a href="../../../net/minecraft/entity/projectile/FishingBobberEntity.html" title="class in net.minecraft.entity.projectile">FishingBobberEntity</a>, <a href="../../../net/minecraft/entity/mob/FlyingEntity.html" title="class in net.minecraft.entity.mob">FlyingEntity</a>, <a href="../../../net/minecraft/entity/vehicle/FurnaceMinecartEntity.html" title="class in net.minecraft.entity.vehicle">FurnaceMinecartEntity</a>, <a href="../../../net/minecraft/entity/mob/GhastEntity.html" title="class in net.minecraft.entity.mob">GhastEntity</a>, <a href="../../../net/minecraft/entity/mob/GiantEntity.html" title="class in net.minecraft.entity.mob">GiantEntity</a>, <a href="../../../net/minecraft/entity/passive/GolemEntity.html" title="class in net.minecraft.entity.passive">GolemEntity</a>, <a href="../../../net/minecraft/entity/mob/GuardianEntity.html" title="class in net.minecraft.entity.mob">GuardianEntity</a>, <a href="../../../net/minecraft/entity/vehicle/HopperMinecartEntity.html" title="class in net.minecraft.entity.vehicle">HopperMinecartEntity</a>, <a href="../../../net/minecraft/entity/passive/HorseBaseEntity.html" title="class in net.minecraft.entity.passive">HorseBaseEntity</a>, <a href="../../../net/minecraft/entity/passive/HorseEntity.html" title="class in net.minecraft.entity.passive">HorseEntity</a>, <a href="../../../net/minecraft/entity/mob/HostileEntity.html" title="class in net.minecraft.entity.mob">HostileEntity</a>, <a href="../../../net/minecraft/entity/mob/HuskEntity.html" title="class in net.minecraft.entity.mob">HuskEntity</a>, <a href="../../../net/minecraft/entity/mob/IllagerEntity.html" title="class in net.minecraft.entity.mob">IllagerEntity</a>, <a href="../../../net/minecraft/entity/mob/IllusionerEntity.html" title="class in net.minecraft.entity.mob">IllusionerEntity</a>, <a href="../../../net/minecraft/server/integrated/IntegratedServer.html" title="class in net.minecraft.server.integrated">IntegratedServer</a>, <a href="../../../net/minecraft/entity/passive/IronGolemEntity.html" title="class in net.minecraft.entity.passive">IronGolemEntity</a>, <a href="../../../net/minecraft/entity/ItemEntity.html" title="class in net.minecraft.entity">ItemEntity</a>, <a href="../../../net/minecraft/entity/decoration/ItemFrameEntity.html" title="class in net.minecraft.entity.decoration">ItemFrameEntity</a>, <a href="../../../net/minecraft/entity/decoration/LeashKnotEntity.html" title="class in net.minecraft.entity.decoration">LeashKnotEntity</a>, <a href="../../../net/minecraft/entity/LightningEntity.html" title="class in net.minecraft.entity">LightningEntity</a>, <a href="../../../net/minecraft/entity/LivingEntity.html" title="class in net.minecraft.entity">LivingEntity</a>, <a href="../../../net/minecraft/entity/passive/LlamaEntity.html" title="class in net.minecraft.entity.passive">LlamaEntity</a>, <a href="../../../net/minecraft/entity/projectile/LlamaSpitEntity.html" title="class in net.minecraft.entity.projectile">LlamaSpitEntity</a>, <a href="../../../net/minecraft/entity/mob/MagmaCubeEntity.html" title="class in net.minecraft.entity.mob">MagmaCubeEntity</a>, <a href="../../../net/minecraft/entity/vehicle/MinecartEntity.html" title="class in net.minecraft.entity.vehicle">MinecartEntity</a>, <a href="../../../net/minecraft/server/dedicated/MinecraftDedicatedServer.html" title="class in net.minecraft.server.dedicated">MinecraftDedicatedServer</a>, <a href="../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a>, <a href="../../../net/minecraft/entity/mob/MobEntity.html" title="class in net.minecraft.entity.mob">MobEntity</a>, <a href="../../../net/minecraft/entity/passive/MooshroomEntity.html" title="class in net.minecraft.entity.passive">MooshroomEntity</a>, <a href="../../../net/minecraft/entity/passive/MuleEntity.html" title="class in net.minecraft.entity.passive">MuleEntity</a>, <a href="../../../net/minecraft/entity/passive/OcelotEntity.html" title="class in net.minecraft.entity.passive">OcelotEntity</a>, <a href="../../../net/minecraft/client/network/OtherClientPlayerEntity.html" title="class in net.minecraft.client.network">OtherClientPlayerEntity</a>, <a href="../../../net/minecraft/entity/decoration/painting/PaintingEntity.html" title="class in net.minecraft.entity.decoration.painting">PaintingEntity</a>, <a href="../../../net/minecraft/entity/passive/ParrotEntity.html" title="class in net.minecraft.entity.passive">ParrotEntity</a>, <a href="../../../net/minecraft/entity/passive/PassiveEntity.html" title="class in net.minecraft.entity.passive">PassiveEntity</a>, <a href="../../../net/minecraft/entity/mob/PathAwareEntity.html" title="class in net.minecraft.entity.mob">PathAwareEntity</a>, <a href="../../../net/minecraft/entity/passive/PigEntity.html" title="class in net.minecraft.entity.passive">PigEntity</a>, <a href="../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>, <a href="../../../net/minecraft/entity/passive/PolarBearEntity.html" title="class in net.minecraft.entity.passive">PolarBearEntity</a>, <a href="../../../net/minecraft/entity/projectile/thrown/PotionEntity.html" title="class in net.minecraft.entity.projectile.thrown">PotionEntity</a>, <a href="../../../net/minecraft/entity/projectile/ProjectileEntity.html" title="class in net.minecraft.entity.projectile">ProjectileEntity</a>, <a href="../../../net/minecraft/entity/passive/RabbitEntity.html" title="class in net.minecraft.entity.passive">RabbitEntity</a>, <a href="../../../net/minecraft/server/dedicated/ServerCommandOutput.html" title="class in net.minecraft.server.dedicated">ServerCommandOutput</a>, <a href="../../../net/minecraft/server/network/ServerPlayerEntity.html" title="class in net.minecraft.server.network">ServerPlayerEntity</a>, <a href="../../../net/minecraft/entity/passive/SheepEntity.html" title="class in net.minecraft.entity.passive">SheepEntity</a>, <a href="../../../net/minecraft/entity/projectile/ShulkerBulletEntity.html" title="class in net.minecraft.entity.projectile">ShulkerBulletEntity</a>, <a href="../../../net/minecraft/entity/mob/ShulkerEntity.html" title="class in net.minecraft.entity.mob">ShulkerEntity</a>, <a href="../../../net/minecraft/entity/mob/SilverfishEntity.html" title="class in net.minecraft.entity.mob">SilverfishEntity</a>, <a href="../../../net/minecraft/entity/mob/SkeletonEntity.html" title="class in net.minecraft.entity.mob">SkeletonEntity</a>, <a href="../../../net/minecraft/entity/mob/SkeletonHorseEntity.html" title="class in net.minecraft.entity.mob">SkeletonHorseEntity</a>, <a href="../../../net/minecraft/entity/mob/SlimeEntity.html" title="class in net.minecraft.entity.mob">SlimeEntity</a>, <a href="../../../net/minecraft/entity/projectile/SmallFireballEntity.html" title="class in net.minecraft.entity.projectile">SmallFireballEntity</a>, <a href="../../../net/minecraft/entity/projectile/thrown/SnowballEntity.html" title="class in net.minecraft.entity.projectile.thrown">SnowballEntity</a>, <a href="../../../net/minecraft/entity/passive/SnowGolemEntity.html" title="class in net.minecraft.entity.passive">SnowGolemEntity</a>, <a href="../../../net/minecraft/entity/vehicle/SpawnerMinecartEntity.html" title="class in net.minecraft.entity.vehicle">SpawnerMinecartEntity</a>, <a href="../../../net/minecraft/entity/projectile/SpectralArrowEntity.html" title="class in net.minecraft.entity.projectile">SpectralArrowEntity</a>, <a href="../../../net/minecraft/entity/mob/SpellcastingIllagerEntity.html" title="class in net.minecraft.entity.mob">SpellcastingIllagerEntity</a>, <a href="../../../net/minecraft/entity/mob/SpiderEntity.html" title="class in net.minecraft.entity.mob">SpiderEntity</a>, <a href="../../../net/minecraft/entity/passive/SquidEntity.html" title="class in net.minecraft.entity.passive">SquidEntity</a>, <a href="../../../net/minecraft/entity/vehicle/StorageMinecartEntity.html" title="class in net.minecraft.entity.vehicle">StorageMinecartEntity</a>, <a href="../../../net/minecraft/entity/mob/StrayEntity.html" title="class in net.minecraft.entity.mob">StrayEntity</a>, <a href="../../../net/minecraft/entity/passive/TameableEntity.html" title="class in net.minecraft.entity.passive">TameableEntity</a>, <a href="../../../net/minecraft/entity/passive/TameableShoulderEntity.html" title="class in net.minecraft.entity.passive">TameableShoulderEntity</a>, <a href="../../../net/minecraft/entity/thrown/ThrownEntity.html" title="class in net.minecraft.entity.thrown">ThrownEntity</a>, <a href="../../../net/minecraft/entity/TntEntity.html" title="class in net.minecraft.entity">TntEntity</a>, <a href="../../../net/minecraft/entity/vehicle/TntMinecartEntity.html" title="class in net.minecraft.entity.vehicle">TntMinecartEntity</a>, <a href="../../../net/minecraft/entity/mob/VexEntity.html" title="class in net.minecraft.entity.mob">VexEntity</a>, <a href="../../../net/minecraft/entity/passive/VillagerEntity.html" title="class in net.minecraft.entity.passive">VillagerEntity</a>, <a href="../../../net/minecraft/entity/mob/VindicatorEntity.html" title="class in net.minecraft.entity.mob">VindicatorEntity</a>, <a href="../../../net/minecraft/entity/mob/WaterCreatureEntity.html" title="class in net.minecraft.entity.mob">WaterCreatureEntity</a>, <a href="../../../net/minecraft/entity/mob/WitchEntity.html" title="class in net.minecraft.entity.mob">WitchEntity</a>, <a href="../../../net/minecraft/entity/boss/WitherEntity.html" title="class in net.minecraft.entity.boss">WitherEntity</a>, <a href="../../../net/minecraft/entity/mob/WitherSkeletonEntity.html" title="class in net.minecraft.entity.mob">WitherSkeletonEntity</a>, <a href="../../../net/minecraft/entity/projectile/WitherSkullEntity.html" title="class in net.minecraft.entity.projectile">WitherSkullEntity</a>, <a href="../../../net/minecraft/entity/passive/WolfEntity.html" title="class in net.minecraft.entity.passive">WolfEntity</a>, <a href="../../../net/minecraft/entity/mob/ZombieEntity.html" title="class in net.minecraft.entity.mob">ZombieEntity</a>, <a href="../../../net/minecraft/entity/mob/ZombieHorseEntity.html" title="class in net.minecraft.entity.mob">ZombieHorseEntity</a>, <a href="../../../net/minecraft/entity/mob/ZombiePigmanEntity.html" title="class in net.minecraft.entity.mob">ZombiePigmanEntity</a>, <a href="../../../net/minecraft/entity/mob/ZombieVillagerEntity.html" title="class in net.minecraft.entity.mob">ZombieVillagerEntity</a></dd>
 </dl>
 <hr>
 <br>
@@ -118,35 +118,56 @@ var activeTableTab = "activeTableTab";
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/command/CommandSource.html#canUseCommand-int-java.lang.String-">canUseCommand</a></span>(int&nbsp;permissionLevel,
-             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;commandLiteral)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/command/CommandSource.html#allowCommandExecution-int-java.lang.String-">allowCommandExecution</a></span>(int&nbsp;level,
+                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;command)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a></code></td>
+<td class="colFirst"><code>default <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/command/CommandSource.html#getBlockPos--">getBlockPos</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/command/CommandSource.html#getName--">getName</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>default <a href="../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/command/CommandSource.html#getCommandInvoker--">getCommandInvoker</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/command/CommandSource.html#getTranslationKey--">getTranslationKey</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>default <a href="../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/command/CommandSource.html#getDisplayName--">getDisplayName</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/command/CommandSource.html#getWorld--">getWorld</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/command/CommandSource.html#getEntityWorld--">getEntityWorld</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/command/CommandSource.html#sendMessage-net.minecraft.text.Text-">sendMessage</a></span>(<a href="../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;text)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/command/CommandSource.html#getName--">getName</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>default <a href="../../../net/minecraft/util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/command/CommandSource.html#getPosVector--">getPosVector</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/command/CommandSource.html#getServer--">getServer</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>default void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/command/CommandSource.html#sendSystemMessage-net.minecraft.text.Text-">sendSystemMessage</a></span>(<a href="../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;message)</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>default boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/command/CommandSource.html#shouldReceiveFeedback--">shouldReceiveFeedback</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>default void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/command/CommandSource.html#updateCommandStat-net.minecraft.command.CommandStats.Type-int-">updateCommandStat</a></span>(<a href="../../../net/minecraft/command/CommandStats.Type.html" title="enum in net.minecraft.command">CommandStats.Type</a>&nbsp;type,
+                 int&nbsp;value)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -163,41 +184,41 @@ var activeTableTab = "activeTableTab";
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getTranslationKey--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getTranslationKey</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getTranslationKey()</pre>
-</li>
-</ul>
 <a name="getName--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getName</h4>
-<pre><a href="../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;getName()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getName()</pre>
 </li>
 </ul>
-<a name="sendMessage-net.minecraft.text.Text-">
+<a name="getDisplayName--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>sendMessage</h4>
-<pre>void&nbsp;sendMessage(<a href="../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;text)</pre>
+<h4>getDisplayName</h4>
+<pre>default&nbsp;<a href="../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;getDisplayName()</pre>
 </li>
 </ul>
-<a name="canUseCommand-int-java.lang.String-">
+<a name="sendSystemMessage-net.minecraft.text.Text-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>canUseCommand</h4>
-<pre>boolean&nbsp;canUseCommand(int&nbsp;permissionLevel,
-                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;commandLiteral)</pre>
+<h4>sendSystemMessage</h4>
+<pre>default&nbsp;void&nbsp;sendSystemMessage(<a href="../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;message)</pre>
+</li>
+</ul>
+<a name="allowCommandExecution-int-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>allowCommandExecution</h4>
+<pre>boolean&nbsp;allowCommandExecution(int&nbsp;level,
+                              <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;command)</pre>
 </li>
 </ul>
 <a name="getBlockPos--">
@@ -206,16 +227,64 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getBlockPos</h4>
-<pre><a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;getBlockPos()</pre>
+<pre>default&nbsp;<a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;getBlockPos()</pre>
 </li>
 </ul>
-<a name="getWorld--">
+<a name="getPosVector--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPosVector</h4>
+<pre>default&nbsp;<a href="../../../net/minecraft/util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&nbsp;getPosVector()</pre>
+</li>
+</ul>
+<a name="getEntityWorld--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEntityWorld</h4>
+<pre><a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;getEntityWorld()</pre>
+</li>
+</ul>
+<a name="getCommandInvoker--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCommandInvoker</h4>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+default&nbsp;<a href="../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;getCommandInvoker()</pre>
+</li>
+</ul>
+<a name="shouldReceiveFeedback--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>shouldReceiveFeedback</h4>
+<pre>default&nbsp;boolean&nbsp;shouldReceiveFeedback()</pre>
+</li>
+</ul>
+<a name="updateCommandStat-net.minecraft.command.CommandStats.Type-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>updateCommandStat</h4>
+<pre>default&nbsp;void&nbsp;updateCommandStat(<a href="../../../net/minecraft/command/CommandStats.Type.html" title="enum in net.minecraft.command">CommandStats.Type</a>&nbsp;type,
+                               int&nbsp;value)</pre>
+</li>
+</ul>
+<a name="getServer--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>getWorld</h4>
-<pre><a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;getWorld()</pre>
+<h4>getServer</h4>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+<a href="../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a>&nbsp;getServer()</pre>
 </li>
 </ul>
 </li>
@@ -245,8 +314,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/command/CommandProvider.html" title="interface in net.minecraft.command"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/command/IncorrectUsageException.html" title="class in net.minecraft.command"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li>Prev&nbsp;Class</li>
+<li><a href="../../../net/minecraft/command/CommandStats.html" title="class in net.minecraft.command"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/command/CommandSource.html" target="_top">Frames</a></li>

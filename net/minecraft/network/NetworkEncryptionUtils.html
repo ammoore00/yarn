@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/network/LegacyQueryHandler.html" title="class in net.minecraft.network"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/network/NetworkState.html" title="enum in net.minecraft.network"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/network/MessageType.html" title="enum in net.minecraft.network"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/network/NetworkSide.html" title="enum in net.minecraft.network"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/network/NetworkEncryptionUtils.html" target="_top">Frames</a></li>
@@ -74,13 +74,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -116,6 +116,25 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/NetworkEncryptionUtils.html#LOGGER">LOGGER</a></span></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.summary">
@@ -188,17 +207,17 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
                 <a href="https://docs.oracle.com/javase/8/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</a>&nbsp;secretKey)</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/security/KeyPair.html?is-external=true" title="class or interface in java.security">KeyPair</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/NetworkEncryptionUtils.html#generateServerKeyPair--">generateServerKeyPair</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>private static byte[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/NetworkEncryptionUtils.html#hash-java.lang.String-byte:A:A-">hash</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;algorithm,
     byte[][]&nbsp;data)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/security/PublicKey.html?is-external=true" title="class or interface in java.security">PublicKey</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/NetworkEncryptionUtils.html#method_10478-byte:A-">method_10478</a></span>(byte[]&nbsp;byte2)</code>&nbsp;</td>
-</tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/security/KeyPair.html?is-external=true" title="class or interface in java.security">KeyPair</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/NetworkEncryptionUtils.html#method_10479--">method_10479</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/security/PublicKey.html?is-external=true" title="class or interface in java.security">PublicKey</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/NetworkEncryptionUtils.html#readEncodedPublicKey-byte:A-">readEncodedPublicKey</a></span>(byte[]&nbsp;byte2)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -216,6 +235,23 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="LOGGER">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>LOGGER</h4>
+<pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a> LOGGER</pre>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
@@ -249,13 +285,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</a>&nbsp;generateKey()</pre>
 </li>
 </ul>
-<a name="method_10479--">
+<a name="generateServerKeyPair--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_10479</h4>
-<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/security/KeyPair.html?is-external=true" title="class or interface in java.security">KeyPair</a>&nbsp;method_10479()</pre>
+<h4>generateServerKeyPair</h4>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/security/KeyPair.html?is-external=true" title="class or interface in java.security">KeyPair</a>&nbsp;generateServerKeyPair()</pre>
 </li>
 </ul>
 <a name="generateServerId-java.lang.String-java.security.PublicKey-javax.crypto.SecretKey-">
@@ -279,13 +315,13 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/javax/cryp
                            byte[][]&nbsp;data)</pre>
 </li>
 </ul>
-<a name="method_10478-byte:A-">
+<a name="readEncodedPublicKey-byte:A-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_10478</h4>
-<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/security/PublicKey.html?is-external=true" title="class or interface in java.security">PublicKey</a>&nbsp;method_10478(byte[]&nbsp;byte2)</pre>
+<h4>readEncodedPublicKey</h4>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/security/PublicKey.html?is-external=true" title="class or interface in java.security">PublicKey</a>&nbsp;readEncodedPublicKey(byte[]&nbsp;byte2)</pre>
 </li>
 </ul>
 <a name="decryptSecretKey-java.security.PrivateKey-byte:A-">
@@ -378,8 +414,8 @@ public static&nbsp;byte[]&nbsp;encrypt(<a href="https://docs.oracle.com/javase/8
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/network/LegacyQueryHandler.html" title="class in net.minecraft.network"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/network/NetworkState.html" title="enum in net.minecraft.network"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/network/MessageType.html" title="enum in net.minecraft.network"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/network/NetworkSide.html" title="enum in net.minecraft.network"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/network/NetworkEncryptionUtils.html" target="_top">Frames</a></li>
@@ -404,13 +440,13 @@ public static&nbsp;byte[]&nbsp;encrypt(<a href="https://docs.oracle.com/javase/8
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>

@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../net/minecraft/client/texture/Sprite.html" title="class in net.minecraft.client.texture"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../net/minecraft/client/texture/Texture.html" title="interface in net.minecraft.client.texture"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/client/texture/TextureManager.html" title="class in net.minecraft.client.texture"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/client/texture/SpriteAtlasTexture.html" target="_top">Frames</a></li>
@@ -113,14 +113,14 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../net/minecraft/class_2617.html" title="interface in net.minecraft">class_2617</a>, <a href="../../../../net/minecraft/client/ClientTickable.html" title="interface in net.minecraft.client">ClientTickable</a>, <a href="../../../../net/minecraft/client/texture/Texture.html" title="interface in net.minecraft.client.texture">Texture</a>, <a href="../../../../net/minecraft/client/texture/TickableTexture.html" title="interface in net.minecraft.client.texture">TickableTexture</a></dd>
+<dd><a href="../../../../net/minecraft/class_6029.html" title="interface in net.minecraft">class_6029</a>, <a href="../../../../net/minecraft/client/renderer/texture/Texture.html" title="interface in net.minecraft.client.renderer.texture">Texture</a>, <a href="../../../../net/minecraft/client/texture/TextureTickListener.html" title="interface in net.minecraft.client.texture">TextureTickListener</a></dd>
 </dl>
 <hr>
 <br>
 <pre>@Environment(value=CLIENT)
 public class <span class="typeNameLabel">SpriteAtlasTexture</span>
 extends <a href="../../../../net/minecraft/client/texture/AbstractTexture.html" title="class in net.minecraft.client.texture">AbstractTexture</a>
-implements <a href="../../../../net/minecraft/client/texture/TickableTexture.html" title="interface in net.minecraft.client.texture">TickableTexture</a>, <a href="../../../../net/minecraft/class_2617.html" title="interface in net.minecraft">class_2617</a></pre>
+implements <a href="../../../../net/minecraft/class_6029.html" title="interface in net.minecraft">class_6029</a></pre>
 </li>
 </ul>
 </div>
@@ -140,48 +140,44 @@ implements <a href="../../../../net/minecraft/client/texture/TickableTexture.htm
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a></code></td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../net/minecraft/client/texture/Sprite.html" title="class in net.minecraft.client.texture">Sprite</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#animatedSprites">animatedSprites</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#BLOCK_ATLAS_TEX">BLOCK_ATLAS_TEX</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#field_30038">field_30038</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#field_10708">field_10708</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#field_30039">field_30039</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#field_10709">field_10709</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../net/minecraft/client/texture/Sprite.html" title="class in net.minecraft.client.texture">Sprite</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#field_30042">field_30042</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#field_10710">field_10710</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../net/minecraft/client/texture/Sprite.html" title="class in net.minecraft.client.texture">Sprite</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#field_30043">field_30043</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#field_30044">field_30044</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/class_6022.html" title="interface in net.minecraft">class_6022</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#field_30045">field_30045</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#field_10711">field_10711</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#field_30046">field_30046</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#field_10712">field_10712</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/client/texture/Sprite.html" title="class in net.minecraft.client.texture">Sprite</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#field_30047">field_30047</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#LOGGER">LOGGER</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#name">name</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#spritesToLoad">spritesToLoad</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../net/minecraft/client/texture/Sprite.html" title="class in net.minecraft.client.texture">Sprite</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#texture">texture</a></span></code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -189,7 +185,7 @@ implements <a href="../../../../net/minecraft/client/texture/TickableTexture.htm
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.client.texture.<a href="../../../../net/minecraft/client/texture/AbstractTexture.html" title="class in net.minecraft.client.texture">AbstractTexture</a></h3>
-<code><a href="../../../../net/minecraft/client/texture/AbstractTexture.html#glId">glId</a></code></li>
+<code><a href="../../../../net/minecraft/client/texture/AbstractTexture.html#field_29991">field_29991</a>, <a href="../../../../net/minecraft/client/texture/AbstractTexture.html#field_29992">field_29992</a>, <a href="../../../../net/minecraft/client/texture/AbstractTexture.html#field_29993">field_29993</a>, <a href="../../../../net/minecraft/client/texture/AbstractTexture.html#field_29994">field_29994</a>, <a href="../../../../net/minecraft/client/texture/AbstractTexture.html#glId">glId</a></code></li>
 </ul>
 </li>
 </ul>
@@ -205,8 +201,11 @@ implements <a href="../../../../net/minecraft/client/texture/TickableTexture.htm
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#SpriteAtlasTexture-int-java.lang.String-">SpriteAtlasTexture</a></span>(int&nbsp;int2,
-                  <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#SpriteAtlasTexture-java.lang.String-">SpriteAtlasTexture</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#SpriteAtlasTexture-java.lang.String-net.minecraft.class_6022-">SpriteAtlasTexture</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
+                  <a href="../../../../net/minecraft/class_6022.html" title="interface in net.minecraft">class_6022</a>&nbsp;class_6022)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -224,45 +223,46 @@ implements <a href="../../../../net/minecraft/client/texture/TickableTexture.htm
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/client/texture/Sprite.html" title="class in net.minecraft.client.texture">Sprite</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#getSprite-java.lang.String-">getSprite</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;identifier)</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#load-net.minecraft.resource.ResourceManager-">load</a></span>(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#load-net.minecraft.resource.ResourceManager-">load</a></span>(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;manager)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#method_31311-int-">method_31311</a></span>(int&nbsp;int2)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../../oshi/hardware/Processor.html" title="interface in oshi.hardware">Processor</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#method_10535-java.lang.String-">method_10535</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#method_31312-net.minecraft.client.texture.Sprite-">method_31312</a></span>(<a href="../../../../net/minecraft/client/texture/Sprite.html" title="class in net.minecraft.client.texture">Sprite</a>&nbsp;sprite)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>private <a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#method_4230-net.minecraft.util.Identifier-int-">method_4230</a></span>(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier,
-           int&nbsp;int2)</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#method_31313-net.minecraft.resource.ResourceManager-net.minecraft.class_6022-">method_31313</a></span>(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager,
+            <a href="../../../../net/minecraft/class_6022.html" title="interface in net.minecraft">class_6022</a>&nbsp;class_6022)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#method_9699--">method_9699</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#method_31314-net.minecraft.resource.ResourceManager-net.minecraft.client.texture.Sprite-">method_31314</a></span>(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager,
+            <a href="../../../../net/minecraft/client/texture/Sprite.html" title="class in net.minecraft.client.texture">Sprite</a>&nbsp;sprite)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#method_9700-int-">method_9700</a></span>(int&nbsp;int2)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../net/minecraft/client/texture/Sprite.html" title="class in net.minecraft.client.texture">Sprite</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#method_31315-java.lang.String-">method_31315</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#method_9701-net.minecraft.resource.ResourceManager-">method_9701</a></span>(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../net/minecraft/client/texture/Sprite.html" title="class in net.minecraft.client.texture">Sprite</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#method_31316-net.minecraft.util.Identifier-">method_31316</a></span>(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier)</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>private void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#method_9702--">method_9702</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#method_31317-net.minecraft.resource.ResourceManager-">method_31317</a></span>(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager)</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code>private void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#method_9703--">method_9703</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../net/minecraft/client/texture/Sprite.html" title="class in net.minecraft.client.texture">Sprite</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#method_31319--">method_31319</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#setMaxTextureSize-int-">setMaxTextureSize</a></span>(int&nbsp;size)</code>&nbsp;</td>
+<td class="colFirst"><code>private void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#method_31320--">method_31320</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -270,7 +270,7 @@ implements <a href="../../../../net/minecraft/client/texture/TickableTexture.htm
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#update--">update</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html#tickAnimatedSprites--">tickAnimatedSprites</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -278,7 +278,7 @@ implements <a href="../../../../net/minecraft/client/texture/TickableTexture.htm
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.client.texture.<a href="../../../../net/minecraft/client/texture/AbstractTexture.html" title="class in net.minecraft.client.texture">AbstractTexture</a></h3>
-<code><a href="../../../../net/minecraft/client/texture/AbstractTexture.html#clearGlId--">clearGlId</a>, <a href="../../../../net/minecraft/client/texture/AbstractTexture.html#getGlId--">getGlId</a></code></li>
+<code><a href="../../../../net/minecraft/client/texture/AbstractTexture.html#method_31277-boolean-boolean-">method_31277</a>, <a href="../../../../net/minecraft/client/texture/AbstractTexture.html#method_31278--">method_31278</a>, <a href="../../../../net/minecraft/client/texture/AbstractTexture.html#method_31364--">method_31364</a>, <a href="../../../../net/minecraft/client/texture/AbstractTexture.html#method_31366--">method_31366</a>, <a href="../../../../net/minecraft/client/texture/AbstractTexture.html#method_31367-boolean-boolean-">method_31367</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -288,11 +288,11 @@ implements <a href="../../../../net/minecraft/client/texture/TickableTexture.htm
 <code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.client.texture.Texture">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.client.renderer.texture.Texture">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;net.minecraft.client.texture.<a href="../../../../net/minecraft/client/texture/Texture.html" title="interface in net.minecraft.client.texture">Texture</a></h3>
-<code><a href="../../../../net/minecraft/client/texture/Texture.html#getGlId--">getGlId</a></code></li>
+<h3>Methods inherited from interface&nbsp;net.minecraft.client.renderer.texture.<a href="../../../../net/minecraft/client/renderer/texture/Texture.html" title="interface in net.minecraft.client.renderer.texture">Texture</a></h3>
+<code><a href="../../../../net/minecraft/client/renderer/texture/Texture.html#method_31364--">method_31364</a>, <a href="../../../../net/minecraft/client/renderer/texture/Texture.html#method_31366--">method_31366</a>, <a href="../../../../net/minecraft/client/renderer/texture/Texture.html#method_31367-boolean-boolean-">method_31367</a></code></li>
 </ul>
 </li>
 </ul>
@@ -317,22 +317,22 @@ implements <a href="../../../../net/minecraft/client/texture/TickableTexture.htm
 <pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a> LOGGER</pre>
 </li>
 </ul>
-<a name="BLOCK_ATLAS_TEX">
+<a name="field_30038">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>BLOCK_ATLAS_TEX</h4>
-<pre>public static final&nbsp;<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a> BLOCK_ATLAS_TEX</pre>
+<h4>field_30038</h4>
+<pre>public static final&nbsp;<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a> field_30038</pre>
 </li>
 </ul>
-<a name="field_10708">
+<a name="field_30039">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_10708</h4>
-<pre>public static final&nbsp;<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a> field_10708</pre>
+<h4>field_30039</h4>
+<pre>public static final&nbsp;<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a> field_30039</pre>
 </li>
 </ul>
 <a name="animatedSprites">
@@ -341,70 +341,61 @@ implements <a href="../../../../net/minecraft/client/texture/TickableTexture.htm
 <ul class="blockList">
 <li class="blockList">
 <h4>animatedSprites</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a> animatedSprites</pre>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../net/minecraft/client/texture/Sprite.html" title="class in net.minecraft.client.texture">Sprite</a>&gt; animatedSprites</pre>
 </li>
 </ul>
-<a name="spritesToLoad">
+<a name="field_30042">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>spritesToLoad</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a> spritesToLoad</pre>
+<h4>field_30042</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../net/minecraft/client/texture/Sprite.html" title="class in net.minecraft.client.texture">Sprite</a>&gt; field_30042</pre>
 </li>
 </ul>
-<a name="field_10709">
+<a name="field_30043">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_10709</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a> field_10709</pre>
+<h4>field_30043</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../net/minecraft/client/texture/Sprite.html" title="class in net.minecraft.client.texture">Sprite</a>&gt; field_30043</pre>
 </li>
 </ul>
-<a name="field_10710">
+<a name="field_30044">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_10710</h4>
-<pre>private final&nbsp;int field_10710</pre>
+<h4>field_30044</h4>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> field_30044</pre>
 </li>
 </ul>
-<a name="name">
+<a name="field_30045">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>name</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> name</pre>
+<h4>field_30045</h4>
+<pre>private final&nbsp;<a href="../../../../net/minecraft/class_6022.html" title="interface in net.minecraft">class_6022</a> field_30045</pre>
 </li>
 </ul>
-<a name="field_10711">
+<a name="field_30046">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_10711</h4>
-<pre>private&nbsp;int field_10711</pre>
+<h4>field_30046</h4>
+<pre>private&nbsp;int field_30046</pre>
 </li>
 </ul>
-<a name="field_10712">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_10712</h4>
-<pre>private&nbsp;int field_10712</pre>
-</li>
-</ul>
-<a name="texture">
+<a name="field_30047">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>texture</h4>
-<pre>private final&nbsp;<a href="../../../../net/minecraft/client/texture/Sprite.html" title="class in net.minecraft.client.texture">Sprite</a> texture</pre>
+<h4>field_30047</h4>
+<pre>private final&nbsp;<a href="../../../../net/minecraft/client/texture/Sprite.html" title="class in net.minecraft.client.texture">Sprite</a> field_30047</pre>
 </li>
 </ul>
 </li>
@@ -415,14 +406,24 @@ implements <a href="../../../../net/minecraft/client/texture/TickableTexture.htm
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="SpriteAtlasTexture-int-java.lang.String-">
+<a name="SpriteAtlasTexture-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SpriteAtlasTexture</h4>
+<pre>public&nbsp;SpriteAtlasTexture(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
+</li>
+</ul>
+<a name="SpriteAtlasTexture-java.lang.String-net.minecraft.class_6022-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SpriteAtlasTexture</h4>
-<pre>public&nbsp;SpriteAtlasTexture(int&nbsp;int2,
-                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
+<pre>public&nbsp;SpriteAtlasTexture(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
+                          <a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                          <a href="../../../../net/minecraft/class_6022.html" title="interface in net.minecraft">class_6022</a>&nbsp;class_6022)</pre>
 </li>
 </ul>
 </li>
@@ -433,13 +434,13 @@ implements <a href="../../../../net/minecraft/client/texture/TickableTexture.htm
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_9702--">
+<a name="method_31320--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_9702</h4>
-<pre>private&nbsp;void&nbsp;method_9702()</pre>
+<h4>method_31320</h4>
+<pre>private&nbsp;void&nbsp;method_31320()</pre>
 </li>
 </ul>
 <a name="load-net.minecraft.resource.ResourceManager-">
@@ -448,79 +449,79 @@ implements <a href="../../../../net/minecraft/client/texture/TickableTexture.htm
 <ul class="blockList">
 <li class="blockList">
 <h4>load</h4>
-<pre>public&nbsp;void&nbsp;load(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;manager)</pre>
+<pre>public&nbsp;void&nbsp;load(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager)
+          throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/client/texture/Texture.html#load-net.minecraft.resource.ResourceManager-">load</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/client/texture/Texture.html" title="interface in net.minecraft.client.texture">Texture</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/client/renderer/texture/Texture.html#load-net.minecraft.resource.ResourceManager-">load</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/client/renderer/texture/Texture.html" title="interface in net.minecraft.client.renderer.texture">Texture</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_9701-net.minecraft.resource.ResourceManager-">
+<a name="method_31313-net.minecraft.resource.ResourceManager-net.minecraft.class_6022-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_9701</h4>
-<pre>public&nbsp;void&nbsp;method_9701(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager)</pre>
+<h4>method_31313</h4>
+<pre>public&nbsp;void&nbsp;method_31313(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager,
+                         <a href="../../../../net/minecraft/class_6022.html" title="interface in net.minecraft">class_6022</a>&nbsp;class_6022)</pre>
 </li>
 </ul>
-<a name="method_4230-net.minecraft.util.Identifier-int-">
+<a name="method_31317-net.minecraft.resource.ResourceManager-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_4230</h4>
-<pre>private&nbsp;<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;method_4230(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier,
-                               int&nbsp;int2)</pre>
+<h4>method_31317</h4>
+<pre>public&nbsp;void&nbsp;method_31317(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager)</pre>
 </li>
 </ul>
-<a name="method_9703--">
+<a name="method_31314-net.minecraft.resource.ResourceManager-net.minecraft.client.texture.Sprite-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_9703</h4>
-<pre>private&nbsp;void&nbsp;method_9703()</pre>
+<h4>method_31314</h4>
+<pre>private&nbsp;boolean&nbsp;method_31314(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager,
+                             <a href="../../../../net/minecraft/client/texture/Sprite.html" title="class in net.minecraft.client.texture">Sprite</a>&nbsp;sprite)</pre>
 </li>
 </ul>
-<a name="getSprite-java.lang.String-">
+<a name="method_31312-net.minecraft.client.texture.Sprite-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getSprite</h4>
-<pre>public&nbsp;<a href="../../../../net/minecraft/client/texture/Sprite.html" title="class in net.minecraft.client.texture">Sprite</a>&nbsp;getSprite(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;identifier)</pre>
+<h4>method_31312</h4>
+<pre>private&nbsp;<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;method_31312(<a href="../../../../net/minecraft/client/texture/Sprite.html" title="class in net.minecraft.client.texture">Sprite</a>&nbsp;sprite)</pre>
 </li>
 </ul>
-<a name="update--">
+<a name="method_31315-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>update</h4>
-<pre>public&nbsp;void&nbsp;update()</pre>
+<h4>method_31315</h4>
+<pre>public&nbsp;<a href="../../../../net/minecraft/client/texture/Sprite.html" title="class in net.minecraft.client.texture">Sprite</a>&nbsp;method_31315(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
 </li>
 </ul>
-<a name="method_10535-java.lang.String-">
+<a name="tickAnimatedSprites--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_10535</h4>
-<pre>public&nbsp;<a href="../../../../oshi/hardware/Processor.html" title="interface in oshi.hardware">Processor</a>&nbsp;method_10535(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_2617.html#method_10535-java.lang.String-">method_10535</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/class_2617.html" title="interface in net.minecraft">class_2617</a></code></dd>
-</dl>
+<h4>tickAnimatedSprites</h4>
+<pre>public&nbsp;void&nbsp;tickAnimatedSprites()</pre>
 </li>
 </ul>
-<a name="method_9699--">
+<a name="method_31316-net.minecraft.util.Identifier-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_9699</h4>
-<pre>public&nbsp;int&nbsp;method_9699()</pre>
+<h4>method_31316</h4>
+<pre>public&nbsp;<a href="../../../../net/minecraft/client/texture/Sprite.html" title="class in net.minecraft.client.texture">Sprite</a>&nbsp;method_31316(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier)</pre>
 </li>
 </ul>
 <a name="tick--">
@@ -532,26 +533,26 @@ implements <a href="../../../../net/minecraft/client/texture/TickableTexture.htm
 <pre>public&nbsp;void&nbsp;tick()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/client/ClientTickable.html#tick--">tick</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/client/ClientTickable.html" title="interface in net.minecraft.client">ClientTickable</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/client/texture/TextureTickListener.html#tick--">tick</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/client/texture/TextureTickListener.html" title="interface in net.minecraft.client.texture">TextureTickListener</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="setMaxTextureSize-int-">
+<a name="method_31311-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>setMaxTextureSize</h4>
-<pre>public&nbsp;void&nbsp;setMaxTextureSize(int&nbsp;size)</pre>
+<h4>method_31311</h4>
+<pre>public&nbsp;void&nbsp;method_31311(int&nbsp;int2)</pre>
 </li>
 </ul>
-<a name="method_9700-int-">
+<a name="method_31319--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_9700</h4>
-<pre>public&nbsp;void&nbsp;method_9700(int&nbsp;int2)</pre>
+<h4>method_31319</h4>
+<pre>public&nbsp;<a href="../../../../net/minecraft/client/texture/Sprite.html" title="class in net.minecraft.client.texture">Sprite</a>&nbsp;method_31319()</pre>
 </li>
 </ul>
 </li>
@@ -582,7 +583,7 @@ implements <a href="../../../../net/minecraft/client/texture/TickableTexture.htm
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../net/minecraft/client/texture/Sprite.html" title="class in net.minecraft.client.texture"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../net/minecraft/client/texture/Texture.html" title="interface in net.minecraft.client.texture"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/client/texture/TextureManager.html" title="class in net.minecraft.client.texture"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/client/texture/SpriteAtlasTexture.html" target="_top">Frames</a></li>

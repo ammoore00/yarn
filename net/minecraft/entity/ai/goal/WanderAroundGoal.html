@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../net/minecraft/entity/ai/goal/VillagerMatingGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/entity/ai/goal/WanderAroundFarGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../net/minecraft/entity/ai/goal/WolfBegGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -111,6 +111,10 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><a href="../../../../../net/minecraft/entity/mob/SilverfishEntity.WanderAndInfestGoal.html" title="class in net.minecraft.entity.mob">SilverfishEntity.WanderAndInfestGoal</a>, <a href="../../../../../net/minecraft/entity/ai/goal/WanderAroundFarGoal.html" title="class in net.minecraft.entity.ai.goal">WanderAroundFarGoal</a></dd>
+</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">WanderAroundGoal</span>
@@ -134,23 +138,31 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../../net/minecraft/entity/mob/PathAwareEntity.html" title="class in net.minecraft.entity.mob">PathAwareEntity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/WanderAroundGoal.html#field_7742">field_7742</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>protected int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/WanderAroundGoal.html#chance">chance</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private double</code></td>
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/WanderAroundGoal.html#ignoringChance">ignoringChance</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../net/minecraft/entity/mob/PathAwareEntity.html" title="class in net.minecraft.entity.mob">PathAwareEntity</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/WanderAroundGoal.html#mob">mob</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/WanderAroundGoal.html#speed">speed</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private double</code></td>
+<td class="colFirst"><code>protected double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/WanderAroundGoal.html#targetX">targetX</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private double</code></td>
+<td class="colFirst"><code>protected double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/WanderAroundGoal.html#targetY">targetY</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private double</code></td>
+<td class="colFirst"><code>protected double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/WanderAroundGoal.html#targetZ">targetZ</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -168,8 +180,13 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/WanderAroundGoal.html#WanderAroundGoal-net.minecraft.entity.mob.PathAwareEntity-double-">WanderAroundGoal</a></span>(<a href="../../../../../net/minecraft/entity/mob/PathAwareEntity.html" title="class in net.minecraft.entity.mob">PathAwareEntity</a>&nbsp;pathAwareEntity,
-                double&nbsp;double2)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/WanderAroundGoal.html#WanderAroundGoal-net.minecraft.entity.mob.PathAwareEntity-double-">WanderAroundGoal</a></span>(<a href="../../../../../net/minecraft/entity/mob/PathAwareEntity.html" title="class in net.minecraft.entity.mob">PathAwareEntity</a>&nbsp;mob,
+                double&nbsp;speed)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/WanderAroundGoal.html#WanderAroundGoal-net.minecraft.entity.mob.PathAwareEntity-double-int-">WanderAroundGoal</a></span>(<a href="../../../../../net/minecraft/entity/mob/PathAwareEntity.html" title="class in net.minecraft.entity.mob">PathAwareEntity</a>&nbsp;mob,
+                double&nbsp;speed,
+                int&nbsp;chance)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -191,10 +208,22 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/WanderAroundGoal.html#canStart--">canStart</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../../net/minecraft/util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/WanderAroundGoal.html#getWanderTarget--">getWanderTarget</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/WanderAroundGoal.html#ignoreChanceOnce--">ignoreChanceOnce</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/WanderAroundGoal.html#setChance-int-">setChance</a></span>(int&nbsp;chance)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/WanderAroundGoal.html#shouldContinue--">shouldContinue</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/WanderAroundGoal.html#start--">start</a></span>()</code>&nbsp;</td>
 </tr>
@@ -204,7 +233,7 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.entity.ai.goal.<a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</a></h3>
-<code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#canStop--">canStop</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#getControls--">getControls</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#setControls-int-">setControls</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#stop--">stop</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#tick--">tick</a></code></li>
+<code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#canStop--">canStop</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_34938-int-">method_34938</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_34944--">method_34944</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#stop--">stop</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#tick--">tick</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -227,13 +256,13 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_7742">
+<a name="mob">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7742</h4>
-<pre>private&nbsp;<a href="../../../../../net/minecraft/entity/mob/PathAwareEntity.html" title="class in net.minecraft.entity.mob">PathAwareEntity</a> field_7742</pre>
+<h4>mob</h4>
+<pre>protected final&nbsp;<a href="../../../../../net/minecraft/entity/mob/PathAwareEntity.html" title="class in net.minecraft.entity.mob">PathAwareEntity</a> mob</pre>
 </li>
 </ul>
 <a name="targetX">
@@ -242,7 +271,7 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <ul class="blockList">
 <li class="blockList">
 <h4>targetX</h4>
-<pre>private&nbsp;double targetX</pre>
+<pre>protected&nbsp;double targetX</pre>
 </li>
 </ul>
 <a name="targetY">
@@ -251,7 +280,7 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <ul class="blockList">
 <li class="blockList">
 <h4>targetY</h4>
-<pre>private&nbsp;double targetY</pre>
+<pre>protected&nbsp;double targetY</pre>
 </li>
 </ul>
 <a name="targetZ">
@@ -260,16 +289,34 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <ul class="blockList">
 <li class="blockList">
 <h4>targetZ</h4>
-<pre>private&nbsp;double targetZ</pre>
+<pre>protected&nbsp;double targetZ</pre>
 </li>
 </ul>
 <a name="speed">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>speed</h4>
-<pre>private&nbsp;double speed</pre>
+<pre>protected final&nbsp;double speed</pre>
+</li>
+</ul>
+<a name="chance">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>chance</h4>
+<pre>protected&nbsp;int chance</pre>
+</li>
+</ul>
+<a name="ignoringChance">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>ignoringChance</h4>
+<pre>protected&nbsp;boolean ignoringChance</pre>
 </li>
 </ul>
 </li>
@@ -283,11 +330,22 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <a name="WanderAroundGoal-net.minecraft.entity.mob.PathAwareEntity-double-">
 <!--   -->
 </a>
+<ul class="blockList">
+<li class="blockList">
+<h4>WanderAroundGoal</h4>
+<pre>public&nbsp;WanderAroundGoal(<a href="../../../../../net/minecraft/entity/mob/PathAwareEntity.html" title="class in net.minecraft.entity.mob">PathAwareEntity</a>&nbsp;mob,
+                        double&nbsp;speed)</pre>
+</li>
+</ul>
+<a name="WanderAroundGoal-net.minecraft.entity.mob.PathAwareEntity-double-int-">
+<!--   -->
+</a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>WanderAroundGoal</h4>
-<pre>public&nbsp;WanderAroundGoal(<a href="../../../../../net/minecraft/entity/mob/PathAwareEntity.html" title="class in net.minecraft.entity.mob">PathAwareEntity</a>&nbsp;pathAwareEntity,
-                        double&nbsp;double2)</pre>
+<pre>public&nbsp;WanderAroundGoal(<a href="../../../../../net/minecraft/entity/mob/PathAwareEntity.html" title="class in net.minecraft.entity.mob">PathAwareEntity</a>&nbsp;mob,
+                        double&nbsp;speed,
+                        int&nbsp;chance)</pre>
 </li>
 </ul>
 </li>
@@ -311,6 +369,16 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 </dl>
 </li>
 </ul>
+<a name="getWanderTarget--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getWanderTarget</h4>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+protected&nbsp;<a href="../../../../../net/minecraft/util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&nbsp;getWanderTarget()</pre>
+</li>
+</ul>
 <a name="shouldContinue--">
 <!--   -->
 </a>
@@ -327,7 +395,7 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <a name="start--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>start</h4>
 <pre>public&nbsp;void&nbsp;start()</pre>
@@ -335,6 +403,24 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#start--">start</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</a></code></dd>
 </dl>
+</li>
+</ul>
+<a name="ignoreChanceOnce--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ignoreChanceOnce</h4>
+<pre>public&nbsp;void&nbsp;ignoreChanceOnce()</pre>
+</li>
+</ul>
+<a name="setChance-int-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setChance</h4>
+<pre>public&nbsp;void&nbsp;setChance(int&nbsp;chance)</pre>
 </li>
 </ul>
 </li>
@@ -364,7 +450,7 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../net/minecraft/entity/ai/goal/VillagerMatingGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/entity/ai/goal/WanderAroundFarGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../net/minecraft/entity/ai/goal/WolfBegGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

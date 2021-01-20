@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityMoveS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityRotateAndMoveS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPassengersSetS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html" target="_top">Frames</a></li>
@@ -99,22 +99,22 @@ var activeTableTab = "activeTableTab";
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../../../net/minecraft/network/Packet.html" title="class in net.minecraft.network">net.minecraft.network.Packet</a></li>
-<li>
-<ul class="inheritance">
 <li>net.minecraft.network.packet.s2c.play.EntityPositionS2CPacket</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&gt;</dd>
+</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">EntityPositionS2CPacket</span>
-extends <a href="../../../../../../net/minecraft/network/Packet.html" title="class in net.minecraft.network">Packet</a></pre>
+extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
+implements <a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&gt;</pre>
 </li>
 </ul>
 </div>
@@ -135,27 +135,31 @@ extends <a href="../../../../../../net/minecraft/network/Packet.html" title="cla
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html#field_11095">field_11095</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html#id">id</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html#field_11096">field_11096</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html#field_11097">field_11097</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html#field_11098">field_11098</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html#onGround">onGround</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private byte</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html#field_11099">field_11099</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html#pitch">pitch</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html#x">x</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html#y">y</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private byte</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html#field_11100">field_11100</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html#yaw">yaw</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html#z">z</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -176,14 +180,6 @@ extends <a href="../../../../../../net/minecraft/network/Packet.html" title="cla
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html#EntityPositionS2CPacket-net.minecraft.entity.Entity-">EntityPositionS2CPacket</a></span>(<a href="../../../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html#EntityPositionS2CPacket-int-int-int-int-byte-byte-">EntityPositionS2CPacket</a></span>(int&nbsp;int2,
-                       int&nbsp;int3,
-                       int&nbsp;int4,
-                       int&nbsp;int5,
-                       byte&nbsp;byte2,
-                       byte&nbsp;byte3)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -206,50 +202,47 @@ extends <a href="../../../../../../net/minecraft/network/Packet.html" title="cla
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html#method_10211--">method_10211</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html#getId--">getId</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html#method_10212--">method_10212</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>byte</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html#getPitch--">getPitch</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html#method_10213--">method_10213</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html#getX--">getX</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html#method_10214--">method_10214</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html#getY--">getY</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>byte</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html#method_10215--">method_10215</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html#getYaw--">getYaw</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>byte</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html#method_10216--">method_10216</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html#getZ--">getZ</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html#isOnGround--">isOnGround</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html#read-net.minecraft.util.PacketByteBuf-">read</a></span>(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html#write-net.minecraft.util.PacketByteBuf-">write</a></span>(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.network.Packet">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;net.minecraft.network.<a href="../../../../../../net/minecraft/network/Packet.html" title="class in net.minecraft.network">Packet</a></h3>
-<code><a href="../../../../../../net/minecraft/network/Packet.html#apply-net.minecraft.network.listener.PacketListener-">apply</a>, <a href="../../../../../../net/minecraft/network/Packet.html#asString--">asString</a>, <a href="../../../../../../net/minecraft/network/Packet.html#method_9894--">method_9894</a>, <a href="../../../../../../net/minecraft/network/Packet.html#method_9895-com.google.common.collect.BiMap-int-">method_9895</a>, <a href="../../../../../../net/minecraft/network/Packet.html#readLengthPrefixedByteArray-io.netty.buffer.ByteBuf-">readLengthPrefixedByteArray</a>, <a href="../../../../../../net/minecraft/network/Packet.html#toString--">toString</a>, <a href="../../../../../../net/minecraft/network/Packet.html#writeLengthPrefixedByteArray-io.netty.buffer.ByteBuf-byte:A-">writeLengthPrefixedByteArray</a></code></li>
-</ul>
-<ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
 </ul>
 </li>
 </ul>
@@ -265,58 +258,67 @@ extends <a href="../../../../../../net/minecraft/network/Packet.html" title="cla
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_11095">
+<a name="id">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_11095</h4>
-<pre>private&nbsp;int field_11095</pre>
+<h4>id</h4>
+<pre>private&nbsp;int id</pre>
 </li>
 </ul>
-<a name="field_11096">
+<a name="x">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_11096</h4>
-<pre>private&nbsp;int field_11096</pre>
+<h4>x</h4>
+<pre>private&nbsp;double x</pre>
 </li>
 </ul>
-<a name="field_11097">
+<a name="y">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_11097</h4>
-<pre>private&nbsp;int field_11097</pre>
+<h4>y</h4>
+<pre>private&nbsp;double y</pre>
 </li>
 </ul>
-<a name="field_11098">
+<a name="z">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_11098</h4>
-<pre>private&nbsp;int field_11098</pre>
+<h4>z</h4>
+<pre>private&nbsp;double z</pre>
 </li>
 </ul>
-<a name="field_11099">
+<a name="yaw">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_11099</h4>
-<pre>private&nbsp;byte field_11099</pre>
+<h4>yaw</h4>
+<pre>private&nbsp;byte yaw</pre>
 </li>
 </ul>
-<a name="field_11100">
+<a name="pitch">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>pitch</h4>
+<pre>private&nbsp;byte pitch</pre>
+</li>
+</ul>
+<a name="onGround">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_11100</h4>
-<pre>private&nbsp;byte field_11100</pre>
+<h4>onGround</h4>
+<pre>private&nbsp;boolean onGround</pre>
 </li>
 </ul>
 </li>
@@ -339,24 +341,10 @@ extends <a href="../../../../../../net/minecraft/network/Packet.html" title="cla
 <a name="EntityPositionS2CPacket-net.minecraft.entity.Entity-">
 <!--   -->
 </a>
-<ul class="blockList">
-<li class="blockList">
-<h4>EntityPositionS2CPacket</h4>
-<pre>public&nbsp;EntityPositionS2CPacket(<a href="../../../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</pre>
-</li>
-</ul>
-<a name="EntityPositionS2CPacket-int-int-int-int-byte-byte-">
-<!--   -->
-</a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>EntityPositionS2CPacket</h4>
-<pre>public&nbsp;EntityPositionS2CPacket(int&nbsp;int2,
-                               int&nbsp;int3,
-                               int&nbsp;int4,
-                               int&nbsp;int5,
-                               byte&nbsp;byte2,
-                               byte&nbsp;byte3)</pre>
+<pre>public&nbsp;EntityPositionS2CPacket(<a href="../../../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</pre>
 </li>
 </ul>
 </li>
@@ -373,10 +361,13 @@ extends <a href="../../../../../../net/minecraft/network/Packet.html" title="cla
 <ul class="blockList">
 <li class="blockList">
 <h4>read</h4>
-<pre>public&nbsp;void&nbsp;read(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)</pre>
+<pre>public&nbsp;void&nbsp;read(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)
+          throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../net/minecraft/network/Packet.html#read-net.minecraft.util.PacketByteBuf-">read</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../net/minecraft/network/Packet.html" title="class in net.minecraft.network">Packet</a></code></dd>
+<dd><code><a href="../../../../../../net/minecraft/network/Packet.html#read-net.minecraft.util.PacketByteBuf-">read</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -386,10 +377,13 @@ extends <a href="../../../../../../net/minecraft/network/Packet.html" title="cla
 <ul class="blockList">
 <li class="blockList">
 <h4>write</h4>
-<pre>public&nbsp;void&nbsp;write(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)</pre>
+<pre>public&nbsp;void&nbsp;write(<a href="../../../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;buf)
+           throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../net/minecraft/network/Packet.html#write-net.minecraft.util.PacketByteBuf-">write</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../net/minecraft/network/Packet.html" title="class in net.minecraft.network">Packet</a></code></dd>
+<dd><code><a href="../../../../../../net/minecraft/network/Packet.html#write-net.minecraft.util.PacketByteBuf-">write</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -400,66 +394,80 @@ extends <a href="../../../../../../net/minecraft/network/Packet.html" title="cla
 <li class="blockList">
 <h4>apply</h4>
 <pre>public&nbsp;void&nbsp;apply(<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&nbsp;clientPlayPacketListener)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../net/minecraft/network/Packet.html#apply-T-">apply</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;<a href="../../../../../../net/minecraft/network/listener/ClientPlayPacketListener.html" title="interface in net.minecraft.network.listener">ClientPlayPacketListener</a>&gt;</code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_10211--">
+<a name="getId--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_10211</h4>
+<h4>getId</h4>
 <pre>@Environment(value=CLIENT)
-public&nbsp;int&nbsp;method_10211()</pre>
+public&nbsp;int&nbsp;getId()</pre>
 </li>
 </ul>
-<a name="method_10212--">
+<a name="getX--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_10212</h4>
+<h4>getX</h4>
 <pre>@Environment(value=CLIENT)
-public&nbsp;int&nbsp;method_10212()</pre>
+public&nbsp;double&nbsp;getX()</pre>
 </li>
 </ul>
-<a name="method_10213--">
+<a name="getY--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_10213</h4>
+<h4>getY</h4>
 <pre>@Environment(value=CLIENT)
-public&nbsp;int&nbsp;method_10213()</pre>
+public&nbsp;double&nbsp;getY()</pre>
 </li>
 </ul>
-<a name="method_10214--">
+<a name="getZ--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_10214</h4>
+<h4>getZ</h4>
 <pre>@Environment(value=CLIENT)
-public&nbsp;int&nbsp;method_10214()</pre>
+public&nbsp;double&nbsp;getZ()</pre>
 </li>
 </ul>
-<a name="method_10215--">
+<a name="getYaw--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_10215</h4>
+<h4>getYaw</h4>
 <pre>@Environment(value=CLIENT)
-public&nbsp;byte&nbsp;method_10215()</pre>
+public&nbsp;byte&nbsp;getYaw()</pre>
 </li>
 </ul>
-<a name="method_10216--">
+<a name="getPitch--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPitch</h4>
+<pre>@Environment(value=CLIENT)
+public&nbsp;byte&nbsp;getPitch()</pre>
+</li>
+</ul>
+<a name="isOnGround--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_10216</h4>
+<h4>isOnGround</h4>
 <pre>@Environment(value=CLIENT)
-public&nbsp;byte&nbsp;method_10216()</pre>
+public&nbsp;boolean&nbsp;isOnGround()</pre>
 </li>
 </ul>
 </li>
@@ -489,8 +497,8 @@ public&nbsp;byte&nbsp;method_10216()</pre>
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityMoveS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityRotateAndMoveS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityPassengersSetS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../../net/minecraft/network/packet/s2c/play/EntityS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?net/minecraft/network/packet/s2c/play/EntityPositionS2CPacket.html" target="_top">Frames</a></li>

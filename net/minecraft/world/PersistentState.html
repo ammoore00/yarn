@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/world/LightType.html" title="enum in net.minecraft.world"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/world/PlayerDataHandler.html" title="interface in net.minecraft.world"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/world/MobSpawnerLogic.html" title="class in net.minecraft.world"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/world/PlayerSaveHandler.html" title="interface in net.minecraft.world"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/world/PersistentState.html" target="_top">Frames</a></li>
@@ -108,7 +108,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../net/minecraft/class_2239.html" title="class in net.minecraft">class_2239</a>, <a href="../../../net/minecraft/class_559.html" title="class in net.minecraft">class_559</a>, <a href="../../../net/minecraft/scoreboard/ScoreboardState.html" title="class in net.minecraft.scoreboard">ScoreboardState</a>, <a href="../../../net/minecraft/village/VillageState.html" title="class in net.minecraft.village">VillageState</a></dd>
+<dd><a href="../../../net/minecraft/world/ChunkUpdateState.html" title="class in net.minecraft.world">ChunkUpdateState</a>, <a href="../../../net/minecraft/class_2795.html" title="class in net.minecraft">class_2795</a>, <a href="../../../net/minecraft/item/map/MapState.html" title="class in net.minecraft.item.map">MapState</a>, <a href="../../../net/minecraft/scoreboard/ScoreboardState.html" title="class in net.minecraft.scoreboard">ScoreboardState</a></dd>
 </dl>
 <hr>
 <br>
@@ -138,7 +138,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/PersistentState.html#id">id</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/PersistentState.html#field_26379">field_26379</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -155,7 +155,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/PersistentState.html#PersistentState-java.lang.String-">PersistentState</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/PersistentState.html#PersistentState-java.lang.String-">PersistentState</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -189,7 +189,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/PersistentState.html#setDirty-boolean-">setDirty</a></span>(boolean&nbsp;dirty)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>abstract void</code></td>
+<td class="colFirst"><code>abstract <a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/world/PersistentState.html#toTag-net.minecraft.nbt.CompoundTag-">toTag</a></span>(<a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</code>&nbsp;</td>
 </tr>
 </table>
@@ -214,13 +214,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="id">
+<a name="field_26379">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>id</h4>
-<pre>public final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> id</pre>
+<h4>field_26379</h4>
+<pre>public final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> field_26379</pre>
 </li>
 </ul>
 <a name="dirty">
@@ -246,7 +246,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockListLast">
 <li class="blockList">
 <h4>PersistentState</h4>
-<pre>public&nbsp;PersistentState(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id)</pre>
+<pre>public&nbsp;PersistentState(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;key)</pre>
 </li>
 </ul>
 </li>
@@ -272,7 +272,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>toTag</h4>
-<pre>public abstract&nbsp;void&nbsp;toTag(<a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</pre>
+<pre>public abstract&nbsp;<a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;toTag(<a href="../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</pre>
 </li>
 </ul>
 <a name="markDirty--">
@@ -329,8 +329,8 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/world/LightType.html" title="enum in net.minecraft.world"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/world/PlayerDataHandler.html" title="interface in net.minecraft.world"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/world/MobSpawnerLogic.html" title="class in net.minecraft.world"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/world/PlayerSaveHandler.html" title="interface in net.minecraft.world"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/world/PersistentState.html" target="_top">Frames</a></li>

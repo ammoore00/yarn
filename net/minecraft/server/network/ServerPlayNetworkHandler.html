@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":9,"i41":9};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../net/minecraft/server/network/ServerPlayerInteractionManager.html" title="class in net.minecraft.server.network"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li>Next&nbsp;Class</li>
+<li><a href="../../../../net/minecraft/server/network/ServerQueryNetworkHandler.html" title="class in net.minecraft.server.network"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/server/network/ServerPlayNetworkHandler.html" target="_top">Frames</a></li>
@@ -108,13 +108,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../net/minecraft/network/listener/PacketListener.html" title="interface in net.minecraft.network.listener">PacketListener</a>, <a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></dd>
+<dd><a href="../../../../net/minecraft/network/listener/PacketListener.html" title="interface in net.minecraft.network.listener">PacketListener</a>, <a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a>, <a href="../../../../net/minecraft/util/Tickable.html" title="interface in net.minecraft.util">Tickable</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">ServerPlayNetworkHandler</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
-implements <a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></pre>
+implements <a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a>, <a href="../../../../net/minecraft/util/Tickable.html" title="interface in net.minecraft.util">Tickable</a></pre>
 </li>
 </ul>
 </div>
@@ -142,68 +142,132 @@ implements <a href="../../../../net/minecraft/network/listener/ServerPlayPacketL
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#creativeItemDropThreshold">creativeItemDropThreshold</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util">Random</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#field_11289">field_11289</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#field_31842">field_31842</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#field_6724">field_6724</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#field_31844">field_31844</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#field_6725">field_6725</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#field_6726">field_6726</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#field_6735">field_6735</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/class_4522.html" title="class in net.minecraft">class_4522</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#field_31847">field_31847</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private long</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#keepAliveId">keepAliveId</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#field_31853">field_31853</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private long</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#lastKeepAliveTime">lastKeepAliveTime</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#field_31855">field_31855</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#field_31859">field_31859</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#field_31860">field_31860</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#field_31861">field_31861</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#floating">floating</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#lastTickMovePacketsCount">lastTickMovePacketsCount</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>private double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#lastTickRiddenX">lastTickRiddenX</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#lastTickRiddenY">lastTickRiddenY</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#lastTickRiddenZ">lastTickRiddenZ</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#LOGGER">LOGGER</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#messageCooldown">messageCooldown</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#movePacketsCount">movePacketsCount</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../net/minecraft/server/network/ServerPlayerEntity.html" title="class in net.minecraft.server.network">ServerPlayerEntity</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#player">player</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#requestedTeleportPosX">requestedTeleportPosX</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#requestedTeleportId">requestedTeleportId</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#requestedTeleportPosY">requestedTeleportPosY</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#requestedTeleportPos">requestedTeleportPos</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#requestedTeleportPosZ">requestedTeleportPosZ</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#ridingEntity">ridingEntity</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private <a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#server">server</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../../net/minecraft/class_2610.html" title="class in net.minecraft">class_2610</a></code></td>
+<td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#teleportRequestTick">teleportRequestTick</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#ticks">ticks</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#topmostRiddenEntity">topmostRiddenEntity</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/class_6411.html" title="class in net.minecraft">class_6411</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html?is-external=true" title="class or interface in java.lang">Short</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#transactions">transactions</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#updatedRiddenX">updatedRiddenX</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#updatedRiddenY">updatedRiddenY</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#updatedRiddenZ">updatedRiddenZ</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#updatedX">updatedX</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#updatedY">updatedY</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#updatedZ">updatedZ</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#waitingForKeepAlive">waitingForKeepAlive</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -220,9 +284,9 @@ implements <a href="../../../../net/minecraft/network/listener/ServerPlayPacketL
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#ServerPlayNetworkHandler-net.minecraft.server.MinecraftServer-net.minecraft.network.ClientConnection-net.minecraft.server.network.ServerPlayerEntity-">ServerPlayNetworkHandler</a></span>(<a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a>&nbsp;server,
-                        <a href="../../../../net/minecraft/network/ClientConnection.html" title="class in net.minecraft.network">ClientConnection</a>&nbsp;connection,
-                        <a href="../../../../net/minecraft/server/network/ServerPlayerEntity.html" title="class in net.minecraft.server.network">ServerPlayerEntity</a>&nbsp;player)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#ServerPlayNetworkHandler-net.minecraft.server.MinecraftServer-net.minecraft.network.ClientConnection-net.minecraft.server.network.ServerPlayerEntity-">ServerPlayNetworkHandler</a></span>(<a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a>&nbsp;minecraftServer,
+                        <a href="../../../../net/minecraft/network/ClientConnection.html" title="class in net.minecraft.network">ClientConnection</a>&nbsp;clientConnection,
+                        <a href="../../../../net/minecraft/server/network/ServerPlayerEntity.html" title="class in net.minecraft.server.network">ServerPlayerEntity</a>&nbsp;serverPlayerEntity)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -234,121 +298,156 @@ implements <a href="../../../../net/minecraft/network/listener/ServerPlayPacketL
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#disconnect-java.lang.String-">disconnect</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;reason)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#disconnect-net.minecraft.text.Text-">disconnect</a></span>(<a href="../../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;reason)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#executeCommand-java.lang.String-">executeCommand</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/network/ClientConnection.html" title="class in net.minecraft.network">ClientConnection</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#getConnection--">getConnection</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#method_32878-net.minecraft.class_6330-">method_32878</a></span>(<a href="../../../../net/minecraft/class_6330.html" title="class in net.minecraft">class_6330</a>&nbsp;class_6330)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#method_10218-net.minecraft.class_2514-">method_10218</a></span>(<a href="../../../../net/minecraft/class_2514.html" title="class in net.minecraft">class_2514</a>&nbsp;class_2514)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../net/minecraft/network/ClientConnection.html" title="class in net.minecraft.network">ClientConnection</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#method_33621--">method_33621</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>private long</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#method_6130--">method_6130</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>private void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#method_33628--">method_33628</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#method_9888-net.minecraft.network.NetworkState-net.minecraft.network.NetworkState-">method_9888</a></span>(<a href="../../../../net/minecraft/network/NetworkState.html" title="enum in net.minecraft.network">NetworkState</a>&nbsp;networkState,
-           <a href="../../../../net/minecraft/network/NetworkState.html" title="enum in net.minecraft.network">NetworkState</a>&nbsp;networkState2)</code>&nbsp;</td>
+<td class="colFirst"><code>private long</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#method_33630--">method_33630</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onButtonClick-net.minecraft.network.packet.c2s.play.ButtonClickC2SPacket-">onButtonClick</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/ButtonClickC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ButtonClickC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onAdvancementTab-net.minecraft.network.packet.c2s.play.AdvancementTabC2SPacket-">onAdvancementTab</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/AdvancementTabC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">AdvancementTabC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onChatMessage-net.minecraft.network.packet.c2s.play.ChatMessageC2SPacket-">onChatMessage</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/ChatMessageC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ChatMessageC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onBoatPaddleState-net.minecraft.network.packet.c2s.play.BoatPaddleStateC2SPacket-">onBoatPaddleState</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/BoatPaddleStateC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">BoatPaddleStateC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onClickSlot-net.minecraft.network.packet.c2s.play.ClickSlotC2SPacket-">onClickSlot</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/ClickSlotC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ClickSlotC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onButtonClick-net.minecraft.network.packet.c2s.play.ButtonClickC2SPacket-">onButtonClick</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/ButtonClickC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ButtonClickC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onClientSettings-net.minecraft.network.packet.c2s.play.PlayerOptionsC2SPacket-">onClientSettings</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/PlayerOptionsC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">PlayerOptionsC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onChatMessage-net.minecraft.network.packet.c2s.play.ChatMessageC2SPacket-">onChatMessage</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/ChatMessageC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ChatMessageC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onClientStatus-net.minecraft.network.packet.c2s.play.ClientStatusC2SPacket-">onClientStatus</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/ClientStatusC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ClientStatusC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onClickWindow-net.minecraft.network.packet.c2s.play.ClickWindowC2SPacket-">onClickWindow</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/ClickWindowC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ClickWindowC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onCloseHandledScreen-net.minecraft.network.packet.c2s.play.CloseHandledScreenC2SPacket-">onCloseHandledScreen</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/CloseHandledScreenC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">CloseHandledScreenC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onClientCommand-net.minecraft.network.packet.c2s.play.ClientCommandC2SPacket-">onClientCommand</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/ClientCommandC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ClientCommandC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onConfirmAction-net.minecraft.network.packet.c2s.play.ConfirmActionC2SPacket-">onConfirmAction</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/ConfirmActionC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ConfirmActionC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onClientSettings-net.minecraft.network.packet.c2s.play.ClientSettingsC2SPacket-">onClientSettings</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/ClientSettingsC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ClientSettingsC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onCreativeInventoryAction-net.minecraft.class_2517-">onCreativeInventoryAction</a></span>(<a href="../../../../net/minecraft/class_2517.html" title="class in net.minecraft">class_2517</a>&nbsp;packet)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onClientStatus-net.minecraft.network.packet.c2s.play.ClientStatusC2SPacket-">onClientStatus</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/ClientStatusC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ClientStatusC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onCustomPayload-net.minecraft.network.packet.c2s.play.CustomPayloadC2SPacket-">onCustomPayload</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/CustomPayloadC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">CustomPayloadC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onConfirmTransaction-net.minecraft.network.packet.c2s.play.ConfirmGuiActionC2SPacket-">onConfirmTransaction</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/ConfirmGuiActionC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ConfirmGuiActionC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onDisconnected-net.minecraft.text.Text-">onDisconnected</a></span>(<a href="../../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;reason)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onCraftRequest-net.minecraft.network.packet.c2s.play.CraftRequestC2SPacket-">onCraftRequest</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/CraftRequestC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">CraftRequestC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onHandSwing-net.minecraft.network.packet.c2s.play.HandSwingC2SPacket-">onHandSwing</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">HandSwingC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onCreativeInventoryAction-net.minecraft.network.packet.c2s.play.CreativeInventoryActionC2SPacket-">onCreativeInventoryAction</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/CreativeInventoryActionC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">CreativeInventoryActionC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onKeepAlive-net.minecraft.network.packet.c2s.play.KeepAliveC2SPacket-">onKeepAlive</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/KeepAliveC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">KeepAliveC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onCustomPayload-net.minecraft.network.packet.c2s.play.CustomPayloadC2SPacket-">onCustomPayload</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/CustomPayloadC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">CustomPayloadC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
 </tr>
 <tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onPlayerAbilities-net.minecraft.network.packet.c2s.play.PlayerAbilitiesC2SPacket-">onPlayerAbilities</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/PlayerAbilitiesC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">PlayerAbilitiesC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onDisconnected-net.minecraft.text.Text-">onDisconnected</a></span>(<a href="../../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;reason)</code>&nbsp;</td>
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onPlayerAction-net.minecraft.class_2513-">onPlayerAction</a></span>(<a href="../../../../net/minecraft/class_2513.html" title="class in net.minecraft">class_2513</a>&nbsp;packet)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onGuiClose-net.minecraft.network.packet.c2s.play.GuiCloseC2SPacket-">onGuiClose</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/GuiCloseC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">GuiCloseC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onPlayerInput-net.minecraft.class_2515-">onPlayerInput</a></span>(<a href="../../../../net/minecraft/class_2515.html" title="class in net.minecraft">class_2515</a>&nbsp;packet)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onHandSwing-net.minecraft.network.packet.c2s.play.HandSwingC2SPacket-">onHandSwing</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/HandSwingC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">HandSwingC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
 </tr>
 <tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onPlayerInteractBlock-net.minecraft.class_2519-">onPlayerInteractBlock</a></span>(<a href="../../../../net/minecraft/class_2519.html" title="class in net.minecraft">class_2519</a>&nbsp;packet)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onKeepAlive-net.minecraft.network.packet.c2s.play.KeepAliveC2SPacket-">onKeepAlive</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/KeepAliveC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">KeepAliveC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
 </tr>
 <tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onPlayerInteractEntity-net.minecraft.network.packet.c2s.play.PlayerInteractEntityC2SPacket-">onPlayerInteractEntity</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/PlayerInteractEntityC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">PlayerInteractEntityC2SPacket</a>&nbsp;rpacket)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onPlayerAbilities-net.minecraft.network.packet.c2s.play.UpdatePlayerAbilitiesC2SPacket-">onPlayerAbilities</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/UpdatePlayerAbilitiesC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">UpdatePlayerAbilitiesC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
 </tr>
 <tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onPlayerMove-net.minecraft.network.packet.c2s.play.PlayerMoveC2SPacket-">onPlayerMove</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">PlayerMoveC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onPlayerAction-net.minecraft.network.packet.c2s.play.PlayerActionC2SPacket-">onPlayerAction</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/PlayerActionC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">PlayerActionC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
 </tr>
 <tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onRequestCommandCompletions-net.minecraft.network.packet.c2s.play.RequestCommandCompletionsC2SPacket-">onRequestCommandCompletions</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/RequestCommandCompletionsC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">RequestCommandCompletionsC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onPlayerInput-net.minecraft.network.packet.c2s.play.PlayerInputC2SPacket-">onPlayerInput</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/PlayerInputC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">PlayerInputC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
 </tr>
 <tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onSignUpdate-net.minecraft.class_2518-">onSignUpdate</a></span>(<a href="../../../../net/minecraft/class_2518.html" title="class in net.minecraft">class_2518</a>&nbsp;packet)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onPlayerInteractBlock-net.minecraft.network.packet.c2s.play.PlayerInteractBlockC2SPacket-">onPlayerInteractBlock</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/PlayerInteractBlockC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">PlayerInteractBlockC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
 </tr>
 <tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onUpdateSelectedSlot-net.minecraft.class_2516-">onUpdateSelectedSlot</a></span>(<a href="../../../../net/minecraft/class_2516.html" title="class in net.minecraft">class_2516</a>&nbsp;packet)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onPlayerInteractEntity-net.minecraft.network.packet.c2s.play.PlayerInteractEntityC2SPacket-">onPlayerInteractEntity</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/PlayerInteractEntityC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">PlayerInteractEntityC2SPacket</a>&nbsp;rpacket)</code>&nbsp;</td>
 </tr>
 <tr id="i27" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onPlayerInteractItem-net.minecraft.network.packet.c2s.play.PlayerInteractItemC2SPacket-">onPlayerInteractItem</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/PlayerInteractItemC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">PlayerInteractItemC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
+</tr>
+<tr id="i28" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onPlayerMove-net.minecraft.network.packet.c2s.play.PlayerMoveC2SPacket-">onPlayerMove</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">PlayerMoveC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
+</tr>
+<tr id="i29" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onRecipeBookData-net.minecraft.network.packet.c2s.play.RecipeBookDataC2SPacket-">onRecipeBookData</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/RecipeBookDataC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">RecipeBookDataC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
+</tr>
+<tr id="i30" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onResourcePackStatus-net.minecraft.network.packet.c2s.play.ResourcePackStatusC2SPacket-">onResourcePackStatus</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/ResourcePackStatusC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ResourcePackStatusC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
+</tr>
+<tr id="i31" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onSignUpdate-net.minecraft.network.packet.c2s.play.UpdateSignC2SPacket-">onSignUpdate</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/UpdateSignC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">UpdateSignC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
+</tr>
+<tr id="i32" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onSpectatorTeleport-net.minecraft.network.packet.c2s.play.SpectatorTeleportC2SPacket-">onSpectatorTeleport</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/SpectatorTeleportC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">SpectatorTeleportC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
+</tr>
+<tr id="i33" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onTeleportConfirm-net.minecraft.network.packet.c2s.play.TeleportConfirmC2SPacket-">onTeleportConfirm</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/TeleportConfirmC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">TeleportConfirmC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
+</tr>
+<tr id="i34" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onUpdateSelectedSlot-net.minecraft.network.packet.c2s.play.UpdateSelectedSlotC2SPacket-">onUpdateSelectedSlot</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/UpdateSelectedSlotC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">UpdateSelectedSlotC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
+</tr>
+<tr id="i35" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#onVehicleMove-net.minecraft.network.packet.c2s.play.VehicleMoveC2SPacket-">onVehicleMove</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/VehicleMoveC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">VehicleMoveC2SPacket</a>&nbsp;packet)</code>&nbsp;</td>
+</tr>
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#requestTeleport-double-double-double-float-float-">requestTeleport</a></span>(double&nbsp;x,
                double&nbsp;y,
@@ -356,13 +455,30 @@ implements <a href="../../../../net/minecraft/network/listener/ServerPlayPacketL
                float&nbsp;yaw,
                float&nbsp;pitch)</code>&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#sendPacket-net.minecraft.network.Packet-">sendPacket</a></span>(<a href="../../../../net/minecraft/network/Packet.html" title="class in net.minecraft.network">Packet</a>&nbsp;packet)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#sendPacket-net.minecraft.network.Packet-">sendPacket</a></span>(<a href="../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;?&gt;&nbsp;packet)</code>&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#tickConnection--">tickConnection</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#teleportRequest-double-double-double-float-float-java.util.Set-">teleportRequest</a></span>(double&nbsp;x,
+               double&nbsp;y,
+               double&nbsp;z,
+               float&nbsp;yaw,
+               float&nbsp;pitch,
+               <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../net/minecraft/network/packet/s2c/play/PlayerPositionLookS2CPacket.Flag.html" title="enum in net.minecraft.network.packet.s2c.play">PlayerPositionLookS2CPacket.Flag</a>&gt;&nbsp;set)</code>&nbsp;</td>
+</tr>
+<tr id="i39" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#tick--">tick</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i40" class="altColor">
+<td class="colFirst"><code>private static boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#validatePlayerMove-net.minecraft.network.packet.c2s.play.PlayerMoveC2SPacket-">validatePlayerMove</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">PlayerMoveC2SPacket</a>&nbsp;playerMoveC2SPacket)</code>&nbsp;</td>
+</tr>
+<tr id="i41" class="rowColor">
+<td class="colFirst"><code>private static boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/network/ServerPlayNetworkHandler.html#validateVehicleMove-net.minecraft.network.packet.c2s.play.VehicleMoveC2SPacket-">validateVehicleMove</a></span>(<a href="../../../../net/minecraft/network/packet/c2s/play/VehicleMoveC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">VehicleMoveC2SPacket</a>&nbsp;vehicleMoveC2SPacket)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -395,15 +511,6 @@ implements <a href="../../../../net/minecraft/network/listener/ServerPlayPacketL
 <pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a> LOGGER</pre>
 </li>
 </ul>
-<a name="field_11289">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_11289</h4>
-<pre>private static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util">Random</a> field_11289</pre>
-</li>
-</ul>
 <a name="connection">
 <!--   -->
 </a>
@@ -431,58 +538,40 @@ implements <a href="../../../../net/minecraft/network/listener/ServerPlayPacketL
 <pre>public&nbsp;<a href="../../../../net/minecraft/server/network/ServerPlayerEntity.html" title="class in net.minecraft.server.network">ServerPlayerEntity</a> player</pre>
 </li>
 </ul>
-<a name="lastTickMovePacketsCount">
+<a name="ticks">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>lastTickMovePacketsCount</h4>
-<pre>private&nbsp;int lastTickMovePacketsCount</pre>
+<h4>ticks</h4>
+<pre>private&nbsp;int ticks</pre>
 </li>
 </ul>
-<a name="field_6724">
+<a name="field_31853">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6724</h4>
-<pre>private&nbsp;int field_6724</pre>
+<h4>field_31853</h4>
+<pre>private&nbsp;long field_31853</pre>
 </li>
 </ul>
-<a name="field_6725">
+<a name="waitingForKeepAlive">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6725</h4>
-<pre>private&nbsp;boolean field_6725</pre>
+<h4>waitingForKeepAlive</h4>
+<pre>private&nbsp;boolean waitingForKeepAlive</pre>
 </li>
 </ul>
-<a name="field_6726">
+<a name="field_31855">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_6726</h4>
-<pre>private&nbsp;int field_6726</pre>
-</li>
-</ul>
-<a name="lastKeepAliveTime">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>lastKeepAliveTime</h4>
-<pre>private&nbsp;long lastKeepAliveTime</pre>
-</li>
-</ul>
-<a name="keepAliveId">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>keepAliveId</h4>
-<pre>private&nbsp;long keepAliveId</pre>
+<h4>field_31855</h4>
+<pre>private&nbsp;long field_31855</pre>
 </li>
 </ul>
 <a name="messageCooldown">
@@ -509,43 +598,214 @@ implements <a href="../../../../net/minecraft/network/listener/ServerPlayPacketL
 <ul class="blockList">
 <li class="blockList">
 <h4>transactions</h4>
-<pre>private&nbsp;<a href="../../../../net/minecraft/class_2610.html" title="class in net.minecraft">class_2610</a> transactions</pre>
+<pre>private final&nbsp;<a href="../../../../net/minecraft/class_6411.html" title="class in net.minecraft">class_6411</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html?is-external=true" title="class or interface in java.lang">Short</a>&gt; transactions</pre>
 </li>
 </ul>
-<a name="requestedTeleportPosX">
+<a name="field_31859">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>requestedTeleportPosX</h4>
-<pre>private&nbsp;double requestedTeleportPosX</pre>
+<h4>field_31859</h4>
+<pre>private&nbsp;double field_31859</pre>
 </li>
 </ul>
-<a name="requestedTeleportPosY">
+<a name="field_31860">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>requestedTeleportPosY</h4>
-<pre>private&nbsp;double requestedTeleportPosY</pre>
+<h4>field_31860</h4>
+<pre>private&nbsp;double field_31860</pre>
 </li>
 </ul>
-<a name="requestedTeleportPosZ">
+<a name="field_31861">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>requestedTeleportPosZ</h4>
-<pre>private&nbsp;double requestedTeleportPosZ</pre>
+<h4>field_31861</h4>
+<pre>private&nbsp;double field_31861</pre>
 </li>
 </ul>
-<a name="field_6735">
+<a name="updatedY">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>updatedY</h4>
+<pre>private&nbsp;double updatedY</pre>
+</li>
+</ul>
+<a name="updatedZ">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>updatedZ</h4>
+<pre>private&nbsp;double updatedZ</pre>
+</li>
+</ul>
+<a name="updatedX">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>updatedX</h4>
+<pre>private&nbsp;double updatedX</pre>
+</li>
+</ul>
+<a name="topmostRiddenEntity">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>topmostRiddenEntity</h4>
+<pre>private&nbsp;<a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a> topmostRiddenEntity</pre>
+</li>
+</ul>
+<a name="lastTickRiddenX">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lastTickRiddenX</h4>
+<pre>private&nbsp;double lastTickRiddenX</pre>
+</li>
+</ul>
+<a name="lastTickRiddenY">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lastTickRiddenY</h4>
+<pre>private&nbsp;double lastTickRiddenY</pre>
+</li>
+</ul>
+<a name="lastTickRiddenZ">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lastTickRiddenZ</h4>
+<pre>private&nbsp;double lastTickRiddenZ</pre>
+</li>
+</ul>
+<a name="updatedRiddenX">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>updatedRiddenX</h4>
+<pre>private&nbsp;double updatedRiddenX</pre>
+</li>
+</ul>
+<a name="updatedRiddenY">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>updatedRiddenY</h4>
+<pre>private&nbsp;double updatedRiddenY</pre>
+</li>
+</ul>
+<a name="updatedRiddenZ">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>updatedRiddenZ</h4>
+<pre>private&nbsp;double updatedRiddenZ</pre>
+</li>
+</ul>
+<a name="requestedTeleportPos">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>requestedTeleportPos</h4>
+<pre>private&nbsp;<a href="../../../../net/minecraft/util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a> requestedTeleportPos</pre>
+</li>
+</ul>
+<a name="requestedTeleportId">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>requestedTeleportId</h4>
+<pre>private&nbsp;int requestedTeleportId</pre>
+</li>
+</ul>
+<a name="teleportRequestTick">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>teleportRequestTick</h4>
+<pre>private&nbsp;int teleportRequestTick</pre>
+</li>
+</ul>
+<a name="floating">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>floating</h4>
+<pre>private&nbsp;boolean floating</pre>
+</li>
+</ul>
+<a name="field_31842">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>field_31842</h4>
+<pre>private&nbsp;int field_31842</pre>
+</li>
+</ul>
+<a name="ridingEntity">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ridingEntity</h4>
+<pre>private&nbsp;boolean ridingEntity</pre>
+</li>
+</ul>
+<a name="field_31844">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>field_31844</h4>
+<pre>private&nbsp;int field_31844</pre>
+</li>
+</ul>
+<a name="movePacketsCount">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>movePacketsCount</h4>
+<pre>private&nbsp;int movePacketsCount</pre>
+</li>
+</ul>
+<a name="lastTickMovePacketsCount">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lastTickMovePacketsCount</h4>
+<pre>private&nbsp;int lastTickMovePacketsCount</pre>
+</li>
+</ul>
+<a name="field_31847">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_6735</h4>
-<pre>private&nbsp;boolean field_6735</pre>
+<h4>field_31847</h4>
+<pre>private&nbsp;<a href="../../../../net/minecraft/class_4522.html" title="class in net.minecraft">class_4522</a> field_31847</pre>
 </li>
 </ul>
 </li>
@@ -562,9 +822,9 @@ implements <a href="../../../../net/minecraft/network/listener/ServerPlayPacketL
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ServerPlayNetworkHandler</h4>
-<pre>public&nbsp;ServerPlayNetworkHandler(<a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a>&nbsp;server,
-                                <a href="../../../../net/minecraft/network/ClientConnection.html" title="class in net.minecraft.network">ClientConnection</a>&nbsp;connection,
-                                <a href="../../../../net/minecraft/server/network/ServerPlayerEntity.html" title="class in net.minecraft.server.network">ServerPlayerEntity</a>&nbsp;player)</pre>
+<pre>public&nbsp;ServerPlayNetworkHandler(<a href="../../../../net/minecraft/server/MinecraftServer.html" title="class in net.minecraft.server">MinecraftServer</a>&nbsp;minecraftServer,
+                                <a href="../../../../net/minecraft/network/ClientConnection.html" title="class in net.minecraft.network">ClientConnection</a>&nbsp;clientConnection,
+                                <a href="../../../../net/minecraft/server/network/ServerPlayerEntity.html" title="class in net.minecraft.server.network">ServerPlayerEntity</a>&nbsp;serverPlayerEntity)</pre>
 </li>
 </ul>
 </li>
@@ -575,47 +835,126 @@ implements <a href="../../../../net/minecraft/network/listener/ServerPlayPacketL
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="tickConnection--">
+<a name="tick--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>tickConnection</h4>
-<pre>public&nbsp;void&nbsp;tickConnection()</pre>
+<h4>tick</h4>
+<pre>public&nbsp;void&nbsp;tick()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/network/listener/PacketListener.html#tickConnection--">tickConnection</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/PacketListener.html" title="interface in net.minecraft.network.listener">PacketListener</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/util/Tickable.html#tick--">tick</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/util/Tickable.html" title="interface in net.minecraft.util">Tickable</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="getConnection--">
+<a name="method_33628--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getConnection</h4>
-<pre>public&nbsp;<a href="../../../../net/minecraft/network/ClientConnection.html" title="class in net.minecraft.network">ClientConnection</a>&nbsp;getConnection()</pre>
+<h4>method_33628</h4>
+<pre>private&nbsp;void&nbsp;method_33628()</pre>
 </li>
 </ul>
-<a name="disconnect-java.lang.String-">
+<a name="method_33621--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_33621</h4>
+<pre>public&nbsp;<a href="../../../../net/minecraft/network/ClientConnection.html" title="class in net.minecraft.network">ClientConnection</a>&nbsp;method_33621()</pre>
+</li>
+</ul>
+<a name="disconnect-net.minecraft.text.Text-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>disconnect</h4>
-<pre>public&nbsp;void&nbsp;disconnect(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;reason)</pre>
+<pre>public&nbsp;void&nbsp;disconnect(<a href="../../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>&nbsp;reason)</pre>
 </li>
 </ul>
-<a name="onPlayerInput-net.minecraft.class_2515-">
+<a name="onPlayerInput-net.minecraft.network.packet.c2s.play.PlayerInputC2SPacket-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onPlayerInput</h4>
-<pre>public&nbsp;void&nbsp;onPlayerInput(<a href="../../../../net/minecraft/class_2515.html" title="class in net.minecraft">class_2515</a>&nbsp;packet)</pre>
+<pre>public&nbsp;void&nbsp;onPlayerInput(<a href="../../../../net/minecraft/network/packet/c2s/play/PlayerInputC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">PlayerInputC2SPacket</a>&nbsp;packet)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onPlayerInput-net.minecraft.class_2515-">onPlayerInput</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onPlayerInput-net.minecraft.network.packet.c2s.play.PlayerInputC2SPacket-">onPlayerInput</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="validatePlayerMove-net.minecraft.network.packet.c2s.play.PlayerMoveC2SPacket-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>validatePlayerMove</h4>
+<pre>private static&nbsp;boolean&nbsp;validatePlayerMove(<a href="../../../../net/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">PlayerMoveC2SPacket</a>&nbsp;playerMoveC2SPacket)</pre>
+</li>
+</ul>
+<a name="validateVehicleMove-net.minecraft.network.packet.c2s.play.VehicleMoveC2SPacket-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>validateVehicleMove</h4>
+<pre>private static&nbsp;boolean&nbsp;validateVehicleMove(<a href="../../../../net/minecraft/network/packet/c2s/play/VehicleMoveC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">VehicleMoveC2SPacket</a>&nbsp;vehicleMoveC2SPacket)</pre>
+</li>
+</ul>
+<a name="onVehicleMove-net.minecraft.network.packet.c2s.play.VehicleMoveC2SPacket-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onVehicleMove</h4>
+<pre>public&nbsp;void&nbsp;onVehicleMove(<a href="../../../../net/minecraft/network/packet/c2s/play/VehicleMoveC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">VehicleMoveC2SPacket</a>&nbsp;packet)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onVehicleMove-net.minecraft.network.packet.c2s.play.VehicleMoveC2SPacket-">onVehicleMove</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="onTeleportConfirm-net.minecraft.network.packet.c2s.play.TeleportConfirmC2SPacket-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onTeleportConfirm</h4>
+<pre>public&nbsp;void&nbsp;onTeleportConfirm(<a href="../../../../net/minecraft/network/packet/c2s/play/TeleportConfirmC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">TeleportConfirmC2SPacket</a>&nbsp;packet)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onTeleportConfirm-net.minecraft.network.packet.c2s.play.TeleportConfirmC2SPacket-">onTeleportConfirm</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="onRecipeBookData-net.minecraft.network.packet.c2s.play.RecipeBookDataC2SPacket-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onRecipeBookData</h4>
+<pre>public&nbsp;void&nbsp;onRecipeBookData(<a href="../../../../net/minecraft/network/packet/c2s/play/RecipeBookDataC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">RecipeBookDataC2SPacket</a>&nbsp;packet)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onRecipeBookData-net.minecraft.network.packet.c2s.play.RecipeBookDataC2SPacket-">onRecipeBookData</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="onAdvancementTab-net.minecraft.network.packet.c2s.play.AdvancementTabC2SPacket-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onAdvancementTab</h4>
+<pre>public&nbsp;void&nbsp;onAdvancementTab(<a href="../../../../net/minecraft/network/packet/c2s/play/AdvancementTabC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">AdvancementTabC2SPacket</a>&nbsp;packet)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onAdvancementTab-net.minecraft.network.packet.c2s.play.AdvancementTabC2SPacket-">onAdvancementTab</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -645,29 +984,95 @@ implements <a href="../../../../net/minecraft/network/listener/ServerPlayPacketL
                             float&nbsp;pitch)</pre>
 </li>
 </ul>
-<a name="onPlayerAction-net.minecraft.class_2513-">
+<a name="teleportRequest-double-double-double-float-float-java.util.Set-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>teleportRequest</h4>
+<pre>public&nbsp;void&nbsp;teleportRequest(double&nbsp;x,
+                            double&nbsp;y,
+                            double&nbsp;z,
+                            float&nbsp;yaw,
+                            float&nbsp;pitch,
+                            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../net/minecraft/network/packet/s2c/play/PlayerPositionLookS2CPacket.Flag.html" title="enum in net.minecraft.network.packet.s2c.play">PlayerPositionLookS2CPacket.Flag</a>&gt;&nbsp;set)</pre>
+</li>
+</ul>
+<a name="onPlayerAction-net.minecraft.network.packet.c2s.play.PlayerActionC2SPacket-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onPlayerAction</h4>
-<pre>public&nbsp;void&nbsp;onPlayerAction(<a href="../../../../net/minecraft/class_2513.html" title="class in net.minecraft">class_2513</a>&nbsp;packet)</pre>
+<pre>public&nbsp;void&nbsp;onPlayerAction(<a href="../../../../net/minecraft/network/packet/c2s/play/PlayerActionC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">PlayerActionC2SPacket</a>&nbsp;packet)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onPlayerAction-net.minecraft.class_2513-">onPlayerAction</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onPlayerAction-net.minecraft.network.packet.c2s.play.PlayerActionC2SPacket-">onPlayerAction</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="onPlayerInteractBlock-net.minecraft.class_2519-">
+<a name="onPlayerInteractBlock-net.minecraft.network.packet.c2s.play.PlayerInteractBlockC2SPacket-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onPlayerInteractBlock</h4>
-<pre>public&nbsp;void&nbsp;onPlayerInteractBlock(<a href="../../../../net/minecraft/class_2519.html" title="class in net.minecraft">class_2519</a>&nbsp;packet)</pre>
+<pre>public&nbsp;void&nbsp;onPlayerInteractBlock(<a href="../../../../net/minecraft/network/packet/c2s/play/PlayerInteractBlockC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">PlayerInteractBlockC2SPacket</a>&nbsp;packet)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onPlayerInteractBlock-net.minecraft.class_2519-">onPlayerInteractBlock</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onPlayerInteractBlock-net.minecraft.network.packet.c2s.play.PlayerInteractBlockC2SPacket-">onPlayerInteractBlock</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="onPlayerInteractItem-net.minecraft.network.packet.c2s.play.PlayerInteractItemC2SPacket-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onPlayerInteractItem</h4>
+<pre>public&nbsp;void&nbsp;onPlayerInteractItem(<a href="../../../../net/minecraft/network/packet/c2s/play/PlayerInteractItemC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">PlayerInteractItemC2SPacket</a>&nbsp;packet)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onPlayerInteractItem-net.minecraft.network.packet.c2s.play.PlayerInteractItemC2SPacket-">onPlayerInteractItem</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="onSpectatorTeleport-net.minecraft.network.packet.c2s.play.SpectatorTeleportC2SPacket-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onSpectatorTeleport</h4>
+<pre>public&nbsp;void&nbsp;onSpectatorTeleport(<a href="../../../../net/minecraft/network/packet/c2s/play/SpectatorTeleportC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">SpectatorTeleportC2SPacket</a>&nbsp;packet)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onSpectatorTeleport-net.minecraft.network.packet.c2s.play.SpectatorTeleportC2SPacket-">onSpectatorTeleport</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="onResourcePackStatus-net.minecraft.network.packet.c2s.play.ResourcePackStatusC2SPacket-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onResourcePackStatus</h4>
+<pre>public&nbsp;void&nbsp;onResourcePackStatus(<a href="../../../../net/minecraft/network/packet/c2s/play/ResourcePackStatusC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ResourcePackStatusC2SPacket</a>&nbsp;packet)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onResourcePackStatus-net.minecraft.network.packet.c2s.play.ResourcePackStatusC2SPacket-">onResourcePackStatus</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="onBoatPaddleState-net.minecraft.network.packet.c2s.play.BoatPaddleStateC2SPacket-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onBoatPaddleState</h4>
+<pre>public&nbsp;void&nbsp;onBoatPaddleState(<a href="../../../../net/minecraft/network/packet/c2s/play/BoatPaddleStateC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">BoatPaddleStateC2SPacket</a>&nbsp;packet)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onBoatPaddleState-net.minecraft.network.packet.c2s.play.BoatPaddleStateC2SPacket-">onBoatPaddleState</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -690,19 +1095,19 @@ implements <a href="../../../../net/minecraft/network/listener/ServerPlayPacketL
 <ul class="blockList">
 <li class="blockList">
 <h4>sendPacket</h4>
-<pre>public&nbsp;void&nbsp;sendPacket(<a href="../../../../net/minecraft/network/Packet.html" title="class in net.minecraft.network">Packet</a>&nbsp;packet)</pre>
+<pre>public&nbsp;void&nbsp;sendPacket(<a href="../../../../net/minecraft/network/Packet.html" title="interface in net.minecraft.network">Packet</a>&lt;?&gt;&nbsp;packet)</pre>
 </li>
 </ul>
-<a name="onUpdateSelectedSlot-net.minecraft.class_2516-">
+<a name="onUpdateSelectedSlot-net.minecraft.network.packet.c2s.play.UpdateSelectedSlotC2SPacket-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onUpdateSelectedSlot</h4>
-<pre>public&nbsp;void&nbsp;onUpdateSelectedSlot(<a href="../../../../net/minecraft/class_2516.html" title="class in net.minecraft">class_2516</a>&nbsp;packet)</pre>
+<pre>public&nbsp;void&nbsp;onUpdateSelectedSlot(<a href="../../../../net/minecraft/network/packet/c2s/play/UpdateSelectedSlotC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">UpdateSelectedSlotC2SPacket</a>&nbsp;packet)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onUpdateSelectedSlot-net.minecraft.class_2516-">onUpdateSelectedSlot</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onUpdateSelectedSlot-net.minecraft.network.packet.c2s.play.UpdateSelectedSlotC2SPacket-">onUpdateSelectedSlot</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -741,16 +1146,16 @@ implements <a href="../../../../net/minecraft/network/listener/ServerPlayPacketL
 </dl>
 </li>
 </ul>
-<a name="method_10218-net.minecraft.class_2514-">
+<a name="onClientCommand-net.minecraft.network.packet.c2s.play.ClientCommandC2SPacket-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_10218</h4>
-<pre>public&nbsp;void&nbsp;method_10218(<a href="../../../../net/minecraft/class_2514.html" title="class in net.minecraft">class_2514</a>&nbsp;class_2514)</pre>
+<h4>onClientCommand</h4>
+<pre>public&nbsp;void&nbsp;onClientCommand(<a href="../../../../net/minecraft/network/packet/c2s/play/ClientCommandC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ClientCommandC2SPacket</a>&nbsp;packet)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#method_10218-net.minecraft.class_2514-">method_10218</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onClientCommand-net.minecraft.network.packet.c2s.play.ClientCommandC2SPacket-">onClientCommand</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -780,29 +1185,42 @@ implements <a href="../../../../net/minecraft/network/listener/ServerPlayPacketL
 </dl>
 </li>
 </ul>
-<a name="onCloseHandledScreen-net.minecraft.network.packet.c2s.play.CloseHandledScreenC2SPacket-">
+<a name="onGuiClose-net.minecraft.network.packet.c2s.play.GuiCloseC2SPacket-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>onCloseHandledScreen</h4>
-<pre>public&nbsp;void&nbsp;onCloseHandledScreen(<a href="../../../../net/minecraft/network/packet/c2s/play/CloseHandledScreenC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">CloseHandledScreenC2SPacket</a>&nbsp;packet)</pre>
+<h4>onGuiClose</h4>
+<pre>public&nbsp;void&nbsp;onGuiClose(<a href="../../../../net/minecraft/network/packet/c2s/play/GuiCloseC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">GuiCloseC2SPacket</a>&nbsp;packet)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onCloseHandledScreen-net.minecraft.network.packet.c2s.play.CloseHandledScreenC2SPacket-">onCloseHandledScreen</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onGuiClose-net.minecraft.network.packet.c2s.play.GuiCloseC2SPacket-">onGuiClose</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="onClickSlot-net.minecraft.network.packet.c2s.play.ClickSlotC2SPacket-">
+<a name="onClickWindow-net.minecraft.network.packet.c2s.play.ClickWindowC2SPacket-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>onClickSlot</h4>
-<pre>public&nbsp;void&nbsp;onClickSlot(<a href="../../../../net/minecraft/network/packet/c2s/play/ClickSlotC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ClickSlotC2SPacket</a>&nbsp;packet)</pre>
+<h4>onClickWindow</h4>
+<pre>public&nbsp;void&nbsp;onClickWindow(<a href="../../../../net/minecraft/network/packet/c2s/play/ClickWindowC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ClickWindowC2SPacket</a>&nbsp;packet)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onClickSlot-net.minecraft.network.packet.c2s.play.ClickSlotC2SPacket-">onClickSlot</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onClickWindow-net.minecraft.network.packet.c2s.play.ClickWindowC2SPacket-">onClickWindow</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="onCraftRequest-net.minecraft.network.packet.c2s.play.CraftRequestC2SPacket-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onCraftRequest</h4>
+<pre>public&nbsp;void&nbsp;onCraftRequest(<a href="../../../../net/minecraft/network/packet/c2s/play/CraftRequestC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">CraftRequestC2SPacket</a>&nbsp;packet)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onCraftRequest-net.minecraft.network.packet.c2s.play.CraftRequestC2SPacket-">onCraftRequest</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -819,42 +1237,42 @@ implements <a href="../../../../net/minecraft/network/listener/ServerPlayPacketL
 </dl>
 </li>
 </ul>
-<a name="onCreativeInventoryAction-net.minecraft.class_2517-">
+<a name="onCreativeInventoryAction-net.minecraft.network.packet.c2s.play.CreativeInventoryActionC2SPacket-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onCreativeInventoryAction</h4>
-<pre>public&nbsp;void&nbsp;onCreativeInventoryAction(<a href="../../../../net/minecraft/class_2517.html" title="class in net.minecraft">class_2517</a>&nbsp;packet)</pre>
+<pre>public&nbsp;void&nbsp;onCreativeInventoryAction(<a href="../../../../net/minecraft/network/packet/c2s/play/CreativeInventoryActionC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">CreativeInventoryActionC2SPacket</a>&nbsp;packet)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onCreativeInventoryAction-net.minecraft.class_2517-">onCreativeInventoryAction</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onCreativeInventoryAction-net.minecraft.network.packet.c2s.play.CreativeInventoryActionC2SPacket-">onCreativeInventoryAction</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="onConfirmAction-net.minecraft.network.packet.c2s.play.ConfirmActionC2SPacket-">
+<a name="onConfirmTransaction-net.minecraft.network.packet.c2s.play.ConfirmGuiActionC2SPacket-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>onConfirmAction</h4>
-<pre>public&nbsp;void&nbsp;onConfirmAction(<a href="../../../../net/minecraft/network/packet/c2s/play/ConfirmActionC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ConfirmActionC2SPacket</a>&nbsp;packet)</pre>
+<h4>onConfirmTransaction</h4>
+<pre>public&nbsp;void&nbsp;onConfirmTransaction(<a href="../../../../net/minecraft/network/packet/c2s/play/ConfirmGuiActionC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ConfirmGuiActionC2SPacket</a>&nbsp;packet)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onConfirmAction-net.minecraft.network.packet.c2s.play.ConfirmActionC2SPacket-">onConfirmAction</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onConfirmTransaction-net.minecraft.network.packet.c2s.play.ConfirmGuiActionC2SPacket-">onConfirmTransaction</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="onSignUpdate-net.minecraft.class_2518-">
+<a name="onSignUpdate-net.minecraft.network.packet.c2s.play.UpdateSignC2SPacket-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onSignUpdate</h4>
-<pre>public&nbsp;void&nbsp;onSignUpdate(<a href="../../../../net/minecraft/class_2518.html" title="class in net.minecraft">class_2518</a>&nbsp;packet)</pre>
+<pre>public&nbsp;void&nbsp;onSignUpdate(<a href="../../../../net/minecraft/network/packet/c2s/play/UpdateSignC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">UpdateSignC2SPacket</a>&nbsp;packet)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onSignUpdate-net.minecraft.class_2518-">onSignUpdate</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onSignUpdate-net.minecraft.network.packet.c2s.play.UpdateSignC2SPacket-">onSignUpdate</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -871,78 +1289,64 @@ implements <a href="../../../../net/minecraft/network/listener/ServerPlayPacketL
 </dl>
 </li>
 </ul>
-<a name="method_6130--">
+<a name="method_33630--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_6130</h4>
-<pre>private&nbsp;long&nbsp;method_6130()</pre>
+<h4>method_33630</h4>
+<pre>private&nbsp;long&nbsp;method_33630()</pre>
 </li>
 </ul>
-<a name="onPlayerAbilities-net.minecraft.network.packet.c2s.play.PlayerAbilitiesC2SPacket-">
+<a name="onPlayerAbilities-net.minecraft.network.packet.c2s.play.UpdatePlayerAbilitiesC2SPacket-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onPlayerAbilities</h4>
-<pre>public&nbsp;void&nbsp;onPlayerAbilities(<a href="../../../../net/minecraft/network/packet/c2s/play/PlayerAbilitiesC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">PlayerAbilitiesC2SPacket</a>&nbsp;packet)</pre>
+<pre>public&nbsp;void&nbsp;onPlayerAbilities(<a href="../../../../net/minecraft/network/packet/c2s/play/UpdatePlayerAbilitiesC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">UpdatePlayerAbilitiesC2SPacket</a>&nbsp;packet)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onPlayerAbilities-net.minecraft.network.packet.c2s.play.PlayerAbilitiesC2SPacket-">onPlayerAbilities</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onPlayerAbilities-net.minecraft.network.packet.c2s.play.UpdatePlayerAbilitiesC2SPacket-">onPlayerAbilities</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="onRequestCommandCompletions-net.minecraft.network.packet.c2s.play.RequestCommandCompletionsC2SPacket-">
+<a name="method_32878-net.minecraft.class_6330-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>onRequestCommandCompletions</h4>
-<pre>public&nbsp;void&nbsp;onRequestCommandCompletions(<a href="../../../../net/minecraft/network/packet/c2s/play/RequestCommandCompletionsC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">RequestCommandCompletionsC2SPacket</a>&nbsp;packet)</pre>
+<h4>method_32878</h4>
+<pre>public&nbsp;void&nbsp;method_32878(<a href="../../../../net/minecraft/class_6330.html" title="class in net.minecraft">class_6330</a>&nbsp;class_6330)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onRequestCommandCompletions-net.minecraft.network.packet.c2s.play.RequestCommandCompletionsC2SPacket-">onRequestCommandCompletions</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#method_32878-net.minecraft.class_6330-">method_32878</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="onClientSettings-net.minecraft.network.packet.c2s.play.PlayerOptionsC2SPacket-">
+<a name="onClientSettings-net.minecraft.network.packet.c2s.play.ClientSettingsC2SPacket-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>onClientSettings</h4>
-<pre>public&nbsp;void&nbsp;onClientSettings(<a href="../../../../net/minecraft/network/packet/c2s/play/PlayerOptionsC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">PlayerOptionsC2SPacket</a>&nbsp;packet)</pre>
+<pre>public&nbsp;void&nbsp;onClientSettings(<a href="../../../../net/minecraft/network/packet/c2s/play/ClientSettingsC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">ClientSettingsC2SPacket</a>&nbsp;packet)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onClientSettings-net.minecraft.network.packet.c2s.play.PlayerOptionsC2SPacket-">onClientSettings</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onClientSettings-net.minecraft.network.packet.c2s.play.ClientSettingsC2SPacket-">onClientSettings</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
 </dl>
 </li>
 </ul>
 <a name="onCustomPayload-net.minecraft.network.packet.c2s.play.CustomPayloadC2SPacket-">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>onCustomPayload</h4>
 <pre>public&nbsp;void&nbsp;onCustomPayload(<a href="../../../../net/minecraft/network/packet/c2s/play/CustomPayloadC2SPacket.html" title="class in net.minecraft.network.packet.c2s.play">CustomPayloadC2SPacket</a>&nbsp;packet)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html#onCustomPayload-net.minecraft.network.packet.c2s.play.CustomPayloadC2SPacket-">onCustomPayload</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/ServerPlayPacketListener.html" title="interface in net.minecraft.network.listener">ServerPlayPacketListener</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_9888-net.minecraft.network.NetworkState-net.minecraft.network.NetworkState-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>method_9888</h4>
-<pre>public&nbsp;void&nbsp;method_9888(<a href="../../../../net/minecraft/network/NetworkState.html" title="enum in net.minecraft.network">NetworkState</a>&nbsp;networkState,
-                        <a href="../../../../net/minecraft/network/NetworkState.html" title="enum in net.minecraft.network">NetworkState</a>&nbsp;networkState2)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/network/listener/PacketListener.html#method_9888-net.minecraft.network.NetworkState-net.minecraft.network.NetworkState-">method_9888</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/network/listener/PacketListener.html" title="interface in net.minecraft.network.listener">PacketListener</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -974,7 +1378,7 @@ implements <a href="../../../../net/minecraft/network/listener/ServerPlayPacketL
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../net/minecraft/server/network/ServerPlayerInteractionManager.html" title="class in net.minecraft.server.network"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li>Next&nbsp;Class</li>
+<li><a href="../../../../net/minecraft/server/network/ServerQueryNetworkHandler.html" title="class in net.minecraft.server.network"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/server/network/ServerPlayNetworkHandler.html" target="_top">Frames</a></li>

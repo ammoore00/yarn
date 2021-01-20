@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":10,"i4":9,"i5":10,"i6":9,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":9,"i21":9,"i22":10,"i23":10,"i24":9,"i25":9,"i26":9,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":9,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":10,"i4":9,"i5":9,"i6":9,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":9,"i13":9,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":9,"i24":9,"i25":10,"i26":9,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":9,"i36":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../net/minecraft/block/entity/FurnaceBlockEntity.html" title="class in net.minecraft.block.entity"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../net/minecraft/block/entity/JukeboxBlockEntity.html" title="class in net.minecraft.block.entity"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/block/entity/Hopper.html" title="interface in net.minecraft.block.entity"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/block/entity/LockableContainerBlockEntity.html" title="interface in net.minecraft.block.entity"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/block/entity/HopperBlockEntity.html" target="_top">Frames</a></li>
@@ -102,7 +102,17 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../../net/minecraft/block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">net.minecraft.block.entity.BlockEntity</a></li>
 <li>
 <ul class="inheritance">
+<li><a href="../../../../net/minecraft/client/gui/AbstractParentElement.html" title="class in net.minecraft.client.gui">net.minecraft.client.gui.AbstractParentElement</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../net/minecraft/block/entity/LootableContainerBlockEntity.html" title="class in net.minecraft.block.entity">net.minecraft.block.entity.LootableContainerBlockEntity</a></li>
+<li>
+<ul class="inheritance">
 <li>net.minecraft.block.entity.HopperBlockEntity</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -113,13 +123,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>, <a href="../../../../net/minecraft/util/HopperProvider.html" title="interface in net.minecraft.util">HopperProvider</a></dd>
+<dd><a href="../../../../net/minecraft/block/entity/Hopper.html" title="interface in net.minecraft.block.entity">Hopper</a>, <a href="../../../../net/minecraft/block/entity/LockableContainerBlockEntity.html" title="interface in net.minecraft.block.entity">LockableContainerBlockEntity</a>, <a href="../../../../net/minecraft/container/ContainerWithLoot.html" title="interface in net.minecraft.container">ContainerWithLoot</a>, <a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>, <a href="../../../../net/minecraft/screen/NamedScreenHandlerFactory.html" title="interface in net.minecraft.screen">NamedScreenHandlerFactory</a>, <a href="../../../../net/minecraft/util/Nameable.html" title="interface in net.minecraft.util">Nameable</a>, <a href="../../../../net/minecraft/util/Tickable.html" title="interface in net.minecraft.util">Tickable</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">HopperBlockEntity</span>
-extends <a href="../../../../net/minecraft/block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a>
-implements <a href="../../../../net/minecraft/util/HopperProvider.html" title="interface in net.minecraft.util">HopperProvider</a></pre>
+extends <a href="../../../../net/minecraft/block/entity/LootableContainerBlockEntity.html" title="class in net.minecraft.block.entity">LootableContainerBlockEntity</a>
+implements <a href="../../../../net/minecraft/block/entity/Hopper.html" title="interface in net.minecraft.block.entity">Hopper</a>, <a href="../../../../net/minecraft/util/Tickable.html" title="interface in net.minecraft.util">Tickable</a></pre>
 </li>
 </ul>
 </div>
@@ -139,12 +149,12 @@ implements <a href="../../../../net/minecraft/util/HopperProvider.html" title="i
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#field_1452">field_1452</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/util/DefaultedList.html" title="class in net.minecraft.util">DefaultedList</a>&lt;<a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#inventory">inventory</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#field_1453">field_1453</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private long</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#lastTickTime">lastTickTime</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private int</code></td>
@@ -152,11 +162,18 @@ implements <a href="../../../../net/minecraft/util/HopperProvider.html" title="i
 </tr>
 </table>
 <ul class="blockList">
+<li class="blockList"><a name="fields.inherited.from.class.net.minecraft.block.entity.LootableContainerBlockEntity">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;net.minecraft.block.entity.<a href="../../../../net/minecraft/block/entity/LootableContainerBlockEntity.html" title="class in net.minecraft.block.entity">LootableContainerBlockEntity</a></h3>
+<code><a href="../../../../net/minecraft/block/entity/LootableContainerBlockEntity.html#field_25163">field_25163</a>, <a href="../../../../net/minecraft/block/entity/LootableContainerBlockEntity.html#lootTableId">lootTableId</a>, <a href="../../../../net/minecraft/block/entity/LootableContainerBlockEntity.html#lootTableSeed">lootTableSeed</a></code></li>
+</ul>
+<ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.net.minecraft.block.entity.BlockEntity">
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.block.entity.<a href="../../../../net/minecraft/block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></h3>
-<code><a href="../../../../net/minecraft/block/entity/BlockEntity.html#block">block</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#field_9531">field_9531</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#field_9532">field_9532</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#world">world</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#x">x</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#y">y</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#z">z</a></code></li>
+<code><a href="../../../../net/minecraft/block/entity/BlockEntity.html#field_25078">field_25078</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#pos">pos</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#removed">removed</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#world">world</a></code></li>
 </ul>
 </li>
 </ul>
@@ -191,17 +208,17 @@ implements <a href="../../../../net/minecraft/util/HopperProvider.html" title="i
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>private static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#canExtract-net.minecraft.inventory.Inventory-net.minecraft.item.ItemStack-int-int-">canExtract</a></span>(<a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inv,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#canExtract-net.minecraft.inventory.Inventory-net.minecraft.item.ItemStack-int-net.minecraft.util.math.Direction-">canExtract</a></span>(<a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inv,
           <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
           int&nbsp;slot,
-          int&nbsp;int2)</code>&nbsp;</td>
+          <a href="../../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;facing)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>private static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#canInsert-net.minecraft.inventory.Inventory-net.minecraft.item.ItemStack-int-int-">canInsert</a></span>(<a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#canInsert-net.minecraft.inventory.Inventory-net.minecraft.item.ItemStack-int-net.minecraft.util.math.Direction-">canInsert</a></span>(<a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
          <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
          int&nbsp;slot,
-         int&nbsp;int2)</code>&nbsp;</td>
+         <a href="../../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;side)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>private static boolean</code></td>
@@ -209,180 +226,185 @@ implements <a href="../../../../net/minecraft/util/HopperProvider.html" title="i
              <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;second)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#canPlayerUseInv-net.minecraft.entity.player.PlayerEntity-">canPlayerUseInv</a></span>(<a href="../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../net/minecraft/container/Container.html" title="class in net.minecraft.container">Container</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#createScreenHandler-net.minecraft.entity.player.PlayerInventory-net.minecraft.entity.player.PlayerEntity-">createScreenHandler</a></span>(<a href="../../../../net/minecraft/entity/player/PlayerInventory.html" title="class in net.minecraft.entity.player">PlayerInventory</a>&nbsp;playerInventory,
+                   <a href="../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#extract-net.minecraft.inventory.Inventory-net.minecraft.entity.ItemEntity-">extract</a></span>(<a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
-       <a href="../../../../net/minecraft/entity/ItemEntity.html" title="class in net.minecraft.entity">ItemEntity</a>&nbsp;itemEntity)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#extract-net.minecraft.block.entity.Hopper-">extract</a></span>(<a href="../../../../net/minecraft/block/entity/Hopper.html" title="interface in net.minecraft.block.entity">Hopper</a>&nbsp;hopper)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code>private static boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#extract-net.minecraft.block.entity.Hopper-net.minecraft.inventory.Inventory-int-net.minecraft.util.math.Direction-">extract</a></span>(<a href="../../../../net/minecraft/block/entity/Hopper.html" title="interface in net.minecraft.block.entity">Hopper</a>&nbsp;hopper,
+       <a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
+       int&nbsp;slot,
+       <a href="../../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;side)</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#extract-net.minecraft.inventory.Inventory-net.minecraft.inventory.Inventory-net.minecraft.entity.ItemEntity-">extract</a></span>(<a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
+       <a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory2,
+       <a href="../../../../net/minecraft/entity/ItemEntity.html" title="class in net.minecraft.entity">ItemEntity</a>&nbsp;itemEntity)</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#fromTag-net.minecraft.nbt.CompoundTag-">fromTag</a></span>(<a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#getHopperX--">getHopperX</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#getHopperY--">getHopperY</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#getHopperZ--">getHopperZ</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#getId--">getId</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>static <a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#getInputInventory-net.minecraft.block.entity.Hopper-">getInputInventory</a></span>(<a href="../../../../net/minecraft/block/entity/Hopper.html" title="interface in net.minecraft.block.entity">Hopper</a>&nbsp;hopper)</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#getInventoryAt-net.minecraft.world.World-double-double-double-">getInventoryAt</a></span>(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
               double&nbsp;x,
               double&nbsp;y,
               double&nbsp;z)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#getInvMaxStackAmount--">getInvMaxStackAmount</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#getInvSize--">getInvSize</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#getInvStack-int-">getInvStack</a></span>(int&nbsp;slot)</code>&nbsp;</td>
-</tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#getTranslationKey--">getTranslationKey</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i11" class="rowColor">
-<td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#getX--">getX</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i12" class="altColor">
-<td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#getY--">getY</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i13" class="rowColor">
-<td class="colFirst"><code>double</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#getZ--">getZ</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i14" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#hasCustomName--">hasCustomName</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i15" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#isValidInvStack-int-net.minecraft.item.ItemStack-">isValidInvStack</a></span>(int&nbsp;slot,
-               <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</code>&nbsp;</td>
-</tr>
 <tr id="i16" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#markDirty--">markDirty</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>protected <a href="../../../../net/minecraft/util/DefaultedList.html" title="class in net.minecraft.util">DefaultedList</a>&lt;<a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#getInvStackList--">getInvStackList</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i17" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#method_10524--">method_10524</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#getOutputInventory--">getOutputInventory</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i18" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#method_10525--">method_10525</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#insert--">insert</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i19" class="rowColor">
-<td class="colFirst"><code>private <a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#method_1152--">method_1152</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#insertAndExtract--">insertAndExtract</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i20" class="altColor">
-<td class="colFirst"><code>static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#method_1154-net.minecraft.util.HopperProvider-">method_1154</a></span>(<a href="../../../../net/minecraft/util/HopperProvider.html" title="interface in net.minecraft.util">HopperProvider</a>&nbsp;hopperProvider)</code>&nbsp;</td>
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#isDisabled--">isDisabled</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i21" class="rowColor">
-<td class="colFirst"><code>private static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#method_1155-net.minecraft.util.HopperProvider-net.minecraft.inventory.Inventory-int-int-">method_1155</a></span>(<a href="../../../../net/minecraft/util/HopperProvider.html" title="interface in net.minecraft.util">HopperProvider</a>&nbsp;hopperProvider,
-           <a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
-           int&nbsp;int2,
-           int&nbsp;int3)</code>&nbsp;</td>
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#isFull--">isFull</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i22" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#method_1156-java.lang.String-">method_1156</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#isInvEmpty--">isInvEmpty</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i23" class="rowColor">
-<td class="colFirst"><code>private boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#method_1157-net.minecraft.inventory.Inventory-int-">method_1157</a></span>(<a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
-           int&nbsp;int2)</code>&nbsp;</td>
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../net/minecraft/entity/ItemEntity.html" title="class in net.minecraft.entity">ItemEntity</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#method_27001-net.minecraft.world.World-double-double-double-">method_27001</a></span>(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+            double&nbsp;double2,
+            double&nbsp;double3,
+            double&nbsp;double4)</code>&nbsp;</td>
 </tr>
 <tr id="i24" class="altColor">
-<td class="colFirst"><code>static <a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#method_1163-net.minecraft.util.HopperProvider-">method_1163</a></span>(<a href="../../../../net/minecraft/util/HopperProvider.html" title="interface in net.minecraft.util">HopperProvider</a>&nbsp;hopperProvider)</code>&nbsp;</td>
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#method_27004-net.minecraft.class_2656-">method_27004</a></span>(<a href="../../../../net/minecraft/class_2656.html" title="class in net.minecraft">class_2656</a>&nbsp;class_2656)</code>&nbsp;</td>
 </tr>
 <tr id="i25" class="rowColor">
-<td class="colFirst"><code>private static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#method_1164-net.minecraft.inventory.Inventory-int-">method_1164</a></span>(<a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
-           int&nbsp;int2)</code>&nbsp;</td>
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#method_27006-net.minecraft.inventory.Inventory-net.minecraft.util.math.Direction-">method_27006</a></span>(<a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
+            <a href="../../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction)</code>&nbsp;</td>
 </tr>
 <tr id="i26" class="altColor">
-<td class="colFirst"><code>private static <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#method_1166-net.minecraft.inventory.Inventory-net.minecraft.item.ItemStack-int-int-">method_1166</a></span>(<a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
-           <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
-           int&nbsp;int2,
-           int&nbsp;int3)</code>&nbsp;</td>
+<td class="colFirst"><code>private static boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#method_27013-net.minecraft.inventory.Inventory-net.minecraft.util.math.Direction-">method_27013</a></span>(<a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
+            <a href="../../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction)</code>&nbsp;</td>
 </tr>
 <tr id="i27" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#method_1168--">method_1168</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#method_27016--">method_27016</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i28" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#method_1169--">method_1169</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#method_29611--">method_29611</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i29" class="rowColor">
 <td class="colFirst"><code>private boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#method_1171--">method_1171</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#needsCooldown--">needsCooldown</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i30" class="altColor">
-<td class="colFirst"><code>private boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#method_1172--">method_1172</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i31" class="rowColor">
-<td class="colFirst"><code>private boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#method_1173--">method_1173</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i32" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#method_8850--">method_8850</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i33" class="rowColor">
-<td class="colFirst"><code>static <a href="../../../../net/minecraft/entity/ItemEntity.html" title="class in net.minecraft.entity">ItemEntity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#method_8877-net.minecraft.world.World-double-double-double-">method_8877</a></span>(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-           double&nbsp;double2,
-           double&nbsp;double3,
-           double&nbsp;double4)</code>&nbsp;</td>
-</tr>
-<tr id="i34" class="altColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#removeInvStack-int-">removeInvStack</a></span>(int&nbsp;slot)</code>&nbsp;</td>
-</tr>
-<tr id="i35" class="rowColor">
-<td class="colFirst"><code>void</code></td>
+<td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#setCooldown-int-">setCooldown</a></span>(int&nbsp;cooldown)</code>&nbsp;</td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#setInvStack-int-net.minecraft.item.ItemStack-">setInvStack</a></span>(int&nbsp;slot,
            <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</code>&nbsp;</td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code><a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#takeInvStack-int-int-">takeInvStack</a></span>(int&nbsp;slot,
             int&nbsp;amount)</code>&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#tick--">tick</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i34" class="altColor">
+<td class="colFirst"><code><a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#toTag-net.minecraft.nbt.CompoundTag-">toTag</a></span>(<a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</code>&nbsp;</td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#transfer-net.minecraft.inventory.Inventory-net.minecraft.item.ItemStack-int-">transfer</a></span>(<a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
-        <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
-        int&nbsp;int2)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#transfer-net.minecraft.inventory.Inventory-net.minecraft.inventory.Inventory-net.minecraft.item.ItemStack-net.minecraft.util.math.Direction-">transfer</a></span>(<a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;from,
+        <a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;to,
+        <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
+        <a href="../../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;side)</code>&nbsp;</td>
+</tr>
+<tr id="i36" class="altColor">
+<td class="colFirst"><code>private static <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/HopperBlockEntity.html#transfer-net.minecraft.inventory.Inventory-net.minecraft.inventory.Inventory-net.minecraft.item.ItemStack-int-net.minecraft.util.math.Direction-">transfer</a></span>(<a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;from,
+        <a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;to,
+        <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
+        int&nbsp;slot,
+        <a href="../../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction)</code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.block.entity.LootableContainerBlockEntity">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;net.minecraft.block.entity.<a href="../../../../net/minecraft/block/entity/LootableContainerBlockEntity.html" title="class in net.minecraft.block.entity">LootableContainerBlockEntity</a></h3>
+<code><a href="../../../../net/minecraft/block/entity/LootableContainerBlockEntity.html#canPlayerUseInv-net.minecraft.entity.player.PlayerEntity-">canPlayerUseInv</a>, <a href="../../../../net/minecraft/block/entity/LootableContainerBlockEntity.html#checkLootInteraction-net.minecraft.entity.player.PlayerEntity-">checkLootInteraction</a>, <a href="../../../../net/minecraft/block/entity/LootableContainerBlockEntity.html#clear--">clear</a>, <a href="../../../../net/minecraft/block/entity/LootableContainerBlockEntity.html#deserializeLootTable-net.minecraft.nbt.CompoundTag-">deserializeLootTable</a>, <a href="../../../../net/minecraft/block/entity/LootableContainerBlockEntity.html#getInvStack-int-">getInvStack</a>, <a href="../../../../net/minecraft/block/entity/LootableContainerBlockEntity.html#getLootTable--">getLootTable</a>, <a href="../../../../net/minecraft/block/entity/LootableContainerBlockEntity.html#isValidInvStack-int-net.minecraft.item.ItemStack-">isValidInvStack</a>, <a href="../../../../net/minecraft/block/entity/LootableContainerBlockEntity.html#method_27031-java.lang.String-">method_27031</a>, <a href="../../../../net/minecraft/block/entity/LootableContainerBlockEntity.html#method_34161-int-int-">method_34161</a>, <a href="../../../../net/minecraft/block/entity/LootableContainerBlockEntity.html#method_34164-int-">method_34164</a>, <a href="../../../../net/minecraft/block/entity/LootableContainerBlockEntity.html#method_34167--">method_34167</a>, <a href="../../../../net/minecraft/block/entity/LootableContainerBlockEntity.html#method_34200--">method_34200</a>, <a href="../../../../net/minecraft/block/entity/LootableContainerBlockEntity.html#onInvClose-net.minecraft.entity.player.PlayerEntity-">onInvClose</a>, <a href="../../../../net/minecraft/block/entity/LootableContainerBlockEntity.html#onInvOpen-net.minecraft.entity.player.PlayerEntity-">onInvOpen</a>, <a href="../../../../net/minecraft/block/entity/LootableContainerBlockEntity.html#removeInvStack-int-">removeInvStack</a>, <a href="../../../../net/minecraft/block/entity/LootableContainerBlockEntity.html#serializeLootTable-net.minecraft.nbt.CompoundTag-">serializeLootTable</a>, <a href="../../../../net/minecraft/block/entity/LootableContainerBlockEntity.html#setLootTable-net.minecraft.util.Identifier-long-">setLootTable</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.client.gui.AbstractParentElement">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;net.minecraft.client.gui.<a href="../../../../net/minecraft/client/gui/AbstractParentElement.html" title="class in net.minecraft.client.gui">AbstractParentElement</a></h3>
+<code><a href="../../../../net/minecraft/client/gui/AbstractParentElement.html#getDisplayName--">getDisplayName</a>, <a href="../../../../net/minecraft/client/gui/AbstractParentElement.html#getLock--">getLock</a>, <a href="../../../../net/minecraft/client/gui/AbstractParentElement.html#isLocked--">isLocked</a>, <a href="../../../../net/minecraft/client/gui/AbstractParentElement.html#setLock-net.minecraft.inventory.ContainerLock-">setLock</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.net.minecraft.block.entity.BlockEntity">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.block.entity.<a href="../../../../net/minecraft/block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></h3>
-<code><a href="../../../../net/minecraft/block/entity/BlockEntity.html#createCrashReport-net.minecraft.util.crash.CrashReportSection-">createCrashReport</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#getServerWorld--">getServerWorld</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#getUpdatePacket--">getUpdatePacket</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#markRemoved--">markRemoved</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_8845-double-double-double-">method_8845</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_8846-net.minecraft.world.World-">method_8846</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_8849-net.minecraft.nbt.CompoundTag-">method_8849</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_8851--">method_8851</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_8852--">method_8852</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_8853--">method_8853</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_8854--">method_8854</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_8855--">method_8855</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_8856--">method_8856</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_8857--">method_8857</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#onBlockAction-int-int-">onBlockAction</a></code></li>
+<code><a href="../../../../net/minecraft/block/entity/BlockEntity.html#applyMirror-net.minecraft.util.BlockMirror-">applyMirror</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#applyRotation-net.minecraft.util.BlockRotation-">applyRotation</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#cancelRemoval--">cancelRemoval</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#getPos--">getPos</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#getSquaredDistance-double-double-double-">getSquaredDistance</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#getSquaredRenderDistance--">getSquaredRenderDistance</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#getWorld--">getWorld</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#hasWorld--">hasWorld</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#isRemoved--">isRemoved</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#markDirty--">markDirty</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#markRemoved--">markRemoved</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_26921-net.minecraft.world.World-">method_26921</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_26922-net.minecraft.world.World-net.minecraft.nbt.CompoundTag-">method_26922</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_26925-net.minecraft.util.crash.CrashReportSection-">method_26925</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_26928-java.lang.Class-">method_26928</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_26930-net.minecraft.world.World-">method_26930</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_26938--">method_26938</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_26940--">method_26940</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#onBlockAction-int-int-">onBlockAction</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#resetBlock--">resetBlock</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#setPos-net.minecraft.util.math.BlockPos-">setPos</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#shouldNotCopyTagFromItem--">shouldNotCopyTagFromItem</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#toInitialChunkDataTag--">toInitialChunkDataTag</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#toUpdatePacket--">toUpdatePacket</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -392,11 +414,25 @@ implements <a href="../../../../net/minecraft/util/HopperProvider.html" title="i
 <code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.util.HopperProvider">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.block.entity.Hopper">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;net.minecraft.util.<a href="../../../../net/minecraft/util/HopperProvider.html" title="interface in net.minecraft.util">HopperProvider</a></h3>
-<code><a href="../../../../net/minecraft/util/HopperProvider.html#getServerWorld--">getServerWorld</a></code></li>
+<h3>Methods inherited from interface&nbsp;net.minecraft.block.entity.<a href="../../../../net/minecraft/block/entity/Hopper.html" title="interface in net.minecraft.block.entity">Hopper</a></h3>
+<code><a href="../../../../net/minecraft/block/entity/Hopper.html#getWorld--">getWorld</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.inventory.Inventory">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;net.minecraft.inventory.<a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></h3>
+<code><a href="../../../../net/minecraft/inventory/Inventory.html#canPlayerUseInv-net.minecraft.entity.player.PlayerEntity-">canPlayerUseInv</a>, <a href="../../../../net/minecraft/inventory/Inventory.html#clear--">clear</a>, <a href="../../../../net/minecraft/inventory/Inventory.html#getInvStack-int-">getInvStack</a>, <a href="../../../../net/minecraft/inventory/Inventory.html#isValidInvStack-int-net.minecraft.item.ItemStack-">isValidInvStack</a>, <a href="../../../../net/minecraft/inventory/Inventory.html#markDirty--">markDirty</a>, <a href="../../../../net/minecraft/inventory/Inventory.html#method_34161-int-int-">method_34161</a>, <a href="../../../../net/minecraft/inventory/Inventory.html#method_34164-int-">method_34164</a>, <a href="../../../../net/minecraft/inventory/Inventory.html#method_34167--">method_34167</a>, <a href="../../../../net/minecraft/inventory/Inventory.html#onInvClose-net.minecraft.entity.player.PlayerEntity-">onInvClose</a>, <a href="../../../../net/minecraft/inventory/Inventory.html#onInvOpen-net.minecraft.entity.player.PlayerEntity-">onInvOpen</a>, <a href="../../../../net/minecraft/inventory/Inventory.html#removeInvStack-int-">removeInvStack</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.util.Nameable">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;net.minecraft.util.<a href="../../../../net/minecraft/util/Nameable.html" title="interface in net.minecraft.util">Nameable</a></h3>
+<code><a href="../../../../net/minecraft/util/Nameable.html#getDisplayName--">getDisplayName</a>, <a href="../../../../net/minecraft/util/Nameable.html#method_34200--">method_34200</a></code></li>
 </ul>
 </li>
 </ul>
@@ -412,31 +448,31 @@ implements <a href="../../../../net/minecraft/util/HopperProvider.html" title="i
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_1452">
+<a name="inventory">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_1452</h4>
-<pre>private&nbsp;<a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>[] field_1452</pre>
-</li>
-</ul>
-<a name="field_1453">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_1453</h4>
-<pre>private&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> field_1453</pre>
+<h4>inventory</h4>
+<pre>private&nbsp;<a href="../../../../net/minecraft/util/DefaultedList.html" title="class in net.minecraft.util">DefaultedList</a>&lt;<a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&gt; inventory</pre>
 </li>
 </ul>
 <a name="transferCooldown">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>transferCooldown</h4>
 <pre>private&nbsp;int transferCooldown</pre>
+</li>
+</ul>
+<a name="lastTickTime">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>lastTickTime</h4>
+<pre>private&nbsp;long lastTickTime</pre>
 </li>
 </ul>
 </li>
@@ -464,6 +500,15 @@ implements <a href="../../../../net/minecraft/util/HopperProvider.html" title="i
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="method_27004-net.minecraft.class_2656-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_27004</h4>
+<pre>public static&nbsp;void&nbsp;method_27004(<a href="../../../../net/minecraft/class_2656.html" title="class in net.minecraft">class_2656</a>&nbsp;class_2656)</pre>
+</li>
+</ul>
 <a name="fromTag-net.minecraft.nbt.CompoundTag-">
 <!--   -->
 </a>
@@ -473,7 +518,7 @@ implements <a href="../../../../net/minecraft/util/HopperProvider.html" title="i
 <pre>public&nbsp;void&nbsp;fromTag(<a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/block/entity/BlockEntity.html#fromTag-net.minecraft.nbt.CompoundTag-">fromTag</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/client/gui/AbstractParentElement.html#fromTag-net.minecraft.nbt.CompoundTag-">fromTag</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/client/gui/AbstractParentElement.html" title="class in net.minecraft.client.gui">AbstractParentElement</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -483,25 +528,10 @@ implements <a href="../../../../net/minecraft/util/HopperProvider.html" title="i
 <ul class="blockList">
 <li class="blockList">
 <h4>toTag</h4>
-<pre>public&nbsp;void&nbsp;toTag(<a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</pre>
+<pre>public&nbsp;<a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;toTag(<a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/block/entity/BlockEntity.html#toTag-net.minecraft.nbt.CompoundTag-">toTag</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="markDirty--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>markDirty</h4>
-<pre>public&nbsp;void&nbsp;markDirty()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/inventory/Inventory.html#markDirty--">markDirty</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/block/entity/BlockEntity.html#markDirty--">markDirty</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/client/gui/AbstractParentElement.html#toTag-net.minecraft.nbt.CompoundTag-">toTag</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/client/gui/AbstractParentElement.html" title="class in net.minecraft.client.gui">AbstractParentElement</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -518,19 +548,6 @@ implements <a href="../../../../net/minecraft/util/HopperProvider.html" title="i
 </dl>
 </li>
 </ul>
-<a name="getInvStack-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getInvStack</h4>
-<pre>public&nbsp;<a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;getInvStack(int&nbsp;slot)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/inventory/Inventory.html#getInvStack-int-">getInvStack</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code></dd>
-</dl>
-</li>
-</ul>
 <a name="takeInvStack-int-int-">
 <!--   -->
 </a>
@@ -542,19 +559,8 @@ implements <a href="../../../../net/minecraft/util/HopperProvider.html" title="i
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../net/minecraft/inventory/Inventory.html#takeInvStack-int-int-">takeInvStack</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="removeInvStack-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>removeInvStack</h4>
-<pre>public&nbsp;<a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;removeInvStack(int&nbsp;slot)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/inventory/Inventory.html#removeInvStack-int-">removeInvStack</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/block/entity/LootableContainerBlockEntity.html#takeInvStack-int-int-">takeInvStack</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/block/entity/LootableContainerBlockEntity.html" title="class in net.minecraft.block.entity">LootableContainerBlockEntity</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -569,42 +575,22 @@ implements <a href="../../../../net/minecraft/util/HopperProvider.html" title="i
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../net/minecraft/inventory/Inventory.html#setInvStack-int-net.minecraft.item.ItemStack-">setInvStack</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/block/entity/LootableContainerBlockEntity.html#setInvStack-int-net.minecraft.item.ItemStack-">setInvStack</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/block/entity/LootableContainerBlockEntity.html" title="class in net.minecraft.block.entity">LootableContainerBlockEntity</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="getTranslationKey--">
+<a name="method_29611--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getTranslationKey</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getTranslationKey()</pre>
+<h4>method_29611</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;method_29611()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/inventory/Inventory.html#getTranslationKey--">getTranslationKey</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/util/Nameable.html#method_29611--">method_29611</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/util/Nameable.html" title="interface in net.minecraft.util">Nameable</a></code></dd>
 </dl>
-</li>
-</ul>
-<a name="hasCustomName--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>hasCustomName</h4>
-<pre>public&nbsp;boolean&nbsp;hasCustomName()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/inventory/Inventory.html#hasCustomName--">hasCustomName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_1156-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_1156</h4>
-<pre>public&nbsp;void&nbsp;method_1156(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
 </li>
 </ul>
 <a name="getInvMaxStackAmount--">
@@ -620,171 +606,134 @@ implements <a href="../../../../net/minecraft/util/HopperProvider.html" title="i
 </dl>
 </li>
 </ul>
-<a name="canPlayerUseInv-net.minecraft.entity.player.PlayerEntity-">
+<a name="tick--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>canPlayerUseInv</h4>
-<pre>public&nbsp;boolean&nbsp;canPlayerUseInv(<a href="../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</pre>
+<h4>tick</h4>
+<pre>public&nbsp;void&nbsp;tick()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/inventory/Inventory.html#canPlayerUseInv-net.minecraft.entity.player.PlayerEntity-">canPlayerUseInv</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/util/Tickable.html#tick--">tick</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/util/Tickable.html" title="interface in net.minecraft.util">Tickable</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_10524--">
+<a name="insertAndExtract--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_10524</h4>
-<pre>public&nbsp;void&nbsp;method_10524()</pre>
+<h4>insertAndExtract</h4>
+<pre>private&nbsp;boolean&nbsp;insertAndExtract()</pre>
+</li>
+</ul>
+<a name="method_27016--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_27016</h4>
+<pre>private&nbsp;boolean&nbsp;method_27016()</pre>
+</li>
+</ul>
+<a name="isInvEmpty--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isInvEmpty</h4>
+<pre>public&nbsp;boolean&nbsp;isInvEmpty()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/inventory/Inventory.html#method_10524--">method_10524</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/inventory/Inventory.html#isInvEmpty--">isInvEmpty</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_10525--">
+<a name="isFull--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_10525</h4>
-<pre>public&nbsp;void&nbsp;method_10525()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/inventory/Inventory.html#method_10525--">method_10525</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code></dd>
-</dl>
+<h4>isFull</h4>
+<pre>private&nbsp;boolean&nbsp;isFull()</pre>
 </li>
 </ul>
-<a name="isValidInvStack-int-net.minecraft.item.ItemStack-">
+<a name="insert--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>isValidInvStack</h4>
-<pre>public&nbsp;boolean&nbsp;isValidInvStack(int&nbsp;slot,
-                               <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/inventory/Inventory.html#isValidInvStack-int-net.minecraft.item.ItemStack-">isValidInvStack</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a></code></dd>
-</dl>
+<h4>insert</h4>
+<pre>private&nbsp;boolean&nbsp;insert()</pre>
 </li>
 </ul>
-<a name="method_8850--">
+<a name="method_27006-net.minecraft.inventory.Inventory-net.minecraft.util.math.Direction-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_8850</h4>
-<pre>public&nbsp;void&nbsp;method_8850()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_8850--">method_8850</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></code></dd>
-</dl>
+<h4>method_27006</h4>
+<pre>private&nbsp;boolean&nbsp;method_27006(<a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
+                             <a href="../../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction)</pre>
 </li>
 </ul>
-<a name="method_1168--">
+<a name="method_27013-net.minecraft.inventory.Inventory-net.minecraft.util.math.Direction-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1168</h4>
-<pre>public&nbsp;boolean&nbsp;method_1168()</pre>
+<h4>method_27013</h4>
+<pre>private static&nbsp;boolean&nbsp;method_27013(<a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
+                                    <a href="../../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction)</pre>
 </li>
 </ul>
-<a name="method_1171--">
+<a name="extract-net.minecraft.block.entity.Hopper-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1171</h4>
-<pre>private&nbsp;boolean&nbsp;method_1171()</pre>
+<h4>extract</h4>
+<pre>public static&nbsp;boolean&nbsp;extract(<a href="../../../../net/minecraft/block/entity/Hopper.html" title="interface in net.minecraft.block.entity">Hopper</a>&nbsp;hopper)</pre>
 </li>
 </ul>
-<a name="method_1172--">
+<a name="extract-net.minecraft.block.entity.Hopper-net.minecraft.inventory.Inventory-int-net.minecraft.util.math.Direction-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1172</h4>
-<pre>private&nbsp;boolean&nbsp;method_1172()</pre>
+<h4>extract</h4>
+<pre>private static&nbsp;boolean&nbsp;extract(<a href="../../../../net/minecraft/block/entity/Hopper.html" title="interface in net.minecraft.block.entity">Hopper</a>&nbsp;hopper,
+                               <a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
+                               int&nbsp;slot,
+                               <a href="../../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;side)</pre>
 </li>
 </ul>
-<a name="method_1173--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_1173</h4>
-<pre>private&nbsp;boolean&nbsp;method_1173()</pre>
-</li>
-</ul>
-<a name="method_1157-net.minecraft.inventory.Inventory-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_1157</h4>
-<pre>private&nbsp;boolean&nbsp;method_1157(<a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
-                            int&nbsp;int2)</pre>
-</li>
-</ul>
-<a name="method_1164-net.minecraft.inventory.Inventory-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_1164</h4>
-<pre>private static&nbsp;boolean&nbsp;method_1164(<a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
-                                   int&nbsp;int2)</pre>
-</li>
-</ul>
-<a name="method_1154-net.minecraft.util.HopperProvider-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_1154</h4>
-<pre>public static&nbsp;boolean&nbsp;method_1154(<a href="../../../../net/minecraft/util/HopperProvider.html" title="interface in net.minecraft.util">HopperProvider</a>&nbsp;hopperProvider)</pre>
-</li>
-</ul>
-<a name="method_1155-net.minecraft.util.HopperProvider-net.minecraft.inventory.Inventory-int-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_1155</h4>
-<pre>private static&nbsp;boolean&nbsp;method_1155(<a href="../../../../net/minecraft/util/HopperProvider.html" title="interface in net.minecraft.util">HopperProvider</a>&nbsp;hopperProvider,
-                                   <a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
-                                   int&nbsp;int2,
-                                   int&nbsp;int3)</pre>
-</li>
-</ul>
-<a name="extract-net.minecraft.inventory.Inventory-net.minecraft.entity.ItemEntity-">
+<a name="extract-net.minecraft.inventory.Inventory-net.minecraft.inventory.Inventory-net.minecraft.entity.ItemEntity-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>extract</h4>
 <pre>public static&nbsp;boolean&nbsp;extract(<a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
+                              <a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory2,
                               <a href="../../../../net/minecraft/entity/ItemEntity.html" title="class in net.minecraft.entity">ItemEntity</a>&nbsp;itemEntity)</pre>
 </li>
 </ul>
-<a name="transfer-net.minecraft.inventory.Inventory-net.minecraft.item.ItemStack-int-">
+<a name="transfer-net.minecraft.inventory.Inventory-net.minecraft.inventory.Inventory-net.minecraft.item.ItemStack-net.minecraft.util.math.Direction-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>transfer</h4>
-<pre>public static&nbsp;<a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;transfer(<a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
-                                 <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
-                                 int&nbsp;int2)</pre>
+<pre>public static&nbsp;<a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;transfer(<a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;from,
+                                 <a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;to,
+                                 <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
+                                 <a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+                                 <a href="../../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;side)</pre>
 </li>
 </ul>
-<a name="canInsert-net.minecraft.inventory.Inventory-net.minecraft.item.ItemStack-int-int-">
+<a name="canInsert-net.minecraft.inventory.Inventory-net.minecraft.item.ItemStack-int-net.minecraft.util.math.Direction-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -793,10 +742,10 @@ implements <a href="../../../../net/minecraft/util/HopperProvider.html" title="i
 <pre>private static&nbsp;boolean&nbsp;canInsert(<a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
                                  <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
                                  int&nbsp;slot,
-                                 int&nbsp;int2)</pre>
+                                 <a href="../../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;side)</pre>
 </li>
 </ul>
-<a name="canExtract-net.minecraft.inventory.Inventory-net.minecraft.item.ItemStack-int-int-">
+<a name="canExtract-net.minecraft.inventory.Inventory-net.minecraft.item.ItemStack-int-net.minecraft.util.math.Direction-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -805,49 +754,50 @@ implements <a href="../../../../net/minecraft/util/HopperProvider.html" title="i
 <pre>private static&nbsp;boolean&nbsp;canExtract(<a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inv,
                                   <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
                                   int&nbsp;slot,
-                                  int&nbsp;int2)</pre>
+                                  <a href="../../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;facing)</pre>
 </li>
 </ul>
-<a name="method_1166-net.minecraft.inventory.Inventory-net.minecraft.item.ItemStack-int-int-">
+<a name="transfer-net.minecraft.inventory.Inventory-net.minecraft.inventory.Inventory-net.minecraft.item.ItemStack-int-net.minecraft.util.math.Direction-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1166</h4>
-<pre>private static&nbsp;<a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;method_1166(<a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;inventory,
-                                     <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;itemStack,
-                                     int&nbsp;int2,
-                                     int&nbsp;int3)</pre>
+<h4>transfer</h4>
+<pre>private static&nbsp;<a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;transfer(<a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;from,
+                                  <a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;to,
+                                  <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack,
+                                  int&nbsp;slot,
+                                  <a href="../../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction)</pre>
 </li>
 </ul>
-<a name="method_1152--">
+<a name="getOutputInventory--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1152</h4>
-<pre>private&nbsp;<a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;method_1152()</pre>
+<h4>getOutputInventory</h4>
+<pre>private&nbsp;<a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;getOutputInventory()</pre>
 </li>
 </ul>
-<a name="method_1163-net.minecraft.util.HopperProvider-">
+<a name="getInputInventory-net.minecraft.block.entity.Hopper-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_1163</h4>
-<pre>public static&nbsp;<a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;method_1163(<a href="../../../../net/minecraft/util/HopperProvider.html" title="interface in net.minecraft.util">HopperProvider</a>&nbsp;hopperProvider)</pre>
+<h4>getInputInventory</h4>
+<pre>public static&nbsp;<a href="../../../../net/minecraft/inventory/Inventory.html" title="interface in net.minecraft.inventory">Inventory</a>&nbsp;getInputInventory(<a href="../../../../net/minecraft/block/entity/Hopper.html" title="interface in net.minecraft.block.entity">Hopper</a>&nbsp;hopper)</pre>
 </li>
 </ul>
-<a name="method_8877-net.minecraft.world.World-double-double-double-">
+<a name="method_27001-net.minecraft.world.World-double-double-double-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_8877</h4>
-<pre>public static&nbsp;<a href="../../../../net/minecraft/entity/ItemEntity.html" title="class in net.minecraft.entity">ItemEntity</a>&nbsp;method_8877(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-                                     double&nbsp;double2,
-                                     double&nbsp;double3,
-                                     double&nbsp;double4)</pre>
+<h4>method_27001</h4>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../net/minecraft/entity/ItemEntity.html" title="class in net.minecraft.entity">ItemEntity</a>&gt;&nbsp;method_27001(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+                                            double&nbsp;double2,
+                                            double&nbsp;double3,
+                                            double&nbsp;double4)</pre>
 </li>
 </ul>
 <a name="getInventoryAt-net.minecraft.world.World-double-double-double-">
@@ -872,42 +822,42 @@ implements <a href="../../../../net/minecraft/util/HopperProvider.html" title="i
                                      <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;second)</pre>
 </li>
 </ul>
-<a name="getX--">
+<a name="getHopperX--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getX</h4>
-<pre>public&nbsp;double&nbsp;getX()</pre>
+<h4>getHopperX</h4>
+<pre>public&nbsp;double&nbsp;getHopperX()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/util/HopperProvider.html#getX--">getX</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/util/HopperProvider.html" title="interface in net.minecraft.util">HopperProvider</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/block/entity/Hopper.html#getHopperX--">getHopperX</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/block/entity/Hopper.html" title="interface in net.minecraft.block.entity">Hopper</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="getY--">
+<a name="getHopperY--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getY</h4>
-<pre>public&nbsp;double&nbsp;getY()</pre>
+<h4>getHopperY</h4>
+<pre>public&nbsp;double&nbsp;getHopperY()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/util/HopperProvider.html#getY--">getY</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/util/HopperProvider.html" title="interface in net.minecraft.util">HopperProvider</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/block/entity/Hopper.html#getHopperY--">getHopperY</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/block/entity/Hopper.html" title="interface in net.minecraft.block.entity">Hopper</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="getZ--">
+<a name="getHopperZ--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getZ</h4>
-<pre>public&nbsp;double&nbsp;getZ()</pre>
+<h4>getHopperZ</h4>
+<pre>public&nbsp;double&nbsp;getHopperZ()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/util/HopperProvider.html#getZ--">getZ</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/util/HopperProvider.html" title="interface in net.minecraft.util">HopperProvider</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/block/entity/Hopper.html#getHopperZ--">getHopperZ</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/block/entity/Hopper.html" title="interface in net.minecraft.block.entity">Hopper</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -917,16 +867,65 @@ implements <a href="../../../../net/minecraft/util/HopperProvider.html" title="i
 <ul class="blockList">
 <li class="blockList">
 <h4>setCooldown</h4>
-<pre>public&nbsp;void&nbsp;setCooldown(int&nbsp;cooldown)</pre>
+<pre>private&nbsp;void&nbsp;setCooldown(int&nbsp;cooldown)</pre>
 </li>
 </ul>
-<a name="method_1169--">
+<a name="needsCooldown--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>needsCooldown</h4>
+<pre>private&nbsp;boolean&nbsp;needsCooldown()</pre>
+</li>
+</ul>
+<a name="isDisabled--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isDisabled</h4>
+<pre>private&nbsp;boolean&nbsp;isDisabled()</pre>
+</li>
+</ul>
+<a name="getId--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getId</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getId()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/screen/NamedScreenHandlerFactory.html#getId--">getId</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/screen/NamedScreenHandlerFactory.html" title="interface in net.minecraft.screen">NamedScreenHandlerFactory</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="createScreenHandler-net.minecraft.entity.player.PlayerInventory-net.minecraft.entity.player.PlayerEntity-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createScreenHandler</h4>
+<pre>public&nbsp;<a href="../../../../net/minecraft/container/Container.html" title="class in net.minecraft.container">Container</a>&nbsp;createScreenHandler(<a href="../../../../net/minecraft/entity/player/PlayerInventory.html" title="class in net.minecraft.entity.player">PlayerInventory</a>&nbsp;playerInventory,
+                                     <a href="../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/screen/NamedScreenHandlerFactory.html#createScreenHandler-net.minecraft.entity.player.PlayerInventory-net.minecraft.entity.player.PlayerEntity-">createScreenHandler</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/screen/NamedScreenHandlerFactory.html" title="interface in net.minecraft.screen">NamedScreenHandlerFactory</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getInvStackList--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_1169</h4>
-<pre>public&nbsp;boolean&nbsp;method_1169()</pre>
+<h4>getInvStackList</h4>
+<pre>protected&nbsp;<a href="../../../../net/minecraft/util/DefaultedList.html" title="class in net.minecraft.util">DefaultedList</a>&lt;<a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&gt;&nbsp;getInvStackList()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../net/minecraft/block/entity/LootableContainerBlockEntity.html#getInvStackList--">getInvStackList</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/block/entity/LootableContainerBlockEntity.html" title="class in net.minecraft.block.entity">LootableContainerBlockEntity</a></code></dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -956,8 +955,8 @@ implements <a href="../../../../net/minecraft/util/HopperProvider.html" title="i
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../net/minecraft/block/entity/FurnaceBlockEntity.html" title="class in net.minecraft.block.entity"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../net/minecraft/block/entity/JukeboxBlockEntity.html" title="class in net.minecraft.block.entity"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/block/entity/Hopper.html" title="interface in net.minecraft.block.entity"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/block/entity/LockableContainerBlockEntity.html" title="interface in net.minecraft.block.entity"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/block/entity/HopperBlockEntity.html" target="_top">Frames</a></li>

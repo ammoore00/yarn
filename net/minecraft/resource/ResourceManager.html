@@ -104,7 +104,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><a href="../../../net/minecraft/client/resource/FallbackResourceManager.html" title="class in net.minecraft.client.resource">FallbackResourceManager</a>, <a href="../../../net/minecraft/resource/ReloadableResourceManagerInstance.html" title="class in net.minecraft.resource">ReloadableResourceManagerInstance</a></dd>
+<dd><a href="../../../net/minecraft/resource/NamespaceResourceManager.html" title="class in net.minecraft.resource">NamespaceResourceManager</a>, <a href="../../../net/minecraft/resource/ReloadableResourceManagerImpl.html" title="class in net.minecraft.resource">ReloadableResourceManagerImpl</a></dd>
 </dl>
 <hr>
 <br>
@@ -129,16 +129,16 @@ public interface <span class="typeNameLabel">ResourceManager</span></pre>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a></code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ResourceManager.html#getAllNamespaces--">getAllNamespaces</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/resource/Resource.html" title="interface in net.minecraft.resource">Resource</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ResourceManager.html#getResource-net.minecraft.util.Identifier-">getResource</a></span>(<a href="../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;id)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../net/minecraft/resource/Resource.html" title="interface in net.minecraft.resource">Resource</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ResourceManager.html#getAllResources-net.minecraft.util.Identifier-">getAllResources</a></span>(<a href="../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;id)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ResourceManager.html#method_4365-net.minecraft.util.Identifier-">method_4365</a></span>(<a href="../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../net/minecraft/resource/Resource.html" title="interface in net.minecraft.resource">Resource</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ResourceManager.html#getResource-net.minecraft.util.Identifier-">getResource</a></span>(<a href="../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;id)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -161,7 +161,7 @@ public interface <span class="typeNameLabel">ResourceManager</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getAllNamespaces</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&nbsp;getAllNamespaces()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getAllNamespaces()</pre>
 </li>
 </ul>
 <a name="getResource-net.minecraft.util.Identifier-">
@@ -170,16 +170,21 @@ public interface <span class="typeNameLabel">ResourceManager</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getResource</h4>
-<pre><a href="../../../net/minecraft/resource/Resource.html" title="interface in net.minecraft.resource">Resource</a>&nbsp;getResource(<a href="../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;id)</pre>
+<pre><a href="../../../net/minecraft/resource/Resource.html" title="interface in net.minecraft.resource">Resource</a>&nbsp;getResource(<a href="../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;id)
+              throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_4365-net.minecraft.util.Identifier-">
+<a name="getAllResources-net.minecraft.util.Identifier-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_4365</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&nbsp;method_4365(<a href="../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier)</pre>
+<h4>getAllResources</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../net/minecraft/resource/Resource.html" title="interface in net.minecraft.resource">Resource</a>&gt;&nbsp;getAllResources(<a href="../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;id)</pre>
 </li>
 </ul>
 </li>
