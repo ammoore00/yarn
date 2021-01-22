@@ -160,11 +160,11 @@ implements <a href="../../../net/minecraft/block/Fertilizable.html" title="inter
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="../../../net/minecraft/state/property/IntProperty.html" title="class in net.minecraft.state.property">IntProperty</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/block/StemBlock.html#AGE_7">AGE_7</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/block/StemBlock.html#AGE">AGE</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected static <a href="../../../net/minecraft/util/math/Box.html" title="class in net.minecraft.util.math">Box</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/block/StemBlock.html#BOUNDING_BOXES">BOUNDING_BOXES</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/block/StemBlock.html#AGE_TO_BOX">AGE_TO_BOX</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="../../../net/minecraft/state/property/DirectionProperty.html" title="class in net.minecraft.state.property">DirectionProperty</a></code></td>
@@ -180,7 +180,7 @@ implements <a href="../../../net/minecraft/block/Fertilizable.html" title="inter
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.block.<a href="../../../net/minecraft/block/PlantBlock.html" title="class in net.minecraft.block">PlantBlock</a></h3>
-<code><a href="../../../net/minecraft/block/PlantBlock.html#field_24232">field_24232</a></code></li>
+<code><a href="../../../net/minecraft/block/PlantBlock.html#BOX">BOX</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.net.minecraft.block.Block">
@@ -303,8 +303,8 @@ implements <a href="../../../net/minecraft/block/Fertilizable.html" title="inter
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/block/StemBlock.html#scheduledTick-net.minecraft.world.World-net.minecraft.util.math.BlockPos-net.minecraft.block.BlockState-java.util.Random-">scheduledTick</a></span>(<a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world2,
-             <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;world,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/block/StemBlock.html#scheduledTick-net.minecraft.world.World-net.minecraft.util.math.BlockPos-net.minecraft.block.BlockState-java.util.Random-">scheduledTick</a></span>(<a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+             <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
              <a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
              <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util">Random</a>&nbsp;random)</code>&nbsp;</td>
 </tr>
@@ -344,13 +344,13 @@ implements <a href="../../../net/minecraft/block/Fertilizable.html" title="inter
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="AGE_7">
+<a name="AGE">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>AGE_7</h4>
-<pre>public static final&nbsp;<a href="../../../net/minecraft/state/property/IntProperty.html" title="class in net.minecraft.state.property">IntProperty</a> AGE_7</pre>
+<h4>AGE</h4>
+<pre>public static final&nbsp;<a href="../../../net/minecraft/state/property/IntProperty.html" title="class in net.minecraft.state.property">IntProperty</a> AGE</pre>
 </li>
 </ul>
 <a name="FACING">
@@ -362,13 +362,13 @@ implements <a href="../../../net/minecraft/block/Fertilizable.html" title="inter
 <pre>public static final&nbsp;<a href="../../../net/minecraft/state/property/DirectionProperty.html" title="class in net.minecraft.state.property">DirectionProperty</a> FACING</pre>
 </li>
 </ul>
-<a name="BOUNDING_BOXES">
+<a name="AGE_TO_BOX">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>BOUNDING_BOXES</h4>
-<pre>protected static final&nbsp;<a href="../../../net/minecraft/util/math/Box.html" title="class in net.minecraft.util.math">Box</a>[] BOUNDING_BOXES</pre>
+<h4>AGE_TO_BOX</h4>
+<pre>protected static final&nbsp;<a href="../../../net/minecraft/util/math/Box.html" title="class in net.minecraft.util.math">Box</a>[] AGE_TO_BOX</pre>
 </li>
 </ul>
 <a name="field_24854">
@@ -454,8 +454,8 @@ implements <a href="../../../net/minecraft/block/Fertilizable.html" title="inter
 <ul class="blockList">
 <li class="blockList">
 <h4>scheduledTick</h4>
-<pre>public&nbsp;void&nbsp;scheduledTick(<a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world2,
-                          <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;world,
+<pre>public&nbsp;void&nbsp;scheduledTick(<a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+                          <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
                           <a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
                           <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util">Random</a>&nbsp;random)</pre>
 <dl>
