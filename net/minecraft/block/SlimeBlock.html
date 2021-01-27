@@ -102,7 +102,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../net/minecraft/block/Block.html" title="class in net.minecraft.block">net.minecraft.block.Block</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../net/minecraft/class_5190.html" title="class in net.minecraft">net.minecraft.class_5190</a></li>
+<li><a href="../../../net/minecraft/block/TranslucentBlock.html" title="class in net.minecraft.block">net.minecraft.block.TranslucentBlock</a></li>
 <li>
 <ul class="inheritance">
 <li>net.minecraft.block.SlimeBlock</li>
@@ -119,7 +119,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">SlimeBlock</span>
-extends <a href="../../../net/minecraft/class_5190.html" title="class in net.minecraft">class_5190</a></pre>
+extends <a href="../../../net/minecraft/block/TranslucentBlock.html" title="class in net.minecraft.block">TranslucentBlock</a></pre>
 </li>
 </ul>
 </div>
@@ -197,23 +197,23 @@ extends <a href="../../../net/minecraft/class_5190.html" title="class in net.min
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/block/SlimeBlock.html#onLandedUpon-net.minecraft.world.World-net.minecraft.util.math.BlockPos-net.minecraft.entity.Entity-float-">onLandedUpon</a></span>(<a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-            <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
+            <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
             <a href="../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
-            float&nbsp;float2)</code>&nbsp;</td>
+            float&nbsp;distance)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/block/SlimeBlock.html#onSteppedOn-net.minecraft.world.World-net.minecraft.util.math.BlockPos-net.minecraft.entity.Entity-">onSteppedOn</a></span>(<a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-           <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
+           <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
            <a href="../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.class_5190">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.block.TranslucentBlock">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;net.minecraft.<a href="../../../net/minecraft/class_5190.html" title="class in net.minecraft">class_5190</a></h3>
-<code><a href="../../../net/minecraft/class_5190.html#isOpaqueFullCube-net.minecraft.block.BlockState-">isOpaqueFullCube</a>, <a href="../../../net/minecraft/class_5190.html#shouldDrawSide-net.minecraft.block.BlockState-net.minecraft.world.BlockView-net.minecraft.util.math.BlockPos-net.minecraft.util.math.Direction-">shouldDrawSide</a></code></li>
+<h3>Methods inherited from class&nbsp;net.minecraft.block.<a href="../../../net/minecraft/block/TranslucentBlock.html" title="class in net.minecraft.block">TranslucentBlock</a></h3>
+<code><a href="../../../net/minecraft/block/TranslucentBlock.html#isOpaqueFullCube-net.minecraft.block.BlockState-">isOpaqueFullCube</a>, <a href="../../../net/minecraft/block/TranslucentBlock.html#shouldDrawSide-net.minecraft.block.BlockState-net.minecraft.world.BlockView-net.minecraft.util.math.BlockPos-net.minecraft.util.math.Direction-">shouldDrawSide</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.net.minecraft.block.Block">
@@ -281,9 +281,9 @@ public&nbsp;<a href="../../../net/minecraft/client/render/RenderLayer.html" titl
 <li class="blockList">
 <h4>onLandedUpon</h4>
 <pre>public&nbsp;void&nbsp;onLandedUpon(<a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-                         <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
+                         <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
                          <a href="../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
-                         float&nbsp;float2)</pre>
+                         float&nbsp;distance)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../net/minecraft/block/Block.html#onLandedUpon-net.minecraft.world.World-net.minecraft.util.math.BlockPos-net.minecraft.entity.Entity-float-">onLandedUpon</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/block/Block.html" title="class in net.minecraft.block">Block</a></code></dd>
@@ -311,7 +311,7 @@ public&nbsp;<a href="../../../net/minecraft/client/render/RenderLayer.html" titl
 <li class="blockList">
 <h4>onSteppedOn</h4>
 <pre>public&nbsp;void&nbsp;onSteppedOn(<a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-                        <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
+                        <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
                         <a href="../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>

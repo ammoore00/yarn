@@ -156,16 +156,16 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#blockEntities">blockEntities</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>private boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#dirty">dirty</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../../../../net/minecraft/world/chunk/ChunkSection.html" title="class in net.minecraft.world.chunk">ChunkSection</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#EMPTY_SECTION">EMPTY_SECTION</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private <a href="../../../../net/minecraft/util/TypeFilterableList.html" title="class in net.minecraft.util">TypeFilterableList</a>&lt;<a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&gt;[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#entitySections">entitySections</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#field_25367">field_25367</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private byte[]</code></td>
@@ -200,40 +200,40 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#field_25381">field_25381</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#field_25382">field_25382</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>private long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#field_25384">field_25384</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#field_25385">field_25385</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#field_25386">field_25386</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#field_25387">field_25387</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentLinkedQueue.html?is-external=true" title="class or interface in java.util.concurrent">ConcurrentLinkedQueue</a>&lt;<a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#field_25388">field_25388</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#loadedToWorld">loadedToWorld</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#LOGGER">LOGGER</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>private <a href="../../../../net/minecraft/world/chunk/ChunkSection.html" title="class in net.minecraft.world.chunk">ChunkSection</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#sections">sections</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#unloadScheduled">unloadScheduled</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private boolean</code></td>
@@ -340,121 +340,121 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#markDirty--">markDirty</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#loadToWorld--">loadToWorld</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#markDirty--">markDirty</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27359--">method_27359</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27360-int-int-">method_27360</a></span>(int&nbsp;int2,
             int&nbsp;int3)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27362-int-int-int-int-">method_27362</a></span>(int&nbsp;int2,
             int&nbsp;int3,
             int&nbsp;int4,
             int&nbsp;int5)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util">Random</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27363-long-">method_27363</a></span>(long&nbsp;long2)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27364-net.minecraft.world.LightType-net.minecraft.util.math.BlockPos-">method_27364</a></span>(<a href="../../../../net/minecraft/world/LightType.html" title="enum in net.minecraft.world">LightType</a>&nbsp;lightType,
             <a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27365-net.minecraft.world.LightType-net.minecraft.util.math.BlockPos-int-">method_27365</a></span>(<a href="../../../../net/minecraft/world/LightType.html" title="enum in net.minecraft.world">LightType</a>&nbsp;lightType,
             <a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
             int&nbsp;int2)</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27367-net.minecraft.world.chunk.ChunkGenerator-">method_27367</a></span>(<a href="../../../../net/minecraft/world/chunk/ChunkGenerator.html" title="interface in net.minecraft.world.chunk">ChunkGenerator</a>&nbsp;chunkGenerator)</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27368-net.minecraft.world.chunk.ChunkCache-net.minecraft.world.chunk.ChunkGenerator-">method_27368</a></span>(<a href="../../../../net/minecraft/world/chunk/ChunkCache.html" title="interface in net.minecraft.world.chunk">ChunkCache</a>&nbsp;chunkCache,
             <a href="../../../../net/minecraft/world/chunk/ChunkGenerator.html" title="interface in net.minecraft.world.chunk">ChunkGenerator</a>&nbsp;chunkGenerator)</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27370-net.minecraft.util.math.BlockPos-int-">method_27370</a></span>(<a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
             int&nbsp;int2)</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="../../../../net/minecraft/world/biome/Biome.html" title="class in net.minecraft.world.biome">Biome</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27371-net.minecraft.util.math.BlockPos-net.minecraft.world.biome.source.BiomeSource-">method_27371</a></span>(<a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
             <a href="../../../../net/minecraft/world/biome/source/BiomeSource.html" title="class in net.minecraft.world.biome.source">BiomeSource</a>&nbsp;biomeSource)</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27373-net.minecraft.util.math.BlockPos-net.minecraft.block.BlockState-">method_27373</a></span>(<a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
             <a href="../../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState)</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27375-net.minecraft.util.math.Direction-">method_27375</a></span>(<a href="../../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction)</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27376-net.minecraft.util.PacketByteBuf-int-boolean-">method_27376</a></span>(<a href="../../../../net/minecraft/util/PacketByteBuf.html" title="class in net.minecraft.util">PacketByteBuf</a>&nbsp;packetByteBuf,
             int&nbsp;int2,
             boolean&nbsp;bool)</code>&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>&lt;T extends <a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&gt;<br>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27377-java.lang.Class-net.minecraft.util.math.Box-java.util.List-com.google.common.base.Predicate-">method_27377</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;? extends T&gt;&nbsp;class2,
             <a href="../../../../net/minecraft/util/math/Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;box,
             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;T&gt;&nbsp;list,
             <a href="https://guava.dev/releases/21.0/api/docs/com/google/common/base/Predicate.html?is-external=true" title="class or interface in com.google.common.base">Predicate</a>&lt;? super T&gt;&nbsp;predicate)</code>&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27380-net.minecraft.entity.Entity-net.minecraft.util.math.Box-java.util.List-com.google.common.base.Predicate-">method_27380</a></span>(<a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
             <a href="../../../../net/minecraft/util/math/Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;box,
             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&gt;&nbsp;list,
             <a href="https://guava.dev/releases/21.0/api/docs/com/google/common/base/Predicate.html?is-external=true" title="class or interface in com.google.common.base">Predicate</a>&lt;? super <a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&gt;&nbsp;predicate)</code>&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27381-boolean-">method_27381</a></span>(boolean&nbsp;bool)</code>&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27382-byte:A-">method_27382</a></span>(byte[]&nbsp;byte2)</code>&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27383-int:A-">method_27383</a></span>(int[]&nbsp;int2)</code>&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27384-net.minecraft.world.chunk.ChunkSection:A-">method_27384</a></span>(<a href="../../../../net/minecraft/world/chunk/ChunkSection.html" title="class in net.minecraft.world.chunk">ChunkSection</a>[]&nbsp;chunkSection)</code>&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27385--">method_27385</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27386-int-int-">method_27386</a></span>(int&nbsp;int2,
             int&nbsp;int3)</code>&nbsp;</td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27387-int-int-int-">method_27387</a></span>(int&nbsp;int2,
             int&nbsp;int3,
             int&nbsp;int4)</code>&nbsp;</td>
-</tr>
-<tr id="i34" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27388-long-">method_27388</a></span>(long&nbsp;long2)</code>&nbsp;</td>
 </tr>
 <tr id="i35" class="rowColor">
 <td class="colFirst"><code>int</code></td>
@@ -465,161 +465,161 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27391-boolean-">method_27391</a></span>(boolean&nbsp;bool)</code>&nbsp;</td>
 </tr>
 <tr id="i37" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27392--">method_27392</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i38" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27393-int-int-">method_27393</a></span>(int&nbsp;int2,
             int&nbsp;int3)</code>&nbsp;</td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27394-int-int-int-">method_27394</a></span>(int&nbsp;int2,
             int&nbsp;int3,
             int&nbsp;int4)</code>&nbsp;</td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27395-long-">method_27395</a></span>(long&nbsp;long2)</code>&nbsp;</td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27396-net.minecraft.util.math.BlockPos-">method_27396</a></span>(<a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</code>&nbsp;</td>
 </tr>
-<tr id="i42" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27398--">method_27398</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i43" class="rowColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27399-int-int-">method_27399</a></span>(int&nbsp;int2,
             int&nbsp;int3)</code>&nbsp;</td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>private int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27400-int-int-int-">method_27400</a></span>(int&nbsp;x,
             int&nbsp;y,
             int&nbsp;z)</code>&nbsp;</td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27402-boolean-">method_27402</a></span>(boolean&nbsp;bool)</code>&nbsp;</td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>private boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27404-int-int-">method_27404</a></span>(int&nbsp;int2,
             int&nbsp;int3)</code>&nbsp;</td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27405-net.minecraft.util.math.BlockPos-">method_27405</a></span>(<a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</code>&nbsp;</td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27406-boolean-">method_27406</a></span>(boolean&nbsp;bool)</code>&nbsp;</td>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code><a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27408-net.minecraft.util.math.BlockPos-">method_27408</a></span>(<a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</code>&nbsp;</td>
 </tr>
-<tr id="i50" class="altColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27409-boolean-">method_27409</a></span>(boolean&nbsp;bool)</code>&nbsp;</td>
 </tr>
-<tr id="i51" class="rowColor">
+<tr id="i49" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27410--">method_27410</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i52" class="altColor">
+<tr id="i50" class="altColor">
 <td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27414-boolean-">method_27414</a></span>(boolean&nbsp;bool)</code>&nbsp;</td>
 </tr>
-<tr id="i53" class="rowColor">
+<tr id="i51" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27415--">method_27415</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i54" class="altColor">
+<tr id="i52" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27416--">method_27416</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i55" class="rowColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/util/math/ColumnPos.html" title="class in net.minecraft.util.math">ColumnPos</a></code></td>
+<tr id="i53" class="rowColor">
+<td class="colFirst"><code><a href="../../../../net/minecraft/util/math/ChunkPos.html" title="class in net.minecraft.util.math">ChunkPos</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27417--">method_27417</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i56" class="altColor">
+<tr id="i54" class="altColor">
 <td class="colFirst"><code>byte[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27418--">method_27418</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i57" class="rowColor">
+<tr id="i55" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27419--">method_27419</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i58" class="altColor">
+<tr id="i56" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27420--">method_27420</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i59" class="rowColor">
+<tr id="i57" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27421--">method_27421</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i60" class="altColor">
+<tr id="i58" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27422--">method_27422</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i61" class="rowColor">
+<tr id="i59" class="rowColor">
 <td class="colFirst"><code>int[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27424--">method_27424</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i62" class="altColor">
+<tr id="i60" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27427--">method_27427</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i63" class="rowColor">
+<tr id="i61" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27428--">method_27428</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i64" class="altColor">
+<tr id="i62" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27429--">method_27429</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i65" class="rowColor">
+<tr id="i63" class="rowColor">
 <td class="colFirst"><code>long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27430--">method_27430</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i66" class="altColor">
+<tr id="i64" class="altColor">
 <td class="colFirst"><code>private <a href="../../../../net/minecraft/world/chunk/ChunkSection.html" title="class in net.minecraft.world.chunk">ChunkSection</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27431--">method_27431</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i67" class="rowColor">
+<tr id="i65" class="rowColor">
 <td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#method_27432--">method_27432</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i68" class="altColor">
+<tr id="i66" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#remove-net.minecraft.entity.Entity-">remove</a></span>(<a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</code>&nbsp;</td>
 </tr>
-<tr id="i69" class="rowColor">
+<tr id="i67" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#remove-net.minecraft.entity.Entity-int-">remove</a></span>(<a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
       int&nbsp;int2)</code>&nbsp;</td>
 </tr>
-<tr id="i70" class="altColor">
+<tr id="i68" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#removeBlockEntity-net.minecraft.util.math.BlockPos-">removeBlockEntity</a></span>(<a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</code>&nbsp;</td>
 </tr>
-<tr id="i71" class="rowColor">
+<tr id="i69" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#setBlockEntity-net.minecraft.util.math.BlockPos-net.minecraft.block.entity.BlockEntity-">setBlockEntity</a></span>(<a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
               <a href="../../../../net/minecraft/block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a>&nbsp;blockEntity)</code>&nbsp;</td>
 </tr>
-<tr id="i72" class="altColor">
+<tr id="i70" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#setLastSaveTime-long-">setLastSaveTime</a></span>(long&nbsp;long2)</code>&nbsp;</td>
+</tr>
+<tr id="i71" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#setLoadedToWorld-boolean-">setLoadedToWorld</a></span>(boolean&nbsp;bool)</code>&nbsp;</td>
 </tr>
-<tr id="i73" class="rowColor">
+<tr id="i72" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#setUnsaved-boolean-">setUnsaved</a></span>(boolean&nbsp;unsaved)</code>&nbsp;</td>
+</tr>
+<tr id="i73" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/Chunk.html#unloadFromWorld--">unloadFromWorld</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -796,13 +796,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>private&nbsp;boolean field_25381</pre>
 </li>
 </ul>
-<a name="field_25382">
+<a name="dirty">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_25382</h4>
-<pre>private&nbsp;boolean field_25382</pre>
+<h4>dirty</h4>
+<pre>private&nbsp;boolean dirty</pre>
 </li>
 </ul>
 <a name="unsaved">
@@ -859,13 +859,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentLinkedQueue.html?is-external=true" title="class or interface in java.util.concurrent">ConcurrentLinkedQueue</a>&lt;<a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&gt; field_25388</pre>
 </li>
 </ul>
-<a name="field_25367">
+<a name="unloadScheduled">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_25367</h4>
-<pre>public&nbsp;boolean field_25367</pre>
+<h4>unloadScheduled</h4>
+<pre>public&nbsp;boolean unloadScheduled</pre>
 </li>
 </ul>
 </li>
@@ -1204,22 +1204,22 @@ public&nbsp;<a href="../../../../net/minecraft/block/entity/BlockEntity.html" ti
 <pre>public&nbsp;void&nbsp;removeBlockEntity(<a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</pre>
 </li>
 </ul>
-<a name="method_27392--">
+<a name="loadToWorld--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_27392</h4>
-<pre>public&nbsp;void&nbsp;method_27392()</pre>
+<h4>loadToWorld</h4>
+<pre>public&nbsp;void&nbsp;loadToWorld()</pre>
 </li>
 </ul>
-<a name="method_27398--">
+<a name="unloadFromWorld--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_27398</h4>
-<pre>public&nbsp;void&nbsp;method_27398()</pre>
+<h4>unloadFromWorld</h4>
+<pre>public&nbsp;void&nbsp;unloadFromWorld()</pre>
 </li>
 </ul>
 <a name="markDirty--">
@@ -1344,7 +1344,7 @@ public&nbsp;<a href="../../../../net/minecraft/block/entity/BlockEntity.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>method_27417</h4>
-<pre>public&nbsp;<a href="../../../../net/minecraft/util/math/ColumnPos.html" title="class in net.minecraft.util.math">ColumnPos</a>&nbsp;method_27417()</pre>
+<pre>public&nbsp;<a href="../../../../net/minecraft/util/math/ChunkPos.html" title="class in net.minecraft.util.math">ChunkPos</a>&nbsp;method_27417()</pre>
 </li>
 </ul>
 <a name="method_27393-int-int-">
@@ -1579,13 +1579,13 @@ public&nbsp;void&nbsp;setLoadedToWorld(boolean&nbsp;bool)</pre>
 <pre>public&nbsp;void&nbsp;setUnsaved(boolean&nbsp;unsaved)</pre>
 </li>
 </ul>
-<a name="method_27388-long-">
+<a name="setLastSaveTime-long-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_27388</h4>
-<pre>public&nbsp;void&nbsp;method_27388(long&nbsp;long2)</pre>
+<h4>setLastSaveTime</h4>
+<pre>public&nbsp;void&nbsp;setLastSaveTime(long&nbsp;long2)</pre>
 </li>
 </ul>
 <a name="method_27429--">

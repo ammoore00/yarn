@@ -102,7 +102,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../net/minecraft/block/Block.html" title="class in net.minecraft.block">net.minecraft.block.Block</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../net/minecraft/class_5190.html" title="class in net.minecraft">net.minecraft.class_5190</a></li>
+<li><a href="../../../net/minecraft/block/TranslucentBlock.html" title="class in net.minecraft.block">net.minecraft.block.TranslucentBlock</a></li>
 <li>
 <ul class="inheritance">
 <li>net.minecraft.block.NetherPortalBlock</li>
@@ -119,7 +119,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">NetherPortalBlock</span>
-extends <a href="../../../net/minecraft/class_5190.html" title="class in net.minecraft">class_5190</a></pre>
+extends <a href="../../../net/minecraft/block/TranslucentBlock.html" title="class in net.minecraft.block">TranslucentBlock</a></pre>
 </li>
 </ul>
 </div>
@@ -230,13 +230,13 @@ extends <a href="../../../net/minecraft/class_5190.html" title="class in net.min
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../net/minecraft/util/math/Box.html" title="class in net.minecraft.util.math">Box</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/block/NetherPortalBlock.html#getBoundingBox-net.minecraft.block.BlockState-net.minecraft.world.BlockView-net.minecraft.util.math.BlockPos-">getBoundingBox</a></span>(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState,
-              <a href="../../../net/minecraft/world/BlockView.html" title="interface in net.minecraft.world">BlockView</a>&nbsp;blockView,
-              <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/block/NetherPortalBlock.html#getBoundingBox-net.minecraft.block.BlockState-net.minecraft.world.BlockView-net.minecraft.util.math.BlockPos-">getBoundingBox</a></span>(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
+              <a href="../../../net/minecraft/world/BlockView.html" title="interface in net.minecraft.world">BlockView</a>&nbsp;provider,
+              <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/block/NetherPortalBlock.html#getDefaultState-int-">getDefaultState</a></span>(int&nbsp;int2)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/block/NetherPortalBlock.html#getDefaultState-int-">getDefaultState</a></span>(int&nbsp;meta)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>int</code></td>
@@ -244,13 +244,13 @@ extends <a href="../../../net/minecraft/class_5190.html" title="class in net.min
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/block/NetherPortalBlock.html#getMeta-net.minecraft.block.BlockState-">getMeta</a></span>(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/block/NetherPortalBlock.html#getMeta-net.minecraft.block.BlockState-">getMeta</a></span>(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/block/NetherPortalBlock.html#getPickStack-net.minecraft.world.World-net.minecraft.util.math.BlockPos-net.minecraft.block.BlockState-">getPickStack</a></span>(<a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-            <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
-            <a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState)</code>&nbsp;</td>
+            <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+            <a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state)</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../net/minecraft/client/render/RenderLayer.html" title="enum in net.minecraft.client.render">RenderLayer</a></code></td>
@@ -258,20 +258,20 @@ extends <a href="../../../net/minecraft/class_5190.html" title="class in net.min
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/block/NetherPortalBlock.html#isFullCube-net.minecraft.block.BlockState-">isFullCube</a></span>(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/block/NetherPortalBlock.html#isFullCube-net.minecraft.block.BlockState-">isFullCube</a></span>(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state)</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/class_3581.html" title="enum in net.minecraft">class_3581</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/block/NetherPortalBlock.html#method_26387-net.minecraft.world.BlockView-net.minecraft.block.BlockState-net.minecraft.util.math.BlockPos-net.minecraft.util.math.Direction-">method_26387</a></span>(<a href="../../../net/minecraft/world/BlockView.html" title="interface in net.minecraft.world">BlockView</a>&nbsp;blockView,
-            <a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState,
-            <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
-            <a href="../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../net/minecraft/block/BlockShape.html" title="enum in net.minecraft.block">BlockShape</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/block/NetherPortalBlock.html#method_26387-net.minecraft.world.BlockView-net.minecraft.block.BlockState-net.minecraft.util.math.BlockPos-net.minecraft.util.math.Direction-">method_26387</a></span>(<a href="../../../net/minecraft/world/BlockView.html" title="interface in net.minecraft.world">BlockView</a>&nbsp;provider,
+            <a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
+            <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+            <a href="../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;facing)</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../net/minecraft/util/math/Box.html" title="class in net.minecraft.util.math">Box</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/block/NetherPortalBlock.html#method_26400-net.minecraft.block.BlockState-net.minecraft.world.BlockView-net.minecraft.util.math.BlockPos-">method_26400</a></span>(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState,
-            <a href="../../../net/minecraft/world/BlockView.html" title="interface in net.minecraft.world">BlockView</a>&nbsp;blockView,
-            <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/block/NetherPortalBlock.html#method_26400-net.minecraft.block.BlockState-net.minecraft.world.BlockView-net.minecraft.util.math.BlockPos-">method_26400</a></span>(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
+            <a href="../../../net/minecraft/world/BlockView.html" title="interface in net.minecraft.world">BlockView</a>&nbsp;provider,
+            <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>static int</code></td>
@@ -284,52 +284,52 @@ extends <a href="../../../net/minecraft/class_5190.html" title="class in net.min
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/block/NetherPortalBlock.html#neighborUpdate-net.minecraft.block.BlockState-net.minecraft.world.World-net.minecraft.util.math.BlockPos-net.minecraft.block.Block-net.minecraft.util.math.BlockPos-">neighborUpdate</a></span>(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/block/NetherPortalBlock.html#neighborUpdate-net.minecraft.block.BlockState-net.minecraft.world.World-net.minecraft.util.math.BlockPos-net.minecraft.block.Block-net.minecraft.util.math.BlockPos-">neighborUpdate</a></span>(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
               <a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-              <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
+              <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
               <a href="../../../net/minecraft/block/Block.html" title="class in net.minecraft.block">Block</a>&nbsp;block,
-              <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos2)</code>&nbsp;</td>
+              <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;neighborPos)</code>&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/block/NetherPortalBlock.html#onEntityCollision-net.minecraft.world.World-net.minecraft.util.math.BlockPos-net.minecraft.block.BlockState-net.minecraft.entity.Entity-">onEntityCollision</a></span>(<a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-                 <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
-                 <a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState,
+                 <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+                 <a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
                  <a href="../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</code>&nbsp;</td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/block/NetherPortalBlock.html#randomDisplayTick-net.minecraft.block.BlockState-net.minecraft.world.World-net.minecraft.util.math.BlockPos-java.util.Random-">randomDisplayTick</a></span>(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/block/NetherPortalBlock.html#randomDisplayTick-net.minecraft.block.BlockState-net.minecraft.world.World-net.minecraft.util.math.BlockPos-java.util.Random-">randomDisplayTick</a></span>(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
                  <a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-                 <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
+                 <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
                  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util">Random</a>&nbsp;random)</code>&nbsp;</td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/block/NetherPortalBlock.html#rotate-net.minecraft.block.BlockState-net.minecraft.util.BlockRotation-">rotate</a></span>(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState,
-      <a href="../../../net/minecraft/util/BlockRotation.html" title="enum in net.minecraft.util">BlockRotation</a>&nbsp;blockRotation)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/block/NetherPortalBlock.html#rotate-net.minecraft.block.BlockState-net.minecraft.util.BlockRotation-">rotate</a></span>(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
+      <a href="../../../net/minecraft/util/BlockRotation.html" title="enum in net.minecraft.util">BlockRotation</a>&nbsp;rotation)</code>&nbsp;</td>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/block/NetherPortalBlock.html#scheduledTick-net.minecraft.world.World-net.minecraft.util.math.BlockPos-net.minecraft.block.BlockState-java.util.Random-">scheduledTick</a></span>(<a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-             <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
-             <a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState,
+             <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+             <a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
              <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util">Random</a>&nbsp;random)</code>&nbsp;</td>
 </tr>
 <tr id="i18" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/block/NetherPortalBlock.html#shouldDrawSide-net.minecraft.block.BlockState-net.minecraft.world.BlockView-net.minecraft.util.math.BlockPos-net.minecraft.util.math.Direction-">shouldDrawSide</a></span>(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState,
-              <a href="../../../net/minecraft/world/BlockView.html" title="interface in net.minecraft.world">BlockView</a>&nbsp;blockView,
-              <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
-              <a href="../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/block/NetherPortalBlock.html#shouldDrawSide-net.minecraft.block.BlockState-net.minecraft.world.BlockView-net.minecraft.util.math.BlockPos-net.minecraft.util.math.Direction-">shouldDrawSide</a></span>(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
+              <a href="../../../net/minecraft/world/BlockView.html" title="interface in net.minecraft.world">BlockView</a>&nbsp;provider,
+              <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+              <a href="../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;side)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.class_5190">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.block.TranslucentBlock">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;net.minecraft.<a href="../../../net/minecraft/class_5190.html" title="class in net.minecraft">class_5190</a></h3>
-<code><a href="../../../net/minecraft/class_5190.html#isOpaqueFullCube-net.minecraft.block.BlockState-">isOpaqueFullCube</a></code></li>
+<h3>Methods inherited from class&nbsp;net.minecraft.block.<a href="../../../net/minecraft/block/TranslucentBlock.html" title="class in net.minecraft.block">TranslucentBlock</a></h3>
+<code><a href="../../../net/minecraft/block/TranslucentBlock.html#isOpaqueFullCube-net.minecraft.block.BlockState-">isOpaqueFullCube</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.net.minecraft.block.Block">
@@ -426,9 +426,9 @@ extends <a href="../../../net/minecraft/class_5190.html" title="class in net.min
 <ul class="blockList">
 <li class="blockList">
 <h4>getBoundingBox</h4>
-<pre>public&nbsp;<a href="../../../net/minecraft/util/math/Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;getBoundingBox(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState,
-                          <a href="../../../net/minecraft/world/BlockView.html" title="interface in net.minecraft.world">BlockView</a>&nbsp;blockView,
-                          <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</pre>
+<pre>public&nbsp;<a href="../../../net/minecraft/util/math/Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;getBoundingBox(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
+                          <a href="../../../net/minecraft/world/BlockView.html" title="interface in net.minecraft.world">BlockView</a>&nbsp;provider,
+                          <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../net/minecraft/block/Block.html#getBoundingBox-net.minecraft.block.BlockState-net.minecraft.world.BlockView-net.minecraft.util.math.BlockPos-">getBoundingBox</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/block/Block.html" title="class in net.minecraft.block">Block</a></code></dd>
@@ -442,8 +442,8 @@ extends <a href="../../../net/minecraft/class_5190.html" title="class in net.min
 <li class="blockList">
 <h4>scheduledTick</h4>
 <pre>public&nbsp;void&nbsp;scheduledTick(<a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-                          <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
-                          <a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState,
+                          <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+                          <a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
                           <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util">Random</a>&nbsp;random)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
@@ -458,9 +458,9 @@ extends <a href="../../../net/minecraft/class_5190.html" title="class in net.min
 <li class="blockList">
 <h4>method_26400</h4>
 <pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-public&nbsp;<a href="../../../net/minecraft/util/math/Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;method_26400(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState,
-                                  <a href="../../../net/minecraft/world/BlockView.html" title="interface in net.minecraft.world">BlockView</a>&nbsp;blockView,
-                                  <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</pre>
+public&nbsp;<a href="../../../net/minecraft/util/math/Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;method_26400(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
+                                  <a href="../../../net/minecraft/world/BlockView.html" title="interface in net.minecraft.world">BlockView</a>&nbsp;provider,
+                                  <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../net/minecraft/block/Block.html#method_26400-net.minecraft.block.BlockState-net.minecraft.world.BlockView-net.minecraft.util.math.BlockPos-">method_26400</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/block/Block.html" title="class in net.minecraft.block">Block</a></code></dd>
@@ -482,7 +482,7 @@ public&nbsp;<a href="../../../net/minecraft/util/math/Box.html" title="class in 
 <ul class="blockList">
 <li class="blockList">
 <h4>isFullCube</h4>
-<pre>public&nbsp;boolean&nbsp;isFullCube(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState)</pre>
+<pre>public&nbsp;boolean&nbsp;isFullCube(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../net/minecraft/block/Block.html#isFullCube-net.minecraft.block.BlockState-">isFullCube</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/block/Block.html" title="class in net.minecraft.block">Block</a></code></dd>
@@ -505,11 +505,11 @@ public&nbsp;<a href="../../../net/minecraft/util/math/Box.html" title="class in 
 <ul class="blockList">
 <li class="blockList">
 <h4>neighborUpdate</h4>
-<pre>public&nbsp;void&nbsp;neighborUpdate(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState,
+<pre>public&nbsp;void&nbsp;neighborUpdate(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
                            <a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-                           <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
+                           <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
                            <a href="../../../net/minecraft/block/Block.html" title="class in net.minecraft.block">Block</a>&nbsp;block,
-                           <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos2)</pre>
+                           <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;neighborPos)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../net/minecraft/block/Block.html#neighborUpdate-net.minecraft.block.BlockState-net.minecraft.world.World-net.minecraft.util.math.BlockPos-net.minecraft.block.Block-net.minecraft.util.math.BlockPos-">neighborUpdate</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/block/Block.html" title="class in net.minecraft.block">Block</a></code></dd>
@@ -523,13 +523,13 @@ public&nbsp;<a href="../../../net/minecraft/util/math/Box.html" title="class in 
 <li class="blockList">
 <h4>shouldDrawSide</h4>
 <pre>@Environment(value=CLIENT)
-public&nbsp;boolean&nbsp;shouldDrawSide(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState,
-                                                         <a href="../../../net/minecraft/world/BlockView.html" title="interface in net.minecraft.world">BlockView</a>&nbsp;blockView,
-                                                         <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
-                                                         <a href="../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction)</pre>
+public&nbsp;boolean&nbsp;shouldDrawSide(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
+                                                         <a href="../../../net/minecraft/world/BlockView.html" title="interface in net.minecraft.world">BlockView</a>&nbsp;provider,
+                                                         <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+                                                         <a href="../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;side)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../net/minecraft/class_5190.html#shouldDrawSide-net.minecraft.block.BlockState-net.minecraft.world.BlockView-net.minecraft.util.math.BlockPos-net.minecraft.util.math.Direction-">shouldDrawSide</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/class_5190.html" title="class in net.minecraft">class_5190</a></code></dd>
+<dd><code><a href="../../../net/minecraft/block/TranslucentBlock.html#shouldDrawSide-net.minecraft.block.BlockState-net.minecraft.world.BlockView-net.minecraft.util.math.BlockPos-net.minecraft.util.math.Direction-">shouldDrawSide</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/block/TranslucentBlock.html" title="class in net.minecraft.block">TranslucentBlock</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -567,8 +567,8 @@ public&nbsp;<a href="../../../net/minecraft/client/render/RenderLayer.html" titl
 <li class="blockList">
 <h4>onEntityCollision</h4>
 <pre>public&nbsp;void&nbsp;onEntityCollision(<a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-                              <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
-                              <a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState,
+                              <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+                              <a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
                               <a href="../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
@@ -583,9 +583,9 @@ public&nbsp;<a href="../../../net/minecraft/client/render/RenderLayer.html" titl
 <li class="blockList">
 <h4>randomDisplayTick</h4>
 <pre>@Environment(value=CLIENT)
-public&nbsp;void&nbsp;randomDisplayTick(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState,
+public&nbsp;void&nbsp;randomDisplayTick(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
                                                          <a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-                                                         <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
+                                                         <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
                                                          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html?is-external=true" title="class or interface in java.util">Random</a>&nbsp;random)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
@@ -600,8 +600,8 @@ public&nbsp;void&nbsp;randomDisplayTick(<a href="../../../net/minecraft/block/Bl
 <li class="blockList">
 <h4>getPickStack</h4>
 <pre>public&nbsp;<a href="../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;getPickStack(<a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-                              <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
-                              <a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState)</pre>
+                              <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+                              <a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../net/minecraft/block/Block.html#getPickStack-net.minecraft.world.World-net.minecraft.util.math.BlockPos-net.minecraft.block.BlockState-">getPickStack</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/block/Block.html" title="class in net.minecraft.block">Block</a></code></dd>
@@ -614,7 +614,7 @@ public&nbsp;void&nbsp;randomDisplayTick(<a href="../../../net/minecraft/block/Bl
 <ul class="blockList">
 <li class="blockList">
 <h4>getDefaultState</h4>
-<pre>public&nbsp;<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;getDefaultState(int&nbsp;int2)</pre>
+<pre>public&nbsp;<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;getDefaultState(int&nbsp;meta)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../net/minecraft/block/Block.html#getDefaultState-int-">getDefaultState</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/block/Block.html" title="class in net.minecraft.block">Block</a></code></dd>
@@ -627,7 +627,7 @@ public&nbsp;void&nbsp;randomDisplayTick(<a href="../../../net/minecraft/block/Bl
 <ul class="blockList">
 <li class="blockList">
 <h4>getMeta</h4>
-<pre>public&nbsp;int&nbsp;getMeta(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState)</pre>
+<pre>public&nbsp;int&nbsp;getMeta(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../net/minecraft/block/Block.html#getMeta-net.minecraft.block.BlockState-">getMeta</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/block/Block.html" title="class in net.minecraft.block">Block</a></code></dd>
@@ -640,8 +640,8 @@ public&nbsp;void&nbsp;randomDisplayTick(<a href="../../../net/minecraft/block/Bl
 <ul class="blockList">
 <li class="blockList">
 <h4>rotate</h4>
-<pre>public&nbsp;<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;rotate(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState,
-                         <a href="../../../net/minecraft/util/BlockRotation.html" title="enum in net.minecraft.util">BlockRotation</a>&nbsp;blockRotation)</pre>
+<pre>public&nbsp;<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;rotate(<a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
+                         <a href="../../../net/minecraft/util/BlockRotation.html" title="enum in net.minecraft.util">BlockRotation</a>&nbsp;rotation)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../net/minecraft/block/Block.html#rotate-net.minecraft.block.BlockState-net.minecraft.util.BlockRotation-">rotate</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/block/Block.html" title="class in net.minecraft.block">Block</a></code></dd>
@@ -677,10 +677,10 @@ public&nbsp;void&nbsp;randomDisplayTick(<a href="../../../net/minecraft/block/Bl
 <ul class="blockListLast">
 <li class="blockList">
 <h4>method_26387</h4>
-<pre>public&nbsp;<a href="../../../net/minecraft/class_3581.html" title="enum in net.minecraft">class_3581</a>&nbsp;method_26387(<a href="../../../net/minecraft/world/BlockView.html" title="interface in net.minecraft.world">BlockView</a>&nbsp;blockView,
-                               <a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState,
-                               <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
-                               <a href="../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction)</pre>
+<pre>public&nbsp;<a href="../../../net/minecraft/block/BlockShape.html" title="enum in net.minecraft.block">BlockShape</a>&nbsp;method_26387(<a href="../../../net/minecraft/world/BlockView.html" title="interface in net.minecraft.world">BlockView</a>&nbsp;provider,
+                               <a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state,
+                               <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+                               <a href="../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;facing)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../net/minecraft/block/Block.html#method_26387-net.minecraft.world.BlockView-net.minecraft.block.BlockState-net.minecraft.util.math.BlockPos-net.minecraft.util.math.Direction-">method_26387</a></code>&nbsp;in class&nbsp;<code><a href="../../../net/minecraft/block/Block.html" title="class in net.minecraft.block">Block</a></code></dd>

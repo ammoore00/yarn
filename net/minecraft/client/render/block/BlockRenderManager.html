@@ -108,14 +108,14 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../../net/minecraft/class_4176.html" title="interface in net.minecraft">class_4176</a></dd>
+<dd><a href="../../../../../net/minecraft/client/resource/ResourceListener.html" title="interface in net.minecraft.client.resource">ResourceListener</a></dd>
 </dl>
 <hr>
 <br>
 <pre>@Environment(value=CLIENT)
 public class <span class="typeNameLabel">BlockRenderManager</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
-implements <a href="../../../../../net/minecraft/class_4176.html" title="interface in net.minecraft">class_4176</a></pre>
+implements <a href="../../../../../net/minecraft/client/resource/ResourceListener.html" title="interface in net.minecraft.client.resource">ResourceListener</a></pre>
 </li>
 </ul>
 </div>
@@ -184,39 +184,39 @@ implements <a href="../../../../../net/minecraft/class_4176.html" title="interfa
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/block/BlockRenderManager.html#apply-net.minecraft.resource.ResourceManager-">apply</a></span>(<a href="../../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager)</code>&nbsp;</td>
-</tr>
-<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../net/minecraft/client/render/block/BlockModelRenderer.html" title="class in net.minecraft.client.render.block">BlockModelRenderer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/block/BlockRenderManager.html#getModelRenderer--">getModelRenderer</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../net/minecraft/client/render/block/BlockModels.html" title="class in net.minecraft.client.render.block">BlockModels</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/block/BlockRenderManager.html#getModels--">getModels</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../../net/minecraft/client/render/model/BakedModel.html" title="interface in net.minecraft.client.render.model">BakedModel</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/block/BlockRenderManager.html#method_30515-net.minecraft.block.BlockState-">method_30515</a></span>(<a href="../../../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState)</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/block/BlockRenderManager.html#method_30516-net.minecraft.block.BlockState-float-">method_30516</a></span>(<a href="../../../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState,
             float&nbsp;float2)</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/block/BlockRenderManager.html#method_30517-net.minecraft.block.BlockState-net.minecraft.util.math.BlockPos-net.minecraft.world.BlockView-net.minecraft.client.render.BufferBuilder-">method_30517</a></span>(<a href="../../../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState,
             <a href="../../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
             <a href="../../../../../net/minecraft/world/BlockView.html" title="interface in net.minecraft.world">BlockView</a>&nbsp;blockView,
             <a href="../../../../../net/minecraft/client/render/BufferBuilder.html" title="class in net.minecraft.client.render">BufferBuilder</a>&nbsp;bufferBuilder)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/block/BlockRenderManager.html#method_30518-net.minecraft.block.BlockState-net.minecraft.util.math.BlockPos-net.minecraft.client.texture.Sprite-net.minecraft.world.BlockView-">method_30518</a></span>(<a href="../../../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState,
             <a href="../../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
             <a href="../../../../../net/minecraft/client/texture/Sprite.html" title="class in net.minecraft.client.texture">Sprite</a>&nbsp;sprite,
             <a href="../../../../../net/minecraft/world/BlockView.html" title="interface in net.minecraft.world">BlockView</a>&nbsp;blockView)</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/block/BlockRenderManager.html#onReload-net.minecraft.resource.ResourceManager-">onReload</a></span>(<a href="../../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;manager)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -363,16 +363,16 @@ implements <a href="../../../../../net/minecraft/class_4176.html" title="interfa
                          float&nbsp;float2)</pre>
 </li>
 </ul>
-<a name="apply-net.minecraft.resource.ResourceManager-">
+<a name="onReload-net.minecraft.resource.ResourceManager-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>apply</h4>
-<pre>public&nbsp;void&nbsp;apply(<a href="../../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager)</pre>
+<h4>onReload</h4>
+<pre>public&nbsp;void&nbsp;onReload(<a href="../../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;manager)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../net/minecraft/class_4176.html#apply-net.minecraft.resource.ResourceManager-">apply</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../net/minecraft/class_4176.html" title="interface in net.minecraft">class_4176</a></code></dd>
+<dd><code><a href="../../../../../net/minecraft/client/resource/ResourceListener.html#onReload-net.minecraft.resource.ResourceManager-">onReload</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../net/minecraft/client/resource/ResourceListener.html" title="interface in net.minecraft.client.resource">ResourceListener</a></code></dd>
 </dl>
 </li>
 </ul>

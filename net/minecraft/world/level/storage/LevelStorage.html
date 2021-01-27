@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":9};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -74,14 +74,14 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
-<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
-<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
@@ -92,84 +92,25 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">net.minecraft.world.level.storage</div>
-<h2 title="Class LevelStorage" class="title">Class LevelStorage</h2>
+<h2 title="Interface LevelStorage" class="title">Interface LevelStorage</h2>
 </div>
 <div class="contentContainer">
-<ul class="inheritance">
-<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
-<li>
-<ul class="inheritance">
-<li>net.minecraft.world.level.storage.LevelStorage</li>
-</ul>
-</li>
-</ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
 <dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../../net/minecraft/class_1271.html" title="interface in net.minecraft">class_1271</a></dd>
-</dl>
-<dl>
-<dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../../../net/minecraft/world/level/storage/AnvilLevelStorage.html" title="class in net.minecraft.world.level.storage">AnvilLevelStorage</a></dd>
+<dt>All Known Implementing Classes:</dt>
+<dd><a href="../../../../../net/minecraft/world/level/storage/AnvilLevelStorage.html" title="class in net.minecraft.world.level.storage">AnvilLevelStorage</a>, <a href="../../../../../net/minecraft/world/level/storage/LevelStorageImpl.html" title="class in net.minecraft.world.level.storage">LevelStorageImpl</a></dd>
 </dl>
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">LevelStorage</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
-implements <a href="../../../../../net/minecraft/class_1271.html" title="interface in net.minecraft">class_1271</a></pre>
+<pre>public interface <span class="typeNameLabel">LevelStorage</span></pre>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- =========== FIELD SUMMARY =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.summary">
-<!--   -->
-</a>
-<h3>Field Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
-<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Field and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>protected <a href="../../../../../net/minecraft/datafixer/DataFixer.html" title="class in net.minecraft.datafixer">DataFixer</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/level/storage/LevelStorage.html#dataFixer">dataFixer</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>protected <a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/level/storage/LevelStorage.html#field_26429">field_26429</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/level/storage/LevelStorage.html#LOGGER">LOGGER</a></span></code>&nbsp;</td>
-</tr>
-</table>
-</li>
-</ul>
-<!-- ======== CONSTRUCTOR SUMMARY ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="constructor.summary">
-<!--   -->
-</a>
-<h3>Constructor Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
-<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colOne" scope="col">Constructor and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/level/storage/LevelStorage.html#LevelStorage-java.io.File-net.minecraft.datafixer.DataFixer-">LevelStorage</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file,
-            <a href="../../../../../net/minecraft/datafixer/DataFixer.html" title="class in net.minecraft.datafixer">DataFixer</a>&nbsp;dataFixer)</code>&nbsp;</td>
-</tr>
-</table>
-</li>
-</ul>
 <!-- ========== METHOD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.summary">
@@ -177,54 +118,54 @@ implements <a href="../../../../../net/minecraft/class_1271.html" title="interfa
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/level/storage/LevelStorage.html#convertLevel-java.lang.String-net.minecraft.util.ProgressListener-">convertLevel</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;levelName,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/level/storage/LevelStorage.html#convertLevel-java.lang.String-net.minecraft.util.ProgressListener-">convertLevel</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;levelDirectory,
             <a href="../../../../../net/minecraft/util/ProgressListener.html" title="interface in net.minecraft.util">ProgressListener</a>&nbsp;progressListener)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>protected static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/level/storage/LevelStorage.html#deleteFilesRecursively-java.io.File:A-">deleteFilesRecursively</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>[]&nbsp;files)</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/level/storage/LevelStorage.html#createLevel-java.lang.String-">createLevel</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;levelDirectory)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/level/storage/LevelStorage.html#getFormatName--">getFormatName</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../net/minecraft/world/WorldSaveHandler.html" title="interface in net.minecraft.world">WorldSaveHandler</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/level/storage/LevelStorage.html#createSaveHandler-java.lang.String-boolean-">createSaveHandler</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;levelDirectory,
+                 boolean&nbsp;bool)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/level/storage/LevelStorage.html#getLevel-java.lang.String-">getLevel</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/level/storage/LevelStorage.html#deleteLevel-java.lang.String-">deleteLevel</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;levelDirectory)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/level/storage/LevelStorage.html#getFile-java.lang.String-java.lang.String-">getFile</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;levelName,
+       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;file)</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/level/storage/LevelStorage.html#getFormatName--">getFormatName</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../net/minecraft/world/level/storage/LevelSummary.html" title="class in net.minecraft.world.level.storage">LevelSummary</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/level/storage/LevelStorage.html#getLevelList--">getLevelList</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/level/storage/LevelStorage.html#levelExists-java.lang.String-">levelExists</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;levelDirectory)</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/level/storage/LevelStorage.html#method_28324-java.lang.String-">method_28324</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/level/storage/LevelStorage.html#method_28325-java.lang.String-java.lang.String-">method_28325</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string2)</code>&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../../../../net/minecraft/world/WorldSaveHandler.html" title="interface in net.minecraft.world">WorldSaveHandler</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/level/storage/LevelStorage.html#method_28327-java.lang.String-boolean-">method_28327</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-            boolean&nbsp;bool)</code>&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../net/minecraft/world/level/storage/LevelSummary.html" title="class in net.minecraft.world.level.storage">LevelSummary</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/level/storage/LevelStorage.html#method_28328--">method_28328</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/level/storage/LevelStorage.html#method_28330-java.lang.String-java.lang.String-">method_28330</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string2)</code>&nbsp;</td>
-</tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../net/minecraft/world/level/LevelProperties.html" title="class in net.minecraft.world.level">LevelProperties</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/level/storage/LevelStorage.html#method_28331-java.lang.String-">method_28331</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/level/storage/LevelStorage.html#method_28325-java.lang.String-java.lang.String-">method_28325</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;levelDirectory,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;levelName)</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -232,29 +173,13 @@ implements <a href="../../../../../net/minecraft/class_1271.html" title="interfa
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/level/storage/LevelStorage.html#method_28333-java.lang.String-">method_28333</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/level/storage/LevelStorage.html#needsConversion-java.lang.String-">needsConversion</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;levelDirectory)</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/level/storage/LevelStorage.html#method_28334-java.lang.String-">method_28334</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
-</tr>
-<tr id="i13" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/level/storage/LevelStorage.html#method_28335-java.lang.String-">method_28335</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
-</tr>
-<tr id="i14" class="altColor">
-<td class="colFirst"><code>static <a href="../../../../../net/minecraft/world/level/LevelProperties.html" title="class in net.minecraft.world.level">LevelProperties</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/level/storage/LevelStorage.html#readLevelProperties-java.io.File-net.minecraft.datafixer.DataFixer-">readLevelProperties</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file,
-                   <a href="../../../../../net/minecraft/datafixer/DataFixer.html" title="class in net.minecraft.datafixer">DataFixer</a>&nbsp;dataFixer)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../net/minecraft/world/level/LevelProperties.html" title="class in net.minecraft.world.level">LevelProperties</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/world/level/storage/LevelStorage.html#readLevelProperties-java.lang.String-">readLevelProperties</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;levelName)</code>&nbsp;</td>
 </tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
-</ul>
 </li>
 </ul>
 </li>
@@ -263,59 +188,6 @@ implements <a href="../../../../../net/minecraft/class_1271.html" title="interfa
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ============ FIELD DETAIL =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.detail">
-<!--   -->
-</a>
-<h3>Field Detail</h3>
-<a name="LOGGER">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>LOGGER</h4>
-<pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a> LOGGER</pre>
-</li>
-</ul>
-<a name="field_26429">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_26429</h4>
-<pre>protected final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a> field_26429</pre>
-</li>
-</ul>
-<a name="dataFixer">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>dataFixer</h4>
-<pre>protected final&nbsp;<a href="../../../../../net/minecraft/datafixer/DataFixer.html" title="class in net.minecraft.datafixer">DataFixer</a> dataFixer</pre>
-</li>
-</ul>
-</li>
-</ul>
-<!-- ========= CONSTRUCTOR DETAIL ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="constructor.detail">
-<!--   -->
-</a>
-<h3>Constructor Detail</h3>
-<a name="LevelStorage-java.io.File-net.minecraft.datafixer.DataFixer-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>LevelStorage</h4>
-<pre>public&nbsp;LevelStorage(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file,
-                    <a href="../../../../../net/minecraft/datafixer/DataFixer.html" title="class in net.minecraft.datafixer">DataFixer</a>&nbsp;dataFixer)</pre>
-</li>
-</ul>
-</li>
-</ul>
 <!-- ============ METHOD DETAIL ========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.detail">
@@ -329,25 +201,27 @@ implements <a href="../../../../../net/minecraft/class_1271.html" title="interfa
 <li class="blockList">
 <h4>getFormatName</h4>
 <pre>@Environment(value=CLIENT)
-public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getFormatName()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../net/minecraft/class_1271.html#getFormatName--">getFormatName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../net/minecraft/class_1271.html" title="interface in net.minecraft">class_1271</a></code></dd>
-</dl>
+<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getFormatName()</pre>
 </li>
 </ul>
-<a name="method_28328--">
+<a name="createSaveHandler-java.lang.String-boolean-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_28328</h4>
+<h4>createSaveHandler</h4>
+<pre><a href="../../../../../net/minecraft/world/WorldSaveHandler.html" title="interface in net.minecraft.world">WorldSaveHandler</a>&nbsp;createSaveHandler(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;levelDirectory,
+                                   boolean&nbsp;bool)</pre>
+</li>
+</ul>
+<a name="getLevelList--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLevelList</h4>
 <pre>@Environment(value=CLIENT)
-public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../net/minecraft/world/level/storage/LevelSummary.html" title="class in net.minecraft.world.level.storage">LevelSummary</a>&gt;&nbsp;method_28328()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../net/minecraft/class_1271.html#method_28328--">method_28328</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../net/minecraft/class_1271.html" title="interface in net.minecraft">class_1271</a></code></dd>
-</dl>
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../net/minecraft/world/level/storage/LevelSummary.html" title="class in net.minecraft.world.level.storage">LevelSummary</a>&gt;&nbsp;getLevelList()</pre>
 </li>
 </ul>
 <a name="method_28332--">
@@ -357,36 +231,38 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.ht
 <li class="blockList">
 <h4>method_28332</h4>
 <pre>@Environment(value=CLIENT)
-public&nbsp;void&nbsp;method_28332()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../net/minecraft/class_1271.html#method_28332--">method_28332</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../net/minecraft/class_1271.html" title="interface in net.minecraft">class_1271</a></code></dd>
-</dl>
+void&nbsp;method_28332()</pre>
 </li>
 </ul>
-<a name="method_28331-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_28331</h4>
-<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-public&nbsp;<a href="../../../../../net/minecraft/world/level/LevelProperties.html" title="class in net.minecraft.world.level">LevelProperties</a>&nbsp;method_28331(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../net/minecraft/class_1271.html#method_28331-java.lang.String-">method_28331</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../net/minecraft/class_1271.html" title="interface in net.minecraft">class_1271</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="readLevelProperties-java.io.File-net.minecraft.datafixer.DataFixer-">
+<a name="readLevelProperties-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>readLevelProperties</h4>
-<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-public static&nbsp;<a href="../../../../../net/minecraft/world/level/LevelProperties.html" title="class in net.minecraft.world.level">LevelProperties</a>&nbsp;readLevelProperties(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;file,
-                                                            <a href="../../../../../net/minecraft/datafixer/DataFixer.html" title="class in net.minecraft.datafixer">DataFixer</a>&nbsp;dataFixer)</pre>
+<pre>@Environment(value=CLIENT)
+ <a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+<a href="../../../../../net/minecraft/world/level/LevelProperties.html" title="class in net.minecraft.world.level">LevelProperties</a>&nbsp;readLevelProperties(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;levelName)</pre>
+</li>
+</ul>
+<a name="createLevel-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createLevel</h4>
+<pre>@Environment(value=CLIENT)
+boolean&nbsp;createLevel(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;levelDirectory)</pre>
+</li>
+</ul>
+<a name="deleteLevel-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>deleteLevel</h4>
+<pre>@Environment(value=CLIENT)
+boolean&nbsp;deleteLevel(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;levelDirectory)</pre>
 </li>
 </ul>
 <a name="method_28325-java.lang.String-java.lang.String-">
@@ -396,64 +272,8 @@ public static&nbsp;<a href="../../../../../net/minecraft/world/level/LevelProper
 <li class="blockList">
 <h4>method_28325</h4>
 <pre>@Environment(value=CLIENT)
-public&nbsp;void&nbsp;method_28325(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string2)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../net/minecraft/class_1271.html#method_28325-java.lang.String-java.lang.String-">method_28325</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../net/minecraft/class_1271.html" title="interface in net.minecraft">class_1271</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_28333-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_28333</h4>
-<pre>@Environment(value=CLIENT)
-public&nbsp;boolean&nbsp;method_28333(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../net/minecraft/class_1271.html#method_28333-java.lang.String-">method_28333</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../net/minecraft/class_1271.html" title="interface in net.minecraft">class_1271</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_28334-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_28334</h4>
-<pre>@Environment(value=CLIENT)
-public&nbsp;boolean&nbsp;method_28334(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../net/minecraft/class_1271.html#method_28334-java.lang.String-">method_28334</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../net/minecraft/class_1271.html" title="interface in net.minecraft">class_1271</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="deleteFilesRecursively-java.io.File:A-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>deleteFilesRecursively</h4>
-<pre>@Environment(value=CLIENT)
-protected static&nbsp;boolean&nbsp;deleteFilesRecursively(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>[]&nbsp;files)</pre>
-</li>
-</ul>
-<a name="method_28327-java.lang.String-boolean-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_28327</h4>
-<pre>public&nbsp;<a href="../../../../../net/minecraft/world/WorldSaveHandler.html" title="interface in net.minecraft.world">WorldSaveHandler</a>&nbsp;method_28327(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                                     boolean&nbsp;bool)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../net/minecraft/class_1271.html#method_28327-java.lang.String-boolean-">method_28327</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../net/minecraft/class_1271.html" title="interface in net.minecraft">class_1271</a></code></dd>
-</dl>
+void&nbsp;method_28325(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;levelDirectory,
+                                             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;levelName)</pre>
 </li>
 </ul>
 <a name="method_28324-java.lang.String-">
@@ -463,24 +283,16 @@ protected static&nbsp;boolean&nbsp;deleteFilesRecursively(<a href="https://docs.
 <li class="blockList">
 <h4>method_28324</h4>
 <pre>@Environment(value=CLIENT)
-public&nbsp;boolean&nbsp;method_28324(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../net/minecraft/class_1271.html#method_28324-java.lang.String-">method_28324</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../net/minecraft/class_1271.html" title="interface in net.minecraft">class_1271</a></code></dd>
-</dl>
+boolean&nbsp;method_28324(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
 </li>
 </ul>
-<a name="getLevel-java.lang.String-">
+<a name="needsConversion-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getLevel</h4>
-<pre>public&nbsp;boolean&nbsp;getLevel(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../net/minecraft/class_1271.html#getLevel-java.lang.String-">getLevel</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../net/minecraft/class_1271.html" title="interface in net.minecraft">class_1271</a></code></dd>
-</dl>
+<h4>needsConversion</h4>
+<pre>boolean&nbsp;needsConversion(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;levelDirectory)</pre>
 </li>
 </ul>
 <a name="convertLevel-java.lang.String-net.minecraft.util.ProgressListener-">
@@ -489,40 +301,28 @@ public&nbsp;boolean&nbsp;method_28324(<a href="https://docs.oracle.com/javase/8/
 <ul class="blockList">
 <li class="blockList">
 <h4>convertLevel</h4>
-<pre>public&nbsp;boolean&nbsp;convertLevel(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;levelName,
-                            <a href="../../../../../net/minecraft/util/ProgressListener.html" title="interface in net.minecraft.util">ProgressListener</a>&nbsp;progressListener)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../net/minecraft/class_1271.html#convertLevel-java.lang.String-net.minecraft.util.ProgressListener-">convertLevel</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../net/minecraft/class_1271.html" title="interface in net.minecraft">class_1271</a></code></dd>
-</dl>
+<pre>boolean&nbsp;convertLevel(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;levelDirectory,
+                     <a href="../../../../../net/minecraft/util/ProgressListener.html" title="interface in net.minecraft.util">ProgressListener</a>&nbsp;progressListener)</pre>
 </li>
 </ul>
-<a name="method_28335-java.lang.String-">
+<a name="levelExists-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_28335</h4>
+<h4>levelExists</h4>
 <pre>@Environment(value=CLIENT)
-public&nbsp;boolean&nbsp;method_28335(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../net/minecraft/class_1271.html#method_28335-java.lang.String-">method_28335</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../net/minecraft/class_1271.html" title="interface in net.minecraft">class_1271</a></code></dd>
-</dl>
+boolean&nbsp;levelExists(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;levelDirectory)</pre>
 </li>
 </ul>
-<a name="method_28330-java.lang.String-java.lang.String-">
+<a name="getFile-java.lang.String-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_28330</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;method_28330(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string,
-                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string2)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../net/minecraft/class_1271.html#method_28330-java.lang.String-java.lang.String-">method_28330</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../net/minecraft/class_1271.html" title="interface in net.minecraft">class_1271</a></code></dd>
-</dl>
+<h4>getFile</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;getFile(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;levelName,
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;file)</pre>
 </li>
 </ul>
 </li>
@@ -578,14 +378,14 @@ public&nbsp;boolean&nbsp;method_28335(<a href="https://docs.oracle.com/javase/8/
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
-<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
-<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>

@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -108,13 +108,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../net/minecraft/class_5318.html" title="interface in net.minecraft">class_5318</a>, <a href="../../../../net/minecraft/client/render/entity/feature/SkinOverlayOwner.html" title="interface in net.minecraft.client.render.entity.feature">SkinOverlayOwner</a></dd>
+<dd><a href="../../../../net/minecraft/server/world/ChunkStorage.html" title="interface in net.minecraft.server.world">ChunkStorage</a>, <a href="../../../../net/minecraft/world/storage/IoWritable.html" title="interface in net.minecraft.world.storage">IoWritable</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">ThreadedAnvilChunkStorage</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
-implements <a href="../../../../net/minecraft/class_5318.html" title="interface in net.minecraft">class_5318</a>, <a href="../../../../net/minecraft/client/render/entity/feature/SkinOverlayOwner.html" title="interface in net.minecraft.client.render.entity.feature">SkinOverlayOwner</a></pre>
+implements <a href="../../../../net/minecraft/server/world/ChunkStorage.html" title="interface in net.minecraft.server.world">ChunkStorage</a>, <a href="../../../../net/minecraft/world/storage/IoWritable.html" title="interface in net.minecraft.world.storage">IoWritable</a></pre>
 </li>
 </ul>
 </div>
@@ -142,11 +142,11 @@ implements <a href="../../../../net/minecraft/class_5318.html" title="interface 
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ThreadedAnvilChunkStorage.html#dataFixer">dataFixer</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../net/minecraft/util/math/ColumnPos.html" title="class in net.minecraft.util.math">ColumnPos</a>,<a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&gt;</code></td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../net/minecraft/util/math/ChunkPos.html" title="class in net.minecraft.util.math">ChunkPos</a>,<a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ThreadedAnvilChunkStorage.html#field_25416">field_25416</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../net/minecraft/util/math/ColumnPos.html" title="class in net.minecraft.util.math">ColumnPos</a>&gt;</code></td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../net/minecraft/util/math/ChunkPos.html" title="class in net.minecraft.util.math">ChunkPos</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ThreadedAnvilChunkStorage.html#field_25417">field_25417</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -195,34 +195,40 @@ implements <a href="../../../../net/minecraft/class_5318.html" title="interface 
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ThreadedAnvilChunkStorage.html#initDataFixer-net.minecraft.datafixer.DataFixer-">initDataFixer</a></span>(<a href="../../../../net/minecraft/datafixer/DataFixer.html" title="class in net.minecraft.datafixer">DataFixer</a>&nbsp;dataFixer)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ThreadedAnvilChunkStorage.html#method_27464-net.minecraft.util.math.ColumnPos-net.minecraft.nbt.CompoundTag-">method_27464</a></span>(<a href="../../../../net/minecraft/util/math/ColumnPos.html" title="class in net.minecraft.util.math">ColumnPos</a>&nbsp;columnPos,
-            <a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../net/minecraft/world/chunk/Chunk.html" title="class in net.minecraft.world.chunk">Chunk</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ThreadedAnvilChunkStorage.html#loadChunk-net.minecraft.world.World-int-int-">loadChunk</a></span>(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+         int&nbsp;int2,
+         int&nbsp;int3)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ThreadedAnvilChunkStorage.html#method_27464-net.minecraft.util.math.ChunkPos-net.minecraft.nbt.CompoundTag-">method_27464</a></span>(<a href="../../../../net/minecraft/util/math/ChunkPos.html" title="class in net.minecraft.util.math">ChunkPos</a>&nbsp;chunkPos,
+            <a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>protected <a href="../../../../net/minecraft/world/chunk/Chunk.html" title="class in net.minecraft.world.chunk">Chunk</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ThreadedAnvilChunkStorage.html#method_27465-net.minecraft.world.World-int-int-net.minecraft.nbt.CompoundTag-">method_27465</a></span>(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
             int&nbsp;x,
             int&nbsp;z,
             <a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>private <a href="../../../../net/minecraft/world/chunk/Chunk.html" title="class in net.minecraft.world.chunk">Chunk</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ThreadedAnvilChunkStorage.html#method_27466-net.minecraft.world.World-net.minecraft.nbt.CompoundTag-">method_27466</a></span>(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
             <a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ThreadedAnvilChunkStorage.html#method_27467-net.minecraft.world.chunk.Chunk-net.minecraft.world.World-net.minecraft.nbt.CompoundTag-">method_27467</a></span>(<a href="../../../../net/minecraft/world/chunk/Chunk.html" title="class in net.minecraft.world.chunk">Chunk</a>&nbsp;chunk,
             <a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
             <a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>protected static <a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ThreadedAnvilChunkStorage.html#method_27468-net.minecraft.nbt.CompoundTag-net.minecraft.world.World-">method_27468</a></span>(<a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag,
             <a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ThreadedAnvilChunkStorage.html#method_27469-net.minecraft.nbt.CompoundTag-net.minecraft.world.World-double-double-double-boolean-">method_27469</a></span>(<a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag,
             <a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
@@ -231,60 +237,54 @@ implements <a href="../../../../net/minecraft/class_5318.html" title="interface 
             double&nbsp;double4,
             boolean&nbsp;bool)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ThreadedAnvilChunkStorage.html#method_27470-net.minecraft.nbt.CompoundTag-net.minecraft.world.World-net.minecraft.world.chunk.Chunk-">method_27470</a></span>(<a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag,
             <a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
             <a href="../../../../net/minecraft/world/chunk/Chunk.html" title="class in net.minecraft.world.chunk">Chunk</a>&nbsp;chunk)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ThreadedAnvilChunkStorage.html#method_27471-net.minecraft.nbt.CompoundTag-net.minecraft.world.World-boolean-">method_27471</a></span>(<a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag,
             <a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
             boolean&nbsp;bool)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ThreadedAnvilChunkStorage.html#method_27473-net.minecraft.entity.Entity-net.minecraft.world.World-">method_27473</a></span>(<a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
             <a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>private void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ThreadedAnvilChunkStorage.html#method_27474-net.minecraft.util.math.ColumnPos-net.minecraft.nbt.CompoundTag-">method_27474</a></span>(<a href="../../../../net/minecraft/util/math/ColumnPos.html" title="class in net.minecraft.util.math">ColumnPos</a>&nbsp;columnPos,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ThreadedAnvilChunkStorage.html#method_27474-net.minecraft.util.math.ChunkPos-net.minecraft.nbt.CompoundTag-">method_27474</a></span>(<a href="../../../../net/minecraft/util/math/ChunkPos.html" title="class in net.minecraft.util.math">ChunkPos</a>&nbsp;chunkPos,
             <a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ThreadedAnvilChunkStorage.html#method_27475-int-int-">method_27475</a></span>(int&nbsp;int2,
             int&nbsp;int3)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/world/chunk/Chunk.html" title="class in net.minecraft.world.chunk">Chunk</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ThreadedAnvilChunkStorage.html#method_27476-net.minecraft.world.World-int-int-">method_27476</a></span>(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-            int&nbsp;int2,
-            int&nbsp;int3)</code>&nbsp;</td>
-</tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ThreadedAnvilChunkStorage.html#method_27477-net.minecraft.world.World-net.minecraft.world.chunk.Chunk-">method_27477</a></span>(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-            <a href="../../../../net/minecraft/world/chunk/Chunk.html" title="class in net.minecraft.world.chunk">Chunk</a>&nbsp;chunk)</code>&nbsp;</td>
-</tr>
-<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ThreadedAnvilChunkStorage.html#method_27478--">method_27478</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ThreadedAnvilChunkStorage.html#method_27479-net.minecraft.world.World-net.minecraft.world.chunk.Chunk-">method_27479</a></span>(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-            <a href="../../../../net/minecraft/world/chunk/Chunk.html" title="class in net.minecraft.world.chunk">Chunk</a>&nbsp;chunk)</code>&nbsp;</td>
-</tr>
-<tr id="i16" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ThreadedAnvilChunkStorage.html#method_27480--">method_27480</a></span>()</code>&nbsp;</td>
 </tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ThreadedAnvilChunkStorage.html#saveChunk-net.minecraft.world.World-net.minecraft.world.chunk.Chunk-">saveChunk</a></span>(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+         <a href="../../../../net/minecraft/world/chunk/Chunk.html" title="class in net.minecraft.world.chunk">Chunk</a>&nbsp;chunk)</code>&nbsp;</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ThreadedAnvilChunkStorage.html#saveEntities-net.minecraft.world.World-net.minecraft.world.chunk.Chunk-">saveEntities</a></span>(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+            <a href="../../../../net/minecraft/world/chunk/Chunk.html" title="class in net.minecraft.world.chunk">Chunk</a>&nbsp;chunk)</code>&nbsp;</td>
+</tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ThreadedAnvilChunkStorage.html#shouldRenderOverlay--">shouldRenderOverlay</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ThreadedAnvilChunkStorage.html#write--">write</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -323,7 +323,7 @@ implements <a href="../../../../net/minecraft/class_5318.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>field_25416</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../net/minecraft/util/math/ColumnPos.html" title="class in net.minecraft.util.math">ColumnPos</a>,<a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&gt; field_25416</pre>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../net/minecraft/util/math/ChunkPos.html" title="class in net.minecraft.util.math">ChunkPos</a>,<a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&gt; field_25416</pre>
 </li>
 </ul>
 <a name="field_25417">
@@ -332,7 +332,7 @@ implements <a href="../../../../net/minecraft/class_5318.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>field_25417</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../net/minecraft/util/math/ColumnPos.html" title="class in net.minecraft.util.math">ColumnPos</a>&gt; field_25417</pre>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../net/minecraft/util/math/ChunkPos.html" title="class in net.minecraft.util.math">ChunkPos</a>&gt; field_25417</pre>
 </li>
 </ul>
 <a name="field_25418">
@@ -388,20 +388,20 @@ implements <a href="../../../../net/minecraft/class_5318.html" title="interface 
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_27476-net.minecraft.world.World-int-int-">
+<a name="loadChunk-net.minecraft.world.World-int-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_27476</h4>
+<h4>loadChunk</h4>
 <pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-public&nbsp;<a href="../../../../net/minecraft/world/chunk/Chunk.html" title="class in net.minecraft.world.chunk">Chunk</a>&nbsp;method_27476(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-                                    int&nbsp;int2,
-                                    int&nbsp;int3)
-                             throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+public&nbsp;<a href="../../../../net/minecraft/world/chunk/Chunk.html" title="class in net.minecraft.world.chunk">Chunk</a>&nbsp;loadChunk(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+                                 int&nbsp;int2,
+                                 int&nbsp;int3)
+                          throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_5318.html#method_27476-net.minecraft.world.World-int-int-">method_27476</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/class_5318.html" title="interface in net.minecraft">class_5318</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/server/world/ChunkStorage.html#loadChunk-net.minecraft.world.World-int-int-">loadChunk</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/server/world/ChunkStorage.html" title="interface in net.minecraft.server.world">ChunkStorage</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
 </dl>
@@ -417,7 +417,7 @@ public&nbsp;<a href="../../../../net/minecraft/world/chunk/Chunk.html" title="cl
                             int&nbsp;int3)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_5318.html#method_27475-int-int-">method_27475</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/class_5318.html" title="interface in net.minecraft">class_5318</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/server/world/ChunkStorage.html#method_27475-int-int-">method_27475</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/server/world/ChunkStorage.html" title="interface in net.minecraft.server.world">ChunkStorage</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -434,55 +434,55 @@ protected&nbsp;<a href="../../../../net/minecraft/world/chunk/Chunk.html" title=
                                        <a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</pre>
 </li>
 </ul>
-<a name="method_27477-net.minecraft.world.World-net.minecraft.world.chunk.Chunk-">
+<a name="saveChunk-net.minecraft.world.World-net.minecraft.world.chunk.Chunk-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_27477</h4>
-<pre>public&nbsp;void&nbsp;method_27477(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-                         <a href="../../../../net/minecraft/world/chunk/Chunk.html" title="class in net.minecraft.world.chunk">Chunk</a>&nbsp;chunk)
-                  throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
-                         <a href="../../../../net/minecraft/world/SessionLockException.html" title="class in net.minecraft.world">SessionLockException</a></pre>
+<h4>saveChunk</h4>
+<pre>public&nbsp;void&nbsp;saveChunk(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+                      <a href="../../../../net/minecraft/world/chunk/Chunk.html" title="class in net.minecraft.world.chunk">Chunk</a>&nbsp;chunk)
+               throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                      <a href="../../../../net/minecraft/world/SessionLockException.html" title="class in net.minecraft.world">SessionLockException</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_5318.html#method_27477-net.minecraft.world.World-net.minecraft.world.chunk.Chunk-">method_27477</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/class_5318.html" title="interface in net.minecraft">class_5318</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/server/world/ChunkStorage.html#saveChunk-net.minecraft.world.World-net.minecraft.world.chunk.Chunk-">saveChunk</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/server/world/ChunkStorage.html" title="interface in net.minecraft.server.world">ChunkStorage</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
 <dd><code><a href="../../../../net/minecraft/world/SessionLockException.html" title="class in net.minecraft.world">SessionLockException</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_27464-net.minecraft.util.math.ColumnPos-net.minecraft.nbt.CompoundTag-">
+<a name="method_27464-net.minecraft.util.math.ChunkPos-net.minecraft.nbt.CompoundTag-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>method_27464</h4>
-<pre>protected&nbsp;void&nbsp;method_27464(<a href="../../../../net/minecraft/util/math/ColumnPos.html" title="class in net.minecraft.util.math">ColumnPos</a>&nbsp;columnPos,
+<pre>protected&nbsp;void&nbsp;method_27464(<a href="../../../../net/minecraft/util/math/ChunkPos.html" title="class in net.minecraft.util.math">ChunkPos</a>&nbsp;chunkPos,
                             <a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)</pre>
 </li>
 </ul>
-<a name="shouldRenderOverlay--">
+<a name="write--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>shouldRenderOverlay</h4>
-<pre>public&nbsp;boolean&nbsp;shouldRenderOverlay()</pre>
+<h4>write</h4>
+<pre>public&nbsp;boolean&nbsp;write()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/client/render/entity/feature/SkinOverlayOwner.html#shouldRenderOverlay--">shouldRenderOverlay</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/client/render/entity/feature/SkinOverlayOwner.html" title="interface in net.minecraft.client.render.entity.feature">SkinOverlayOwner</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/world/storage/IoWritable.html#write--">write</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/world/storage/IoWritable.html" title="interface in net.minecraft.world.storage">IoWritable</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_27474-net.minecraft.util.math.ColumnPos-net.minecraft.nbt.CompoundTag-">
+<a name="method_27474-net.minecraft.util.math.ChunkPos-net.minecraft.nbt.CompoundTag-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>method_27474</h4>
-<pre>private&nbsp;void&nbsp;method_27474(<a href="../../../../net/minecraft/util/math/ColumnPos.html" title="class in net.minecraft.util.math">ColumnPos</a>&nbsp;columnPos,
+<pre>private&nbsp;void&nbsp;method_27474(<a href="../../../../net/minecraft/util/math/ChunkPos.html" title="class in net.minecraft.util.math">ChunkPos</a>&nbsp;chunkPos,
                           <a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;compoundTag)
                    throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl>
@@ -491,18 +491,18 @@ protected&nbsp;<a href="../../../../net/minecraft/world/chunk/Chunk.html" title=
 </dl>
 </li>
 </ul>
-<a name="method_27479-net.minecraft.world.World-net.minecraft.world.chunk.Chunk-">
+<a name="saveEntities-net.minecraft.world.World-net.minecraft.world.chunk.Chunk-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_27479</h4>
-<pre>public&nbsp;void&nbsp;method_27479(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
+<h4>saveEntities</h4>
+<pre>public&nbsp;void&nbsp;saveEntities(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
                          <a href="../../../../net/minecraft/world/chunk/Chunk.html" title="class in net.minecraft.world.chunk">Chunk</a>&nbsp;chunk)
                   throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_5318.html#method_27479-net.minecraft.world.World-net.minecraft.world.chunk.Chunk-">method_27479</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/class_5318.html" title="interface in net.minecraft">class_5318</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/server/world/ChunkStorage.html#saveEntities-net.minecraft.world.World-net.minecraft.world.chunk.Chunk-">saveEntities</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/server/world/ChunkStorage.html" title="interface in net.minecraft.server.world">ChunkStorage</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
 </dl>
@@ -517,7 +517,7 @@ protected&nbsp;<a href="../../../../net/minecraft/world/chunk/Chunk.html" title=
 <pre>public&nbsp;void&nbsp;method_27478()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_5318.html#method_27478--">method_27478</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/class_5318.html" title="interface in net.minecraft">class_5318</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/server/world/ChunkStorage.html#method_27478--">method_27478</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/server/world/ChunkStorage.html" title="interface in net.minecraft.server.world">ChunkStorage</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -530,7 +530,7 @@ protected&nbsp;<a href="../../../../net/minecraft/world/chunk/Chunk.html" title=
 <pre>public&nbsp;void&nbsp;method_27480()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_5318.html#method_27480--">method_27480</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/class_5318.html" title="interface in net.minecraft">class_5318</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/server/world/ChunkStorage.html#method_27480--">method_27480</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/server/world/ChunkStorage.html" title="interface in net.minecraft.server.world">ChunkStorage</a></code></dd>
 </dl>
 </li>
 </ul>

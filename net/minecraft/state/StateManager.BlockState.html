@@ -113,7 +113,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>, <a href="../../../net/minecraft/class_3580.html" title="interface in net.minecraft">class_3580</a>, <a href="../../../net/minecraft/class_3903.html" title="interface in net.minecraft">class_3903</a></dd>
+<dd><a href="../../../net/minecraft/block/BlockProperties.html" title="interface in net.minecraft.block">BlockProperties</a>, <a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>, <a href="../../../net/minecraft/class_3580.html" title="interface in net.minecraft">class_3580</a></dd>
 </dl>
 <dl>
 <dt>Enclosing class:</dt>
@@ -200,7 +200,7 @@ extends <a href="../../../net/minecraft/state/AbstractState.html" title="class i
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/state/StateManager.BlockState.html#emitsRedstonePowe--">emitsRedstonePowe</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/state/StateManager.BlockState.html#emitsRedstonePower--">emitsRedstonePower</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
@@ -277,61 +277,67 @@ extends <a href="../../../net/minecraft/state/AbstractState.html" title="class i
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/state/StateManager.BlockState.html#getRenderType--">getRenderType</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i20" class="altColor">
+<td class="colFirst"><code><a href="../../../net/minecraft/block/BlockShape.html" title="enum in net.minecraft.block">BlockShape</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/state/StateManager.BlockState.html#getShape-net.minecraft.world.BlockView-net.minecraft.util.math.BlockPos-net.minecraft.util.math.Direction-">getShape</a></span>(<a href="../../../net/minecraft/world/BlockView.html" title="interface in net.minecraft.world">BlockView</a>&nbsp;world,
+        <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+        <a href="../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;side)</code>&nbsp;</td>
+</tr>
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/state/StateManager.BlockState.html#getStrongRedstonePower-net.minecraft.world.BlockView-net.minecraft.util.math.BlockPos-net.minecraft.util.math.Direction-">getStrongRedstonePower</a></span>(<a href="../../../net/minecraft/world/BlockView.html" title="interface in net.minecraft.world">BlockView</a>&nbsp;blockView,
                       <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
                       <a href="../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction)</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/state/StateManager.BlockState.html#getWeakRedstonePower-net.minecraft.world.BlockView-net.minecraft.util.math.BlockPos-net.minecraft.util.math.Direction-">getWeakRedstonePower</a></span>(<a href="../../../net/minecraft/world/BlockView.html" title="interface in net.minecraft.world">BlockView</a>&nbsp;blockView,
                     <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
                     <a href="../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction)</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/state/StateManager.BlockState.html#hasComparatorOutput--">hasComparatorOutput</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/state/StateManager.BlockState.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/state/StateManager.BlockState.html#isFullCube--">isFullCube</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/state/StateManager.BlockState.html#isOpaque--">isOpaque</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/state/StateManager.BlockState.html#isOpaqueFullCube--">isOpaqueFullCube</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/state/StateManager.BlockState.html#isSolidBlock--">isSolidBlock</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/state/StateManager.BlockState.html#isSolidFullCube--">isSolidFullCube</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/state/StateManager.BlockState.html#isTopSolidFullSquare--">isTopSolidFullSquare</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/state/StateManager.BlockState.html#isTranslucent--">isTranslucent</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/state/StateManager.BlockState.html#method_27175-net.minecraft.world.World-net.minecraft.util.math.BlockPos-int-int-">method_27175</a></span>(<a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
             <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
             int&nbsp;int2,
             int&nbsp;int3)</code>&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/state/StateManager.BlockState.html#method_27180-net.minecraft.world.World-net.minecraft.util.math.BlockPos-net.minecraft.util.math.Box-java.util.List-net.minecraft.entity.Entity-boolean-">method_27180</a></span>(<a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
             <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
@@ -340,33 +346,27 @@ extends <a href="../../../net/minecraft/state/AbstractState.html" title="class i
             <a href="../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
             boolean&nbsp;bool)</code>&nbsp;</td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code><a href="../../../net/minecraft/util/hit/BlockHitResult.html" title="class in net.minecraft.util.hit">BlockHitResult</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/state/StateManager.BlockState.html#method_27181-net.minecraft.world.World-net.minecraft.util.math.BlockPos-net.minecraft.util.math.Vec3d-net.minecraft.util.math.Vec3d-">method_27181</a></span>(<a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
             <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
             <a href="../../../net/minecraft/util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&nbsp;vec3d,
             <a href="../../../net/minecraft/util/math/Vec3d.html" title="class in net.minecraft.util.math">Vec3d</a>&nbsp;vec3d2)</code>&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/state/StateManager.BlockState.html#method_27189-net.minecraft.world.BlockView-net.minecraft.util.math.BlockPos-">method_27189</a></span>(<a href="../../../net/minecraft/world/BlockView.html" title="interface in net.minecraft.world">BlockView</a>&nbsp;blockView,
             <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</code>&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code><a href="../../../net/minecraft/util/math/Box.html" title="class in net.minecraft.util.math">Box</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/state/StateManager.BlockState.html#method_27192-net.minecraft.world.World-net.minecraft.util.math.BlockPos-">method_27192</a></span>(<a href="../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
             <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</code>&nbsp;</td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code><a href="../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/state/StateManager.BlockState.html#method_27193-net.minecraft.world.BlockView-net.minecraft.util.math.BlockPos-">method_27193</a></span>(<a href="../../../net/minecraft/world/BlockView.html" title="interface in net.minecraft.world">BlockView</a>&nbsp;blockView,
             <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</code>&nbsp;</td>
-</tr>
-<tr id="i37" class="rowColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/class_3581.html" title="enum in net.minecraft">class_3581</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/state/StateManager.BlockState.html#method_27197-net.minecraft.world.BlockView-net.minecraft.util.math.BlockPos-net.minecraft.util.math.Direction-">method_27197</a></span>(<a href="../../../net/minecraft/world/BlockView.html" title="interface in net.minecraft.world">BlockView</a>&nbsp;blockView,
-            <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
-            <a href="../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction)</code>&nbsp;</td>
 </tr>
 <tr id="i38" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
@@ -749,13 +749,13 @@ public&nbsp;float&nbsp;getAmbientOcclusionLightLevel()</pre>
 <pre>public&nbsp;boolean&nbsp;isSolidBlock()</pre>
 </li>
 </ul>
-<a name="emitsRedstonePowe--">
+<a name="emitsRedstonePower--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>emitsRedstonePowe</h4>
-<pre>public&nbsp;boolean&nbsp;emitsRedstonePowe()</pre>
+<h4>emitsRedstonePower</h4>
+<pre>public&nbsp;boolean&nbsp;emitsRedstonePower()</pre>
 </li>
 </ul>
 <a name="getWeakRedstonePower-net.minecraft.world.BlockView-net.minecraft.util.math.BlockPos-net.minecraft.util.math.Direction-">
@@ -971,15 +971,15 @@ public&nbsp;<a href="../../../net/minecraft/util/math/Box.html" title="class in 
 <pre>public&nbsp;boolean&nbsp;shouldSuffocate()</pre>
 </li>
 </ul>
-<a name="method_27197-net.minecraft.world.BlockView-net.minecraft.util.math.BlockPos-net.minecraft.util.math.Direction-">
+<a name="getShape-net.minecraft.world.BlockView-net.minecraft.util.math.BlockPos-net.minecraft.util.math.Direction-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_27197</h4>
-<pre>public&nbsp;<a href="../../../net/minecraft/class_3581.html" title="enum in net.minecraft">class_3581</a>&nbsp;method_27197(<a href="../../../net/minecraft/world/BlockView.html" title="interface in net.minecraft.world">BlockView</a>&nbsp;blockView,
-                               <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
-                               <a href="../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction)</pre>
+<h4>getShape</h4>
+<pre>public&nbsp;<a href="../../../net/minecraft/block/BlockShape.html" title="enum in net.minecraft.block">BlockShape</a>&nbsp;getShape(<a href="../../../net/minecraft/world/BlockView.html" title="interface in net.minecraft.world">BlockView</a>&nbsp;world,
+                           <a href="../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+                           <a href="../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;side)</pre>
 </li>
 </ul>
 </li>

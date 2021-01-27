@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../net/minecraft/client/render/chunk/BuiltChunk.html" title="class in net.minecraft.client.render.chunk"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/client/render/chunk/BuiltChunkWithRenderLists.html" title="class in net.minecraft.client.render.chunk"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../net/minecraft/client/render/chunk/ChunkBuilder.class_5934.html" title="class in net.minecraft.client.render.chunk"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -165,11 +165,11 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/chunk/ChunkBuilder.html#field_29544">field_29544</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../net/minecraft/class_1545.html" title="class in net.minecraft">class_1545</a>&gt;</code></td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../net/minecraft/client/render/chunk/ChunkWorker.html" title="class in net.minecraft.client.render.chunk">ChunkWorker</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/chunk/ChunkBuilder.html#field_29545">field_29545</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/PriorityBlockingQueue.html?is-external=true" title="class or interface in java.util.concurrent">PriorityBlockingQueue</a>&lt;<a href="../../../../../net/minecraft/class_1543.html" title="class in net.minecraft">class_1543</a>&gt;</code></td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/PriorityBlockingQueue.html?is-external=true" title="class or interface in java.util.concurrent">PriorityBlockingQueue</a>&lt;<a href="../../../../../net/minecraft/client/render/chunk/ChunkRenderTask.html" title="class in net.minecraft.client.render.chunk">ChunkRenderTask</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/chunk/ChunkBuilder.html#field_29546">field_29546</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -189,7 +189,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/chunk/ChunkBuilder.html#field_29550">field_29550</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../../net/minecraft/class_1545.html" title="class in net.minecraft">class_1545</a></code></td>
+<td class="colFirst"><code>private <a href="../../../../../net/minecraft/client/render/chunk/ChunkWorker.html" title="class in net.minecraft.client.render.chunk">ChunkWorker</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/chunk/ChunkBuilder.html#field_29551">field_29551</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -225,18 +225,22 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="../../../../../net/minecraft/client/render/chunk/ChunkRenderTask.html" title="class in net.minecraft.client.render.chunk">ChunkRenderTask</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/chunk/ChunkBuilder.html#getNextChunkRenderTask--">getNextChunkRenderTask</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/chunk/ChunkBuilder.html#isEmpty--">isEmpty</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/chunk/ChunkBuilder.html#method_30775--">method_30775</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/chunk/ChunkBuilder.html#method_30776-long-">method_30776</a></span>(long&nbsp;long2)</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="https://guava.dev/releases/21.0/api/docs/com/google/common/util/concurrent/ListenableFuture.html?is-external=true" title="class or interface in com.google.common.util.concurrent">ListenableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/chunk/ChunkBuilder.html#method_30777-net.minecraft.client.render.RenderLayer-net.minecraft.client.render.BufferBuilder-net.minecraft.client.render.chunk.BuiltChunk-net.minecraft.client.render.chunk.ChunkData-double-">method_30777</a></span>(<a href="../../../../../net/minecraft/client/render/RenderLayer.html" title="enum in net.minecraft.client.render">RenderLayer</a>&nbsp;renderLayer,
             <a href="../../../../../net/minecraft/client/render/BufferBuilder.html" title="class in net.minecraft.client.render">BufferBuilder</a>&nbsp;bufferBuilder,
@@ -244,44 +248,40 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
             <a href="../../../../../net/minecraft/client/render/chunk/ChunkData.html" title="class in net.minecraft.client.render.chunk">ChunkData</a>&nbsp;chunkData,
             double&nbsp;double2)</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/chunk/ChunkBuilder.html#method_30778-net.minecraft.client.render.BufferBuilder-int-net.minecraft.client.render.chunk.BuiltChunk-">method_30778</a></span>(<a href="../../../../../net/minecraft/client/render/BufferBuilder.html" title="class in net.minecraft.client.render">BufferBuilder</a>&nbsp;bufferBuilder,
             int&nbsp;int2,
             <a href="../../../../../net/minecraft/client/render/chunk/BuiltChunk.html" title="class in net.minecraft.client.render.chunk">BuiltChunk</a>&nbsp;builtChunk)</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/chunk/ChunkBuilder.html#method_30779-net.minecraft.client.render.BufferBuilder-net.minecraft.client.gl.VertexBuffer-">method_30779</a></span>(<a href="../../../../../net/minecraft/client/render/BufferBuilder.html" title="class in net.minecraft.client.render">BufferBuilder</a>&nbsp;bufferBuilder,
             <a href="../../../../../net/minecraft/client/gl/VertexBuffer.html" title="class in net.minecraft.client.gl">VertexBuffer</a>&nbsp;vertexBuffer)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/chunk/ChunkBuilder.html#method_30780-net.minecraft.client.render.chunk.BlockBufferBuilderStorage-">method_30780</a></span>(<a href="../../../../../net/minecraft/client/render/chunk/BlockBufferBuilderStorage.html" title="class in net.minecraft.client.render.chunk">BlockBufferBuilderStorage</a>&nbsp;blockBufferBuilderStorage)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/chunk/ChunkBuilder.html#method_30782-net.minecraft.client.render.chunk.BuiltChunk-">method_30782</a></span>(<a href="../../../../../net/minecraft/client/render/chunk/BuiltChunk.html" title="class in net.minecraft.client.render.chunk">BuiltChunk</a>&nbsp;builtChunk)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/chunk/ChunkBuilder.html#method_30783--">method_30783</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/chunk/ChunkBuilder.html#method_30784-net.minecraft.client.render.chunk.BuiltChunk-">method_30784</a></span>(<a href="../../../../../net/minecraft/client/render/chunk/BuiltChunk.html" title="class in net.minecraft.client.render.chunk">BuiltChunk</a>&nbsp;builtChunk)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../net/minecraft/client/render/chunk/BlockBufferBuilderStorage.html" title="class in net.minecraft.client.render.chunk">BlockBufferBuilderStorage</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/chunk/ChunkBuilder.html#method_30785--">method_30785</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/chunk/ChunkBuilder.html#method_30786-net.minecraft.client.render.chunk.BuiltChunk-">method_30786</a></span>(<a href="../../../../../net/minecraft/client/render/chunk/BuiltChunk.html" title="class in net.minecraft.client.render.chunk">BuiltChunk</a>&nbsp;builtChunk)</code>&nbsp;</td>
-</tr>
-<tr id="i12" class="altColor">
-<td class="colFirst"><code><a href="../../../../../net/minecraft/class_1543.html" title="class in net.minecraft">class_1543</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/chunk/ChunkBuilder.html#method_30787--">method_30787</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -359,7 +359,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>field_29545</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../net/minecraft/class_1545.html" title="class in net.minecraft">class_1545</a>&gt; field_29545</pre>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../net/minecraft/client/render/chunk/ChunkWorker.html" title="class in net.minecraft.client.render.chunk">ChunkWorker</a>&gt; field_29545</pre>
 </li>
 </ul>
 <a name="field_29546">
@@ -368,7 +368,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>field_29546</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/PriorityBlockingQueue.html?is-external=true" title="class or interface in java.util.concurrent">PriorityBlockingQueue</a>&lt;<a href="../../../../../net/minecraft/class_1543.html" title="class in net.minecraft">class_1543</a>&gt; field_29546</pre>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/PriorityBlockingQueue.html?is-external=true" title="class or interface in java.util.concurrent">PriorityBlockingQueue</a>&lt;<a href="../../../../../net/minecraft/client/render/chunk/ChunkRenderTask.html" title="class in net.minecraft.client.render.chunk">ChunkRenderTask</a>&gt; field_29546</pre>
 </li>
 </ul>
 <a name="field_29547">
@@ -413,7 +413,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockListLast">
 <li class="blockList">
 <h4>field_29551</h4>
-<pre>private final&nbsp;<a href="../../../../../net/minecraft/class_1545.html" title="class in net.minecraft">class_1545</a> field_29551</pre>
+<pre>private final&nbsp;<a href="../../../../../net/minecraft/client/render/chunk/ChunkWorker.html" title="class in net.minecraft.client.render.chunk">ChunkWorker</a> field_29551</pre>
 </li>
 </ul>
 </li>
@@ -509,14 +509,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </dl>
 </li>
 </ul>
-<a name="method_30787--">
+<a name="getNextChunkRenderTask--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_30787</h4>
-<pre>public&nbsp;<a href="../../../../../net/minecraft/class_1543.html" title="class in net.minecraft">class_1543</a>&nbsp;method_30787()
-                        throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/InterruptedException.html?is-external=true" title="class or interface in java.lang">InterruptedException</a></pre>
+<h4>getNextChunkRenderTask</h4>
+<pre>public&nbsp;<a href="../../../../../net/minecraft/client/render/chunk/ChunkRenderTask.html" title="class in net.minecraft.client.render.chunk">ChunkRenderTask</a>&nbsp;getNextChunkRenderTask()
+                                       throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/InterruptedException.html?is-external=true" title="class or interface in java.lang">InterruptedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/InterruptedException.html?is-external=true" title="class or interface in java.lang">InterruptedException</a></code></dd>
@@ -629,7 +629,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../net/minecraft/client/render/chunk/BuiltChunk.html" title="class in net.minecraft.client.render.chunk"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/client/render/chunk/BuiltChunkWithRenderLists.html" title="class in net.minecraft.client.render.chunk"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../net/minecraft/client/render/chunk/ChunkBuilder.class_5934.html" title="class in net.minecraft.client.render.chunk"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

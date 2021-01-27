@@ -108,14 +108,14 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../net/minecraft/class_4176.html" title="interface in net.minecraft">class_4176</a>, <a href="../../../../net/minecraft/client/texture/TextureTickListener.html" title="interface in net.minecraft.client.texture">TextureTickListener</a></dd>
+<dd><a href="../../../../net/minecraft/client/resource/ResourceListener.html" title="interface in net.minecraft.client.resource">ResourceListener</a>, <a href="../../../../net/minecraft/client/texture/TextureTickListener.html" title="interface in net.minecraft.client.texture">TextureTickListener</a></dd>
 </dl>
 <hr>
 <br>
 <pre>@Environment(value=CLIENT)
 public class <span class="typeNameLabel">TextureManager</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
-implements <a href="../../../../net/minecraft/client/texture/TextureTickListener.html" title="interface in net.minecraft.client.texture">TextureTickListener</a>, <a href="../../../../net/minecraft/class_4176.html" title="interface in net.minecraft">class_4176</a></pre>
+implements <a href="../../../../net/minecraft/client/texture/TextureTickListener.html" title="interface in net.minecraft.client.texture">TextureTickListener</a>, <a href="../../../../net/minecraft/client/resource/ResourceListener.html" title="interface in net.minecraft.client.resource">ResourceListener</a></pre>
 </li>
 </ul>
 </div>
@@ -192,24 +192,24 @@ implements <a href="../../../../net/minecraft/client/texture/TextureTickListener
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/TextureManager.html#apply-net.minecraft.resource.ResourceManager-">apply</a></span>(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/TextureManager.html#bindTexture-net.minecraft.util.Identifier-">bindTexture</a></span>(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;textureIdentifier)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/TextureManager.html#bindTexture-net.minecraft.util.Identifier-">bindTexture</a></span>(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;textureIdentifier)</code>&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/TextureManager.html#destroyTexture-net.minecraft.util.Identifier-">destroyTexture</a></span>(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;id)</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../net/minecraft/client/texture/Texture.html" title="interface in net.minecraft.client.texture">Texture</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/TextureManager.html#getTexture-net.minecraft.util.Identifier-">getTexture</a></span>(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier)</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/TextureManager.html#method_31360-net.minecraft.util.Identifier-net.minecraft.class_6029-">method_31360</a></span>(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;identifier,
             <a href="../../../../net/minecraft/class_6029.html" title="interface in net.minecraft">class_6029</a>&nbsp;class_6029)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/TextureManager.html#onReload-net.minecraft.resource.ResourceManager-">onReload</a></span>(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;manager)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a></code></td>
@@ -396,16 +396,16 @@ implements <a href="../../../../net/minecraft/client/texture/TextureTickListener
 <pre>public&nbsp;void&nbsp;destroyTexture(<a href="../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;id)</pre>
 </li>
 </ul>
-<a name="apply-net.minecraft.resource.ResourceManager-">
+<a name="onReload-net.minecraft.resource.ResourceManager-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>apply</h4>
-<pre>public&nbsp;void&nbsp;apply(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager)</pre>
+<h4>onReload</h4>
+<pre>public&nbsp;void&nbsp;onReload(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;manager)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_4176.html#apply-net.minecraft.resource.ResourceManager-">apply</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/class_4176.html" title="interface in net.minecraft">class_4176</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/client/resource/ResourceListener.html#onReload-net.minecraft.resource.ResourceManager-">onReload</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/client/resource/ResourceListener.html" title="interface in net.minecraft.client.resource">ResourceListener</a></code></dd>
 </dl>
 </li>
 </ul>

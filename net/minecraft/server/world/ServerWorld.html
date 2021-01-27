@@ -170,7 +170,7 @@ implements <a href="../../../../net/minecraft/class_2152.html" title="interface 
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ServerWorld.html#entitiesByUuid">entitiesByUuid</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../net/minecraft/class_6380.html" title="class in net.minecraft">class_6380</a></code></td>
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/server/world/PlayerChunkWatchingManager.html" title="class in net.minecraft.server.world">PlayerChunkWatchingManager</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ServerWorld.html#field_31701">field_31701</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -315,7 +315,7 @@ implements <a href="../../../../net/minecraft/class_2152.html" title="interface 
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ServerWorld.html#getPortalForcer--">getPortalForcer</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/class_6380.html" title="class in net.minecraft">class_6380</a></code></td>
+<td class="colFirst"><code><a href="../../../../net/minecraft/server/world/PlayerChunkWatchingManager.html" title="class in net.minecraft.server.world">PlayerChunkWatchingManager</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ServerWorld.html#getRaidManager--">getRaidManager</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
@@ -332,7 +332,7 @@ implements <a href="../../../../net/minecraft/class_2152.html" title="interface 
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ServerWorld.html#isServerThread--">isServerThread</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ServerWorld.html#isOnThread--">isOnThread</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
@@ -581,7 +581,7 @@ implements <a href="../../../../net/minecraft/class_2152.html" title="interface 
 </tr>
 <tr id="i61" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ServerWorld.html#tickBlockEntities--">tickBlockEntities</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ServerWorld.html#tick--">tick</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i62" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
@@ -589,7 +589,7 @@ implements <a href="../../../../net/minecraft/class_2152.html" title="interface 
 </tr>
 <tr id="i63" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ServerWorld.html#tickTime--">tickTime</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/server/world/ServerWorld.html#tickEntities--">tickEntities</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i64" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
@@ -661,7 +661,7 @@ implements <a href="../../../../net/minecraft/class_2152.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>field_31701</h4>
-<pre>private final&nbsp;<a href="../../../../net/minecraft/class_6380.html" title="class in net.minecraft">class_6380</a> field_31701</pre>
+<pre>private final&nbsp;<a href="../../../../net/minecraft/server/world/PlayerChunkWatchingManager.html" title="class in net.minecraft.server.world">PlayerChunkWatchingManager</a> field_31701</pre>
 </li>
 </ul>
 <a name="field_31702">
@@ -814,16 +814,16 @@ implements <a href="../../../../net/minecraft/class_2152.html" title="interface 
 </dl>
 </li>
 </ul>
-<a name="tickTime--">
+<a name="tick--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>tickTime</h4>
-<pre>public&nbsp;void&nbsp;tickTime()</pre>
+<h4>tick</h4>
+<pre>public&nbsp;void&nbsp;tick()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/world/World.html#tickTime--">tickTime</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/world/World.html#tick--">tick</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1024,16 +1024,16 @@ public&nbsp;void&nbsp;setDefaultSpawnClient()</pre>
 </dl>
 </li>
 </ul>
-<a name="tickBlockEntities--">
+<a name="tickEntities--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>tickBlockEntities</h4>
-<pre>public&nbsp;void&nbsp;tickBlockEntities()</pre>
+<h4>tickEntities</h4>
+<pre>public&nbsp;void&nbsp;tickEntities()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/world/World.html#tickBlockEntities--">tickBlockEntities</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/world/World.html#tickEntities--">tickEntities</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1456,7 +1456,7 @@ public&nbsp;<a href="../../../../net/minecraft/server/MinecraftServer.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>getRaidManager</h4>
-<pre>public&nbsp;<a href="../../../../net/minecraft/class_6380.html" title="class in net.minecraft">class_6380</a>&nbsp;getRaidManager()</pre>
+<pre>public&nbsp;<a href="../../../../net/minecraft/server/world/PlayerChunkWatchingManager.html" title="class in net.minecraft.server.world">PlayerChunkWatchingManager</a>&nbsp;getRaidManager()</pre>
 </li>
 </ul>
 <a name="getPortalForcer--">
@@ -1571,16 +1571,16 @@ public&nbsp;<a href="../../../../net/minecraft/entity/Entity.html" title="class 
 </dl>
 </li>
 </ul>
-<a name="isServerThread--">
+<a name="isOnThread--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>isServerThread</h4>
-<pre>public&nbsp;boolean&nbsp;isServerThread()</pre>
+<h4>isOnThread</h4>
+<pre>public&nbsp;boolean&nbsp;isOnThread()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_2152.html#isServerThread--">isServerThread</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/class_2152.html" title="interface in net.minecraft">class_2152</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/class_2152.html#isOnThread--">isOnThread</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/class_2152.html" title="interface in net.minecraft">class_2152</a></code></dd>
 </dl>
 </li>
 </ul>

@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":9,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":9,"i31":9,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":9,"i42":10,"i43":10,"i44":9,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10};
+var methods = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":9,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":9,"i30":9,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":9,"i41":10,"i42":10,"i43":9,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -108,14 +108,14 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../net/minecraft/class_4176.html" title="interface in net.minecraft">class_4176</a>, <a href="../../../../net/minecraft/world/WorldEventListener.html" title="interface in net.minecraft.world">WorldEventListener</a></dd>
+<dd><a href="../../../../net/minecraft/client/resource/ResourceListener.html" title="interface in net.minecraft.client.resource">ResourceListener</a>, <a href="../../../../net/minecraft/world/WorldEventListener.html" title="interface in net.minecraft.world">WorldEventListener</a></dd>
 </dl>
 <hr>
 <br>
 <pre>@Environment(value=CLIENT)
 public class <span class="typeNameLabel">WorldRenderer</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
-implements <a href="../../../../net/minecraft/world/WorldEventListener.html" title="interface in net.minecraft.world">WorldEventListener</a>, <a href="../../../../net/minecraft/class_4176.html" title="interface in net.minecraft">class_4176</a></pre>
+implements <a href="../../../../net/minecraft/world/WorldEventListener.html" title="interface in net.minecraft.world">WorldEventListener</a>, <a href="../../../../net/minecraft/client/resource/ResourceListener.html" title="interface in net.minecraft.client.resource">ResourceListener</a></pre>
 </li>
 </ul>
 </div>
@@ -250,7 +250,7 @@ implements <a href="../../../../net/minecraft/world/WorldEventListener.html" tit
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#field_29168">field_29168</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../net/minecraft/block/sapling/SaplingGenerator.html" title="class in net.minecraft.block.sapling">SaplingGenerator</a></code></td>
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/client/render/chunk/BuiltChunkRenderer.html" title="class in net.minecraft.client.render.chunk">BuiltChunkRenderer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#field_29170">field_29170</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -414,18 +414,14 @@ implements <a href="../../../../net/minecraft/world/WorldEventListener.html" tit
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#apply-net.minecraft.resource.ResourceManager-">apply</a></span>(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager)</code>&nbsp;</td>
-</tr>
-<tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#canDrawEntityOutlines--">canDrawEntityOutlines</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#clearChunkRenderers--">clearChunkRenderers</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#drawBox-net.minecraft.util.math.Box-float-float-float-float-">drawBox</a></span>(<a href="../../../../net/minecraft/util/math/Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;box,
        float&nbsp;float2,
@@ -433,41 +429,41 @@ implements <a href="../../../../net/minecraft/world/WorldEventListener.html" tit
        float&nbsp;float4,
        float&nbsp;float5)</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#drawEntityOutlinesFramebuffer--">drawEntityOutlinesFramebuffer</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>private <a href="../../../../net/minecraft/client/render/chunk/BuiltChunk.html" title="class in net.minecraft.client.render.chunk">BuiltChunk</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#getAdjacentChunk-net.minecraft.util.math.BlockPos-net.minecraft.client.render.chunk.BuiltChunk-net.minecraft.util.math.Direction-">getAdjacentChunk</a></span>(<a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
                 <a href="../../../../net/minecraft/client/render/chunk/BuiltChunk.html" title="class in net.minecraft.client.render.chunk">BuiltChunk</a>&nbsp;chunk,
                 <a href="../../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&nbsp;direction)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#getChunksDebugString--">getChunksDebugString</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>protected int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#getCompletedChunkCount--">getCompletedChunkCount</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#getEntitiesDebugString--">getEntitiesDebugString</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../net/minecraft/util/math/Direction.html" title="enum in net.minecraft.util.math">Direction</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#getOpenChunkFaces-net.minecraft.util.math.BlockPos-">getOpenChunkFaces</a></span>(<a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>private int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#getRandomParticleSpawnChance-boolean-">getRandomParticleSpawnChance</a></span>(boolean&nbsp;canSpawnOnMinimal)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#isTerrainRenderComplete--">isTerrainRenderComplete</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_26162-int-int-int-int-int-int-">method_26162</a></span>(int&nbsp;int2,
             int&nbsp;int3,
@@ -476,13 +472,13 @@ implements <a href="../../../../net/minecraft/world/WorldEventListener.html" tit
             int&nbsp;int6,
             int&nbsp;int7)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_26163-int-net.minecraft.util.math.BlockPos-int-">method_26163</a></span>(int&nbsp;int2,
             <a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
             int&nbsp;int3)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_26164-int-boolean-double-double-double-double-double-double-int:A-">method_26164</a></span>(int&nbsp;int2,
             boolean&nbsp;bool,
@@ -494,7 +490,7 @@ implements <a href="../../../../net/minecraft/world/WorldEventListener.html" tit
             double&nbsp;double7,
             int[]&nbsp;int3)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_26165-int-boolean-boolean-double-double-double-double-double-double-int:A-">method_26165</a></span>(int&nbsp;int2,
             boolean&nbsp;bool,
@@ -507,14 +503,14 @@ implements <a href="../../../../net/minecraft/world/WorldEventListener.html" tit
             double&nbsp;double7,
             int[]&nbsp;int3)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_26166-net.minecraft.entity.player.PlayerEntity-int-net.minecraft.util.math.BlockPos-int-">method_26166</a></span>(<a href="../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity,
             int&nbsp;int2,
             <a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
             int&nbsp;int3)</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_26167-net.minecraft.entity.player.PlayerEntity-net.minecraft.sound.SoundEvent-net.minecraft.sound.SoundCategory-double-double-double-float-float-">method_26167</a></span>(<a href="../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity,
             <a href="../../../../net/minecraft/sound/SoundEvent.html" title="class in net.minecraft.sound">SoundEvent</a>&nbsp;soundEvent,
@@ -525,7 +521,7 @@ implements <a href="../../../../net/minecraft/world/WorldEventListener.html" tit
             float&nbsp;float2,
             float&nbsp;float3)</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_26168-net.minecraft.world.World-net.minecraft.util.math.BlockPos-net.minecraft.block.BlockState-net.minecraft.block.BlockState-int-">method_26168</a></span>(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
             <a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
@@ -533,24 +529,24 @@ implements <a href="../../../../net/minecraft/world/WorldEventListener.html" tit
             <a href="../../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;blockState2,
             int&nbsp;int2)</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_26170-net.minecraft.sound.SoundEvent-net.minecraft.util.math.BlockPos-">method_26170</a></span>(<a href="../../../../net/minecraft/sound/SoundEvent.html" title="class in net.minecraft.sound">SoundEvent</a>&nbsp;soundEvent,
             <a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos)</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_26172-int-net.minecraft.util.math.BlockPos-int-">method_26172</a></span>(int&nbsp;int2,
             <a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;blockPos,
             int&nbsp;int3)</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30419-double-double-double-">method_30419</a></span>(double&nbsp;double2,
             double&nbsp;double3,
             double&nbsp;double4)</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30420-double-double-double-double-double-double-float-float-float-float-">method_30420</a></span>(double&nbsp;double2,
             double&nbsp;double3,
@@ -563,19 +559,19 @@ implements <a href="../../../../net/minecraft/world/WorldEventListener.html" tit
             float&nbsp;float4,
             float&nbsp;float5)</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30421-double-double-double-float-">method_30421</a></span>(double&nbsp;double2,
             double&nbsp;double3,
             double&nbsp;double4,
             float&nbsp;float2)</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30422-float-int-">method_30422</a></span>(float&nbsp;float2,
             int&nbsp;int2)</code>&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30423-float-int-double-double-double-">method_30423</a></span>(float&nbsp;float2,
             int&nbsp;int2,
@@ -583,29 +579,29 @@ implements <a href="../../../../net/minecraft/world/WorldEventListener.html" tit
             double&nbsp;double3,
             double&nbsp;double4)</code>&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30426-long-">method_30426</a></span>(long&nbsp;long2)</code>&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30427-net.minecraft.entity.player.PlayerEntity-net.minecraft.util.hit.BlockHitResult-int-float-">method_30427</a></span>(<a href="../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity,
             <a href="../../../../net/minecraft/util/hit/BlockHitResult.html" title="class in net.minecraft.util.hit">BlockHitResult</a>&nbsp;blockHitResult,
             int&nbsp;int2,
             float&nbsp;float2)</code>&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30428-net.minecraft.client.render.RenderLayer-">method_30428</a></span>(<a href="../../../../net/minecraft/client/render/RenderLayer.html" title="enum in net.minecraft.client.render">RenderLayer</a>&nbsp;renderLayer)</code>&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30429-net.minecraft.client.render.RenderLayer-double-int-net.minecraft.entity.Entity-">method_30429</a></span>(<a href="../../../../net/minecraft/client/render/RenderLayer.html" title="enum in net.minecraft.client.render">RenderLayer</a>&nbsp;renderLayer,
             double&nbsp;double2,
             int&nbsp;int2,
             <a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</code>&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30431-net.minecraft.util.math.Box-float-float-float-float-">method_30431</a></span>(<a href="../../../../net/minecraft/util/math/Box.html" title="class in net.minecraft.util.math">Box</a>&nbsp;box,
             float&nbsp;float2,
@@ -613,7 +609,7 @@ implements <a href="../../../../net/minecraft/world/WorldEventListener.html" tit
             float&nbsp;float4,
             float&nbsp;float5)</code>&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30434-net.minecraft.client.render.BufferBuilder-double-double-double-double-double-double-float-float-float-float-">method_30434</a></span>(<a href="../../../../net/minecraft/client/render/BufferBuilder.html" title="class in net.minecraft.client.render">BufferBuilder</a>&nbsp;bufferBuilder,
             double&nbsp;double2,
@@ -627,14 +623,14 @@ implements <a href="../../../../net/minecraft/world/WorldEventListener.html" tit
             float&nbsp;float4,
             float&nbsp;float5)</code>&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30436-net.minecraft.client.render.Tessellator-net.minecraft.client.render.BufferBuilder-net.minecraft.entity.Entity-float-">method_30436</a></span>(<a href="../../../../net/minecraft/client/render/Tessellator.html" title="class in net.minecraft.client.render">Tessellator</a>&nbsp;tessellator,
             <a href="../../../../net/minecraft/client/render/BufferBuilder.html" title="class in net.minecraft.client.render">BufferBuilder</a>&nbsp;bufferBuilder,
             <a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
             float&nbsp;float2)</code>&nbsp;</td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30438-net.minecraft.particle.ParticleTypes-double-double-double-double-double-double-int:A-">method_30438</a></span>(<a href="../../../../net/minecraft/particle/ParticleTypes.html" title="enum in net.minecraft.particle">ParticleTypes</a>&nbsp;particleTypes,
             double&nbsp;double2,
@@ -645,16 +641,16 @@ implements <a href="../../../../net/minecraft/world/WorldEventListener.html" tit
             double&nbsp;double7,
             int[]&nbsp;int2)</code>&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30440-java.util.Iterator-">method_30440</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a>&lt;<a href="../../../../net/minecraft/class_6377.html" title="class in net.minecraft">class_6377</a>&gt;&nbsp;iterator)</code>&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>protected org.lwjgl.util.vector.Vector3f</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30441-net.minecraft.entity.Entity-double-">method_30441</a></span>(<a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
             double&nbsp;double2)</code>&nbsp;</td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30442-net.minecraft.entity.Entity-double-net.minecraft.class_5941-int-boolean-">method_30442</a></span>(<a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
             double&nbsp;double2,
@@ -662,28 +658,28 @@ implements <a href="../../../../net/minecraft/world/WorldEventListener.html" tit
             int&nbsp;int2,
             boolean&nbsp;bool)</code>&nbsp;</td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30443-net.minecraft.entity.Entity-float-">method_30443</a></span>(<a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
             float&nbsp;float2)</code>&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30444-net.minecraft.entity.Entity-net.minecraft.class_5941-float-">method_30444</a></span>(<a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
             <a href="../../../../net/minecraft/class_5941.html" title="interface in net.minecraft">class_5941</a>&nbsp;class_5941,
             float&nbsp;float2)</code>&nbsp;</td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>private boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30445-net.minecraft.entity.Entity-net.minecraft.entity.Entity-net.minecraft.class_5941-">method_30445</a></span>(<a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity,
             <a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity2,
             <a href="../../../../net/minecraft/class_5941.html" title="interface in net.minecraft">class_5941</a>&nbsp;class_5941)</code>&nbsp;</td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30447--">method_30447</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30448-double-double-double-double-double-double-float-float-float-float-">method_30448</a></span>(double&nbsp;double2,
             double&nbsp;double3,
@@ -696,7 +692,7 @@ implements <a href="../../../../net/minecraft/world/WorldEventListener.html" tit
             float&nbsp;float4,
             float&nbsp;float5)</code>&nbsp;</td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30449-float-int-double-double-double-">method_30449</a></span>(float&nbsp;float2,
             int&nbsp;int2,
@@ -704,7 +700,7 @@ implements <a href="../../../../net/minecraft/world/WorldEventListener.html" tit
             double&nbsp;double3,
             double&nbsp;double4)</code>&nbsp;</td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>private <a href="../../../../net/minecraft/client/particle/Particle.html" title="class in net.minecraft.client.particle">Particle</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30451-int-boolean-boolean-double-double-double-double-double-double-int:A-">method_30451</a></span>(int&nbsp;int2,
             boolean&nbsp;bool,
@@ -717,7 +713,7 @@ implements <a href="../../../../net/minecraft/world/WorldEventListener.html" tit
             double&nbsp;double7,
             int[]&nbsp;int3)</code>&nbsp;</td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30454-net.minecraft.client.render.BufferBuilder-double-double-double-double-double-double-float-float-float-float-">method_30454</a></span>(<a href="../../../../net/minecraft/client/render/BufferBuilder.html" title="class in net.minecraft.client.render">BufferBuilder</a>&nbsp;bufferBuilder,
             double&nbsp;double2,
@@ -731,49 +727,53 @@ implements <a href="../../../../net/minecraft/world/WorldEventListener.html" tit
             float&nbsp;float4,
             float&nbsp;float5)</code>&nbsp;</td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30463--">method_30463</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30466--">method_30466</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30467--">method_30467</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30468--">method_30468</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30469--">method_30469</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i50" class="altColor">
+<tr id="i49" class="rowColor">
 <td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30470--">method_30470</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i51" class="rowColor">
+<tr id="i50" class="altColor">
 <td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30471--">method_30471</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i52" class="altColor">
+<tr id="i51" class="rowColor">
 <td class="colFirst"><code>private void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#method_30472--">method_30472</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i53" class="rowColor">
+<tr id="i52" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#onEntityLoad-net.minecraft.entity.Entity-">onEntityLoad</a></span>(<a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</code>&nbsp;</td>
 </tr>
-<tr id="i54" class="altColor">
+<tr id="i53" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#onEntityUnload-net.minecraft.entity.Entity-">onEntityUnload</a></span>(<a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a>&nbsp;entity)</code>&nbsp;</td>
 </tr>
-<tr id="i55" class="rowColor">
+<tr id="i54" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#onLightUpdate-net.minecraft.util.math.BlockPos-">onLightUpdate</a></span>(<a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos)</code>&nbsp;</td>
+</tr>
+<tr id="i55" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/render/WorldRenderer.html#onReload-net.minecraft.resource.ResourceManager-">onReload</a></span>(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;manager)</code>&nbsp;</td>
 </tr>
 <tr id="i56" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -1218,7 +1218,7 @@ implements <a href="../../../../net/minecraft/world/WorldEventListener.html" tit
 <ul class="blockList">
 <li class="blockList">
 <h4>field_29170</h4>
-<pre>private&nbsp;<a href="../../../../net/minecraft/block/sapling/SaplingGenerator.html" title="class in net.minecraft.block.sapling">SaplingGenerator</a> field_29170</pre>
+<pre>private&nbsp;<a href="../../../../net/minecraft/client/render/chunk/BuiltChunkRenderer.html" title="class in net.minecraft.client.render.chunk">BuiltChunkRenderer</a> field_29170</pre>
 </li>
 </ul>
 <a name="renderDistance">
@@ -1399,16 +1399,16 @@ implements <a href="../../../../net/minecraft/world/WorldEventListener.html" tit
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="apply-net.minecraft.resource.ResourceManager-">
+<a name="onReload-net.minecraft.resource.ResourceManager-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>apply</h4>
-<pre>public&nbsp;void&nbsp;apply(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager)</pre>
+<h4>onReload</h4>
+<pre>public&nbsp;void&nbsp;onReload(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;manager)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_4176.html#apply-net.minecraft.resource.ResourceManager-">apply</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/class_4176.html" title="interface in net.minecraft">class_4176</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/client/resource/ResourceListener.html#onReload-net.minecraft.resource.ResourceManager-">onReload</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/client/resource/ResourceListener.html" title="interface in net.minecraft.client.resource">ResourceListener</a></code></dd>
 </dl>
 </li>
 </ul>

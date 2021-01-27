@@ -210,7 +210,7 @@ implements <a href="../../../net/minecraft/command/CommandSource.html" title="in
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/server/MinecraftServer.html#lastTickLengths">lastTickLengths</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../net/minecraft/class_1271.html" title="interface in net.minecraft">class_1271</a></code></td>
+<td class="colFirst"><code>private <a href="../../../net/minecraft/world/level/storage/LevelStorage.html" title="interface in net.minecraft.world.level.storage">LevelStorage</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/server/MinecraftServer.html#levelStorage">levelStorage</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -346,7 +346,7 @@ implements <a href="../../../net/minecraft/command/CommandSource.html" title="in
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/server/MinecraftServer.html#userName">userName</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/class_5629.html" title="interface in net.minecraft">class_5629</a></code></td>
+<td class="colFirst"><code><a href="../../../net/minecraft/command/CommandManager.html" title="interface in net.minecraft.command">CommandManager</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/server/MinecraftServer.html#worldGenerationProgressListenerFactory">worldGenerationProgressListenerFactory</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
@@ -477,7 +477,7 @@ implements <a href="../../../net/minecraft/command/CommandSource.html" title="in
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/server/MinecraftServer.html#getLevelName--">getLevelName</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i19" class="rowColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/class_1271.html" title="interface in net.minecraft">class_1271</a></code></td>
+<td class="colFirst"><code><a href="../../../net/minecraft/world/level/storage/LevelStorage.html" title="interface in net.minecraft.world.level.storage">LevelStorage</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/server/MinecraftServer.html#getLevelStorage--">getLevelStorage</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i20" class="altColor">
@@ -666,15 +666,15 @@ implements <a href="../../../net/minecraft/command/CommandSource.html" title="in
 </tr>
 <tr id="i66" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/server/MinecraftServer.html#isPvpEnabled--">isPvpEnabled</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/server/MinecraftServer.html#isOnThread--">isOnThread</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i67" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/server/MinecraftServer.html#isRunning--">isRunning</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/server/MinecraftServer.html#isPvpEnabled--">isPvpEnabled</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i68" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/server/MinecraftServer.html#isServerThread--">isServerThread</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/server/MinecraftServer.html#isRunning--">isRunning</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i69" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
@@ -721,7 +721,7 @@ implements <a href="../../../net/minecraft/command/CommandSource.html" title="in
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/server/MinecraftServer.html#method_33190--">method_33190</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i79" class="rowColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/class_5629.html" title="interface in net.minecraft">class_5629</a></code></td>
+<td class="colFirst"><code><a href="../../../net/minecraft/command/CommandManager.html" title="interface in net.minecraft.command">CommandManager</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/server/MinecraftServer.html#method_33193--">method_33193</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i80" class="altColor">
@@ -753,7 +753,7 @@ implements <a href="../../../net/minecraft/command/CommandSource.html" title="in
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/server/MinecraftServer.html#method_33258--">method_33258</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i86" class="altColor">
-<td class="colFirst"><code><a href="../../../net/minecraft/server/command/CommandManager.html" title="class in net.minecraft.server.command">CommandManager</a></code></td>
+<td class="colFirst"><code><a href="../../../net/minecraft/server/command/ServerCommandManager.html" title="class in net.minecraft.server.command">ServerCommandManager</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/server/MinecraftServer.html#method_33269--">method_33269</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i87" class="rowColor">
@@ -1010,7 +1010,7 @@ implements <a href="../../../net/minecraft/command/CommandSource.html" title="in
 <ul class="blockList">
 <li class="blockList">
 <h4>levelStorage</h4>
-<pre>private final&nbsp;<a href="../../../net/minecraft/class_1271.html" title="interface in net.minecraft">class_1271</a> levelStorage</pre>
+<pre>private final&nbsp;<a href="../../../net/minecraft/world/level/storage/LevelStorage.html" title="interface in net.minecraft.world.level.storage">LevelStorage</a> levelStorage</pre>
 </li>
 </ul>
 <a name="snooper">
@@ -1046,7 +1046,7 @@ implements <a href="../../../net/minecraft/command/CommandSource.html" title="in
 <ul class="blockList">
 <li class="blockList">
 <h4>worldGenerationProgressListenerFactory</h4>
-<pre>public final&nbsp;<a href="../../../net/minecraft/class_5629.html" title="interface in net.minecraft">class_5629</a> worldGenerationProgressListenerFactory</pre>
+<pre>public final&nbsp;<a href="../../../net/minecraft/command/CommandManager.html" title="interface in net.minecraft.command">CommandManager</a> worldGenerationProgressListenerFactory</pre>
 </li>
 </ul>
 <a name="profiler">
@@ -1521,7 +1521,7 @@ private&nbsp;boolean iconFilePresent</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>method_33269</h4>
-<pre>public&nbsp;<a href="../../../net/minecraft/server/command/CommandManager.html" title="class in net.minecraft.server.command">CommandManager</a>&nbsp;method_33269()</pre>
+<pre>public&nbsp;<a href="../../../net/minecraft/server/command/ServerCommandManager.html" title="class in net.minecraft.server.command">ServerCommandManager</a>&nbsp;method_33269()</pre>
 </li>
 </ul>
 <a name="setupServer--">
@@ -2060,7 +2060,7 @@ public&nbsp;void&nbsp;log(<a href="https://docs.oracle.com/javase/8/docs/api/jav
 <ul class="blockList">
 <li class="blockList">
 <h4>method_33193</h4>
-<pre>public&nbsp;<a href="../../../net/minecraft/class_5629.html" title="interface in net.minecraft">class_5629</a>&nbsp;method_33193()</pre>
+<pre>public&nbsp;<a href="../../../net/minecraft/command/CommandManager.html" title="interface in net.minecraft.command">CommandManager</a>&nbsp;method_33193()</pre>
 </li>
 </ul>
 <a name="getKeyPair--">
@@ -2217,7 +2217,7 @@ public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.
 <ul class="blockList">
 <li class="blockList">
 <h4>getLevelStorage</h4>
-<pre>public&nbsp;<a href="../../../net/minecraft/class_1271.html" title="interface in net.minecraft">class_1271</a>&nbsp;getLevelStorage()</pre>
+<pre>public&nbsp;<a href="../../../net/minecraft/world/level/storage/LevelStorage.html" title="interface in net.minecraft.world.level.storage">LevelStorage</a>&nbsp;getLevelStorage()</pre>
 </li>
 </ul>
 <a name="getResourcePackUrl--">
@@ -2762,16 +2762,16 @@ public&nbsp;<a href="../../../net/minecraft/entity/Entity.html" title="class in 
 </dl>
 </li>
 </ul>
-<a name="isServerThread--">
+<a name="isOnThread--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>isServerThread</h4>
-<pre>public&nbsp;boolean&nbsp;isServerThread()</pre>
+<h4>isOnThread</h4>
+<pre>public&nbsp;boolean&nbsp;isOnThread()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/class_2152.html#isServerThread--">isServerThread</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/class_2152.html" title="interface in net.minecraft">class_2152</a></code></dd>
+<dd><code><a href="../../../net/minecraft/class_2152.html#isOnThread--">isOnThread</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/class_2152.html" title="interface in net.minecraft">class_2152</a></code></dd>
 </dl>
 </li>
 </ul>

@@ -139,7 +139,7 @@ implements <a href="../../../net/minecraft/resource/ReloadableResourceManager.ht
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ReloadableResourceManagerImpl.html#field_30188">field_30188</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../net/minecraft/class_4176.html" title="interface in net.minecraft">class_4176</a>&gt;</code></td>
+<td class="colFirst"><code>private <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../net/minecraft/client/resource/ResourceListener.html" title="interface in net.minecraft.client.resource">ResourceListener</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ReloadableResourceManagerImpl.html#listeners">listeners</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -211,16 +211,16 @@ implements <a href="../../../net/minecraft/resource/ReloadableResourceManager.ht
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ReloadableResourceManagerImpl.html#getResource-net.minecraft.util.Identifier-">getResource</a></span>(<a href="../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;id)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ReloadableResourceManagerImpl.html#method_31450-java.util.List-">method_31450</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../net/minecraft/resource/ResourcePack.html" title="interface in net.minecraft.resource">ResourcePack</a>&gt;&nbsp;list)</code>&nbsp;</td>
+<td class="colFirst"><code>private void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ReloadableResourceManagerImpl.html#onReload--">onReload</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code>private void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ReloadableResourceManagerImpl.html#method_31497--">method_31497</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ReloadableResourceManagerImpl.html#registerListener-net.minecraft.client.resource.ResourceListener-">registerListener</a></span>(<a href="../../../net/minecraft/client/resource/ResourceListener.html" title="interface in net.minecraft.client.resource">ResourceListener</a>&nbsp;listener)</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ReloadableResourceManagerImpl.html#registerListener-net.minecraft.class_4176-">registerListener</a></span>(<a href="../../../net/minecraft/class_4176.html" title="interface in net.minecraft">class_4176</a>&nbsp;listener)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/resource/ReloadableResourceManagerImpl.html#reload-java.util.List-">reload</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../net/minecraft/resource/ResourcePack.html" title="interface in net.minecraft.resource">ResourcePack</a>&gt;&nbsp;list)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -277,7 +277,7 @@ implements <a href="../../../net/minecraft/resource/ReloadableResourceManager.ht
 <ul class="blockList">
 <li class="blockList">
 <h4>listeners</h4>
-<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../net/minecraft/class_4176.html" title="interface in net.minecraft">class_4176</a>&gt; listeners</pre>
+<pre>private final&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../net/minecraft/client/resource/ResourceListener.html" title="interface in net.minecraft.client.resource">ResourceListener</a>&gt; listeners</pre>
 </li>
 </ul>
 <a name="namespaces">
@@ -383,39 +383,39 @@ implements <a href="../../../net/minecraft/resource/ReloadableResourceManager.ht
 <pre>private&nbsp;void&nbsp;clear()</pre>
 </li>
 </ul>
-<a name="method_31450-java.util.List-">
+<a name="reload-java.util.List-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_31450</h4>
-<pre>public&nbsp;void&nbsp;method_31450(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../net/minecraft/resource/ResourcePack.html" title="interface in net.minecraft.resource">ResourcePack</a>&gt;&nbsp;list)</pre>
+<h4>reload</h4>
+<pre>public&nbsp;void&nbsp;reload(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../net/minecraft/resource/ResourcePack.html" title="interface in net.minecraft.resource">ResourcePack</a>&gt;&nbsp;list)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/resource/ReloadableResourceManager.html#method_31450-java.util.List-">method_31450</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/resource/ReloadableResourceManager.html" title="interface in net.minecraft.resource">ReloadableResourceManager</a></code></dd>
+<dd><code><a href="../../../net/minecraft/resource/ReloadableResourceManager.html#reload-java.util.List-">reload</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/resource/ReloadableResourceManager.html" title="interface in net.minecraft.resource">ReloadableResourceManager</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="registerListener-net.minecraft.class_4176-">
+<a name="registerListener-net.minecraft.client.resource.ResourceListener-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>registerListener</h4>
-<pre>public&nbsp;void&nbsp;registerListener(<a href="../../../net/minecraft/class_4176.html" title="interface in net.minecraft">class_4176</a>&nbsp;listener)</pre>
+<pre>public&nbsp;void&nbsp;registerListener(<a href="../../../net/minecraft/client/resource/ResourceListener.html" title="interface in net.minecraft.client.resource">ResourceListener</a>&nbsp;listener)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../net/minecraft/resource/ReloadableResourceManager.html#registerListener-net.minecraft.class_4176-">registerListener</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/resource/ReloadableResourceManager.html" title="interface in net.minecraft.resource">ReloadableResourceManager</a></code></dd>
+<dd><code><a href="../../../net/minecraft/resource/ReloadableResourceManager.html#registerListener-net.minecraft.client.resource.ResourceListener-">registerListener</a></code>&nbsp;in interface&nbsp;<code><a href="../../../net/minecraft/resource/ReloadableResourceManager.html" title="interface in net.minecraft.resource">ReloadableResourceManager</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_31497--">
+<a name="onReload--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_31497</h4>
-<pre>private&nbsp;void&nbsp;method_31497()</pre>
+<h4>onReload</h4>
+<pre>private&nbsp;void&nbsp;onReload()</pre>
 </li>
 </ul>
 </li>

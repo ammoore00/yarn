@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../../../net/minecraft/client/gui/screen/world/EditWorldScreen.html" title="class in net.minecraft.client.gui.screen.world"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../net/minecraft/client/gui/screen/world/CustomizeWorldScreen.html" title="class in net.minecraft.client.gui.screen.world"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?net/minecraft/client/gui/screen/world/CreateWorldScreen.html" target="_top">Frames</a></li>
@@ -340,7 +340,7 @@ extends <a href="../../../../../../net/minecraft/client/gui/screen/Screen.html" 
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/client/gui/screen/world/CreateWorldScreen.html#method_29760-net.minecraft.class_1271-java.lang.String-">method_29760</a></span>(<a href="../../../../../../net/minecraft/class_1271.html" title="interface in net.minecraft">class_1271</a>&nbsp;class_1271,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../net/minecraft/client/gui/screen/world/CreateWorldScreen.html#method_29760-net.minecraft.world.level.storage.LevelStorage-java.lang.String-">method_29760</a></span>(<a href="../../../../../../net/minecraft/world/level/storage/LevelStorage.html" title="interface in net.minecraft.world.level.storage">LevelStorage</a>&nbsp;levelStorage,
             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
@@ -372,7 +372,7 @@ extends <a href="../../../../../../net/minecraft/client/gui/screen/Screen.html" 
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.client.gui.<a href="../../../../../../net/minecraft/client/gui/DrawableHelper.html" title="class in net.minecraft.client.gui">DrawableHelper</a></h3>
-<code><a href="../../../../../../net/minecraft/client/gui/DrawableHelper.html#method_29014-float-float-int-int-int-int-">method_29014</a>, <a href="../../../../../../net/minecraft/client/gui/DrawableHelper.html#method_29015-int-int-float-float-int-int-float-float-">method_29015</a>, <a href="../../../../../../net/minecraft/client/gui/DrawableHelper.html#method_29016-int-int-float-float-int-int-int-int-float-float-">method_29016</a>, <a href="../../../../../../net/minecraft/client/gui/DrawableHelper.html#method_29017-int-int-int-int-">method_29017</a>, <a href="../../../../../../net/minecraft/client/gui/DrawableHelper.html#method_29018-int-int-int-int-int-">method_29018</a>, <a href="../../../../../../net/minecraft/client/gui/DrawableHelper.html#method_29019-int-int-int-int-int-int-">method_29019</a>, <a href="../../../../../../net/minecraft/client/gui/DrawableHelper.html#method_29020-int-int-net.minecraft.client.texture.Sprite-int-int-">method_29020</a>, <a href="../../../../../../net/minecraft/client/gui/DrawableHelper.html#method_29021-net.minecraft.client.font.TextRenderer-java.lang.String-int-int-int-">method_29021</a>, <a href="../../../../../../net/minecraft/client/gui/DrawableHelper.html#method_29022-int-int-int-int-">method_29022</a>, <a href="../../../../../../net/minecraft/client/gui/DrawableHelper.html#method_29023-int-int-int-int-int-int-">method_29023</a>, <a href="../../../../../../net/minecraft/client/gui/DrawableHelper.html#method_29024-net.minecraft.client.font.TextRenderer-java.lang.String-int-int-int-">method_29024</a></code></li>
+<code><a href="../../../../../../net/minecraft/client/gui/DrawableHelper.html#drawTexture-int-int-float-float-int-int-float-float-">drawTexture</a>, <a href="../../../../../../net/minecraft/client/gui/DrawableHelper.html#fill-int-int-int-int-int-">fill</a>, <a href="../../../../../../net/minecraft/client/gui/DrawableHelper.html#method_29014-float-float-int-int-int-int-">method_29014</a>, <a href="../../../../../../net/minecraft/client/gui/DrawableHelper.html#method_29016-int-int-float-float-int-int-int-int-float-float-">method_29016</a>, <a href="../../../../../../net/minecraft/client/gui/DrawableHelper.html#method_29017-int-int-int-int-">method_29017</a>, <a href="../../../../../../net/minecraft/client/gui/DrawableHelper.html#method_29019-int-int-int-int-int-int-">method_29019</a>, <a href="../../../../../../net/minecraft/client/gui/DrawableHelper.html#method_29020-int-int-net.minecraft.client.texture.Sprite-int-int-">method_29020</a>, <a href="../../../../../../net/minecraft/client/gui/DrawableHelper.html#method_29021-net.minecraft.client.font.TextRenderer-java.lang.String-int-int-int-">method_29021</a>, <a href="../../../../../../net/minecraft/client/gui/DrawableHelper.html#method_29022-int-int-int-int-">method_29022</a>, <a href="../../../../../../net/minecraft/client/gui/DrawableHelper.html#method_29023-int-int-int-int-int-int-">method_29023</a>, <a href="../../../../../../net/minecraft/client/gui/DrawableHelper.html#method_29024-net.minecraft.client.font.TextRenderer-java.lang.String-int-int-int-">method_29024</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -707,13 +707,13 @@ extends <a href="../../../../../../net/minecraft/client/gui/screen/Screen.html" 
 <pre>private&nbsp;void&nbsp;method_29762()</pre>
 </li>
 </ul>
-<a name="method_29760-net.minecraft.class_1271-java.lang.String-">
+<a name="method_29760-net.minecraft.world.level.storage.LevelStorage-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>method_29760</h4>
-<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;method_29760(<a href="../../../../../../net/minecraft/class_1271.html" title="interface in net.minecraft">class_1271</a>&nbsp;class_1271,
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;method_29760(<a href="../../../../../../net/minecraft/world/level/storage/LevelStorage.html" title="interface in net.minecraft.world.level.storage">LevelStorage</a>&nbsp;levelStorage,
                                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;string)</pre>
 </li>
 </ul>
@@ -851,7 +851,7 @@ extends <a href="../../../../../../net/minecraft/client/gui/screen/Screen.html" 
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../../../net/minecraft/client/gui/screen/world/EditWorldScreen.html" title="class in net.minecraft.client.gui.screen.world"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../net/minecraft/client/gui/screen/world/CustomizeWorldScreen.html" title="class in net.minecraft.client.gui.screen.world"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?net/minecraft/client/gui/screen/world/CreateWorldScreen.html" target="_top">Frames</a></li>
