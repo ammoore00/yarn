@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":6,"i3":10,"i4":10};
+var methods = {"i0":6,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -115,10 +115,6 @@ var activeTableTab = "activeTableTab";
 <dt>All Implemented Interfaces:</dt>
 <dd><a href="../../../../net/minecraft/block/dispenser/DispenserBehavior.html" title="interface in net.minecraft.block.dispenser">DispenserBehavior</a></dd>
 </dl>
-<dl>
-<dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../../net/minecraft/class_2534.html" title="class in net.minecraft">class_2534</a>, <a href="../../../../net/minecraft/class_2542.html" title="class in net.minecraft">class_2542</a>, <a href="../../../../net/minecraft/class_2544.html" title="class in net.minecraft">class_2544</a>, <a href="../../../../net/minecraft/class_2889.html" title="class in net.minecraft">class_2889</a>, <a href="../../../../net/minecraft/class_2890.html" title="class in net.minecraft">class_2890</a></dd>
-</dl>
 <hr>
 <br>
 <pre>public abstract class <span class="typeNameLabel">ProjectileDispenserBehavior</span>
@@ -140,7 +136,7 @@ extends <a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior
 <!--   -->
 </a>
 <h3>Fields inherited from interface&nbsp;net.minecraft.block.dispenser.<a href="../../../../net/minecraft/block/dispenser/DispenserBehavior.html" title="interface in net.minecraft.block.dispenser">DispenserBehavior</a></h3>
-<code><a href="../../../../net/minecraft/block/dispenser/DispenserBehavior.html#INSTANCE">INSTANCE</a></code></li>
+<code><a href="../../../../net/minecraft/block/dispenser/DispenserBehavior.html#field_30682">field_30682</a></code></li>
 </ul>
 </li>
 </ul>
@@ -174,18 +170,19 @@ extends <a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>protected abstract <a href="../../../../net/minecraft/entity/projectile/Projectile.html" title="interface in net.minecraft.entity.projectile">Projectile</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ProjectileDispenserBehavior.html#createProjectile-net.minecraft.world.World-net.minecraft.util.math.Position-net.minecraft.item.ItemStack-">createProjectile</a></span>(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;position,
+                <a href="../../../../net/minecraft/util/math/Position.html" title="interface in net.minecraft.util.math">Position</a>&nbsp;pos,
+                <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ProjectileDispenserBehavior.html#dispenseSilently-net.minecraft.util.math.BlockPointer-net.minecraft.item.ItemStack-">dispenseSilently</a></span>(<a href="../../../../net/minecraft/util/math/BlockPointer.html" title="interface in net.minecraft.util.math">BlockPointer</a>&nbsp;pointer,
                 <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</code>&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>protected float</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ProjectileDispenserBehavior.html#getForce--">getForce</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
-<td class="colFirst"><code>protected abstract <a href="../../../../net/minecraft/entity/projectile/Projectile.html" title="interface in net.minecraft.entity.projectile">Projectile</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/dispenser/ProjectileDispenserBehavior.html#getProjectile-net.minecraft.world.World-net.minecraft.util.math.Position-">getProjectile</a></span>(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-             <a href="../../../../net/minecraft/util/math/Position.html" title="interface in net.minecraft.util.math">Position</a>&nbsp;pos)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>protected float</code></td>
@@ -201,7 +198,7 @@ extends <a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.block.dispenser.<a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html" title="class in net.minecraft.block.dispenser">ItemDispenserBehavior</a></h3>
-<code><a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html#dispense-net.minecraft.util.math.BlockPointer-net.minecraft.item.ItemStack-">dispense</a>, <a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html#spawnItem-net.minecraft.world.World-net.minecraft.item.ItemStack-int-net.minecraft.client.render.model.CubeFace-net.minecraft.util.math.Position-">spawnItem</a>, <a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html#spawnParticles-net.minecraft.util.math.BlockPointer-net.minecraft.client.render.model.CubeFace-">spawnParticles</a></code></li>
+<code><a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html#method_31948-net.minecraft.world.World-net.minecraft.item.ItemStack-int-net.minecraft.util.math.Direction-net.minecraft.util.math.Position-">method_31948</a>, <a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html#method_31989-net.minecraft.util.math.BlockPointer-net.minecraft.item.ItemStack-">method_31989</a>, <a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior.html#spawnParticles-net.minecraft.util.math.BlockPointer-net.minecraft.util.math.Direction-">spawnParticles</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -268,14 +265,15 @@ extends <a href="../../../../net/minecraft/block/dispenser/ItemDispenserBehavior
 </dl>
 </li>
 </ul>
-<a name="getProjectile-net.minecraft.world.World-net.minecraft.util.math.Position-">
+<a name="createProjectile-net.minecraft.world.World-net.minecraft.util.math.Position-net.minecraft.item.ItemStack-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getProjectile</h4>
-<pre>protected abstract&nbsp;<a href="../../../../net/minecraft/entity/projectile/Projectile.html" title="interface in net.minecraft.entity.projectile">Projectile</a>&nbsp;getProjectile(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-                                            <a href="../../../../net/minecraft/util/math/Position.html" title="interface in net.minecraft.util.math">Position</a>&nbsp;pos)</pre>
+<h4>createProjectile</h4>
+<pre>protected abstract&nbsp;<a href="../../../../net/minecraft/entity/projectile/Projectile.html" title="interface in net.minecraft.entity.projectile">Projectile</a>&nbsp;createProjectile(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;position,
+                                               <a href="../../../../net/minecraft/util/math/Position.html" title="interface in net.minecraft.util.math">Position</a>&nbsp;pos,
+                                               <a href="../../../../net/minecraft/item/ItemStack.html" title="class in net.minecraft.item">ItemStack</a>&nbsp;stack)</pre>
 </li>
 </ul>
 <a name="getVariation--">

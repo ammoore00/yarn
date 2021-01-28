@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/network/LanServerDetector.html" title="class in net.minecraft.network"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/network/ServerAddress.html" title="class in net.minecraft.network"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/network/MessageType.html" title="enum in net.minecraft.network"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/network/NetworkSide.html" title="enum in net.minecraft.network"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/network/NetworkEncryptionUtils.html" target="_top">Frames</a></li>
@@ -74,13 +74,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -116,6 +116,25 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private static <a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/NetworkEncryptionUtils.html#LOGGER">LOGGER</a></span></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.summary">
@@ -146,69 +165,59 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/javax/crypto/Cipher.html?is-external=true" title="class or interface in javax.crypto">Cipher</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/NetworkEncryptionUtils.html#cipherFromKey-int-java.security.Key-">cipherFromKey</a></span>(int&nbsp;opMode,
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</a>&nbsp;key)</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>private static byte[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/NetworkEncryptionUtils.html#crypt-int-java.security.Key-byte:A-">crypt</a></span>(int&nbsp;opMode,
      <a href="https://docs.oracle.com/javase/8/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</a>&nbsp;key,
      byte[]&nbsp;data)</code>&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>private static <a href="https://docs.oracle.com/javase/8/docs/api/javax/crypto/Cipher.html?is-external=true" title="class or interface in javax.crypto">Cipher</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/NetworkEncryptionUtils.html#crypt-int-java.lang.String-java.security.Key-">crypt</a></span>(int&nbsp;opMode,
      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;algorithm,
      <a href="https://docs.oracle.com/javase/8/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</a>&nbsp;key)</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static byte[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/NetworkEncryptionUtils.html#decrypt-java.security.Key-byte:A-">decrypt</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</a>&nbsp;key,
        byte[]&nbsp;data)</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/NetworkEncryptionUtils.html#decryptSecretKey-java.security.PrivateKey-byte:A-">decryptSecretKey</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/security/PrivateKey.html?is-external=true" title="class or interface in java.security">PrivateKey</a>&nbsp;privateKey,
                 byte[]&nbsp;encryptedSecretKey)</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static byte[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/NetworkEncryptionUtils.html#encrypt-java.security.Key-byte:A-">encrypt</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</a>&nbsp;key,
        byte[]&nbsp;data)</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/NetworkEncryptionUtils.html#generateKey--">generateKey</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static byte[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/NetworkEncryptionUtils.html#generateServerId-java.lang.String-java.security.PublicKey-javax.crypto.SecretKey-">generateServerId</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;baseServerId,
                 <a href="https://docs.oracle.com/javase/8/docs/api/java/security/PublicKey.html?is-external=true" title="class or interface in java.security">PublicKey</a>&nbsp;publicKey,
                 <a href="https://docs.oracle.com/javase/8/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</a>&nbsp;secretKey)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/security/KeyPair.html?is-external=true" title="class or interface in java.security">KeyPair</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/NetworkEncryptionUtils.html#generateServerKeyPair--">generateServerKeyPair</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>private static byte[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/NetworkEncryptionUtils.html#hash-java.lang.String-byte:A:A-">hash</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;algorithm,
     byte[][]&nbsp;data)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/security/PublicKey.html?is-external=true" title="class or interface in java.security">PublicKey</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/NetworkEncryptionUtils.html#method_10478-byte:A-">method_10478</a></span>(byte[]&nbsp;byte2)</code>&nbsp;</td>
-</tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/security/KeyPair.html?is-external=true" title="class or interface in java.security">KeyPair</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/NetworkEncryptionUtils.html#method_10479--">method_10479</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/NetworkEncryptionUtils.html#method_11937--">method_11937</a></span>()</code>&nbsp;</td>
-</tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/NetworkEncryptionUtils.html#method_11938-javax.crypto.SecretKey-java.io.InputStream-">method_11938</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</a>&nbsp;secretKey,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;inputStream)</code>&nbsp;</td>
-</tr>
-<tr id="i11" class="rowColor">
-<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/NetworkEncryptionUtils.html#method_11939-javax.crypto.SecretKey-java.io.OutputStream-">method_11939</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</a>&nbsp;secretKey,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;outputStream)</code>&nbsp;</td>
-</tr>
-<tr id="i12" class="altColor">
-<td class="colFirst"><code>private static org.bouncycastle.crypto.BufferedBlockCipher</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/NetworkEncryptionUtils.html#method_11940-boolean-java.security.Key-">method_11940</a></span>(boolean&nbsp;bool,
-            <a href="https://docs.oracle.com/javase/8/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</a>&nbsp;key)</code>&nbsp;</td>
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/security/PublicKey.html?is-external=true" title="class or interface in java.security">PublicKey</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/minecraft/network/NetworkEncryptionUtils.html#readEncodedPublicKey-byte:A-">readEncodedPublicKey</a></span>(byte[]&nbsp;byte2)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -226,6 +235,23 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="LOGGER">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>LOGGER</h4>
+<pre>private static final&nbsp;<a href="https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html?is-external=true" title="class or interface in org.apache.logging.log4j">Logger</a> LOGGER</pre>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
@@ -249,23 +275,23 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_11937--">
+<a name="generateKey--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_11937</h4>
+<h4>generateKey</h4>
 <pre>@Environment(value=CLIENT)
-public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</a>&nbsp;method_11937()</pre>
+public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</a>&nbsp;generateKey()</pre>
 </li>
 </ul>
-<a name="method_10479--">
+<a name="generateServerKeyPair--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_10479</h4>
-<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/security/KeyPair.html?is-external=true" title="class or interface in java.security">KeyPair</a>&nbsp;method_10479()</pre>
+<h4>generateServerKeyPair</h4>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/security/KeyPair.html?is-external=true" title="class or interface in java.security">KeyPair</a>&nbsp;generateServerKeyPair()</pre>
 </li>
 </ul>
 <a name="generateServerId-java.lang.String-java.security.PublicKey-javax.crypto.SecretKey-">
@@ -289,13 +315,13 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/javax/cryp
                            byte[][]&nbsp;data)</pre>
 </li>
 </ul>
-<a name="method_10478-byte:A-">
+<a name="readEncodedPublicKey-byte:A-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_10478</h4>
-<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/security/PublicKey.html?is-external=true" title="class or interface in java.security">PublicKey</a>&nbsp;method_10478(byte[]&nbsp;byte2)</pre>
+<h4>readEncodedPublicKey</h4>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/security/PublicKey.html?is-external=true" title="class or interface in java.security">PublicKey</a>&nbsp;readEncodedPublicKey(byte[]&nbsp;byte2)</pre>
 </li>
 </ul>
 <a name="decryptSecretKey-java.security.PrivateKey-byte:A-">
@@ -351,34 +377,14 @@ public static&nbsp;byte[]&nbsp;encrypt(<a href="https://docs.oracle.com/javase/8
                             <a href="https://docs.oracle.com/javase/8/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</a>&nbsp;key)</pre>
 </li>
 </ul>
-<a name="method_11940-boolean-java.security.Key-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_11940</h4>
-<pre>private static&nbsp;org.bouncycastle.crypto.BufferedBlockCipher&nbsp;method_11940(boolean&nbsp;bool,
-                                                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</a>&nbsp;key)</pre>
-</li>
-</ul>
-<a name="method_11939-javax.crypto.SecretKey-java.io.OutputStream-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_11939</h4>
-<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;method_11939(<a href="https://docs.oracle.com/javase/8/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</a>&nbsp;secretKey,
-                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;outputStream)</pre>
-</li>
-</ul>
-<a name="method_11938-javax.crypto.SecretKey-java.io.InputStream-">
+<a name="cipherFromKey-int-java.security.Key-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_11938</h4>
-<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;method_11938(<a href="https://docs.oracle.com/javase/8/docs/api/javax/crypto/SecretKey.html?is-external=true" title="class or interface in javax.crypto">SecretKey</a>&nbsp;secretKey,
-                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;inputStream)</pre>
+<h4>cipherFromKey</h4>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/javax/crypto/Cipher.html?is-external=true" title="class or interface in javax.crypto">Cipher</a>&nbsp;cipherFromKey(int&nbsp;opMode,
+                                   <a href="https://docs.oracle.com/javase/8/docs/api/java/security/Key.html?is-external=true" title="class or interface in java.security">Key</a>&nbsp;key)</pre>
 </li>
 </ul>
 </li>
@@ -408,8 +414,8 @@ public static&nbsp;byte[]&nbsp;encrypt(<a href="https://docs.oracle.com/javase/8
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../net/minecraft/network/LanServerDetector.html" title="class in net.minecraft.network"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../net/minecraft/network/ServerAddress.html" title="class in net.minecraft.network"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/network/MessageType.html" title="enum in net.minecraft.network"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../net/minecraft/network/NetworkSide.html" title="enum in net.minecraft.network"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?net/minecraft/network/NetworkEncryptionUtils.html" target="_top">Frames</a></li>
@@ -434,13 +440,13 @@ public static&nbsp;byte[]&nbsp;encrypt(<a href="https://docs.oracle.com/javase/8
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>

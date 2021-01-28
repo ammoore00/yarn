@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../net/minecraft/block/entity/PistonBlockEntity.html" title="class in net.minecraft.block.entity"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/block/entity/ShulkerBoxBlockEntity.AnimationStage.html" title="enum in net.minecraft.block.entity"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../net/minecraft/block/entity/SkullBlockEntity.html" title="class in net.minecraft.block.entity"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -134,20 +134,24 @@ extends <a href="../../../../net/minecraft/block/entity/BlockEntity.html" title=
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/SignBlockEntity.html#field_9570">field_9570</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/SignBlockEntity.html#field_9571">field_9571</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code>private boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/SignBlockEntity.html#field_9572">field_9572</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/SignBlockEntity.html#editable">editable</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>private <a href="../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/SignBlockEntity.html#field_9573">field_9573</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/SignBlockEntity.html#editor">editor</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/SignBlockEntity.html#field_25181">field_25181</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>private <a href="../../../../net/minecraft/command/CommandStats.html" title="class in net.minecraft.command">CommandStats</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/SignBlockEntity.html#field_25184">field_25184</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/SignBlockEntity.html#text">text</a></span></code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -155,7 +159,7 @@ extends <a href="../../../../net/minecraft/block/entity/BlockEntity.html" title=
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.block.entity.<a href="../../../../net/minecraft/block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></h3>
-<code><a href="../../../../net/minecraft/block/entity/BlockEntity.html#block">block</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#field_9531">field_9531</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#field_9532">field_9532</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#world">world</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#x">x</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#y">y</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#z">z</a></code></li>
+<code><a href="../../../../net/minecraft/block/entity/BlockEntity.html#field_25078">field_25078</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#pos">pos</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#removed">removed</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#world">world</a></code></li>
 </ul>
 </li>
 </ul>
@@ -193,28 +197,48 @@ extends <a href="../../../../net/minecraft/block/entity/BlockEntity.html" title=
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/SignBlockEntity.html#fromTag-net.minecraft.nbt.CompoundTag-">fromTag</a></span>(<a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/class_2863.html" title="class in net.minecraft">class_2863</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/SignBlockEntity.html#getPacket--">getPacket</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/SignBlockEntity.html#getEditor--">getEditor</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/SignBlockEntity.html#method_8880--">method_8880</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/SignBlockEntity.html#isEditable--">isEditable</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/SignBlockEntity.html#method_8881-net.minecraft.entity.player.PlayerEntity-">method_8881</a></span>(<a href="../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</code>&nbsp;</td>
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/SignBlockEntity.html#method_26930-net.minecraft.world.World-">method_26930</a></span>(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/SignBlockEntity.html#method_8882-boolean-">method_8882</a></span>(boolean&nbsp;bool)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../net/minecraft/command/CommandStats.html" title="class in net.minecraft.command">CommandStats</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/SignBlockEntity.html#method_27058--">method_27058</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/SignBlockEntity.html#method_8883--">method_8883</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/SignBlockEntity.html#onActivate-net.minecraft.entity.player.PlayerEntity-">onActivate</a></span>(<a href="../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/SignBlockEntity.html#setEditable-boolean-">setEditable</a></span>(boolean&nbsp;editable)</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/SignBlockEntity.html#setEditor-net.minecraft.entity.player.PlayerEntity-">setEditor</a></span>(<a href="../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;editor)</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/SignBlockEntity.html#shouldNotCopyTagFromItem--">shouldNotCopyTagFromItem</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/SignBlockEntity.html#toInitialChunkDataTag--">toInitialChunkDataTag</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code><a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/SignBlockEntity.html#toTag-net.minecraft.nbt.CompoundTag-">toTag</a></span>(<a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="../../../../net/minecraft/network/packet/s2c/play/BlockEntityUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">BlockEntityUpdateS2CPacket</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/block/entity/SignBlockEntity.html#toUpdatePacket--">toUpdatePacket</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -222,7 +246,7 @@ extends <a href="../../../../net/minecraft/block/entity/BlockEntity.html" title=
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.block.entity.<a href="../../../../net/minecraft/block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></h3>
-<code><a href="../../../../net/minecraft/block/entity/BlockEntity.html#createCrashReport-net.minecraft.util.crash.CrashReportSection-">createCrashReport</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#getServerWorld--">getServerWorld</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#markDirty--">markDirty</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#markRemoved--">markRemoved</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_8845-double-double-double-">method_8845</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_8846-net.minecraft.world.World-">method_8846</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_8849-net.minecraft.nbt.CompoundTag-">method_8849</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_8850--">method_8850</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_8851--">method_8851</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_8852--">method_8852</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_8853--">method_8853</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_8854--">method_8854</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_8855--">method_8855</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_8856--">method_8856</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_8857--">method_8857</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#onBlockAction-int-int-">onBlockAction</a></code></li>
+<code><a href="../../../../net/minecraft/block/entity/BlockEntity.html#applyMirror-net.minecraft.util.BlockMirror-">applyMirror</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#applyRotation-net.minecraft.util.BlockRotation-">applyRotation</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#cancelRemoval--">cancelRemoval</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#getDisplayName--">getDisplayName</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#getPos--">getPos</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#getSquaredDistance-double-double-double-">getSquaredDistance</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#getSquaredRenderDistance--">getSquaredRenderDistance</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#getWorld--">getWorld</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#hasWorld--">hasWorld</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#isRemoved--">isRemoved</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#markDirty--">markDirty</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#markRemoved--">markRemoved</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_26921-net.minecraft.world.World-">method_26921</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_26922-net.minecraft.world.World-net.minecraft.nbt.CompoundTag-">method_26922</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_26925-net.minecraft.util.crash.CrashReportSection-">method_26925</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_26928-java.lang.Class-">method_26928</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_26938--">method_26938</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_26940--">method_26940</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#onBlockAction-int-int-">onBlockAction</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#resetBlock--">resetBlock</a>, <a href="../../../../net/minecraft/block/entity/BlockEntity.html#setPos-net.minecraft.util.math.BlockPos-">setPos</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -245,40 +269,49 @@ extends <a href="../../../../net/minecraft/block/entity/BlockEntity.html" title=
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_9570">
+<a name="text">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_9570</h4>
-<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[] field_9570</pre>
+<h4>text</h4>
+<pre>public final&nbsp;<a href="../../../../net/minecraft/text/Text.html" title="interface in net.minecraft.text">Text</a>[] text</pre>
 </li>
 </ul>
-<a name="field_9571">
+<a name="field_25181">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_9571</h4>
-<pre>public&nbsp;int field_9571</pre>
+<h4>field_25181</h4>
+<pre>public&nbsp;int field_25181</pre>
 </li>
 </ul>
-<a name="field_9572">
+<a name="editable">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_9572</h4>
-<pre>private&nbsp;boolean field_9572</pre>
+<h4>editable</h4>
+<pre>private&nbsp;boolean editable</pre>
 </li>
 </ul>
-<a name="field_9573">
+<a name="editor">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>editor</h4>
+<pre>private&nbsp;<a href="../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a> editor</pre>
+</li>
+</ul>
+<a name="field_25184">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_9573</h4>
-<pre>private&nbsp;<a href="../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a> field_9573</pre>
+<h4>field_25184</h4>
+<pre>private final&nbsp;<a href="../../../../net/minecraft/command/CommandStats.html" title="class in net.minecraft.command">CommandStats</a> field_25184</pre>
 </li>
 </ul>
 </li>
@@ -312,10 +345,23 @@ extends <a href="../../../../net/minecraft/block/entity/BlockEntity.html" title=
 <ul class="blockList">
 <li class="blockList">
 <h4>toTag</h4>
-<pre>public&nbsp;void&nbsp;toTag(<a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</pre>
+<pre>public&nbsp;<a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;toTag(<a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../net/minecraft/block/entity/BlockEntity.html#toTag-net.minecraft.nbt.CompoundTag-">toTag</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="method_26930-net.minecraft.world.World-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_26930</h4>
+<pre>protected&nbsp;void&nbsp;method_26930(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/block/entity/BlockEntity.html#method_26930-net.minecraft.world.World-">method_26930</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -332,54 +378,99 @@ extends <a href="../../../../net/minecraft/block/entity/BlockEntity.html" title=
 </dl>
 </li>
 </ul>
-<a name="getPacket--">
+<a name="toUpdatePacket--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>getPacket</h4>
-<pre>public&nbsp;<a href="../../../../net/minecraft/class_2863.html" title="class in net.minecraft">class_2863</a>&nbsp;getPacket()</pre>
+<h4>toUpdatePacket</h4>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+public&nbsp;<a href="../../../../net/minecraft/network/packet/s2c/play/BlockEntityUpdateS2CPacket.html" title="class in net.minecraft.network.packet.s2c.play">BlockEntityUpdateS2CPacket</a>&nbsp;toUpdatePacket()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/block/entity/BlockEntity.html#getPacket--">getPacket</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/block/entity/BlockEntity.html#toUpdatePacket--">toUpdatePacket</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_8880--">
+<a name="toInitialChunkDataTag--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_8880</h4>
-<pre>public&nbsp;boolean&nbsp;method_8880()</pre>
+<h4>toInitialChunkDataTag</h4>
+<pre>public&nbsp;<a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;toInitialChunkDataTag()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/block/entity/BlockEntity.html#toInitialChunkDataTag--">toInitialChunkDataTag</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></code></dd>
+</dl>
 </li>
 </ul>
-<a name="method_8882-boolean-">
+<a name="shouldNotCopyTagFromItem--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_8882</h4>
+<h4>shouldNotCopyTagFromItem</h4>
+<pre>public&nbsp;boolean&nbsp;shouldNotCopyTagFromItem()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/block/entity/BlockEntity.html#shouldNotCopyTagFromItem--">shouldNotCopyTagFromItem</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="isEditable--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isEditable</h4>
+<pre>public&nbsp;boolean&nbsp;isEditable()</pre>
+</li>
+</ul>
+<a name="setEditable-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setEditable</h4>
 <pre>@Environment(value=CLIENT)
-public&nbsp;void&nbsp;method_8882(boolean&nbsp;bool)</pre>
+public&nbsp;void&nbsp;setEditable(boolean&nbsp;editable)</pre>
 </li>
 </ul>
-<a name="method_8881-net.minecraft.entity.player.PlayerEntity-">
+<a name="setEditor-net.minecraft.entity.player.PlayerEntity-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_8881</h4>
-<pre>public&nbsp;void&nbsp;method_8881(<a href="../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</pre>
+<h4>setEditor</h4>
+<pre>public&nbsp;void&nbsp;setEditor(<a href="../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;editor)</pre>
 </li>
 </ul>
-<a name="method_8883--">
+<a name="getEditor--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEditor</h4>
+<pre>public&nbsp;<a href="../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;getEditor()</pre>
+</li>
+</ul>
+<a name="onActivate-net.minecraft.entity.player.PlayerEntity-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onActivate</h4>
+<pre>public&nbsp;boolean&nbsp;onActivate(<a href="../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;playerEntity)</pre>
+</li>
+</ul>
+<a name="method_27058--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_8883</h4>
-<pre>public&nbsp;<a href="../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;method_8883()</pre>
+<h4>method_27058</h4>
+<pre>public&nbsp;<a href="../../../../net/minecraft/command/CommandStats.html" title="class in net.minecraft.command">CommandStats</a>&nbsp;method_27058()</pre>
 </li>
 </ul>
 </li>
@@ -409,7 +500,7 @@ public&nbsp;void&nbsp;method_8882(boolean&nbsp;bool)</pre>
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../net/minecraft/block/entity/PistonBlockEntity.html" title="class in net.minecraft.block.entity"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/block/entity/ShulkerBoxBlockEntity.AnimationStage.html" title="enum in net.minecraft.block.entity"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../net/minecraft/block/entity/SkullBlockEntity.html" title="class in net.minecraft.block.entity"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

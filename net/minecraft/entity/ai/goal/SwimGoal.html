@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../net/minecraft/entity/ai/goal/StopFollowingCustomerGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../net/minecraft/entity/ai/goal/TargetHurtGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/entity/ai/goal/TemptGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?net/minecraft/entity/ai/goal/SwimGoal.html" target="_top">Frames</a></li>
@@ -134,8 +134,8 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <th class="colLast" scope="col">Field and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../../net/minecraft/class_2630.html" title="class in net.minecraft">class_2630</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/SwimGoal.html#field_7635">field_7635</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>private <a href="../../../../../net/minecraft/entity/mob/MobEntity.html" title="class in net.minecraft.entity.mob">MobEntity</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/SwimGoal.html#mob">mob</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -152,7 +152,7 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/SwimGoal.html#SwimGoal-net.minecraft.class_2630-">SwimGoal</a></span>(<a href="../../../../../net/minecraft/class_2630.html" title="class in net.minecraft">class_2630</a>&nbsp;class_2630)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/SwimGoal.html#SwimGoal-net.minecraft.entity.mob.MobEntity-">SwimGoal</a></span>(<a href="../../../../../net/minecraft/entity/mob/MobEntity.html" title="class in net.minecraft.entity.mob">MobEntity</a>&nbsp;mob)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -183,7 +183,7 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.entity.ai.goal.<a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</a></h3>
-<code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_7363-int-">method_7363</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_7368--">method_7368</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_7369--">method_7369</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#shouldContinue--">shouldContinue</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#start--">start</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#stop--">stop</a></code></li>
+<code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#canStop--">canStop</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_34938-int-">method_34938</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_34944--">method_34944</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#shouldContinue--">shouldContinue</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#start--">start</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#stop--">stop</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -206,13 +206,13 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_7635">
+<a name="mob">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>field_7635</h4>
-<pre>private&nbsp;<a href="../../../../../net/minecraft/class_2630.html" title="class in net.minecraft">class_2630</a> field_7635</pre>
+<h4>mob</h4>
+<pre>private final&nbsp;<a href="../../../../../net/minecraft/entity/mob/MobEntity.html" title="class in net.minecraft.entity.mob">MobEntity</a> mob</pre>
 </li>
 </ul>
 </li>
@@ -223,13 +223,13 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="SwimGoal-net.minecraft.class_2630-">
+<a name="SwimGoal-net.minecraft.entity.mob.MobEntity-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SwimGoal</h4>
-<pre>public&nbsp;SwimGoal(<a href="../../../../../net/minecraft/class_2630.html" title="class in net.minecraft">class_2630</a>&nbsp;class_2630)</pre>
+<pre>public&nbsp;SwimGoal(<a href="../../../../../net/minecraft/entity/mob/MobEntity.html" title="class in net.minecraft.entity.mob">MobEntity</a>&nbsp;mob)</pre>
 </li>
 </ul>
 </li>
@@ -294,7 +294,7 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../net/minecraft/entity/ai/goal/StopFollowingCustomerGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../net/minecraft/entity/ai/goal/TargetHurtGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/entity/ai/goal/TemptGoal.html" title="class in net.minecraft.entity.ai.goal"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?net/minecraft/entity/ai/goal/SwimGoal.html" target="_top">Frames</a></li>

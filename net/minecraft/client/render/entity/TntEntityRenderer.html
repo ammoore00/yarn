@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../net/minecraft/client/render/entity/SquidEntityRenderer.html" title="class in net.minecraft.client.render.entity"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/client/render/entity/StrayEntityRenderer.html" title="class in net.minecraft.client.render.entity"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../net/minecraft/client/render/entity/TntMinecartEntityRenderer.html" title="class in net.minecraft.client.render.entity"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -74,13 +74,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.net.minecraft.client.render.entity.EntityRenderer">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -99,7 +99,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html" title="class in net.minecraft.client.render.entity">net.minecraft.client.render.entity.EntityRenderer</a></li>
+<li><a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html" title="class in net.minecraft.client.render.entity">net.minecraft.client.render.entity.EntityRenderer</a>&lt;<a href="../../../../../net/minecraft/entity/TntEntity.html" title="class in net.minecraft.entity">TntEntity</a>&gt;</li>
 <li>
 <ul class="inheritance">
 <li>net.minecraft.client.render.entity.TntEntityRenderer</li>
@@ -115,7 +115,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>@Environment(value=CLIENT)
 public class <span class="typeNameLabel">TntEntityRenderer</span>
-extends <a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html" title="class in net.minecraft.client.render.entity">EntityRenderer</a></pre>
+extends <a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html" title="class in net.minecraft.client.render.entity">EntityRenderer</a>&lt;<a href="../../../../../net/minecraft/entity/TntEntity.html" title="class in net.minecraft.entity">TntEntity</a>&gt;</pre>
 </li>
 </ul>
 </div>
@@ -128,23 +128,12 @@ extends <a href="../../../../../net/minecraft/client/render/entity/EntityRendere
 <!--   -->
 </a>
 <h3>Field Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
-<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Field and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../../net/minecraft/class_2336.html" title="class in net.minecraft">class_2336</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/entity/TntEntityRenderer.html#field_10689">field_10689</a></span></code>&nbsp;</td>
-</tr>
-</table>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.net.minecraft.client.render.entity.EntityRenderer">
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.client.render.entity.<a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html" title="class in net.minecraft.client.render.entity">EntityRenderer</a></h3>
-<code><a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#field_10640">field_10640</a>, <a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#field_10641">field_10641</a>, <a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#shadowDarkness">shadowDarkness</a>, <a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#shadowSize">shadowSize</a></code></li>
+<code><a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#field_29707">field_29707</a>, <a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#field_29708">field_29708</a>, <a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#renderManager">renderManager</a>, <a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#shadowSize">shadowSize</a></code></li>
 </ul>
 </li>
 </ul>
@@ -160,7 +149,7 @@ extends <a href="../../../../../net/minecraft/client/render/entity/EntityRendere
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/entity/TntEntityRenderer.html#TntEntityRenderer--">TntEntityRenderer</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/entity/TntEntityRenderer.html#TntEntityRenderer-net.minecraft.client.render.entity.EntityRenderDispatcher-">TntEntityRenderer</a></span>(<a href="../../../../../net/minecraft/client/render/entity/EntityRenderDispatcher.html" title="class in net.minecraft.client.render.entity">EntityRenderDispatcher</a>&nbsp;dispatcher)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -179,16 +168,16 @@ extends <a href="../../../../../net/minecraft/client/render/entity/EntityRendere
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>protected <a href="../../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/entity/TntEntityRenderer.html#getTexture-net.minecraft.entity.ExplodingTntEntity-">getTexture</a></span>(<a href="../../../../../net/minecraft/entity/ExplodingTntEntity.html" title="class in net.minecraft.entity">ExplodingTntEntity</a>&nbsp;explodingTntEntity)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/entity/TntEntityRenderer.html#getTexture-net.minecraft.entity.TntEntity-">getTexture</a></span>(<a href="../../../../../net/minecraft/entity/TntEntity.html" title="class in net.minecraft.entity">TntEntity</a>&nbsp;tntEntity)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/entity/TntEntityRenderer.html#render-net.minecraft.entity.ExplodingTntEntity-double-double-double-float-float-">render</a></span>(<a href="../../../../../net/minecraft/entity/ExplodingTntEntity.html" title="class in net.minecraft.entity">ExplodingTntEntity</a>&nbsp;explodingTntEntity,
-      double&nbsp;double2,
-      double&nbsp;double3,
-      double&nbsp;double4,
-      float&nbsp;float2,
-      float&nbsp;float3)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/client/render/entity/TntEntityRenderer.html#method_30943-net.minecraft.entity.TntEntity-double-double-double-float-float-">method_30943</a></span>(<a href="../../../../../net/minecraft/entity/TntEntity.html" title="class in net.minecraft.entity">TntEntity</a>&nbsp;tntEntity,
+            double&nbsp;double2,
+            double&nbsp;double3,
+            double&nbsp;double4,
+            float&nbsp;float2,
+            float&nbsp;float3)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -196,7 +185,7 @@ extends <a href="../../../../../net/minecraft/client/render/entity/EntityRendere
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.client.render.entity.<a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html" title="class in net.minecraft.client.render.entity">EntityRenderer</a></h3>
-<code><a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#getFontRenderer--">getFontRenderer</a>, <a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#getTexture-net.minecraft.entity.Entity-">getTexture</a>, <a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#method_3905-net.minecraft.util.math.Box-double-double-double-">method_3905</a>, <a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#method_3906-net.minecraft.util.Identifier-">method_3906</a>, <a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#method_3915-net.minecraft.entity.Entity-double-double-double-float-float-">method_3915</a>, <a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#method_9605-net.minecraft.util.math.Box-">method_9605</a>, <a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#method_9606-net.minecraft.client.render.entity.EntityRenderDispatcher-">method_9606</a>, <a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#method_9607-net.minecraft.class_2617-">method_9607</a>, <a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#method_9610-net.minecraft.entity.Entity-">method_9610</a>, <a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#render-net.minecraft.entity.Entity-double-double-double-float-float-">render</a></code></li>
+<code><a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#getFontRenderer--">getFontRenderer</a>, <a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#hasLabel-T-">hasLabel</a>, <a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#method_30936--">method_30936</a>, <a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#method_30938-net.minecraft.util.math.Box-double-double-double-">method_30938</a>, <a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#method_30939-net.minecraft.util.Identifier-">method_30939</a>, <a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#method_30941-T-double-double-double-">method_30941</a>, <a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#method_30944-T-double-double-double-java.lang.String-double-">method_30944</a>, <a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#method_30946-T-java.lang.String-double-double-double-int-">method_30946</a>, <a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#method_30947-boolean-">method_30947</a>, <a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#method_30950-T-double-double-double-float-float-">method_30950</a>, <a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#method_30951-T-">method_30951</a>, <a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#method_30952-net.minecraft.entity.Entity-double-double-double-float-float-">method_30952</a>, <a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#method_30954-T-">method_30954</a>, <a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#method_30956--">method_30956</a>, <a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#shouldRender-T-net.minecraft.class_5941-double-double-double-">shouldRender</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -213,36 +202,19 @@ extends <a href="../../../../../net/minecraft/client/render/entity/EntityRendere
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ============ FIELD DETAIL =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.detail">
-<!--   -->
-</a>
-<h3>Field Detail</h3>
-<a name="field_10689">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>field_10689</h4>
-<pre>private&nbsp;<a href="../../../../../net/minecraft/class_2336.html" title="class in net.minecraft">class_2336</a> field_10689</pre>
-</li>
-</ul>
-</li>
-</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="TntEntityRenderer--">
+<a name="TntEntityRenderer-net.minecraft.client.render.entity.EntityRenderDispatcher-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>TntEntityRenderer</h4>
-<pre>public&nbsp;TntEntityRenderer()</pre>
+<pre>public&nbsp;TntEntityRenderer(<a href="../../../../../net/minecraft/client/render/entity/EntityRenderDispatcher.html" title="class in net.minecraft.client.render.entity">EntityRenderDispatcher</a>&nbsp;dispatcher)</pre>
 </li>
 </ul>
 </li>
@@ -253,27 +225,35 @@ extends <a href="../../../../../net/minecraft/client/render/entity/EntityRendere
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="render-net.minecraft.entity.ExplodingTntEntity-double-double-double-float-float-">
+<a name="method_30943-net.minecraft.entity.TntEntity-double-double-double-float-float-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>render</h4>
-<pre>public&nbsp;void&nbsp;render(<a href="../../../../../net/minecraft/entity/ExplodingTntEntity.html" title="class in net.minecraft.entity">ExplodingTntEntity</a>&nbsp;explodingTntEntity,
-                   double&nbsp;double2,
-                   double&nbsp;double3,
-                   double&nbsp;double4,
-                   float&nbsp;float2,
-                   float&nbsp;float3)</pre>
+<h4>method_30943</h4>
+<pre>public&nbsp;void&nbsp;method_30943(<a href="../../../../../net/minecraft/entity/TntEntity.html" title="class in net.minecraft.entity">TntEntity</a>&nbsp;tntEntity,
+                         double&nbsp;double2,
+                         double&nbsp;double3,
+                         double&nbsp;double4,
+                         float&nbsp;float2,
+                         float&nbsp;float3)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#method_30943-T-double-double-double-float-float-">method_30943</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html" title="class in net.minecraft.client.render.entity">EntityRenderer</a>&lt;<a href="../../../../../net/minecraft/entity/TntEntity.html" title="class in net.minecraft.entity">TntEntity</a>&gt;</code></dd>
+</dl>
 </li>
 </ul>
-<a name="getTexture-net.minecraft.entity.ExplodingTntEntity-">
+<a name="getTexture-net.minecraft.entity.TntEntity-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getTexture</h4>
-<pre>protected&nbsp;<a href="../../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;getTexture(<a href="../../../../../net/minecraft/entity/ExplodingTntEntity.html" title="class in net.minecraft.entity">ExplodingTntEntity</a>&nbsp;explodingTntEntity)</pre>
+<pre>protected&nbsp;<a href="../../../../../net/minecraft/util/Identifier.html" title="class in net.minecraft.util">Identifier</a>&nbsp;getTexture(<a href="../../../../../net/minecraft/entity/TntEntity.html" title="class in net.minecraft.entity">TntEntity</a>&nbsp;tntEntity)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html#getTexture-T-">getTexture</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../net/minecraft/client/render/entity/EntityRenderer.html" title="class in net.minecraft.client.render.entity">EntityRenderer</a>&lt;<a href="../../../../../net/minecraft/entity/TntEntity.html" title="class in net.minecraft.entity">TntEntity</a>&gt;</code></dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -303,7 +283,7 @@ extends <a href="../../../../../net/minecraft/client/render/entity/EntityRendere
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../net/minecraft/client/render/entity/SquidEntityRenderer.html" title="class in net.minecraft.client.render.entity"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../net/minecraft/client/render/entity/StrayEntityRenderer.html" title="class in net.minecraft.client.render.entity"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../net/minecraft/client/render/entity/TntMinecartEntityRenderer.html" title="class in net.minecraft.client.render.entity"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -329,13 +309,13 @@ extends <a href="../../../../../net/minecraft/client/render/entity/EntityRendere
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#fields.inherited.from.class.net.minecraft.client.render.entity.EntityRenderer">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>

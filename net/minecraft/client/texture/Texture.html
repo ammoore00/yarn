@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -100,11 +100,11 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Known Subinterfaces:</dt>
-<dd><a href="../../../../net/minecraft/client/texture/TickableTexture.html" title="interface in net.minecraft.client.texture">TickableTexture</a></dd>
+<dd><a href="../../../../net/minecraft/class_6029.html" title="interface in net.minecraft">class_6029</a></dd>
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><a href="../../../../net/minecraft/class_2793.html" title="class in net.minecraft">class_2793</a>, <a href="../../../../net/minecraft/class_2794.html" title="class in net.minecraft">class_2794</a>, <a href="../../../../net/minecraft/class_2796.html" title="class in net.minecraft">class_2796</a>, <a href="../../../../net/minecraft/class_2797.html" title="class in net.minecraft">class_2797</a>, <a href="../../../../net/minecraft/client/texture/NativeImageBackedTexture.html" title="class in net.minecraft.client.texture">NativeImageBackedTexture</a>, <a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html" title="class in net.minecraft.client.texture">SpriteAtlasTexture</a></dd>
+<dd><a href="../../../../net/minecraft/client/texture/AbstractTexture.html" title="class in net.minecraft.client.texture">AbstractTexture</a>, <a href="../../../../net/minecraft/class_6023.html" title="class in net.minecraft">class_6023</a>, <a href="../../../../net/minecraft/client/texture/LayeredTexture.html" title="class in net.minecraft.client.texture">LayeredTexture</a>, <a href="../../../../net/minecraft/client/texture/NativeImageBackedTexture.html" title="class in net.minecraft.client.texture">NativeImageBackedTexture</a>, <a href="../../../../net/minecraft/client/texture/PlayerSkinTexture.html" title="class in net.minecraft.client.texture">PlayerSkinTexture</a>, <a href="../../../../net/minecraft/client/texture/ResourceTexture.html" title="class in net.minecraft.client.texture">ResourceTexture</a>, <a href="../../../../net/minecraft/client/texture/SpriteAtlasTexture.html" title="class in net.minecraft.client.texture">SpriteAtlasTexture</a></dd>
 </dl>
 <hr>
 <br>
@@ -134,7 +134,16 @@ public interface <span class="typeNameLabel">Texture</span></pre>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/Texture.html#load-net.minecraft.resource.ResourceManager-">load</a></span>(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;manager)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/Texture.html#load-net.minecraft.resource.ResourceManager-">load</a></span>(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/Texture.html#method_31364--">method_31364</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/client/texture/Texture.html#method_31367-boolean-boolean-">method_31367</a></span>(boolean&nbsp;bool,
+            boolean&nbsp;bool2)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -151,13 +160,37 @@ public interface <span class="typeNameLabel">Texture</span></pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="method_31367-boolean-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_31367</h4>
+<pre>void&nbsp;method_31367(boolean&nbsp;bool,
+                  boolean&nbsp;bool2)</pre>
+</li>
+</ul>
+<a name="method_31364--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method_31364</h4>
+<pre>void&nbsp;method_31364()</pre>
+</li>
+</ul>
 <a name="load-net.minecraft.resource.ResourceManager-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>load</h4>
-<pre>void&nbsp;load(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;manager)</pre>
+<pre>void&nbsp;load(<a href="../../../../net/minecraft/resource/ResourceManager.html" title="interface in net.minecraft.resource">ResourceManager</a>&nbsp;resourceManager)
+   throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+</dl>
 </li>
 </ul>
 <a name="getGlId--">

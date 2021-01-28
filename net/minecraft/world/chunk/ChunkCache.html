@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../net/minecraft/world/chunk/Chunk.html" title="class in net.minecraft.world.chunk"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../net/minecraft/world/chunk/ChunkProvider.html" title="interface in net.minecraft.world.chunk"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/world/chunk/Chunk.CreationType.html" title="enum in net.minecraft.world.chunk"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/world/chunk/ChunkGenerator.html" title="interface in net.minecraft.world.chunk"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/world/chunk/ChunkCache.html" target="_top">Frames</a></li>
@@ -74,14 +74,14 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
-<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
-<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
@@ -92,94 +92,25 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">net.minecraft.world.chunk</div>
-<h2 title="Class ChunkCache" class="title">Class ChunkCache</h2>
+<h2 title="Interface ChunkCache" class="title">Interface ChunkCache</h2>
 </div>
 <div class="contentContainer">
-<ul class="inheritance">
-<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
-<li>
-<ul class="inheritance">
-<li>net.minecraft.world.chunk.ChunkCache</li>
-</ul>
-</li>
-</ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
 <dl>
-<dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../net/minecraft/world/WorldView.html" title="interface in net.minecraft.world">WorldView</a></dd>
+<dt>All Known Implementing Classes:</dt>
+<dd><a href="../../../../net/minecraft/client/world/ClientChunkCache.html" title="class in net.minecraft.client.world">ClientChunkCache</a>, <a href="../../../../net/minecraft/server/world/ServerChunkCache.html" title="class in net.minecraft.server.world">ServerChunkCache</a></dd>
 </dl>
 <hr>
 <br>
-<pre>public class <span class="typeNameLabel">ChunkCache</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
-implements <a href="../../../../net/minecraft/world/WorldView.html" title="interface in net.minecraft.world">WorldView</a></pre>
+<pre>public interface <span class="typeNameLabel">ChunkCache</span></pre>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- =========== FIELD SUMMARY =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.summary">
-<!--   -->
-</a>
-<h3>Field Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
-<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Field and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../net/minecraft/world/chunk/Chunk.html" title="class in net.minecraft.world.chunk">Chunk</a>[][]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/ChunkCache.html#chunks">chunks</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/ChunkCache.html#field_337">field_337</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/ChunkCache.html#field_338">field_338</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>private boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/ChunkCache.html#saved">saved</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code>private <a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/ChunkCache.html#world">world</a></span></code>&nbsp;</td>
-</tr>
-</table>
-</li>
-</ul>
-<!-- ======== CONSTRUCTOR SUMMARY ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="constructor.summary">
-<!--   -->
-</a>
-<h3>Constructor Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
-<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colOne" scope="col">Constructor and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/ChunkCache.html#ChunkCache-net.minecraft.world.World-int-int-int-int-int-int-int-">ChunkCache</a></span>(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-          int&nbsp;int2,
-          int&nbsp;int3,
-          int&nbsp;int4,
-          int&nbsp;int5,
-          int&nbsp;int6,
-          int&nbsp;int7,
-          int&nbsp;int8)</code>&nbsp;</td>
-</tr>
-</table>
-</li>
-</ul>
 <!-- ========== METHOD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.summary">
@@ -187,138 +118,35 @@ implements <a href="../../../../net/minecraft/world/WorldView.html" title="inter
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/world/biome/Biome.html" title="class in net.minecraft.world.biome">Biome</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/ChunkCache.html#getBiomeAt-int-int-">getBiomeAt</a></span>(int&nbsp;x,
-          int&nbsp;y)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../net/minecraft/world/chunk/Chunk.html" title="class in net.minecraft.world.chunk">Chunk</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/ChunkCache.html#getLoadedChunk-int-int-">getLoadedChunk</a></span>(int&nbsp;x,
+              int&nbsp;z)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/ChunkCache.html#getWorldHeight--">getWorldHeight</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../net/minecraft/world/chunk/Chunk.html" title="class in net.minecraft.world.chunk">Chunk</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/ChunkCache.html#getOrGenerateChunk-int-int-">getOrGenerateChunk</a></span>(int&nbsp;x,
+                  int&nbsp;z)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/ChunkCache.html#isSaved--">isSaved</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/ChunkCache.html#isChunkGenerated-int-int-">isChunkGenerated</a></span>(int&nbsp;x,
+                int&nbsp;z)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/class_2715.html" title="class in net.minecraft">class_2715</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/ChunkCache.html#method_10936--">method_10936</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/ChunkCache.html#tick--">tick</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/block/Material.html" title="class in net.minecraft.block">Material</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/ChunkCache.html#method_10937-int-int-int-">method_10937</a></span>(int&nbsp;int2,
-            int&nbsp;int3,
-            int&nbsp;int4)</code>&nbsp;</td>
-</tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/ChunkCache.html#method_10938-int-int-int-int-">method_10938</a></span>(int&nbsp;int2,
-            int&nbsp;int3,
-            int&nbsp;int4,
-            int&nbsp;int5)</code>&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>float</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/ChunkCache.html#method_10939-int-int-int-">method_10939</a></span>(int&nbsp;int2,
-            int&nbsp;int3,
-            int&nbsp;int4)</code>&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/ChunkCache.html#method_10940-int-int-int-">method_10940</a></span>(int&nbsp;int2,
-            int&nbsp;int3,
-            int&nbsp;int4)</code>&nbsp;</td>
-</tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/ChunkCache.html#method_10941-int-int-int-">method_10941</a></span>(int&nbsp;int2,
-            int&nbsp;int3,
-            int&nbsp;int4)</code>&nbsp;</td>
-</tr>
-<tr id="i9" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/ChunkCache.html#method_10942-int-int-int-">method_10942</a></span>(int&nbsp;int2,
-            int&nbsp;int3,
-            int&nbsp;int4)</code>&nbsp;</td>
-</tr>
-<tr id="i10" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/ChunkCache.html#method_10943-int-int-int-boolean-">method_10943</a></span>(int&nbsp;int2,
-            int&nbsp;int3,
-            int&nbsp;int4,
-            boolean&nbsp;bool)</code>&nbsp;</td>
-</tr>
-<tr id="i11" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/ChunkCache.html#method_10944-int-int-int-">method_10944</a></span>(int&nbsp;int2,
-            int&nbsp;int3,
-            int&nbsp;int4)</code>&nbsp;</td>
-</tr>
-<tr id="i12" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/ChunkCache.html#method_8554-int-int-int-">method_8554</a></span>(int&nbsp;int2,
-           int&nbsp;int3,
-           int&nbsp;int4)</code>&nbsp;</td>
-</tr>
-<tr id="i13" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/ChunkCache.html#method_8555-int-int-int-">method_8555</a></span>(int&nbsp;int2,
-           int&nbsp;int3,
-           int&nbsp;int4)</code>&nbsp;</td>
-</tr>
-<tr id="i14" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/ChunkCache.html#method_8556-int-int-int-int-">method_8556</a></span>(int&nbsp;int2,
-           int&nbsp;int3,
-           int&nbsp;int4,
-           int&nbsp;int5)</code>&nbsp;</td>
-</tr>
-<tr id="i15" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/ChunkCache.html#method_8557-int-int-int-">method_8557</a></span>(int&nbsp;int2,
-           int&nbsp;int3,
-           int&nbsp;int4)</code>&nbsp;</td>
-</tr>
-<tr id="i16" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/ChunkCache.html#method_8558-int-int-int-int-">method_8558</a></span>(int&nbsp;int2,
-           int&nbsp;int3,
-           int&nbsp;int4,
-           int&nbsp;int5)</code>&nbsp;</td>
-</tr>
-<tr id="i17" class="rowColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/ChunkCache.html#method_8559-int-int-int-">method_8559</a></span>(int&nbsp;int2,
-           int&nbsp;int3,
-           int&nbsp;int4)</code>&nbsp;</td>
-</tr>
-<tr id="i18" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/ChunkCache.html#method_8563-net.minecraft.world.LightType-int-int-int-">method_8563</a></span>(<a href="../../../../net/minecraft/world/LightType.html" title="enum in net.minecraft.world">LightType</a>&nbsp;lightType,
-           int&nbsp;int2,
-           int&nbsp;int3,
-           int&nbsp;int4)</code>&nbsp;</td>
-</tr>
-<tr id="i19" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/ChunkCache.html#method_8564-net.minecraft.world.LightType-int-int-int-">method_8564</a></span>(<a href="../../../../net/minecraft/world/LightType.html" title="enum in net.minecraft.world">LightType</a>&nbsp;lightType,
-           int&nbsp;int2,
-           int&nbsp;int3,
-           int&nbsp;int4)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/world/chunk/ChunkCache.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
-<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
-</ul>
 </li>
 </ul>
 </li>
@@ -327,383 +155,63 @@ implements <a href="../../../../net/minecraft/world/WorldView.html" title="inter
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ============ FIELD DETAIL =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.detail">
-<!--   -->
-</a>
-<h3>Field Detail</h3>
-<a name="field_337">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_337</h4>
-<pre>private&nbsp;int field_337</pre>
-</li>
-</ul>
-<a name="field_338">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>field_338</h4>
-<pre>private&nbsp;int field_338</pre>
-</li>
-</ul>
-<a name="chunks">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>chunks</h4>
-<pre>private&nbsp;<a href="../../../../net/minecraft/world/chunk/Chunk.html" title="class in net.minecraft.world.chunk">Chunk</a>[][] chunks</pre>
-</li>
-</ul>
-<a name="saved">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>saved</h4>
-<pre>private&nbsp;boolean saved</pre>
-</li>
-</ul>
-<a name="world">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>world</h4>
-<pre>private&nbsp;<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a> world</pre>
-</li>
-</ul>
-</li>
-</ul>
-<!-- ========= CONSTRUCTOR DETAIL ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="constructor.detail">
-<!--   -->
-</a>
-<h3>Constructor Detail</h3>
-<a name="ChunkCache-net.minecraft.world.World-int-int-int-int-int-int-int-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>ChunkCache</h4>
-<pre>public&nbsp;ChunkCache(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-                  int&nbsp;int2,
-                  int&nbsp;int3,
-                  int&nbsp;int4,
-                  int&nbsp;int5,
-                  int&nbsp;int6,
-                  int&nbsp;int7,
-                  int&nbsp;int8)</pre>
-</li>
-</ul>
-</li>
-</ul>
 <!-- ============ METHOD DETAIL ========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.detail">
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="isSaved--">
+<a name="getLoadedChunk-int-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>isSaved</h4>
-<pre>@Environment(value=CLIENT)
-public&nbsp;boolean&nbsp;isSaved()</pre>
+<h4>getLoadedChunk</h4>
+<pre><a href="https://www.javadoc.io/doc/com.google.code.findbugs/jsr305/3.0.2/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+<a href="../../../../net/minecraft/world/chunk/Chunk.html" title="class in net.minecraft.world.chunk">Chunk</a>&nbsp;getLoadedChunk(int&nbsp;x,
+                               int&nbsp;z)</pre>
+</li>
+</ul>
+<a name="getOrGenerateChunk-int-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOrGenerateChunk</h4>
+<pre><a href="../../../../net/minecraft/world/chunk/Chunk.html" title="class in net.minecraft.world.chunk">Chunk</a>&nbsp;getOrGenerateChunk(int&nbsp;x,
+                         int&nbsp;z)</pre>
+</li>
+</ul>
+<a name="tick--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tick</h4>
+<pre>boolean&nbsp;tick()</pre>
+</li>
+</ul>
+<a name="toString--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toString</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
 <dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/world/WorldView.html#isSaved--">isSaved</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/world/WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_8554-int-int-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_8554</h4>
-<pre>public&nbsp;int&nbsp;method_8554(int&nbsp;int2,
-                       int&nbsp;int3,
-                       int&nbsp;int4)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/world/WorldView.html#method_8554-int-int-int-">method_8554</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/world/WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_8559-int-int-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_8559</h4>
-<pre>public&nbsp;<a href="../../../../net/minecraft/block/entity/BlockEntity.html" title="class in net.minecraft.block.entity">BlockEntity</a>&nbsp;method_8559(int&nbsp;int2,
-                               int&nbsp;int3,
-                               int&nbsp;int4)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/world/WorldView.html#method_8559-int-int-int-">method_8559</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/world/WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_10938-int-int-int-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_10938</h4>
-<pre>@Environment(value=CLIENT)
-public&nbsp;float&nbsp;method_10938(int&nbsp;int2,
-                                                     int&nbsp;int3,
-                                                     int&nbsp;int4,
-                                                     int&nbsp;int5)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/world/WorldView.html#method_10938-int-int-int-int-">method_10938</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/world/WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_8556-int-int-int-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_8556</h4>
-<pre>@Environment(value=CLIENT)
-public&nbsp;int&nbsp;method_8556(int&nbsp;int2,
-                                                  int&nbsp;int3,
-                                                  int&nbsp;int4,
-                                                  int&nbsp;int5)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/world/WorldView.html#method_8556-int-int-int-int-">method_8556</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/world/WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_10939-int-int-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_10939</h4>
-<pre>@Environment(value=CLIENT)
-public&nbsp;float&nbsp;method_10939(int&nbsp;int2,
-                                                     int&nbsp;int3,
-                                                     int&nbsp;int4)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/world/WorldView.html#method_10939-int-int-int-">method_10939</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/world/WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_10944-int-int-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_10944</h4>
-<pre>@Environment(value=CLIENT)
-public&nbsp;int&nbsp;method_10944(int&nbsp;int2,
-                                                   int&nbsp;int3,
-                                                   int&nbsp;int4)</pre>
-</li>
-</ul>
-<a name="method_10943-int-int-int-boolean-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_10943</h4>
-<pre>@Environment(value=CLIENT)
-public&nbsp;int&nbsp;method_10943(int&nbsp;int2,
-                                                   int&nbsp;int3,
-                                                   int&nbsp;int4,
-                                                   boolean&nbsp;bool)</pre>
-</li>
-</ul>
-<a name="method_8557-int-int-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_8557</h4>
-<pre>public&nbsp;int&nbsp;method_8557(int&nbsp;int2,
-                       int&nbsp;int3,
-                       int&nbsp;int4)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/world/WorldView.html#method_8557-int-int-int-">method_8557</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/world/WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_10937-int-int-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_10937</h4>
-<pre>public&nbsp;<a href="../../../../net/minecraft/block/Material.html" title="class in net.minecraft.block">Material</a>&nbsp;method_10937(int&nbsp;int2,
-                             int&nbsp;int3,
-                             int&nbsp;int4)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/world/WorldView.html#method_10937-int-int-int-">method_10937</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/world/WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="getBiomeAt-int-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getBiomeAt</h4>
-<pre>@Environment(value=CLIENT)
-public&nbsp;<a href="../../../../net/minecraft/world/biome/Biome.html" title="class in net.minecraft.world.biome">Biome</a>&nbsp;getBiomeAt(int&nbsp;x,
-                                                   int&nbsp;y)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/world/WorldView.html#getBiomeAt-int-int-">getBiomeAt</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/world/WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_10940-int-int-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_10940</h4>
-<pre>@Environment(value=CLIENT)
-public&nbsp;boolean&nbsp;method_10940(int&nbsp;int2,
-                                                       int&nbsp;int3,
-                                                       int&nbsp;int4)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/world/WorldView.html#method_10940-int-int-int-">method_10940</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/world/WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_10941-int-int-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_10941</h4>
-<pre>public&nbsp;boolean&nbsp;method_10941(int&nbsp;int2,
-                            int&nbsp;int3,
-                            int&nbsp;int4)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/world/WorldView.html#method_10941-int-int-int-">method_10941</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/world/WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_10942-int-int-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_10942</h4>
-<pre>@Environment(value=CLIENT)
-public&nbsp;boolean&nbsp;method_10942(int&nbsp;int2,
-                                                       int&nbsp;int3,
-                                                       int&nbsp;int4)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/world/WorldView.html#method_10942-int-int-int-">method_10942</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/world/WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_10936--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_10936</h4>
-<pre>public&nbsp;<a href="../../../../net/minecraft/class_2715.html" title="class in net.minecraft">class_2715</a>&nbsp;method_10936()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/world/WorldView.html#method_10936--">method_10936</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/world/WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_8555-int-int-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_8555</h4>
-<pre>@Environment(value=CLIENT)
-public&nbsp;boolean&nbsp;method_8555(int&nbsp;int2,
-                                                      int&nbsp;int3,
-                                                      int&nbsp;int4)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/world/WorldView.html#method_8555-int-int-int-">method_8555</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/world/WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_8563-net.minecraft.world.LightType-int-int-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_8563</h4>
-<pre>@Environment(value=CLIENT)
-public&nbsp;int&nbsp;method_8563(<a href="../../../../net/minecraft/world/LightType.html" title="enum in net.minecraft.world">LightType</a>&nbsp;lightType,
-                                                  int&nbsp;int2,
-                                                  int&nbsp;int3,
-                                                  int&nbsp;int4)</pre>
-</li>
-</ul>
-<a name="method_8564-net.minecraft.world.LightType-int-int-int-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_8564</h4>
-<pre>@Environment(value=CLIENT)
-public&nbsp;int&nbsp;method_8564(<a href="../../../../net/minecraft/world/LightType.html" title="enum in net.minecraft.world">LightType</a>&nbsp;lightType,
-                                                  int&nbsp;int2,
-                                                  int&nbsp;int3,
-                                                  int&nbsp;int4)</pre>
-</li>
-</ul>
-<a name="getWorldHeight--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getWorldHeight</h4>
-<pre>@Environment(value=CLIENT)
-public&nbsp;int&nbsp;getWorldHeight()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/world/WorldView.html#getWorldHeight--">getWorldHeight</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/world/WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_8558-int-int-int-int-">
+<a name="isChunkGenerated-int-int-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_8558</h4>
-<pre>public&nbsp;int&nbsp;method_8558(int&nbsp;int2,
-                       int&nbsp;int3,
-                       int&nbsp;int4,
-                       int&nbsp;int5)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/world/WorldView.html#method_8558-int-int-int-int-">method_8558</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../net/minecraft/world/WorldView.html" title="interface in net.minecraft.world">WorldView</a></code></dd>
-</dl>
+<h4>isChunkGenerated</h4>
+<pre>boolean&nbsp;isChunkGenerated(int&nbsp;x,
+                         int&nbsp;z)</pre>
 </li>
 </ul>
 </li>
@@ -733,8 +241,8 @@ public&nbsp;int&nbsp;getWorldHeight()</pre>
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../net/minecraft/world/chunk/Chunk.html" title="class in net.minecraft.world.chunk"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../net/minecraft/world/chunk/ChunkProvider.html" title="interface in net.minecraft.world.chunk"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/world/chunk/Chunk.CreationType.html" title="enum in net.minecraft.world.chunk"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/world/chunk/ChunkGenerator.html" title="interface in net.minecraft.world.chunk"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/world/chunk/ChunkCache.html" target="_top">Frames</a></li>
@@ -759,14 +267,14 @@ public&nbsp;int&nbsp;getWorldHeight()</pre>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
-<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
-<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>

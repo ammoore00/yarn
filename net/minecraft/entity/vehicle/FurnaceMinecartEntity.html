@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":9,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../net/minecraft/entity/vehicle/CommandBlockMinecartEntity.html" title="class in net.minecraft.entity.vehicle"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../net/minecraft/entity/vehicle/InventoryMinecartEntity.html" title="class in net.minecraft.entity.vehicle"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/entity/vehicle/CommandBlockMinecartEntity.CommandExecutor.html" title="class in net.minecraft.entity.vehicle"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/entity/vehicle/HopperMinecartEntity.html" title="class in net.minecraft.entity.vehicle"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/entity/vehicle/FurnaceMinecartEntity.html" target="_top">Frames</a></li>
@@ -73,7 +73,7 @@ var activeTableTab = "activeTableTab";
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested.classes.inherited.from.class.net.minecraft.entity.vehicle.AbstractMinecartEntity">Nested</a>&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
@@ -102,7 +102,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">net.minecraft.entity.Entity</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../net/minecraft/class_2656.html" title="class in net.minecraft">net.minecraft.class_2656</a></li>
+<li><a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html" title="class in net.minecraft.entity.vehicle">net.minecraft.entity.vehicle.AbstractMinecartEntity</a></li>
 <li>
 <ul class="inheritance">
 <li>net.minecraft.entity.vehicle.FurnaceMinecartEntity</li>
@@ -116,16 +116,35 @@ var activeTableTab = "activeTableTab";
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../../net/minecraft/command/CommandSource.html" title="interface in net.minecraft.command">CommandSource</a>, <a href="../../../../net/minecraft/util/Nameable.html" title="interface in net.minecraft.util">Nameable</a></dd>
+</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">FurnaceMinecartEntity</span>
-extends <a href="../../../../net/minecraft/class_2656.html" title="class in net.minecraft">class_2656</a></pre>
+extends <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html" title="class in net.minecraft.entity.vehicle">AbstractMinecartEntity</a></pre>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="nested.class.summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="nested.classes.inherited.from.class.net.minecraft.entity.vehicle.AbstractMinecartEntity">
+<!--   -->
+</a>
+<h3>Nested classes/interfaces inherited from class&nbsp;net.minecraft.entity.vehicle.<a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html" title="class in net.minecraft.entity.vehicle">AbstractMinecartEntity</a></h3>
+<code><a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.Type.html" title="enum in net.minecraft.entity.vehicle">AbstractMinecartEntity.Type</a></code></li>
+</ul>
+</li>
+</ul>
 <!-- =========== FIELD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="field.summary">
@@ -143,10 +162,14 @@ extends <a href="../../../../net/minecraft/class_2656.html" title="class in net.
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/vehicle/FurnaceMinecartEntity.html#fuel">fuel</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>private static <a href="../../../../net/minecraft/entity/data/TrackedData.html" title="class in net.minecraft.entity.data">TrackedData</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/vehicle/FurnaceMinecartEntity.html#LIT">LIT</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/vehicle/FurnaceMinecartEntity.html#pushX">pushX</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/vehicle/FurnaceMinecartEntity.html#pushZ">pushZ</a></span></code>&nbsp;</td>
 </tr>
@@ -156,7 +179,7 @@ extends <a href="../../../../net/minecraft/class_2656.html" title="class in net.
 <!--   -->
 </a>
 <h3>Fields inherited from class&nbsp;net.minecraft.entity.<a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a></h3>
-<code><a href="../../../../net/minecraft/entity/Entity.html#changingDimension">changingDimension</a>, <a href="../../../../net/minecraft/entity/Entity.html#colliding">colliding</a>, <a href="../../../../net/minecraft/entity/Entity.html#dataTracker">dataTracker</a>, <a href="../../../../net/minecraft/entity/Entity.html#dimension">dimension</a>, <a href="../../../../net/minecraft/entity/Entity.html#fallDistance">fallDistance</a>, <a href="../../../../net/minecraft/entity/Entity.html#field_11408">field_11408</a>, <a href="../../../../net/minecraft/entity/Entity.html#field_11409">field_11409</a>, <a href="../../../../net/minecraft/entity/Entity.html#field_11410">field_11410</a>, <a href="../../../../net/minecraft/entity/Entity.html#field_11411">field_11411</a>, <a href="../../../../net/minecraft/entity/Entity.html#field_11412">field_11412</a>, <a href="../../../../net/minecraft/entity/Entity.html#field_11413">field_11413</a>, <a href="../../../../net/minecraft/entity/Entity.html#field_11414">field_11414</a>, <a href="../../../../net/minecraft/entity/Entity.html#field_11415">field_11415</a>, <a href="../../../../net/minecraft/entity/Entity.html#field_11416">field_11416</a>, <a href="../../../../net/minecraft/entity/Entity.html#field_13174">field_13174</a>, <a href="../../../../net/minecraft/entity/Entity.html#field_7345">field_7345</a>, <a href="../../../../net/minecraft/entity/Entity.html#field_7350">field_7350</a>, <a href="../../../../net/minecraft/entity/Entity.html#field_7357">field_7357</a>, <a href="../../../../net/minecraft/entity/Entity.html#field_7362">field_7362</a>, <a href="../../../../net/minecraft/entity/Entity.html#field_7363">field_7363</a>, <a href="../../../../net/minecraft/entity/Entity.html#field_7364">field_7364</a>, <a href="../../../../net/minecraft/entity/Entity.html#field_7365">field_7365</a>, <a href="../../../../net/minecraft/entity/Entity.html#field_7370">field_7370</a>, <a href="../../../../net/minecraft/entity/Entity.html#field_7389">field_7389</a>, <a href="../../../../net/minecraft/entity/Entity.html#field_7390">field_7390</a>, <a href="../../../../net/minecraft/entity/Entity.html#field_7393">field_7393</a>, <a href="../../../../net/minecraft/entity/Entity.html#fireResistance">fireResistance</a>, <a href="../../../../net/minecraft/entity/Entity.html#height">height</a>, <a href="../../../../net/minecraft/entity/Entity.html#horizontalCollision">horizontalCollision</a>, <a href="../../../../net/minecraft/entity/Entity.html#horizontalSpeed">horizontalSpeed</a>, <a href="../../../../net/minecraft/entity/Entity.html#ignoreCameraFrustum">ignoreCameraFrustum</a>, <a href="../../../../net/minecraft/entity/Entity.html#inLava">inLava</a>, <a href="../../../../net/minecraft/entity/Entity.html#isNonFlammable">isNonFlammable</a>, <a href="../../../../net/minecraft/entity/Entity.html#netherPortalCooldown">netherPortalCooldown</a>, <a href="../../../../net/minecraft/entity/Entity.html#noClip">noClip</a>, <a href="../../../../net/minecraft/entity/Entity.html#onGround">onGround</a>, <a href="../../../../net/minecraft/entity/Entity.html#pitch">pitch</a>, <a href="../../../../net/minecraft/entity/Entity.html#prevHorizontalSpeed">prevHorizontalSpeed</a>, <a href="../../../../net/minecraft/entity/Entity.html#prevPitch">prevPitch</a>, <a href="../../../../net/minecraft/entity/Entity.html#prevTickX">prevTickX</a>, <a href="../../../../net/minecraft/entity/Entity.html#prevTickY">prevTickY</a>, <a href="../../../../net/minecraft/entity/Entity.html#prevTickZ">prevTickZ</a>, <a href="../../../../net/minecraft/entity/Entity.html#prevX">prevX</a>, <a href="../../../../net/minecraft/entity/Entity.html#prevY">prevY</a>, <a href="../../../../net/minecraft/entity/Entity.html#prevYaw">prevYaw</a>, <a href="../../../../net/minecraft/entity/Entity.html#prevZ">prevZ</a>, <a href="../../../../net/minecraft/entity/Entity.html#pushSpeedReduction">pushSpeedReduction</a>, <a href="../../../../net/minecraft/entity/Entity.html#random">random</a>, <a href="../../../../net/minecraft/entity/Entity.html#removed">removed</a>, <a href="../../../../net/minecraft/entity/Entity.html#rider">rider</a>, <a href="../../../../net/minecraft/entity/Entity.html#ridingEntity">ridingEntity</a>, <a href="../../../../net/minecraft/entity/Entity.html#ticksAlive">ticksAlive</a>, <a href="../../../../net/minecraft/entity/Entity.html#touchingWater">touchingWater</a>, <a href="../../../../net/minecraft/entity/Entity.html#velocityDirty">velocityDirty</a>, <a href="../../../../net/minecraft/entity/Entity.html#velocityModified">velocityModified</a>, <a href="../../../../net/minecraft/entity/Entity.html#velocityX">velocityX</a>, <a href="../../../../net/minecraft/entity/Entity.html#velocityY">velocityY</a>, <a href="../../../../net/minecraft/entity/Entity.html#velocityZ">velocityZ</a>, <a href="../../../../net/minecraft/entity/Entity.html#verticalCollision">verticalCollision</a>, <a href="../../../../net/minecraft/entity/Entity.html#width">width</a>, <a href="../../../../net/minecraft/entity/Entity.html#world">world</a>, <a href="../../../../net/minecraft/entity/Entity.html#x">x</a>, <a href="../../../../net/minecraft/entity/Entity.html#y">y</a>, <a href="../../../../net/minecraft/entity/Entity.html#yaw">yaw</a>, <a href="../../../../net/minecraft/entity/Entity.html#z">z</a></code></li>
+<code><a href="../../../../net/minecraft/entity/Entity.html#age">age</a>, <a href="../../../../net/minecraft/entity/Entity.html#chunkX">chunkX</a>, <a href="../../../../net/minecraft/entity/Entity.html#chunkY">chunkY</a>, <a href="../../../../net/minecraft/entity/Entity.html#chunkZ">chunkZ</a>, <a href="../../../../net/minecraft/entity/Entity.html#collision">collision</a>, <a href="../../../../net/minecraft/entity/Entity.html#dataTracker">dataTracker</a>, <a href="../../../../net/minecraft/entity/Entity.html#dimensionId">dimensionId</a>, <a href="../../../../net/minecraft/entity/Entity.html#distanceTraveled">distanceTraveled</a>, <a href="../../../../net/minecraft/entity/Entity.html#fallDistance">fallDistance</a>, <a href="../../../../net/minecraft/entity/Entity.html#fireImmune">fireImmune</a>, <a href="../../../../net/minecraft/entity/Entity.html#firstUpdate">firstUpdate</a>, <a href="../../../../net/minecraft/entity/Entity.html#FLAGS">FLAGS</a>, <a href="../../../../net/minecraft/entity/Entity.html#glowing">glowing</a>, <a href="../../../../net/minecraft/entity/Entity.html#height">height</a>, <a href="../../../../net/minecraft/entity/Entity.html#horizontalCollision">horizontalCollision</a>, <a href="../../../../net/minecraft/entity/Entity.html#horizontalSpeed">horizontalSpeed</a>, <a href="../../../../net/minecraft/entity/Entity.html#ignoreCameraFrustum">ignoreCameraFrustum</a>, <a href="../../../../net/minecraft/entity/Entity.html#inanimate">inanimate</a>, <a href="../../../../net/minecraft/entity/Entity.html#inNetherPortal">inNetherPortal</a>, <a href="../../../../net/minecraft/entity/Entity.html#lastNetherPortalDirection">lastNetherPortalDirection</a>, <a href="../../../../net/minecraft/entity/Entity.html#lastNetherPortalDirectionVector">lastNetherPortalDirectionVector</a>, <a href="../../../../net/minecraft/entity/Entity.html#lastNetherPortalPosition">lastNetherPortalPosition</a>, <a href="../../../../net/minecraft/entity/Entity.html#lastRenderX">lastRenderX</a>, <a href="../../../../net/minecraft/entity/Entity.html#lastRenderY">lastRenderY</a>, <a href="../../../../net/minecraft/entity/Entity.html#lastRenderZ">lastRenderZ</a>, <a href="../../../../net/minecraft/entity/Entity.html#netherPortalCooldown">netherPortalCooldown</a>, <a href="../../../../net/minecraft/entity/Entity.html#netherPortalTime">netherPortalTime</a>, <a href="../../../../net/minecraft/entity/Entity.html#noClip">noClip</a>, <a href="../../../../net/minecraft/entity/Entity.html#onGround">onGround</a>, <a href="../../../../net/minecraft/entity/Entity.html#pitch">pitch</a>, <a href="../../../../net/minecraft/entity/Entity.html#prevHorizontalSpeed">prevHorizontalSpeed</a>, <a href="../../../../net/minecraft/entity/Entity.html#prevPitch">prevPitch</a>, <a href="../../../../net/minecraft/entity/Entity.html#prevX">prevX</a>, <a href="../../../../net/minecraft/entity/Entity.html#prevY">prevY</a>, <a href="../../../../net/minecraft/entity/Entity.html#prevYaw">prevYaw</a>, <a href="../../../../net/minecraft/entity/Entity.html#prevZ">prevZ</a>, <a href="../../../../net/minecraft/entity/Entity.html#pushSpeedReduction">pushSpeedReduction</a>, <a href="../../../../net/minecraft/entity/Entity.html#random">random</a>, <a href="../../../../net/minecraft/entity/Entity.html#removed">removed</a>, <a href="../../../../net/minecraft/entity/Entity.html#ridingCooldown">ridingCooldown</a>, <a href="../../../../net/minecraft/entity/Entity.html#slowMovement">slowMovement</a>, <a href="../../../../net/minecraft/entity/Entity.html#stepHeight">stepHeight</a>, <a href="../../../../net/minecraft/entity/Entity.html#teleporting">teleporting</a>, <a href="../../../../net/minecraft/entity/Entity.html#timeUntilRegen">timeUntilRegen</a>, <a href="../../../../net/minecraft/entity/Entity.html#touchingWater">touchingWater</a>, <a href="../../../../net/minecraft/entity/Entity.html#trackedX">trackedX</a>, <a href="../../../../net/minecraft/entity/Entity.html#trackedY">trackedY</a>, <a href="../../../../net/minecraft/entity/Entity.html#trackedZ">trackedZ</a>, <a href="../../../../net/minecraft/entity/Entity.html#updateNeeded">updateNeeded</a>, <a href="../../../../net/minecraft/entity/Entity.html#uuid">uuid</a>, <a href="../../../../net/minecraft/entity/Entity.html#uuidString">uuidString</a>, <a href="../../../../net/minecraft/entity/Entity.html#velocityDirty">velocityDirty</a>, <a href="../../../../net/minecraft/entity/Entity.html#velocityModified">velocityModified</a>, <a href="../../../../net/minecraft/entity/Entity.html#velocityX">velocityX</a>, <a href="../../../../net/minecraft/entity/Entity.html#velocityY">velocityY</a>, <a href="../../../../net/minecraft/entity/Entity.html#velocityZ">velocityZ</a>, <a href="../../../../net/minecraft/entity/Entity.html#verticalCollision">verticalCollision</a>, <a href="../../../../net/minecraft/entity/Entity.html#width">width</a>, <a href="../../../../net/minecraft/entity/Entity.html#world">world</a>, <a href="../../../../net/minecraft/entity/Entity.html#x">x</a>, <a href="../../../../net/minecraft/entity/Entity.html#y">y</a>, <a href="../../../../net/minecraft/entity/Entity.html#yaw">yaw</a>, <a href="../../../../net/minecraft/entity/Entity.html#z">z</a></code></li>
 </ul>
 </li>
 </ul>
@@ -172,16 +195,13 @@ extends <a href="../../../../net/minecraft/class_2656.html" title="class in net.
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/vehicle/FurnaceMinecartEntity.html#FurnaceMinecartEntity-net.minecraft.world.World-">FurnaceMinecartEntity</a></span>(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world)</code>
-<div class="block">All classes that extend Entity <b>must<b> have a constructor
- that takes in one, and only one <a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world"><code>World</code></a> parameter.</div>
-</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/vehicle/FurnaceMinecartEntity.html#FurnaceMinecartEntity-net.minecraft.world.World-">FurnaceMinecartEntity</a></span>(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/vehicle/FurnaceMinecartEntity.html#FurnaceMinecartEntity-net.minecraft.world.World-double-double-double-">FurnaceMinecartEntity</a></span>(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-                     double&nbsp;double2,
-                     double&nbsp;double3,
-                     double&nbsp;double4)</code>&nbsp;</td>
+                     double&nbsp;x,
+                     double&nbsp;y,
+                     double&nbsp;z)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -193,7 +213,7 @@ extends <a href="../../../../net/minecraft/class_2656.html" title="class in net.
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -203,50 +223,46 @@ extends <a href="../../../../net/minecraft/class_2656.html" title="class in net.
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/vehicle/FurnaceMinecartEntity.html#applySlowdown--">applySlowdown</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/vehicle/FurnaceMinecartEntity.html#deserialize-net.minecraft.nbt.CompoundTag-">deserialize</a></span>(<a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</code>&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/vehicle/FurnaceMinecartEntity.html#dropItems-net.minecraft.entity.damage.DamageSource-">dropItems</a></span>(<a href="../../../../net/minecraft/entity/damage/DamageSource.html" title="class in net.minecraft.entity.damage">DamageSource</a>&nbsp;damageSource)</code>&nbsp;</td>
 </tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/vehicle/FurnaceMinecartEntity.html#getDefaultContainedBlock--">getDefaultContainedBlock</a></span>()</code>&nbsp;</td>
+</tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>protected double</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/vehicle/FurnaceMinecartEntity.html#getMaxOffRailSpeed--">getMaxOffRailSpeed</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.Type.html" title="enum in net.minecraft.entity.vehicle">AbstractMinecartEntity.Type</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/vehicle/FurnaceMinecartEntity.html#getMinecartType--">getMinecartType</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/vehicle/FurnaceMinecartEntity.html#initDataFixer-net.minecraft.datafixer.DataFixer-">initDataFixer</a></span>(<a href="../../../../net/minecraft/datafixer/DataFixer.html" title="class in net.minecraft.datafixer">DataFixer</a>&nbsp;dataFixer)</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/vehicle/FurnaceMinecartEntity.html#initDataTracker--">initDataTracker</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/vehicle/FurnaceMinecartEntity.html#interact-net.minecraft.entity.player.PlayerEntity-net.minecraft.util.Hand-">interact</a></span>(<a href="../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player,
+        <a href="../../../../net/minecraft/util/Hand.html" title="enum in net.minecraft.util">Hand</a>&nbsp;hand)</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>protected boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/vehicle/FurnaceMinecartEntity.html#isLit--">isLit</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/vehicle/FurnaceMinecartEntity.html#method_10740-int-int-int-double-double-int-int-">method_10740</a></span>(int&nbsp;int2,
-            int&nbsp;int3,
-            int&nbsp;int4,
-            double&nbsp;double2,
-            double&nbsp;double3,
-            int&nbsp;int5,
-            int&nbsp;int6)</code>&nbsp;</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/vehicle/FurnaceMinecartEntity.html#method_10752--">method_10752</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/vehicle/FurnaceMinecartEntity.html#method_10756--">method_10756</a></span>()</code>&nbsp;</td>
-</tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../../../../net/minecraft/block/Block.html" title="class in net.minecraft.block">Block</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/vehicle/FurnaceMinecartEntity.html#method_7794--">method_7794</a></span>()</code>&nbsp;</td>
-</tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/vehicle/FurnaceMinecartEntity.html#openInventory-net.minecraft.entity.player.PlayerEntity-">openInventory</a></span>(<a href="../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</code>&nbsp;</td>
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/vehicle/FurnaceMinecartEntity.html#moveOnRail-net.minecraft.util.math.BlockPos-net.minecraft.block.BlockState-">moveOnRail</a></span>(<a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+          <a href="../../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state)</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>protected void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/vehicle/FurnaceMinecartEntity.html#serialize-net.minecraft.nbt.CompoundTag-">serialize</a></span>(<a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/vehicle/FurnaceMinecartEntity.html#readCustomDataFromTag-net.minecraft.nbt.CompoundTag-">readCustomDataFromTag</a></span>(<a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
@@ -256,20 +272,24 @@ extends <a href="../../../../net/minecraft/class_2656.html" title="class in net.
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/vehicle/FurnaceMinecartEntity.html#tick--">tick</a></span>()</code>&nbsp;</td>
 </tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../net/minecraft/entity/vehicle/FurnaceMinecartEntity.html#writeCustomDataToTag-net.minecraft.nbt.CompoundTag-">writeCustomDataToTag</a></span>(<a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</code>&nbsp;</td>
+</tr>
 </table>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.class_2656">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.entity.vehicle.AbstractMinecartEntity">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;net.minecraft.<a href="../../../../net/minecraft/class_2656.html" title="class in net.minecraft">class_2656</a></h3>
-<code><a href="../../../../net/minecraft/class_2656.html#animateDamage--">animateDamage</a>, <a href="../../../../net/minecraft/class_2656.html#canClimb--">canClimb</a>, <a href="../../../../net/minecraft/class_2656.html#collides--">collides</a>, <a href="../../../../net/minecraft/class_2656.html#damage-net.minecraft.entity.damage.DamageSource-float-">damage</a>, <a href="../../../../net/minecraft/class_2656.html#getBox--">getBox</a>, <a href="../../../../net/minecraft/class_2656.html#getEyeHeight--">getEyeHeight</a>, <a href="../../../../net/minecraft/class_2656.html#getHardCollisionBox-net.minecraft.entity.Entity-">getHardCollisionBox</a>, <a href="../../../../net/minecraft/class_2656.html#getMountedHeightOffset--">getMountedHeightOffset</a>, <a href="../../../../net/minecraft/class_2656.html#getName--">getName</a>, <a href="../../../../net/minecraft/class_2656.html#hasCustomName--">hasCustomName</a>, <a href="../../../../net/minecraft/class_2656.html#isPushable--">isPushable</a>, <a href="../../../../net/minecraft/class_2656.html#method_10737-double-double-double-">method_10737</a>, <a href="../../../../net/minecraft/class_2656.html#method_10738-double-double-double-double-">method_10738</a>, <a href="../../../../net/minecraft/class_2656.html#method_10739-float-">method_10739</a>, <a href="../../../../net/minecraft/class_2656.html#method_10741-net.minecraft.world.World-double-double-double-int-">method_10741</a>, <a href="../../../../net/minecraft/class_2656.html#method_10742-java.lang.String-">method_10742</a>, <a href="../../../../net/minecraft/class_2656.html#method_10743-boolean-">method_10743</a>, <a href="../../../../net/minecraft/class_2656.html#method_10744-double-">method_10744</a>, <a href="../../../../net/minecraft/class_2656.html#method_10745-int-">method_10745</a>, <a href="../../../../net/minecraft/class_2656.html#method_10746--">method_10746</a>, <a href="../../../../net/minecraft/class_2656.html#method_10747-int-">method_10747</a>, <a href="../../../../net/minecraft/class_2656.html#method_10748--">method_10748</a>, <a href="../../../../net/minecraft/class_2656.html#method_10749-int-">method_10749</a>, <a href="../../../../net/minecraft/class_2656.html#method_10750--">method_10750</a>, <a href="../../../../net/minecraft/class_2656.html#method_10751-int-">method_10751</a>, <a href="../../../../net/minecraft/class_2656.html#method_10753-int-">method_10753</a>, <a href="../../../../net/minecraft/class_2656.html#method_10754--">method_10754</a>, <a href="../../../../net/minecraft/class_2656.html#method_10755--">method_10755</a>, <a href="../../../../net/minecraft/class_2656.html#method_10757--">method_10757</a>, <a href="../../../../net/minecraft/class_2656.html#method_10758--">method_10758</a>, <a href="../../../../net/minecraft/class_2656.html#method_10759--">method_10759</a>, <a href="../../../../net/minecraft/class_2656.html#method_10760--">method_10760</a>, <a href="../../../../net/minecraft/class_2656.html#method_6920-double-double-double-float-float-int-">method_6920</a>, <a href="../../../../net/minecraft/class_2656.html#onActivatorRail-int-int-int-boolean-">onActivatorRail</a>, <a href="../../../../net/minecraft/class_2656.html#pushAwayFrom-net.minecraft.entity.Entity-">pushAwayFrom</a>, <a href="../../../../net/minecraft/class_2656.html#remove--">remove</a>, <a href="../../../../net/minecraft/class_2656.html#setVelocityClient-double-double-double-">setVelocityClient</a></code></li>
+<h3>Methods inherited from class&nbsp;net.minecraft.entity.vehicle.<a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html" title="class in net.minecraft.entity.vehicle">AbstractMinecartEntity</a></h3>
+<code><a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#animateDamage--">animateDamage</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#canClimb--">canClimb</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#collides--">collides</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#create-net.minecraft.world.World-double-double-double-net.minecraft.entity.vehicle.AbstractMinecartEntity.Type-">create</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#damage-net.minecraft.entity.damage.DamageSource-float-">damage</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#getBlockOffset--">getBlockOffset</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#getCollisionBox--">getCollisionBox</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#getContainedBlock--">getContainedBlock</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#getDamageWobbleSide--">getDamageWobbleSide</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#getDamageWobbleStrength--">getDamageWobbleStrength</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#getDamageWobbleTicks--">getDamageWobbleTicks</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#getDefaultBlockOffset--">getDefaultBlockOffset</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#getHardCollisionBox-net.minecraft.entity.Entity-">getHardCollisionBox</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#getMountedHeightOffset--">getMountedHeightOffset</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#getMovementDirection--">getMovementDirection</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#getVisibilityBoundingBox--">getVisibilityBoundingBox</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#hasCustomBlock--">hasCustomBlock</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#isPushable--">isPushable</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#method_25229-net.minecraft.datafixer.DataFixer-java.lang.Class-">method_25229</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#moveOffRail--">moveOffRail</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#onActivatorRail-int-int-int-boolean-">onActivatorRail</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#pushAwayFrom-net.minecraft.entity.Entity-">pushAwayFrom</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#setCustomBlock-net.minecraft.block.BlockState-">setCustomBlock</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#setCustomBlockOffset-int-">setCustomBlockOffset</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#setCustomBlockPresent-boolean-">setCustomBlockPresent</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#setDamageWobbleSide-int-">setDamageWobbleSide</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#setDamageWobbleStrength-float-">setDamageWobbleStrength</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#setDamageWobbleTicks-int-">setDamageWobbleTicks</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#setVelocityClient-double-double-double-">setVelocityClient</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#snapPositionToRail-double-double-double-">snapPositionToRail</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#snapPositionToRailWithOffset-double-double-double-double-">snapPositionToRailWithOffset</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#updatePosition-double-double-double-">updatePosition</a>, <a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#updateTrackedPositionAndAngles-double-double-double-float-float-int-boolean-">updateTrackedPositionAndAngles</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.net.minecraft.entity.Entity">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.entity.<a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a></h3>
-<code><a href="../../../../net/minecraft/entity/Entity.html#addVelocity-double-double-double-">addVelocity</a>, <a href="../../../../net/minecraft/entity/Entity.html#afterSpawn--">afterSpawn</a>, <a href="../../../../net/minecraft/entity/Entity.html#baseTick--">baseTick</a>, <a href="../../../../net/minecraft/entity/Entity.html#burn-int-">burn</a>, <a href="../../../../net/minecraft/entity/Entity.html#canAvoidTraps--">canAvoidTraps</a>, <a href="../../../../net/minecraft/entity/Entity.html#canFly--">canFly</a>, <a href="../../../../net/minecraft/entity/Entity.html#checkBlockCollision--">checkBlockCollision</a>, <a href="../../../../net/minecraft/entity/Entity.html#destroy--">destroy</a>, <a href="../../../../net/minecraft/entity/Entity.html#equals-java.lang.Object-">equals</a>, <a href="../../../../net/minecraft/entity/Entity.html#fromTag-net.minecraft.nbt.CompoundTag-">fromTag</a>, <a href="../../../../net/minecraft/entity/Entity.html#getAir--">getAir</a>, <a href="../../../../net/minecraft/entity/Entity.html#getArmorStacks--">getArmorStacks</a>, <a href="../../../../net/minecraft/entity/Entity.html#getDataTracker--">getDataTracker</a>, <a href="../../../../net/minecraft/entity/Entity.html#getDefaultNetherPortalCooldown--">getDefaultNetherPortalCooldown</a>, <a href="../../../../net/minecraft/entity/Entity.html#getDistanceTo-double-double-double-">getDistanceTo</a>, <a href="../../../../net/minecraft/entity/Entity.html#getFlag-int-">getFlag</a>, <a href="../../../../net/minecraft/entity/Entity.html#getHeadRotation--">getHeadRotation</a>, <a href="../../../../net/minecraft/entity/Entity.html#getHeightOffset--">getHeightOffset</a>, <a href="../../../../net/minecraft/entity/Entity.html#getMaxNetherPortalTime--">getMaxNetherPortalTime</a>, <a href="../../../../net/minecraft/entity/Entity.html#getSafeFallDistance--">getSafeFallDistance</a>, <a href="../../../../net/minecraft/entity/Entity.html#getSavedEntityId--">getSavedEntityId</a>, <a href="../../../../net/minecraft/entity/Entity.html#getUuid--">getUuid</a>, <a href="../../../../net/minecraft/entity/Entity.html#handleAttack-net.minecraft.entity.Entity-">handleAttack</a>, <a href="../../../../net/minecraft/entity/Entity.html#handleFallDamage-float-">handleFallDamage</a>, <a href="../../../../net/minecraft/entity/Entity.html#handleStatus-byte-">handleStatus</a>, <a href="../../../../net/minecraft/entity/Entity.html#hashCode--">hashCode</a>, <a href="../../../../net/minecraft/entity/Entity.html#hasVehicle--">hasVehicle</a>, <a href="../../../../net/minecraft/entity/Entity.html#increaseTransforms-float-float-">increaseTransforms</a>, <a href="../../../../net/minecraft/entity/Entity.html#isAlive--">isAlive</a>, <a href="../../../../net/minecraft/entity/Entity.html#isAttackable--">isAttackable</a>, <a href="../../../../net/minecraft/entity/Entity.html#isInsideWall--">isInsideWall</a>, <a href="../../../../net/minecraft/entity/Entity.html#isInvisible--">isInvisible</a>, <a href="../../../../net/minecraft/entity/Entity.html#isInvisibleTo-net.minecraft.entity.player.PlayerEntity-">isInvisibleTo</a>, <a href="../../../../net/minecraft/entity/Entity.html#isOnFire--">isOnFire</a>, <a href="../../../../net/minecraft/entity/Entity.html#isPartOf-net.minecraft.entity.Entity-">isPartOf</a>, <a href="../../../../net/minecraft/entity/Entity.html#isSneaking--">isSneaking</a>, <a href="../../../../net/minecraft/entity/Entity.html#isSprinting--">isSprinting</a>, <a href="../../../../net/minecraft/entity/Entity.html#isSubmergedIn-net.minecraft.block.Material-">isSubmergedIn</a>, <a href="../../../../net/minecraft/entity/Entity.html#isTouchingWater--">isTouchingWater</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_10541-int-int-int-int-">method_10541</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_10542-net.minecraft.item.ItemStack-float-">method_10542</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_10543--">method_10543</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_10544--">method_10544</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_10545--">method_10545</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_10546-double-double-double-">method_10546</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_10547-double-double-double-">method_10547</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_11964-net.minecraft.util.math.Vec3d-">method_11964</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_11965--">method_11965</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_11966--">method_11966</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_6909--">method_6909</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_6910--">method_6910</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_6912--">method_6912</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_6924-float-float-float-">method_6924</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_6925-net.minecraft.world.explosion.Explosion-net.minecraft.world.World-int-int-int-net.minecraft.block.Block-">method_6925</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_6926-net.minecraft.world.explosion.Explosion-net.minecraft.world.World-int-int-int-int-float-">method_6926</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_6939-net.minecraft.entity.LivingEntity-">method_6939</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_6943-int-int-">method_6943</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_6944-int-int-float-">method_6944</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_6948--">method_6948</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_6949--">method_6949</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_6956--">method_6956</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_6971--">method_6971</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_6977--">method_6977</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_6981--">method_6981</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_6984--">method_6984</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_6985--">method_6985</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_6994--">method_6994</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_6998-float-">method_6998</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_7005-net.minecraft.entity.Entity-int-">method_7005</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_7008-float-">method_7008</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_7011-int-net.minecraft.item.ItemStack-">method_7011</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_7020-net.minecraft.nbt.CompoundTag-">method_7020</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_7051-double-double-double-">method_7051</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_7056-net.minecraft.entity.Entity-">method_7056</a>, <a href="../../../../net/minecraft/entity/Entity.html#method_7057-net.minecraft.entity.Entity-boolean-">method_7057</a>, <a href="../../../../net/minecraft/entity/Entity.html#move-double-double-double-">move</a>, <a href="../../../../net/minecraft/entity/Entity.html#onLightningStrike-net.minecraft.entity.LightningBoltEntity-">onLightningStrike</a>, <a href="../../../../net/minecraft/entity/Entity.html#onPlayerCollision-net.minecraft.entity.player.PlayerEntity-">onPlayerCollision</a>, <a href="../../../../net/minecraft/entity/Entity.html#playSound-java.lang.String-float-float-">playSound</a>, <a href="../../../../net/minecraft/entity/Entity.html#populateCrashReport-net.minecraft.util.crash.CrashReportSection-">populateCrashReport</a>, <a href="../../../../net/minecraft/entity/Entity.html#refreshPositionAndAngles-double-double-double-float-float-">refreshPositionAndAngles</a>, <a href="../../../../net/minecraft/entity/Entity.html#saveSelfToTag-net.minecraft.nbt.CompoundTag-">saveSelfToTag</a>, <a href="../../../../net/minecraft/entity/Entity.html#scheduleVelocityUpdate--">scheduleVelocityUpdate</a>, <a href="../../../../net/minecraft/entity/Entity.html#setAir-int-">setAir</a>, <a href="../../../../net/minecraft/entity/Entity.html#setBounds-float-float-">setBounds</a>, <a href="../../../../net/minecraft/entity/Entity.html#setFlag-int-boolean-">setFlag</a>, <a href="../../../../net/minecraft/entity/Entity.html#setHeadYaw-float-">setHeadYaw</a>, <a href="../../../../net/minecraft/entity/Entity.html#setInLava--">setInLava</a>, <a href="../../../../net/minecraft/entity/Entity.html#setInvisible-boolean-">setInvisible</a>, <a href="../../../../net/minecraft/entity/Entity.html#setOnFireFor-int-">setOnFireFor</a>, <a href="../../../../net/minecraft/entity/Entity.html#setOnFireFromLava--">setOnFireFromLava</a>, <a href="../../../../net/minecraft/entity/Entity.html#setRotation-float-float-">setRotation</a>, <a href="../../../../net/minecraft/entity/Entity.html#setSneaking-boolean-">setSneaking</a>, <a href="../../../../net/minecraft/entity/Entity.html#setSprinting-boolean-">setSprinting</a>, <a href="../../../../net/minecraft/entity/Entity.html#setSwimming-boolean-">setSwimming</a>, <a href="../../../../net/minecraft/entity/Entity.html#setWorld-net.minecraft.world.World-">setWorld</a>, <a href="../../../../net/minecraft/entity/Entity.html#shouldRender-double-">shouldRender</a>, <a href="../../../../net/minecraft/entity/Entity.html#shouldSetPositionOnLoad--">shouldSetPositionOnLoad</a>, <a href="../../../../net/minecraft/entity/Entity.html#squaredDistanceTo-double-double-double-">squaredDistanceTo</a>, <a href="../../../../net/minecraft/entity/Entity.html#squaredDistanceTo-net.minecraft.entity.Entity-">squaredDistanceTo</a>, <a href="../../../../net/minecraft/entity/Entity.html#squaredDistanceToEntity-net.minecraft.entity.Entity-">squaredDistanceToEntity</a>, <a href="../../../../net/minecraft/entity/Entity.html#startRiding-net.minecraft.entity.Entity-">startRiding</a>, <a href="../../../../net/minecraft/entity/Entity.html#teleportToDimension-int-">teleportToDimension</a>, <a href="../../../../net/minecraft/entity/Entity.html#tickRiding--">tickRiding</a>, <a href="../../../../net/minecraft/entity/Entity.html#toListTag-double:A-">toListTag</a>, <a href="../../../../net/minecraft/entity/Entity.html#toListTag-float:A-">toListTag</a>, <a href="../../../../net/minecraft/entity/Entity.html#toString--">toString</a>, <a href="../../../../net/minecraft/entity/Entity.html#updateFall-double-boolean-">updateFall</a>, <a href="../../../../net/minecraft/entity/Entity.html#updatePositionAndAngles-double-double-double-float-float-">updatePositionAndAngles</a>, <a href="../../../../net/minecraft/entity/Entity.html#writePlayerData-net.minecraft.nbt.CompoundTag-">writePlayerData</a></code></li>
+<code><a href="../../../../net/minecraft/entity/Entity.html#addPassenger-net.minecraft.entity.Entity-">addPassenger</a>, <a href="../../../../net/minecraft/entity/Entity.html#addScoreboardTag-java.lang.String-">addScoreboardTag</a>, <a href="../../../../net/minecraft/entity/Entity.html#addVelocity-double-double-double-">addVelocity</a>, <a href="../../../../net/minecraft/entity/Entity.html#afterSpawn--">afterSpawn</a>, <a href="../../../../net/minecraft/entity/Entity.html#allowCommandExecution-int-java.lang.String-">allowCommandExecution</a>, <a href="../../../../net/minecraft/entity/Entity.html#applyMirror-net.minecraft.util.BlockMirror-">applyMirror</a>, <a href="../../../../net/minecraft/entity/Entity.html#applyRotation-net.minecraft.util.BlockRotation-">applyRotation</a>, <a href="../../../../net/minecraft/entity/Entity.html#attemptSprintingParticles--">attemptSprintingParticles</a>, <a href="../../../../net/minecraft/entity/Entity.html#baseTick--">baseTick</a>, <a href="../../../../net/minecraft/entity/Entity.html#burn-int-">burn</a>, <a href="../../../../net/minecraft/entity/Entity.html#canAddPassenger-net.minecraft.entity.Entity-">canAddPassenger</a>, <a href="../../../../net/minecraft/entity/Entity.html#canAvoidTraps--">canAvoidTraps</a>, <a href="../../../../net/minecraft/entity/Entity.html#canBeSpectated-net.minecraft.server.network.ServerPlayerEntity-">canBeSpectated</a>, <a href="../../../../net/minecraft/entity/Entity.html#canExplosionDestroyBlock-net.minecraft.world.explosion.Explosion-net.minecraft.world.World-net.minecraft.util.math.BlockPos-net.minecraft.block.BlockState-float-">canExplosionDestroyBlock</a>, <a href="../../../../net/minecraft/entity/Entity.html#canFly--">canFly</a>, <a href="../../../../net/minecraft/entity/Entity.html#canStartRiding-net.minecraft.entity.Entity-">canStartRiding</a>, <a href="../../../../net/minecraft/entity/Entity.html#canUsePortals--">canUsePortals</a>, <a href="../../../../net/minecraft/entity/Entity.html#changeDimension-int-">changeDimension</a>, <a href="../../../../net/minecraft/entity/Entity.html#changeLookDirection-float-float-">changeLookDirection</a>, <a href="../../../../net/minecraft/entity/Entity.html#checkBlockCollision--">checkBlockCollision</a>, <a href="../../../../net/minecraft/entity/Entity.html#checkWaterState--">checkWaterState</a>, <a href="../../../../net/minecraft/entity/Entity.html#copyCommandStats-net.minecraft.entity.Entity-">copyCommandStats</a>, <a href="../../../../net/minecraft/entity/Entity.html#copyPositionAndRotation-net.minecraft.entity.Entity-">copyPositionAndRotation</a>, <a href="../../../../net/minecraft/entity/Entity.html#dealDamage-net.minecraft.entity.LivingEntity-net.minecraft.entity.Entity-">dealDamage</a>, <a href="../../../../net/minecraft/entity/Entity.html#destroy--">destroy</a>, <a href="../../../../net/minecraft/entity/Entity.html#distanceTo-double-double-double-">distanceTo</a>, <a href="../../../../net/minecraft/entity/Entity.html#distanceTo-net.minecraft.entity.Entity-">distanceTo</a>, <a href="../../../../net/minecraft/entity/Entity.html#doesNotCollide-double-double-double-">doesNotCollide</a>, <a href="../../../../net/minecraft/entity/Entity.html#doesRenderOnFire--">doesRenderOnFire</a>, <a href="../../../../net/minecraft/entity/Entity.html#dropItem-net.minecraft.item.Item-int-">dropItem</a>, <a href="../../../../net/minecraft/entity/Entity.html#dropItem-net.minecraft.item.Item-int-float-">dropItem</a>, <a href="../../../../net/minecraft/entity/Entity.html#dropStack-net.minecraft.item.ItemStack-float-">dropStack</a>, <a href="../../../../net/minecraft/entity/Entity.html#entityDataRequiresOperator--">entityDataRequiresOperator</a>, <a href="../../../../net/minecraft/entity/Entity.html#equals-java.lang.Object-">equals</a>, <a href="../../../../net/minecraft/entity/Entity.html#equip-int-net.minecraft.item.ItemStack-">equip</a>, <a href="../../../../net/minecraft/entity/Entity.html#equipStack-net.minecraft.entity.EquipmentSlot-net.minecraft.item.ItemStack-">equipStack</a>, <a href="../../../../net/minecraft/entity/Entity.html#extinguish--">extinguish</a>, <a href="../../../../net/minecraft/entity/Entity.html#fall-double-boolean-net.minecraft.block.BlockState-net.minecraft.util.math.BlockPos-">fall</a>, <a href="../../../../net/minecraft/entity/Entity.html#fromTag-net.minecraft.nbt.CompoundTag-">fromTag</a>, <a href="../../../../net/minecraft/entity/Entity.html#getAir--">getAir</a>, <a href="../../../../net/minecraft/entity/Entity.html#getArmorItems--">getArmorItems</a>, <a href="../../../../net/minecraft/entity/Entity.html#getBlockPos--">getBlockPos</a>, <a href="../../../../net/minecraft/entity/Entity.html#getBodyParts--">getBodyParts</a>, <a href="../../../../net/minecraft/entity/Entity.html#getBoundingBox--">getBoundingBox</a>, <a href="../../../../net/minecraft/entity/Entity.html#getBrightnessAtEyes--">getBrightnessAtEyes</a>, <a href="../../../../net/minecraft/entity/Entity.html#getBurningDuration--">getBurningDuration</a>, <a href="../../../../net/minecraft/entity/Entity.html#getCameraPosVec-float-">getCameraPosVec</a>, <a href="../../../../net/minecraft/entity/Entity.html#getCommandInvoker--">getCommandInvoker</a>, <a href="../../../../net/minecraft/entity/Entity.html#getCommandStats--">getCommandStats</a>, <a href="../../../../net/minecraft/entity/Entity.html#getCustomName--">getCustomName</a>, <a href="../../../../net/minecraft/entity/Entity.html#getDataTracker--">getDataTracker</a>, <a href="../../../../net/minecraft/entity/Entity.html#getDefaultNetherPortalCooldown--">getDefaultNetherPortalCooldown</a>, <a href="../../../../net/minecraft/entity/Entity.html#getDisplayName--">getDisplayName</a>, <a href="../../../../net/minecraft/entity/Entity.html#getEffectiveExplosionResistance-net.minecraft.world.explosion.Explosion-net.minecraft.world.World-net.minecraft.util.math.BlockPos-net.minecraft.block.BlockState-">getEffectiveExplosionResistance</a>, <a href="../../../../net/minecraft/entity/Entity.html#getEntityId--">getEntityId</a>, <a href="../../../../net/minecraft/entity/Entity.html#getEntityWorld--">getEntityWorld</a>, <a href="../../../../net/minecraft/entity/Entity.html#getFlag-int-">getFlag</a>, <a href="../../../../net/minecraft/entity/Entity.html#getHeadYaw--">getHeadYaw</a>, <a href="../../../../net/minecraft/entity/Entity.html#getHeightOffset--">getHeightOffset</a>, <a href="../../../../net/minecraft/entity/Entity.html#getHorizontalFacing--">getHorizontalFacing</a>, <a href="../../../../net/minecraft/entity/Entity.html#getHoverEvent--">getHoverEvent</a>, <a href="../../../../net/minecraft/entity/Entity.html#getItemsEquipped--">getItemsEquipped</a>, <a href="../../../../net/minecraft/entity/Entity.html#getItemsHand--">getItemsHand</a>, <a href="../../../../net/minecraft/entity/Entity.html#getLastNetherPortalDirection--">getLastNetherPortalDirection</a>, <a href="../../../../net/minecraft/entity/Entity.html#getLastNetherPortalDirectionVector--">getLastNetherPortalDirectionVector</a>, <a href="../../../../net/minecraft/entity/Entity.html#getLightmapCoordinates--">getLightmapCoordinates</a>, <a href="../../../../net/minecraft/entity/Entity.html#getMaxNetherPortalTime--">getMaxNetherPortalTime</a>, <a href="../../../../net/minecraft/entity/Entity.html#getName--">getName</a>, <a href="../../../../net/minecraft/entity/Entity.html#getPassengerList--">getPassengerList</a>, <a href="../../../../net/minecraft/entity/Entity.html#getPassengersDeep--">getPassengersDeep</a>, <a href="../../../../net/minecraft/entity/Entity.html#getPistonBehavior--">getPistonBehavior</a>, <a href="../../../../net/minecraft/entity/Entity.html#getPosVector--">getPosVector</a>, <a href="../../../../net/minecraft/entity/Entity.html#getPrimaryPassenger--">getPrimaryPassenger</a>, <a href="../../../../net/minecraft/entity/Entity.html#getRenderDistanceMultiplier--">getRenderDistanceMultiplier</a>, <a href="../../../../net/minecraft/entity/Entity.html#getRiders-java.lang.Class-">getRiders</a>, <a href="../../../../net/minecraft/entity/Entity.html#getRootVehicle--">getRootVehicle</a>, <a href="../../../../net/minecraft/entity/Entity.html#getRotationClient--">getRotationClient</a>, <a href="../../../../net/minecraft/entity/Entity.html#getRotationVec-float-">getRotationVec</a>, <a href="../../../../net/minecraft/entity/Entity.html#getRotationVecClient--">getRotationVecClient</a>, <a href="../../../../net/minecraft/entity/Entity.html#getRotationVector--">getRotationVector</a>, <a href="../../../../net/minecraft/entity/Entity.html#getRotationVector-float-float-">getRotationVector</a>, <a href="../../../../net/minecraft/entity/Entity.html#getSafeFallDistance--">getSafeFallDistance</a>, <a href="../../../../net/minecraft/entity/Entity.html#getSavedEntityId--">getSavedEntityId</a>, <a href="../../../../net/minecraft/entity/Entity.html#getScoreboardTags--">getScoreboardTags</a>, <a href="../../../../net/minecraft/entity/Entity.html#getScoreboardTeam--">getScoreboardTeam</a>, <a href="../../../../net/minecraft/entity/Entity.html#getServer--">getServer</a>, <a href="../../../../net/minecraft/entity/Entity.html#getSoundCategory--">getSoundCategory</a>, <a href="../../../../net/minecraft/entity/Entity.html#getSplashSound--">getSplashSound</a>, <a href="../../../../net/minecraft/entity/Entity.html#getStandingEyeHeight--">getStandingEyeHeight</a>, <a href="../../../../net/minecraft/entity/Entity.html#getSwimSound--">getSwimSound</a>, <a href="../../../../net/minecraft/entity/Entity.html#getTargetingMargin--">getTargetingMargin</a>, <a href="../../../../net/minecraft/entity/Entity.html#getUuid--">getUuid</a>, <a href="../../../../net/minecraft/entity/Entity.html#getUuidAsString--">getUuidAsString</a>, <a href="../../../../net/minecraft/entity/Entity.html#getVehicle--">getVehicle</a>, <a href="../../../../net/minecraft/entity/Entity.html#handleAttack-net.minecraft.entity.Entity-">handleAttack</a>, <a href="../../../../net/minecraft/entity/Entity.html#handleFallDamage-float-float-">handleFallDamage</a>, <a href="../../../../net/minecraft/entity/Entity.html#handleStatus-byte-">handleStatus</a>, <a href="../../../../net/minecraft/entity/Entity.html#hasCustomName--">hasCustomName</a>, <a href="../../../../net/minecraft/entity/Entity.html#hashCode--">hashCode</a>, <a href="../../../../net/minecraft/entity/Entity.html#hasNoGravity--">hasNoGravity</a>, <a href="../../../../net/minecraft/entity/Entity.html#hasPassenger-net.minecraft.entity.Entity-">hasPassenger</a>, <a href="../../../../net/minecraft/entity/Entity.html#hasPassengerDeep-net.minecraft.entity.Entity-">hasPassengerDeep</a>, <a href="../../../../net/minecraft/entity/Entity.html#hasPassengers--">hasPassengers</a>, <a href="../../../../net/minecraft/entity/Entity.html#hasVehicle--">hasVehicle</a>, <a href="../../../../net/minecraft/entity/Entity.html#hasWings--">hasWings</a>, <a href="../../../../net/minecraft/entity/Entity.html#interactAt-net.minecraft.entity.player.PlayerEntity-net.minecraft.util.math.Vec3d-net.minecraft.util.Hand-">interactAt</a>, <a href="../../../../net/minecraft/entity/Entity.html#isAboveWater--">isAboveWater</a>, <a href="../../../../net/minecraft/entity/Entity.html#isAlive--">isAlive</a>, <a href="../../../../net/minecraft/entity/Entity.html#isAttackable--">isAttackable</a>, <a href="../../../../net/minecraft/entity/Entity.html#isConnectedThroughVehicle-net.minecraft.entity.Entity-">isConnectedThroughVehicle</a>, <a href="../../../../net/minecraft/entity/Entity.html#isCustomNameVisible--">isCustomNameVisible</a>, <a href="../../../../net/minecraft/entity/Entity.html#isFireImmune--">isFireImmune</a>, <a href="../../../../net/minecraft/entity/Entity.html#isGlowing--">isGlowing</a>, <a href="../../../../net/minecraft/entity/Entity.html#isImmuneToExplosion--">isImmuneToExplosion</a>, <a href="../../../../net/minecraft/entity/Entity.html#isInLava--">isInLava</a>, <a href="../../../../net/minecraft/entity/Entity.html#isInside-net.minecraft.block.Material-">isInside</a>, <a href="../../../../net/minecraft/entity/Entity.html#isInsideWall--">isInsideWall</a>, <a href="../../../../net/minecraft/entity/Entity.html#isInvisible--">isInvisible</a>, <a href="../../../../net/minecraft/entity/Entity.html#isInvisibleTo-net.minecraft.entity.player.PlayerEntity-">isInvisibleTo</a>, <a href="../../../../net/minecraft/entity/Entity.html#isInvulnerable--">isInvulnerable</a>, <a href="../../../../net/minecraft/entity/Entity.html#isInvulnerableTo-net.minecraft.entity.damage.DamageSource-">isInvulnerableTo</a>, <a href="../../../../net/minecraft/entity/Entity.html#isLogicalSideForUpdatingMovement--">isLogicalSideForUpdatingMovement</a>, <a href="../../../../net/minecraft/entity/Entity.html#isOnFire--">isOnFire</a>, <a href="../../../../net/minecraft/entity/Entity.html#isOutsideBorder--">isOutsideBorder</a>, <a href="../../../../net/minecraft/entity/Entity.html#isPartOf-net.minecraft.entity.Entity-">isPartOf</a>, <a href="../../../../net/minecraft/entity/Entity.html#isSilent--">isSilent</a>, <a href="../../../../net/minecraft/entity/Entity.html#isSneaking--">isSneaking</a>, <a href="../../../../net/minecraft/entity/Entity.html#isSprinting--">isSprinting</a>, <a href="../../../../net/minecraft/entity/Entity.html#isTeammate-net.minecraft.entity.Entity-">isTeammate</a>, <a href="../../../../net/minecraft/entity/Entity.html#isTeamPlayer-net.minecraft.scoreboard.AbstractTeam-">isTeamPlayer</a>, <a href="../../../../net/minecraft/entity/Entity.html#isTouchingWater--">isTouchingWater</a>, <a href="../../../../net/minecraft/entity/Entity.html#isWet--">isWet</a>, <a href="../../../../net/minecraft/entity/Entity.html#kill--">kill</a>, <a href="../../../../net/minecraft/entity/Entity.html#move-net.minecraft.entity.MovementType-double-double-double-">move</a>, <a href="../../../../net/minecraft/entity/Entity.html#moveToBoundingBoxCenter--">moveToBoundingBoxCenter</a>, <a href="../../../../net/minecraft/entity/Entity.html#onBlockCollision-net.minecraft.block.BlockState-">onBlockCollision</a>, <a href="../../../../net/minecraft/entity/Entity.html#onKilledOther-net.minecraft.entity.LivingEntity-">onKilledOther</a>, <a href="../../../../net/minecraft/entity/Entity.html#onPassengerLookAround-net.minecraft.entity.Entity-">onPassengerLookAround</a>, <a href="../../../../net/minecraft/entity/Entity.html#onPlayerCollision-net.minecraft.entity.player.PlayerEntity-">onPlayerCollision</a>, <a href="../../../../net/minecraft/entity/Entity.html#onStartedTrackingBy-net.minecraft.server.network.ServerPlayerEntity-">onStartedTrackingBy</a>, <a href="../../../../net/minecraft/entity/Entity.html#onStoppedTrackingBy-net.minecraft.server.network.ServerPlayerEntity-">onStoppedTrackingBy</a>, <a href="../../../../net/minecraft/entity/Entity.html#onStruckByLightning-net.minecraft.entity.LightningEntity-">onStruckByLightning</a>, <a href="../../../../net/minecraft/entity/Entity.html#onSwimmingStart--">onSwimmingStart</a>, <a href="../../../../net/minecraft/entity/Entity.html#onTrackedDataSet-net.minecraft.entity.data.TrackedData-">onTrackedDataSet</a>, <a href="../../../../net/minecraft/entity/Entity.html#playFlySound-float-">playFlySound</a>, <a href="../../../../net/minecraft/entity/Entity.html#playSound-net.minecraft.sound.SoundEvent-float-float-">playSound</a>, <a href="../../../../net/minecraft/entity/Entity.html#playStepSound-net.minecraft.util.math.BlockPos-net.minecraft.block.Block-">playStepSound</a>, <a href="../../../../net/minecraft/entity/Entity.html#populateCrashReport-net.minecraft.util.crash.CrashReportSection-">populateCrashReport</a>, <a href="../../../../net/minecraft/entity/Entity.html#pushOutOfBlocks-double-double-double-">pushOutOfBlocks</a>, <a href="../../../../net/minecraft/entity/Entity.html#rayTrace-double-float-">rayTrace</a>, <a href="../../../../net/minecraft/entity/Entity.html#refreshPositionAndAngles-net.minecraft.util.math.BlockPos-float-float-">refreshPositionAndAngles</a>, <a href="../../../../net/minecraft/entity/Entity.html#refreshPositionAndAngles-double-double-double-float-float-">refreshPositionAndAngles</a>, <a href="../../../../net/minecraft/entity/Entity.html#remove--">remove</a>, <a href="../../../../net/minecraft/entity/Entity.html#removeAllPassengers--">removeAllPassengers</a>, <a href="../../../../net/minecraft/entity/Entity.html#removePassenger-net.minecraft.entity.Entity-">removePassenger</a>, <a href="../../../../net/minecraft/entity/Entity.html#removeScoreboardTag-java.lang.String-">removeScoreboardTag</a>, <a href="../../../../net/minecraft/entity/Entity.html#requestTeleport-double-double-double-">requestTeleport</a>, <a href="../../../../net/minecraft/entity/Entity.html#saveSelfToTag-net.minecraft.nbt.CompoundTag-">saveSelfToTag</a>, <a href="../../../../net/minecraft/entity/Entity.html#saveToTag-net.minecraft.nbt.CompoundTag-">saveToTag</a>, <a href="../../../../net/minecraft/entity/Entity.html#scheduleVelocityUpdate--">scheduleVelocityUpdate</a>, <a href="../../../../net/minecraft/entity/Entity.html#sendSystemMessage-net.minecraft.text.Text-">sendSystemMessage</a>, <a href="../../../../net/minecraft/entity/Entity.html#setAir-int-">setAir</a>, <a href="../../../../net/minecraft/entity/Entity.html#setBoundingBox-net.minecraft.util.math.Box-">setBoundingBox</a>, <a href="../../../../net/minecraft/entity/Entity.html#setCustomName-java.lang.String-">setCustomName</a>, <a href="../../../../net/minecraft/entity/Entity.html#setCustomNameVisible-boolean-">setCustomNameVisible</a>, <a href="../../../../net/minecraft/entity/Entity.html#setDimensions-float-float-">setDimensions</a>, <a href="../../../../net/minecraft/entity/Entity.html#setEntityId-int-">setEntityId</a>, <a href="../../../../net/minecraft/entity/Entity.html#setFlag-int-boolean-">setFlag</a>, <a href="../../../../net/minecraft/entity/Entity.html#setGlowing-boolean-">setGlowing</a>, <a href="../../../../net/minecraft/entity/Entity.html#setHeadYaw-float-">setHeadYaw</a>, <a href="../../../../net/minecraft/entity/Entity.html#setInNetherPortal-net.minecraft.util.math.BlockPos-">setInNetherPortal</a>, <a href="../../../../net/minecraft/entity/Entity.html#setInvisible-boolean-">setInvisible</a>, <a href="../../../../net/minecraft/entity/Entity.html#setInvulnerable-boolean-">setInvulnerable</a>, <a href="../../../../net/minecraft/entity/Entity.html#setNoGravity-boolean-">setNoGravity</a>, <a href="../../../../net/minecraft/entity/Entity.html#setOnFireFor-int-">setOnFireFor</a>, <a href="../../../../net/minecraft/entity/Entity.html#setOnFireFromLava--">setOnFireFromLava</a>, <a href="../../../../net/minecraft/entity/Entity.html#setOutsideBorder-boolean-">setOutsideBorder</a>, <a href="../../../../net/minecraft/entity/Entity.html#setRenderDistanceMultiplier-double-">setRenderDistanceMultiplier</a>, <a href="../../../../net/minecraft/entity/Entity.html#setRotation-float-float-">setRotation</a>, <a href="../../../../net/minecraft/entity/Entity.html#setSilent-boolean-">setSilent</a>, <a href="../../../../net/minecraft/entity/Entity.html#setSneaking-boolean-">setSneaking</a>, <a href="../../../../net/minecraft/entity/Entity.html#setSprinting-boolean-">setSprinting</a>, <a href="../../../../net/minecraft/entity/Entity.html#setUuid-java.util.UUID-">setUuid</a>, <a href="../../../../net/minecraft/entity/Entity.html#setWorld-net.minecraft.world.World-">setWorld</a>, <a href="../../../../net/minecraft/entity/Entity.html#setYaw-float-">setYaw</a>, <a href="../../../../net/minecraft/entity/Entity.html#shouldDropItems-boolean-">shouldDropItems</a>, <a href="../../../../net/minecraft/entity/Entity.html#shouldReceiveFeedback--">shouldReceiveFeedback</a>, <a href="../../../../net/minecraft/entity/Entity.html#shouldRender-double-">shouldRender</a>, <a href="../../../../net/minecraft/entity/Entity.html#shouldRender-double-double-double-">shouldRender</a>, <a href="../../../../net/minecraft/entity/Entity.html#shouldRenderName--">shouldRenderName</a>, <a href="../../../../net/minecraft/entity/Entity.html#shouldSetPositionOnLoad--">shouldSetPositionOnLoad</a>, <a href="../../../../net/minecraft/entity/Entity.html#slowMovement--">slowMovement</a>, <a href="../../../../net/minecraft/entity/Entity.html#spawnSprintingParticles--">spawnSprintingParticles</a>, <a href="../../../../net/minecraft/entity/Entity.html#squaredDistanceTo-net.minecraft.util.math.BlockPos-">squaredDistanceTo</a>, <a href="../../../../net/minecraft/entity/Entity.html#squaredDistanceTo-double-double-double-">squaredDistanceTo</a>, <a href="../../../../net/minecraft/entity/Entity.html#squaredDistanceTo-net.minecraft.entity.Entity-">squaredDistanceTo</a>, <a href="../../../../net/minecraft/entity/Entity.html#squaredDistanceToCenter-net.minecraft.util.math.BlockPos-">squaredDistanceToCenter</a>, <a href="../../../../net/minecraft/entity/Entity.html#startRiding-net.minecraft.entity.Entity-">startRiding</a>, <a href="../../../../net/minecraft/entity/Entity.html#startRiding-net.minecraft.entity.Entity-boolean-">startRiding</a>, <a href="../../../../net/minecraft/entity/Entity.html#stopRiding--">stopRiding</a>, <a href="../../../../net/minecraft/entity/Entity.html#teleportRequested--">teleportRequested</a>, <a href="../../../../net/minecraft/entity/Entity.html#tickNetherPortalCooldown--">tickNetherPortalCooldown</a>, <a href="../../../../net/minecraft/entity/Entity.html#tickRiding--">tickRiding</a>, <a href="../../../../net/minecraft/entity/Entity.html#toListTag-double:A-">toListTag</a>, <a href="../../../../net/minecraft/entity/Entity.html#toListTag-float:A-">toListTag</a>, <a href="../../../../net/minecraft/entity/Entity.html#toString--">toString</a>, <a href="../../../../net/minecraft/entity/Entity.html#toTag-net.minecraft.nbt.CompoundTag-">toTag</a>, <a href="../../../../net/minecraft/entity/Entity.html#updateCommandStat-net.minecraft.command.CommandStats.Type-int-">updateCommandStat</a>, <a href="../../../../net/minecraft/entity/Entity.html#updateKilledAdvancementCriterion-net.minecraft.entity.Entity-int-net.minecraft.entity.damage.DamageSource-">updateKilledAdvancementCriterion</a>, <a href="../../../../net/minecraft/entity/Entity.html#updatePassengerPosition-net.minecraft.entity.Entity-">updatePassengerPosition</a>, <a href="../../../../net/minecraft/entity/Entity.html#updatePositionAndAngles-double-double-double-float-float-">updatePositionAndAngles</a>, <a href="../../../../net/minecraft/entity/Entity.html#updateVelocity-float-float-float-float-">updateVelocity</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -277,6 +297,13 @@ extends <a href="../../../../net/minecraft/class_2656.html" title="class in net.
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
 <code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.minecraft.util.Nameable">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;net.minecraft.util.<a href="../../../../net/minecraft/util/Nameable.html" title="interface in net.minecraft.util">Nameable</a></h3>
+<code><a href="../../../../net/minecraft/util/Nameable.html#getDisplayName--">getDisplayName</a>, <a href="../../../../net/minecraft/util/Nameable.html#getName--">getName</a>, <a href="../../../../net/minecraft/util/Nameable.html#hasCustomName--">hasCustomName</a></code></li>
 </ul>
 </li>
 </ul>
@@ -292,6 +319,15 @@ extends <a href="../../../../net/minecraft/class_2656.html" title="class in net.
 <!--   -->
 </a>
 <h3>Field Detail</h3>
+<a name="LIT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>LIT</h4>
+<pre>private static final&nbsp;<a href="../../../../net/minecraft/entity/data/TrackedData.html" title="class in net.minecraft.entity.data">TrackedData</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</a>&gt; LIT</pre>
+</li>
+</ul>
 <a name="fuel">
 <!--   -->
 </a>
@@ -334,10 +370,6 @@ extends <a href="../../../../net/minecraft/class_2656.html" title="class in net.
 <li class="blockList">
 <h4>FurnaceMinecartEntity</h4>
 <pre>public&nbsp;FurnaceMinecartEntity(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world)</pre>
-<div class="block">All classes that extend Entity <b>must<b> have a constructor
- that takes in one, and only one <a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world"><code>World</code></a> parameter.
- This is due to the fact that entity constructors are called reflectively
- from <code>net.minecraft.entity.EntityDispatcher</code></div>
 </li>
 </ul>
 <a name="FurnaceMinecartEntity-net.minecraft.world.World-double-double-double-">
@@ -347,9 +379,9 @@ extends <a href="../../../../net/minecraft/class_2656.html" title="class in net.
 <li class="blockList">
 <h4>FurnaceMinecartEntity</h4>
 <pre>public&nbsp;FurnaceMinecartEntity(<a href="../../../../net/minecraft/world/World.html" title="class in net.minecraft.world">World</a>&nbsp;world,
-                             double&nbsp;double2,
-                             double&nbsp;double3,
-                             double&nbsp;double4)</pre>
+                             double&nbsp;x,
+                             double&nbsp;y,
+                             double&nbsp;z)</pre>
 </li>
 </ul>
 </li>
@@ -360,16 +392,25 @@ extends <a href="../../../../net/minecraft/class_2656.html" title="class in net.
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="method_10752--">
+<a name="initDataFixer-net.minecraft.datafixer.DataFixer-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_10752</h4>
-<pre>public&nbsp;int&nbsp;method_10752()</pre>
+<h4>initDataFixer</h4>
+<pre>public static&nbsp;void&nbsp;initDataFixer(<a href="../../../../net/minecraft/datafixer/DataFixer.html" title="class in net.minecraft.datafixer">DataFixer</a>&nbsp;dataFixer)</pre>
+</li>
+</ul>
+<a name="getMinecartType--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMinecartType</h4>
+<pre>public&nbsp;<a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.Type.html" title="enum in net.minecraft.entity.vehicle">AbstractMinecartEntity.Type</a>&nbsp;getMinecartType()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_2656.html#method_10752--">method_10752</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_2656.html" title="class in net.minecraft">class_2656</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#getMinecartType--">getMinecartType</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html" title="class in net.minecraft.entity.vehicle">AbstractMinecartEntity</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -382,7 +423,7 @@ extends <a href="../../../../net/minecraft/class_2656.html" title="class in net.
 <pre>protected&nbsp;void&nbsp;initDataTracker()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_2656.html#initDataTracker--">initDataTracker</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_2656.html" title="class in net.minecraft">class_2656</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#initDataTracker--">initDataTracker</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html" title="class in net.minecraft.entity.vehicle">AbstractMinecartEntity</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -395,7 +436,20 @@ extends <a href="../../../../net/minecraft/class_2656.html" title="class in net.
 <pre>public&nbsp;void&nbsp;tick()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_2656.html#tick--">tick</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_2656.html" title="class in net.minecraft">class_2656</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#tick--">tick</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html" title="class in net.minecraft.entity.vehicle">AbstractMinecartEntity</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getMaxOffRailSpeed--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMaxOffRailSpeed</h4>
+<pre>protected&nbsp;double&nbsp;getMaxOffRailSpeed()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#getMaxOffRailSpeed--">getMaxOffRailSpeed</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html" title="class in net.minecraft.entity.vehicle">AbstractMinecartEntity</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -408,26 +462,21 @@ extends <a href="../../../../net/minecraft/class_2656.html" title="class in net.
 <pre>public&nbsp;void&nbsp;dropItems(<a href="../../../../net/minecraft/entity/damage/DamageSource.html" title="class in net.minecraft.entity.damage">DamageSource</a>&nbsp;damageSource)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_2656.html#dropItems-net.minecraft.entity.damage.DamageSource-">dropItems</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_2656.html" title="class in net.minecraft">class_2656</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#dropItems-net.minecraft.entity.damage.DamageSource-">dropItems</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html" title="class in net.minecraft.entity.vehicle">AbstractMinecartEntity</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="method_10740-int-int-int-double-double-int-int-">
+<a name="moveOnRail-net.minecraft.util.math.BlockPos-net.minecraft.block.BlockState-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>method_10740</h4>
-<pre>protected&nbsp;void&nbsp;method_10740(int&nbsp;int2,
-                            int&nbsp;int3,
-                            int&nbsp;int4,
-                            double&nbsp;double2,
-                            double&nbsp;double3,
-                            int&nbsp;int5,
-                            int&nbsp;int6)</pre>
+<h4>moveOnRail</h4>
+<pre>protected&nbsp;void&nbsp;moveOnRail(<a href="../../../../net/minecraft/util/math/BlockPos.html" title="class in net.minecraft.util.math">BlockPos</a>&nbsp;pos,
+                          <a href="../../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;state)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_2656.html#method_10740-int-int-int-double-double-int-int-">method_10740</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_2656.html" title="class in net.minecraft">class_2656</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#moveOnRail-net.minecraft.util.math.BlockPos-net.minecraft.block.BlockState-">moveOnRail</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html" title="class in net.minecraft.entity.vehicle">AbstractMinecartEntity</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -440,46 +489,47 @@ extends <a href="../../../../net/minecraft/class_2656.html" title="class in net.
 <pre>protected&nbsp;void&nbsp;applySlowdown()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_2656.html#applySlowdown--">applySlowdown</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_2656.html" title="class in net.minecraft">class_2656</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#applySlowdown--">applySlowdown</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html" title="class in net.minecraft.entity.vehicle">AbstractMinecartEntity</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="openInventory-net.minecraft.entity.player.PlayerEntity-">
+<a name="interact-net.minecraft.entity.player.PlayerEntity-net.minecraft.util.Hand-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>openInventory</h4>
-<pre>public&nbsp;boolean&nbsp;openInventory(<a href="../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player)</pre>
+<h4>interact</h4>
+<pre>public&nbsp;boolean&nbsp;interact(<a href="../../../../net/minecraft/entity/player/PlayerEntity.html" title="class in net.minecraft.entity.player">PlayerEntity</a>&nbsp;player,
+                        <a href="../../../../net/minecraft/util/Hand.html" title="enum in net.minecraft.util">Hand</a>&nbsp;hand)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/entity/Entity.html#openInventory-net.minecraft.entity.player.PlayerEntity-">openInventory</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/entity/Entity.html#interact-net.minecraft.entity.player.PlayerEntity-net.minecraft.util.Hand-">interact</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/entity/Entity.html" title="class in net.minecraft.entity">Entity</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="serialize-net.minecraft.nbt.CompoundTag-">
+<a name="writeCustomDataToTag-net.minecraft.nbt.CompoundTag-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>serialize</h4>
-<pre>protected&nbsp;void&nbsp;serialize(<a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</pre>
+<h4>writeCustomDataToTag</h4>
+<pre>protected&nbsp;void&nbsp;writeCustomDataToTag(<a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_2656.html#serialize-net.minecraft.nbt.CompoundTag-">serialize</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_2656.html" title="class in net.minecraft">class_2656</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#writeCustomDataToTag-net.minecraft.nbt.CompoundTag-">writeCustomDataToTag</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html" title="class in net.minecraft.entity.vehicle">AbstractMinecartEntity</a></code></dd>
 </dl>
 </li>
 </ul>
-<a name="deserialize-net.minecraft.nbt.CompoundTag-">
+<a name="readCustomDataFromTag-net.minecraft.nbt.CompoundTag-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>deserialize</h4>
-<pre>protected&nbsp;void&nbsp;deserialize(<a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</pre>
+<h4>readCustomDataFromTag</h4>
+<pre>protected&nbsp;void&nbsp;readCustomDataFromTag(<a href="../../../../net/minecraft/nbt/CompoundTag.html" title="class in net.minecraft.nbt">CompoundTag</a>&nbsp;tag)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_2656.html#deserialize-net.minecraft.nbt.CompoundTag-">deserialize</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_2656.html" title="class in net.minecraft">class_2656</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#readCustomDataFromTag-net.minecraft.nbt.CompoundTag-">readCustomDataFromTag</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html" title="class in net.minecraft.entity.vehicle">AbstractMinecartEntity</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -501,29 +551,16 @@ extends <a href="../../../../net/minecraft/class_2656.html" title="class in net.
 <pre>protected&nbsp;void&nbsp;setLit(boolean&nbsp;lit)</pre>
 </li>
 </ul>
-<a name="method_7794--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>method_7794</h4>
-<pre>public&nbsp;<a href="../../../../net/minecraft/block/Block.html" title="class in net.minecraft.block">Block</a>&nbsp;method_7794()</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_2656.html#method_7794--">method_7794</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_2656.html" title="class in net.minecraft">class_2656</a></code></dd>
-</dl>
-</li>
-</ul>
-<a name="method_10756--">
+<a name="getDefaultContainedBlock--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>method_10756</h4>
-<pre>public&nbsp;int&nbsp;method_10756()</pre>
+<h4>getDefaultContainedBlock</h4>
+<pre>public&nbsp;<a href="../../../../net/minecraft/block/BlockState.html" title="interface in net.minecraft.block">BlockState</a>&nbsp;getDefaultContainedBlock()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../net/minecraft/class_2656.html#method_10756--">method_10756</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/class_2656.html" title="class in net.minecraft">class_2656</a></code></dd>
+<dd><code><a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html#getDefaultContainedBlock--">getDefaultContainedBlock</a></code>&nbsp;in class&nbsp;<code><a href="../../../../net/minecraft/entity/vehicle/AbstractMinecartEntity.html" title="class in net.minecraft.entity.vehicle">AbstractMinecartEntity</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -554,8 +591,8 @@ extends <a href="../../../../net/minecraft/class_2656.html" title="class in net.
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../net/minecraft/entity/vehicle/CommandBlockMinecartEntity.html" title="class in net.minecraft.entity.vehicle"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../net/minecraft/entity/vehicle/InventoryMinecartEntity.html" title="class in net.minecraft.entity.vehicle"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/entity/vehicle/CommandBlockMinecartEntity.CommandExecutor.html" title="class in net.minecraft.entity.vehicle"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../net/minecraft/entity/vehicle/HopperMinecartEntity.html" title="class in net.minecraft.entity.vehicle"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?net/minecraft/entity/vehicle/FurnaceMinecartEntity.html" target="_top">Frames</a></li>
@@ -579,7 +616,7 @@ extends <a href="../../../../net/minecraft/class_2656.html" title="class in net.
 <div>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#nested.classes.inherited.from.class.net.minecraft.entity.vehicle.AbstractMinecartEntity">Nested</a>&nbsp;|&nbsp;</li>
 <li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>

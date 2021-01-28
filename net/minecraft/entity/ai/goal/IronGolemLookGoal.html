@@ -135,15 +135,15 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>private <a href="../../../../../net/minecraft/entity/passive/IronGolemEntity.html" title="class in net.minecraft.entity.passive">IronGolemEntity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/IronGolemLookGoal.html#field_7724">field_7724</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/IronGolemLookGoal.html#golem">golem</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../../../net/minecraft/class_2672.html" title="class in net.minecraft">class_2672</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/IronGolemLookGoal.html#field_7725">field_7725</a></span></code>&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code>private int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/IronGolemLookGoal.html#lookCountdown">lookCountdown</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>private <a href="../../../../../net/minecraft/entity/passive/VillagerEntity.html" title="class in net.minecraft.entity.passive">VillagerEntity</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/IronGolemLookGoal.html#targetVillager">targetVillager</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -160,7 +160,7 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/IronGolemLookGoal.html#IronGolemLookGoal-net.minecraft.entity.passive.IronGolemEntity-">IronGolemLookGoal</a></span>(<a href="../../../../../net/minecraft/entity/passive/IronGolemEntity.html" title="class in net.minecraft.entity.passive">IronGolemEntity</a>&nbsp;ironGolemEntity)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../net/minecraft/entity/ai/goal/IronGolemLookGoal.html#IronGolemLookGoal-net.minecraft.entity.passive.IronGolemEntity-">IronGolemLookGoal</a></span>(<a href="../../../../../net/minecraft/entity/passive/IronGolemEntity.html" title="class in net.minecraft.entity.passive">IronGolemEntity</a>&nbsp;golem)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -203,7 +203,7 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;net.minecraft.entity.ai.goal.<a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="class in net.minecraft.entity.ai.goal">Goal</a></h3>
-<code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_7363-int-">method_7363</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_7368--">method_7368</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_7369--">method_7369</a></code></li>
+<code><a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#canStop--">canStop</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_34938-int-">method_34938</a>, <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html#method_34944--">method_34944</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -226,22 +226,22 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <!--   -->
 </a>
 <h3>Field Detail</h3>
-<a name="field_7724">
+<a name="golem">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7724</h4>
-<pre>private&nbsp;<a href="../../../../../net/minecraft/entity/passive/IronGolemEntity.html" title="class in net.minecraft.entity.passive">IronGolemEntity</a> field_7724</pre>
+<h4>golem</h4>
+<pre>private final&nbsp;<a href="../../../../../net/minecraft/entity/passive/IronGolemEntity.html" title="class in net.minecraft.entity.passive">IronGolemEntity</a> golem</pre>
 </li>
 </ul>
-<a name="field_7725">
+<a name="targetVillager">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>field_7725</h4>
-<pre>private&nbsp;<a href="../../../../../net/minecraft/class_2672.html" title="class in net.minecraft">class_2672</a> field_7725</pre>
+<h4>targetVillager</h4>
+<pre>private&nbsp;<a href="../../../../../net/minecraft/entity/passive/VillagerEntity.html" title="class in net.minecraft.entity.passive">VillagerEntity</a> targetVillager</pre>
 </li>
 </ul>
 <a name="lookCountdown">
@@ -267,7 +267,7 @@ extends <a href="../../../../../net/minecraft/entity/ai/goal/Goal.html" title="c
 <ul class="blockListLast">
 <li class="blockList">
 <h4>IronGolemLookGoal</h4>
-<pre>public&nbsp;IronGolemLookGoal(<a href="../../../../../net/minecraft/entity/passive/IronGolemEntity.html" title="class in net.minecraft.entity.passive">IronGolemEntity</a>&nbsp;ironGolemEntity)</pre>
+<pre>public&nbsp;IronGolemLookGoal(<a href="../../../../../net/minecraft/entity/passive/IronGolemEntity.html" title="class in net.minecraft.entity.passive">IronGolemEntity</a>&nbsp;golem)</pre>
 </li>
 </ul>
 </li>
