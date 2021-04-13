@@ -165,7 +165,19 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 	FIELD field_12064 ACTIVATOR_RAIL Lnet/minecraft/class_160;
 	FIELD field_12065 DROPPER Lnet/minecraft/class_160;
 	FIELD field_12066 GRAVEL_SOUND Lnet/minecraft/class_162;
+	FIELD field_12067 METAL_SOUND Lnet/minecraft/class_162;
+	FIELD field_12068 GLASS_SOUND Lnet/minecraft/class_162;
+	FIELD field_12069 CLOTH_SOUND Lnet/minecraft/class_162;
+	FIELD field_12070 SAND_SOUND Lnet/minecraft/class_162;
+	FIELD field_12071 SNOW_SOUND Lnet/minecraft/class_162;
+	FIELD field_12072 LADDER_SOUND Lnet/minecraft/class_162;
+	FIELD field_12073 ANVIL_SOUND Lnet/minecraft/class_162;
 	FIELD field_12074 BLOCKS [Lnet/minecraft/class_160;
+	FIELD field_12075 solidBlockLookup [Z
+	FIELD field_12076 opacityLookup [I
+	FIELD field_12077 canGrowGrassLookup [Z
+	FIELD field_12078 lightValueLookup [I
+	FIELD field_12079 neighborLightLookup [Z
 	FIELD field_12080 STONE Lnet/minecraft/class_160;
 	FIELD field_12081 GRASS Lnet/minecraft/class_2696;
 	FIELD field_576 blockEntity Z
@@ -195,10 +207,14 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 	FIELD field_616 randomTicks Z
 		COMMENT Specifies whether the current block ticks randomly
 	FIELD field_9205 material Lnet/minecraft/class_591;
+	FIELD field_9208 textureString Ljava/lang/String;
 	METHOD <init> (ILnet/minecraft/class_591;)V
 		COMMENT Overloaded Block constructor that calls the other with the default material color
 		ARG 1 id
 		ARG 2 material
+	METHOD method_11013 setLightValue (F)Lnet/minecraft/class_160;
+	METHOD method_11018 setOpacity (I)Lnet/minecraft/class_160;
+	METHOD method_11020 init ()V
 	METHOD method_615 hasCollision ()Z
 		COMMENT Returns whether a block has collision, i.e. stops entities
 		COMMENT @return Whether a block has collision
@@ -424,3 +440,5 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 	METHOD method_743 hasBlockEntity ()Z
 		COMMENT Returns whether the current block has a block entity
 		COMMENT @return Whether the current block has a block entity
+	METHOD method_8634 setTextureString (Ljava/lang/String;)Lnet/minecraft/class_160;
+		ARG 1 textureString
