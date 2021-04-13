@@ -207,6 +207,7 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 	FIELD field_616 randomTicks Z
 		COMMENT Specifies whether the current block ticks randomly
 	FIELD field_9205 material Lnet/minecraft/class_591;
+	FIELD field_9206 texture Lnet/minecraft/class_2616;
 	FIELD field_9208 textureString Ljava/lang/String;
 	METHOD <init> (ILnet/minecraft/class_591;)V
 		COMMENT Overloaded Block constructor that calls the other with the default material color
@@ -293,10 +294,18 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 		COMMENT It will also run when the block is placed or removed as Air is being updated.
 		ARG 1 world
 			COMMENT The world that the block is placed in
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 neighborId
 	METHOD method_651 onEntityCollision (Lnet/minecraft/class_99;IIILnet/minecraft/class_1745;)V
 		COMMENT Runs every time an entity collides with the block
 		ARG 1 world
 			COMMENT The world that the block is placed in
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 entity
 	METHOD method_652 onPlaced (Lnet/minecraft/class_99;IIILnet/minecraft/class_1752;Lnet/minecraft/class_2056;)V
 		COMMENT Runs when the block is placed by an entity
 		ARG 1 world
@@ -307,8 +316,7 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 		COMMENT @return Whether the action is succesful
 		ARG 1 world
 			COMMENT The world that the block is placed in
-		ARG 5 direction
-			COMMENT The direction that the block is facing
+		ARG 5 player
 	METHOD method_655 (Lnet/minecraft/class_99;IIILnet/minecraft/class_649;Lnet/minecraft/class_649;)Lnet/minecraft/class_2714;
 		ARG 1 world
 	METHOD method_658 onSteppedOn (Lnet/minecraft/class_99;IIILnet/minecraft/class_1745;)V
@@ -396,6 +404,10 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 		COMMENT Runs when the block is updated as per a schedule
 		ARG 1 world
 			COMMENT The world that the block is placed in
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 random
 	METHOD method_697 (Lnet/minecraft/class_649;)Z
 		ARG 1 vec
 	METHOD method_699 hasTransperancy ()Z
@@ -440,5 +452,31 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 	METHOD method_743 hasBlockEntity ()Z
 		COMMENT Returns whether the current block has a block entity
 		COMMENT @return Whether the current block has a block entity
+	METHOD method_8603 getTextureString ()Ljava/lang/String;
+	METHOD method_8606 getBlockTexture (II)Lnet/minecraft/class_2616;
+		ARG 1 metadata
+		ARG 2 side
+	METHOD method_8608 getCollisionBox (Lnet/minecraft/class_99;III)Lnet/minecraft/class_646;
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_8620 loadTextures (Lnet/minecraft/class_2617;)V
+		ARG 1 textureLoader
+	METHOD method_8628 canPlaceBlock (Lnet/minecraft/class_99;III)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_8634 setTextureString (Ljava/lang/String;)Lnet/minecraft/class_160;
 		ARG 1 textureString
+	METHOD method_8641 getSelectionBox (Lnet/minecraft/class_99;III)Lnet/minecraft/class_646;
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_8646 canBlockExist (Lnet/minecraft/class_99;III)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
