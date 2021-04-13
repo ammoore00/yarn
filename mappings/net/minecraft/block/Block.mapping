@@ -206,6 +206,12 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 		COMMENT Specifies whether the current block is tracked for stats
 	FIELD field_616 randomTicks Z
 		COMMENT Specifies whether the current block ticks randomly
+	FIELD field_9198 minX D
+	FIELD field_9199 minY D
+	FIELD field_9200 minZ D
+	FIELD field_9201 maxX D
+	FIELD field_9202 maxY D
+	FIELD field_9203 maxZ D
 	FIELD field_9205 material Lnet/minecraft/class_591;
 	FIELD field_9206 texture Lnet/minecraft/class_2616;
 	FIELD field_9208 textureString Ljava/lang/String;
@@ -214,6 +220,11 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 		ARG 1 id
 		ARG 2 material
 	METHOD method_11013 setLightValue (F)Lnet/minecraft/class_160;
+	METHOD method_11015 (Lnet/minecraft/class_104;III)F
+		ARG 1 view
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_11018 setOpacity (I)Lnet/minecraft/class_160;
 	METHOD method_11020 init ()V
 	METHOD method_615 hasCollision ()Z
@@ -278,8 +289,12 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 		COMMENT Called when the block must be dropped as an item by {@code dropAsItem}, but luck is taken into consideration here.
 		ARG 1 world
 			COMMENT The world that the block is placed in
-		ARG 5 id
-			COMMENT Id
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 metadata
+		ARG 6 chance
+		ARG 7 fortuneLevel
 	METHOD method_647 onEvent (Lnet/minecraft/class_99;IIIII)Z
 		COMMENT Runs when an event takes place
 		COMMENT @return Whether the event is successful
@@ -310,13 +325,25 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 		COMMENT Runs when the block is placed by an entity
 		ARG 1 world
 			COMMENT The world that the block is in
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 placingEntity
+		ARG 6 itemstack
 	METHOD method_654 onUse (Lnet/minecraft/class_99;IIILnet/minecraft/class_2674;IFFF)Z
 		COMMENT Runs when the block is <i>used</i>, i.e. right clicked in most cases.
 		COMMENT It is similar to the same method in Item, but this method is called only when the player uses it when the block is placed, not when the player is holding the BlockItem.
 		COMMENT @return Whether the action is succesful
 		ARG 1 world
 			COMMENT The world that the block is placed in
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 		ARG 5 player
+		ARG 6 direction
+		ARG 7 clickX
+		ARG 8 clickY
+		ARG 9 clickZ
 	METHOD method_655 (Lnet/minecraft/class_99;IIILnet/minecraft/class_649;Lnet/minecraft/class_649;)Lnet/minecraft/class_2714;
 		ARG 1 world
 	METHOD method_658 onSteppedOn (Lnet/minecraft/class_99;IIILnet/minecraft/class_1745;)V
@@ -331,8 +358,9 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 		COMMENT @return Block color
 		ARG 1 view
 			COMMENT WorldView instance
-		ARG 3 id
-			COMMENT Id
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_669 setSound (Lnet/minecraft/class_162;)Lnet/minecraft/class_160;
 		COMMENT Sets the block's sound type. Used in registering blocks.
 		COMMENT @return The current block
@@ -341,13 +369,14 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 	METHOD method_674 getDropItem (ILjava/util/Random;I)I
 		COMMENT Returns the item that must be dropped when the block is broken
 		COMMENT @return The Item that drops after the block breaks
+		ARG 1 id
 		ARG 2 random
 			COMMENT Random object
-		ARG 3 state
-			COMMENT State
+		ARG 3 metadata
 	METHOD method_675 canCollide (IZ)Z
 		COMMENT Returns whether entities can collide with the block
 		COMMENT @return Whether the block has collision
+		ARG 1 metadata
 		ARG 2 bl
 	METHOD method_676 (Lnet/minecraft/class_649;)Z
 		ARG 1 vec
@@ -387,7 +416,7 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 		COMMENT @return The current block
 		ARG 1 tickRandomly
 			COMMENT Whether the current block should have random ticks
-	METHOD method_684 getBlockType ()I
+	METHOD method_684 getRenderType ()I
 	METHOD method_685 setResistance (F)Lnet/minecraft/class_160;
 		COMMENT Sets the block's resistance. Used in registering blocks.
 		COMMENT @return The current block
@@ -420,6 +449,10 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 		COMMENT Runs every random display Tick. Useful for displaying particles around a block, like Redstone Ore.
 		ARG 1 world
 			COMMENT The world that the block is placed in
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 random
 	METHOD method_707 (Lnet/minecraft/class_649;)Z
 		ARG 1 vec
 	METHOD method_708 setTranslationKey (Ljava/lang/String;)Lnet/minecraft/class_160;
@@ -453,21 +486,75 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 		COMMENT Returns whether the current block has a block entity
 		COMMENT @return Whether the current block has a block entity
 	METHOD method_8603 getTextureString ()Ljava/lang/String;
-	METHOD method_8606 getBlockTexture (II)Lnet/minecraft/class_2616;
+	METHOD method_8605 getDropMetadata (I)I
 		ARG 1 metadata
-		ARG 2 side
+	METHOD method_8606 getBlockTexture (II)Lnet/minecraft/class_2616;
+		ARG 1 direction
+		ARG 2 metadata
 	METHOD method_8608 getCollisionBox (Lnet/minecraft/class_99;III)Lnet/minecraft/class_646;
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD method_8611 onBreakByPlayer (Lnet/minecraft/class_99;IIIILnet/minecraft/class_2674;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 metadata
+		ARG 6 player
+	METHOD method_8616 writeEntityVelocityVector (Lnet/minecraft/class_99;IIILnet/minecraft/class_1745;Lnet/minecraft/class_649;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 entity
+		ARG 6 entityVec
+	METHOD method_8618 setBoundingBox (Lnet/minecraft/class_104;III)V
+		ARG 1 view
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_8619 isSideVisible (Lnet/minecraft/class_104;IIII)Z
+		ARG 1 worldView
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 side
 	METHOD method_8620 loadTextures (Lnet/minecraft/class_2617;)V
 		ARG 1 textureLoader
+	METHOD method_8622 (Lnet/minecraft/class_99;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_8624 dropAsItem (Lnet/minecraft/class_99;IIIII)V
+	METHOD method_8625 blocksMovement (Lnet/minecraft/class_104;III)Z
+		ARG 1 view
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_8628 canPlaceBlock (Lnet/minecraft/class_99;III)Z
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD method_8629 (Lnet/minecraft/class_104;III)I
+		ARG 1 view
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_8631 getIdPicked (Lnet/minecraft/class_99;III)I
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_8633 hasCollision (Lnet/minecraft/class_104;IIII)Z
+		ARG 1 view
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 direction
 	METHOD method_8634 setTextureString (Ljava/lang/String;)Lnet/minecraft/class_160;
 		ARG 1 textureString
 	METHOD method_8641 getSelectionBox (Lnet/minecraft/class_99;III)Lnet/minecraft/class_646;
@@ -475,6 +562,9 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD method_8643 getTexture (I)Lnet/minecraft/class_2616;
+	METHOD method_8644 getBlockColor (I)I
+		ARG 1 metadata
 	METHOD method_8646 canBlockExist (Lnet/minecraft/class_99;III)Z
 		ARG 1 world
 		ARG 2 x
