@@ -1,6 +1,32 @@
 CLASS net/minecraft/class_153 net/minecraft/block/AbstractPressurePlateBlock
-	FIELD field_9186 stepSound Ljava/lang/String;
-	METHOD method_582 (Lnet/minecraft/class_99;IIII)V
+	FIELD field_9186 pressurePlateTextureString Ljava/lang/String;
+	METHOD <init> (ILjava/lang/String;Lnet/minecraft/class_591;)V
+		ARG 1 id
+		ARG 2 textureString
+		ARG 3 material
+	METHOD method_582 checkForInteraction (Lnet/minecraft/class_99;IIII)V
 		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 minRedstoneOutput
 	METHOD method_588 getRedstoneOutput (Lnet/minecraft/class_99;III)I
 		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_8575 getBoxForPlateInteraction (III)Lnet/minecraft/class_646;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_8576 updateNeighbors (Lnet/minecraft/class_99;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_8577 setBoundingBox (I)V
+		ARG 1 metadata
+	METHOD method_8578 getMinRedstoneOutput (I)I
+		ARG 1 metadata
+	METHOD method_8579 getMetaFromWeight (I)I
+		ARG 1 weight

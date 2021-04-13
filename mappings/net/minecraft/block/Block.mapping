@@ -220,7 +220,7 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 		ARG 1 id
 		ARG 2 material
 	METHOD method_11013 setLightValue (F)Lnet/minecraft/class_160;
-	METHOD method_11015 (Lnet/minecraft/class_104;III)F
+	METHOD method_11015 getBrightness (Lnet/minecraft/class_104;III)F
 		ARG 1 view
 		ARG 2 x
 		ARG 3 y
@@ -503,6 +503,11 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 		ARG 4 z
 		ARG 5 metadata
 		ARG 6 player
+	METHOD method_8613 onBreaking (Lnet/minecraft/class_99;IIIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_8616 writeEntityVelocityVector (Lnet/minecraft/class_99;IIILnet/minecraft/class_1745;Lnet/minecraft/class_649;)V
 		ARG 1 world
 		ARG 2 x
@@ -523,7 +528,7 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 		ARG 5 side
 	METHOD method_8620 loadTextures (Lnet/minecraft/class_2617;)V
 		ARG 1 textureLoader
-	METHOD method_8622 (Lnet/minecraft/class_99;III)V
+	METHOD method_8622 onCreation (Lnet/minecraft/class_99;III)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
@@ -534,16 +539,28 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_8628 canPlaceBlock (Lnet/minecraft/class_99;III)Z
-		ARG 1 world
-		ARG 2 x
-		ARG 3 y
-		ARG 4 z
-	METHOD method_8629 (Lnet/minecraft/class_104;III)I
+	METHOD method_8626 getWeakRedstonePower (Lnet/minecraft/class_104;IIII)I
 		ARG 1 view
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 facing
+	METHOD method_8628 canBePlacedAtPos (Lnet/minecraft/class_99;III)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_8629 getSkyBrightness (Lnet/minecraft/class_104;III)I
+		ARG 1 view
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_8630 getStrongRedstonePower (Lnet/minecraft/class_104;IIII)I
+		ARG 1 view
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 facing
 	METHOD method_8631 getIdPicked (Lnet/minecraft/class_99;III)I
 		ARG 1 world
 		ARG 2 x
@@ -570,3 +587,4 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD method_8649 getRenderLayer ()I
