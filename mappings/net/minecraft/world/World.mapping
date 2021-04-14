@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_99 net/minecraft/world/World
+	FIELD field_11788 globalDifficulty I
 	FIELD field_251 scoreboard Lnet/minecraft/class_653;
 	FIELD field_261 iteratingTickingBlockEntities Z
 	FIELD field_266 cloudColor J
@@ -14,8 +15,10 @@ CLASS net/minecraft/class_99 net/minecraft/world/World
 	FIELD field_9120 isClient Z
 	FIELD field_9123 calendar Ljava/util/Calendar;
 	FIELD field_9131 playerEntities Ljava/util/List;
+	FIELD field_9133 ambientDarkness I
 	FIELD field_9136 random Ljava/util/Random;
 	FIELD field_9137 dimension Lnet/minecraft/class_411;
+	FIELD field_9138 eventListeners Ljava/util/List;
 	FIELD field_9139 chunkProvider Lnet/minecraft/class_396;
 	FIELD field_9140 saveHandler Lnet/minecraft/class_635;
 	FIELD field_9141 levelProperties Lnet/minecraft/class_2243;
@@ -122,10 +125,13 @@ CLASS net/minecraft/class_99 net/minecraft/world/World
 	METHOD method_335 (Lnet/minecraft/class_1745;Z)V
 		ARG 1 entity
 		ARG 2 bl
-	METHOD method_336 (Lnet/minecraft/class_2674;IIIII)V
+	METHOD method_336 syncWorldEvent (Lnet/minecraft/class_2674;IIIII)V
 		ARG 1 player
 		ARG 2 type
-		ARG 4 data
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 data
 	METHOD method_339 playSound (Lnet/minecraft/class_2674;Ljava/lang/String;FF)V
 		ARG 1 player
 		ARG 2 sound
@@ -138,7 +144,12 @@ CLASS net/minecraft/class_99 net/minecraft/world/World
 		ARG 4 x2
 		ARG 5 y2
 		ARG 6 z2
-	METHOD method_354 playFX (IIIII)V
+	METHOD method_354 syncGlobalEvent (IIIII)V
+		ARG 1 type
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 data
 	METHOD method_355 setTimeOfDay (J)V
 		ARG 1 time
 	METHOD method_356 removeListener (Lnet/minecraft/class_101;)V
@@ -185,12 +196,16 @@ CLASS net/minecraft/class_99 net/minecraft/world/World
 		ARG 4 metadata
 		ARG 5 notifyFlags
 	METHOD method_8467 scheduleUpdate (IIIII)V
+	METHOD method_8468 setBlockEntity (IIILnet/minecraft/class_2193;)V
 	METHOD method_8469 removeBlock (IIIZ)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD method_8476 getEntitiesInBox (Ljava/lang/Class;Lnet/minecraft/class_646;)Ljava/util/List;
+	METHOD method_8478 getEntitiesInBox (Ljava/lang/Class;Lnet/minecraft/class_646;Lnet/minecraft/class_2625;)Ljava/util/List;
 	METHOD method_8479 addParticle (Ljava/lang/String;DDDDDD)V
 	METHOD method_8491 setBlock (IIII)Z
+	METHOD method_8496 getLightAtPos (Lnet/minecraft/class_106;III)I
 	METHOD method_8502 doesChunkExist (II)Z
 		ARG 1 x
 		ARG 2 y
@@ -211,8 +226,10 @@ CLASS net/minecraft/class_99 net/minecraft/world/World
 		ARG 6 notifyFlags
 	METHOD method_8514 getTopmostBlockCoord (II)I
 	METHOD method_8515 setAir (III)Z
+	METHOD method_8517 updateHorizontalAdjacent (IIII)V
 	METHOD method_8520 getHeightForRainAndSnow (II)I
 	METHOD method_8524 getLightValue (III)I
+	METHOD method_8527 removeBlockEntity (III)V
 	METHOD method_8529 canBlockFreeze (III)Z
 	METHOD method_8533 getBiomeSource ()Lnet/minecraft/class_123;
 	METHOD method_8534 isRecievingRedstonePower (III)Z
@@ -220,3 +237,5 @@ CLASS net/minecraft/class_99 net/minecraft/world/World
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD method_8537 hasRain (III)Z
+	METHOD method_8538 hasHighHumidity (III)Z

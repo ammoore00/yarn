@@ -219,13 +219,24 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 		COMMENT Overloaded Block constructor that calls the other with the default material color
 		ARG 1 id
 		ARG 2 material
-	METHOD method_11013 setLightValue (F)Lnet/minecraft/class_160;
+	METHOD method_11013 setLightLevel (F)Lnet/minecraft/class_160;
+	METHOD method_11014 areBlocksEqual (II)Z
+		ARG 0 id1
+		ARG 1 id2
 	METHOD method_11015 getBrightness (Lnet/minecraft/class_104;III)F
 		ARG 1 view
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD method_11016 equals (I)Z
+		ARG 1 id
+	METHOD method_11017 (Lnet/minecraft/class_104;III)F
+		ARG 1 view
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_11018 setOpacity (I)Lnet/minecraft/class_160;
+	METHOD method_11019 hasComparatorOutput (I)Z
 	METHOD method_11020 init ()V
 	METHOD method_615 hasCollision ()Z
 		COMMENT Returns whether a block has collision, i.e. stops entities
@@ -243,7 +254,7 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 		COMMENT Only called on the client.
 		COMMENT @return The Block's item group
 	METHOD method_627 isFlowerPot ()Z
-	METHOD method_628 isFire ()Z
+	METHOD method_628 isCollidable ()Z
 	METHOD method_629 hasComparatorOutput ()Z
 		COMMENT Returns whether the block provides comparator output.
 		COMMENT Used in blocks with entities like Chests and Droppers.
@@ -285,6 +296,10 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 			COMMENT The world that the block is placed in
 	METHOD method_644 onDestroyedByExplosion (Lnet/minecraft/class_99;IIILnet/minecraft/class_93;)V
 		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 explosion
 	METHOD method_646 randomDropAsItem (Lnet/minecraft/class_99;IIIIFI)V
 		COMMENT Called when the block must be dropped as an item by {@code dropAsItem}, but luck is taken into consideration here.
 		ARG 1 world
@@ -300,10 +315,11 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 		COMMENT @return Whether the event is successful
 		ARG 1 world
 			COMMENT The world that the block is placed in
-		ARG 4 id
-			COMMENT Id
-		ARG 5 meta
-			COMMENT Metadata
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 id
+		ARG 6 metadata
 	METHOD method_648 neighborUpdate (Lnet/minecraft/class_99;IIII)V
 		COMMENT Runs when its adjacent blocks are updated.
 		COMMENT It will also run when the block is placed or removed as Air is being updated.
@@ -358,6 +374,10 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 			COMMENT The world that the block is placed in
 	METHOD method_661 onBlockBreakStart (Lnet/minecraft/class_99;IIILnet/minecraft/class_2674;)V
 		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 entity
 	METHOD method_666 getBlockColor (Lnet/minecraft/class_104;III)I
 		COMMENT Returns the current block's color
 		COMMENT @return Block color
@@ -403,6 +423,9 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 			COMMENT The player breaking the block
 		ARG 2 world
 			COMMENT The world that the block is placed in
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
 	METHOD method_680 setItemGroup (Lnet/minecraft/class_2029;)Lnet/minecraft/class_160;
 		COMMENT Sets the block's ItemGroup. Used in registering blocks.
 		COMMENT @return The current block
@@ -501,6 +524,23 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD method_8609 onPlaced (Lnet/minecraft/class_99;IIIIFFFI)I
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 facing
+		ARG 6 clickX
+		ARG 7 clickY
+		ARG 8 clickZ
+		ARG 9 metadata
+	METHOD method_8610 canPlaceAdjacent (Lnet/minecraft/class_99;IIIILnet/minecraft/class_2056;)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 direction
+		ARG 6 itemStack
 	METHOD method_8611 onBreakByPlayer (Lnet/minecraft/class_99;IIIILnet/minecraft/class_2674;)V
 		ARG 1 world
 		ARG 2 x
@@ -508,11 +548,34 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 		ARG 4 z
 		ARG 5 metadata
 		ARG 6 player
+	METHOD method_8612 onBlockBreak (Lnet/minecraft/class_99;IIILnet/minecraft/class_2056;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 itemStack
 	METHOD method_8613 onBreaking (Lnet/minecraft/class_99;IIIII)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 id
+		ARG 6 metadata
+	METHOD method_8614 appendCollisionBoxes (Lnet/minecraft/class_99;IIILnet/minecraft/class_646;Ljava/util/List;Lnet/minecraft/class_1745;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 box
+		ARG 6 boxes
+		ARG 7 entity
+	METHOD method_8615 onLandedUpon (Lnet/minecraft/class_99;IIILnet/minecraft/class_1745;F)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 entity
+		ARG 6 distance
 	METHOD method_8616 writeEntityVelocityVector (Lnet/minecraft/class_99;IIILnet/minecraft/class_1745;Lnet/minecraft/class_649;)V
 		ARG 1 world
 		ARG 2 x
@@ -520,6 +583,13 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 		ARG 4 z
 		ARG 5 entity
 		ARG 6 entityVec
+	METHOD method_8617 harvest (Lnet/minecraft/class_99;Lnet/minecraft/class_2674;IIII)V
+		ARG 1 world
+		ARG 2 player
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 metadata
 	METHOD method_8618 setBoundingBox (Lnet/minecraft/class_104;III)V
 		ARG 1 view
 		ARG 2 x
@@ -538,7 +608,18 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD method_8623 onBreakByPlayer (Lnet/minecraft/class_99;IIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_8624 dropAsItem (Lnet/minecraft/class_99;IIIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 metadata
+		ARG 6 fortuneLevel
 	METHOD method_8625 blocksMovement (Lnet/minecraft/class_104;III)Z
 		ARG 1 view
 		ARG 2 x
@@ -571,6 +652,12 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD method_8632 canPlaceAdjacent (Lnet/minecraft/class_99;IIII)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 direction
 	METHOD method_8633 hasCollision (Lnet/minecraft/class_104;IIII)Z
 		ARG 1 view
 		ARG 2 x
@@ -579,15 +666,47 @@ CLASS net/minecraft/class_160 net/minecraft/block/Block
 		ARG 5 direction
 	METHOD method_8634 setTextureString (Ljava/lang/String;)Lnet/minecraft/class_160;
 		ARG 1 textureString
+	METHOD method_8636 (Lnet/minecraft/class_99;IIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_8637 getTexture (Lnet/minecraft/class_104;IIII)Lnet/minecraft/class_2616;
+		ARG 1 view
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 direction
+	METHOD method_8640 (Lnet/minecraft/class_99;IIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_8641 getSelectionBox (Lnet/minecraft/class_99;III)Lnet/minecraft/class_646;
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD method_8642 getComparatorOutput (Lnet/minecraft/class_99;IIII)I
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 metadata
 	METHOD method_8643 getTexture (I)Lnet/minecraft/class_2616;
 	METHOD method_8644 getBlockColor (I)I
 		ARG 1 metadata
 	METHOD method_8646 canBlockExist (Lnet/minecraft/class_99;III)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_8647 getDropMetadata (Lnet/minecraft/class_99;III)I
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_8648 fillWithRain (Lnet/minecraft/class_99;III)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y

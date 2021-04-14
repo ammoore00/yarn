@@ -1,9 +1,19 @@
 CLASS net/minecraft/class_206 net/minecraft/block/FallingBlock
 	METHOD <init> (I)V
 		ARG 1 id
-	METHOD method_842 initFallingEntityForBlock (Lnet/minecraft/class_1892;)V
+	METHOD method_842 onFallingEntityCreated (Lnet/minecraft/class_1892;)V
 		ARG 1 entity
-	METHOD method_8720 onDestroyedOnLanding (Lnet/minecraft/class_99;IIII)V
+	METHOD method_8720 onLanding (Lnet/minecraft/class_99;IIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_8721 canFall (Lnet/minecraft/class_99;III)Z
+		ARG 0 world
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_8722 attemptFall (Lnet/minecraft/class_99;III)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
